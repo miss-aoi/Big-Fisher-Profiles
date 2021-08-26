@@ -19,6 +19,7 @@ I'm in the process of changing over all the movement in this profile to be handl
 
 ## Current Progress
 
+### Limsa Lominsa
 - [x] Lower Decks
 - [x] Upper Decks
 
