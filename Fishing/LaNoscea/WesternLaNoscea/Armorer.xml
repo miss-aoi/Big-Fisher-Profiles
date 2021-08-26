@@ -15,7 +15,7 @@
 		<If condition="not IsOnSubMap(218)">
 			<LisbethTravel ZoneId="138" XYZ="658.5065, 6.368301, 551.9213"/>
 		</If>
-		<ExFish Bait="Northern Krill" ShuffleFishSpots="True" Condition="not HasAtLeast(7687,1) and IsTimeBetween(19,3)>
+		<ExFish Bait="Northern Krill" ShuffleFishSpots="True" Condition="not HasAtLeast(7687,1) and IsTimeBetween(19,24) or IsTimeBetween(0,3)>
 			<Keepers>
 				<Keeper name="Armorer" />
 			</Keepers>

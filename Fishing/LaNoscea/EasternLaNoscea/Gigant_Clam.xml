@@ -19,7 +19,7 @@
 			<LisbethTravel ZoneId="137" XYZ="-11.19454, 70.50095, 4.945401"/>
 			<LisbethTravel ZoneId="137" XYZ="535.896, 8.662354, 619.4787"/>
 		</If>
-		<ExFish Bait="Heavy Steel Jig" ShuffleFishSpots="True" Condition="not HasAtLeast(10123,1) and IsTimeBetween(23,2)">
+		<ExFish Bait="Heavy Steel Jig" ShuffleFishSpots="True" Condition="not HasAtLeast(10123,1) and IsTimeBetween(23,24) or IsTimeBetween(0,2)">
 			<Keepers>
 				<Keeper name="Gigant Clam" />
 			</Keepers>

@@ -16,7 +16,7 @@
 			<LisbethTravel ZoneId="138" XYZ="-355.129, -39.56086, -358.0498"/>
 		</If>
 		<RunCode name="Food"/>
-		<ExFish Bait="Lugworm" ShuffleFishSpots="True" Mooch="3" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8757,1) and IsTimeBetween(19,2) and SkywatcherPlugin.IsWeatherInZone(138, 1, 2) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(-8), 1, 2)">
+		<ExFish Bait="Lugworm" ShuffleFishSpots="True" Mooch="3" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8757,1) and IsTimeBetween(19,24) or IsTimeBetween(0,2) and SkywatcherPlugin.IsWeatherInZone(138, 1, 2) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(-8), 1, 2)">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Medium" />

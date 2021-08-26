@@ -95,13 +95,13 @@
 	<!-- Load Location -->	
 
 	<!-- Load Goldenfin -->
-	<If Condition="&Goldenfin; == 1 and IsTimeBetween(9,14) and not HasAtLeast(7685,1)"> <!-- Zeit -->
+	<If Condition="&Goldenfin; == 1 and IsTimeBetween(9,14) and not HasAtLeast(7685,1)">
 		<Log Message="Start Fishing: Goldenfin..." />
 		<LLoadProfile Path="LimsaLominsa/UpperDecks/Goldenfin.xml"/>
 	</If>
 
 	<!-- Load Octomammoth -->
-	<If Condition="&Octomammoth; == 1 and IsTimeBetween(9,17) and not HasAtLeast(7707,1)"> <!-- Zeit und Mooch 2 Ausrufezeichen -->
+	<If Condition="&Octomammoth; == 1 and IsTimeBetween(9,17) and not HasAtLeast(7707,1)">
 		<Log Message="Start Fishing: Octomammoth..." />
 		<LLoadProfile Path="LimsaLominsa/LowerDecks/Octomammoth.xml"/>
 	</If>
@@ -113,7 +113,7 @@
 	</If>
 
 	<!-- Load Gigantshark -->
-	<If Condition="&Gigantshark; == 1 and not HasAtLeast(7686,1) and SkywatcherPlugin.IsWeatherInZone(134, 1, 2)"> <!-- Wetter und Mooch 2 Ausrufezeichen -->
+	<If Condition="&Gigantshark; == 1 and not HasAtLeast(7686,1) and SkywatcherPlugin.IsWeatherInZone(134, 1, 2)">
 		<Log Message="Start Fishing: Gigantshark..." />
 		<LLoadProfile Path="LaNoscea/MiddleLaNoscea/Gigantshark.xml"/>
 	</If>
@@ -125,7 +125,7 @@
 	</If>
 
 	<!-- Load Great_Gudgeon -->
-	<If Condition="&Great_Gudgeon; == 1 and not HasAtLeast(7688,1)"> <!-- ohne Einschränkung -->
+	<If Condition="&Great_Gudgeon; == 1 and not HasAtLeast(7688,1)">
 		<Log Message="Start Fishing: Great Gudgeon..." />
 		<LLoadProfile Path="LaNoscea/MiddleLaNoscea/Great_Gudgeon.xml"/>
 	</If>
@@ -137,7 +137,7 @@
 	</If>
 
 	<!-- Load Crystal_Perch -->
-	<If Condition="&Crystal_Perch; == 1 and not HasAtLeast(7682,1) and SkywatcherPlugin.IsWeatherInZone(134, 3, 4, 5)"> <!-- Wetter -->
+	<If Condition="&Crystal_Perch; == 1 and not HasAtLeast(7682,1) and SkywatcherPlugin.IsWeatherInZone(134, 3, 4, 5)">
 		<Log Message="Start Fishing: Crystal Perch..." />
 		<LLoadProfile Path="LaNoscea/MiddleLaNoscea/Crystal_Perch.xml"/>
 	</If>
@@ -161,7 +161,13 @@
 	</If>
 
 	<!-- Load Jacques_the_Snipper -->
-	<If Condition="&Jacques_the_Snipper; == 1 and not HasAtLeast(7712,1) and IsTimeBetween(21,3)">
+	<If Condition="&Jacques_the_Snipper; == 1 and not HasAtLeast(7712,1) and IsTimeBetween(21,24)">
+		<Log Message="Start Fishing: Jacques the Snipper..." />
+		<LLoadProfile Path="LaNoscea/LowerLaNoscea/Jacques_the_Snipper.xml"/>
+	</If>
+	
+	<!-- Load Jacques_the_Snipper -->
+	<If Condition="&Jacques_the_Snipper; == 1 and not HasAtLeast(7712,1) and IsTimeBetween(0,3)">
 		<Log Message="Start Fishing: Jacques the Snipper..." />
 		<LLoadProfile Path="LaNoscea/LowerLaNoscea/Jacques_the_Snipper.xml"/>
 	</If>
@@ -203,7 +209,13 @@
 	</If>
 
 	<!-- Load Gigant_Clam -->
-	<If Condition="&Gigant_Clam; == 1 and not HasAtLeast(10123,1) and IsTimeBetween(23,2)">
+	<If Condition="&Gigant_Clam; == 1 and not HasAtLeast(10123,1) and IsTimeBetween(23,24)">
+		<Log Message="Start Fishing: Gigant Clam..." />
+		<LLoadProfile Path="LaNoscea/EasternLaNoscea/Gigant_Clam.xml"/>
+	</If>
+
+	<!-- Load Gigant_Clam -->
+	<If Condition="&Gigant_Clam; == 1 and not HasAtLeast(10123,1) and IsTimeBetween(0,2)">
 		<Log Message="Start Fishing: Gigant Clam..." />
 		<LLoadProfile Path="LaNoscea/EasternLaNoscea/Gigant_Clam.xml"/>
 	</If>
@@ -269,13 +281,25 @@
 	</If>
 
 	<!-- Load Armorer -->
-	<If Condition="&Armorer; == 1 and not HasAtLeast(7687,1) and IsTimeBetween(19,3)">
+	<If Condition="&Armorer; == 1 and not HasAtLeast(7687,1) and IsTimeBetween(19,24)">
+		<Log Message="Start Fishing: Armorer..." />
+		<LLoadProfile Path="LaNoscea/WesternLaNoscea/Armorer.xml"/>
+	</If>
+
+	<!-- Load Armorer -->
+	<If Condition="&Armorer; == 1 and not HasAtLeast(7687,1) and IsTimeBetween(0,3)">
 		<Log Message="Start Fishing: Armorer..." />
 		<LLoadProfile Path="LaNoscea/WesternLaNoscea/Armorer.xml"/>
 	</If>
 
 	<!-- Load Junkmonger -->
-	<If Condition="&Junkmonger; == 1 and not HasAtLeast(7684,1) and IsTimeBetween(16,2)">
+	<If Condition="&Junkmonger; == 1 and not HasAtLeast(7684,1) and IsTimeBetween(16,24)">
+		<Log Message="Start Fishing: Junkmonger..." />
+		<LLoadProfile Path="LaNoscea/WesternLaNoscea/Junkmonger.xml"/>
+	</If>
+
+	<!-- Load Junkmonger -->
+	<If Condition="&Junkmonger; == 1 and not HasAtLeast(7684,1) and IsTimeBetween(0,2)">
 		<Log Message="Start Fishing: Junkmonger..." />
 		<LLoadProfile Path="LaNoscea/WesternLaNoscea/Junkmonger.xml"/>
 	</If>
@@ -293,13 +317,25 @@
 	</If>
 
 	<!-- Load Coelacanthus -->
-	<If Condition="&Coelacanthus; == 1 and not HasAtLeast(8755,1) and IsTimeBetween(22,3) and SkywatcherPlugin.IsWeatherInZone(138, 3, 4, 5)">
+	<If Condition="&Coelacanthus; == 1 and not HasAtLeast(8755,1) and IsTimeBetween(22,24) and SkywatcherPlugin.IsWeatherInZone(138, 3, 4, 5)">
+		<Log Message="Start Fishing: Coelacanthus..." />
+		<LLoadProfile Path="LaNoscea/WesternLaNoscea/Coelacanthus.xml"/>
+	</If>
+
+	<!-- Load Coelacanthus -->
+	<If Condition="&Coelacanthus; == 1 and not HasAtLeast(8755,1) and IsTimeBetween(0,3) and SkywatcherPlugin.IsWeatherInZone(138, 3, 4, 5)">
 		<Log Message="Start Fishing: Coelacanthus..." />
 		<LLoadProfile Path="LaNoscea/WesternLaNoscea/Coelacanthus.xml"/>
 	</If>
 
 	<!-- Load Endoceras -->
-	<If Condition="&Endoceras; == 1 and not HasAtLeast(8756,1) and IsTimeBetween(20,4) and SkywatcherPlugin.IsWeatherInZone(138, 3, 4, 5) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(-8), 1, 2)">
+	<If Condition="&Endoceras; == 1 and not HasAtLeast(8756,1) and IsTimeBetween(20,24) and SkywatcherPlugin.IsWeatherInZone(138, 3, 4, 5) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(-8), 1, 2)">
+		<Log Message="Start Fishing: Endoceras..." />
+		<LLoadProfile Path="LaNoscea/WesternLaNoscea/Endoceras.xml"/>
+	</If>
+	
+	<!-- Load Endoceras -->
+	<If Condition="&Endoceras; == 1 and not HasAtLeast(8756,1) and IsTimeBetween(0,4) and SkywatcherPlugin.IsWeatherInZone(138, 3, 4, 5) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(-8), 1, 2)">
 		<Log Message="Start Fishing: Endoceras..." />
 		<LLoadProfile Path="LaNoscea/WesternLaNoscea/Endoceras.xml"/>
 	</If>
@@ -311,19 +347,37 @@
 	</If>
 
 	<!-- Load Frilled_Shark -->
-	<If Condition="&Frilled_Shark; == 1 and not HasAtLeast(7950,1) and IsTimeBetween(17,3) and SkywatcherPlugin.IsWeatherInZone(138, 3, 4, 5)">
+	<If Condition="&Frilled_Shark; == 1 and not HasAtLeast(7950,1) and IsTimeBetween(17,24) and SkywatcherPlugin.IsWeatherInZone(138, 3, 4, 5)">
+		<Log Message="Start Fishing: Frilled Shark..." />
+		<LLoadProfile Path="LaNoscea/WesternLaNoscea/Frilled_Shark.xml"/>
+	</If>
+
+	<!-- Load Frilled_Shark -->
+	<If Condition="&Frilled_Shark; == 1 and not HasAtLeast(7950,1) and IsTimeBetween(0,3) and SkywatcherPlugin.IsWeatherInZone(138, 3, 4, 5)">
 		<Log Message="Start Fishing: Frilled Shark..." />
 		<LLoadProfile Path="LaNoscea/WesternLaNoscea/Frilled_Shark.xml"/>
 	</If>
 
 	<!-- Load The_Captains_Chalice -->
-	<If Condition="&The_Captains_Chalice; == 1 and not HasAtLeast(7948,1) and IsTimeBetween(23,2)">
+	<If Condition="&The_Captains_Chalice; == 1 and not HasAtLeast(7948,1) and IsTimeBetween(23,24)">
+		<Log Message="Start Fishing: The Captains Chalice..." />
+		<LLoadProfile Path="LaNoscea/WesternLaNoscea/The_Captains_Chalice.xml"/>
+	</If>
+
+	<!-- Load The_Captains_Chalice -->
+	<If Condition="&The_Captains_Chalice; == 1 and not HasAtLeast(7948,1) and IsTimeBetween(0,2)">
 		<Log Message="Start Fishing: The Captains Chalice..." />
 		<LLoadProfile Path="LaNoscea/WesternLaNoscea/The_Captains_Chalice.xml"/>
 	</If>
 
 	<!-- Load Seahag -->
-	<If Condition="&Seahag; == 1 and not HasAtLeast(8757,1) and IsTimeBetween(19,2) and SkywatcherPlugin.IsWeatherInZone(138, 1, 2) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(-8), 1, 2)">
+	<If Condition="&Seahag; == 1 and not HasAtLeast(8757,1) and IsTimeBetween(19,24) and SkywatcherPlugin.IsWeatherInZone(138, 1, 2) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(-8), 1, 2)">
+		<Log Message="Start Fishing: Seahag..." />
+		<LLoadProfile Path="LaNoscea/WesternLaNoscea/Seahag.xml"/>
+	</If>
+
+	<!-- Load Seahag -->
+	<If Condition="&Seahag; == 1 and not HasAtLeast(8757,1) and IsTimeBetween(0,2) and SkywatcherPlugin.IsWeatherInZone(138, 1, 2) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(-8), 1, 2)">
 		<Log Message="Start Fishing: Seahag..." />
 		<LLoadProfile Path="LaNoscea/WesternLaNoscea/Seahag.xml"/>
 	</If>

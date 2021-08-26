@@ -16,7 +16,7 @@
 			<LisbethTravel ZoneId="138" XYZ="213.9494, -36.40361, 310.5599"/>
 		</If>
 		<RunCode name="Food"/>
-		<ExFish Bait="Lugworm" ShuffleFishSpots="True" Mooch="3" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(7684,1) and IsTimeBetween(16,2)">
+		<ExFish Bait="Lugworm" ShuffleFishSpots="True" Mooch="3" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(7684,1) and IsTimeBetween(16,24) or IsTimeBetween(0,2)">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Medium" />

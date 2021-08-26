@@ -19,7 +19,7 @@
 			<LisbethTravel ZoneId="138" XYZ="-227.4654, -42.29472, -211.5476"/>
 		</If>
 		<RunCode name="Food"/>
-		<ExFish Bait="Steel Jig" ShuffleFishSpots="True" Mooch="2" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(7948,1) and IsTimeBetween(23,2)">
+		<ExFish Bait="Steel Jig" ShuffleFishSpots="True" Mooch="2" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(7948,1) and IsTimeBetween(23,24) or IsTimeBetween(0,2)">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Heavy" />
