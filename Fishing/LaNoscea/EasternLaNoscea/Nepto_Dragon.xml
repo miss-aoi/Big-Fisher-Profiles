@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Nepto Dragon (8754)
+  Authors: Alba
+-->
+<Profile>
+  <Name>Nepto Dragon</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(8754,1)">		
+		<If condition="not HasAtLeast(2606,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2606,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(216)">
+			<LisbethTravel ZoneId="137" XYZ="-11.19454, 70.50095, 4.945401"/>
+			<LisbethTravel ZoneId="137" XYZ="885.8239, 20.75006, 144.7628"/>
+		</If>
+		<RunCode name="Food"/>
+		<ExFish Bait="Northern Krill" ShuffleFishSpots="True" Mooch="1" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8754,1) and SkywatcherPlugin.IsWeatherInZone(137, 7, 8)">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Medium" />
+				<PatienceTug moochLevel="0" TugType="Heavy" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Nepto Dragon" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="860.3687, 22.24, 166.0745" Heading="12,618376" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  	<CodeChunk Name="Food">
+      <![CDATA[
+            
+                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
+            
+        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
+        item.UseItem();
+        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
+            
+       ]]>
+    </CodeChunk>
+  </CodeChunks>
+</Profile>

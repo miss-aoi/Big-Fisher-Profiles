@@ -1,0 +1,22 @@
+<Profile>
+  <Name>Eat Food</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+    
+    <RunCode name="Food"/>
+    
+  </Order>
+  <CodeChunks>
+    <CodeChunk Name="Food">
+      <![CDATA[
+            
+                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
+            
+        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
+        item.UseItem();
+        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
+            
+       ]]>
+    </CodeChunk>    
+  </CodeChunks>
+</Profile>  

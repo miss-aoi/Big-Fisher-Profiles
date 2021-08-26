@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: The Old Man in the Sea (8753)
+  Authors: Alba
+-->
+<Profile>
+  <Name>The Old Man in the Sea</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(8753,1)">		
+		<If condition="not HasAtLeast(2587,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2587,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(216)">
+			<LisbethTravel ZoneId="137" XYZ="-11.19454, 70.50095, 4.945401"/>
+			<LisbethTravel ZoneId="137" XYZ="885.8239, 20.75006, 144.7628"/>
+		</If>
+		<RunCode name="Food"/>
+		<ExFish Bait="Pill Bug" ShuffleFishSpots="True" Mooch="3" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8753,1) and SkywatcherPlugin.IsWeatherInZone(137, 1) and SkywatcherPlugin.PredictWeatherInZone(137, TimeSpan.FromHours(-8), 7, 8)">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Medium" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+				<PatienceTug moochLevel="2" TugType="Heavy" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="The Old Man in the Sea" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="895.5746, 19.25504, 126.2254" Heading="0,249268" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+	<CodeChunk Name="Food">
+      <![CDATA[
+            
+                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
+            
+        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
+        item.UseItem();
+        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
+            
+       ]]>
+    </CodeChunk>
+  </CodeChunks>
+</Profile>

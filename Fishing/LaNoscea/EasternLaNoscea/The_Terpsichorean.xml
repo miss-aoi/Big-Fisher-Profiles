@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: The Terpsichorean (7939)
+  Authors: Alba
+-->
+<Profile>
+  <Name>The Terpsichorean</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7939,1)">
+		<If condition="not HasAtLeast(2599,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(168)">
+			<LisbethTravel ZoneId="137" XYZ="-68.43107, 36.05828, 471.5368"/>
+		</If>
+		<ExFish Bait="Honey Worm" ShuffleFishSpots="True" Condition="not HasAtLeast(7939,1) and SkywatcherPlugin.IsWeatherInZone(137, 4)">
+			<Keepers>
+				<Keeper name="The Terpsichorean" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-51.67098, 34.84361, 446.2147" Heading="8,157687" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

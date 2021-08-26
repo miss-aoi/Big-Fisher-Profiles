@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: The Lone Ripper (7926)
+  Authors: Alba
+-->
+<Profile>
+  <Name>The Lone Ripper</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7926,1)">
+		<If condition="not HasAtLeast(2619,50)">
+			<Lisbeth Json="[{'Item': 2619,'Group': 0,'Amount': 198,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
+		</If>
+		<If condition="not IsOnSubMap(945)">
+			<LisbethTravel ZoneId="138" XYZ="-228.1734, -41.15087, 27.03734"/>
+		</If>
+		<ExFish Bait="Heavy Steel Jig" ShuffleFishSpots="True" Condition="not HasAtLeast(7926,1)">
+			<Keepers>
+				<Keeper name="The Lone Ripper" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-243.1071, -42.14145, 15.70758" Heading="4,004834" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

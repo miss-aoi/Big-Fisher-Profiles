@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: The Greatest Bream in the World (7909)
+  Authors: Alba
+-->
+<Profile>
+  <Name>The Greatest Bream in the World</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7909,1)">	
+		<If condition="not HasAtLeast(2613,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2613,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(216)">
+			<LisbethTravel ZoneId="137" XYZ="-11.19454, 70.50095, 4.945401"/>
+			<LisbethTravel ZoneId="137" XYZ="535.896, 8.662354, 619.4787"/>
+		</If>
+		<ExFish Bait="Shrimp Cage Feeder" ShuffleFishSpots="True" Condition="not HasAtLeast(7909,1) and IsTimeBetween(20,23) and SkywatcherPlugin.IsWeatherInZone(137, 1, 2)">
+			<Keepers>
+				<Keeper name="The Greatest Bream in the World" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="552.1142, 8.629681, 631.5807" Heading="0.7646956" Sit="True"/>
+			</FishSpots>
+		</ExFish>
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

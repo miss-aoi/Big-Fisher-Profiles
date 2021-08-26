@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Beguiler Chub (7679)
+  Authors: Alba
+-->
+<Profile>
+  <Name>Beguiler Chub</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7679,1)">		
+		<If condition="not HasAtLeast(2586,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2586,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(162)">
+			<LisbethTravel ZoneId="134" XYZ="30.95881, 42.41599, 36.89365"/>
+		</If>
+		<ExFish Bait="Moth Pupa" MinFish="7" MaxFish="15" ShuffleFishSpots="True" Condition="not HasAtLeast(7679,1) and IsTimeBetween(9,14)">
+			<Keepers>
+				<Keeper name="Beguiler Chub" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="23.22111, 42.41599, 39.66366" Heading="5,055248" Sit="True"/>
+				<FishSpot XYZ="41.36954, 42.41599, 35.63864" Heading="1,704217" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>
