@@ -19,15 +19,13 @@ I'm in the process of changing over all the movement in this profile to be handl
 
 ## Current Progress
 
-### Limsa Lominsa
-- [x] Lower Decks
-- [x] Upper Decks
-
 ### La Noscea
 - [x] Eastern La Noscea
 - [x] Lower La Noscea
 - [x] Middle La Noscea
 - [x] Western La Noscea
-- [ ] Upper La Noscea
-- [ ] Outer La Noscea
-- [ ] Mist
+- [x] Upper La Noscea
+- [x] Outer La Noscea
+- [x] Lower Decks
+- [x] Upper Decks
+- [x] Mist
