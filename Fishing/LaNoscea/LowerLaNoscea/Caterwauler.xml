@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Caterwauler (7681)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Caterwauler</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7681,1)">		
+		<If condition="not HasAtLeast(2586,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2586,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(164)">
+			<LisbethTravel ZoneId="135" XYZ="151.2162, 34.94606, 66.3858"/>
+		</If>
+		<ExFish Bait="Moth Pupa" ShuffleFishSpots="True" Condition="not HasAtLeast(7681,1)">
+			<Keepers>
+				<Keeper name="Caterwauler" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="146.4745, 35.42843, 61.2532" Heading="3,801314" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

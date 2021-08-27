@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: The Salter (7925)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>The Salter</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7925,1)">	
+		<If condition="not HasAtLeast(2599,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(216)">
+			<LisbethTravel ZoneId="137" XYZ="-11.19454, 70.50095, 4.945401"/>
+			<LisbethTravel ZoneId="137" XYZ="466.6412, 8.396084, 76.86406"/>
+		</If>
+		<ExFish Bait="Honey Worm" ShuffleFishSpots="True" Condition="not HasAtLeast(7925,1) and IsTimeBetween(17,20) and SkywatcherPlugin.IsWeatherInZone(137, 1, 2)">
+			<Keepers>
+				<Keeper name="The Salter" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="471.9325, 8.482638, 70.43328" Heading="4.757499" Sit="True"/>
+			</FishSpots>
+		</ExFish>
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

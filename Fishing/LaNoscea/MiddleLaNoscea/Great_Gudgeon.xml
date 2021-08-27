@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Great Gudgeon (7688)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Great Gudgeon</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7688,1)">		
+		<If condition="not HasAtLeast(2588,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2588,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(162)">
+			<LisbethTravel ZoneId="134" XYZ="-81.77495, 45.11634, -147.0452"/>
+		</If>
+		<ExFish Bait="Crayfish Ball" ShuffleFishSpots="True" Condition="not HasAtLeast(7688,1)">
+			<Keepers>
+				<Keeper name="Great Gudgeon" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-87.86907, 44.96273, -138.196" Heading="5,415461" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>
