@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Son of Levin (7936)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Son of Levin</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7936,1)">
+		<If condition="not HasAtLeast(2607,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2607,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(126)">
+			<LisbethTravel ZoneId="153" XYZ="-244.1569, 1.337763, 399.2985"/>
+		</If>
+		<ExFish Bait="Caddisfly Larva" ShuffleFishSpots="True" Condition="not HasAtLeast(7936,1) and SkywatcherPlugin.IsWeatherInZone(153, 10)">
+			<Keepers>
+				<Keeper name="Son of Levin" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-260.9754, -0.4313079, 380.654" Heading="3,995335" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

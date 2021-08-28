@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Stormdancer (7713)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Stormdancer</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7713,1)">
+		<If condition="not HasAtLeast(2601,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2601,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(0)">
+			<LisbethTravel ZoneId="132" XYZ="71.02061, -7.759192, 107.6301"/>
+		</If>
+		<ExFish Bait="Stem Borer" ShuffleFishSpots="True" Condition="not HasAtLeast(7713,1) and IsTimeBetween(17,24) or IsTimeBetween(0,2) and SkywatcherPlugin.IsWeatherInZone(132, 7, 15)">
+			<Keepers>
+				<Keeper name="Stormdancer" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="74.12701, -7.580683, 117.41" Heading="5,747751" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

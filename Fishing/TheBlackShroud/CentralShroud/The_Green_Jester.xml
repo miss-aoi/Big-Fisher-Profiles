@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: The Green Jester (7934)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>The Green Jester</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7934,1)">		
+		<If condition="not HasAtLeast(2599,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(104)">
+			<LisbethTravel ZoneId="148" XYZ="-408.1958, 53.11435, 34.25052"/>
+		</If>
+		<ExFish Bait="Honey Worm" ShuffleFishSpots="True" Condition="not HasAtLeast(7934,1) and IsTimeBetween(18,21)">
+			<Keepers>
+				<Keeper name="The Green Jester" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-415.4449, 49, 4.514814" Heading="0,07986617" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

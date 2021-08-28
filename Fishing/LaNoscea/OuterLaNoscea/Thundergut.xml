@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Thundergut (7937)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Thundergut</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7937,1)">
+		<If condition="not HasAtLeast(2601,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2601,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(235)">
+			<LisbethTravel ZoneId="180" XYZ="-293.4303, 5.643226, -561.4026"/>
+		</If>
+		<ExFish Bait="Stem Borer" ShuffleFishSpots="True" Condition="not HasAtLeast(7937,1) and IsTimeBetween(19,24) or IsTimeBetween(0,3) and SkywatcherPlugin.IsWeatherInZone(180, 7)">
+			<Keepers>
+				<Keeper name="Thundergut" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-291.1147, 4.416262, -575.7982" Heading="2,999318" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

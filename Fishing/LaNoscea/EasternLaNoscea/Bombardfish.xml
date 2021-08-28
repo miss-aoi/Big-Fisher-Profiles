@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Bombardfish (7924)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Bombardfish</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7924,1)">		
+		<If condition="not HasAtLeast(2598,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2598,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(216)">
+			<LisbethTravel ZoneId="137" XYZ="-11.19454, 70.50095, 4.945401"/>
+			<LisbethTravel ZoneId="137" XYZ="522.9431, 9.260114, 128.6259"/>
+		</If>
+		<ExFish Bait="Herring Ball" ShuffleFishSpots="True" Condition="not HasAtLeast(7924,1) and IsTimeBetween(9,15) and SkywatcherPlugin.IsWeatherInZone(137, 1)">
+			<Keepers>
+				<Keeper name="Bombardfish" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="559.2205, 15.5846, 104.5427" Heading="0.9804227" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

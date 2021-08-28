@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Ghost Carp (7700)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Ghost Carp</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7700,1)">
+		<If condition="not HasAtLeast(2594,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(70)">
+			<LisbethTravel ZoneId="148" XYZ="211.2545, -32.20573, 395.1728"/>
+		</If>
+		<ExFish Bait="Butterworm" ShuffleFishSpots="True" Condition="not HasAtLeast(7700,1) and IsTimeBetween(21,24) or IsTimeBetween(0,3) and SkywatcherPlugin.IsWeatherInZone(148, 7)">
+			<Keepers>
+				<Keeper name="Ghost Carp" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="230.0548, -31.34614, 387.5831" Heading="1,978786" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>
