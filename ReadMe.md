@@ -29,3 +29,77 @@ I'm in the process of changing over all the movement in this profile to be handl
 - [x] Lower Decks
 - [x] Upper Decks
 - [x] Mist
+
+### The Black Shroud
+- [x] New Gridania
+- [x] Old Gridania
+- [ ] Central Shroud
+- [ ] East Shroud
+- [ ] South Shroud
+- [ ] North Shroud
+- [ ] The Lavender Beds
+
+### Thanalan
+- [ ] Western Thanalan
+- [ ] Central Thanalan
+- [ ] Eastern Thanalan
+- [ ] Southern Thanalan
+- [ ] Northern Thanalan
+- [ ] The Goblet
+
+### Coerthas
+- [ ] Coerthas Central Highlands
+- [ ] Coerthas Western Highlands
+
+### Mor Dhona
+- [ ] Mor Dhona
+
+### Abalathia's Spine
+- [ ] The Sea of Clouds
+- [ ] Azys Lla
+
+### Dravania
+- [ ] The Dravanian Forelands
+- [ ] The Dravanian Hinterlands
+- [ ] The Churning Mists
+
+### Gyr Abania
+- [ ] Rhalgr's Reach
+- [ ] The Fringes
+- [ ] The Peaks
+- [ ] The Lochs
+
+### Othard
+- [ ] The Ruby Sea
+- [ ] Yanxia
+- [ ] The Azim Steppe
+- [ ] The Doman Enclave
+
+### Hingashi
+- [ ] Kugane
+- [ ] Shirogane
+
+### Norvrandt
+- [ ] The Crystarium
+- [ ] Eulmore
+- [ ] Lakeland
+- [ ] Kholusia
+- [ ] Amh Araeng
+- [ ] Il Mheg
+- [ ] The Rak'tika Greatwood
+- [ ] The Tempest
+
+### The High Seas
+- [ ] Galadion Bay
+- [ ] The Southern Strait of Merlthor
+- [ ] The Northern Strait of Merlthor
+- [ ] Rhotano Sea
+- [ ] The Cieldalaes
+- [ ] The Bloodbrine Sea
+- [ ] The Rothlyt Sound
+
+### The Diadem
+- [ ] The Diadem
+
+## Looking to Donate? ♡
+[BuyMeCoffee](https://www.buymeacoffee.com/budesaal)
