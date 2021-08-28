@@ -20,7 +20,7 @@
 				<Keeper name="Thundergut" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="-291.1147, 4.416262, -575.7982" Heading="2,999318" Sit="True"/>
+				<FishSpot XYZ="-276.0169, 15.85604, -523.469" Heading="0,9395103" Sit="True"/>
 			</FishSpots>
 		</ExFish>	
 	</If>
