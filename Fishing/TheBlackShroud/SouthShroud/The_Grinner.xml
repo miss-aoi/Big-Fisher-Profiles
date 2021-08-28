@@ -21,6 +21,7 @@
 			</Keepers>
 			<FishSpots>
 				<FishSpot XYZ="138.1678, 4.043213, 35.08073" Heading="5,873796" Sit="True"/>
+				<FishSpot XYZ="156.5174, 4.088545, 9.550058" Heading="5,900573" Sit="True"/>
 			</FishSpots>
 		</ExFish>	
 	</If>
