@@ -33,7 +33,7 @@
 				<FishSpot XYZ="-157.0592, -10.34948, -103.4891" Heading="2,029755" Sit="True"/>
 			</FishSpots>
 		</ExFish>
-				<ExFish Bait="Rainbow Spoon Lure" ShuffleFishSpots="True" Chum="True" Mooch="1" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8760,1) and Core.Player.HasAura(568)">
+				<ExFish Bait="Rainbow Spoon Lure" ShuffleFishSpots="True" Mooch="1" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8760,1) and Core.Player.HasAura(568)">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Heavy" />
 			</PatienceTugs>
