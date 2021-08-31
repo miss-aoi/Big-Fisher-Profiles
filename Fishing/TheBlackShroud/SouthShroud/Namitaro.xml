@@ -22,26 +22,20 @@
 			<LisbethTravel ZoneId="153" XYZ="507.079, 15.53178, 128.7852"/>
 		</If>
 		<RunCode name="Food"/>
-		<ExFish Bait="Glowworm" ShuffleFishSpots="True" Mooch="1" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8775,1) and not Core.Player.HasAura(568) and SkywatcherPlugin.IsWeatherInZone(153, 9, 10)">
+		<ExFish ShuffleFishSpots="True" Mooch="0" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8775,1) and SkywatcherPlugin.IsWeatherInZone(153, 9, 10)">
+        <Baits>
+			<Bait name="Glowworm" condition="not Core.Player.HasAura(568)"/>
+			<Bait name="Topwater Frog" condition="Core.Player.HasAura(568)"/>
+		</Baits>	
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Heavy" />
 			</PatienceTugs>
 			<Keepers>
 				<Keeper name="Giant Takitaro" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="525.553, 14.0207, 134.7129" Heading="4,492749" Sit="True"/>
-			</FishSpots>
-		</ExFish>
-		<ExFish Bait="Topwater Frog" ShuffleFishSpots="True" Chum="True" Mooch="1" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8775,1) and Core.Player.HasAura(568) and SkywatcherPlugin.IsWeatherInZone(153, 9, 10)">
-			<PatienceTugs>
-				<PatienceTug moochLevel="0" TugType="Heavy" />
-			</PatienceTugs>
-			<Keepers>
 				<Keeper name="Namitaro" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="860.3687, 22.24, 166.0745" Heading="12,618376" Sit="True"/>
+				<FishSpot XYZ="525.553, 14.0207, 134.7129" Heading="4,492749" Sit="True"/>
 			</FishSpots>
 		</ExFish>
 	</If>

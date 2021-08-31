@@ -15,7 +15,10 @@
 		<If condition="not IsOnSubMap(112)">
 			<LisbethTravel ZoneId="152" XYZ="-215.3548, 54.82919, -190.1448"/>
 		</If>
-		<ExFish Bait="Butterworm" ShuffleFishSpots="True" Condition="not HasAtLeast(7907,1) and IsTimeBetween(21,23)">
+		<ExFish Bait="Butterworm" ShuffleFishSpots="True" Mooch="0" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(7907,1) and IsTimeBetween(21,23)">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Heavy" />
+			</PatienceTugs>
 			<Keepers>
 				<Keeper name="The Assassin" />
 			</Keepers>
