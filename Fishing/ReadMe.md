@@ -40,12 +40,12 @@ I'm in the process of changing over all the movement in this profile to be handl
 - [x] The Lavender Beds
 
 ### Thanalan
-- [ ] Western Thanalan
-- [ ] Central Thanalan
-- [ ] Eastern Thanalan
-- [ ] Southern Thanalan
-- [ ] Northern Thanalan
-- [ ] The Goblet
+- [x] Western Thanalan
+- [x] Central Thanalan
+- [x] Eastern Thanalan
+- [x] Southern Thanalan
+- [x] Northern Thanalan
+- [x] The Goblet
 
 ### Coerthas
 - [ ] Coerthas Central Highlands
