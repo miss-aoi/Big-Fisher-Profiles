@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: The Wardens Wand (7918)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>The Wardens Wand</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7918,1)">
+		<If condition="not HasAtLeast(2599,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(308)">
+			<LisbethTravel ZoneId="145" XYZ="244.7354, -3.677135, 52.97052"/>
+		</If>
+		<ExFish Bait="Honey Worm" ShuffleFishSpots="True" Condition="not HasAtLeast(7918,1) and IsTimeBetween(17,20) and SkywatcherPlugin.IsWeatherInZone(145, 1)">
+			<Keepers>
+				<Keeper name="The Warden's Wand" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="250.9285, -3.368649, 50.39566" Heading="1,908023" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

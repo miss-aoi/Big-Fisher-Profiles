@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Hannibal (7943)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Hannibal</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7943,1)">		
+		<If condition="not HasAtLeast(2626,50)">
+			<Lisbeth Json="[{'Item': 2626,'Group': 0,'Amount': 198,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
+		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<If condition="not IsOnSubMap(258)">
+			<LisbethTravel ZoneId="147" XYZ="103.2273, 15.00176, 217.3866"/>
+		</If>
+		<RunCode name="Food"/>
+		<ExFish Bait="Spinnerbait" ShuffleFishSpots="True" Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(7943,1) and IsTimeBetween(22,24) or IsTimeBetween(0,4)and SkywatcherPlugin.IsWeatherInZone(147, 4)">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Heavy" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Hannibal" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="118.4101, 12.03923, 223.4624" Heading="1,274583" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  	<CodeChunk Name="Food">
+      <![CDATA[
+            
+                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
+            
+        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
+        item.UseItem();
+        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
+            
+       ]]>
+    </CodeChunk>
+  </CodeChunks>
+</Profile>

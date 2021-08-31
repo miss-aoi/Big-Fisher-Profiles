@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Fingers (7906)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Fingers</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7906,1)">		
+		<If condition="not HasAtLeast(2606,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2606,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(370)">
+			<LisbethTravel ZoneId="140" XYZ="-328.2706, 13.9835, -100.0699"/>
+		</If>
+		<ExFish Bait="Northern Krill" ShuffleFishSpots="True" Mooch="0" Patience="Patience" Chum="True" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(7906,1) and IsTimeBetween(17,18)">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Heavy" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Fingers" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-324.3253, 13.9835, -98.6676" Heading="4,597434" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

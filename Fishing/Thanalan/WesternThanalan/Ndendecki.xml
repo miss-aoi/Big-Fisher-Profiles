@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Ndendecki (8765)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Ndendecki</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(8765,1)">		
+		<If condition="not HasAtLeast(2599,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(275)">
+			<LisbethTravel ZoneId="140" XYZ="-220.5043, 15.77091, -736.3502"/>
+		</If>
+		<RunCode name="Food"/>
+		<ExFish Bait="Honey Worm" ShuffleFishSpots="True" Mooch="3" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8765,1) and IsTimeBetween(18,24) or IsTimeBetween(0,5) and SkywatcherPlugin.IsWeatherInZone(140, 4)">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="0" TugType="Medium" />
+				<PatienceTug moochLevel="1" TugType="Heavy" />
+				<PatienceTug moochLevel="2" TugType="Heavy" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Ndendecki" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-192.8568, 14.63993, -737.7994" Heading="1,621659" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  	<CodeChunk Name="Food">
+      <![CDATA[
+            
+                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
+            
+        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
+        item.UseItem();
+        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
+            
+       ]]>
+    </CodeChunk>
+  </CodeChunks>
+</Profile>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Pirates Bane (8764)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Pirates Bane</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(8764,1)">		
+		<If condition="not HasAtLeast(2585,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2585,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(277)">
+			<LisbethTravel ZoneId="140" XYZ="-574.1956, 53.30872, -748.9795"/>
+		</If>
+		<RunCode name="Food"/>
+		<ExFish Bait="Lugworm" ShuffleFishSpots="True" Mooch="2" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8764,1) and not Core.Player.HasAura(568)">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Wahoo" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-573.9686, 53.33493, -734.5476" Heading="14,887065" Sit="True"/>
+			</FishSpots>
+		</ExFish>
+				<ExFish Bait="Lugworm" ShuffleFishSpots="True" Mooch="3" Patience="Patience2" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8764,1) and Core.Player.HasAura(568)">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+				<PatienceTug moochLevel="1" TugType="Heavy" />
+				<PatienceTug moochLevel="2" TugType="Heavy" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Pirate's Bane" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-573.9686, 53.33493, -734.5476" Heading="14,887065" Sit="True"/>
+			</FishSpots>
+		</ExFish>
+		<Desynth ItemIds="4904" DesynthDelay="6000" DesynthTimeout="10"/>
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  	<CodeChunk Name="Food">
+      <![CDATA[
+            
+                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
+            
+        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
+        item.UseItem();
+        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
+            
+       ]]>
+    </CodeChunk>
+  </CodeChunks>
+</Profile>

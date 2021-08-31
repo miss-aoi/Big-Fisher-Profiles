@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Magic Carpet (7931)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Magic Carpet</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7931,1)">		
+		<If condition="not HasAtLeast(2600,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2600,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(257)">
+			<LisbethTravel ZoneId="146" XYZ="-429.0695, -0.4089584, 736.3172"/>
+		</If>
+		<RunCode name="Food"/>
+		<ExFish Bait="Sand Leech" ShuffleFishSpots="True" Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(7931,1) and IsTimeBetween(9,16) and SkywatcherPlugin.IsWeatherInZone(146, 14)">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Medium" />
+				<PatienceTug moochLevel="1" TugType="Heavy" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Magic Carpet" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-447.4945, -1.033843, 708.514" Heading="4,681952" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  	<CodeChunk Name="Food">
+      <![CDATA[
+            
+                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
+            
+        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
+        item.UseItem();
+        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
+            
+       ]]>
+    </CodeChunk>
+  </CodeChunks>
+</Profile>

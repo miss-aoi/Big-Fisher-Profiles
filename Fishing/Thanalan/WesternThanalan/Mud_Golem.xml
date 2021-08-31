@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Mud Golem (7706)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Mud Golem</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7706,1)">		
+		<If condition="not HasAtLeast(2594,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(245)">
+			<LisbethTravel ZoneId="140" XYZ="-196.8338, 15.78721, -273.8176"/>
+		</If>
+		<ExFish Bait="Butterworm" ShuffleFishSpots="True" Condition="not HasAtLeast(7706,1) and IsTimeBetween(21,24) or IsTimeBetween(0,3)">
+			<Keepers>
+				<Keeper name="Mud Golem" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-198.4468, 14.51385, -287.4224" Heading="3,295548" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

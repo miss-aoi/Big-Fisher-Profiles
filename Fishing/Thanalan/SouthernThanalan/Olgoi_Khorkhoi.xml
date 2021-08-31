@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Olgoi Khorkhoi (7930)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Olgoi Khorkhoi</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7930,1)">		
+		<If condition="not HasAtLeast(2600,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2600,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(257)">
+			<LisbethTravel ZoneId="146" XYZ="245.9949, 4.166918, 800.4512"/>
+		</If>
+		<RunCode name="Food"/>
+		<ExFish Bait="Sand Leech" ShuffleFishSpots="True" Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(7930,1) and SkywatcherPlugin.IsWeatherInZone(146, 14)">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Medium" />
+				<PatienceTug moochLevel="1" TugType="Heavy" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Olgoi-Khorkhoi" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="247.1949, 3.310647, 785.3004" Heading="12,171055" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  	<CodeChunk Name="Food">
+      <![CDATA[
+            
+                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
+            
+        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
+        item.UseItem();
+        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
+            
+       ]]>
+    </CodeChunk>
+  </CodeChunks>
+</Profile>

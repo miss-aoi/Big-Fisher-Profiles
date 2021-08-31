@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Old Hollow Eyes (7911)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Old Hollow Eyes</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7911,1)">		
+		<If condition="not HasAtLeast(2594,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(254)">
+			<LisbethTravel ZoneId="146" XYZ="34.29946, 3.396969, -343.1042"/>
+		</If>
+		<RunCode name="Food"/>
+		<ExFish Bait="Butterworm" ShuffleFishSpots="True" Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(7911,1) and SkywatcherPlugin.IsWeatherInZone(146, 4)">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Heavy" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Old Hollow Eyes" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="37.24493, 2.677485, -329.0752" Heading="10,550607" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  	<CodeChunk Name="Food">
+      <![CDATA[
+            
+                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
+            
+        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
+        item.UseItem();
+        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
+            
+       ]]>
+    </CodeChunk>
+  </CodeChunks>
+</Profile>
