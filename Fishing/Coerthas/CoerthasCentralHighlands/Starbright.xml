@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Starbright (7945)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Starbright</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7945,1)">		
+		<If condition="not HasAtLeast(2597,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2597,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(383)">
+			<LisbethTravel ZoneId="155" XYZ="-299.6851, 244.8674, 12.87033"/>
+		</If>
+		<RunCode name="Food"/>
+		<ExFish Bait="Syrphid Basket" ShuffleFishSpots="True" Mooch="1" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(7945,1) and IsTimeBetween(21,24) or IsTimeBetween(0,4) and SkywatcherPlugin.IsWeatherInZone(155, 1, 2)">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Heavy" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Starbright" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-292.5592, 242.4644, 17.86998" Heading="0,9620361" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  	<CodeChunk Name="Food">
+      <![CDATA[
+            
+                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
+            
+        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
+        item.UseItem();
+        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
+            
+       ]]>
+    </CodeChunk>
+  </CodeChunks>
+</Profile>

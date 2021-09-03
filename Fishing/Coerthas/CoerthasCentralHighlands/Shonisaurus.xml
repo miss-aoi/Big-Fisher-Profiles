@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Shonisaurus (8772)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Shonisaurus</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(8772,1)">		
+		<If condition="not HasAtLeast(2605,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2605,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(393)">
+			<LisbethTravel ZoneId="155" XYZ="580.0012, 302.5874, -163.7016"/>
+		</If>
+		<RunCode name="Food"/>
+		<ExFish Bait="Hoverworm" ShuffleFishSpots="True" Mooch="3" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8772,1) and SkywatcherPlugin.IsWeatherInZone(155, 16) and SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(-8), 1, 2)">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Medium" />
+				<PatienceTug moochLevel="1" TugType="Heavy" />
+				<PatienceTug moochLevel="2" TugType="Heavy" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Shonisaurus" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="587.8789, 302.0544, -168.443" Heading="8,058156" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  	<CodeChunk Name="Food">
+      <![CDATA[
+            
+                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
+            
+        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
+        item.UseItem();
+        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
+            
+       ]]>
+    </CodeChunk>
+  </CodeChunks>
+</Profile>

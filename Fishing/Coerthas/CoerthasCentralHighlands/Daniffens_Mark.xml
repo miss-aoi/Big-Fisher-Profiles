@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Daniffens Mark (7932)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Daniffens Mark</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7932,1)">
+		<If condition="not HasAtLeast(2623,50)">
+			<Lisbeth Json="[{'Item': 2623,'Group': 0,'Amount': 198,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
+		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<If condition="not IsOnSubMap(380)">
+			<LisbethTravel ZoneId="155" XYZ="-36.35629, 205.5014, 439.4049"/>
+		</If>
+		<ExFish Bait="Wildfowl Fly" ShuffleFishSpots="True" Condition="not HasAtLeast(7932,1) and SkywatcherPlugin.IsWeatherInZone(155, 16)">
+			<Keepers>
+				<Keeper name="Daniffen's Mark" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-47.89296, 204.1906, 438.8118" Heading="4,661098" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

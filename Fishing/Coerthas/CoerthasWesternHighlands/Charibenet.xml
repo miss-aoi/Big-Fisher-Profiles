@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Charibenet (17592)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Charibenet</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(17592,1)">		
+		<If condition="not HasAtLeast(12705,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12705,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(2201)">
+			<LisbethTravel ZoneId="397" XYZ="692.1117, 132.263, -797.5139"/>
+		</If>
+		<RunCode name="Food"/>
+		<ExFish Bait="Purse Web Spider" ShuffleFishSpots="True" Mooch="0" IdenticalCast="True" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(17592,1) and not Core.Player.HasAura(568) and IsTimeBetween(0,3) and SkywatcherPlugin.IsWeatherInZone(397, 16)">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Ice Faerie" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="702.2099, 130.5252, -810.4643" Heading="8,382218" Sit="True"/>
+			</FishSpots>
+		</ExFish>
+				<ExFish Bait="Purse Web Spider" ShuffleFishSpots="True" Chum="True" Mooch="1" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(17592,1) and Core.Player.HasAura(568) and IsTimeBetween(0,3) and SkywatcherPlugin.IsWeatherInZone(397, 16)">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Charibenet" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="702.2099, 130.5252, -810.4643" Heading="8,382218" Sit="True"/>
+			</FishSpots>
+		</ExFish>
+		<Desynth ItemIds="12715" DesynthDelay="6000" DesynthTimeout="10"/>
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  	<CodeChunk Name="Food">
+      <![CDATA[
+            
+                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
+            
+        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
+        item.UseItem();
+        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
+            
+       ]]>
+    </CodeChunk>
+  </CodeChunks>
+</Profile>

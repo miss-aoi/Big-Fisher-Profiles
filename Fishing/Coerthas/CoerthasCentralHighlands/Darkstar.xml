@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Darkstar (8769)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Darkstar</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(8769,1)">		
+		<If condition="not HasAtLeast(12704,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12704,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not HasAtLeast(2610,50)">
+			<Lisbeth Json="[{'Item': 2610,'Group': 0,'Amount': 198,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
+		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>	
+		<If condition="not IsOnSubMap(381)">
+			<LisbethTravel ZoneId="155" XYZ="490.8867, 348.5036, -687.0253"/>
+		</If>
+		<RunCode name="Food"/>
+		<ExFish ShuffleFishSpots="True" Mooch="1" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8769,1) and IsTimeBetween(19,24) or IsTimeBetween(0,4) and SkywatcherPlugin.IsWeatherInZone(155, 15, 16)">
+        <Baits>
+			<Bait name="Chocobo Fly" condition="not Core.Player.HasAura(568)"/>
+			<Bait name="Stonefly Nymph" condition="Core.Player.HasAura(568)"/>
+		</Baits>	
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Heavy" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Darkstar" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="503.3738, 347.4317, -716.7675" Heading="3,568141" Sit="True"/>
+			</FishSpots>
+		</ExFish>
+		<Desynth ItemIds="5544" DesynthDelay="6000" DesynthTimeout="10"/>
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  	<CodeChunk Name="Food">
+      <![CDATA[
+            
+                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
+            
+        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
+        item.UseItem();
+        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
+            
+       ]]>
+    </CodeChunk>
+  </CodeChunks>
+</Profile>

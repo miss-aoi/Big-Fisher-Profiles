@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Blue Corpse (8770)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Blue Corpse</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(8770,1)">		
+		<If condition="not HasAtLeast(2607,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2607,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(383)">
+			<LisbethTravel ZoneId="155" XYZ="-847.422, 223.9743, 9.084878"/>
+		</If>
+		<ExFish Bait="Caddisfly Larva" ShuffleFishSpots="True" Condition="not HasAtLeast(8770,1) and SkywatcherPlugin.IsWeatherInZone(155, 1, 2) and SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(-8), 15, 16)">
+			<Keepers>
+				<Keeper name="Blue Corpse" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-851.769, 223.9743, 6.526478" Heading="4,18081" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  	<CodeChunk Name="Food">
+      <![CDATA[
+            
+                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
+            
+        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
+        item.UseItem();
+        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
+            
+       ]]>
+    </CodeChunk>
+  </CodeChunks>
+</Profile>

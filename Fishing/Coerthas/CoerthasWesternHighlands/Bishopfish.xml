@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Bishopfish (17577)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Bishopfish</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(17577,1)">
+		<If condition="not HasAtLeast(12711,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':198,'Enabled':true,'Type':'Exchange'}]"/>
+		</If>
+	<If Condition="not ClassName == ClassJobType.Fisher">
+		<ChangeClass Job="Fisher" />
+    </If>
+		<If condition="not IsOnSubMap(2201)">
+			<LisbethTravel ZoneId="397" XYZ="692.1117, 132.263, -797.5139"/>
+		</If>
+		<ExFish Bait="Brute Leech" ShuffleFishSpots="True" Condition="not HasAtLeast(17577,1) and IsTimeBetween(10,14) and SkywatcherPlugin.IsWeatherInZone(397, 1)">
+			<Keepers>
+				<Keeper name="Bishopfish" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="702.2099, 130.5252, -810.4643" Heading="8,382218" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

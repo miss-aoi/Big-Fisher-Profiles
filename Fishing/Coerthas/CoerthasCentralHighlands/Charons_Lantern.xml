@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Charons Lantern (7933)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Charons Lantern</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(7933,1)">		
+		<If condition="not HasAtLeast(2603,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2603,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(398)">
+			<LisbethTravel ZoneId="155" XYZ="-451.1668, 285.7495, 108.6161"/>
+		</If>
+		<ExFish Bait="Glowworm" ShuffleFishSpots="True" Condition="not HasAtLeast(7933,1) and IsTimeBetween(0,4)">
+			<Keepers>
+				<Keeper name="Charon's Lantern" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-446.0848, 282.8987, 100.435" Heading="12,585738" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

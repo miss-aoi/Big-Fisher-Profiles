@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: La Reale (15628)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>La Reale</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(15628,1)">		
+		<If condition="not HasAtLeast(12711,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':198,'Enabled':true,'Type':'Exchange'}]"/>
+		</If>
+	<If Condition="not ClassName == ClassJobType.Fisher">
+		<ChangeClass Job="Fisher" />
+    </If>
+		<If condition="not IsOnSubMap(2202)">
+			<LisbethTravel ZoneId="397" XYZ="-421.0156, 90.98969, -356.9834"/>
+		</If>
+		<ExFish Bait="Brute Leech" ShuffleFishSpots="True" Condition="not HasAtLeast(15628,1)">
+			<Keepers>
+				<Keeper name="La Reale" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-422.0753, 90.27858, -349.8272" Heading="14,152234" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>
