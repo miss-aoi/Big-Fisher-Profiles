@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Void Bass (8759)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Void Bass</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(8759,1)">		
+		<If condition="not HasAtLeast(2603,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2603,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(414)">
+			<LisbethTravel ZoneId="156" XYZ="-126.2753, 47.11922, -187.6791"/>
+		</If>
+		<ExFish Bait="Glowworm" ShuffleFishSpots="True" Condition="not HasAtLeast(8759,1) and SkywatcherPlugin.IsWeatherInZone(156, 17) and SkywatcherPlugin.PredictWeatherInZone(156, TimeSpan.FromHours(-8), 1, 2)">
+			<Keepers>
+				<Keeper name="Void Bass" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-118.9025, 45.80135, -185.7149" Heading="0,254445" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

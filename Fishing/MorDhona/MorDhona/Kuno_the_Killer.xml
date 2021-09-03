@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Kuno the Killer (8763)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Kuno the Killer</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(8763,1)">		
+		<If condition="not HasAtLeast(2599,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(410)">
+			<LisbethTravel ZoneId="156" XYZ="454.4445, -4.775482, -750.3284"/>
+		</If>
+		<RunCode name="Food"/>
+		<ExFish Bait="Honey Worm" ShuffleFishSpots="True" Mooch="3" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8763,1) and not Core.Player.HasAura(568) and IsTimeBetween(8,18) and SkywatcherPlugin.IsWeatherInZone(156, 17)">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Light" />
+				<PatienceTug moochLevel="2" TugType="Heavy" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Canavan" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="446.4716, -5.494645, -749.6501" Heading="5,867408" Sit="True"/>
+				<FishSpot XYZ="462.1318, -4.958921, -751.8555" Heading="8,039827" Sit="True"/>
+			</FishSpots>
+		</ExFish>
+				<ExFish Bait="Honey Worm" ShuffleFishSpots="True" Mooch="3" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8763,1) and Core.Player.HasAura(568) and IsTimeBetween(8,18) and SkywatcherPlugin.IsWeatherInZone(156, 17)">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+				<PatienceTug moochLevel="2" TugType="Heavy" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Kuno the Killer" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="446.4716, -5.494645, -749.6501" Heading="5,867408" Sit="True"/>
+				<FishSpot XYZ="462.1318, -4.958921, -751.8555" Heading="8,039827" Sit="True"/>
+			</FishSpots>
+		</ExFish>
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  	<CodeChunk Name="Food">
+      <![CDATA[
+            
+                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
+            
+        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
+        item.UseItem();
+        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
+            
+       ]]>
+    </CodeChunk>
+  </CodeChunks>
+</Profile>

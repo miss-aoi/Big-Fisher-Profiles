@@ -48,11 +48,11 @@ I'm in the process of changing over all the movement in this profile to be handl
 - [x] The Goblet
 
 ### Coerthas
-- [ ] Coerthas Central Highlands
-- [ ] Coerthas Western Highlands
+- [x] Coerthas Central Highlands
+- [x] Coerthas Western Highlands
 
 ### Mor Dhona
-- [ ] Mor Dhona
+- [x] Mor Dhona
 
 ### Abalathia's Spine
 - [ ] The Sea of Clouds

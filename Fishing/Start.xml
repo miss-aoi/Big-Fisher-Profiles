@@ -78,7 +78,7 @@
 <!ENTITY Dark_Ambusher "0">
 <!ENTITY Sylphsbane "0">
 <!ENTITY Moldva "0">
-<!ENTITY Magicked_Mushroom "1">
+<!ENTITY Magicked_Mushroom "0">
 <!ENTITY The_Assassin "0">
 <!-- South Shroud -->
 <!ENTITY Vip_Viper "0">
@@ -94,7 +94,7 @@
 <!ENTITY Shadowstreak "0">
 <!ENTITY Cornelia "0">
 <!-- The Lavender Beds -->
-<!ENTITY Sweetnewt "1">
+<!ENTITY Sweetnewt "0">
 <!-- Thanalan -->
 <!-- Western Thanalan -->
 <!ENTITY Dirty_Herry "0">
@@ -113,20 +113,49 @@
 <!-- Eastern Thanalan -->
 <!ENTITY Marrow_Sucker "0">
 <!ENTITY Mud_Pilgrim "0">
-<!ENTITY The_Wardens_Wand "1">
+<!ENTITY The_Wardens_Wand "0">
 <!ENTITY The_Thousand_year_Itch "0">
 <!-- Southern Thanalan -->
 <!ENTITY Old_Hollow_Eyes "0">
-<!ENTITY Discobolus "1">
+<!ENTITY Discobolus "0">
 <!ENTITY Iron_Noose "0">
-<!ENTITY Helicoprion "1">
-<!ENTITY Magic_Carpet "1">
+<!ENTITY Helicoprion "0">
+<!ENTITY Magic_Carpet "0">
 <!ENTITY Olgoi_Khorkhoi "0">
 <!-- Northern Thanalan -->
 <!ENTITY Wootz_Knifefish_Zenith "1">
 <!ENTITY Hannibal "0">
 <!-- The Goblet -->
 <!ENTITY Spearnose "0">
+<!-- Coerthas -->
+<!-- Coerthas Central Highlands -->
+<!ENTITY Daniffens_Mark "0">
+<!ENTITY Shonisaurus "0">
+<!ENTITY Starbright "0">
+<!ENTITY Darkstar "0">
+<!ENTITY Dawn_Maiden "0">
+<!ENTITY Charons_Lantern "0">
+<!ENTITY The_Matriarch "0">
+<!ENTITY Blue_Corpse "0">
+<!ENTITY Anomalocaris "0">
+<!-- Coerthas Western Highlands -->
+<!ENTITY Fat_Purse "0">
+<!ENTITY Hailfinder "0">
+<!ENTITY Flarefish "0">
+<!ENTITY Bishopfish "0">
+<!ENTITY Charibenet "1">
+<!ENTITY The_Impaler "0">
+<!ENTITY Captain_Nemo "0">
+<!ENTITY La_Reale "0">
+<!ENTITY Merciless "0">
+<!-- Mor Dhona -->
+<!-- Mor Dhona -->
+<!ENTITY Aetherlouse "0">
+<!ENTITY Void_Bass "0">
+<!ENTITY Ninja_Betta "0">
+<!ENTITY Ignus_Horn "0">
+<!ENTITY Blood_Red_Bonytongue "1">
+<!ENTITY Kuno_the_Killer "0">
 ]> 
 <!-- 		
 
@@ -295,13 +324,13 @@
 	</If>
 
 	<!-- Load Shark_Tuna -->
-	<If Condition="&Shark_Tuna; == 1 and not HasAtLeast(7915,1) and IsTimeBetween(19,21) and SkywatcherPlugin.IsWeatherInZone(137, 1, 2)"> <!-- Zeit und Wetter und Mooch 1 Ausrufezeichen -->
+	<If Condition="&Shark_Tuna; == 1 and not HasAtLeast(7915,1) and IsTimeBetween(19,21) and SkywatcherPlugin.IsWeatherInZone(137, 1, 2)">
 		<Log Message="Start Fishing: Shark Tuna..." />
 		<LLoadProfile Path="LaNoscea/EasternLaNoscea/Shark_Tuna.xml"/>
 	</If>
 
 	<!-- Load Bombardfish -->
-	<If Condition="&Bombardfish; == 1 and IsTimeBetween(9,15) and SkywatcherPlugin.IsWeatherInZone(137, 1) and not HasAtLeast(7924,1)"> <!-- Zeit und Wetter -->
+	<If Condition="&Bombardfish; == 1 and IsTimeBetween(9,15) and SkywatcherPlugin.IsWeatherInZone(137, 1) and not HasAtLeast(7924,1)">
 		<Log Message="Start Fishing: Bombardfish..." />
 		<LLoadProfile Path="LaNoscea/EasternLaNoscea/Bombardfish.xml"/>
 	</If>
@@ -868,6 +897,168 @@
 	<If Condition="&Spearnose; == 1 and not HasAtLeast(7919,1) and IsTimeBetween(21,24) and SkywatcherPlugin.IsWeatherInZone(341, 3, 4)">
 		<Log Message="Start Fishing: Spearnose..." />
 		<LLoadProfile Path="Thanalan/TheGoblet/Spearnose.xml"/>
+	</If>
+
+	<!-- Load Daniffens_Mark -->
+	<If Condition="&Daniffens_Mark; == 1 and not HasAtLeast(7932,1) and SkywatcherPlugin.IsWeatherInZone(155, 16)">
+		<Log Message="Start Fishing: Daniffens Mark..." />
+		<LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Daniffens_Mark.xml"/>
+	</If>
+
+	<!-- Load Shonisaurus -->
+	<If Condition="&Shonisaurus; == 1 and not HasAtLeast(8772,1) and SkywatcherPlugin.IsWeatherInZone(155, 16) and SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(-8), 1, 2)">
+		<Log Message="Start Fishing: Shonisaurus..." />
+		<LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Shonisaurus.xml"/>
+	</If>
+
+	<!-- Load Starbright -->
+	<If Condition="&Starbright; == 1 and not HasAtLeast(7945,1) and IsTimeBetween(21,24) and SkywatcherPlugin.IsWeatherInZone(155, 1, 2)">
+		<Log Message="Start Fishing: Starbright..." />
+		<LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Starbright.xml"/>
+	</If>
+
+	<!-- Load Starbright -->
+	<If Condition="&Starbright; == 1 and not HasAtLeast(7945,1) and IsTimeBetween(0,4) and SkywatcherPlugin.IsWeatherInZone(155, 1, 2)">
+		<Log Message="Start Fishing: Starbright..." />
+		<LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Starbright.xml"/>
+	</If>
+
+	<!-- Load Darkstar -->
+	<If Condition="&Darkstar; == 1 and not HasAtLeast(8769,1) and IsTimeBetween(19,24) and SkywatcherPlugin.IsWeatherInZone(155, 15, 16)">
+		<Log Message="Start Fishing: Darkstar..." />
+		<LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Darkstar.xml"/>
+	</If>
+
+	<!-- Load Darkstar -->
+	<If Condition="&Darkstar; == 1 and not HasAtLeast(8769,1) and IsTimeBetween(0,4) and SkywatcherPlugin.IsWeatherInZone(155, 15, 16)">
+		<Log Message="Start Fishing: Darkstar..." />
+		<LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Darkstar.xml"/>
+	</If>
+
+	<!-- Load Dawn_Maiden -->
+	<If Condition="&Dawn_Maiden; == 1 and not HasAtLeast(7944,1) and IsTimeBetween(5,7) and SkywatcherPlugin.IsWeatherInZone(155, 1, 2)">
+		<Log Message="Start Fishing: Dawn Maiden..." />
+		<LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Dawn_Maiden.xml"/>
+	</If>
+
+	<!-- Load Charons_Lantern -->
+	<If Condition="&Charons_Lantern; == 1 and not HasAtLeast(7933,1) and IsTimeBetween(0,4)">
+		<Log Message="Start Fishing: Charons Lantern..." />
+		<LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Charons_Lantern.xml"/>
+	</If>
+
+	<!-- Load The_Matriarch -->
+	<If Condition="&The_Matriarch; == 1 and not HasAtLeast(7946,1)">
+		<Log Message="Start Fishing: The Matriarch..." />
+		<LLoadProfile Path="Coerthas/CoerthasCentralHighlands/The_Matriarch.xml"/>
+	</If>
+
+	<!-- Load Blue_Corpse -->
+	<If Condition="&Blue_Corpse; == 1 and not HasAtLeast(8770,1) and SkywatcherPlugin.IsWeatherInZone(155, 1, 2) and SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(-8), 15, 16)">
+		<Log Message="Start Fishing: Blue Corpse..." />
+		<LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Blue_Corpse.xml"/>
+	</If>
+
+	<!-- Load Anomalocaris -->
+	<If Condition="&Anomalocaris; == 1 and not HasAtLeast(7949,1) and IsTimeBetween(10,15) and SkywatcherPlugin.IsWeatherInZone(155, 1, 2)">
+		<Log Message="Start Fishing: Anomalocaris..." />
+		<LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Anomalocaris.xml"/>
+	</If>
+
+	<!-- Load Fat_Purse -->
+	<If Condition="&Fat_Purse; == 1 and not HasAtLeast(15626,1)">
+		<Log Message="Start Fishing: Fat Purse..." />
+		<LLoadProfile Path="Coerthas/CoerthasWesternHighlands/Fat_Purse.xml"/>
+	</If>
+
+	<!-- Load Hailfinder -->
+	<If Condition="&Hailfinder; == 1 and not HasAtLeast(16745,1) and SkywatcherPlugin.IsWeatherInZone(397, 16) and SkywatcherPlugin.PredictWeatherInZone(397, TimeSpan.FromHours(-8), 15, 16)">
+		<Log Message="Start Fishing: Hailfinder..." />
+		<LLoadProfile Path="Coerthas/CoerthasWesternHighlands/Hailfinder.xml"/>
+	</If>
+
+	<!-- Load Flarefish -->
+	<If Condition="&Flarefish; == 1 and not HasAtLeast(16746,1) and IsTimeBetween(10,16) and SkywatcherPlugin.IsWeatherInZone(397, 16)">
+		<Log Message="Start Fishing: Flarefish..." />
+		<LLoadProfile Path="Coerthas/CoerthasWesternHighlands/Flarefish.xml"/>
+	</If>
+
+	<!-- Load Bishopfish -->
+	<If Condition="&Bishopfish; == 1 and not HasAtLeast(17577,1) and IsTimeBetween(10,14) and SkywatcherPlugin.IsWeatherInZone(397, 1)">
+		<Log Message="Start Fishing: Bishopfish..." />
+		<LLoadProfile Path="Coerthas/CoerthasWesternHighlands/Bishopfish.xml"/>
+	</If>
+
+	<!-- Load Charibenet -->
+	<If Condition="&Charibenet; == 1 and not HasAtLeast(17592,1) and IsTimeBetween(0,3) and SkywatcherPlugin.IsWeatherInZone(397, 16)">
+		<Log Message="Start Fishing: Charibenet..." />
+		<LLoadProfile Path="Coerthas/CoerthasWesternHighlands/Charibenet.xml"/>
+	</If>
+
+	<!-- Load The_Impaler -->
+	<If Condition="&The_Impaler; == 1 and not HasAtLeast(15627,1)">
+		<Log Message="Start Fishing: The Impaler..." />
+		<LLoadProfile Path="Coerthas/CoerthasWesternHighlands/The_Impaler.xml"/>
+	</If>
+
+	<!-- Load Captain_Nemo -->
+	<If Condition="&Captain_Nemo; == 1 and not HasAtLeast(17578,1) and SkywatcherPlugin.IsWeatherInZone(397, 16) and SkywatcherPlugin.PredictWeatherInZone(397, TimeSpan.FromHours(-8), 15)">
+		<Log Message="Start Fishing: Captain Nemo..." />
+		<LLoadProfile Path="Coerthas/CoerthasWesternHighlands/Captain_Nemo.xml"/>
+	</If>
+
+	<!-- Load La_Reale -->
+	<If Condition="&La_Reale; == 1 and not HasAtLeast(15628,1)">
+		<Log Message="Start Fishing: La Reale..." />
+		<LLoadProfile Path="Coerthas/CoerthasWesternHighlands/La_Reale.xml"/>
+	</If>
+
+	<!-- Load Merciless -->
+	<If Condition="&Merciless; == 1 and not HasAtLeast(16756,1) and SkywatcherPlugin.IsWeatherInZone(397, 16) and SkywatcherPlugin.PredictWeatherInZone(397, TimeSpan.FromHours(-8), 15, 16)">
+		<Log Message="Start Fishing: Merciless..." />
+		<LLoadProfile Path="Coerthas/CoerthasWesternHighlands/Merciless.xml"/>
+	</If>
+
+	<!-- Load Aetherlouse -->
+	<If Condition="&Aetherlouse; == 1 and not HasAtLeast(7951,1) and IsTimeBetween(3,13) and SkywatcherPlugin.IsWeatherInZone(156, 17)">
+		<Log Message="Start Fishing: Aetherlouse..." />
+		<LLoadProfile Path="MorDhona/MorDhona/Aetherlouse.xml"/>
+	</If>
+
+	<!-- Load Void_Bass -->
+	<If Condition="&Void_Bass; == 1 and not HasAtLeast(8759,1) and SkywatcherPlugin.IsWeatherInZone(156, 17) and SkywatcherPlugin.PredictWeatherInZone(156, TimeSpan.FromHours(-8), 1, 2)">
+		<Log Message="Start Fishing: Void Bass..." />
+		<LLoadProfile Path="MorDhona/MorDhona/Void_Bass.xml"/>
+	</If>
+
+	<!-- Load Ninja_Betta -->
+	<If Condition="&Ninja_Betta; == 1 and not HasAtLeast(8761,1) and IsTimeBetween(18,24) and SkywatcherPlugin.IsWeatherInZone(156, 17)">
+		<Log Message="Start Fishing: Ninja Betta..." />
+		<LLoadProfile Path="MorDhona/MorDhona/Ninja_Betta.xml"/>
+	</If>
+
+	<!-- Load Ninja_Betta -->
+	<If Condition="&Ninja_Betta; == 1 and not HasAtLeast(8761,1) and IsTimeBetween(0,9) and SkywatcherPlugin.IsWeatherInZone(156, 17)">
+		<Log Message="Start Fishing: Ninja Betta..." />
+		<LLoadProfile Path="MorDhona/MorDhona/Ninja_Betta.xml"/>
+	</If>
+
+	<!-- Load Ignus_Horn -->
+	<If Condition="&Ignus_Horn; == 1 and not HasAtLeast(8758,1) and SkywatcherPlugin.IsWeatherInZone(156, 1, 2) and SkywatcherPlugin.PredictWeatherInZone(156, TimeSpan.FromHours(-8), 17)">
+		<Log Message="Start Fishing: Ignus Horn..." />
+		<LLoadProfile Path="MorDhona/MorDhona/Ignus_Horn.xml"/>
+	</If>
+
+	<!-- Load Blood_Red_Bonytongue -->
+	<If Condition="&Blood_Red_Bonytongue; == 1 and not HasAtLeast(8776,1) and IsTimeBetween(4,12) and SkywatcherPlugin.IsWeatherInZone(156, 4) and SkywatcherPlugin.PredictWeatherInZone(156, TimeSpan.FromHours(-8), 1, 2)">
+		<Log Message="Start Fishing: Blood Red Bonytongue..." />
+		<LLoadProfile Path="MorDhona/MorDhona/Blood_Red_Bonytongue.xml"/>
+	</If>
+
+	<!-- Load Kuno_the_Killer -->
+	<If Condition="&Kuno_the_Killer; == 1 and not HasAtLeast(8763,1) and IsTimeBetween(8,18) and SkywatcherPlugin.IsWeatherInZone(156, 17)">
+		<Log Message="Start Fishing: Kuno the Killer..." />
+		<LLoadProfile Path="MorDhona/MorDhona/Kuno_the_Killer.xml"/>
 	</If>
 	
 	<Log Message="Checking next fishspot..." />
