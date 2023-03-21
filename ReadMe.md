@@ -111,4 +111,4 @@ This profile set is still a work in progress, so use at your own risk and I'm no
 - [ ] The Rothlyt Sound
 
 ## Looking to Donate? ♡
-I love Lattes: [BuyMeCoffee](buymeacoffee.com/miss_aoi)
+I love Lattes: [BuyMeCoffee](https://buymeacoffee.com/miss_aoi)
