@@ -8,7 +8,8 @@
   <BehaviorDirectory></BehaviorDirectory>
   <Order>
   
-	<If condition="not HasAtLeast(7914,1)">		
+	<If condition="not HasAtLeast(7914,1)">
+		<Log Message="Start Fishing: The Grinner..." />
 		<If condition="not HasAtLeast(2597,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2597,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>

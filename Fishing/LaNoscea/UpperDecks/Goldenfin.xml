@@ -8,14 +8,17 @@
   <BehaviorDirectory></BehaviorDirectory>
   <Order>
   
-	<If condition="not HasAtLeast(7685,1)">		
+	<If condition="not HasAtLeast(7685,1)">
+		<Log Message="Start Fishing: Goldenfin..." />
 		<If condition="not HasAtLeast(2587,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2587,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
 		<If condition="not IsOnSubMap(715)">
 			<LisbethTravel ZoneId="128" XYZ="19.86234, 40, 76.17139"/>
 		</If>
-		<RunCode name="Food"/>
+		<if condition="HasAtLeast(30481,1)">
+			<RunCode name="Food"/>
+		</If>
 		<ExFish Bait="Pill Bug" ShuffleFishSpots="True" Condition="not HasAtLeast(7685,1) and IsTimeBetween(9,14)">
 			<Keepers>
 				<Keeper name="Goldenfin" />

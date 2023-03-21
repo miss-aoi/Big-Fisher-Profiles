@@ -9,13 +9,16 @@
   <Order>
   
 	<If condition="not HasAtLeast(8756,1)">		
+		<Log Message="Start Fishing: Endoceras..." />
 		<If condition="not HasAtLeast(2596,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2596,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
 		<If condition="not IsOnSubMap(228)">
 			<LisbethTravel ZoneId="138" XYZ="-464.1351, -38.0391, 737.9131"/>
 		</If>
-		<RunCode name="Food"/>
+		<if condition="HasAtLeast(30481,1)">
+			<RunCode name="Food"/>
+		</If>
 		<ExFish Bait="Spoon Worm" ShuffleFishSpots="True" Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8756,1) and IsTimeBetween(20,24) or IsTimeBetween(0,4)and SkywatcherPlugin.IsWeatherInZone(138, 3, 4, 5) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(-8), 1, 2)">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />

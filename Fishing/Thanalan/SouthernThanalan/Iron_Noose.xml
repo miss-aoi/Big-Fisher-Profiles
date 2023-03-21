@@ -9,6 +9,7 @@
   <Order>
   
 	<If condition="not HasAtLeast(7929,1)">
+		<Log Message="Start Fishing: Iron Noose..." />
 		<If condition="not HasAtLeast(2620,50)">
 			<Lisbeth Json="[{'Item': 2620,'Group': 0,'Amount': 198,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
 		</If>

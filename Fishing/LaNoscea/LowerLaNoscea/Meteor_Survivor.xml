@@ -8,13 +8,17 @@
   <BehaviorDirectory></BehaviorDirectory>
   <Order>
   
-	<If condition="not HasAtLeast(7903,1)">		
+	<If condition="not HasAtLeast(7903,1)">
+		<Log Message="Start Fishing: Meteor Survivor..." />
 		<If condition="not HasAtLeast(2591,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2591,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
 		<If condition="not IsOnSubMap(338)">
 			<LisbethTravel ZoneId="135" XYZ="-185.0453, -0.3133438, 727.9094"/>
 		</If>
+		<if condition="HasAtLeast(30481,1)">
+			<EatFood ItemId="30481" Name="Crab Cakes"/>
+		</if>
 		<ExFish Bait="Rat Tail" ShuffleFishSpots="True" Condition="not HasAtLeast(7903,1) and IsTimeBetween(3,5) and SkywatcherPlugin.IsWeatherInZone(135, 3, 4, 5)">
 			<Keepers>
 				<Keeper name="Meteor Survivor" />

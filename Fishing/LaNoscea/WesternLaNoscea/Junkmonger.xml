@@ -8,14 +8,17 @@
   <BehaviorDirectory></BehaviorDirectory>
   <Order>
   
-	<If condition="not HasAtLeast(7684,1)">		
+	<If condition="not HasAtLeast(7684,1)">
+		<Log Message="Start Fishing: Junkmonger..." />
 		<If condition="not HasAtLeast(2585,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2585,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
 		<If condition="not IsOnSubMap(223)">
 			<LisbethTravel ZoneId="138" XYZ="213.9494, -36.40361, 310.5599"/>
 		</If>
-		<RunCode name="Food"/>
+		<if condition="HasAtLeast(30481,1)">
+			<RunCode name="Food"/>
+		</If>
 		<ExFish Bait="Lugworm" ShuffleFishSpots="True" Mooch="3" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(7684,1) and IsTimeBetween(16,24) or IsTimeBetween(0,2)">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />

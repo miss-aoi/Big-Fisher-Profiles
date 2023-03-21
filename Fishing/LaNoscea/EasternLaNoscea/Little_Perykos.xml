@@ -8,7 +8,8 @@
   <BehaviorDirectory></BehaviorDirectory>
   <Order>
   
-	<If condition="not HasAtLeast(20143,1)">		
+	<If condition="not HasAtLeast(20143,1)">
+		<Log Message="Start Fishing: Little Perykos..." />
 		<If condition="not HasAtLeast(2585,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2585,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
@@ -16,7 +17,9 @@
 			<LisbethTravel ZoneId="137" XYZ="-11.19454, 70.50095, 4.945401"/>
 			<LisbethTravel ZoneId="137" XYZ="770.4676, 8.9, 221.7439"/>
 		</If>
-		<RunCode name="Food"/>
+		<if condition="HasAtLeast(30481,1)">
+			<RunCode name="Food"/>
+		</If>
 		<ExFish Bait="Lugworm" ShuffleFishSpots="True" Mooch="3" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(20143,1) and SkywatcherPlugin.IsWeatherInZone(137, 7, 8)">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />

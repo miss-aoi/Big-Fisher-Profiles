@@ -8,7 +8,8 @@
   <BehaviorDirectory></BehaviorDirectory>
   <Order>
   
-	<If condition="not HasAtLeast(7919,1)">		
+	<If condition="not HasAtLeast(7919,1)">
+    <Log Message="Start Fishing: Spearnose..." />
 		<If condition="not HasAtLeast(2607,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2607,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
@@ -17,7 +18,7 @@
 			<RunCode Name="TheGoblet"/>
 			<LisbethTravel ZoneId="341" XYZ="-10.33781, -24, 64.53981" Name="Dock" AllowedVariance="0.0"/>
 		</If>
-		<ExFish Bait="Caddisfly Larva" ShuffleFishSpots="True" Condition="not HasAtLeast(7919,1) and IsTimeBetween(21,24) and SkywatcherPlugin.IsWeatherInZone(341, 3, 4)">
+		<ExFish Bait="Caddisfly Larva" ShuffleFishSpots="True" Condition="not HasAtLeast(7919,1) and IsTimeBetween(21,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(341, 3, 4)">
 			<Keepers>
 				<Keeper name="Spearnose" />
 			</Keepers>
@@ -43,7 +44,7 @@
             
        ]]>
     </CodeChunk>	
-	<CodeChunk Name="TheGoblet"><![CDATA[ 
+	<CodeChunk Name="TheGoblet"><![CDATA[
             var unit = GameObjectManager.GetObjectByNPCId(9);
             unit.Target();
             unit.Interact();

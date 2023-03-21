@@ -9,6 +9,7 @@
   <Order>
   
 	<If condition="not HasAtLeast(7917,1)">		
+		<Log Message="Start Fishing: Twitchbeard..." />
 		<If condition="not HasAtLeast(2596,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2596,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
@@ -17,7 +18,9 @@
 			<RunCode Name="Mists"/>
 			<LisbethTravel ZoneId="339" XYZ="-63.83141, 1.999999, 73.22429" Name="Dock" AllowedVariance="0.0"/>
 		</If>
-		<RunCode name="Food"/>
+		<if condition="HasAtLeast(30481,1)">
+			<RunCode name="Food"/>
+		</If>
 		<ExFish Bait="Spoon Worm" ShuffleFishSpots="True" Mooch="2" Patience="Patience" MinimumGPPatience="300" ForceCordial="True" Condition="not HasAtLeast(7917,1) and IsTimeBetween(4,6) and SkywatcherPlugin.IsWeatherInZone(339, 1, 2)">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
