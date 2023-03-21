@@ -1,23 +1,19 @@
 # Big Fishing Profile
 
-This profile set is designed to catch all Big Fish until level 80.
+This profile set is designed to catch all Big Fish until level 90.
 
 ## Setup
 
-Before you start, open the Start.xml and set all fish you want catch to 1, all other fish to 0.
+- Install ExBuddy from here: https://github.com/LlamaMagic/ExBuddy
+    - You will want to replace the git url managed by RepoBuddy, remove the ExBuddy folder in Plugins, then restart RebornBuddy
+- Install __LlamaLibrary from here: https://github.com/nt153133/__LlamaLibrary/
+- Install Lisbeth from here: https://www.siune.io/
 
-Make sure you have completed your gatherer and crafter up through level 80 to start.
+Open "Start.xml" and change the 0 to 1 for each Big fish you want.
 
-You will need ExBuddy installed in your plugins folder which can be found here https://github.com/Entrax643/ExBuddy
-You will need to take the ExTurnInGuildLeveTag.cs file from my Plugins folder and place it in RebornBuddy\Plugins\ExBuddy\OrderBotTags\Behaviors folder, overwriting the current one. This files makes some changes to fix the GuildLeve turn ins.
+## Disclaimer
 
-You will also need the latest version of LlamaLibrary installed in your botbases folder which can be found here https://github.com/nt153133/LlamaLibrary
-(Make sure you update before running the profiles, Kayla is constantly making new tags for this set and you'll need the absolute latest.)
-
-I'm in the process of changing over all the movement in this profile to be handled by Lisbeth. Saga's new Sextant 2.0 is far suprior to anything else RebornBuddy has to offer and makes for a much smoother questing experience. As such, you will need Lisbeth to make these profiles work. If you don't have it, you can find it here: https://www.siune.io/
-
-
-## Current Progress
+This profile set is still a work in progress, so use at your own risk and I'm not responsible if it does anything not fun.
 
 ### La Noscea
 - [x] Eastern La Noscea
@@ -89,6 +85,22 @@ I'm in the process of changing over all the movement in this profile to be handl
 - [ ] The Rak'tika Greatwood
 - [ ] The Tempest
 
+### The North Empty
+- [ ] Old Sharlayan
+- [ ] Labyinthos
+
+### Ilsabard
+- [ ] Radz-at-Han
+- [ ] Thavnair
+- [ ] Garlemald
+
+### The Sea of Stars
+- [ ] Mare Lametorum
+- [ ] Ultima Thule
+
+### The World Unsundered
+- [ ] Elpis
+
 ### The High Seas
 - [ ] Galadion Bay
 - [ ] The Southern Strait of Merlthor
@@ -98,8 +110,5 @@ I'm in the process of changing over all the movement in this profile to be handl
 - [ ] The Bloodbrine Sea
 - [ ] The Rothlyt Sound
 
-### The Diadem
-- [ ] The Diadem
-
 ## Looking to Donate? ♡
-[BuyMeCoffee](https://www.buymeacoffee.com/budesaal)
+I love Lattes: [BuyMeCoffee](buymeacoffee.com/miss_aoi)
