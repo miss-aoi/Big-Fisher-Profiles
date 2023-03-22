@@ -543,7 +543,7 @@
     </If>
     <!-- Pirates Bane -->
     <If Condition="&Pirates_Bane; == 1 and not HasAtLeast(8764,1)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':8764,'Amount':1,'Enabled':true,'Type':'Fisher'}]"/>
+        <LLoadProfile Path="Thanalan/WesternThanalan/Pirates_Bane.xml"/>
     </If>
     <!-- Ndendecki -->
     <If Condition="&Ndendecki; == 1 and not HasAtLeast(8765,1) and (IsTimeBetween(0,5) or IsTimeBetween(18,24)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Fog')">
