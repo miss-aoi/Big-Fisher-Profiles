@@ -10,7 +10,7 @@
   
 	<If condition="not HasAtLeast(16756,1)">		
 		<If condition="not HasAtLeast(2607,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2607,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2607,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
 		<If condition="not IsOnSubMap(2202)">
 			<LisbethTravel ZoneId="397" XYZ="-447.2483, 90.92711, -659.5029"/>

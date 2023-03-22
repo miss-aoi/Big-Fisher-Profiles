@@ -10,7 +10,7 @@
   
 	<If condition="not HasAtLeast(15627,1)">		
 		<If condition="not HasAtLeast(12711,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':198,'Enabled':true,'Type':'Exchange'}]"/>
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
 		</If>
 	<If Condition="not ClassName == ClassJobType.Fisher">
 		<ChangeClass Job="Fisher" />

@@ -11,7 +11,7 @@
 	<If condition="not HasAtLeast(7920,1)">
 		<Log Message="Start Fishing: Levinlight..." />
 		<If condition="not HasAtLeast(2597,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2597,'Amount':198,'Enabled':true,'Type':'Purchase'}]"/>
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2597,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
 		<If condition="not IsOnSubMap(70)">
 			<LisbethTravel ZoneId="148" XYZ="-315.058, 21.97407, 147.0868"/>
