@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Profile: Meteor Survivor (7903)
-  Authors: budesaal
+  Authors: budesaal, miss-aoi
 -->
 <Profile>
   <Name>Meteor Survivor</Name>
@@ -13,18 +13,21 @@
 		<If condition="not HasAtLeast(2591,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2591,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
 		<If condition="not IsOnSubMap(338)">
 			<LisbethTravel ZoneId="135" XYZ="-185.0453, -0.3133438, 727.9094"/>
 		</If>
-		<if condition="HasAtLeast(30481,1)">
-			<EatFood ItemId="30481" Name="Crab Cakes"/>
-		</if>
-		<ExFish Bait="Rat Tail" ShuffleFishSpots="True" Condition="not HasAtLeast(7903,1) and IsTimeBetween(3,5) and SkywatcherPlugin.IsWeatherInZone(135, 3, 4, 5)">
+		<ExFish Bait="Rat Tail" Condition="not HasAtLeast(7903,1) and IsTimeBetween(3,5) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(135, 'Clouds', 'Fog', 'Wind')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
 			<Keepers>
 				<Keeper name="Meteor Survivor" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="-190.6837, -0.2506779, 740.8943" Heading="5,682911" Sit="True"/>
+				<FishSpot XYZ="-166.2906, -0.271, 748.7253" Heading="1.937045" Sit="True" />
+				<FishSpot XYZ="-196.9584, -0.1789726, 700.2988" Heading="4.19792" Sit="True" />
+				<FishSpot XYZ="-232.1735, -0.2515026, 666.2292" Heading="5.016819" Sit="True" />
 			</FishSpots>
 		</ExFish>	
 	</If>

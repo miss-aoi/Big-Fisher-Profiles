@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Profile: Octomammoth (7707)
-  Authors: budesaal
+  Authors: budesaal, miss-aoi
 -->
 <Profile>
   <Name>Octomammoth</Name>
@@ -16,7 +16,9 @@
 		<If condition="not IsOnSubMap(0)">
 			<LisbethTravel ZoneId="129" XYZ="-183.9088, 2, 194.1954"/>
 		</If>
-		<ExFish Bait="Pill Bug" ShuffleFishSpots="True" Mooch="1" Patience="Patience" Condition="not HasAtLeast(7707,1) and IsTimeBetween(9,17)">
+		<ExFish Bait="Pill Bug" Condition="not HasAtLeast(7707,1) and IsTimeBetween(9,17)"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+				Mooch="1" Patience="Patience">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />
 			</PatienceTugs>
@@ -24,7 +26,9 @@
 				<Keeper name="Octomammoth" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="-187.4531, 2, 194.1261" Heading="4,747994" Sit="True"/>
+				<FishSpot XYZ="-182.248, 1.999995, 200.2238" Heading="1.683593" Sit="True" />
+				<FishSpot XYZ="-192.3636, 0.9999907, 219.1647" Heading="5.947781" Sit="True" />
+				<FishSpot XYZ="-170.0204, 1.999995, 221.3403" Heading="2.986306" Sit="True" />
 			</FishSpots>
 		</ExFish>	
 	</If>

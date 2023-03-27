@@ -24,10 +24,10 @@
 		</If>
 		<RunCode name="Food"/>
 		<ExFish ShuffleFishSpots="True" Mooch="0" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8775,1) and SkywatcherPlugin.IsWeatherInZone(153, 9, 10)">
-        <Baits>
-			<Bait name="Glowworm" condition="not Core.Player.HasAura(568)"/>
-			<Bait name="Topwater Frog" condition="Core.Player.HasAura(568)"/>
-		</Baits>	
+			<Baits>
+				<Bait name="Glowworm" condition="not Core.Player.HasAura(568)"/>
+				<Bait name="Topwater Frog" condition="Core.Player.HasAura(568)"/>
+			</Baits>	
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Heavy" />
 			</PatienceTugs>

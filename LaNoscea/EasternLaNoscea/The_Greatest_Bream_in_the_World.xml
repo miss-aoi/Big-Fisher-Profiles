@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Profile: The Greatest Bream in the World (7909)
-  Authors: budesaal
+  Authors: budesaal, miss-aoi
 -->
 <Profile>
   <Name>The Greatest Bream in the World</Name>
@@ -13,16 +13,21 @@
 		<If condition="not HasAtLeast(2613,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2613,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
 		<If condition="not IsOnSubMap(216)">
-			<LisbethTravel ZoneId="137" XYZ="-11.19454, 70.50095, 4.945401"/>
 			<LisbethTravel ZoneId="137" XYZ="535.896, 8.662354, 619.4787"/>
 		</If>
-		<ExFish Bait="Shrimp Cage Feeder" ShuffleFishSpots="True" Condition="not HasAtLeast(7909,1) and IsTimeBetween(20,23) and SkywatcherPlugin.IsWeatherInZone(137, 1, 2)">
+		<ExFish Bait="Shrimp Cage Feeder" Condition="not HasAtLeast(7909,1) and IsTimeBetween(20,23) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
 			<Keepers>
 				<Keeper name="The Greatest Bream in the World" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="552.1142, 8.629681, 631.5807" Heading="0.7646956" Sit="True"/>
+				<FishSpot XYZ="535.7999, 8.662571, 619.3949" Heading="0.8534974" Sit="True" />
+				<FishSpot XYZ="524.1935, 8.669197, 646.7106" Heading="0.958216" Sit="True" />
+				<FishSpot XYZ="518.6304, 8.678953, 675.7701" Heading="6.229812" Sit="True" />
 			</FishSpots>
 		</ExFish>
 	</If>

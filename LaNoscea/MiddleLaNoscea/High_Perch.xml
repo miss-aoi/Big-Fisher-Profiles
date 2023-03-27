@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Profile: High Perch (7709)
-  Authors: budesaal
+  Authors: budesaal, miss-aoi
 -->
 <Profile>
   <Name>High Perch</Name>
@@ -19,12 +19,15 @@
 		<If condition="not IsOnSubMap(163)">
 			<LisbethTravel ZoneId="134" XYZ="-160.2664, 13.22471, -379.9702"/>
 		</If>
-		<ExFish Bait="Sinking Minnow" ShuffleFishSpots="True" Condition="not HasAtLeast(7709,1) and IsTimeBetween(5,8)">
+		<ExFish Bait="Sinking Minnow" Condition="not HasAtLeast(7709,1) and IsTimeBetween(5,8)"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
 			<Keepers>
 				<Keeper name="High Perch" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="-149.6784, 12.59341, -371.632" Heading="5,8942995" Sit="True"/>
+				<FishSpot XYZ="-147.2776, 12.7062, -377.7298" Heading="1.248226" Sit="True" />
+				<FishSpot XYZ="-176.2276, 10.74121, -352.4113" Heading="0.5256584" Sit="True" />
+				<FishSpot XYZ="-121.0939, 12.21, -366.0357" Heading="3.868313" Sit="True" />
 			</FishSpots>
 		</ExFish>	
 	</If>

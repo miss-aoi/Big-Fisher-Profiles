@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Profile: Shark Tuna (7915)
-  Authors: budesaal
+  Authors: budesaal, miss-aoi
 -->
 <Profile>
   <Name>Shark Tuna</Name>
@@ -13,11 +13,15 @@
 		<If condition="not HasAtLeast(2596,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2596,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
 		<If condition="not IsOnSubMap(216)">
-			<LisbethTravel ZoneId="137" XYZ="-11.19454, 70.50095, 4.945401"/>
 			<LisbethTravel ZoneId="137" XYZ="533.2231, 9.064485, 409.0189"/>
 		</If>
-		<ExFish Bait="Spoon Worm" ShuffleFishSpots="True" Mooch="1" Patience="Patience" Condition="not HasAtLeast(7915,1) and IsTimeBetween(19,21) and SkywatcherPlugin.IsWeatherInZone(137, 1, 2)">
+		<ExFish Bait="Spoon Worm" Condition="not HasAtLeast(7915,1) and IsTimeBetween(19,21) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+				Mooch="1" Patience="Patience">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 			</PatienceTugs>
@@ -25,7 +29,9 @@
 				<Keeper name="Shark Tuna" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="547.7789, 8.704957, 409.1209" Heading="1,517754" Sit="True"/>
+				<FishSpot XYZ="540.4973, 8.875281, 408.9522" Heading="1.583563" Sit="True" />
+				<FishSpot XYZ="541.0124, 8.769853, 376.1528" Heading="2.392" Sit="True" />
+				<FishSpot XYZ="557.0814, 8.72471, 436.7764" Heading="1.434063" Sit="True" />
 			</FishSpots>
 		</ExFish>	
 	</If>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Profile: Nepto Dragon (8754)
-  Authors: budesaal
+  Authors: budesaal, miss-aoi
 -->
 <Profile>
   <Name>Nepto Dragon</Name>
@@ -13,14 +13,16 @@
 		<If condition="not HasAtLeast(2606,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2606,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
 		<If condition="not IsOnSubMap(216)">
-			<LisbethTravel ZoneId="137" XYZ="-11.19454, 70.50095, 4.945401"/>
 			<LisbethTravel ZoneId="137" XYZ="885.8239, 20.75006, 144.7628"/>
 		</If>
-		<if condition="HasAtLeast(30481,1)">
-			<RunCode name="Food"/>
-		</If>
-		<ExFish Bait="Northern Krill" ShuffleFishSpots="True" Mooch="1" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8754,1) and not Core.Player.HasAura(568) and SkywatcherPlugin.IsWeatherInZone(137, 7, 8)">
+		<Desynth ItemIds="4913" DesynthDelay="6000" DesynthTimeout="10"/>
+		<ExFish Bait="Northern Krill" Condition="not HasAtLeast(4913,3) and not Core.Player.HasAura(568) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+				Mooch="1" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />
 			</PatienceTugs>
@@ -28,10 +30,14 @@
 				<Keeper name="Little Thalaos" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="860.3687, 22.24, 166.0745" Heading="12,618376" Sit="True"/>
+				<FishSpot XYZ="874.2692, 20.16584, 162.1999" Heading="6.249492" Sit="True" />
+				<FishSpot XYZ="862.3873, 22.24, 167.1437" Heading="5.273502" Sit="True" />
+				<FishSpot XYZ="859.7519, 22.08624, 154.0708" Heading="4.228399" Sit="True" />
 			</FishSpots>
 		</ExFish>
-				<ExFish Bait="Northern Krill" ShuffleFishSpots="True" Chum="True" Mooch="1" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8754,1) and Core.Player.HasAura(568) and SkywatcherPlugin.IsWeatherInZone(137, 7, 8)">
+				<ExFish Bait="Northern Krill" Condition="not HasAtLeast(8754,1) and Core.Player.HasAura(568) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')"
+						MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+						Chum="True" Mooch="1" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Heavy" />
 			</PatienceTugs>
@@ -39,7 +45,9 @@
 				<Keeper name="Nepto Dragon" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="860.3687, 22.24, 166.0745" Heading="12,618376" Sit="True"/>
+				<FishSpot XYZ="874.2692, 20.16584, 162.1999" Heading="6.249492" Sit="True" />
+				<FishSpot XYZ="862.3873, 22.24, 167.1437" Heading="5.273502" Sit="True" />
+				<FishSpot XYZ="859.7519, 22.08624, 154.0708" Heading="4.228399" Sit="True" />
 			</FishSpots>
 		</ExFish>
 		<Desynth ItemIds="4913" DesynthDelay="6000" DesynthTimeout="10"/>
@@ -50,16 +58,5 @@
   <GrindAreas>
   </GrindAreas>
   <CodeChunks>
-  	<CodeChunk Name="Food">
-      <![CDATA[
-            
-                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
-            
-        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
-        item.UseItem();
-        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
-            
-       ]]>
-    </CodeChunk>
   </CodeChunks>
 </Profile>

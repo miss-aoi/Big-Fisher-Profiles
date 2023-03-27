@@ -3,26 +3,26 @@
     Big Fish Profile
     Need some Big Fish? Switch Variable from 0 to 1.
     For some Baits you need Miner, Gardener and Crafter.
-    Authors: budesaal, Misstrel
+    Authors: budesaal, miss-aoi
+    Removed eating food. Use Gluttony for this: https://github.com/domesticwarlord86/Gluttony
 -->
 <!DOCTYPE Profile [
 <!-- Profile Settings -->
-<!ENTITY Food "0">                              <!-- Set to 1 to farm -->
 <!ENTITY Hi_Cordial "0">                        <!-- Set to 1 to farm -->
 <!-- LA NOSCEA - Upper Decks -->
-<!ENTITY Goldenfin "1">                         <!-- TIMED -->                    <!-- PILL BUG -->
+<!ENTITY Goldenfin "0">                         <!-- TIMED -->                    <!-- PILL BUG -->
 <!-- LA NOSCEA - Lower Decks -->
-<!ENTITY Octomammoth "1">                       <!-- TIMED -->                    <!-- PILL BUG -->
+<!ENTITY Octomammoth "0">                       <!-- TIMED -->                    <!-- PILL BUG -->
 <!-- LA NOSCEA - Middle La Noscea -->
-<!ENTITY Zalera "1">                            <!-- TIMED -->                    <!-- RAT TAIL -->
+<!ENTITY Zalera "0">                            <!-- TIMED -->                    <!-- RAT TAIL -->
 <!ENTITY Beguiler_Chub "1">                     <!-- TIMED -->                    <!-- MOTH PUPA -->
-<!ENTITY Great_Gudgeon "1">                                                       <!-- CRAYFISH BALL -->
-<!ENTITY Gigantshark "1">                                       <!-- WEATHER -->  <!-- FLOATING MINNOW -->
+<!ENTITY Great_Gudgeon "0">                                                       <!-- CRAYFISH BALL -->
+<!ENTITY Gigantshark "0">                                       <!-- WEATHER -->  <!-- FLOATING MINNOW -->
 <!ENTITY High_Perch "1">                        <!-- TIMED -->                    <!-- SINKING MINNOW -->
 <!ENTITY Crystal_Perch "1">                                     <!-- WEATHER -->  <!-- BUTTERWORM -->
 <!-- LA NOSCEA - Lower La Noscea -->
-<!ENTITY Caterwauler "1">                                                         <!-- MOTH PUPA -->
-<!ENTITY Oschons_Print "1">                                                       <!-- GOBY BALL -->
+<!ENTITY Caterwauler "0">                                                         <!-- MOTH PUPA -->
+<!ENTITY Oschons_Print "0">                                                       <!-- GOBY BALL -->
 <!ENTITY Syldra "1">                                            <!-- WEATHER -->  <!-- SPOON WORM -->
 <!ENTITY Silver_Sovereign "1">                                                    <!-- YUMIZUNO -->
 <!ENTITY Sabertooth_Cod "1">                    <!-- TIMED -->                    <!-- GOBY BALL -->
@@ -43,31 +43,31 @@
 <!ENTITY Imperial_Goldfish "1">                                                   <!-- HONEY WORM -->
 <!ENTITY Little_Perykos "1">                                    <!-- WEATHER -->  <!-- LUGWORM -->
 <!-- LA NOSCEA - Western La Noscea -->
-<!ENTITY Armorer "1">                           <!-- TIMED -->                    <!-- NORTHERN KRILL -->
-<!ENTITY Junkmonger "01">                        <!-- TIMED -->                    <!-- LUGWORM -->
-<!ENTITY Navigators_Brand "1">                  <!-- TIMED -->  <!-- WEATHER -->  <!-- YUMIZUNO -->
-<!ENTITY The_Lone_Ripper "1">                                   <!-- WEATHER -->  <!-- HEAVY STEEL JIG -->
-<!ENTITY Helmsmans_Hand "1">                    <!-- TIMED -->  <!-- WEATHER -->  <!-- PILL BUG -->
-<!ENTITY Frilled_Shark "1">                     <!-- TIMED -->  <!-- WEATHER -->  <!-- LUGWORM -->
-<!ENTITY The_Captains_Chalice "1">              <!-- TIMED -->                    <!-- STEEL JIG -->
-<!ENTITY Coelacanthus "1">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- SPOON WORM -->
-<!ENTITY Endoceras "1">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- SPOON WORM -->
-<!ENTITY Seahag "1">                            <!-- TIMED -->  <!-- WEATHER -->  <!-- LUGWORM -->
+<!ENTITY Armorer "0">                           <!-- TIMED -->                    <!-- NORTHERN KRILL -->
+<!ENTITY Junkmonger "0">                        <!-- TIMED -->                    <!-- LUGWORM -->
+<!ENTITY Navigators_Brand "0">                  <!-- TIMED -->  <!-- WEATHER -->  <!-- YUMIZUNO -->
+<!ENTITY The_Lone_Ripper "0">                                   <!-- WEATHER -->  <!-- HEAVY STEEL JIG -->
+<!ENTITY Helmsmans_Hand "0">                    <!-- TIMED -->  <!-- WEATHER -->  <!-- PILL BUG -->
+<!ENTITY Frilled_Shark "0">                     <!-- TIMED -->  <!-- WEATHER -->  <!-- LUGWORM -->
+<!ENTITY The_Captains_Chalice "0">              <!-- TIMED -->                    <!-- STEEL JIG -->
+<!ENTITY Coelacanthus "0">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- SPOON WORM -->
+<!ENTITY Endoceras "0">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- SPOON WORM -->
+<!ENTITY Seahag "0">                            <!-- TIMED -->  <!-- WEATHER -->  <!-- LUGWORM -->
 <!-- LA NOSCEA - Upper La Noscea -->
-<!ENTITY Toramafish "1">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- SPINNERBAIT -->
-<!ENTITY Joan_of_Trout "1">                     <!-- TIMED -->                    <!-- CROW FLY -->
-<!ENTITY Worm_of_Nym "1">                       <!-- TIMED -->                    <!-- BUTTERWORM -->
-<!ENTITY King_of_the_Spring "1">                <!-- TIMED -->                    <!-- SPINNERBAIT -->
+<!ENTITY Toramafish "0">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- SPINNERBAIT -->
+<!ENTITY Joan_of_Trout "0">                     <!-- TIMED -->                    <!-- CROW FLY -->
+<!ENTITY Worm_of_Nym "0">                       <!-- TIMED -->                    <!-- BUTTERWORM -->
+<!ENTITY King_of_the_Spring "0">                <!-- TIMED -->                    <!-- SPINNERBAIT -->
 <!-- LA NOSCEA - Outer La Noscea -->
-<!ENTITY Thundergut "1">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- STEM BORER -->
-<!-- <!ENTITY King_of_the_Spring "1"> -->
+<!ENTITY Thundergut "0">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- STEM BORER -->
+<!-- <!ENTITY King_of_the_Spring "0"> -->
 <!-- LA NOSCEA - Mist -->
-<!ENTITY Twitchbeard "1">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- SPOON WORM -->
+<!ENTITY Twitchbeard "0">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- SPOON WORM -->
 <!-- THE BLACK SHROUD - New Gridania -->
 <!ENTITY Stormdancer "0">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- STEM BORER -->
 <!ENTITY Bloody_Brewer "0">                                                       <!-- CRAYFISH BALL -->
 <!-- THE BLACK SHROUD - Old Gridania -->
-<!ENTITY Matron_Carp "0">                       <!-- TIMED -->                        <!-- BLOODWORM -->
+<!ENTITY Matron_Carp "0">                       <!-- TIMED -->                    <!-- BLOODWORM -->
 <!ENTITY Carp_Diem "0">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- CROW FLY -->
 <!-- THE BLACK SHROUD - Central Shroud -->
 <!ENTITY Chirurgeon "0">                                                          <!-- MOTH PUPA -->
@@ -157,7 +157,38 @@
 <!ENTITY Ninja_Betta "0">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- MIDGE BASKET -->
 <!ENTITY Canavan "0">                           <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
 <!ENTITY Kuno_the_Killer "0">                   <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
-]> 
+<!-- Abalathia's Spine - The Sea of Clouds -->
+<!-- Abalathia's Spine - Azys Lla -->
+<!-- Dravania - The Dravanian Forelands -->
+<!-- Dravania - The Dravanian Hinterlands -->
+<!-- Dravania - The Churning Mists -->
+<!-- Gyr Abania - Rhalgr's Reach -->
+<!-- Gyr Avania - The Fringes -->
+<!-- Gyr Avania - The Peaks -->
+<!-- Gyr Abania - The Lochs -->
+<!-- Othard - The Ruby Sea -->
+<!-- Othard - Yanxia -->
+<!-- Othard - The Azim Steppe -->
+<!-- Hingashi - Kugane -->
+<!-- Hingashi - Shirogane -->
+<!-- Norvrandt - The Crystarium -->
+<!-- Norvrandt - Eulmore -->
+<!-- Norvrandt - Lakeland -->
+<!-- Norvrandt - Kholusia -->
+<!-- Norvrandt - Amh Araeng -->
+<!-- Norvrandt - Il Mheg -->
+<!-- Norvrandt - The Rak'tika Greatwood -->
+<!-- Norvrandt - The Tempest -->
+<!-- The Northern Empty - Old Sharlayan -->
+<!-- The Northern Empty - Labrinthos -->
+<!-- Ilsabard - Radz-at-Han -->
+<!-- Ilsabard - Thavnair -->
+<!-- Ilsabard - Garlemald -->
+<!-- The Sea of Stars - Mare Lamentorum -->
+<!-- The Sea of Stars - Ultima Thule -->
+<!-- The World Unsundered - Elpis -->
+<!-- Use cat's OceanTrip for Obean Fishing targets: https://github.com/catrenelle/OceanTrip -->
+]>
 
 <Profile>
   <Name>Big Fishing</Name>
@@ -173,10 +204,6 @@
     </If>
     <If condition="LisbethPresent">
         <Log Message="Lisbeth found. Starting profile..." />
-    </If>
-    <!-- Food Checking Crab Cakes HQ-->
-    <If condition="&Food; == 1 and not HasAtLeast(30481,25)">
-        <Lisbeth Json="[{'Item': 30481,'Group': 0,'Amount': 25,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': true,'Food': 0,'Primary': true,'Type': 'Culinarian','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
     </If>
     <!-- Mecicine Checking Hi-Cordial -->
     <If condition="&Hi_Cordial; == 1 and not HasAtLeast(12669,25)">
@@ -270,7 +297,7 @@
 
     <!-- LA NOSCEA - EASETERN LA NOSCEA -->
     <!-- The Greatest Bream in the World -->
-    <If Condition="&The_Greatest_Bream_in_the_World; == 1 and not HasAtLeast(7909,1) and IsTimeBetween(20,23)">
+    <If Condition="&The_Greatest_Bream_in_the_World; == 1 and not HasAtLeast(7909,1) and IsTimeBetween(20,23) and SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')">
         <LLoadProfile Path="LaNoscea/EasternLaNoscea/The_Greatest_Bream_in_the_World.xml"/>
     </If>
     <!-- Shark Tuna -->
@@ -310,7 +337,7 @@
         <LLoadProfile Path="LaNoscea/EasternLaNoscea/Imperial_Goldfish.xml"/>
     </If>
     <!-- Little Perykos -->
-    <If Condition="&Little_Perykos; == 1 and not HasAtLeast(20143,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain','Showers')">
+    <If Condition="&Little_Perykos; == 1 and not HasAtLeast(20143,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')">
         <LLoadProfile Path="LaNoscea/EasternLaNoscea/Little_Perykos.xml"/>
     </If>
     

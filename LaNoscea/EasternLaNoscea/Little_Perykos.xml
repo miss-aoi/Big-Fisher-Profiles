@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Profile: Little Perykos (20143)
-  Authors: budesaal
+  Authors: budesaal, miss-aoi
 -->
 <Profile>
   <Name>Little Perykos</Name>
@@ -13,14 +13,15 @@
 		<If condition="not HasAtLeast(2585,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2585,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
 		<If condition="not IsOnSubMap(216)">
-			<LisbethTravel ZoneId="137" XYZ="-11.19454, 70.50095, 4.945401"/>
 			<LisbethTravel ZoneId="137" XYZ="770.4676, 8.9, 221.7439"/>
 		</If>
-		<if condition="HasAtLeast(30481,1)">
-			<RunCode name="Food"/>
-		</If>
-		<ExFish Bait="Lugworm" ShuffleFishSpots="True" Mooch="3" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(20143,1) and SkywatcherPlugin.IsWeatherInZone(137, 7, 8)">
+		<ExFish Bait="Lugworm" Condition="not HasAtLeast(20143,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+				Mooch="3" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Medium" />
@@ -30,7 +31,9 @@
 				<Keeper name="Little Perykos" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="766.7423, 8.9, 214.9946" Heading="2,362497" Sit="True"/>
+				<FishSpot XYZ="775.2599, 8.900001, 217.8145" Heading="2.206204" Sit="True" />
+				<FishSpot XYZ="799.2081, 8.9, 237.1664" Heading="1.866913" Sit="True" />
+				<FishSpot XYZ="821.451, 8.9, 270.8231" Heading="1.527614" Sit="True" />
 			</FishSpots>
 		</ExFish>	
 	</If>
@@ -40,16 +43,5 @@
   <GrindAreas>
   </GrindAreas>
   <CodeChunks>
-	<CodeChunk Name="Food">
-      <![CDATA[
-            
-                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
-            
-        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
-        item.UseItem();
-        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
-            
-       ]]>
-    </CodeChunk>
   </CodeChunks>
 </Profile>

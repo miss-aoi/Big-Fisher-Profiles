@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Profile: Oschons Print (7680)
-  Authors: budesaal
+  Authors: budesaal, miss-aoi
 -->
 <Profile>
   <Name>Oschons Print</Name>
@@ -13,15 +13,21 @@
 		<If condition="not HasAtLeast(2589,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2589,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
 		<If condition="not IsOnSubMap(164)">
 			<LisbethTravel ZoneId="135" XYZ="249.4097, 38.98185, 242.7699"/>
 		</If>
-		<ExFish Bait="Goby Ball" ShuffleFishSpots="True" Condition="not HasAtLeast(7680,1)">
+		<ExFish Bait="Goby Ball" Condition="not HasAtLeast(7680,1)"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
 			<Keepers>
 				<Keeper name="Oschon's Print" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="258.6822, 33.6434, 235.1788" Heading="2,171772" Sit="True"/>
+				<FishSpot XYZ="263.9069, 33.51923, 241.1577" Heading="2.400747" Sit="True" />
+				<FishSpot XYZ="242.9352, 29.53038, 199.734" Heading="2.785623" Sit="True" />
+				<FishSpot XYZ="231.7537, 28.83405, 174.467" Heading="1.45568" Sit="True" />
 			</FishSpots>
 		</ExFish>	
 	</If>

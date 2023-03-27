@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Profile: Faerie Queen (7697)
-  Authors: budesaal
+  Authors: budesaal, miss-aoi
 -->
 <Profile>
   <Name>Faerie Queen</Name>
@@ -19,12 +19,15 @@
 		<If condition="not IsOnSubMap(340)">
 			<LisbethTravel ZoneId="135" XYZ="18.71454, 35.43816, 685.6935"/>
 		</If>
-		<ExFish Bait="Spinnerbait" ShuffleFishSpots="True" Condition="not HasAtLeast(7697,1) and SkywatcherPlugin.IsWeatherInZone(135, 3, 4, 5)">
+		<ExFish Bait="Spinnerbait" Condition="not HasAtLeast(7697,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(135, 'Clouds', 'Fog', 'Wind')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
 			<Keepers>
 				<Keeper name="Faerie Queen" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="23.20204, 35.43816, 682.4048" Heading="2,202652" Sit="True"/>
+				<FishSpot XYZ="32.4887, 35.44699, 653.9377" Heading="0.4687796" Sit="True" />
+				<FishSpot XYZ="38.34671, 35.54963, 688.4586" Heading="4.213539" Sit="True" />
+				<FishSpot XYZ="6.152539, 35.43816, 693.6091" Heading="2.594563" Sit="True" />
 			</FishSpots>
 		</ExFish>	
 	</If>
