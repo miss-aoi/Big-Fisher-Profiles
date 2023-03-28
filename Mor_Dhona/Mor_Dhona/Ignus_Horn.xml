@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Ignus Horn (8758)
+  Authors: budesaal, miss-aoi
+-->
+<Profile>
+  <Name>Ignus Horn</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(8758,1)">
+		<Log Message="Start Fishing: Ignus Horn..." />
+		<If condition="not HasAtLeast(2603,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2603,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(409)">
+			<LisbethTravel ZoneId="156" XYZ="-452.5414, -8.948663, -513.92"/>
+		</If>
+		<ExFish Bait="Glowworm" Condition="not HasAtLeast(8758,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(156, TimeSpan.FromHours(-8), 'Gloom')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
+			<Keepers>
+				<Keeper name="Ignus Horn" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-468.8926, -9.696238, -531.501" Heading="3.18164" Sit="True" />
+				<FishSpot XYZ="-451.5324, -9.696232, -521.4935" Heading="0.2955647" Sit="True" />
+				<FishSpot XYZ="-443.3135, -9.525084, -509.0322" Heading="0.6558053" Sit="True" />
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

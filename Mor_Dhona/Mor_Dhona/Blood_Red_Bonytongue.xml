@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Blood Red Bonytongue (8776)
+  Authors: budesaal, miss-aoi
+-->
+<Profile>
+  <Name>Blood Red Bonytongue</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(8776,1)">		
+		<Log Message="Start Fishing: Blood Red Bonytongue..." />
+		<If condition="not HasAtLeast(2599,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(410)">
+			<LisbethTravel ZoneId="156" XYZ="543.8335, -9.70342, -730.1382"/>
+		</If>
+		<ExFish Bait="Honey Worm" Condition="not HasAtLeast(8776,1) and IsTimeBetween(4,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(156, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+				Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Heavy" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Blood Red Bonytongue" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="143.8184, -28.36775, -427.127" Heading="0.1438355" Sit="True" />
+				<FishSpot XYZ="166.1766, -28.29997, -426.6662" Heading="0.5941291" Sit="True" />
+				<FishSpot XYZ="197.2962, -28.24627, -422.0775" Heading="0.1082254" Sit="True" />
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

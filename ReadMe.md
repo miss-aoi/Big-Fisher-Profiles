@@ -27,25 +27,25 @@ This profile set is still a work in progress, so use at your own risk and I'm no
 - [x] Mist
 
 ### The Black Shroud
-- [x] New Gridania
-- [x] Old Gridania
-- [x] Central Shroud
-- [x] East Shroud
-- [x] South Shroud
-- [x] North Shroud
-- [x] The Lavender Beds
+- [ ] New Gridania
+- [ ] Old Gridania
+- [ ] Central Shroud
+- [ ] East Shroud
+- [ ] South Shroud
+- [ ] North Shroud
+- [ ] The Lavender Beds
 
 ### Thanalan
-- [x] Western Thanalan
-- [x] Central Thanalan
-- [x] Eastern Thanalan
-- [x] Southern Thanalan
-- [x] Northern Thanalan
-- [x] The Goblet
+- [ ] Western Thanalan
+- [ ] Central Thanalan
+- [ ] Eastern Thanalan
+- [ ] Southern Thanalan
+- [ ] Northern Thanalan
+- [ ] The Goblet
 
 ### Coerthas
-- [x] Coerthas Central Highlands
-- [x] Coerthas Western Highlands
+- [ ] Coerthas Central Highlands
+- [ ] Coerthas Western Highlands
 
 ### Mor Dhona
 - [x] Mor Dhona

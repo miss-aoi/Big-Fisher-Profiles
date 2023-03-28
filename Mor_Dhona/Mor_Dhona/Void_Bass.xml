@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Void Bass (8759)
+  Authors: budesaal, miss-aoi
+-->
+<Profile>
+  <Name>Void Bass</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(8759,1)">
+		<Log Message="Start Fishing: Void Bass..." />
+		<If condition="not HasAtLeast(2603,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2603,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(414)">
+			<LisbethTravel ZoneId="156" XYZ="-126.2753, 47.11922, -187.6791"/>
+		</If>
+		<ExFish Bait="Glowworm" Condition="not HasAtLeast(8759,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(156, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
+			<Keepers>
+				<Keeper name="Void Bass" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-118.8273, 45.77808, -185.7387" Heading="1.138674" Sit="True" />
+				<FishSpot XYZ="-124.9568, 45.90577, -198.8519" Heading="2.386933" Sit="True" />
+				<FishSpot XYZ="-136.5102, 42.86941, -207.1343" Heading="2.548199" Sit="True" />
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>
