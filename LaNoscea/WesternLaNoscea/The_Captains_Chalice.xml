@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Profile: The Captains Chalice (7948)
-  Authors: budesaal
+  Authors: budesaal, miss-aoi
 -->
 <Profile>
   <Name>The Captains Chalice</Name>
@@ -16,13 +16,12 @@
 		<If Condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<If condition="not IsOnSubMap(223)">
-			<LisbethTravel ZoneId="138" XYZ="-227.4654, -42.29472, -211.5476"/>
+		<If condition="not IsOnSubMap(363)">
+			<LisbethTravel ZoneId="138" XYZ="-249.0802, -42.53819, -307.7516"/>
 		</If>
-		<if condition="HasAtLeast(30481,1)">
-			<RunCode name="Food"/>
-		</If>
-		<ExFish Bait="Steel Jig" ShuffleFishSpots="True" Mooch="2" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(7948,1) and IsTimeBetween(23,24) or IsTimeBetween(0,2)">
+		<ExFish Bait="Steel Jig" Condition="not HasAtLeast(7948,1) and IsTimeBetween(23,2)"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+				Mooch="2" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Heavy" />
@@ -31,7 +30,9 @@
 				<Keeper name="The Captain's Chalice" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="-227.2543, -42.30018, -217.3959" Heading="3,496514" Sit="True"/>
+				<FishSpot XYZ="-249.0802, -42.53819, -307.7516" Heading="0.1177614" Sit="True" />
+				<FishSpot XYZ="-202.8527, -42.29935, -304.7731" Heading="2.019479" Sit="True" />
+				<FishSpot XYZ="-231.6532, -42.58453, -299.9491" Heading="5.098241" Sit="True" />
 			</FishSpots>
 		</ExFish>	
 	</If>
@@ -41,16 +42,5 @@
   <GrindAreas>
   </GrindAreas>
   <CodeChunks>
-	<CodeChunk Name="Food">
-      <![CDATA[
-            
-                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
-            
-        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
-        item.UseItem();
-        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
-            
-       ]]>
-    </CodeChunk>
   </CodeChunks>
 </Profile>

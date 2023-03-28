@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Profile: King of the Spring (7927)
-  Authors: budesaal
+  Authors: budesaal, miss-aoi
 -->
 <Profile>
   <Name>King of the Spring</Name>
@@ -19,12 +19,15 @@
 		<If condition="not IsOnSubMap(177)">
 			<LisbethTravel ZoneId="139" XYZ="301.5934, -3.052745, 61.05919"/>
 		</If>
-		<ExFish Bait="Spinnerbait" ShuffleFishSpots="True" Condition="not HasAtLeast(7927,1) and IsTimeBetween(16,19)">
+		<ExFish Bait="Spinnerbait" Condition="not HasAtLeast(7927,1) and IsTimeBetween(16,19)"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
 			<Keepers>
 				<Keeper name="King of the Spring" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="286.8455, -3.4, 71.18519" Heading="5,795815" Sit="True"/>
+				<FishSpot XYZ="300.2574, -3.4, 49.42555" Heading="3.5356" Sit="True" />
+				<FishSpot XYZ="285.5044, -3.4, 21.87793" Heading="4.689689" Sit="True" />
+				<FishSpot XYZ="262.0699, -3.4, 52.85926" Heading="1.506207" Sit="True" />
 			</FishSpots>
 		</ExFish>	
 	</If>

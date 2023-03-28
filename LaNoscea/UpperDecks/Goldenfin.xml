@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Profile: Goldenfin (7685)
-  Authors: budesaal
+  Authors: budesaal, miss-aoi
 -->
 <Profile>
   <Name>Goldenfin</Name>
@@ -16,15 +16,15 @@
 		<If condition="not IsOnSubMap(715)">
 			<LisbethTravel ZoneId="128" XYZ="19.86234, 40, 76.17139"/>
 		</If>
-		<if condition="HasAtLeast(30481,1)">
-			<RunCode name="Food"/>
-		</If>
-		<ExFish Bait="Pill Bug" ShuffleFishSpots="True" Condition="not HasAtLeast(7685,1) and IsTimeBetween(9,14)">
+		<ExFish Bait="Pill Bug" Condition="not HasAtLeast(7685,1) and IsTimeBetween(9,14)"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
 			<Keepers>
 				<Keeper name="Goldenfin" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="40.98087, 39.99995, 75.74815" Heading="4,1236827" Sit="True"/>
+				<FishSpot XYZ="39.98388, 39.99995, 75.70851" Heading="0.08564156" Sit="True" />
+				<FishSpot XYZ="58.56662, 39.99997, 70.25841" Heading="2.929538" Sit="True" />
+				<FishSpot XYZ="53.64757, 39.99995, 75.66903" Heading="5.981073" Sit="True" />
 			</FishSpots>
 		</ExFish>	
 	</If>
@@ -34,16 +34,5 @@
   <GrindAreas>
   </GrindAreas>
   <CodeChunks>
-   <CodeChunk Name="Food">
-      <![CDATA[
-            
-                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
-            
-        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
-        item.UseItem();
-        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
-            
-       ]]>
-    </CodeChunk> 
   </CodeChunks>
 </Profile>

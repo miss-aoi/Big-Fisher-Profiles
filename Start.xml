@@ -4,7 +4,7 @@
     Need some Big Fish? Switch Variable from 0 to 1.
     For some Baits you need Miner, Gardener and Crafter.
     Authors: budesaal, miss-aoi
-    Removed eating food. Use Gluttony for this: https://github.com/domesticwarlord86/Gluttony
+    Removed eating food. Use Gluttony instead: https://github.com/domesticwarlord86/Gluttony
 -->
 <!DOCTYPE Profile [
 <!-- Profile Settings -->
@@ -15,29 +15,29 @@
 <!ENTITY Octomammoth "0">                       <!-- TIMED -->                    <!-- PILL BUG -->
 <!-- LA NOSCEA - Middle La Noscea -->
 <!ENTITY Zalera "0">                            <!-- TIMED -->                    <!-- RAT TAIL -->
-<!ENTITY Beguiler_Chub "1">                     <!-- TIMED -->                    <!-- MOTH PUPA -->
+<!ENTITY Beguiler_Chub "0">                     <!-- TIMED -->                    <!-- MOTH PUPA -->
 <!ENTITY Great_Gudgeon "0">                                                       <!-- CRAYFISH BALL -->
 <!ENTITY Gigantshark "0">                                       <!-- WEATHER -->  <!-- FLOATING MINNOW -->
 <!ENTITY High_Perch "1">                        <!-- TIMED -->                    <!-- SINKING MINNOW -->
-<!ENTITY Crystal_Perch "1">                                     <!-- WEATHER -->  <!-- BUTTERWORM -->
+<!ENTITY Crystal_Perch "0">                                     <!-- WEATHER -->  <!-- BUTTERWORM -->
 <!-- LA NOSCEA - Lower La Noscea -->
 <!ENTITY Caterwauler "0">                                                         <!-- MOTH PUPA -->
 <!ENTITY Oschons_Print "0">                                                       <!-- GOBY BALL -->
-<!ENTITY Syldra "1">                                            <!-- WEATHER -->  <!-- SPOON WORM -->
-<!ENTITY Silver_Sovereign "1">                                                    <!-- YUMIZUNO -->
-<!ENTITY Sabertooth_Cod "1">                    <!-- TIMED -->                    <!-- GOBY BALL -->
-<!ENTITY Jacques_the_Snipper "1">               <!-- TIMED -->                    <!-- GOBY BALL -->
-<!ENTITY Faerie_Queen "1">                                      <!-- WEATHER -->  <!-- SPINNERBAIT -->
+<!ENTITY Syldra "0">                                            <!-- WEATHER -->  <!-- SPOON WORM -->
+<!ENTITY Silver_Sovereign "0">                                                    <!-- YUMIZUNO -->
+<!ENTITY Sabertooth_Cod "0">                    <!-- TIMED -->                    <!-- GOBY BALL -->
+<!ENTITY Jacques_the_Snipper "0">               <!-- TIMED -->                    <!-- GOBY BALL -->
+<!ENTITY Faerie_Queen "0">                                      <!-- WEATHER -->  <!-- SPINNERBAIT -->
 <!ENTITY Meteor_Survivor "1">                   <!-- TIMED -->  <!-- WEATHER -->  <!-- RAT TAIL -->
 <!ENTITY Cupfish "1">                           <!-- TIMED -->                    <!-- SYRPHID BASKET -->
 <!-- LA NOSCEA - Eastern La Noscea -->
 <!ENTITY The_Greatest_Bream_in_the_World "1">   <!-- TIMED -->  <!-- WEATHER -->  <!-- SHRIMP CAGE FEEDER -->
 <!ENTITY Shark_Tuna "1">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- SPOON WORM -->
 <!ENTITY Bombardfish "1">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- HERRING BALL -->
-<!ENTITY The_Old_Man_in_the_Sea "1">                            <!-- WEATHER -->  <!-- PILL BUG -->
+<!ENTITY The_Old_Man_in_the_Sea "0">                            <!-- WEATHER -->  <!-- PILL BUG -->
 <!ENTITY Nepto_Dragon "1">                                      <!-- WEATHER -->  <!-- NORTHERN KRILL -->
 <!ENTITY The_Salter "1">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
-<!ENTITY The_Drowned_Sniper "1">                                <!-- WEATHER -->  <!-- SNURBLE FLY -->
+<!ENTITY The_Drowned_Sniper "0">                                <!-- WEATHER -->  <!-- SNURBLE FLY -->
 <!ENTITY The_Terpsichorean "1">                                 <!-- WEATHER -->  <!-- HONEY WORM -->
 <!ENTITY Mirrorscale "1">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- BUTTERWORM -->
 <!ENTITY Imperial_Goldfish "1">                                                   <!-- HONEY WORM -->
@@ -157,37 +157,37 @@
 <!ENTITY Ninja_Betta "0">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- MIDGE BASKET -->
 <!ENTITY Canavan "0">                           <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
 <!ENTITY Kuno_the_Killer "0">                   <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
-<!-- Abalathia's Spine - The Sea of Clouds -->
-<!-- Abalathia's Spine - Azys Lla -->
-<!-- Dravania - The Dravanian Forelands -->
-<!-- Dravania - The Dravanian Hinterlands -->
-<!-- Dravania - The Churning Mists -->
-<!-- Gyr Abania - Rhalgr's Reach -->
-<!-- Gyr Avania - The Fringes -->
-<!-- Gyr Avania - The Peaks -->
-<!-- Gyr Abania - The Lochs -->
-<!-- Othard - The Ruby Sea -->
-<!-- Othard - Yanxia -->
-<!-- Othard - The Azim Steppe -->
-<!-- Hingashi - Kugane -->
-<!-- Hingashi - Shirogane -->
-<!-- Norvrandt - The Crystarium -->
-<!-- Norvrandt - Eulmore -->
-<!-- Norvrandt - Lakeland -->
-<!-- Norvrandt - Kholusia -->
-<!-- Norvrandt - Amh Araeng -->
-<!-- Norvrandt - Il Mheg -->
-<!-- Norvrandt - The Rak'tika Greatwood -->
-<!-- Norvrandt - The Tempest -->
-<!-- The Northern Empty - Old Sharlayan -->
-<!-- The Northern Empty - Labrinthos -->
-<!-- Ilsabard - Radz-at-Han -->
-<!-- Ilsabard - Thavnair -->
-<!-- Ilsabard - Garlemald -->
-<!-- The Sea of Stars - Mare Lamentorum -->
-<!-- The Sea of Stars - Ultima Thule -->
-<!-- The World Unsundered - Elpis -->
-<!-- Use cat's OceanTrip for Obean Fishing targets: https://github.com/catrenelle/OceanTrip -->
+<!-- ABALATHIA’S SPINE - The Sea of Clouds -->
+<!-- ABALATHIA’S SPINE - Azys Lla -->
+<!-- DRAVANIA - The Dravanian Forelands -->
+<!-- DRAVANIA - The Dravanian Hinterlands -->
+<!-- DRAVANIA - The Churning Mists -->
+<!-- GYR ABANIA - Rhalgr's Reach -->
+<!-- GYR ABANIA - The Fringes -->
+<!-- GYR ABANIA - The Peaks -->
+<!-- GYR ABANIA - The Lochs -->
+<!-- OTHARD - The Ruby Sea -->
+<!-- OTHARD - Yanxia -->
+<!-- OTHARD - The Azim Steppe -->
+<!-- HINGASHI - Kugane -->
+<!-- HINGASHI - Shirogane -->
+<!-- NORVRANDT - The Crystarium -->
+<!-- NORVRANDT - Eulmore -->
+<!-- NORVRANDT - Lakeland -->
+<!-- NORVRANDT - Kholusia -->
+<!-- NORVRANDT - Amh Araeng -->
+<!-- NORVRANDT - Il Mheg -->
+<!-- NORVRANDT - The Rak'tika Greatwood -->
+<!-- NORVRANDT - The Tempest -->
+<!-- THE NORTHERN EMPTY - Old Sharlayan -->
+<!-- THE NORTHERN EMPTY - Labrinthos -->
+<!-- ILSABARD - Radz-at-Han -->
+<!-- ILSABARD - Thavnair -->
+<!-- ILSABARD - Garlemald -->
+<!-- THE SEA OF STARS - Mare Lamentorum -->
+<!-- THE SEA OF STARS - Ultima Thule -->
+<!-- THE WORLD UNSUNDERED - Elpis -->
+<!-- Use cat's OceanTrip for Ocean Fishes: https://github.com/catrenelle/OceanTrip -->
 ]>
 
 <Profile>
@@ -356,7 +356,7 @@
         <LLoadProfile Path="LaNoscea/WesternLaNoscea/Navigators_Brand.xml"/>
     </If>
     <!-- The_Lone_Ripper -->
-    <If Condition="&The_Lone_Ripper; == 1 and not HasAtLeast(7926,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 6)">
+    <If Condition="&The_Lone_Ripper; == 1 and not HasAtLeast(7926,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Gales')">
         <LLoadProfile Path="LaNoscea/WesternLaNoscea/The_Lone_Ripper.xml"/>
     </If>
     <!-- Helmsmans Hand -->

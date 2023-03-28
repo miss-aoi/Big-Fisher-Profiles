@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Profile: Seahag (8757)
-  Authors: budesaal
+  Authors: budesaal, miss-aoi
 -->
 <Profile>
   <Name>Seahag</Name>
@@ -13,13 +13,15 @@
 		<If condition="not HasAtLeast(2585,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2585,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
 		<If condition="not IsOnSubMap(363)">
 			<LisbethTravel ZoneId="138" XYZ="-355.129, -39.56086, -358.0498"/>
 		</If>
-		<if condition="HasAtLeast(30481,1)">
-			<RunCode name="Food"/>
-		</If>
-		<ExFish Bait="Lugworm" ShuffleFishSpots="True" Mooch="3" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8757,1) and IsTimeBetween(19,24) or IsTimeBetween(0,2) and SkywatcherPlugin.IsWeatherInZone(138, 1, 2) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(-8), 1, 2)">
+		<ExFish Bait="Lugworm" Condition="not HasAtLeast(8757,1) and IsTimeBetween(19,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+				Mooch="3" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Medium" />
@@ -29,7 +31,9 @@
 				<Keeper name="Seahag" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="-365.1437, -39.21381, -362.0437" Heading="4,064904" Sit="True"/>
+				<FishSpot XYZ="-333.7354, -40.54993, -348.5803" Heading="1.075289" Sit="True" />
+				<FishSpot XYZ="-362.0725, -39.38726, -367.4854" Heading="4.304844" Sit="True" />
+				<FishSpot XYZ="-344.2648, -38.81131, -378.0714" Heading="2.943487" Sit="True" />
 			</FishSpots>
 		</ExFish>	
 	</If>
@@ -39,16 +43,5 @@
   <GrindAreas>
   </GrindAreas>
   <CodeChunks>
-  	<CodeChunk Name="Food">
-      <![CDATA[
-            
-                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
-            
-        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
-        item.UseItem();
-        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
-            
-       ]]>
-    </CodeChunk>
   </CodeChunks>
 </Profile>

@@ -35,9 +35,9 @@
 				<FishSpot XYZ="859.7519, 22.08624, 154.0708" Heading="4.228399" Sit="True" />
 			</FishSpots>
 		</ExFish>
-				<ExFish Bait="Northern Krill" Condition="not HasAtLeast(8754,1) and Core.Player.HasAura(568) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')"
-						MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
-						Chum="True" Mooch="1" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
+		<ExFish Bait="Northern Krill" Condition="not HasAtLeast(8754,1) and Core.Player.HasAura(568) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+				Chum="True" Mooch="1" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Heavy" />
 			</PatienceTugs>

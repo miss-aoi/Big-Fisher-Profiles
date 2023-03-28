@@ -20,14 +20,18 @@
 			<LisbethTravel ZoneId="137" XYZ="-70.91592, 33.82394, 223.3905"/>
 		</If>
 		<ExFish Bait="Snurble Fly" Condition="not HasAtLeast(7938,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+				Mooch="1" Patience="Patience">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Medium" />
+			</PatienceTugs>
 			<Keepers>
 				<Keeper name="The Drowned Sniper" />
 			</Keepers>
 			<FishSpots>
 				<FishSpot XYZ="-76.91438, 33.88614, 224.1277" Heading="4.626702" Sit="True" />
 				<FishSpot XYZ="-111.6467, 33.92606, 231.1327" Heading="0.1593609" Sit="True" />
-				<FishSpot XYZ="-50.24319, 33.93338, 223.774" Heading="1.646382" Sit="True" />
+				<FishSpot XYZ="-55.90533, 33.78047, 223.2611" Heading="4.696387" Sit="True" />
 			</FishSpots>
 		</ExFish>	
 	</If>

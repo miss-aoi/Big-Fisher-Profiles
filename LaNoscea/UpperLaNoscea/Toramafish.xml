@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Profile: Toramafish (7905)
-  Authors: budesaal
+  Authors: budesaal, miss-aoi
 -->
 <Profile>
   <Name>Toramafish</Name>
@@ -19,10 +19,9 @@
 		<If condition="not IsOnSubMap(231)">
 			<LisbethTravel ZoneId="139" XYZ="-346.4047, -1.910502, 133.8583"/>
 		</If>
-		<if condition="HasAtLeast(30481,1)">
-			<RunCode name="Food"/>
-		</If>
-		<ExFish Bait="Spinnerbait" ShuffleFishSpots="True" Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(7905,1) and IsTimeBetween(17,20) and SkywatcherPlugin.IsWeatherInZone(139, 3, 4)">
+		<ExFish Bait="Spinnerbait" Condition="not HasAtLeast(7905,1) and IsTimeBetween(17,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(139, 'Fog', 'Clouds')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+				Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Heavy" />
@@ -31,7 +30,9 @@
 				<Keeper name="Toramafish" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="-365.8953, -1.96612, 129.5738" Heading="4,908869" Sit="True"/>
+				<FishSpot XYZ="-352.9603, -3.009619, 116.2184" Heading="3.380132" Sit="True" />
+				<FishSpot XYZ="-365.8256, -1.967316, 130.2256" Heading="4.785471" Sit="True" />
+				<FishSpot XYZ="-323.3856, -2.390284, 117.6317" Heading="2.751819" Sit="True" />
 			</FishSpots>
 		</ExFish>	
 	</If>
@@ -41,16 +42,5 @@
   <GrindAreas>
   </GrindAreas>
   <CodeChunks>
-  	<CodeChunk Name="Food">
-      <![CDATA[
-            
-                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
-            
-        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
-        item.UseItem();
-        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
-            
-       ]]>
-    </CodeChunk>
   </CodeChunks>
 </Profile>

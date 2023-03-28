@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Profile: The Lone Ripper (7926)
-  Authors: budesaal
+  Authors: budesaal, miss-aoi
 -->
 <Profile>
   <Name>The Lone Ripper</Name>
@@ -19,12 +19,15 @@
 		<If condition="not IsOnSubMap(945)">
 			<LisbethTravel ZoneId="138" XYZ="-228.1734, -41.15087, 27.03734"/>
 		</If>
-		<ExFish Bait="Heavy Steel Jig" ShuffleFishSpots="True" Condition="not HasAtLeast(7926,1) and SkywatcherPlugin.IsWeatherInZone(138, 6)">
+		<ExFish Bait="Heavy Steel Jig" Condition="not HasAtLeast(7926,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Gales')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
 			<Keepers>
 				<Keeper name="The Lone Ripper" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="-243.1071, -42.14145, 15.70758" Heading="10,004834" Sit="True"/>
+				<FishSpot XYZ="-244.774, -42.1517, 16.95212" Heading="4.160766" Sit="True" />
+				<FishSpot XYZ="-241.2194, -42.11089, 44.17156" Heading="4.514718" Sit="True" />
+				<FishSpot XYZ="-248.0168, -42.18903, 54.60107" Heading="4.250824" Sit="True" />
 			</FishSpots>
 		</ExFish>	
 	</If>
