@@ -19,6 +19,9 @@
 		<If condition="not IsOnSubMap(461)">
 			<LisbethTravel ZoneId="138" XYZ="-292.056, -41.15286, 413.3401"/>
 		</If>
+		<While Condition="not IsTimeBetween(9,15)">
+			<WaitTimer WaitTime="3" />
+		</While>
 		<ExFish Bait="Pill Bug" Condition="not HasAtLeast(7941,1) and IsTimeBetween(9,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clouds', 'Fog', 'Wind')"
 				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
 				Mooch="2" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">

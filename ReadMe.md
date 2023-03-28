@@ -11,6 +11,8 @@ This profile set is designed to catch all Big Fish until level 90.
 
 Open "Start.xml" and change the 0 to 1 for each Big fish you want.
 
+All fish with timed window have the time check shifted to one hour earlier on the Start.xml profile. This is so you can get bait (if needed) and get to the spot so that time is spent fishing for those with short windows rather than getting there. The actual timed windows are used in the individual fish profiles.
+
 ## Disclaimer
 
 This profile set is still a work in progress, so use at your own risk and I'm not responsible if it does anything not fun.

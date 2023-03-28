@@ -19,28 +19,59 @@
 		<If condition="not IsOnSubMap(168)">
 			<LisbethTravel ZoneId="137" XYZ="-253.4813, 35.16173, 289.4978"/>
 		</If>
-		<ExFish Bait="Honey Worm" Condition="not HasAtLeast(8752,1)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
-				Mooch="2" Patience="Patience" MinimumGPPatience="300" ForceCordial="True">
-			<PatienceTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-			</PatienceTugs>
-			<Keepers>
-				<Keeper name="Imperial Goldfish" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="-278.8307, 33.78064, 296.5956" Heading="4.435918" Sit="True" />
-				<FishSpot XYZ="-280.1851, 33.99385, 304.9468" Heading="2.548871" Sit="True" />
-				<FishSpot XYZ="-272.5454, 33.78063, 299.9305" Heading="4.463154" Sit="True" />
-			</FishSpots>
-		</ExFish>	
+		<While Condition="not HasAtLeast(8752,1)">
+			<Dismount/>
+			<Desynth ItemIds="5031" DesynthDelay="6000" DesynthTimeout="10"/>
+			<ExFish Bait="Honey Worm" Condition="not HasAtLeast(5031,3)"
+					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+					Mooch="3" Patience="Patience" MinimumGPPatience="300" ForceCordial="True">
+				<PatienceTugs>
+					<PatienceTug moochLevel="0" TugType="Light" /> <!-- Silverfish -->
+					<PatienceTug moochLevel="1" TugType="Light" /> <!-- Goldfish -->
+					<PatienceTug moochLevel="2" TugType="Medium" /> <!-- Jungle Catfish -->
+				</PatienceTugs>
+				<Keepers>
+					<Keeper name="Jungle Catfish" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="-278.8307, 33.78064, 296.5956" Heading="4.435918" Sit="True" />
+					<FishSpot XYZ="-280.1851, 33.99385, 304.9468" Heading="2.548871" Sit="True" />
+					<FishSpot XYZ="-272.5454, 33.78063, 299.9305" Heading="4.463154" Sit="True" />
+				</FishSpots>
+			</ExFish>
+			<RunCode Name="Thaliaks_Favor" />
+			<ExFish Bait="Honey Worm" Condition="not HasAtLeast(8752,1) and Core.Player.HasAura(568)"
+					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+					Mooch="3" Patience="Patience" MinimumGPPatience="300" ForceCordial="True">
+				<PatienceTugs>
+					<PatienceTug moochLevel="0" TugType="Light" /> <!-- Silverfish -->
+					<PatienceTug moochLevel="1" TugType="Heavy" /> <!-- Imperial Goldfish -->
+				</PatienceTugs>
+				<Keepers>
+					<Keeper name="Imperial Goldfish" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="-278.8307, 33.78064, 296.5956" Heading="4.435918" Sit="True" />
+					<FishSpot XYZ="-280.1851, 33.99385, 304.9468" Heading="2.548871" Sit="True" />
+					<FishSpot XYZ="-272.5454, 33.78063, 299.9305" Heading="4.463154" Sit="True" />
+				</FishSpots>
+			</ExFish>
+		</While>
 	</If>
+	<Desynth ItemIds="5031" DesynthDelay="6000" DesynthTimeout="10"/>
 	<LLoadProfile Path="../../Start.xml"/>
 	
 	</Order>
 	<GrindAreas>
 	</GrindAreas>
 	<CodeChunks>
+		<CodeChunk Name="Thaliaks_Favor">
+			<![CDATA[
+				if ((Core.Me.MaxGP - Core.Me.CurrentGP) > 200 && ActionManager.CanCast(26804, Core.Me))
+					{
+    					ActionManager.DoAction(26804, Core.Me);
+					}
+			]]>
+		</CodeChunk>
 	</CodeChunks>
 </Profile>

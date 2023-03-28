@@ -17,6 +17,9 @@
 			<LisbethTravel ZoneId="156" XYZ="-410.9514, -16.49904, -421.2103"/>
 		</If>
 		<RunCode name="Food"/>
+		<While Condition="not IsTimeBetween(18,9)">
+			<WaitTimer WaitTime="3" />
+		</While>
 		<ExFish Bait="Midge Basket" Condition="not HasAtLeast(8761,1) and IsTimeBetween(18,9) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')"
 				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
 				Mooch="3" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">

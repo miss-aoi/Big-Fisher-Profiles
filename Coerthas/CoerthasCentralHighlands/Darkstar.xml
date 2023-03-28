@@ -20,6 +20,9 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<Desynth ItemIds="5544" DesynthDelay="6000" DesynthTimeout="10"/>
+		<While Condition="not IsTimeBetween(19,4)">
+			<WaitTimer WaitTime="3" />
+		</While>
 		<ExFish Bait="Stonefly Nymph" Condition="not HasAtLeast(5544,5) and IsTimeBetween(19,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Snow', 'Blizzards')"
 				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
 			<PatienceTugs>

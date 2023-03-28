@@ -17,8 +17,11 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<If condition="not IsOnSubMap(218)">
-			<LisbethTravel ZoneId="138" XYZ="658.5065, 6.368301, 551.9213"/>
+			<LisbethTravel Zone="138" XYZ="658.0223, 9.094515, 510.2093" />
 		</If>
+		<While Condition="not IsTimeBetween(19,3)">
+			<WaitTimer WaitTime="3" />
+		</While>
 		<ExFish Bait="Northern Krill" Condition="not HasAtLeast(7687,1) and IsTimeBetween(19,3)"
 				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
 			<Keepers>

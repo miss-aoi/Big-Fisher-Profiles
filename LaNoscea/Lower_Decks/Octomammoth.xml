@@ -16,6 +16,9 @@
 		<If condition="not IsOnSubMap(0)">
 			<LisbethTravel ZoneId="129" XYZ="-183.9088, 2, 194.1954"/>
 		</If>
+		<While Condition="not IsTimeBetween(9,17)">
+			<WaitTimer WaitTime="3" />
+		</While>
 		<ExFish Bait="Pill Bug" Condition="not HasAtLeast(7707,1) and IsTimeBetween(9,17)"
 				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
 				Mooch="1" Patience="Patience">
