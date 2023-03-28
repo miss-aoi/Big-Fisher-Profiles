@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Navigators Brand (7693)
-  Authors: budesaal, miss-aoi
+	Profile: Navigators Brand (7693)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Navigators Brand</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
+	<Name>Navigators Brand</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
 	<If condition="not HasAtLeast(7693,1)">
 		<Log Message="Start Fishing: Navigators Brand..." />
 		<If condition="not HasAtLeast(2628,3)">
@@ -29,13 +29,13 @@
 				<FishSpot XYZ="440.1911, 11.35679, 434.9116" Heading="4.488194" Sit="True" />
 				<FishSpot XYZ="429.9157, 14.96737, 446.2473" Heading="4.373005" Sit="True" />
 			</FishSpots>
-		</ExFish>	
+		</ExFish>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

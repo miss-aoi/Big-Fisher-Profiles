@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Ninja Betta (8761)
-  Authors: budesaal, miss-aoi
+	Profile: Ninja Betta (8761)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Ninja Betta</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
+	<Name>Ninja Betta</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
 	<If condition="not HasAtLeast(8761,1)">
 		<Log Message="Start Fishing: Ninja Betta..." />
 		<If condition="not HasAtLeast(2592,50)">
@@ -33,13 +33,13 @@
 				<FishSpot XYZ="-375.4692, -17.14841, -417.3067" Heading="0.7265582" Sit="True" />
 				<FishSpot XYZ="-392.5934, -17.14841, -463.8953" Heading="3.669184" Sit="True" />
 			</FishSpots>
-		</ExFish>	
+		</ExFish>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

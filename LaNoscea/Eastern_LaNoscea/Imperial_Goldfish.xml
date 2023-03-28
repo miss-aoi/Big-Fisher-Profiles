@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Imperial Goldfish (8752)
-  Authors: budesaal, miss-aoi
+	Profile: Imperial Goldfish (8752)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Imperial Goldfish</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
+	<Name>Imperial Goldfish</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
 	<If condition="not HasAtLeast(8752,5)">
 		<Log Message="Start Fishing: Imperial Goldfish..." />
 		<If condition="not HasAtLeast(2599,50)">
@@ -30,17 +30,17 @@
 				<Keeper name="Imperial Goldfish" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="-286.5046, 34.35244, 291.675" Heading="4.773697" Sit="True" />
-				<FishSpot XYZ="-285.3232, 33.91439, 294.5509" Heading="4.840661" Sit="True" />
-				<FishSpot XYZ="-304.5351, 35.64708, 273.6548" Heading="5.947596" Sit="True" />
+				<FishSpot XYZ="-278.8307, 33.78064, 296.5956" Heading="4.435918" Sit="True" />
+				<FishSpot XYZ="-280.1851, 33.99385, 304.9468" Heading="2.548871" Sit="True" />
+				<FishSpot XYZ="-272.5454, 33.78063, 299.9305" Heading="4.463154" Sit="True" />
 			</FishSpots>
 		</ExFish>	
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

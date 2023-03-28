@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Joan of Trout (7904)
-  Authors: budesaal, miss-aoi
+	Profile: Joan of Trout (7904)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Joan of Trout</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
+	<Name>Joan of Trout</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
 	<If condition="not HasAtLeast(7904,1)">
 		<Log Message="Start Fishing: Joan of Trout..." />
 		<If condition="not HasAtLeast(2614,3)">
@@ -29,13 +29,13 @@
 				<FishSpot XYZ="-583.9859, -3.4, -45.61539" Heading="4.04835" Sit="True" />
 				<FishSpot XYZ="-638.4596, -3.4, -35.60034" Heading="0.2826598" Sit="True" />
 			</FishSpots>
-		</ExFish>	
+		</ExFish>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

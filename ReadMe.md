@@ -44,7 +44,7 @@ This profile set is still a work in progress, so use at your own risk and I'm no
 - [ ] The Goblet
 
 ### Coerthas
-- [ ] Coerthas Central Highlands
+- [x] Coerthas Central Highlands
 - [ ] Coerthas Western Highlands
 
 ### Mor Dhona

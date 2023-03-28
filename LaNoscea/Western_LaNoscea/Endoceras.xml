@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Endoceras (8756)
-  Authors: budesaal, miss-aoi
+	Profile: Endoceras (8756)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Endoceras</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
-	<If condition="not HasAtLeast(8756,1)">		
+	<Name>Endoceras</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+	<If condition="not HasAtLeast(8756,1)">
 		<Log Message="Start Fishing: Endoceras..." />
 		<If condition="not HasAtLeast(2596,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2596,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
@@ -34,13 +34,13 @@
 				<FishSpot XYZ="-475.5448, -38.35024, 768.3134" Heading="6.152446" Sit="True" />
 				<FishSpot XYZ="-490.0315, -37.92073, 761.21" Heading="5.404744" Sit="True" />
 			</FishSpots>
-		</ExFish>	
+		</ExFish>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

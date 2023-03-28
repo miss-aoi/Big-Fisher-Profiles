@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Meteor Survivor (7903)
-  Authors: budesaal, miss-aoi
+	Profile: Meteor Survivor (7903)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Meteor Survivor</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
+	<Name>Meteor Survivor</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
 	<If condition="not HasAtLeast(7903,1)">
 		<Log Message="Start Fishing: Meteor Survivor..." />
 		<If condition="not HasAtLeast(2591,50)">
@@ -29,13 +29,13 @@
 				<FishSpot XYZ="-196.9584, -0.1789726, 700.2988" Heading="4.19792" Sit="True" />
 				<FishSpot XYZ="-232.1735, -0.2515026, 666.2292" Heading="5.016819" Sit="True" />
 			</FishSpots>
-		</ExFish>	
+		</ExFish>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

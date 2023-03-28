@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Nepto Dragon (8754)
-  Authors: budesaal, miss-aoi
+	Profile: Nepto Dragon (8754)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Nepto Dragon</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
-	<If condition="not HasAtLeast(8754,1)">		
+	<Name>Nepto Dragon</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+	<If condition="not HasAtLeast(8754,1)">
 		<Log Message="Start Fishing: Nepto Dragon..." />
 		<If condition="not HasAtLeast(2606,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2606,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
@@ -54,9 +54,9 @@
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

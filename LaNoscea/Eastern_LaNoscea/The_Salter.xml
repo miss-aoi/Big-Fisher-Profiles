@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: The Salter (7925)
-  Authors: budesaal, miss-aoi
+	Profile: The Salter (7925)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>The Salter</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
+	<Name>The Salter</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
 	<If condition="not HasAtLeast(7925,1)">
 		<Log Message="Start Fishing: The Salter..." />
 		<If condition="not HasAtLeast(2599,50)">
@@ -33,9 +33,9 @@
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

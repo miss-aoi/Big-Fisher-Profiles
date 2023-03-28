@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-	Profile: Shonisaurus (8772)
+	Profile: Mahar (8771)
 	Authors: budesaal, miss-aoi
 -->
 <Profile>
-	<Name>Shonisaurus</Name>
+	<Name>Mahar</Name>
 	<BehaviorDirectory></BehaviorDirectory>
 	<Order>
 
-	<If condition="not HasAtLeast(8772,1)">
-		<Log Message="Start Fishing: Shonisaurus..." />
+	<If condition="not HasAtLeast(8771,1)">
+		<Log Message="Start Fishing: Mahar..." />
 		<If condition="not HasAtLeast(2605,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2605,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
@@ -19,16 +19,15 @@
 		<If Condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Hoverworm" Condition="not HasAtLeast(8772,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
+		<ExFish Bait="Hoverworm" Condition="not HasAtLeast(8771,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
 				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
-				Mooch="3" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
+				Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />
 				<PatienceTug moochLevel="1" TugType="Heavy" />
-				<PatienceTug moochLevel="2" TugType="Heavy" />
 			</PatienceTugs>
 			<Keepers>
-				<Keeper name="Shonisaurus" />
+				<Keeper name="Mahar" />
 			</Keepers>
 			<FishSpots>
 				<FishSpot XYZ="576.5197, 300.6741, -171.3599" Heading="3.279671" Sit="True" />

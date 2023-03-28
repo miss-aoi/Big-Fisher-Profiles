@@ -1,34 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Charons Lantern (7933)
-  Authors: budesaal
+	Profile: Charons Lantern (7933)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Charons Lantern</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
-	<If condition="not HasAtLeast(7933,1)">		
+	<Name>Charons Lantern</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+	<If condition="not HasAtLeast(7933,1)">
+		<Log Message="Start Fishing: Anomalocaris..." />
 		<If condition="not HasAtLeast(2603,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2603,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
 		<If condition="not IsOnSubMap(398)">
 			<LisbethTravel ZoneId="155" XYZ="-451.1668, 285.7495, 108.6161"/>
 		</If>
-		<ExFish Bait="Glowworm" ShuffleFishSpots="True" Condition="not HasAtLeast(7933,1) and IsTimeBetween(0,4)">
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<ExFish Bait="Glowworm" Condition="not HasAtLeast(7933,1) and IsTimeBetween(0,4)"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
 			<Keepers>
 				<Keeper name="Charon's Lantern" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="-446.0848, 282.8987, 100.435" Heading="12,585738" Sit="True"/>
+				<FishSpot XYZ="-449.4667, 283.0526, 97.06876" Heading="2.553407" Sit="True" />
+				<FishSpot XYZ="-432.0216, 280.996, 94.30849" Heading="3.583848" Sit="True" />
+				<FishSpot XYZ="-420.8456, 277.5037, 82.97137" Heading="4.029955" Sit="True" />
 			</FishSpots>
 		</ExFish>	
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

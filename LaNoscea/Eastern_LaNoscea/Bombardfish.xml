@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Bombardfish (7924)
-  Authors: budesaal, miss-aoi
+	Profile: Bombardfish (7924)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Bombardfish</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
+	<Name>Bombardfish</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
   
 	<If condition="not HasAtLeast(7924,1)">
 		<Log Message="Start Fishing: Bombardfish..." />
@@ -33,9 +33,9 @@
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

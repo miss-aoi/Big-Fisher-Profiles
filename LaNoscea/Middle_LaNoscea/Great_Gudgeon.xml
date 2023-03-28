@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Great Gudgeon (7688)
-  Authors: budesaal, miss-aoi
+	Profile: Great Gudgeon (7688)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Great Gudgeon</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
+	<Name>Great Gudgeon</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
 	<If condition="not HasAtLeast(7688,1)">
 		<Log Message="Start Fishing: Great Gudeon..." />
 		<If condition="not HasAtLeast(2588,50)">
@@ -29,13 +29,13 @@
 				<FishSpot XYZ="-127.117, 42.0596, -122.7199" Heading="5.410823" Sit="True" />
 				<FishSpot XYZ="-37.02737, 46.38836, -213.9085" Heading="2.39071" Sit="True" />
 			</FishSpots>
-		</ExFish>	
+		</ExFish>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Kuno the Killer (8763)
-  Authors: budesaal, miss-aoi
+	Profile: Kuno the Killer (8763)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Kuno the Killer</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
+	<Name>Kuno the Killer</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
 	<If condition="not HasAtLeast(8763,1)">
 		<Log Message="Start Fishing: Kuno the Killer..." />
 		<If condition="not HasAtLeast(2599,50)">
@@ -36,9 +36,9 @@
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

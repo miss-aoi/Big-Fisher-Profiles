@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Toramafish (7905)
-  Authors: budesaal, miss-aoi
+	Profile: Toramafish (7905)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Toramafish</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
+	<Name>Toramafish</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
 	<If condition="not HasAtLeast(7905,1)">
 		<Log Message="Start Fishing: Toramafish..." />
 		<If condition="not HasAtLeast(2626,3)">
@@ -34,13 +34,13 @@
 				<FishSpot XYZ="-365.8256, -1.967316, 130.2256" Heading="4.785471" Sit="True" />
 				<FishSpot XYZ="-323.3856, -2.390284, 117.6317" Heading="2.751819" Sit="True" />
 			</FishSpots>
-		</ExFish>	
+		</ExFish>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

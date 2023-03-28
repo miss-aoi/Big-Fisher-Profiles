@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Ignus Horn (8758)
-  Authors: budesaal, miss-aoi
+	Profile: Ignus Horn (8758)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Ignus Horn</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
+	<Name>Ignus Horn</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
 	<If condition="not HasAtLeast(8758,1)">
 		<Log Message="Start Fishing: Ignus Horn..." />
 		<If condition="not HasAtLeast(2603,50)">
@@ -30,9 +30,9 @@
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

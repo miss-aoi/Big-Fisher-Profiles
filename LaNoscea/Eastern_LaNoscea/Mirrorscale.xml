@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Mirrorscale (7940)
-  Authors: budesaal, miss-aoi
+	Profile: Mirrorscale (7940)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Mirrorscale</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
+	<Name>Mirrorscale</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
 	<If condition="not HasAtLeast(7940,1)">
 		<Log Message="Start Fishing: Mirrorscale..." />
 		<If condition="not HasAtLeast(2594,50)">
@@ -38,9 +38,9 @@
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: The Lone Ripper (7926)
-  Authors: budesaal, miss-aoi
+	Profile: The Lone Ripper (7926)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>The Lone Ripper</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
+	<Name>The Lone Ripper</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
 	<If condition="not HasAtLeast(7926,1)">
 		<Log Message="Start Fishing: The Lone Ripper..." />
 		<If condition="not HasAtLeast(2619,3)">
@@ -29,13 +29,13 @@
 				<FishSpot XYZ="-241.2194, -42.11089, 44.17156" Heading="4.514718" Sit="True" />
 				<FishSpot XYZ="-248.0168, -42.18903, 54.60107" Heading="4.250824" Sit="True" />
 			</FishSpots>
-		</ExFish>	
+		</ExFish>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

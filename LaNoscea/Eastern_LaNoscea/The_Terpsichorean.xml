@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: The Terpsichorean (7939)
-  Authors: budesaal, miss-aoi
+	Profile: The Terpsichorean (7939)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>The Terpsichorean</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
+	<Name>The Terpsichorean</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
   
 	<If condition="not HasAtLeast(7939,1)">
 		<Log Message="Start Fishing: The Terpsichorean..." />
@@ -29,13 +29,13 @@
 				<FishSpot XYZ="-52.09799, 34.67363, 441.288" Heading="4.324475" Sit="True" />
 				<FishSpot XYZ="-37.85912, 35.29853, 424.1711" Heading="0.4665878" Sit="True" />
 			</FishSpots>
-		</ExFish>	
+		</ExFish>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

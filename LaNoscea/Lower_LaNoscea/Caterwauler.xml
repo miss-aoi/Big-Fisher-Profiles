@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Caterwauler (7681)
-  Authors: budesaal, miss-aoi
+	Profile: Caterwauler (7681)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Caterwauler</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
+	<Name>Caterwauler</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
 	<If condition="not HasAtLeast(7681,1)">
-		<Log Message="Start Fishing: Caterwauler..." />	
+		<Log Message="Start Fishing: Caterwauler..." />
 		<If condition="not HasAtLeast(2586,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2586,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
@@ -29,13 +29,13 @@
 				<FishSpot XYZ="190.3371, 28.83445, 84.1914" Heading="0.6889129" Sit="True" />
 				<FishSpot XYZ="209.8657, 25.46121, 101.347" Heading="3.606406" Sit="True" />
 			</FishSpots>
-		</ExFish>	
+		</ExFish>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

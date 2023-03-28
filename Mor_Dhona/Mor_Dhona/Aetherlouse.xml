@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Aetherlouse (7951)
-  Authors: budesaal
+	Profile: Aetherlouse (7951)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Aetherlouse</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
+	<Name>Aetherlouse</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
 	<If condition="not HasAtLeast(7951,1)">
 		<Log Message="Start Fishing: Aetherlouse..." />
 		<If condition="not HasAtLeast(2603,50)">
@@ -17,9 +17,9 @@
 			<LisbethTravel ZoneId="156" XYZ="146.9707, -28.29212, -431.3828"/>
 		</If>
 		<If Condition="not ClassName == ClassJobType.Fisher">
-      		<ChangeClass Job="Fisher" />
-    	</If>
-    	<ExFish Bait="Glowworm" Condition="not HasAtLeast(7951,1) and IsTimeBetween(3,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 17)"
+			<ChangeClass Job="Fisher" />
+		</If>
+		<ExFish Bait="Glowworm" Condition="not HasAtLeast(7951,1) and IsTimeBetween(3,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 17)"
 				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
 			<Keepers>
 				<Keeper name="Aetherlouse" />
@@ -33,9 +33,9 @@
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

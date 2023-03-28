@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Starbright (7945)
-  Authors: budesaal
+	Profile: Starbright (7945)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Starbright</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
-	<If condition="not HasAtLeast(7945,1)">		
+	<Name>Starbright</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+	<If condition="not HasAtLeast(7945,1)">
+		<Log Message="Start Fishing: Starbright..." />
 		<If condition="not HasAtLeast(2597,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2597,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
 		<If condition="not IsOnSubMap(383)">
 			<LisbethTravel ZoneId="155" XYZ="-299.6851, 244.8674, 12.87033"/>
 		</If>
-		<RunCode name="Food"/>
-		<ExFish Bait="Syrphid Basket" ShuffleFishSpots="True" Mooch="1" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(7945,1) and IsTimeBetween(21,24) or IsTimeBetween(0,4) and SkywatcherPlugin.IsWeatherInZone(155, 1, 2)">
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<ExFish Bait="Syrphid Basket" Condition="not HasAtLeast(7945,1) and IsTimeBetween(21,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Clear Skies', 'Fair Skies')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+				Mooch="1" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Heavy" />
@@ -25,26 +30,17 @@
 				<Keeper name="Starbright" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="-292.5592, 242.4644, 17.86998" Heading="0,9620361" Sit="True"/>
+				<FishSpot XYZ="-292.2026, 242.4896, 17.62959" Heading="1.029324" Sit="True" />
+				<FishSpot XYZ="-269.9615, 248.1604, 10.56468" Heading="0.02401352" Sit="True" />
+				<FishSpot XYZ="-299.8128, 242.6337, 32.33716" Heading="1.896401" Sit="True" />
 			</FishSpots>
 		</ExFish>	
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  	<CodeChunk Name="Food">
-      <![CDATA[
-            
-                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
-            
-        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
-        item.UseItem();
-        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
-            
-       ]]>
-    </CodeChunk>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

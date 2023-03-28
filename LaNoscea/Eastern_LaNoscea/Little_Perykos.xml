@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Little Perykos (20143)
-  Authors: budesaal, miss-aoi
+	Profile: Little Perykos (20143)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Little Perykos</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
+	<Name>Little Perykos</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
 	<If condition="not HasAtLeast(20143,1)">
 		<Log Message="Start Fishing: Little Perykos..." />
 		<If condition="not HasAtLeast(2585,50)">
@@ -39,9 +39,9 @@
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

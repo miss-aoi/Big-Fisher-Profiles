@@ -1,37 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Daniffens Mark (7932)
-  Authors: budesaal
+	Profile: Daniffens Mark (7932)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Daniffens Mark</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
+	<Name>Daniffens Mark</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
 	<If condition="not HasAtLeast(7932,1)">
+		<Log Message="Start Fishing: Daniffens Mark..." />
 		<If condition="not HasAtLeast(2623,3)">
 			<Lisbeth Json="[{'Item': 2623,'Group': 0,'Amount': 3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
 		</If>
 		<If condition="not IsOnSubMap(380)">
 			<LisbethTravel ZoneId="155" XYZ="-36.35629, 205.5014, 439.4049"/>
 		</If>
-		<ExFish Bait="Wildfowl Fly" ShuffleFishSpots="True" Condition="not HasAtLeast(7932,1) and SkywatcherPlugin.IsWeatherInZone(155, 16)">
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<ExFish Bait="Wildfowl Fly" Condition="not HasAtLeast(7932,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
 			<Keepers>
 				<Keeper name="Daniffen's Mark" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="-47.89296, 204.1906, 438.8118" Heading="4,661098" Sit="True"/>
+				<FishSpot XYZ="-41.51296, 204.1969, 439.9323" Heading="4.761396" Sit="True" />
+				<FishSpot XYZ="-56.52238, 200.1282, 466.597" Heading="0.01968575" Sit="True" />
+				<FishSpot XYZ="-74.65414, 199.246, 486.0047" Heading="4.57919" Sit="True" />
 			</FishSpots>
-		</ExFish>	
+		</ExFish>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>
