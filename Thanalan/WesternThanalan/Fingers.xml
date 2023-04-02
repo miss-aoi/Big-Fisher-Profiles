@@ -16,7 +16,12 @@
 		<If condition="not IsOnSubMap(370)">
 			<LisbethTravel ZoneId="140" XYZ="-328.2706, 13.9835, -100.0699"/>
 		</If>
-		<ExFish Bait="Northern Krill" ShuffleFishSpots="True" Mooch="0" Patience="Patience" Chum="True" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(7906,1) and IsTimeBetween(17,18)">
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<ExFish Bait="Northern Krill" Condition="not HasAtLeast(7906,1) and IsTimeBetween(17,18)"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True"
+				Mooch="0" Patience="Patience" Chum="True" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Heavy" />
 			</PatienceTugs>

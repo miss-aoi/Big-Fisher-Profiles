@@ -22,7 +22,7 @@
 		<While Condition="not IsTimeBetween(3,13)">
 			<WaitTimer WaitTime="3" />
 		</While>
-		<ExFish Bait="Glowworm" Condition="not HasAtLeast(7951,1) and IsTimeBetween(3,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 17)"
+		<ExFish Bait="Glowworm" Condition="not HasAtLeast(7951,1) and IsTimeBetween(3,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')"
 				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Aetherlouse" />

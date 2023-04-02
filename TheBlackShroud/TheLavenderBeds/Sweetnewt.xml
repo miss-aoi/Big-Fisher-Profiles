@@ -18,8 +18,12 @@
 			<RunCode Name="TheLavenderBeds"/>
 			<LisbethTravel ZoneId="340" XYZ="7.277023, 2.610901, 199.8097" Name="Dock" AllowedVariance="0.0"/>
 		</If>
-		<RunCode name="Food"/>
-		<ExFish Bait="Midge Basket" ShuffleFishSpots="True" Mooch="2" Patience="Patience" MinimumGPPatience="300" ForceCordial="True" Condition="not HasAtLeast(7923,1) and IsTimeBetween(23,24) or IsTimeBetween(0,4) and SkywatcherPlugin.IsWeatherInZone(340, 4)">
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<ExFish Bait="Midge Basket" Condition="not HasAtLeast(7923,1) and IsTimeBetween(23,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(340, 'Fog')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True"
+        Mooch="2" Patience="Patience" MinimumGPPatience="300" ForceCordial="True" >
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Heavy" />
@@ -38,17 +42,6 @@
   <GrindAreas>
   </GrindAreas>
   <CodeChunks>
-  	<CodeChunk Name="Food">
-      <![CDATA[
-            
-                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
-            
-        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
-        item.UseItem();
-        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
-            
-       ]]>
-    </CodeChunk>	
 	<CodeChunk Name="TheLavenderBeds"><![CDATA[ 
             var unit = GameObjectManager.GetObjectByNPCId(2);
             unit.Target();
@@ -77,8 +70,6 @@
 
                 if (CommonBehaviors.IsLoading) await Coroutine.Wait(-1, () => !CommonBehaviors.IsLoading);
             }
-
-			
 		]]></CodeChunk>
   </CodeChunks>
 </Profile>

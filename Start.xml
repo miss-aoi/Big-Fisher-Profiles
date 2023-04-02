@@ -574,7 +574,7 @@
             <LLoadProfile Path="Thanalan/WesternThanalan/Pirates_Bane.xml"/>
         </If>
         <!-- Ndendecki -->
-        <If Condition="&Ndendecki; == 1 and not HasAtLeast(8765,1) and (IsTimeBetween(0,5) or IsTimeBetween(18,24)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Fog')">
+        <If Condition="&Ndendecki; == 1 and not HasAtLeast(8765,1) and IsTimeBetween(18,5) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Fog')">
             <LLoadProfile Path="Thanalan/WesternThanalan/Ndendecki.xml"/>
         </If>
         <!-- Bat o Nine Tails -->

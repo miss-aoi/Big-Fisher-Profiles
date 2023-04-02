@@ -13,13 +13,14 @@
 		<If condition="not HasAtLeast(2611,3)">
 			<Lisbeth Json="[{'Item': 2611,'Group': 0,'Amount':3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
 		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>
 		<If condition="not IsOnSubMap(85)">
 			<LisbethTravel ZoneId="154" XYZ="235.4475, -27.25044, 163.2124"/>
 		</If>
-		<ExFish Bait="Floating Minnow" ShuffleFishSpots="True" Condition="not HasAtLeast(7699,1) and IsTimeBetween(9,14)">
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<ExFish Bait="Floating Minnow" Condition="not HasAtLeast(7699,1) and IsTimeBetween(9,14)"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Blue Widow" />
 			</Keepers>

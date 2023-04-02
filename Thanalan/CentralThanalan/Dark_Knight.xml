@@ -19,7 +19,8 @@
 		<If condition="not IsOnSubMap(249)">
 			<LisbethTravel ZoneId="141" XYZ="263.259, -19.71835, -135.9717"/>
 		</If>
-		<ExFish Bait="Crow Fly" ShuffleFishSpots="True" Condition="not HasAtLeast(7689,1) and SkywatcherPlugin.IsWeatherInZone(141, 3, 4, 11)">
+		<ExFish Bait="Crow Fly" Condition="not HasAtLeast(7689,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(141, 'Clouds', 'Fog', 'Dust Storms')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Dark Knight" />
 			</Keepers>

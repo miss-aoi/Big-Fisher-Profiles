@@ -16,7 +16,11 @@
 		<If condition="not IsOnSubMap(308)">
 			<LisbethTravel ZoneId="145" XYZ="244.7354, -3.677135, 52.97052"/>
 		</If>
-		<ExFish Bait="Honey Worm" ShuffleFishSpots="True" Condition="not HasAtLeast(7918,1) and IsTimeBetween(17,20) and SkywatcherPlugin.IsWeatherInZone(145, 1)">
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<ExFish Bait="Honey Worm" Condition="not HasAtLeast(7918,1) and IsTimeBetween(17,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Clear Skies')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="The Warden's Wand" />
 			</Keepers>

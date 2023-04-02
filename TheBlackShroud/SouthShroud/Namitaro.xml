@@ -16,14 +16,15 @@
 		<If condition="not HasAtLeast(2624,3)">
 			<Lisbeth Json="[{'Item': 2624,'Group': 0,'Amount':3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
 		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>	
 		<If condition="not IsOnSubMap(82)">
 			<LisbethTravel ZoneId="153" XYZ="507.079, 15.53178, 128.7852"/>
 		</If>
-		<RunCode name="Food"/>
-		<ExFish ShuffleFishSpots="True" Mooch="0" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8775,1) and SkywatcherPlugin.IsWeatherInZone(153, 9, 10)">
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<ExFish Condition="not HasAtLeast(8775,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True"
+				Mooch="0" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial">
 			<Baits>
 				<Bait name="Glowworm" condition="not Core.Player.HasAura(568)"/>
 				<Bait name="Topwater Frog" condition="Core.Player.HasAura(568)"/>
@@ -46,16 +47,5 @@
   <GrindAreas>
   </GrindAreas>
   <CodeChunks>
-  	<CodeChunk Name="Food">
-      <![CDATA[
-            
-                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
-            
-        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
-        item.UseItem();
-        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
-            
-       ]]>
-    </CodeChunk>
   </CodeChunks>
 </Profile>

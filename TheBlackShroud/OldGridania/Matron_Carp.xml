@@ -16,7 +16,11 @@
 		<If condition="not IsOnSubMap(0)">
 			<LisbethTravel ZoneId="133" XYZ="180.0303, -2.267064, -243.6821"/>
 		</If>
-		<ExFish Bait="Bloodworm" ShuffleFishSpots="True" Condition="not HasAtLeast(7708,1) and IsTimeBetween(15,21)">
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<ExFish Bait="Bloodworm" Condition="not HasAtLeast(7708,1) and IsTimeBetween(15,21)"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Matron Carp" />
 			</Keepers>
