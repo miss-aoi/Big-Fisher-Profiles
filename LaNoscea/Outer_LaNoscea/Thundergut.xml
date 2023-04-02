@@ -13,11 +13,11 @@
 		<If condition="not HasAtLeast(2601,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2601,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
-		<If condition="not IsOnSubMap(168)">
-			<LisbethTravel ZoneId="137" XYZ="-70.91592, 33.82394, 223.3905"/>
-		</If>
 		<If condition="not IsOnSubMap(235)">
 			<LisbethTravel ZoneId="180" XYZ="-293.4303, 5.643226, -561.4026"/>
+		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
 		</If>
 		<While Condition="not IsTimeBetween(19,3)">
 			<WaitTimer WaitTime="3" />

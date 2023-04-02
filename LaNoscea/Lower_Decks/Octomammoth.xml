@@ -16,6 +16,9 @@
 		<If condition="not IsOnSubMap(0)">
 			<LisbethTravel ZoneId="129" XYZ="-183.9088, 2, 194.1954"/>
 		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
 		<While Condition="not IsTimeBetween(9,17)">
 			<WaitTimer WaitTime="3" />
 		</While>
