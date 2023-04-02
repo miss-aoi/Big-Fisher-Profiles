@@ -21,7 +21,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Honey Worm" Condition="not HasAtLeast(7946,1)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" MaximumGPThaliaksFavor="400"
 				Mooch="1" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
@@ -31,25 +31,17 @@
 				<Keeper name="The Matriarch" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="-735.4037, 222.6547, 63.49319" Heading="3.7" Sit="True" />
-				<FishSpot XYZ="-738.4809, 222.6547, 63.54441" Heading="2.186695" Sit="True" />
+				<!-- <FishSpot XYZ="-735.4037, 222.6547, 63.49319" Heading="3.7" Sit="True" />
+				<FishSpot XYZ="-738.4809, 222.6547, 63.54441" Heading="2.186695" Sit="True" /> -->
 				<FishSpot XYZ="-737.453, 222.6547, 60.58356" Heading="0.1089523" Sit="True" />
 			</FishSpots>
 		</ExFish>
 	</If>
-	<LLoadProfile Path="../../Start.xml"/>
+	<!-- <LLoadProfile Path="../../Start.xml"/> -->
 
 	</Order>
 	<GrindAreas>
 	</GrindAreas>
 	<CodeChunks>
-		<CodeChunk Name="Thaliaks_Favor">
-			<![CDATA[
-				if ((Core.Me.MaxGP - Core.Me.CurrentGP) > 200 && ActionManager.CanCast(26804, Core.Me))
-					{
-    					ActionManager.DoAction(26804, Core.Me);
-					}
-			]]>
-		</CodeChunk>
 	</CodeChunks>
 </Profile>

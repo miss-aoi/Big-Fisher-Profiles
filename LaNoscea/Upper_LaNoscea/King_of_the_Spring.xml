@@ -23,7 +23,7 @@
 			<WaitTimer WaitTime="3" />
 		</While>
 		<ExFish Bait="Spinnerbait" Condition="not HasAtLeast(7927,1) and IsTimeBetween(16,19)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="King of the Spring" />
 			</Keepers>

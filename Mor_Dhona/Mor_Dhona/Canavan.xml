@@ -20,7 +20,7 @@
 			<WaitTimer WaitTime="3" />
 		</While>
 		<ExFish Bait="Honey Worm" Condition="not HasAtLeast(8763,1) and not Core.Player.HasAura(568) and IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True"
 				Mooch="3" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />

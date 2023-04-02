@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Profile: Bishopfish (17577)
-	Authors: budesaal
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
 	<Name>Bishopfish</Name>
@@ -23,12 +23,14 @@
 			<WaitTimer WaitTime="3" />
 		</While>
 		<ExFish Bait="Brute Leech" Condition="not HasAtLeast(17577,1) and IsTimeBetween(10,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Clear Skies')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Bishopfish" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="702.2099, 130.5252, -810.4643" Heading="8,382218" Sit="True"/>
+				<FishSpot XYZ="700.3533, 130.5082, -811.9639" Heading="2.642415" Sit="True" />
+				<FishSpot XYZ="697.6003, 130.462, -814.6788" Heading="3.000552" Sit="True" />
+				<FishSpot XYZ="705.3715, 130.7645, -807.4526" Heading="2.34919" Sit="True" />
 			</FishSpots>
 		</ExFish>
 	</If>

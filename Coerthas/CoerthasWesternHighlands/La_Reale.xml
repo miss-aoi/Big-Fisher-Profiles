@@ -19,13 +19,15 @@
 		<If Condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Brute Leech" ShuffleFishSpots="True" Condition="not HasAtLeast(15628,1)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
+		<ExFish Bait="Brute Leech" Condition="not HasAtLeast(15628,1)"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="La Reale" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="-422.0753, 90.27858, -349.8272" Heading="14,152234" Sit="True"/>
+				<FishSpot XYZ="-421.955, 90.26937, -349.758" Heading="6.204384" Sit="True" />
+				<FishSpot XYZ="-418.3141, 89.59487, -333.7301" Heading="5.041987" Sit="True" />
+				<FishSpot XYZ="-418.0547, 89.61117, -323.2126" Heading="4.380158" Sit="True" />
 			</FishSpots>
 		</ExFish>	
 	</If>

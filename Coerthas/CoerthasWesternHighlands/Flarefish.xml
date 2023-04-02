@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Profile: Flarefish (16746)
-	Authors: budesaal
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
 	<Name>Flarefish</Name>
@@ -23,7 +23,7 @@
 			<WaitTimer WaitTime="3" />
 		</While>
 		<ExFish Bait="Purse Web Spider" Condition="not HasAtLeast(16746,1) and IsTimeBetween(10,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True"
 				Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
@@ -33,7 +33,9 @@
 				<Keeper name="Flarefish" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="283.3506, 132.1021, -231.6502" Heading="10,0750885" Sit="True"/>
+				<FishSpot XYZ="276.9553, 131.7509, -237.6015" Heading="5.675732" Sit="True" />
+				<FishSpot XYZ="252.1819, 131.7576, -235.2873" Heading="1.013605" Sit="True" />
+				<FishSpot XYZ="240.2967, 132.1151, -206.4833" Heading="1.130893" Sit="True" />
 			</FishSpots>
 		</ExFish>
 	</If>

@@ -23,7 +23,7 @@
 			<WaitTimer WaitTime="3" />
 		</While>
 		<ExFish Bait="Goby Ball" Condition="not HasAtLeast(7712,1) and IsTimeBetween(21,3)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Jacques the Snipper" />
 			</Keepers>

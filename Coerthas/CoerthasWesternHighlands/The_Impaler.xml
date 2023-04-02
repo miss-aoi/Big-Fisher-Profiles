@@ -20,12 +20,14 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Brute Leech" Snagging="True" Condition="not HasAtLeast(15627,1)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="The Impaler" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="-704.6299, 102.8001, -636.426" Heading="3,167907" Sit="True"/>
+				<FishSpot XYZ="-702.4672, 102.8001, -634.7853" Heading="3.046915" Sit="True" />
+				<FishSpot XYZ="-695.7986, 102.8, -640.8844" Heading="3.362917" Sit="True" />
+				<FishSpot XYZ="-703.6832, 102.8001, -644.2105" Heading="5.606016" Sit="True" />
 			</FishSpots>
 		</ExFish>
 	</If>

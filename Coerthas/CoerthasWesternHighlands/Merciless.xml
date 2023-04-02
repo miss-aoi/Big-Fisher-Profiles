@@ -20,7 +20,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Caddisfly Larva" Condition="not HasAtLeast(16756,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(397, TimeSpan.FromHours(-8), 'Snow', 'Blizzards')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True"
 				Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
@@ -30,7 +30,9 @@
 				<Keeper name="Merciless" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="-463.6124, 90.36317, -656.9211" Heading="8,941995" Sit="True"/>
+				<FishSpot XYZ="-454.2133, 90.26717, -669.1575" Heading="3.815576" Sit="True" />
+				<FishSpot XYZ="-470.4974, 90.01168, -649.8319" Heading="3.920299" Sit="True" />
+				<FishSpot XYZ="-448.3315, 90.52505, -671.4198" Heading="4.060614" Sit="True" />
 			</FishSpots>
 		</ExFish>
 	</If>

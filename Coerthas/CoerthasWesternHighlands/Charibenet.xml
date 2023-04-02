@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Profile: Charibenet (17592)
-	Authors: budesaal
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
 	<Name>Charibenet</Name>
@@ -19,34 +19,48 @@
 		<If Condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
+		<Dismount/>
+		<If Condition="HasAtLeast(12715,1)">
+			<Desynth ItemIds="12715" DesynthDelay="6000" DesynthTimeout="10"/>
+		</If>
 		<While Condition="not IsTimeBetween(0,3)">
 			<WaitTimer WaitTime="3" />
 		</While>
-		<ExFish Bait="Purse Web Spider" Condition="not HasAtLeast(17592,1) and not Core.Player.HasAura(568) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
-				Mooch="0" IdenticalCast="True" ForceCordial="True" CordialType="HiCordial">
-			<PatienceTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-			</PatienceTugs>
-			<Keepers>
-				<Keeper name="Ice Faerie" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="702.2099, 130.5252, -810.4643" Heading="8,382218" Sit="True"/>
-			</FishSpots>
-		</ExFish>
-				<ExFish Bait="Purse Web Spider" ShuffleFishSpots="True" Chum="True" Mooch="1" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(17592,1) and Core.Player.HasAura(568) and IsTimeBetween(0,3) and SkywatcherPlugin.IsWeatherInZone(397, 16)">
-			<PatienceTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-			</PatienceTugs>
-			<Keepers>
-				<Keeper name="Charibenet" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="702.2099, 130.5252, -810.4643" Heading="8,382218" Sit="True"/>
-			</FishSpots>
-		</ExFish>
-		<Desynth ItemIds="12715" DesynthDelay="6000" DesynthTimeout="10"/>
+		<While Condition="not HasAtLeast(17592,1) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')">
+			<ExFish Bait="Purse Web Spider" Condition="not HasAtLeast(12715,5) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')"
+					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True"
+					Patience="Patience" IdenticalCast="True" ForceCordial="True" CordialType="HiCordial">
+				<PatienceTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+				</PatienceTugs>
+				<Keepers>
+					<Keeper name="Ice Faerie" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="-21.4197, 89.14197, -559.7135" Heading="4.573871" Sit="True" />
+					<FishSpot XYZ="-32.44563, 89.25902, -571.203" Heading="6.274516" Sit="True" />
+					<FishSpot XYZ="-48.33238, 89.17406, -557.7254" Heading="1.37154" Sit="True" />
+				</FishSpots>
+			</ExFish>
+			<ExFish Bait="Purse Web Spider" Condition="not HasAtLeast(17592,1) and Core.Player.HasAura(568) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')"
+					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+					Patience="Patience" Chum="True" IdenticalCast="True" ForceCordial="True" CordialType="HiCordial">
+				<PatienceTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+				</PatienceTugs>
+				<Keepers>
+					<Keeper name="Charibenet" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="-21.4197, 89.14197, -559.7135" Heading="4.573871" Sit="True" />
+					<FishSpot XYZ="-32.44563, 89.25902, -571.203" Heading="6.274516" Sit="True" />
+					<FishSpot XYZ="-48.33238, 89.17406, -557.7254" Heading="1.37154" Sit="True" />
+				</FishSpots>
+			</ExFish>
+			<If Condition="HasAtLeast(12715,1)">
+				<Desynth ItemIds="12715" DesynthDelay="6000" DesynthTimeout="10"/>
+			</If>
+		</While>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	

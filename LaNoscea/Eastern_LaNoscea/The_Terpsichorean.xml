@@ -20,7 +20,7 @@
 			<LisbethTravel ZoneId="137" XYZ="-68.43107, 36.05828, 471.5368"/>
 		</If>
 		<ExFish Bait="Honey Worm" Condition="not HasAtLeast(7939,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Fog')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="The Terpsichorean" />
 			</Keepers>

@@ -22,7 +22,9 @@
 		<If condition="not IsOnSubMap(145)">
 			<LisbethTravel ZoneId="154" XYZ="-150.08, -9.376681, -101.3697"/>
 		</If>
-		<RunCode name="Food"/>
+		<If Condition="HasAtLeast(5008,1)">
+			<Desynth ItemIds="5008" DesynthDelay="6000" DesynthTimeout="10"/>
+		</If>
 		<ExFish Bait="Glowworm" ShuffleFishSpots="True" Mooch="1" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(8760,1) and not Core.Player.HasAura(568)">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />
@@ -45,7 +47,9 @@
 				<FishSpot XYZ="-157.0592, -10.34948, -103.4891" Heading="2,029755" Sit="True"/>
 			</FishSpots>
 		</ExFish>
-		<Desynth ItemIds="5008" DesynthDelay="6000" DesynthTimeout="10"/>
+		<If Condition="HasAtLeast(5008,1)">
+			<Desynth ItemIds="5008" DesynthDelay="6000" DesynthTimeout="10"/>
+		</If>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
@@ -53,16 +57,5 @@
   <GrindAreas>
   </GrindAreas>
   <CodeChunks>
-  	<CodeChunk Name="Food">
-      <![CDATA[
-            
-                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
-            
-        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
-        item.UseItem();
-        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
-            
-       ]]>
-    </CodeChunk>
   </CodeChunks>
 </Profile>

@@ -9,7 +9,7 @@
 	<Order>
 
 	<If condition="not HasAtLeast(8769,1)">
-		<Log Message="Start Fishing: ..." />
+		<Log Message="Start Fishing: Darkstar..." />
 		<If condition="not HasAtLeast(12704,50)">
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12704,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
@@ -19,40 +19,47 @@
 		<If Condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<Desynth ItemIds="5544" DesynthDelay="6000" DesynthTimeout="10"/>
+		<Dismount/>
+		<If Condition="HasAtLeast(5544,1)">
+			<Desynth ItemIds="5544" DesynthDelay="6000" DesynthTimeout="10"/>
+		</If>
 		<While Condition="not IsTimeBetween(19,4)">
 			<WaitTimer WaitTime="3" />
 		</While>
-		<ExFish Bait="Stonefly Nymph" Condition="not HasAtLeast(5544,5) and IsTimeBetween(19,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Snow', 'Blizzards')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
-			<PatienceTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-			</PatienceTugs>
-			<Keepers>
-				<Keeper name="Lamp Marimo" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="492.7034, 347.5425, -699.8847" Heading="2.811154" Sit="True" />
-				<FishSpot XYZ="507.6468, 347.4637, -710.7338" Heading="3.726404" Sit="True" />
-				<FishSpot XYZ="499.6933, 347.5016, -730.2562" Heading="6.04072" Sit="True" />
-			</FishSpots>
-		</ExFish>
-		<ExFish Bait="Stonefly Nymph" Condition="not HasAtLeast(8769,1) and IsTimeBetween(19,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Snow', 'Blizzards')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
-				Mooch="1" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial">
-			<PatienceTugs>
-				<PatienceTug moochLevel="0" TugType="Heavy" />
-			</PatienceTugs>
-			<Keepers>
-				<Keeper name="Darkstar" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="492.7034, 347.5425, -699.8847" Heading="2.811154" Sit="True" />
-				<FishSpot XYZ="507.6468, 347.4637, -710.7338" Heading="3.726404" Sit="True" />
-				<FishSpot XYZ="499.6933, 347.5016, -730.2562" Heading="6.04072" Sit="True" />
-			</FishSpots>
-		</ExFish>
-		<Desynth ItemIds="5544" DesynthDelay="6000" DesynthTimeout="10"/>
+		<While Condition="not HasAtLeast(8769,1) and IsTimeBetween(19,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Snow', 'Blizzards')" >
+			<ExFish Bait="Stonefly Nymph" Condition="not HasAtLeast(5544,5) and IsTimeBetween(19,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Snow', 'Blizzards')"
+					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+				<PatienceTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+				</PatienceTugs>
+				<Keepers>
+					<Keeper name="Lamp Marimo" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="492.7034, 347.5425, -699.8847" Heading="2.811154" Sit="True" />
+					<FishSpot XYZ="507.6468, 347.4637, -710.7338" Heading="3.726404" Sit="True" />
+					<FishSpot XYZ="499.6933, 347.5016, -730.2562" Heading="6.04072" Sit="True" />
+				</FishSpots>
+			</ExFish>
+			<ExFish Bait="Stonefly Nymph" Condition="not HasAtLeast(8769,1) and IsTimeBetween(19,4) and Core.Player.HasAura(850) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Snow', 'Blizzards')"
+					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+					Mooch="1" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" ThaliaksFavor="True" Chum="True">
+				<PatienceTugs>
+					<PatienceTug moochLevel="0" TugType="Heavy" />
+				</PatienceTugs>
+				<Keepers>
+					<Keeper name="Darkstar" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="492.7034, 347.5425, -699.8847" Heading="2.811154" Sit="True" />
+					<FishSpot XYZ="507.6468, 347.4637, -710.7338" Heading="3.726404" Sit="True" />
+					<FishSpot XYZ="499.6933, 347.5016, -730.2562" Heading="6.04072" Sit="True" />
+				</FishSpots>
+			</ExFish>
+			<If Condition="HasAtLeast(5544,1)">
+				<Desynth ItemIds="5544" DesynthDelay="6000" DesynthTimeout="10"/>
+			</If>
+		</While>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	

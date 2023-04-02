@@ -20,7 +20,7 @@
 			<LisbethTravel ZoneId="135" XYZ="657.3607, 61.06521, -182.2135"/>
 		</If>
 		<ExFish Bait="Spoon Worm" Condition="not HasAtLeast(7710,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(135, 'Rain')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Syldra" />
 			</Keepers>

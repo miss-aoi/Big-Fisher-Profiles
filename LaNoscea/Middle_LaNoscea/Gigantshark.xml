@@ -20,7 +20,7 @@
 			<LisbethTravel ZoneId="134" XYZ="-297.3651, 7.54, -224.8838"/>
 		</If>
 		<ExFish Bait="Floating Minnow" Condition="not HasAtLeast(7686,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(134, 'Clear Skies', 'Fair Skies')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True"
 				Mooch="1" Patience="Patience">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />

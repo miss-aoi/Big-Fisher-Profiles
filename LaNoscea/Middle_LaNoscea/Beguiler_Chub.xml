@@ -23,7 +23,7 @@
 			<WaitTimer WaitTime="3" />
 		</While>
 		<ExFish Bait="Moth Pupa" Condition="not HasAtLeast(7679,1) and IsTimeBetween(9,14)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Beguiler Chub" />
 			</Keepers>

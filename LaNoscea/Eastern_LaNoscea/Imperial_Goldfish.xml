@@ -21,9 +21,11 @@
 		</If>
 		<While Condition="not HasAtLeast(8752,1)">
 			<Dismount/>
-			<Desynth ItemIds="5031" DesynthDelay="6000" DesynthTimeout="10"/>
+			<If Condition="HasAtLeast(5031,1)">
+				<Desynth ItemIds="5031" DesynthDelay="6000" DesynthTimeout="10"/>
+			</If>
 			<ExFish Bait="Honey Worm" Condition="not HasAtLeast(5031,3)"
-					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True"
 					Mooch="3" Patience="Patience" MinimumGPPatience="300" ForceCordial="True">
 				<PatienceTugs>
 					<PatienceTug moochLevel="0" TugType="Light" /> <!-- Silverfish -->
@@ -41,7 +43,7 @@
 			</ExFish>
 			<RunCode Name="Thaliaks_Favor" />
 			<ExFish Bait="Honey Worm" Condition="not HasAtLeast(8752,1) and Core.Player.HasAura(568)"
-					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True"
 					Mooch="3" Patience="Patience" MinimumGPPatience="300" ForceCordial="True">
 				<PatienceTugs>
 					<PatienceTug moochLevel="0" TugType="Light" /> <!-- Silverfish -->
@@ -58,20 +60,14 @@
 			</ExFish>
 		</While>
 	</If>
-	<Desynth ItemIds="5031" DesynthDelay="6000" DesynthTimeout="10"/>
+	<If Condition="HasAtLeast(5031,1)">
+		<Desynth ItemIds="5031" DesynthDelay="6000" DesynthTimeout="10"/>
+	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	
 	</Order>
 	<GrindAreas>
 	</GrindAreas>
 	<CodeChunks>
-		<CodeChunk Name="Thaliaks_Favor">
-			<![CDATA[
-				if ((Core.Me.MaxGP - Core.Me.CurrentGP) > 200 && ActionManager.CanCast(26804, Core.Me))
-					{
-    					ActionManager.DoAction(26804, Core.Me);
-					}
-			]]>
-		</CodeChunk>
 	</CodeChunks>
 </Profile>

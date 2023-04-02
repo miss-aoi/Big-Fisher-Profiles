@@ -20,7 +20,7 @@
 			<LisbethTravel ZoneId="134" XYZ="-12.28817, 13.29832, -455.9037"/>
 		</If>
 		<ExFish Bait="Butterworm" Condition="not HasAtLeast(7682,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(134, 'Clouds', 'Fog', 'Wind')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Crystal Perch" />
 			</Keepers>

@@ -20,7 +20,7 @@
 			<LisbethTravel ZoneId="137" XYZ="885.8239, 20.75006, 144.7628"/>
 		</If>
 		<ExFish Bait="Pill Bug" Condition="not HasAtLeast(8753,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(137, TimeSpan.FromHours(-4), 'Rain', 'Showers')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True"
 				Mooch="3" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />

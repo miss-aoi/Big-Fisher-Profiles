@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Profile: Fat Purse (15626)
-	Authors: budesaal
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
 	<Name>Fat Purse</Name>
@@ -20,13 +20,14 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Brute Leech" Condition="not HasAtLeast(15626,1)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Fat Purse" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="511.4277, 142.3392, 247.0191" Heading="8,278919" Sit="True"/>
-				<FishSpot XYZ="500.0403, 142.5242, 238.0096" Heading="0,2828043" Sit="True"/>
+				<FishSpot XYZ="511.0348, 142.4246, 246.2458" Heading="5.449879" Sit="True" />
+				<FishSpot XYZ="504.8778, 142.7666, 243.0081" Heading="4.99959" Sit="True" />
+				<FishSpot XYZ="495.5986, 143.3361, 240.9088" Heading="1.271568" Sit="True" />
 			</FishSpots>
 		</ExFish>
 	</If>

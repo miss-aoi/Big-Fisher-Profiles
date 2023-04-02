@@ -17,7 +17,7 @@
 			<LisbethTravel ZoneId="156" XYZ="-126.2753, 47.11922, -187.6791"/>
 		</If>
 		<ExFish Bait="Glowworm" Condition="not HasAtLeast(8759,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(156, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Void Bass" />
 			</Keepers>

@@ -20,7 +20,7 @@
 			<LisbethTravel ZoneId="135" XYZ="145.4249, 57.88197, 911.193"/>
 		</If>
 		<ExFish Bait="Yumizuno" Condition="not HasAtLeast(7690,1)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69">
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Silver Sovereign" />
 			</Keepers>
