@@ -2,7 +2,7 @@
 <!--
     Big Fish Profile
     Need some Big Fish? Switch Variable from 0 to 1.
-    For some Baits you need Miner, Gardener and Crafter.
+    While obtaining some Baits you need Miner, Gardener and Crafters.
     Authors: budesaal, miss-aoi
     Removed eating food. Use Gluttony instead: https://github.com/domesticwarlord86/Gluttony
     Can add Extractor to extract spiritbound materia: https://github.com/domesticwarlord86/Extractor
@@ -30,7 +30,7 @@
 <!ENTITY Jacques_the_Snipper "0">               <!-- TIMED -->                    <!-- GOBY BALL -->
 <!ENTITY Faerie_Queen "0">                                      <!-- WEATHER -->  <!-- SPINNERBAIT -->
 <!ENTITY Meteor_Survivor "1">                   <!-- TIMED -->  <!-- WEATHER -->  <!-- RAT TAIL -->
-<!ENTITY Cupfish "1">                           <!-- TIMED -->                    <!-- SYRPHID BASKET -->
+<!ENTITY Cupfish "0">                           <!-- TIMED -->                    <!-- SYRPHID BASKET -->
 <!-- LA NOSCEA - Eastern La Noscea -->
 <!ENTITY The_Greatest_Bream_in_the_World "0">   <!-- TIMED -->  <!-- WEATHER -->  <!-- SHRIMP CAGE FEEDER -->
 <!ENTITY Shark_Tuna "0">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- SPOON WORM -->
@@ -51,7 +51,7 @@
 <!ENTITY Helmsmans_Hand "0">                    <!-- TIMED -->  <!-- WEATHER -->  <!-- PILL BUG -->
 <!ENTITY Frilled_Shark "0">                     <!-- TIMED -->  <!-- WEATHER -->  <!-- LUGWORM -->
 <!ENTITY The_Captains_Chalice "1">              <!-- TIMED -->                    <!-- STEEL JIG -->
-<!ENTITY Coelacanthus "1">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- SPOON WORM -->
+<!ENTITY Coelacanthus "0">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- SPOON WORM -->
 <!ENTITY Endoceras "1">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- SPOON WORM -->
 <!ENTITY Seahag "1">                            <!-- TIMED -->  <!-- WEATHER -->  <!-- LUGWORM -->
 <!-- LA NOSCEA - Upper La Noscea -->
@@ -61,7 +61,7 @@
 <!ENTITY King_of_the_Spring "0">                <!-- TIMED -->                    <!-- SPINNERBAIT -->
 <!-- LA NOSCEA - Outer La Noscea -->
 <!ENTITY Thundergut "1">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- STEM BORER -->
-<!-- <!ENTITY King_of_the_Spring "0"> -->
+<!--<!ENTITY King_of_the_Spring "0">-->                <!-- TIMED -->                    <!-- SPINNERBAIT -->
 <!-- LA NOSCEA - Mist -->
 <!ENTITY Twitchbeard "1">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- SPOON WORM -->
 <!-- THE BLACK SHROUD - New Gridania -->
@@ -130,26 +130,26 @@
 <!-- THENALAN - The Goblet -->
 <!ENTITY Spearnose "0">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- CADDISFLY LARVA -->
 <!-- COERTHAS - Coerthas Central Highlands -->
-<!ENTITY Daniffens_Mark "1">                                    <!-- WEATHER -->  <!-- WILDFOWL FLY -->
+<!ENTITY Daniffens_Mark "0">                                    <!-- WEATHER -->  <!-- WILDFOWL FLY -->
 <!ENTITY Charons_Lantern "1">                   <!-- TIMED -->                    <!-- GLOWWORM -->
 <!ENTITY Starbright "1">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- SYRPHID BASKET -->
 <!ENTITY Dawn_Maiden "1">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- WILDFOWL FLY -->
-    <!ENTITY The_Matriarch "0">                                                       <!-- HONEY WORM -->
+<!ENTITY The_Matriarch "0">                                                       <!-- HONEY WORM -->
 <!ENTITY Darkstar "1">                                          <!-- WEATHER -->  <!-- STONEFLY NYMPH -->
 <!ENTITY Blue_Corpse "1">                                       <!-- WEATHER -->  <!-- CADDISFLY LARVA -->
 <!ENTITY Anomalocaris "1">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- HOVERWORM -->
-<!ENTITY Mahar "1">                                             <!-- WEATHER -->  <!-- HOVERWORM -->
-<!ENTITY Shonisaurus "1">                                       <!-- WEATHER -->  <!-- HOVERWORM -->
+<!ENTITY Mahar "0">                                             <!-- WEATHER -->  <!-- HOVERWORM -->
+<!ENTITY Shonisaurus "0">                                       <!-- WEATHER -->  <!-- HOVERWORM -->
 <!-- COERTHAS - Coerthas Western Highlands -->
 <!ENTITY Fat_Purse "0">                                                           <!-- BRUTE LEECH -->
-<!ENTITY Hailfinder "0">                                        <!-- WEATHER -->  <!-- RED BALLOON -->
-<!ENTITY Flarefish "0">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- PURSE WEB SPIDER -->
+<!ENTITY Hailfinder "1">                                        <!-- WEATHER -->  <!-- RED BALLOON -->
+<!ENTITY Flarefish "1">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- PURSE WEB SPIDER -->
 <!ENTITY Bishopfish "0">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- BRUTE LEECH -->
-<!ENTITY Charibenet "0">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- PURSE WEB SPIDER -->
+<!ENTITY Charibenet "1">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- PURSE WEB SPIDER -->
 <!ENTITY The_Impaler "0">                                                         <!-- BRUTE LEECH -->
-<!ENTITY Captain_Nemo "0">                                      <!-- WEATHER -->  <!-- BRUTE LEECH -->
+<!ENTITY Captain_Nemo "1">                                      <!-- WEATHER -->  <!-- BRUTE LEECH -->
 <!ENTITY La_Reale "0">                                                            <!-- BRUTE LEECH -->
-<!ENTITY Merciless "0">                                         <!-- WEATHER -->  <!-- CADDISFLY LARVA -->
+<!ENTITY Merciless "1">                                         <!-- WEATHER -->  <!-- CADDISFLY LARVA -->
 <!-- Mor Dhona - Mor Dhona -->
 <!ENTITY Aetherlouse "0">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- GLOWWORM -->
 <!ENTITY Ignus_Horn "1">                                        <!-- WEATHER -->  <!-- GLOWWORM -->
@@ -195,7 +195,6 @@
     <Name>Big Fishing</Name>
     <BehaviorDirectory></BehaviorDirectory>
     <Order>
-
         <!-- SETUP -->
         <!-- Lisbeth check -->
         <If condition="not LisbethPresent">
@@ -219,532 +218,532 @@
         <!-- LA NOSCEA - UPPER DECKS -->
         <!-- Goldenfin -->
         <If Condition="&Goldenfin; == 1 and not HasAtLeast(7685,1) and IsTimeBetween(8,13)">
-            <LLoadProfile Path="LaNoscea/Upper_Decks/Goldenfin.xml"/>
+            <LLoadProfile Path="La_Noscea/Upper_Decks/Goldenfin.xml"/>
         </If>
 
 
         <!-- LA NOSCEA - LOWER DECKS -->
         <!-- Octomammoth -->
         <If Condition="&Octomammoth; == 1 and not HasAtLeast(7707,1) and IsTimeBetween(8,16)">
-            <LLoadProfile Path="LaNoscea/Lower_Decks/Octomammoth.xml"/>
+            <LLoadProfile Path="La_Noscea/Lower_Decks/Octomammoth.xml"/>
         </If>
 
 
         <!-- LA NOSCEA - MIDDLE LA NOSCEA -->
         <!-- Zalera -->
         <If Condition="&Zalera; == 1 and not HasAtLeast(7678,1) and IsTimeBetween(8,13)">
-            <LLoadProfile Path="LaNoscea/Middle_LaNoscea/Zalera.xml"/>
+            <LLoadProfile Path="La_Noscea/Middle_La_Noscea/Zalera.xml"/>
         </If>
         <!-- Beguiler Chub -->
         <If Condition="&Beguiler_Chub; == 1 and not HasAtLeast(7679,1) and IsTimeBetween(8,13)">
-            <LLoadProfile Path="LaNoscea/Middle_LaNoscea/Beguiler_Chub.xml"/>
+            <LLoadProfile Path="La_Noscea/Middle_La_Noscea/Beguiler_Chub.xml"/>
         </If>
         <!-- Great Gudgeon -->
         <If Condition="&Great_Gudgeon; == 1 and not HasAtLeast(7688,1)">
-            <LLoadProfile Path="LaNoscea/Middle_LaNoscea/Great_Gudgeon.xml"/>
+            <LLoadProfile Path="La_Noscea/Middle_La_Noscea/Great_Gudgeon.xml"/>
         </If>
         <!-- Gigantshark -->
         <If Condition="&Gigantshark; == 1 and not HasAtLeast(7686,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(134, 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="LaNoscea/Middle_LaNoscea/Gigantshark.xml"/>
+            <LLoadProfile Path="La_Noscea/Middle_La_Noscea/Gigantshark.xml"/>
         </If>
         <!-- High Perch -->
         <If Condition="&High_Perch; == 1 and not HasAtLeast(7709,1) and IsTimeBetween(4,7)">
-            <LLoadProfile Path="LaNoscea/Middle_LaNoscea/High_Perch.xml"/>
+            <LLoadProfile Path="La_Noscea/Middle_La_Noscea/High_Perch.xml"/>
         </If>
         <!-- Crystal Perch -->
         <If Condition="&Crystal_Perch; == 1 and not HasAtLeast(7682,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(134, 'Clouds', 'Fog', 'Wind')">
-            <LLoadProfile Path="LaNoscea/Middle_LaNoscea/Crystal_Perch.xml"/>
+            <LLoadProfile Path="La_Noscea/Middle_La_Noscea/Crystal_Perch.xml"/>
         </If>
 
 
         <!-- LA NOSCEA - LOWER LA NOSCEA -->
         <!-- Caterwauler -->
         <If Condition="&Caterwauler; == 1 and not HasAtLeast(7681,1)">
-            <LLoadProfile Path="LaNoscea/Lower_LaNoscea/Caterwauler.xml"/>
+            <LLoadProfile Path="La_Noscea/Lower_La_Noscea/Caterwauler.xml"/>
         </If>
         <!-- Oschons Print -->
         <If Condition="&Oschons_Print; == 1 and not HasAtLeast(7680,1)">
-            <LLoadProfile Path="LaNoscea/Lower_LaNoscea/Oschons_Print.xml"/>
+            <LLoadProfile Path="La_Noscea/Lower_La_Noscea/Oschons_Print.xml"/>
         </If>
         <!-- Syldra -->
         <If Condition="&Syldra; == 1 and not HasAtLeast(7710,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(135, 'Rain')">
-            <LLoadProfile Path="LaNoscea/Lower_LaNoscea/Syldra.xml"/>
+            <LLoadProfile Path="La_Noscea/Lower_La_Noscea/Syldra.xml"/>
         </If>
         <!-- Silver Sovereign -->
         <If Condition="&Silver_Sovereign; == 1 and not HasAtLeast(7690,1)">
-            <LLoadProfile Path="LaNoscea/Lower_LaNoscea/Silver_Sovereign.xml"/>
+            <LLoadProfile Path="La_Noscea/Lower_La_Noscea/Silver_Sovereign.xml"/>
         </If>
         <!-- Sabertooth Cod -->
         <If Condition="&Sabertooth_Cod; == 1 and not HasAtLeast(7691,1) and IsTimeBetween(15,21)">
-            <LLoadProfile Path="LaNoscea/Lower_LaNoscea/Sabertooth_Cod.xml"/>
+            <LLoadProfile Path="La_Noscea/Lower_La_Noscea/Sabertooth_Cod.xml"/>
         </If>
         <!-- Jacques the Snipper -->
         <If Condition="&Jacques_the_Snipper; == 1 and not HasAtLeast(7712,1) and IsTimeBetween(20,2)">
-            <LLoadProfile Path="LaNoscea/Lower_LaNoscea/Jacques_the_Snipper.xml"/>
+            <LLoadProfile Path="La_Noscea/Lower_La_Noscea/Jacques_the_Snipper.xml"/>
         </If>
         <!-- Faerie Queen -->
         <If Condition="&Faerie_Queen; == 1 and not HasAtLeast(7697,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(135, 'Clouds', 'Fog', 'Wind')">
-            <LLoadProfile Path="LaNoscea/Lower_LaNoscea/Faerie_Queen.xml"/>
+            <LLoadProfile Path="La_Noscea/Lower_La_Noscea/Faerie_Queen.xml"/>
         </If>
         <!-- Meteor Survivor -->
         <If Condition="&Meteor_Survivor; == 1 and not HasAtLeast(7903,1) and IsTimeBetween(2,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(135, 'Clouds', 'Fog', 'Wind')">
-            <LLoadProfile Path="LaNoscea/Lower_LaNoscea/Meteor_Survivor.xml"/>
+            <LLoadProfile Path="La_Noscea/Lower_La_Noscea/Meteor_Survivor.xml"/>
         </If>
         <!-- Cupfish -->
         <If Condition="&Cupfish; == 1 and not HasAtLeast(7902,1) and IsTimeBetween(16,18)">
-            <LLoadProfile Path="LaNoscea/Lower_LaNoscea/Cupfish.xml"/>
+            <LLoadProfile Path="La_Noscea/Lower_La_Noscea/Cupfish.xml"/>
         </If>
 
 
         <!-- LA NOSCEA - EASETERN LA NOSCEA -->
         <!-- The Greatest Bream in the World -->
         <If Condition="&The_Greatest_Bream_in_the_World; == 1 and not HasAtLeast(7909,1) and IsTimeBetween(19,22) and SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="LaNoscea/Eastern_LaNoscea/The_Greatest_Bream_in_the_World.xml"/>
+            <LLoadProfile Path="La_Noscea/Eastern_La_Noscea/The_Greatest_Bream_in_the_World.xml"/>
         </If>
         <!-- Shark Tuna -->
         <If Condition="&Shark_Tuna; == 1 and not HasAtLeast(7915,1) and IsTimeBetween(18,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="LaNoscea/Eastern_LaNoscea/Shark_Tuna.xml"/>
+            <LLoadProfile Path="La_Noscea/Eastern_La_Noscea/Shark_Tuna.xml"/>
         </If>
         <!-- Bombardfish -->
         <If Condition="&Bombardfish; == 1 and not HasAtLeast(7924,1) and IsTimeBetween(8,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies')">
-            <LLoadProfile Path="LaNoscea/Eastern_LaNoscea/Bombardfish.xml"/>
+            <LLoadProfile Path="La_Noscea/Eastern_La_Noscea/Bombardfish.xml"/>
         </If>
         <!-- The Old Man in the Sea -->
         <If Condition="&The_Old_Man_in_the_Sea; == 1 and not HasAtLeast(8753,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(137, TimeSpan.FromHours(-4), 'Rain', 'Showers')">
-            <LLoadProfile Path="LaNoscea/Eastern_LaNoscea/The_Old_Man_in_the_Sea.xml"/>
+            <LLoadProfile Path="La_Noscea/Eastern_La_Noscea/The_Old_Man_in_the_Sea.xml"/>
         </If>    
         <!-- Nepto Dragon -->
         <If Condition="&Nepto_Dragon; == 1 and not HasAtLeast(8754,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')">
-            <LLoadProfile Path="LaNoscea/Eastern_LaNoscea/Nepto_Dragon.xml"/>
+            <LLoadProfile Path="La_Noscea/Eastern_La_Noscea/Nepto_Dragon.xml"/>
         </If>
         <!-- The Salter -->
         <If Condition="&The_Salter; == 1 and not HasAtLeast(7925,1) and IsTimeBetween(16,19) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="LaNoscea/Eastern_LaNoscea/The_Salter.xml"/>
+            <LLoadProfile Path="La_Noscea/Eastern_La_Noscea/The_Salter.xml"/>
         </If>    
         <!-- The Drowned Sniper -->
         <If Condition="&The_Drowned_Sniper; == 1 and not HasAtLeast(7938,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="LaNoscea/Eastern_LaNoscea/The_Drowned_Sniper.xml"/>
+            <LLoadProfile Path="La_Noscea/Eastern_La_Noscea/The_Drowned_Sniper.xml"/>
         </If>
         <!-- The Terpsichorean -->
         <If Condition="&The_Terpsichorean; == 1 and not HasAtLeast(7939,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Fog')">
-            <LLoadProfile Path="LaNoscea/Eastern_LaNoscea/The_Terpsichorean.xml"/>
+            <LLoadProfile Path="La_Noscea/Eastern_La_Noscea/The_Terpsichorean.xml"/>
         </If>
         <!-- Mirrorscale -->
         <If Condition="&Mirrorscale; == 1 and not HasAtLeast(7940,1) and IsTimeBetween(8,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="LaNoscea/Eastern_LaNoscea/Mirrorscale.xml"/>
+            <LLoadProfile Path="La_Noscea/Eastern_La_Noscea/Mirrorscale.xml"/>
         </If>
         <!-- Imperial Goldfish -->
         <If Condition="&Imperial_Goldfish; == 1 and not HasAtLeast(8752,1)">
-            <LLoadProfile Path="LaNoscea/Eastern_LaNoscea/Imperial_Goldfish.xml"/>
+            <LLoadProfile Path="La_Noscea/Eastern_La_Noscea/Imperial_Goldfish.xml"/>
         </If>
         <!-- Little Perykos -->
         <If Condition="&Little_Perykos; == 1 and not HasAtLeast(20143,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')">
-            <LLoadProfile Path="LaNoscea/Eastern_LaNoscea/Little_Perykos.xml"/>
+            <LLoadProfile Path="La_Noscea/Eastern_La_Noscea/Little_Perykos.xml"/>
         </If>
 
 
         <!-- LA NOSCEA - WESTERN LA NOSCEA -->
         <!-- Armorer -->
         <If Condition="&Armorer; == 1 and not HasAtLeast(7687,1) and IsTimeBetween(18,2)">
-            <LLoadProfile Path="LaNoscea/Western_LaNoscea/Armorer.xml"/>
+            <LLoadProfile Path="La_Noscea/Western_La_Noscea/Armorer.xml"/>
         </If>
         <!-- Junkmonger -->
         <If Condition="&Junkmonger; == 1 and not HasAtLeast(7684,1) and IsTimeBetween(15,1)">
-            <LLoadProfile Path="LaNoscea/Western_LaNoscea/Junkmonger.xml"/>
+            <LLoadProfile Path="La_Noscea/Western_La_Noscea/Junkmonger.xml"/>
         </If>
         <!-- Navigators Brand -->
         <If Condition="&Navigators_Brand; == 1 and not HasAtLeast(7693,1) and IsTimeBetween(8,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="LaNoscea/Western_LaNoscea/Navigators_Brand.xml"/>
+            <LLoadProfile Path="La_Noscea/Western_La_Noscea/Navigators_Brand.xml"/>
         </If>
         <!-- The Lone Ripper -->
         <If Condition="&The_Lone_Ripper; == 1 and not HasAtLeast(7926,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Gales')">
-            <LLoadProfile Path="LaNoscea/Western_LaNoscea/The_Lone_Ripper.xml"/>
+            <LLoadProfile Path="La_Noscea/Western_La_Noscea/The_Lone_Ripper.xml"/>
         </If>
         <!-- Helmsmans Hand -->
         <If Condition="&Helmsmans_Hand; == 1 and not HasAtLeast(7941,1) and IsTimeBetween(8,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clouds', 'Fog', 'Wind')">
-            <LLoadProfile Path="LaNoscea/Western_LaNoscea/Helmsmans_Hand.xml"/>
+            <LLoadProfile Path="La_Noscea/Western_La_Noscea/Helmsmans_Hand.xml"/>
         </If>
         <!-- Frilled Shark -->
         <If Condition="&Frilled_Shark; == 1 and not HasAtLeast(7950,1) and IsTimeBetween(16,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clouds', 'Fog', 'Wind')">
-            <LLoadProfile Path="LaNoscea/Western_LaNoscea/Frilled_Shark.xml"/>
+            <LLoadProfile Path="La_Noscea/Western_La_Noscea/Frilled_Shark.xml"/>
         </If>
         <!-- The Captains Chalice -->
         <If Condition="&The_Captains_Chalice; == 1 and not HasAtLeast(7948,1) and IsTimeBetween(22,1)">
-            <LLoadProfile Path="LaNoscea/Western_LaNoscea/The_Captains_Chalice.xml"/>
+            <LLoadProfile Path="La_Noscea/Western_La_Noscea/The_Captains_Chalice.xml"/>
         </If>
         <!-- Coelacanthus -->
         <If Condition="&Coelacanthus; == 1 and not HasAtLeast(8755,1) and IsTimeBetween(21,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clouds', 'Fog', 'Wind')">
-            <LLoadProfile Path="LaNoscea/Western_LaNoscea/Coelacanthus.xml"/>
+            <LLoadProfile Path="La_Noscea/Western_La_Noscea/Coelacanthus.xml"/>
         </If>
         <!-- Endoceras -->
         <If Condition="&Endoceras; == 1 and not HasAtLeast(8756,1) and IsTimeBetween(19,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clouds', 'Fog', 'Wind') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="LaNoscea/Western_LaNoscea/Endoceras.xml"/>
+            <LLoadProfile Path="La_Noscea/Western_La_Noscea/Endoceras.xml"/>
         </If>
         <!-- Seahag -->
         <If Condition="&Seahag; == 1 and not HasAtLeast(8757,1) and IsTimeBetween(18,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="LaNoscea/Western_LaNoscea/Seahag.xml"/>
+            <LLoadProfile Path="La_Noscea/Western_La_Noscea/Seahag.xml"/>
         </If>
 
 
         <!-- LA NOSCEA - UPPER LA NOSCEA -->
         <!-- Toramafish -->
         <If Condition="&Toramafish; == 1 and not HasAtLeast(7905,1) and IsTimeBetween(16,19) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(139, 'Fog', 'Clouds')">
-            <LLoadProfile Path="LaNoscea/Upper_LaNoscea/Toramafish.xml"/>
+            <LLoadProfile Path="La_Noscea/Upper_La_Noscea/Toramafish.xml"/>
         </If>
         <!-- Joan of Trout -->
         <If Condition="&Joan_of_Trout; == 1 and not HasAtLeast(7904,1) and IsTimeBetween(3,5)">
-            <LLoadProfile Path="LaNoscea/Upper_LaNoscea/Joan_of_Trout.xml"/>
+            <LLoadProfile Path="La_Noscea/Upper_La_Noscea/Joan_of_Trout.xml"/>
         </If>
         <!-- Worm of Nym -->
         <If Condition="&Worm_of_Nym; == 1 and not HasAtLeast(7916,1) and IsTimeBetween(18,21)">
-            <LLoadProfile Path="LaNoscea/Upper_LaNoscea/Worm_of_Nym.xml"/>
+            <LLoadProfile Path="La_Noscea/Upper_La_Noscea/Worm_of_Nym.xml"/>
         </If>
         <!-- King of the Spring -->
         <If Condition="&King_of_the_Spring; == 1 and not HasAtLeast(7927,1) and IsTimeBetween(15,18)">
-            <LLoadProfile Path="LaNoscea/Upper_LaNoscea/King_of_the_Spring.xml"/>
+            <LLoadProfile Path="La_Noscea/Upper_La_Noscea/King_of_the_Spring.xml"/>
         </If>
 
 
         <!-- LA NOSCEA - OUTER LA NOSCEA -->
         <!-- Thundergut -->
         <If Condition="&Thundergut; == 1 and not HasAtLeast(7937,1) and IsTimeBetween(18,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(180, 'Rain')">
-            <LLoadProfile Path="LaNoscea/Outer_LaNoscea/Thundergut.xml"/>
+            <LLoadProfile Path="La_Noscea/Outer_La_Noscea/Thundergut.xml"/>
         </If>
         <!-- King of the Spring -->
         <If Condition="&King_of_the_Spring; == 1 and not HasAtLeast(7927,1) and IsTimeBetween(15,18)">
-            <LLoadProfile Path="LaNoscea/Upper_LaNoscea/King_of_the_Spring.xml"/>
+            <LLoadProfile Path="La_Noscea/Upper_La_Noscea/King_of_the_Spring.xml"/>
         </If>
 
 
         <!-- LA NOSCEA - Mist -->
         <!-- Twitchbeard -->
         <If Condition="&Twitchbeard; == 1 and not HasAtLeast(7917,1) and IsTimeBetween(3,5) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(339, 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="LaNoscea/Mist/Twitchbeard.xml"/>
+            <LLoadProfile Path="La_Noscea/Mist/Twitchbeard.xml"/>
         </If>
 
 
         <!-- THE BLACK SHROUD - NEW GRIDANIA -->
         <!-- Stormdancer -->
         <If Condition="&Stormdancer; == 1 and not HasAtLeast(7713,1) and IsTimeBetween(17,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(132, 'Rain', 'Snow')">
-            <LLoadProfile Path="TheBlackShroud/NewGridania/Stormdancer.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/New_Gridania/Stormdancer.xml"/>
         </If>
         <!-- Bloody Brewer -->
         <If Condition="&Bloody_Brewer; == 1 and not HasAtLeast(7696,1)">
-            <LLoadProfile Path="TheBlackShroud/NewGridania/Bloody_Brewer.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/New_Gridania/Bloody_Brewer.xml"/>
         </If>
 
 
         <!-- THE BLACK SHROUD - OLD GRIDANIA -->
         <!-- Matron Carp -->
         <If Condition="&Matron_Carp; == 1 and not HasAtLeast(7708,1) and IsTimeBetween(15,21)">
-            <LLoadProfile Path="TheBlackShroud/OldGridania/Matron_Carp.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/Old_Gridania/Matron_Carp.xml"/>
         </If>
         <!-- Carp Diem -->
         <If Condition="&Carp_Diem; == 1 and not HasAtLeast(7701,1) and IsTimeBetween(9,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(133, 'Clouds', 'Fog')">
-            <LLoadProfile Path="TheBlackShroud/OldGridania/Carp_Diem.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/Old_Gridania/Carp_Diem.xml"/>
         </If>
 
         <!-- THE BLACK SHROUD - CENTRAL SHROUD -->
         <!-- Chirurgeon -->
         <If Condition="&Chirurgeon; == 1 and not HasAtLeast(7705,1)">
-            <LLoadProfile Path="TheBlackShroud/CentralShroud/Chirurgeon.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/Central_Shroud/Chirurgeon.xml"/>
         </If>
         <!-- Ghost Carp -->
         <If Condition="&Ghost_Carp; == 1 and not HasAtLeast(7700,1) and IsTimeBetween(21,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(148, 'Rain')">
-            <LLoadProfile Path="TheBlackShroud/CentralShroud/Ghost_Carp.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/Central_Shroud/Ghost_Carp.xml"/>
         </If>
         <!-- Levinlight -->
         <If Condition="&Levinlight; == 1 and not HasAtLeast(7920,1) and IsTimeBetween(18,23)">
-            <LLoadProfile Path="TheBlackShroud/CentralShroud/Levinlight.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/Central_Shroud/Levinlight.xml"/>
         </If>
         <!-- The Green Jester -->
         <If Condition="&The_Green_Jester; == 1 and not HasAtLeast(7934,1) and IsTimeBetween(18,21)">
-            <LLoadProfile Path="TheBlackShroud/CentralShroud/The_Green_Jester.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/Central_Shroud/The_Green_Jester.xml"/>
         </If>
         <!-- Bloodbath -->
         <If Condition="&Bloodbath; == 1 and not HasAtLeast(7935,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(148, 'Thunder')">
-            <LLoadProfile Path="TheBlackShroud/CentralShroud/Bloodbath.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/Central_Shroud/Bloodbath.xml"/>
         </If>
 
 
         <!-- THE BLACK SHROUD - EAST SHROUD -->
         <!-- Dark Ambusher -->
         <If Condition="&Dark_Ambusher; == 1 and not HasAtLeast(7694,1) and IsTimeBetween(21,3)">
-            <LLoadProfile Path="TheBlackShroud/EastShroud/Dark_Ambusher.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/East_Shroud/Dark_Ambusher.xml"/>
         </If>
         <!-- Moldva -->
         <If Condition="&Moldva; == 1 and not HasAtLeast(7683,1) and IsTimeBetween(18,2)">
-            <LLoadProfile Path="TheBlackShroud/EastShroud/Moldva.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/East_Shroud/Moldva.xml"/>
         </If>
         <!-- The Assassin -->
         <If Condition="&The_Assassin; == 1 and not HasAtLeast(7907,1) and IsTimeBetween(21,23)">
-            <LLoadProfile Path="TheBlackShroud/EastShroud/The_Assassin.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/East_Shroud/The_Assassin.xml"/>
         </If>
         <!-- Sylphsbane -->
         <If Condition="&Sylphsbane; == 1 and not HasAtLeast(7912,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(152, 'Rain')">
-            <LLoadProfile Path="TheBlackShroud/EastShroud/Sylphsbane.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/East_Shroud/Sylphsbane.xml"/>
         </If>
         <!-- Magicked Mushroom -->
         <If Condition="&Magicked_Mushroom; == 1 and not HasAtLeast(8773,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(152, 'Clouds', 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(152, TimeSpan.FromHours(-8), 'Rain', 'Thunder')">
-            <LLoadProfile Path="TheBlackShroud/EastShroud/Magicked_Mushroom.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/East_Shroud/Magicked_Mushroom.xml"/>
         </If>
 
 
         <!-- THE BLACK SHROUD - SOUTH SHROUD -->
         <!-- Vip Viper -->
         <If Condition="&Vip_Viper; == 1 and not HasAtLeast(7908,1) and IsTimeBetween(18,19)">
-            <LLoadProfile Path="TheBlackShroud/SouthShroud/Vip_Viper.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/South_Shroud/Vip_Viper.xml"/>
         </If>
         <!-- Floating Boulder -->
         <If Condition="&Floating_Boulder; == 1 and not HasAtLeast(7913,1) and IsTimeBetween(0,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Clouds', 'Fog')">
-            <LLoadProfile Path="TheBlackShroud/SouthShroud/Floating_Boulder.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/South_Shroud/Floating_Boulder.xml"/>
         </If>
         <!-- The Grinner -->
         <If Condition="&The_Grinner; == 1 and not HasAtLeast(7914,1)">
-            <LLoadProfile Path="TheBlackShroud/SouthShroud/The_Grinner.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/South_Shroud/The_Grinner.xml"/>
         </If>
         <!-- The Sinker -->
         <If Condition="&The_Sinker; == 1 and not HasAtLeast(7921,1) and IsTimeBetween(21,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="TheBlackShroud/SouthShroud/The_Sinker.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/South_Shroud/The_Sinker.xml"/>
         </If>
         <!-- The Gobfather -->
         <If Condition="&The_Gobfather; == 1 and not HasAtLeast(7922,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')">
-            <LLoadProfile Path="TheBlackShroud/SouthShroud/The_Gobfather.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/South_Shroud/The_Gobfather.xml"/>
         </If>
         <!-- Son of Levin -->
         <If Condition="&Son_of_Levin; == 1 and not HasAtLeast(7936,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunderstorms')">
-            <LLoadProfile Path="TheBlackShroud/SouthShroud/Son_of_Levin.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/South_Shroud/Son_of_Levin.xml"/>
         </If>
         <!-- Add Giant Takitaro -->
         <!-- Namitaro -->
         <If Condition="&Namitaro; == 1 and not HasAtLeast(8775,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')">
-            <LLoadProfile Path="TheBlackShroud/SouthShroud/Namitaro.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/South_Shroud/Namitaro.xml"/>
         </If>
 
 
         <!-- THE BLACK SHROUD - NORTH SHROUD -->
         <!-- Blue Widow -->
         <If Condition="&Blue_Widow; == 1 and not HasAtLeast(7699,1) and IsTimeBetween(9,14)">
-            <LLoadProfile Path="TheBlackShroud/NorthShroud/Blue_Widow.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/North_Shroud/Blue_Widow.xml"/>
         </If>
         <!-- Judgeray -->
         <If Condition="&Judgeray; == 1 and not HasAtLeast(7695,1) and IsTimeBetween(17,21)">
-            <LLoadProfile Path="TheBlackShroud/NorthShroud/Judgeray.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/North_Shroud/Judgeray.xml"/>
         </If>
         <!-- Shadowstreak -->
         <If Condition="&Shadowstreak; == 1 and not HasAtLeast(7947,1) and IsTimeBetween(4,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(154, 'Fog')">
-            <LLoadProfile Path="TheBlackShroud/NorthShroud/Shadowstreak.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/North_Shroud/Shadowstreak.xml"/>
         </If>
         <!-- Cornelia -->
         <If Condition="&Cornelia; == 1 and not HasAtLeast(8760,1)">
-            <LLoadProfile Path="TheBlackShroud/NorthShroud/Cornelia.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/North_Shroud/Cornelia.xml"/>
         </If>
 
 
         <!-- THE BLACK SHROUD - THE LAVENDER BEDS -->
         <!-- Sweetnewt -->
         <If Condition="&Sweetnewt; == 1 and not HasAtLeast(7923,1) and IsTimeBetween(23,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(340, 'Fog')">
-            <LLoadProfile Path="TheBlackShroud/TheLavenderBeds/Sweetnewt.xml"/>
+            <LLoadProfile Path="The_Black_Shroud/The_Lavender_Beds/Sweetnewt.xml"/>
         </If>
 
 
         <!-- THENALAN - WESTERN THANALAN -->
         <!-- Glimmerscale -->
         <If Condition="&Glimmerscale; == 1 and not HasAtLeast(7714,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="Thanalan/WesternThanalan/Glimmerscale.xml"/>
+            <LLoadProfile Path="Thanalan/Western_Thanalan/Glimmerscale.xml"/>
         </If>
         <!-- Mud Golem -->
         <If Condition="&Mud_Golem; == 1 and not HasAtLeast(7706,1) and IsTimeBetween(21,3)">
-            <LLoadProfile Path="Thanalan/WesternThanalan/Mud_Golem.xml"/>
+            <LLoadProfile Path="Thanalan/Western_Thanalan/Mud_Golem.xml"/>
         </If>
         <!-- Rivet Oyster -->
         <If Condition="&Rivet_Oyster; == 1 and not HasAtLeast(7711,1)">
-            <LLoadProfile Path="Thanalan/WesternThanalan/Rivet_Oyster.xml"/>
+            <LLoadProfile Path="Thanalan/Western_Thanalan/Rivet_Oyster.xml"/>
         </If>
         <!-- Fingers -->
         <If Condition="&Fingers; == 1 and not HasAtLeast(7906,1) and IsTimeBetween(17,18)">
-            <LLoadProfile Path="Thanalan/WesternThanalan/Fingers.xml"/>
+            <LLoadProfile Path="Thanalan/Western_Thanalan/Fingers.xml"/>
         </If>    
         <!-- Dirty Herry -->
         <If Condition="&Dirty_Herry; == 1 and not HasAtLeast(7910,1) and IsTimeBetween(20,22)">
-            <LLoadProfile Path="Thanalan/WesternThanalan/Dirty_Herry.xml"/>
+            <LLoadProfile Path="Thanalan/Western_Thanalan/Dirty_Herry.xml"/>
         </If>
         <!-- Pirates Bane -->
         <If Condition="&Pirates_Bane; == 1 and not HasAtLeast(8764,1)">
-            <LLoadProfile Path="Thanalan/WesternThanalan/Pirates_Bane.xml"/>
+            <LLoadProfile Path="Thanalan/Western_Thanalan/Pirates_Bane.xml"/>
         </If>
         <!-- Ndendecki -->
         <If Condition="&Ndendecki; == 1 and not HasAtLeast(8765,1) and IsTimeBetween(18,5) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Fog')">
-            <LLoadProfile Path="Thanalan/WesternThanalan/Ndendecki.xml"/>
+            <LLoadProfile Path="Thanalan/Western_Thanalan/Ndendecki.xml"/>
         </If>
         <!-- Bat o Nine Tails -->
         <If Condition="&Bat_o_Nine_Tails; == 1 and not HasAtLeast(8766,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Clear Skies', 'Fair Skies', 'Clouds', 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(140, TimeSpan.FromHours(-8), 'Rain')">
-            <LLoadProfile Path="Thanalan/WesternThanalan/Bat_o_Nine_Tails.xml"/>
+            <LLoadProfile Path="Thanalan/Western_Thanalan/Bat_o_Nine_Tails.xml"/>
         </If>
 
 
         <!-- THENALAN - CENTRAL THANALAN -->
         <!-- Dream Goby -->
         <If Condition="&Dream_Goby; == 1 and not HasAtLeast(7692,1) and IsTimeBetween(17,24)">
-            <LLoadProfile Path="Thanalan/CentralThanalan/Dream_Goby.xml"/>
+            <LLoadProfile Path="Thanalan/Central_Thanalan/Dream_Goby.xml"/>
         </If>
         <!-- Slime King -->
         <If Condition="&Slime_King; == 1 and not HasAtLeast(7698,1) and IsTimeBetween(19,24)">
-            <LLoadProfile Path="Thanalan/CentralThanalan/Slime_King.xml"/>
+            <LLoadProfile Path="Thanalan/Central_Thanalan/Slime_King.xml"/>
         </If>
         <!-- Old Softie -->
         <If Condition="&Old_Softie; == 1 and not HasAtLeast(7703,1) and IsTimeBetween(17,21)">
-            <LLoadProfile Path="Thanalan/CentralThanalan/Old_Softie.xml"/>
+            <LLoadProfile Path="Thanalan/Central_Thanalan/Old_Softie.xml"/>
         </If>
         <!-- Dark Knight -->
         <If Condition="&Dark_Knight; == 1 and not HasAtLeast(7689,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(141, 'Clouds', 'Fog', 'Dust Storms')">
-            <LLoadProfile Path="Thanalan/CentralThanalan/Dark_Knight.xml"/>
+            <LLoadProfile Path="Thanalan/Central_Thanalan/Dark_Knight.xml"/>
         </If>
 
 
         <!-- THENALAN - EASTERN THANALAN -->
         <!-- Marrow Sucker -->
         <If Condition="&Marrow_Sucker; == 1 and not HasAtLeast(7704,1) and IsTimeBetween(20,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Rain', 'Showers')">
-            <LLoadProfile Path="Thanalan/EasternThanalan/Marrow_Sucker.xml"/>
+            <LLoadProfile Path="Thanalan/Eastern_Thanalan/Marrow_Sucker.xml"/>
         </If>
         <!-- Mud Pilgrim -->
         <If Condition="&Mud_Pilgrim; == 1 and not HasAtLeast(7702,1) and (IsTimeBetween(0,7) or IsTimeBetween(17,24)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Rain', 'Showers')">
-            <LLoadProfile Path="Thanalan/EasternThanalan/Mud_Pilgrim.xml"/>
+            <LLoadProfile Path="Thanalan/Eastern_Thanalan/Mud_Pilgrim.xml"/>
         </If>
         <!-- The Wardens Wand -->
         <If Condition="&The_Wardens_Wand; == 1 and not HasAtLeast(7918,1) and IsTimeBetween(17,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Clear Skies')">
-            <LLoadProfile Path="Thanalan/EasternThanalan/The_Wardens_Wand.xml"/>
+            <LLoadProfile Path="Thanalan/Eastern_Thanalan/The_Wardens_Wand.xml"/>
         </If>
         <!-- The Thousand Year Itch -->
         <If Condition="&The_Thousand_year_Itch; == 1 and not HasAtLeast(7942,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Fog')">
-            <LLoadProfile Path="Thanalan/EasternThanalan/The_Thousand_year_Itch.xml"/>
+            <LLoadProfile Path="Thanalan/Eastern_Thanalan/The_Thousand_year_Itch.xml"/>
         </If>
 
 
         <!-- THENALAN - SOUTHERN THANALAN -->
         <!-- Old Hollow Eyes -->
         <If Condition="&Old_Hollow_Eyes; == 1 and not HasAtLeast(7911,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Fog')">
-            <LLoadProfile Path="Thanalan/SouthernThanalan/Old_Hollow_Eyes.xml"/>
+            <LLoadProfile Path="Thanalan/Southern_Thanalan/Old_Hollow_Eyes.xml"/>
         </If>
         <!-- Discobolus -->
         <If Condition="&Discobolus; == 1 and not HasAtLeast(7928,1) and IsTimeBetween(12,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves')">
-            <LLoadProfile Path="Thanalan/SouthernThanalan/Discobolus.xml"/>
+            <LLoadProfile Path="Thanalan/Southern_Thanalan/Discobolus.xml"/>
         </If>
         <!-- Iron Noose -->
         <If Condition="&Iron_Noose; == 1 and not HasAtLeast(7929,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Fog')">
-            <LLoadProfile Path="Thanalan/SouthernThanalan/Iron_Noose.xml"/>
+            <LLoadProfile Path="Thanalan/Southern_Thanalan/Iron_Noose.xml"/>
         </If>
         <!-- Magic Carpet -->
         <If Condition="&Magic_Carpet; == 1 and not HasAtLeast(7931,1) and IsTimeBetween(9,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves')">
-            <LLoadProfile Path="Thanalan/SouthernThanalan/Magic_Carpet.xml"/>
+            <LLoadProfile Path="Thanalan/Southern_Thanalan/Magic_Carpet.xml"/>
         </If>
         <!-- Helicoprion -->
         <If Condition="&Helicoprion; == 1 and not HasAtLeast(8768,1) and IsTimeBetween(8,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(-8), 'Clouds', 'Fog')">
-            <LLoadProfile Path="Thanalan/SouthernThanalan/Helicoprion.xml"/>
+            <LLoadProfile Path="Thanalan/Southern_Thanalan/Helicoprion.xml"/>
         </If>
         <!-- Olgoi Khorkhoi -->
         <If Condition="&Olgoi_Khorkhoi; == 1 and not HasAtLeast(7930,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves')">
-            <LLoadProfile Path="Thanalan/SouthernThanalan/Olgoi_Khorkhoi.xml"/>
+            <LLoadProfile Path="Thanalan/Southern_Thanalan/Olgoi_Khorkhoi.xml"/>
         </If>
 
 
         <!-- THENALAN - NORTHERN THANALAN -->
         <!-- Hannibal -->
         <If Condition="&Hannibal; == 1 and not HasAtLeast(7943,1) and IsTimeBetween(22,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog')">
-            <LLoadProfile Path="Thanalan/NorthernThanalan/Hannibal.xml"/>
+            <LLoadProfile Path="Thanalan/Northern_Thanalan/Hannibal.xml"/>
         </If>
         <!-- Wootz Knifefish Zenith -->
         <If Condition="&Wootz_Knifefish_Zenith; == 1 and not HasAtLeast(8767,1) and IsTimeBetween(1,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(147, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="Thanalan/NorthernThanalan/Wootz_Knifefish_Zenith.xml"/>
+            <LLoadProfile Path="Thanalan/Northern_Thanalan/Wootz_Knifefish_Zenith.xml"/>
         </If>
 
 
         <!-- THENALAN - THE GOBLET -->
         <!-- Spearnose -->
         <If Condition="&Spearnose; == 1 and not HasAtLeast(7919,1) and IsTimeBetween(21,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(341, 'Clouds', 'Fog')">
-            <LLoadProfile Path="Thanalan/TheGoblet/Spearnose.xml"/>
+            <LLoadProfile Path="Thanalan/The_Goblet/Spearnose.xml"/>
         </If>
 
 
         <!-- COERTHAS - COERTHAS CENTRAL HIGHLANDS -->
         <!-- Daniffens Mark -->
         <If Condition="&Daniffens_Mark; == 1 and not HasAtLeast(7932,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards')">
-            <LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Daniffens_Mark.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Central_Highlands/Daniffens_Mark.xml"/>
         </If>
         <!-- Charons Lantern -->
         <If Condition="&Charons_Lantern; == 1 and not HasAtLeast(7933,1) and IsTimeBetween(23,3)">
-            <LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Charons_Lantern.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Central_Highlands/Charons_Lantern.xml"/>
         </If>
         <!-- Starbright -->
         <If Condition="&Starbright; == 1 and not HasAtLeast(7945,1) and IsTimeBetween(20,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Starbright.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Central_Highlands/Starbright.xml"/>
         </If>
         <!-- Dawn Maiden -->
         <If Condition="&Dawn_Maiden; == 1 and not HasAtLeast(7944,1) and IsTimeBetween(4,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Dawn_Maiden.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Central_Highlands/Dawn_Maiden.xml"/>
         </If>
         <!-- The Matriarch -->
         <If Condition="&The_Matriarch; == 1 and not HasAtLeast(7946,1)">
-            <LLoadProfile Path="Coerthas/CoerthasCentralHighlands/The_Matriarch.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Central_Highlands/The_Matriarch.xml"/>
         </If>
         <!-- Darkstar -->
         <If Condition="&Darkstar; == 1 and not HasAtLeast(8769,1) and IsTimeBetween(18,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Snow', 'Blizzards')">
-            <LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Darkstar.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Central_Highlands/Darkstar.xml"/>
         </If>
         <!-- Blue Corpse -->
         <If Condition="&Blue_Corpse; == 1 and not HasAtLeast(8770,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(-8), 'Snow', 'Blizzards')">
-            <LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Blue_Corpse.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Central_Highlands/Blue_Corpse.xml"/>
         </If>
         <!-- Anomalocaris -->
         <If Condition="&Anomalocaris; == 1 and not HasAtLeast(7949,1) and IsTimeBetween(9,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Anomalocaris.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Central_Highlands/Anomalocaris.xml"/>
         </If>
         <!-- Mahar -->
         <If Condition="&Shonisaurus; == 1 and not HasAtLeast(8772,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Shonisaurus.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Central_Highlands/Shonisaurus.xml"/>
         </If>
         <!-- Shonisaurus -->
         <If Condition="&Shonisaurus; == 1 and not HasAtLeast(8772,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="Coerthas/CoerthasCentralHighlands/Shonisaurus.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Central_Highlands/Shonisaurus.xml"/>
         </If>
 
 
         <!-- COERTHAS - COERTHAS WESTERN HIGHLANSD -->
         <!-- Fat Purse -->
         <If Condition="&Fat_Purse; == 1 and not HasAtLeast(15626,1)">
-            <LLoadProfile Path="Coerthas/CoerthasWesternHighlands/Fat_Purse.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Western_Highlands/Fat_Purse.xml"/>
         </If>
         <!-- Hailfinder -->
         <If Condition="&Hailfinder; == 1 and not HasAtLeast(16745,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(397, TimeSpan.FromHours(-8), 'Snow', 'Blizzards')">
-            <LLoadProfile Path="Coerthas/CoerthasWesternHighlands/Hailfinder.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Western_Highlands/Hailfinder.xml"/>
         </If>
         <!-- Flarefish -->
         <If Condition="&Flarefish; == 1 and not HasAtLeast(16746,1) and IsTimeBetween(9,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')">
-            <LLoadProfile Path="Coerthas/CoerthasWesternHighlands/Flarefish.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Western_Highlands/Flarefish.xml"/>
         </If>
         <!-- Bishopfish -->
         <If Condition="&Bishopfish; == 1 and not HasAtLeast(17577,1) and IsTimeBetween(9,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Clear Skies')">
-            <LLoadProfile Path="Coerthas/CoerthasWesternHighlands/Bishopfish.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Western_Highlands/Bishopfish.xml"/>
         </If>
         <!-- Charibenet -->
         <If Condition="&Charibenet; == 1 and not HasAtLeast(17592,1) and IsTimeBetween(23,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')">
-            <LLoadProfile Path="Coerthas/CoerthasWesternHighlands/Charibenet.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Western_Highlands/Charibenet.xml"/>
         </If>
         <!-- The Impaler -->
         <If Condition="&The_Impaler; == 1 and not HasAtLeast(15627,1)">
-            <LLoadProfile Path="Coerthas/CoerthasWesternHighlands/The_Impaler.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Western_Highlands/The_Impaler.xml"/>
         </If>
         <!-- Captain Nemo -->
         <If Condition="&Captain_Nemo; == 1 and not HasAtLeast(17578,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(397, TimeSpan.FromHours(-8), 'Snow')">
-            <LLoadProfile Path="Coerthas/CoerthasWesternHighlands/Captain_Nemo.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Western_Highlands/Captain_Nemo.xml"/>
         </If>
         <!-- La Reale -->
         <If Condition="&La_Reale; == 1 and not HasAtLeast(15628,1)">
-            <LLoadProfile Path="Coerthas/CoerthasWesternHighlands/La_Reale.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Western_Highlands/La_Reale.xml"/>
         </If>
         <!-- Merciless -->
         <If Condition="&Merciless; == 1 and not HasAtLeast(16756,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(397, TimeSpan.FromHours(-8), 'Snow', 'Blizzards')">
-            <LLoadProfile Path="Coerthas/CoerthasWesternHighlands/Merciless.xml"/>
+            <LLoadProfile Path="Coerthas/Coerthas_Western_Highlands/Merciless.xml"/>
         </If>
 
 
@@ -927,7 +926,6 @@
         <If Condition="(&Silver_Sovereign; == 1 or &Navigators_Brand; == 1) and not HasAtLeast(2628,3)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2628,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
-
 
         <Log Message="Checking next fishspot..." />
         <LisbethTravel ZoneId="129" XYZ="-82.75777, 18.60033, 11.29167"/>

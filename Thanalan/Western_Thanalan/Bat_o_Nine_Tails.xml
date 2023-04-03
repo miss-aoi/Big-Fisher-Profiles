@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Bat o Nine Tails (8766)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Bat o Nine Tails</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(8766,1)">
+		<Log Message="Start Fishing: Bat o Nine Tails..." />
+		<If condition="not HasAtLeast(2599,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(276)">
+			<LisbethTravel Area="Western Thanalan" XYZ="-345.541, 14.71903, -739.8731"/>
+		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<ExFish Bait="Honey Worm" Condition="not HasAtLeast(8766,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Clear Skies', 'Fair Skies', 'Clouds', 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(140, TimeSpan.FromHours(-8), 'Rain')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+				Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Heavy" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Bat-o'-Nine-Tails" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-332.3366, 12.58209, -743.9556" Heading="1,775236" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

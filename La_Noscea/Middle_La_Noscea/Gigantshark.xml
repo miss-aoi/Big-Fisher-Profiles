@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Profile: Gigantshark (7686)
+	Authors: budesaal, miss-aoi
+-->
+<Profile>
+	<Name>Gigantshark</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+	<If condition="not HasAtLeast(7686,1)">
+		<Log Message="Start Fishing: Gigantshark..." />
+		<If condition="not HasAtLeast(2611,3)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2611,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<If condition="not IsOnSubMap(190)">
+			<LisbethTravel Area="Middle La Noscea" XYZ="-297.3651, 7.54, -224.8838"/>
+		</If>
+		<ExFish Bait="Floating Minnow" Condition="not HasAtLeast(7686,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(134, 'Clear Skies', 'Fair Skies')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+				Mooch="1" Patience="Patience">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Medium" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Gigantshark" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-299.0035, 7.54, -223.1236" Heading="5.51333" Sit="True" />
+				<FishSpot XYZ="-280.3257, 14.30417, -215.7465" Heading="4.931087" Sit="True" />
+				<FishSpot XYZ="-303.9935, 10.9, -185.8521" Heading="4.284627" Sit="True" />
+			</FishSpots>
+		</ExFish>
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
+</Profile>

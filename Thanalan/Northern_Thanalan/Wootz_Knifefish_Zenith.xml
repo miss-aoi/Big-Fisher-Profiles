@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Profile: Wootz Knifefish Zenith (8767)
+  Authors: budesaal
+-->
+<Profile>
+  <Name>Wootz Knifefish Zenith</Name>
+  <BehaviorDirectory></BehaviorDirectory>
+  <Order>
+  
+	<If condition="not HasAtLeast(8767,1)">
+		<Log Message="Start Fishing: Wootz Knifefish Zenith..." />
+		<If condition="not HasAtLeast(2599,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If condition="not IsOnSubMap(331)">
+			<LisbethTravel Area="Northern Thanalan" XYZ="-52.10796, 47, 38.07734"/>
+		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<ExFish Bait="Honey Worm" Condition="not HasAtLeast(8767,1) and IsTimeBetween(1,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(147, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+				Mooch="1" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" >
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Heavy" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Wootz Knifefish Zenith" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-54.07195, 46.35095, 46.66246" Heading="6,105716" Sit="True"/>
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+  </Order>
+  <GrindAreas>
+  </GrindAreas>
+  <CodeChunks>
+  </CodeChunks>
+</Profile>

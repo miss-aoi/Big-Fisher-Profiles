@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Profile: Bombardfish (7924)
+	Authors: budesaal, miss-aoi
+-->
+<Profile>
+	<Name>Bombardfish</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+  
+	<If condition="not HasAtLeast(7924,1)">
+		<Log Message="Start Fishing: Bombardfish..." />
+		<If condition="not HasAtLeast(2598,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2598,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<If condition="not IsOnSubMap(216)">
+			<LisbethTravel Area="Eastern La Noscea" XYZ="525.6182, 9.184055, 121.1257" />
+		</If>
+		<While Condition="not IsTimeBetween(9,15)">
+			<WaitTimer WaitTime="3" />
+		</While>
+		<ExFish Bait="Herring Ball" Condition="not HasAtLeast(7924,1) and IsTimeBetween(9,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">
+			<Keepers>
+				<Keeper name="Bombardfish" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="537.8388, 8.730376, 120.295" Heading="1.710845" Sit="True" />
+				<FishSpot XYZ="553.2434, 8.6422, 142.5882" Heading="1.241701" Sit="True" />
+				<FishSpot XYZ="558.2892, 8.72472, 166.4168" Heading="1.566341" Sit="True" />
+			</FishSpots>
+		</ExFish>	
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
+</Profile>

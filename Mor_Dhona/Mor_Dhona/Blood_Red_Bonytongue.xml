@@ -14,7 +14,7 @@
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
 		</If>
 		<If condition="not IsOnSubMap(410)">
-			<LisbethTravel ZoneId="156" XYZ="543.8335, -9.70342, -730.1382"/>
+			<LisbethTravel Area="Mor Dhona" XYZ="543.8335, -9.70342, -730.1382"/>
 		</If>
 		<If Condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
@@ -23,7 +23,7 @@
 			<WaitTimer WaitTime="3" />
 		</While>
 		<ExFish Bait="Honey Worm" Condition="not HasAtLeast(8776,1) and IsTimeBetween(4,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(156, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 				Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />

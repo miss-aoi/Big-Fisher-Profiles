@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Profile: Jacques the Snipper (7712)
+	Authors: budesaal, miss-aoi
+-->
+<Profile>
+	<Name>Jacques the Snipper</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+	<If condition="not HasAtLeast(7712,1)">
+		<Log Message="Start Fishing: Jacques the Snipper..." />
+		<If condition="not HasAtLeast(2589,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2589,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<If condition="not IsOnSubMap(337)">
+			<LisbethTravel Area="Lower La Noscea" XYZ="302.41, 8.000681, 709.0742"/>
+		</If>
+		<While Condition="not IsTimeBetween(21,3)">
+			<WaitTimer WaitTime="3" />
+		</While>
+		<ExFish Bait="Goby Ball" Condition="not HasAtLeast(7712,1) and IsTimeBetween(21,3)"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">
+			<Keepers>
+				<Keeper name="Jacques the Snipper" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="309.3279, 7.999974, 714.3629" Heading="1.313309" Sit="True" />
+				<FishSpot XYZ="297.6325, 8.000063, 716.9773" Heading="5.644516" Sit="True" />
+				<FishSpot XYZ="293.4721, 8.000008, 698.3556" Heading="2.634873" Sit="True" />
+			</FishSpots>
+		</ExFish>
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
+</Profile>

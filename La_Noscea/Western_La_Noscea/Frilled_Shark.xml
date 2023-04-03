@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Profile: Frilled Shark (7950)
+	Authors: budesaal, miss-aoi
+-->
+<Profile>
+	<Name>Frilled Shark</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+	<If condition="not HasAtLeast(7950,1)">
+		<Log Message="Start Fishing: Frilled Shark..." />
+		<If condition="not HasAtLeast(2585,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2585,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<If condition="not IsOnSubMap(228)">
+			<LisbethTravel Area="Western La Noscea" XYZ="-248.5175, -41.66576, 717.8652"/>
+		</If>
+		<While Condition="not IsTimeBetween(17,3)">
+			<WaitTimer WaitTime="3" />
+		</While>
+		<ExFish Bait="Lugworm" Condition="not HasAtLeast(7950,1) and IsTimeBetween(17,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clouds', 'Fog', 'Wind')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+				Mooch="4" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+				<PatienceTug moochLevel="2" TugType="Heavy" />
+				<PatienceTug moochLevel="3" TugType="Heavy" />				
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Frilled Shark" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-257.4962, -42.2619, 734.9879" Heading="5.945528" Sit="True" />
+				<FishSpot XYZ="-221.2151, -42.28603, 753.1325" Heading="0.003720999" Sit="True" />
+				<FishSpot XYZ="-278.6465, -42.2572, 718.3185" Heading="5.481596" Sit="True" />
+			</FishSpots>
+		</ExFish>
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
+</Profile>

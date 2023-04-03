@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Profile: Seahag (8757)
+	Authors: budesaal, miss-aoi
+-->
+<Profile>
+	<Name>Seahag</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+	<If condition="not HasAtLeast(8757,1)">
+		<Log Message="Start Fishing: Seahag..." />
+		<If condition="not HasAtLeast(2585,50)">
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2585,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+		</If>
+		<If Condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<If condition="not IsOnSubMap(363)">
+			<LisbethTravel Area="Western La Noscea" XYZ="-355.129, -39.56086, -358.0498"/>
+		</If>
+		<While Condition="not IsTimeBetween(19,2)">
+			<WaitTimer WaitTime="3" />
+		</While>
+		<ExFish Bait="Lugworm" Condition="not HasAtLeast(8757,1) and IsTimeBetween(19,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+				Mooch="3" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
+			<PatienceTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+				<PatienceTug moochLevel="2" TugType="Heavy" />
+			</PatienceTugs>
+			<Keepers>
+				<Keeper name="Seahag" />
+			</Keepers>
+			<FishSpots>
+				<FishSpot XYZ="-333.7354, -40.54993, -348.5803" Heading="1.075289" Sit="True" />
+				<FishSpot XYZ="-362.0725, -39.38726, -367.4854" Heading="4.304844" Sit="True" />
+				<FishSpot XYZ="-344.2648, -38.81131, -378.0714" Heading="2.943487" Sit="True" />
+			</FishSpots>
+		</ExFish>
+	</If>
+	<LLoadProfile Path="../../Start.xml"/>
+	
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
+</Profile>
