@@ -19,7 +19,10 @@
 		<If condition="not IsOnSubMap(249)">
 			<LisbethTravel Area="Central Thanalan" XYZ="122.7786, -0.3588659, -162.882"/>
 		</If>
-		<ExFish Bait="Crayfish Ball" Condition="not HasAtLeast(7692,1) and IsTimeBetween(17,3)"
+		<While Condition="not IsTimeBetween(21,24) or not IsTimeBetween(0,3)" >
+			<WaitTimer WaitTime="30" />
+		</While>
+		<ExFish Bait="Crayfish Ball" Condition="not HasAtLeast(7692,1) and (IsTimeBetween(17,24) or IsTimeBetween(0,3))"
 				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">
 			<Keepers>
 				<Keeper name="Dream Goby" />

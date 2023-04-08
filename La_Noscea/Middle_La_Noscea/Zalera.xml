@@ -20,7 +20,7 @@
 			<LisbethTravel Area="Middle La Noscea" XYZ="-102.2953, 41.2394, 9.037899"/>
 		</If>
 		<While Condition="not IsTimeBetween(9,14)">
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="30" />
 		</While>
 		<ExFish Bait="Rat Tail" Condition="not HasAtLeast(7678,1) and IsTimeBetween(9,14)"
 				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">

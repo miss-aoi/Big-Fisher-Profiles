@@ -20,7 +20,7 @@
 			<LisbethTravel Area="Upper La Noscea" XYZ="301.5934, -3.052745, 61.05919"/>
 		</If>
 		<While Condition="not IsTimeBetween(16,19)">
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="30" />
 		</While>
 		<ExFish Bait="Spinnerbait" Condition="not HasAtLeast(7927,1) and IsTimeBetween(16,19)"
 				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">

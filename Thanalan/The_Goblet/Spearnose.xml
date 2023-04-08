@@ -21,6 +21,9 @@
 		<If Condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
+		<While Condition="not IsTimeBetween(21,24)" >
+			<WaitTimer WaitTime="30" />
+		</While>
 		<ExFish Bait="Caddisfly Larva" Condition="not HasAtLeast(7919,1) and IsTimeBetween(21,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(341, 'Clouds', 'Fog')"
 				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">
 			<Keepers>
@@ -37,17 +40,6 @@
   <GrindAreas>
   </GrindAreas>
   <CodeChunks>
-  	<CodeChunk Name="Food">
-      <![CDATA[
-            
-                var item = InventoryManager.FilledInventoryAndArmory.First(x => x.RawItemId == 30481);;
-            
-        Logging.Write(Colors.Aquamarine, "Eating " + item.Name);
-        item.UseItem();
-        await Coroutine.Wait(5000, () => Core.Player.HasAura(48));            
-            
-       ]]>
-    </CodeChunk>	
 	<CodeChunk Name="TheGoblet"><![CDATA[
             var unit = GameObjectManager.GetObjectByNPCId(9);
             unit.Target();

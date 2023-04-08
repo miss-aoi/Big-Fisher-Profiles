@@ -20,7 +20,7 @@
 			<LisbethTravel Area="Western La Noscea" XYZ="445.8791, 14.54649, 451.3748"/>
 		</If>
 		<While Condition="not IsTimeBetween(9,14)">
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="30" />
 		</While>
 		<ExFish Bait="Yumizuno" Condition="not HasAtLeast(7693,1) and IsTimeBetween(9,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clear Skies', 'Fair Skies')"
 				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">

@@ -20,7 +20,7 @@
 			<LisbethTravel Area="Lower La Noscea" XYZ="-185.0453, -0.3133438, 727.9094"/>
 		</If>
 		<While Condition="not IsTimeBetween(3,5)">
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="30" />
 		</While>
 		<ExFish Bait="Rat Tail" Condition="not HasAtLeast(7903,1) and IsTimeBetween(3,5) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(135, 'Clouds', 'Fog', 'Wind')"
 				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">

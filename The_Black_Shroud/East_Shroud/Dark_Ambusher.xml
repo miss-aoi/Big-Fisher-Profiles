@@ -19,8 +19,12 @@
 		<If Condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Moth Pupa" Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" Condition="not HasAtLeast(7694,1) and IsTimeBetween(21,3)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">
+		<While Condition="not IsTimeBetween(21,24) or not IsTimeBetween(0,3)" >
+			<WaitTimer WaitTime="30" />
+		</While>
+		<ExFish Bait="Moth Pupa" Condition="not HasAtLeast(7694,1) and (not IsTimeBetween(21,24) or not IsTimeBetween(0,3))"
+				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+				Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Heavy" />

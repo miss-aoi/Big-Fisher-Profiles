@@ -48,5 +48,3 @@
 	<CodeChunks>
 	</CodeChunks>
 </Profile>
-
-<!-- string.Equals(k.Name, FishResult.FishName, StringComparison.InvariantCultureIgnoreCase) -->

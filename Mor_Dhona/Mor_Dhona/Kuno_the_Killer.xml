@@ -20,25 +20,49 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While Condition="not IsTimeBetween(8,18)">
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Honey Worm" Condition="not HasAtLeast(8763,1) and Core.Player.HasAura(568) and IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-				Mooch="3" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial">
-			<PatienceTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-				<PatienceTug moochLevel="2" TugType="Heavy" />
-			</PatienceTugs>
-			<Keepers>
-				<Keeper name="Kuno the Killer" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="445.7883, -5.563284, -750.0673" Heading="5.845725" Sit="True" />
-				<FishSpot XYZ="460.5209, -4.923997, -748.8826" Heading="1.007671" Sit="True" />
-				<FishSpot XYZ="490.8825, -5.542807, -753.9091" Heading="5.38077" Sit="True" />
-			</FishSpots>
-		</ExFish>
+		<While Condition="not HasAtLeast(8763,1) and IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')">
+			<If Condition="not Core.Player.HasAura(568)">
+				<ExFish Bait="Honey Worm" Condition="not HasAtLeast(8762,1) and not Core.Player.HasAura(568) and IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')"
+						MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+						Mooch="3" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial">
+					<PatienceTugs>
+						<PatienceTug moochLevel="0" TugType="Light" />
+						<PatienceTug moochLevel="1" TugType="Light" />
+						<PatienceTug moochLevel="2" TugType="Heavy" />
+					</PatienceTugs>
+					<Keepers>
+						<Keeper name="Canavan" />
+					</Keepers>
+					<FishSpots>
+						<FishSpot XYZ="445.7883, -5.563284, -750.0673" Heading="5.845725" Sit="True" />
+						<FishSpot XYZ="460.5209, -4.923997, -748.8826" Heading="1.007671" Sit="True" />
+						<FishSpot XYZ="490.8825, -5.542807, -753.9091" Heading="5.38077" Sit="True" />
+					</FishSpots>
+				</ExFish>
+			</If>
+			<ExFish Bait="Honey Worm" Condition="not HasAtLeast(8763,1) and Core.Player.HasAura(568) and IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')"
+					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+					Mooch="3" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial">
+				<PatienceTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+					<PatienceTug moochLevel="2" TugType="Heavy" />
+				</PatienceTugs>
+				<Keepers>
+					<Keeper name="Kuno the Killer" />
+				</Keepers>
+				<SurfaceSlaps>
+					<SurfaceSlap name="Lamp Marimo"/>
+				</SurfaceSlaps>
+				<FishSpots>
+					<FishSpot XYZ="445.7883, -5.563284, -750.0673" Heading="5.845725" Sit="True" />
+					<FishSpot XYZ="460.5209, -4.923997, -748.8826" Heading="1.007671" Sit="True" />
+					<FishSpot XYZ="490.8825, -5.542807, -753.9091" Heading="5.38077" Sit="True" />
+				</FishSpots>
+			</ExFish>
+		</While>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	

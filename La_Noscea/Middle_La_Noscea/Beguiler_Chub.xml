@@ -20,7 +20,7 @@
 			<LisbethTravel Area="Middle La Noscea" XYZ="30.95881, 42.41599, 36.89365"/>
 		</If>
 		<While Condition="not IsTimeBetween(9,14)">
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="30" />
 		</While>
 		<ExFish Bait="Moth Pupa" Condition="not HasAtLeast(7679,1) and IsTimeBetween(9,14)"
 				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">

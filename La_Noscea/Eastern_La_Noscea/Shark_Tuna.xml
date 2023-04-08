@@ -20,7 +20,7 @@
 			<LisbethTravel Area="Eastern La Noscea" XYZ="533.2231, 9.064485, 409.0189"/>
 		</If>
 		<While Condition="not IsTimeBetween(19,21)">
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="30" />
 		</While>
 		<ExFish Bait="Spoon Worm" Condition="not HasAtLeast(7915,1) and IsTimeBetween(19,21) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')"
 				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"

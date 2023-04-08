@@ -24,7 +24,7 @@
 			<Desynth ItemIds="12715" DesynthDelay="6000" DesynthTimeout="10"/>
 		</If>
 		<While Condition="not IsTimeBetween(0,3)">
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="30" />
 		</While>
 		<While Condition="not HasAtLeast(17592,1) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')">
 			<ExFish Bait="Purse Web Spider" Condition="not HasAtLeast(12715,5) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')"

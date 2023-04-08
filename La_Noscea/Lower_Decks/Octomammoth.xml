@@ -20,7 +20,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While Condition="not IsTimeBetween(9,17)">
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="30" />
 		</While>
 		<ExFish Bait="Pill Bug" Condition="not HasAtLeast(7707,1) and IsTimeBetween(9,17)"
 				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"

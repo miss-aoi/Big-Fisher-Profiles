@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-	Profile: Canavan (8763)
+	Profile: Canavan (8762)
 	Authors: budesaal, miss-aoi
 -->
 <Profile>
@@ -20,9 +20,9 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While Condition="not IsTimeBetween(8,18)">
-			<WaitTimer WaitTime="3" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Honey Worm" Condition="not HasAtLeast(8763,1) and not Core.Player.HasAura(568) and IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')"
+		<ExFish Bait="Honey Worm" Condition="not HasAtLeast(8762,1) and not Core.Player.HasAura(568) and IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')"
 				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 				Mooch="3" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>

@@ -5,6 +5,7 @@ This profile set is designed to catch all Big Fish until level 90.
 ## Setup
 
 - Install ExBuddy from here: https://github.com/LlamaMagic/ExBuddy
+    - This repo is needed as it includes support for many newer fishing abilities that are used in the profiles like Thaliak's Favor, Surface Slap, Prize Catch, Makeshift Bait, etc
     - You will want to replace the git url managed by RepoBuddy, remove the ExBuddy folder in Plugins, then restart RebornBuddy
 - Install __LlamaLibrary from here: https://github.com/nt153133/__LlamaLibrary/
 - Install Lisbeth from here: https://www.siune.io/
