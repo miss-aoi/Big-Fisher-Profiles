@@ -19,11 +19,11 @@
 		<If condition="not IsOnSubMap(228)">
 			<LisbethTravel Area="Western La Noscea" XYZ="-464.1351, -38.0391, 737.9131"/>
 		</If>
-		<While Condition="not IsTimeBetween(22,24) or not IsTimeBetween(0,3)">
+		<While Condition="IsTimeBetween(3,22)">
 			<WaitTimer WaitTime="30" />
 		</While>
 		<ExFish Bait="Spoon Worm" Condition="not HasAtLeast(8755,1) and (not IsTimeBetween(22,24) or not IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clouds', 'Fog', 'Wind')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 				Mooch="2" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />

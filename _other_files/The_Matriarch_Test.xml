@@ -21,7 +21,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Honey Worm" Condition="not HasAtLeast(7946,1)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" MaximumGPThaliaksFavor="400" MinimumGPSurfaceSlap="250"
+				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" MaximumGPThaliaksFavor="400" MinimumGPSurfaceSlap="250"
 				Mooch="1" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" UseMooch2="True">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />

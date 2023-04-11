@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Old Softie (7703)
-  Authors: budesaal
+	Profile: Old Softie (7703)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Old Softie</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
+	<Name>Old Softie</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
 	<If condition="not HasAtLeast(7703,1)">
 		<Log Message="Start Fishing: Old Softie..." />
 		<If condition="not HasAtLeast(2590,50)">
@@ -23,20 +23,22 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<ExFish Bait="Bloodworm" Condition="not HasAtLeast(7703,1) and IsTimeBetween(17,21)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">
+				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Old Softie" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="368.5327, -22.80101, 15.15841" Heading="6,2592938" Sit="True"/>
+				<FishSpot XYZ="370.7016, -22.94275, 13.6297" Heading="0.926841" Sit="True" />
+				<FishSpot XYZ="342.5189, -18.55594, 16.56027" Heading="0.1498213" Sit="True" />
+				<FishSpot XYZ="387.3842, -21.66257, -0.4775881" Heading="0.9289355" Sit="True" />
 			</FishSpots>
-		</ExFish>	
+		</ExFish>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
-	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Spearnose (7919)
-  Authors: budesaal
+	Profile: Spearnose (7919)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Spearnose</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
-	<If condition="not HasAtLeast(7919,1)">
-    <Log Message="Start Fishing: Spearnose..." />
-		<If condition="not HasAtLeast(2607,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2607,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+	<Name>Spearnose</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+		<If condition="not HasAtLeast(7919,1)">
+			<Log Message="Start Fishing: Spearnose..."/>
+			<If condition="not HasAtLeast(2603,50)">
+				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2603,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			</If>
+			<If condition="not IsOnSubMap(0)">
+				<LisbethTravel Area="Ul'dah (Steps of Nald)" XYZ="-147.512, -3.154888, -166.1085"/>
+				<RunCode Name="TheGoblet"/>
+				<LisbethTravel Area="The Goblet" XYZ="-10.33781, -24, 64.53981"/>
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<While Condition="not IsTimeBetween(21,24)" >
+				<WaitTimer WaitTime="30" />
+			</While>
+			<ExFish Bait="Caddisfly Larva" Condition="not HasAtLeast(7919,1) and IsTimeBetween(21,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(341, 'Clouds', 'Fog')"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+				<Keepers>
+					<Keeper name="Spearnose" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="-13.18544, -24.07133, 58.71743" Heading="4.491707" Sit="True" />
+					<FishSpot XYZ="-13.18043, -24.07133, 41.33421" Heading="4.868697" Sit="True" />
+					<FishSpot XYZ="-13.19689, -24.07133, 22.75558" Heading="5.258256" Sit="True" />
+				</FishSpots>
+			</ExFish>
 		</If>
-		<If condition="not IsOnSubMap(0)">
-			<LisbethTravel Area="Ul'Dah - Steps of Nald" XYZ="-147.512, -3.154888, -166.1085"/>
-			<RunCode Name="TheGoblet"/>
-			<LisbethTravel Area="The Goblet" XYZ="-10.33781, -24, 64.53981" Name="Dock" AllowedVariance="0.0"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>
-		<While Condition="not IsTimeBetween(21,24)" >
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Caddisfly Larva" Condition="not HasAtLeast(7919,1) and IsTimeBetween(21,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(341, 'Clouds', 'Fog')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">
-			<Keepers>
-				<Keeper name="Spearnose" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="-14.84795, -24, 64.62981" Heading="6,720456" Sit="True"/>
-			</FishSpots>
-		</ExFish>	
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-	<CodeChunk Name="TheGoblet"><![CDATA[
-            var unit = GameObjectManager.GetObjectByNPCId(9);
-            unit.Target();
-            unit.Interact();
-            await Coroutine.Sleep(1000);
-            await Coroutine.Wait(5000, () => SelectString.IsOpen);
-            await Coroutine.Sleep(500);
-            if (SelectString.IsOpen)
-                SelectString.ClickSlot(1);
-            await Coroutine.Sleep(500);
-            await Coroutine.Wait(5000, () => SelectString.IsOpen);
-            await Coroutine.Sleep(500);
-            if (SelectString.IsOpen)
-                SelectString.ClickSlot(2);
+		<LLoadProfile Path="../../Start.xml"/>
 
-            await Coroutine.Wait(5000, () => RaptureAtkUnitManager.GetWindowByName("HousingSelectBlock") != null);
-            if (RaptureAtkUnitManager.GetWindowByName("HousingSelectBlock") != null)
-            {
-                RaptureAtkUnitManager.GetWindowByName("HousingSelectBlock").SendAction(1, 3, 0);
-                await Coroutine.Wait(5000, () => SelectYesno.IsOpen);
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+		<CodeChunk Name="TheGoblet">
+			<![CDATA[
+				var unit = GameObjectManager.GetObjectByNPCId(9);
+				unit.Target();
+				unit.Interact();
+				await Coroutine.Sleep(1000);
+				await Coroutine.Wait(5000, () => SelectString.IsOpen);
+				await Coroutine.Sleep(500);
+				if (SelectString.IsOpen)
+					SelectString.ClickSlot(1);
+				await Coroutine.Sleep(500);
+				await Coroutine.Wait(5000, () => SelectString.IsOpen);
+				await Coroutine.Sleep(500);
+				if (SelectString.IsOpen)
+					SelectString.ClickSlot(2);
+				await Coroutine.Wait(5000, () => RaptureAtkUnitManager.GetWindowByName("HousingSelectBlock") != null);
 
-                if (SelectYesno.IsOpen)
-                    SelectYesno.Yes();
-
-                await Coroutine.Sleep(5000);
-
-                if (CommonBehaviors.IsLoading) await Coroutine.Wait(-1, () => !CommonBehaviors.IsLoading);
-            }
-
-			
-		]]></CodeChunk>
-  </CodeChunks>
+				if (RaptureAtkUnitManager.GetWindowByName("HousingSelectBlock") != null)
+				{
+					RaptureAtkUnitManager.GetWindowByName("HousingSelectBlock").SendAction(1, 3, 0);
+					await Coroutine.Wait(5000, () => SelectYesno.IsOpen);
+					if (SelectYesno.IsOpen)
+						SelectYesno.Yes();
+					await Coroutine.Sleep(5000);
+					if (CommonBehaviors.IsLoading)
+						await Coroutine.Wait(-1, () => !CommonBehaviors.IsLoading);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

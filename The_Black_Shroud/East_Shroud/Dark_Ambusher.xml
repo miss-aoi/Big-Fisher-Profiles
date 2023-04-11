@@ -1,47 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Dark Ambusher (7694)
-  Authors: budesaal
+	Profile: Dark Ambusher (7694)
+	Authors: budesaal
 -->
 <Profile>
-  <Name>Dark Ambusher</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
-	<If condition="not HasAtLeast(7694,1)">
-		<Log Message="Start Fishing: Dark Ambusher..." />
-		<If condition="not HasAtLeast(2586,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2586,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+	<Name>Dark Ambusher</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+		<If condition="not HasAtLeast(7694,1)">
+			<Log Message="Start Fishing: Dark Ambusher..." />
+			<If condition="not HasAtLeast(2586,50)">
+				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2586,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			</If>
+			<If condition="not IsOnSubMap(155)">
+				<LisbethTravel ZoneId="152" XYZ="-571.7729, 8.910708, 73.77551"/>
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<While Condition="IsTimeBetween(3,21)" >
+				<WaitTimer WaitTime="30" />
+			</While>
+			<ExFish Bait="Moth Pupa" Condition="not HasAtLeast(7694,1) and (not IsTimeBetween(21,24) or not IsTimeBetween(0,3))"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+					Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
+				<PatienceTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatienceTugs>
+				<Keepers>
+					<Keeper name="Dark Ambusher" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="-586.5031, 7.944592, 86.51789" Heading="0.8807359" Sit="True" />
+					<FishSpot XYZ="-607.4549, 7.944794, 100.3281" Heading="5.385785" Sit="True" />
+					<FishSpot XYZ="-597.1454, 7.944375, 107.6111" Heading="5.36274" Sit="True" />
+				</FishSpots>
+			</ExFish>
 		</If>
-		<If condition="not IsOnSubMap(155)">
-			<LisbethTravel ZoneId="152" XYZ="-571.7729, 8.910708, 73.77551"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>
-		<While Condition="not IsTimeBetween(21,24) or not IsTimeBetween(0,3)" >
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Moth Pupa" Condition="not HasAtLeast(7694,1) and (not IsTimeBetween(21,24) or not IsTimeBetween(0,3))"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-				Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
-			<PatienceTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Heavy" />
-			</PatienceTugs>
-			<Keepers>
-				<Keeper name="Dark Ambusher" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="-607.4823, 7.944798, 100.3298" Heading="8,181549" Sit="True"/>
-			</FishSpots>
-		</ExFish>	
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+		<LLoadProfile Path="../../Start.xml"/>
+
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

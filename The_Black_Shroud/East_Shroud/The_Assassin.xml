@@ -1,46 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: The Assassin (7907)
-  Authors: budesaal
+	Profile: The Assassin (7907)
+	Authors: budesaal
 -->
 <Profile>
-  <Name>The Assassin</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
-	<If condition="not HasAtLeast(7907,1)">		
-		<Log Message="Start Fishing: The Assassin..." />
-		<If condition="not HasAtLeast(2594,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+	<Name>The Assassin</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+		<If condition="not HasAtLeast(7907,1)">		
+			<Log Message="Start Fishing: The Assassin..." />
+			<If condition="not HasAtLeast(2594,50)">
+				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			</If>
+			<If condition="not IsOnSubMap(112)">
+				<LisbethTravel ZoneId="152" XYZ="-215.3548, 54.82919, -190.1448"/>
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<While Condition="not IsTimeBetween(21,23)" >
+				<WaitTimer WaitTime="30" />
+			</While>
+			<ExFish Bait="Butterworm" Condition="not HasAtLeast(7907,1) and IsTimeBetween(21,23)"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+					Mooch="0" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial">
+				<PatienceTugs>
+					<PatienceTug moochLevel="0" TugType="Heavy" />
+				</PatienceTugs>
+				<Keepers>
+					<Keeper name="The Assassin" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="-230.0043, 49.57919, -214.4796" Heading="3.313233" Sit="True" />
+					<FishSpot XYZ="-240.2707, 49.57919, -228.8123" Heading="4.641082" Sit="True" />
+					<FishSpot XYZ="-223.3734, 49.57124, -231.3031" Heading="1.602116" Sit="True" />
+				</FishSpots>
+			</ExFish>
 		</If>
-		<If condition="not IsOnSubMap(112)">
-			<LisbethTravel ZoneId="152" XYZ="-215.3548, 54.82919, -190.1448"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>
-		<While Condition="not IsTimeBetween(21,23)" >
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Butterworm" Condition="not HasAtLeast(7907,1) and IsTimeBetween(21,23)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-				Mooch="0" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial">
-			<PatienceTugs>
-				<PatienceTug moochLevel="0" TugType="Heavy" />
-			</PatienceTugs>
-			<Keepers>
-				<Keeper name="The Assassin" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="-231.8362, 49.57919, -219.9824" Heading="3,270352" Sit="True"/>
-			</FishSpots>
-		</ExFish>	
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+		<LLoadProfile Path="../../Start.xml"/>
+
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

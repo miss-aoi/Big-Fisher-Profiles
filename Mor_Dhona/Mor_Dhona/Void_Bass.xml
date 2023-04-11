@@ -20,13 +20,10 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Glowworm" Condition="not HasAtLeast(8759,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(156, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Void Bass" />
 			</Keepers>
-			<SurfaceSlaps>
-				<SurfaceSlap name="Ilsabardian Bass" />
-			</SurfaceSlaps>
 			<FishSpots>
 				<FishSpot XYZ="-118.8273, 45.77808, -185.7387" Heading="1.138674" Sit="True" />
 				<FishSpot XYZ="-124.9568, 45.90577, -198.8519" Heading="2.386933" Sit="True" />

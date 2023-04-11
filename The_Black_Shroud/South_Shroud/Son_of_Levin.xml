@@ -20,7 +20,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Caddisfly Larva" Condition="not HasAtLeast(7936,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunderstorms')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">
+				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Son of Levin" />
 			</Keepers>

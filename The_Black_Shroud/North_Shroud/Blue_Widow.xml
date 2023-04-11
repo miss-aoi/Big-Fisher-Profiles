@@ -1,42 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Blue Widow (7699)
-  Authors: budesaal
+	Profile: Blue Widow (7699)
+	Authors: budesaal
 -->
 <Profile>
-  <Name>Blue Widow</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
-	<If condition="not HasAtLeast(7699,1)">
-		<Log Message="Start Fishing: Blue Widow..." />
-		<If condition="not HasAtLeast(2611,3)">
-			<Lisbeth Json="[{'Item': 2611,'Group': 0,'Amount':3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
+	<Name>Blue Widow</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+		<If condition="not HasAtLeast(7699,1)">
+			<Log Message="Start Fishing: Blue Widow..." />
+			<If condition="not HasAtLeast(2611,3)">
+				<Lisbeth Json="[{'Item': 2611,'Group': 0,'Amount':3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
+			</If>
+			<If condition="not IsOnSubMap(85)">
+				<LisbethTravel ZoneId="154" XYZ="235.4475, -27.25044, 163.2124"/>
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<While Condition="not IsTimeBetween(19,14)" >
+				<WaitTimer WaitTime="30" />
+			</While>
+			<ExFish Bait="Floating Minnow" Condition="not HasAtLeast(7699,1) and IsTimeBetween(9,14)"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+				<Keepers>
+					<Keeper name="Blue Widow" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="223.7824, -29.00599, 175.474" Heading="6.012096" Sit="True" />
+					<FishSpot XYZ="205.4642, -28.51582, 182.1846" Heading="0.5101242" Sit="True" />
+					<FishSpot XYZ="189.6587, -30.66909, 195.119" Heading="1.228501" Sit="True" />
+				</FishSpots>
+			</ExFish>
 		</If>
-		<If condition="not IsOnSubMap(85)">
-			<LisbethTravel ZoneId="154" XYZ="235.4475, -27.25044, 163.2124"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>
-		<While Condition="not IsTimeBetween(19,14)" >
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Floating Minnow" Condition="not HasAtLeast(7699,1) and IsTimeBetween(9,14)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">
-			<Keepers>
-				<Keeper name="Blue Widow" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="243.032, -27.87715, 168.327" Heading="5,0760503" Sit="True"/>
-			</FishSpots>
-		</ExFish>	
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+		<LLoadProfile Path="../../Start.xml"/>
+
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

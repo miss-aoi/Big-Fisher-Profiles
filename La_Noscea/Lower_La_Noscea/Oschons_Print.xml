@@ -20,7 +20,7 @@
 			<LisbethTravel Area="Lower La Noscea" XYZ="249.4097, 38.98185, 242.7699"/>
 		</If>
 		<ExFish Bait="Goby Ball" Condition="not HasAtLeast(7680,1)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">
+				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Oschon's Print" />
 			</Keepers>

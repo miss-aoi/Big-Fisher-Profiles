@@ -1,41 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Ghost Carp (7700)
-  Authors: budesaal
+	Profile: Ghost Carp (7700)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Ghost Carp</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
-	<If condition="not HasAtLeast(7700,1)">
-		<Log Message="Start Fishing: Ghost Carp..." />
-		<If condition="not HasAtLeast(2594,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+	<Name>Ghost Carp</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+		<If condition="not HasAtLeast(7700,1)">
+			<Log Message="Start Fishing: Ghost Carp..." />
+			<If condition="not HasAtLeast(2594,50)">
+				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			</If>
+			<If condition="not IsOnSubMap(70)">
+				<LisbethTravel ZoneId="148" XYZ="211.2545, -32.20573, 395.1728"/>
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<While Condition="IsTimeBetween(3,21)" >
+				<WaitTimer WaitTime="30" />
+			</While>
+			<ExFish Bait="Butterworm" Condition="not HasAtLeast(7700,1) and (not IsTimeBetween(21,24) or not IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(148, 'Rain')">
+				<Keepers>
+					<Keeper name="Ghost Carp" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="218.723, -33.06675, 384.3286" Heading="2.596586" Sit="True" />
+					<FishSpot XYZ="230.0516, -31.35194, 387.275" Heading="2.393428" Sit="True" />
+					<FishSpot XYZ="248.1566, -30.45172, 394.424" Heading="3.23328" Sit="True" />
+				</FishSpots>
+			</ExFish>
 		</If>
-		<If condition="not IsOnSubMap(70)">
-			<LisbethTravel ZoneId="148" XYZ="211.2545, -32.20573, 395.1728"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>
-		<While Condition="not IsTimeBetween(21,24) or not IsTimeBetween(0,3)" >
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Butterworm" Condition="not HasAtLeast(7700,1) and (not IsTimeBetween(21,24) or not IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(148, 'Rain')">
-			<Keepers>
-				<Keeper name="Ghost Carp" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="230.0548, -31.34614, 387.5831" Heading="1,978786" Sit="True"/>
-			</FishSpots>
-		</ExFish>	
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+		<LLoadProfile Path="../../Start.xml"/>
+
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

@@ -117,3 +117,10 @@ This profile set is still a work in progress, so use at your own risk and I'm no
 
 ## Looking to Donate? ♡
 I love Lattes: [BuyMeCoffee](https://buymeacoffee.com/miss_aoi)
+
+
+# TODO:
+- Add While loop for fish that need Fisher's Intuition
+- Update ExFish Conditions to include bait count
+- Update wait timers to just one hour before - not all day
+- Add FishSpots for The Black Shroud

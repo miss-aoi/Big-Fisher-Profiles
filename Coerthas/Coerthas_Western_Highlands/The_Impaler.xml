@@ -20,7 +20,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Brute Leech" Snagging="True" Condition="not HasAtLeast(15627,1)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">
+				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="The Impaler" />
 			</Keepers>

@@ -1,42 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: The Green Jester (7934)
-  Authors: budesaal
+	Profile: The Green Jester (7934)
+	Authors: budesaal
 -->
 <Profile>
-  <Name>The Green Jester</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
-	<If condition="not HasAtLeast(7934,1)">
-		<Log Message="Start Fishing: The Green Jester..." />
-		<If condition="not HasAtLeast(2599,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+	<Name>The Green Jester</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+		<If condition="not HasAtLeast(7934,1)">
+			<Log Message="Start Fishing: The Green Jester..." />
+			<If condition="not HasAtLeast(2599,50)">
+				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			</If>
+			<If condition="not IsOnSubMap(104)">
+				<LisbethTravel ZoneId="148" XYZ="-408.1958, 53.11435, 34.25052"/>
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<While Condition="not IsTimeBetween(18,21)" >
+				<WaitTimer WaitTime="30" />
+			</While>
+			<ExFish Bait="Honey Worm" Condition="not HasAtLeast(7934,1) and IsTimeBetween(18,21)"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+				<Keepers>
+					<Keeper name="The Green Jester" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="-402.063, 49, 15.16597" Heading="2.556347" Sit="True" />
+					<FishSpot XYZ="-400.1736, 49, 4.810299" Heading="5.30001" Sit="True" />
+					<FishSpot XYZ="-423.5688, 49, 16.69" Heading="6.072839" Sit="True" />
+				</FishSpots>
+			</ExFish>
 		</If>
-		<If condition="not IsOnSubMap(104)">
-			<LisbethTravel ZoneId="148" XYZ="-408.1958, 53.11435, 34.25052"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>
-		<While Condition="not IsTimeBetween(18,21)" >
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Honey Worm" Condition="not HasAtLeast(7934,1) and IsTimeBetween(18,21)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">
-			<Keepers>
-				<Keeper name="The Green Jester" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="-415.4449, 49, 4.514814" Heading="0,07986617" Sit="True"/>
-			</FishSpots>
-		</ExFish>	
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+		<LLoadProfile Path="../../Start.xml"/>
+
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

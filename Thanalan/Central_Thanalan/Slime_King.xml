@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Slime King (7698)
-  Authors: budesaal
+	Profile: Slime King (7698)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Slime King</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
+	<Name>Slime King</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
 	<If condition="not HasAtLeast(7698,1)">
 		<Log Message="Start Fishing: Slime King..." />
 		<If condition="not HasAtLeast(2588,50)">
@@ -23,20 +23,22 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<ExFish Bait="Crayfish Ball" Condition="not HasAtLeast(7698,1) and IsTimeBetween(19,24)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">
+				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Slime King" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="-164.3801, -32, 108.5421" Heading="0,2846694" Sit="True"/>
+				<FishSpot XYZ="-173.101, -32, 103.916" Heading="6.072006" Sit="True" />
+				<FishSpot XYZ="-198.8511, -32, 112.3825" Heading="4.800707" Sit="True" />
+				<FishSpot XYZ="-148.8995, -32, 111.208" Heading="4.601738" Sit="True" />
 			</FishSpots>
-		</ExFish>	
+		</ExFish>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
-	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

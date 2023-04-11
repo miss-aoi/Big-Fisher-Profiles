@@ -22,24 +22,24 @@
 		<If Condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While Condition="not IsTimeBetween(0,4)">
+		<While Condition="not IsTimeBetween(19,24) or not IsTimeBetween(0,4)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While Condition="not HasAtLeast(8769,1) and IsTimeBetween(0,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Snow', 'Blizzards')" >
-			<If Condition="not Core.Player.HasAura(850)" >
-				<ExFish Bait="Chocobo Fly" Condition="not Core.Player.HasAura(850) and IsTimeBetween(0,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Snow', 'Blizzards')"
-						MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-					<Keepers>
-						<Keeper name="Lamp Marimo" />
-					</Keepers>
-					<FishSpots>
-						<FishSpot XYZ="492.7034, 347.5425, -699.8847" Heading="2.811154" Sit="True" />
-						<FishSpot XYZ="507.6468, 347.4637, -710.7338" Heading="3.726404" Sit="True" />
-						<FishSpot XYZ="499.6933, 347.5016, -730.2562" Heading="6.04072" Sit="True" />
-					</FishSpots>
-				</ExFish>
-			</If>
-			<ExFish Bait="Stonefly Nymph" Condition="not HasAtLeast(8769,1) and IsTimeBetween(0,4) and Core.Player.HasAura(850) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Snow', 'Blizzards')"
+		<While Condition="not HasAtLeast(8769,1) and (IsTimeBetween(19,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Snow', 'Blizzards')" >
+			<!-- 5x Lamp Marimo for Fisher's Intuition -->
+			<ExFish Bait="Chocobo Fly" Condition="not Core.Player.HasAura(850) and (IsTimeBetween(19,24) or IsTimeBetween(0,4))) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Snow', 'Blizzards')"
+					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+				<Keepers>
+					<Keeper name="Lamp Marimo" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="492.7034, 347.5425, -699.8847" Heading="2.811154" Sit="True" />
+					<FishSpot XYZ="507.6468, 347.4637, -710.7338" Heading="3.726404" Sit="True" />
+					<FishSpot XYZ="499.6933, 347.5016, -730.2562" Heading="6.04072" Sit="True" />
+				</FishSpots>
+			</ExFish>
+			<!-- Now go for Darkstar -->
+			<ExFish Bait="Stonefly Nymph" Condition="not HasAtLeast(8769,1) and Core.Player.HasAura(850) and (IsTimeBetween(19,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Snow', 'Blizzards')"
 					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69"
 					Mooch="1" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial" ThaliaksFavor="True">
 				<PatienceTugs>

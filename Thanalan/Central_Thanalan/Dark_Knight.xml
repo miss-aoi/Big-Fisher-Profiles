@@ -1,39 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Dark Knight (7689)
-  Authors: budesaal
+	Profile: Dark Knight (7689)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Dark Knight</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
-	<If condition="not HasAtLeast(7689,1)">
-		<Log Message="Start Fishing: Dark Knight..." />
-		<If condition="not HasAtLeast(2614,3)">
-			<Lisbeth Json="[{'Item': 2614,'Group': 0,'Amount':3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
+	<Name>Dark Knight</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+		<If condition="not HasAtLeast(7689,1)">
+			<Log Message="Start Fishing: Dark Knight..." />
+			<If condition="not HasAtLeast(2614,3)">
+				<Lisbeth Json="[{'Item': 2614,'Group': 0,'Amount':3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<If condition="not IsOnSubMap(249)">
+				<LisbethTravel Area="Central Thanalan" XYZ="263.259, -19.71835, -135.9717"/>
+			</If>
+			<ExFish Bait="Crow Fly" Condition="not HasAtLeast(7689,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(141, 'Clouds', 'Fog', 'Dust Storms')"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+				<Keepers>
+					<Keeper name="Dark Knight" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="270.3185, -19.71835, -141.46" Heading="3.679023" Sit="True" />
+					<FishSpot XYZ="293.4185, -19.05349, -153.5947" Heading="3.630853" Sit="True" />
+					<FishSpot XYZ="274.0152, -19.71835, -161.9428" Heading="0.4138639" Sit="True" />
+				</FishSpots>
+			</ExFish>
 		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>
-		<If condition="not IsOnSubMap(249)">
-			<LisbethTravel Area="Central Thanalan" XYZ="263.259, -19.71835, -135.9717"/>
-		</If>
-		<ExFish Bait="Crow Fly" Condition="not HasAtLeast(7689,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(141, 'Clouds', 'Fog', 'Dust Storms')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">
-			<Keepers>
-				<Keeper name="Dark Knight" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="269.9651, -19.71835, -139.3294" Heading="2,041964" Sit="True"/>
-			</FishSpots>
-		</ExFish>	
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
+		<LLoadProfile Path="../../Start.xml"/>
 	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

@@ -23,7 +23,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<ExFish Bait="Glowworm" Condition="not HasAtLeast(7933,1) and IsTimeBetween(0,4)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">
+				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Charon's Lantern" />
 			</Keepers>

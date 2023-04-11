@@ -20,12 +20,9 @@
 			<LisbethTravel Area="Eastern La Noscea" XYZ="-253.4813, 35.16173, 289.4978"/>
 		</If>
 		<While Condition="not HasAtLeast(8752,1)">
-			<Dismount/>
-			<If Condition="HasAtLeast(5031,1)">
-				<Desynth ItemIds="5031" DesynthDelay="6000" DesynthTimeout="10"/>
-			</If>
-			<ExFish Bait="Honey Worm" Condition="not HasAtLeast(5031,3)"
-					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+			<!-- 3x Jungle Catfish for Fisher's Intuition -->
+			<ExFish Bait="Honey Worm" Condition="not HasAtLeast(8752,1) and not Core.Player.HasAura(568)"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 					Mooch="3" Patience="Patience" MinimumGPPatience="300" ForceCordial="True">
 				<PatienceTugs>
 					<PatienceTug moochLevel="0" TugType="Light" /> <!-- Silverfish -->
@@ -41,9 +38,9 @@
 					<FishSpot XYZ="-272.5454, 33.78063, 299.9305" Heading="4.463154" Sit="True" />
 				</FishSpots>
 			</ExFish>
-			<RunCode Name="Thaliaks_Favor" />
+			<!-- Now go for Imperial Goldfish -->
 			<ExFish Bait="Honey Worm" Condition="not HasAtLeast(8752,1) and Core.Player.HasAura(568)"
-					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 					Mooch="3" Patience="Patience" MinimumGPPatience="300" ForceCordial="True">
 				<PatienceTugs>
 					<PatienceTug moochLevel="0" TugType="Light" /> <!-- Silverfish -->
@@ -62,6 +59,12 @@
 	</If>
 	<If Condition="HasAtLeast(5031,1)">
 		<Desynth ItemIds="5031" DesynthDelay="6000" DesynthTimeout="10"/>
+	</If>
+	<If Condition="HasAtLeast(4978,1)">
+		<Desynth ItemIds="4978" DesynthDelay="6000" DesynthTimeout="10"/>
+	</If>
+	<If Condition="HasAtLeast(5011,1)">
+		<Desynth ItemIds="5011" DesynthDelay="6000" DesynthTimeout="10"/>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	

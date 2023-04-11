@@ -17,7 +17,7 @@
 			<LisbethTravel ZoneId="153" XYZ="280.711, 0.9844905, 0.04253998"/>
 		</If>
 		<ExFish Bait="Honey Worm"  Condition="not HasAtLeast(7922,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 				Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />

@@ -23,12 +23,12 @@
 		<If Condition="HasAtLeast(12715,1)">
 			<Desynth ItemIds="12715" DesynthDelay="6000" DesynthTimeout="10"/>
 		</If>
-		<While Condition="not IsTimeBetween(0,3)">
+		<While Condition="IsTimeBetween(3,24)">
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While Condition="not HasAtLeast(17592,1) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')">
-			<ExFish Bait="Purse Web Spider" Condition="not HasAtLeast(12715,5) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')"
-					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+			<ExFish Bait="Purse Web Spider" Condition="not HasAtLeast(17592,1) and not Core.Player.HasAura(568) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 					Patience="Patience" IdenticalCast="True" ForceCordial="True" CordialType="HiCordial">
 				<PatienceTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
@@ -43,7 +43,7 @@
 				</FishSpots>
 			</ExFish>
 			<ExFish Bait="Purse Web Spider" Condition="not HasAtLeast(17592,1) and Core.Player.HasAura(568) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')"
-					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 					Patience="Patience" IdenticalCast="True" ForceCordial="True" CordialType="HiCordial">
 				<PatienceTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
@@ -57,10 +57,10 @@
 					<FishSpot XYZ="-48.33238, 89.17406, -557.7254" Heading="1.37154" Sit="True" />
 				</FishSpots>
 			</ExFish>
-			<If Condition="HasAtLeast(12715,1)">
-				<Desynth ItemIds="12715" DesynthDelay="6000" DesynthTimeout="10"/>
-			</If>
 		</While>
+		<If Condition="HasAtLeast(12715,1)">
+			<Desynth ItemIds="12715" DesynthDelay="6000" DesynthTimeout="10"/>
+		</If>
 	</If>
 	<LLoadProfile Path="../../Start.xml"/>
 	

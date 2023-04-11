@@ -1,41 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Discobolus (7928)
-  Authors: budesaal
+	Profile: Discobolus (7928)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Discobolus</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
-	<If condition="not HasAtLeast(7928,1)">
-		<Log Message="Start Fishing: Discobolus..." />
-		<If condition="not HasAtLeast(2603,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2603,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+	<Name>Discobolus</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+		<If condition="not HasAtLeast(7928,1)">
+			<Log Message="Start Fishing: Discobolus..." />
+			<If condition="not HasAtLeast(2603,50)">
+				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2603,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			</If>
+			<If condition="not IsOnSubMap(320)">
+				<LisbethTravel Area="Southern Thanalan" XYZ="200.2428, 6.927657, -30.77603"/>
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<While Condition="not IsTimeBetween(12,18)" >
+				<WaitTimer WaitTime="30" />
+			</While>
+			<ExFish Bait="Glowworm" Condition="not HasAtLeast(7928,1) and IsTimeBetween(12,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves')">
+				<Keepers>
+					<Keeper name="Discobolus" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="191.8968, 6.103661, -28.69215" Heading="4.934813" Sit="True" />
+					<FishSpot XYZ="180.9414, 6.103661, -37.04559" Heading="1.690596" Sit="True" />
+					<FishSpot XYZ="176.6495, 6.103661, -52.73915" Heading="0.2789743" Sit="True" />
+				</FishSpots>
+			</ExFish>
 		</If>
-		<If condition="not IsOnSubMap(320)">
-			<LisbethTravel Area="Southern Thanalan" XYZ="200.2428, 6.927657, -30.77603"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>
-		<While Condition="not IsTimeBetween(12,18)" >
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Glowworm" Condition="not HasAtLeast(7928,1) and IsTimeBetween(12,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves')">
-			<Keepers>
-				<Keeper name="Discobolus" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="187.9831, 6.103661, -30.5566" Heading="4,050488" Sit="True"/>
-			</FishSpots>
-		</ExFish>	
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+		<LLoadProfile Path="../../Start.xml"/>
+
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

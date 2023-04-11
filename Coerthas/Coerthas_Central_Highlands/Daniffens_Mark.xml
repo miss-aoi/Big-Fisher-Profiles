@@ -20,7 +20,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Wildfowl Fly" Condition="not HasAtLeast(7932,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards')"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">
+				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Daniffen's Mark" />
 			</Keepers>

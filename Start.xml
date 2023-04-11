@@ -52,11 +52,11 @@
 <!ENTITY Frilled_Shark "0">                     <!-- TIMED -->  <!-- WEATHER -->  <!-- LUGWORM -->
 <!ENTITY The_Captains_Chalice "0">              <!-- TIMED -->                    <!-- STEEL JIG -->
 <!ENTITY Coelacanthus "0">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- SPOON WORM -->
-<!ENTITY Endoceras "1">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- STEEL JIG -->
+<!ENTITY Endoceras "0">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- STEEL JIG -->
 <!ENTITY Seahag "0">                            <!-- TIMED -->  <!-- WEATHER -->  <!-- LUGWORM -->
 <!-- LA NOSCEA - Upper La Noscea -->
 <!ENTITY Toramafish "0">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- SPINNERBAIT -->
-<!ENTITY Joan_of_Trout "1">                     <!-- TIMED -->                    <!-- CROW FLY -->
+<!ENTITY Joan_of_Trout "0">                     <!-- TIMED -->                    <!-- CROW FLY -->
 <!ENTITY Worm_of_Nym "0">                       <!-- TIMED -->                    <!-- BUTTERWORM -->
 <!ENTITY King_of_the_Spring "0">                <!-- TIMED -->                    <!-- SPINNERBAIT -->
 <!-- LA NOSCEA - Outer La Noscea -->
@@ -97,38 +97,38 @@
 <!ENTITY Shadowstreak "0">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- TOPWATER FROG -->
 <!ENTITY Cornelia "0">                                                            <!-- GLOWWORM -->
 <!-- THE BLACK SHROUD - The Lavender Beds -->
-<!ENTITY Sweetnewt "0">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- MIDGE BASKET -->
-<!-- THENALAN - Western Thanalan -->
+<!ENTITY Sweetnewt "1">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- MIDGE BASKET -->
+<!-- THANALAN - Western Thanalan -->
 <!ENTITY Glimmerscale "0">                                      <!-- WEATHER -->  <!-- BUTTERWORM -->
-<!ENTITY Mud_Golem "0">                         <!-- TIMED -->                    <!-- MIDGE BASKET -->
+<!ENTITY Mud_Golem "1">                         <!-- TIMED -->                    <!-- MIDGE BASKET -->
 <!ENTITY Rivet_Oyster "0">                                                        <!-- HEAVY STEEL JIG -->
 <!ENTITY Fingers "0">                           <!-- TIMED -->                    <!-- NORTHERN KRILL -->
-<!ENTITY Dirty_Herry "0">                       <!-- TIMED -->                    <!-- NORTHERN KRILL -->
-<!ENTITY Pirates_Bane "0">                                                        <!-- LUGWORM / SHRIMP CAGE FEEDER -->
-<!ENTITY Ndendecki "0">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
-<!ENTITY Bat_o_Nine_Tails "0">                                  <!-- WEATHER -->  <!-- HONEY WORM -->
-<!-- THENALAN - Central Thanalan -->
+<!ENTITY Dirty_Herry "1">                       <!-- TIMED -->                    <!-- NORTHERN KRILL -->
+<!ENTITY Pirates_Bane "1">                                                        <!-- FLOATING MINNOW -->
+<!ENTITY Ndendecki "1">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
+<!ENTITY Bat_o_Nine_Tails "1">                                  <!-- WEATHER -->  <!-- HONEY WORM -->
+<!-- THANALAN - Central Thanalan -->
 <!ENTITY Dream_Goby "0">                                                          <!-- CRAYFISH BALL -->
-<!ENTITY Slime_King "0">                        <!-- TIMED -->                    <!-- CRAYFISH BALL -->
-<!ENTITY Old_Softie "0">                        <!-- TIMED -->                    <!-- BLOODWORM -->
+<!ENTITY Slime_King "1">                        <!-- TIMED -->                    <!-- CRAYFISH BALL -->
+<!ENTITY Old_Softie "1">                        <!-- TIMED -->                    <!-- BLOODWORM -->
 <!ENTITY Dark_Knight "0">                                       <!-- WEATHER -->  <!-- CROW FLY -->
-<!-- THENALAN - Eastern Thanalan -->
-<!ENTITY Marrow_Sucker "0">                     <!-- TIMED -->  <!-- WEATHER -->  <!-- SYRPHID BASKET -->
-<!ENTITY Mud_Pilgrim "0">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- BUTTERWORM -->
-<!ENTITY The_Wardens_Wand "0">                  <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
+<!-- THANALAN - Eastern Thanalan -->
+<!ENTITY Marrow_Sucker "1">                     <!-- TIMED -->  <!-- WEATHER -->  <!-- SYRPHID BASKET -->
+<!ENTITY Mud_Pilgrim "1">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- BUTTERWORM -->
+<!ENTITY The_Wardens_Wand "1">                  <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
 <!ENTITY The_Thousand_year_Itch "0">                            <!-- WEATHER -->  <!-- STEM BORER -->
-<!-- THENALAN - Southern Thanalan -->
-<!ENTITY Old_Hollow_Eyes "0">                                   <!-- WEATHER -->  <!-- BUTTERWORM -->
-<!ENTITY Discobolus "0">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- GLOWWORM -->
-<!ENTITY Iron_Noose "0">                                        <!-- WEATHER -->  <!-- SPINNER -->
-<!ENTITY Magic_Carpet "0">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- SAND LEECH -->
-<!ENTITY Helicoprion "0">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- SAND LEECH -->
+<!-- THANALAN - Southern Thanalan -->
+<!ENTITY Old_Hollow_Eyes "1">                                   <!-- WEATHER -->  <!-- BUTTERWORM -->
+<!ENTITY Discobolus "1">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- GLOWWORM -->
+<!ENTITY Iron_Noose "1">                                        <!-- WEATHER -->  <!-- SPINNER -->
+<!ENTITY Magic_Carpet "1">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- SAND LEECH -->
+<!ENTITY Helicoprion "1">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- SAND LEECH -->
 <!ENTITY Olgoi_Khorkhoi "0">                                    <!-- WEATHER -->  <!-- BLOODWORM -->
-<!-- THENALAN - Northern Thanalan -->
-<!ENTITY Hannibal "0">                          <!-- TIMED -->  <!-- WEATHER -->  <!-- SPINNERBAIT -->
-<!ENTITY Wootz_Knifefish_Zenith "0">                                              <!-- HONEY WORM -->
-<!-- THENALAN - The Goblet -->
-<!ENTITY Spearnose "0">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- CADDISFLY LARVA -->
+<!-- THANALAN - Northern Thanalan -->
+<!ENTITY Hannibal "1">                          <!-- TIMED -->  <!-- WEATHER -->  <!-- SPINNERBAIT -->
+<!ENTITY Wootz_Knifefish_Zenith "1">                                              <!-- HONEY WORM -->
+<!-- THANALAN - The Goblet -->
+<!ENTITY Spearnose "1">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- CADDISFLY LARVA -->
 <!-- COERTHAS - Coerthas Central Highlands -->
 <!ENTITY Daniffens_Mark "0">                                    <!-- WEATHER -->  <!-- WILDFOWL FLY -->
 <!ENTITY Charons_Lantern "1">                   <!-- TIMED -->                    <!-- GLOWWORM -->
@@ -137,7 +137,7 @@
 <!ENTITY The_Matriarch "0">                                                       <!-- HONEY WORM -->
 <!ENTITY Darkstar "1">                                          <!-- WEATHER -->  <!-- STONEFLY NYMPH -->
 <!ENTITY Blue_Corpse "1">                                       <!-- WEATHER -->  <!-- CADDISFLY LARVA -->
-<!ENTITY Anomalocaris "1">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- HOVERWORM -->
+<!ENTITY Anomalocaris "0">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- HOVERWORM -->
 <!ENTITY Mahar "0">                                             <!-- WEATHER -->  <!-- HOVERWORM -->
 <!ENTITY Shonisaurus "0">                                       <!-- WEATHER -->  <!-- HOVERWORM -->
 <!-- COERTHAS - Coerthas Western Highlands -->
@@ -156,7 +156,7 @@
 <!ENTITY Blood_Red_Bonytongue "1">              <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
 <!ENTITY Void_Bass "1">                                         <!-- WEATHER -->  <!-- GLOWWORM -->
 <!ENTITY Ninja_Betta "1">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- MIDGE BASKET -->
-<!ENTITY Canavan "0">                           <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
+<!ENTITY Canavan "1">                           <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
 <!ENTITY Kuno_the_Killer "1">                   <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
 <!-- ABALATHIA’S SPINE - The Sea of Clouds -->
 <!-- ABALATHIA’S SPINE - Azys Lla -->
@@ -547,7 +547,7 @@
         </If>
 
 
-        <!-- THENALAN - WESTERN THANALAN -->
+        <!-- THANALAN - WESTERN THANALAN -->
         <!-- Glimmerscale -->
         <If Condition="&Glimmerscale; == 1 and not HasAtLeast(7714,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Clear Skies', 'Fair Skies')">
             <LLoadProfile Path="Thanalan/Western_Thanalan/Glimmerscale.xml"/>
@@ -582,7 +582,7 @@
         </If>
 
 
-        <!-- THENALAN - CENTRAL THANALAN -->
+        <!-- THANALAN - CENTRAL THANALAN -->
         <!-- Dream Goby -->
         <If Condition="&Dream_Goby; == 1 and not HasAtLeast(7692,1) and IsTimeBetween(17,24)">
             <LLoadProfile Path="Thanalan/Central_Thanalan/Dream_Goby.xml"/>
@@ -601,7 +601,7 @@
         </If>
 
 
-        <!-- THENALAN - EASTERN THANALAN -->
+        <!-- THANALAN - EASTERN THANALAN -->
         <!-- Marrow Sucker -->
         <If Condition="&Marrow_Sucker; == 1 and not HasAtLeast(7704,1) and (IsTimeBetween(20,24) or IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Rain', 'Showers')">
             <LLoadProfile Path="Thanalan/Eastern_Thanalan/Marrow_Sucker.xml"/>
@@ -620,7 +620,7 @@
         </If>
 
 
-        <!-- THENALAN - SOUTHERN THANALAN -->
+        <!-- THANALAN - SOUTHERN THANALAN -->
         <!-- Old Hollow Eyes -->
         <If Condition="&Old_Hollow_Eyes; == 1 and not HasAtLeast(7911,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Fog')">
             <LLoadProfile Path="Thanalan/Southern_Thanalan/Old_Hollow_Eyes.xml"/>
@@ -647,7 +647,7 @@
         </If>
 
 
-        <!-- THENALAN - NORTHERN THANALAN -->
+        <!-- THANALAN - NORTHERN THANALAN -->
         <!-- Hannibal -->
         <If Condition="&Hannibal; == 1 and not HasAtLeast(7943,1) and (IsTimeBetween(22,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog')">
             <LLoadProfile Path="Thanalan/Northern_Thanalan/Hannibal.xml"/>
@@ -658,7 +658,7 @@
         </If>
 
 
-        <!-- THENALAN - THE GOBLET -->
+        <!-- THANALAN - THE GOBLET -->
         <!-- Spearnose -->
         <If Condition="&Spearnose; == 1 and not HasAtLeast(7919,1) and IsTimeBetween(21,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(341, 'Clouds', 'Fog')">
             <LLoadProfile Path="Thanalan/The_Goblet/Spearnose.xml"/>
@@ -826,7 +826,7 @@
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2605,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
         <!-- LUGWORM -->
-        <If Condition="(&Little_Perykos; == 1 or &Junkmonger; == 1 or &Frilled_Shark; == 1 or &Seahag; == 1 or &Pirates_Bane; == 1) and not HasAtLeast(2585,50)">
+        <If Condition="(&Little_Perykos; == 1 or &Junkmonger; == 1 or &Frilled_Shark; == 1 or &Seahag; == 1) and not HasAtLeast(2585,50)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2585,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
         <!-- MIDGE BASKET -->
@@ -889,82 +889,89 @@
         </If>
         <!-- CROW FLY -->
         <If Condition="(&Joan_of_Trout; == 1 or &Carp_Diem; == 1 or &Dark_Knight; == 1) and not HasAtLeast(2614,3)">
-            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2614,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2614,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
         <!-- FLOATING MINNOW -->
-        <If Condition="(&Gigantshark; == 1 or &Blue_Widow; == 1) and not HasAtLeast(2611,3)">
-            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2611,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
+        <If Condition="(&Gigantshark; == 1 or &Blue_Widow; == 1 or &Pirates_Bane; == 1) and not HasAtLeast(2611,3)">
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2611,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
         <!-- HEAVY STEEL JIG -->
         <If Condition="(&The_Lone_Ripper; == 1 or &Rivet_Oyster; == 1) and not HasAtLeast(2619,3)">
-            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2619,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2619,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
+        </If>
+        <!-- RAINBOW SPOON LURE -->
+        <If Condition="(&Cornelia; == 1) and not HasAtLeast(2625,3)">
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2625,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
         <!-- SINKING MINNOW -->
         <If Condition="(&High_Perch; == 1 or &The_Sinker; == 1) and not HasAtLeast(2617,3)">
-            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2617,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2617,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
         <!-- SNURBLE FLY -->
         <If Condition="&The_Drowned_Sniper; == 1 and not HasAtLeast(2618,3)">
-            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2618,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2618,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
         <!-- SPINNER -->
         <If Condition="&Iron_Noose; == 1 and not HasAtLeast(2620,3)">
-            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2620,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2620,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
         <!-- SPINNERBAIT -->
         <If Condition="(&Faerie_Queen; == 1 or &Toramafish; == 1 or &King_of_the_Spring; == 1 or &Magicked_Mushroom; == 1 or &Hannibal; == 1) and not HasAtLeast(2626,3)">
-            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2626,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2626,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
         <!-- STEEL JIG -->
         <If Condition="(&The_Captains_Chalice; == 1 or &Endoceras; == 1) and not HasAtLeast(2616,3)">
-            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2616,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2616,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
         <!-- TOPWATER FROG -->
         <If Condition="(&Namitaro; == 1 or &Shadowstreak; == 1) and not HasAtLeast(2624,3)">
-            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2624,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2624,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
         <!-- WILDFOWL FLY -->
         <If Condition="(&Judgeray; == 1 or &Daniffens_Mark; == 1 or &Dawn_Maiden; == 1) and not HasAtLeast(2623,3)">
-            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2623,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2623,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
         <!-- YUMIZUNO -->
         <If Condition="(&Silver_Sovereign; == 1 or &Navigators_Brand; == 1) and not HasAtLeast(2628,3)">
-            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2628,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2628,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
 
         <Log Message="Nothing to fish. Waiting for next fishing window..." />
-        <If Condition="not IsOnSubMap(739) and IsTimeBetween(0,4)">
-            <LisbethTravel Area="Limsa Lominsa Lower Decks" XYZ="-96.17102, 18.5624, 9.125985" />
+        <If Condition="not IsOnMap(129) and IsTimeBetween(0,2)">
+            <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-86.37854, 18.60032, -10.73389" />
         </If>
-        <If Condition="not IsOnSubMap(739) and IsTimeBetween(4,6)">
-            <LisbethTravel Area="Limsa Lominsa Lower Decks" XYZ="-82.34045, 18.60033, 10.16381" />
+        <If Condition="not IsOnMap(129) and IsTimeBetween(2,4)">
+            <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-96.17102, 18.5624, 9.125985" />
         </If>
-        <If Condition="not IsOnSubMap(739) and IsTimeBetween(6,8)">
-            <LisbethTravel Area="Limsa Lominsa Lower Decks" XYZ="-83.50173, 18.80033, -6.082156" />
+        <If Condition="not IsOnMap(129) and IsTimeBetween(4,6)">
+            <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-82.34045, 18.60033, 10.16381" />
         </If>
-        <If Condition="not IsOnSubMap(739) and IsTimeBetween(8,10)">
-            <LisbethTravel Area="Limsa Lominsa Lower Decks" XYZ="-96.32515, 18.00033, -17.43454" />
+        <If Condition="not IsOnMap(129) and IsTimeBetween(6,8)">
+            <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-83.50173, 18.80033, -6.082156" />
         </If>
-        <If Condition="not IsOnSubMap(739) and IsTimeBetween(10,12)">
-            <LisbethTravel Area="Limsa Lominsa Lower Decks" XYZ="-87.26067, 18.80032, -5.982514" />
+        <If Condition="not IsOnMap(129) and IsTimeBetween(8,10)">
+            <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-96.32515, 18.00033, -17.43454" />
         </If>
-        <If Condition="not IsOnSubMap(739) and IsTimeBetween(12,14)">
-            <LisbethTravel Area="Limsa Lominsa Lower Decks" XYZ="-63.91333, 18.00033, 6.933312" />
+        <If Condition="not IsOnMap(129) and IsTimeBetween(10,12)">
+            <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-87.26067, 18.80032, -5.982514" />
         </If>
-        <If Condition="not IsOnSubMap(739) and IsTimeBetween(14,16)">
-            <LisbethTravel Area="Limsa Lominsa Lower Decks" XYZ="-90.6589, 18.00033, 15.89221" />
+        <If Condition="not IsOnMap(129) and IsTimeBetween(12,14)">
+            <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-63.91333, 18.00033, 6.933312" />
         </If>
-        <If Condition="not IsOnSubMap(739) and IsTimeBetween(16,18)">
-            <LisbethTravel Area="Limsa Lominsa Lower Decks" XYZ="-91.82682, 18.80033, -1.728218" />
+        <If Condition="not IsOnMap(129) and IsTimeBetween(14,16)">
+            <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-90.6589, 18.00033, 15.89221" />
         </If>
-        <If Condition="not IsOnSubMap(739) and IsTimeBetween(18,20)">
-            <LisbethTravel Area="Limsa Lominsa Lower Decks" XYZ="-73.89733, 18.60033, -7.523132" />
+        <If Condition="not IsOnMap(129) and IsTimeBetween(16,18)">
+            <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-91.82682, 18.80033, -1.728218" />
         </If>
-        <If Condition="not IsOnSubMap(739) and IsTimeBetween(20,22)">
-            <LisbethTravel Area="Limsa Lominsa Lower Decks" XYZ="-89.97563, 18.60033, -12.3395" />
+        <If Condition="not IsOnMap(129) and IsTimeBetween(18,20)">
+            <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-73.89733, 18.60033, -7.523132" />
         </If>
-        <If Condition="not IsOnSubMap(739) and IsTimeBetween(22,24)">
-            <LisbethTravel Area="Limsa Lominsa Lower Decks" XYZ="-76.589, 18.60033, 12.61149" />
+        <If Condition="not IsOnMap(129) and IsTimeBetween(20,22)">
+            <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-89.97563, 18.60033, -12.3395" />
+        </If>
+        <If Condition="not IsOnMap(129) and IsTimeBetween(22,24)">
+            <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-76.589, 18.60033, 12.61149" />
         </If>
 
         <WaitTimer WaitTime="30" />

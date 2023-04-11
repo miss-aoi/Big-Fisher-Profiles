@@ -1,67 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Pirates Bane (8764)
-  Authors: budesaal
+	Profile: Pirates Bane (8764)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Pirates Bane</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
-	<If condition="not HasAtLeast(8764,1)">
-		<Log Message="Start Fishing: Pirates_Bane..." />
-		<If condition="not HasAtLeast(2585,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2585,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+	<Name>Pirates Bane</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+		<If condition="not HasAtLeast(8764,1)">
+			<Log Message="Start Fishing: Pirates_Bane..." />
+			<If condition="not HasAtLeast(2611,50)">
+				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2611,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
+			</If>
+			<If condition="not IsOnSubMap(277)">
+				<LisbethTravel Area="Western Thanalan" XYZ="-532.5146, 55.5936, -736.8478" />
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<Dismount/>
+			<If Condition="HasAtLeast(4904,1)">
+				<Desynth ItemIds="4904" DesynthDelay="6000" DesynthTimeout="10"/>
+			</If>
+			<While Condition="not HasAtLeast(8764,1)">
+				<!-- 6x Wahoo for Fisher's Intuition -->
+				<ExFish Bait="Floating Minnow" Condition="not HasAtLeast(8764,1) and not Core.Player.HasAura(568)"
+						MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+						Mooch="2" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial">
+					<PatienceTugs>
+						<PatienceTug moochLevel="0" TugType="Light" />
+						<PatienceTug moochLevel="1" TugType="Medium" />
+					</PatienceTugs>
+					<Keepers>
+						<Keeper name="Wahoo" />
+					</Keepers>
+					<FishSpots>
+						<FishSpot XYZ="-541.2679, 55.26532, -731.5655" Heading="5.708457" Sit="True" />
+						<FishSpot XYZ="-535.9346, 55.54464, -729.137" Heading="5.629245" Sit="True" />
+						<FishSpot XYZ="-544.7125, 55.05087, -735.2115" Heading="5.597829" Sit="True" />
+					</FishSpots>
+				</ExFish>
+				<!-- Now go for Pirate's Bane -->
+				<ExFish Bait="Floating Minnow" Condition="not HasAtLeast(8764,1) and Core.Player.HasAura(568)"
+						MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+						Mooch="2" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial">
+					<PatienceTugs>
+						<PatienceTug moochLevel="0" TugType="Light" />
+						<PatienceTug moochLevel="1" TugType="Medium" />
+						<PatienceTug moochLevel="1" TugType="Heavy" />
+						<PatienceTug moochLevel="2" TugType="Heavy" />
+					</PatienceTugs>
+					<Keepers>
+						<Keeper name="Pirate's Bane" />
+					</Keepers>
+					<FishSpots>
+						<FishSpot XYZ="-541.2679, 55.26532, -731.5655" Heading="5.708457" Sit="True" />
+						<FishSpot XYZ="-535.9346, 55.54464, -729.137" Heading="5.629245" Sit="True" />
+						<FishSpot XYZ="-544.7125, 55.05087, -735.2115" Heading="5.597829" Sit="True" />
+					</FishSpots>
+				</ExFish>
+			</While>
+			<If Condition="HasAtLeast(4869,1)">
+				<Desynth ItemIds="4869" DesynthDelay="6000" DesynthTimeout="10"/>
+			</If>
+			<If Condition="HasAtLeast(4904,1)">
+				<Desynth ItemIds="4904" DesynthDelay="6000" DesynthTimeout="10"/>
+			</If>
 		</If>
-		<If condition="not IsOnSubMap(277)">
-			<LisbethTravel Area="Western Thanalan" XYZ="-574.1956, 53.30872, -748.9795"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>
-		<Dismount/>
-		<If Condition="HasAtLeast(4904,1)">
-			<Desynth ItemIds="4904" DesynthDelay="6000" DesynthTimeout="10"/>
-		</If>
-		<ExFish Bait="Lugworm"  Condition="not HasAtLeast(8764,1) and not Core.Player.HasAura(568)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-				Mooch="2" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial">
-			<PatienceTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-			</PatienceTugs>
-			<Keepers>
-				<Keeper name="Wahoo" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="-573.9686, 53.33493, -734.5476" Heading="14,887065" Sit="True"/>
-			</FishSpots>
-		</ExFish>
-		<ExFish Bait="Lugworm" CordialType="HiCordial" Condition="not HasAtLeast(8764,1) and Core.Player.HasAura(568)"
-				MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-				Mooch="3" Patience="Patience2" MinimumGPPatience="600" ForceCordial="True">
-			<PatienceTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-				<PatienceTug moochLevel="1" TugType="Heavy" />
-				<PatienceTug moochLevel="2" TugType="Heavy" />
-			</PatienceTugs>
-			<Keepers>
-				<Keeper name="Pirate's Bane" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="-573.9686, 53.33493, -734.5476" Heading="14,887065" Sit="True"/>
-			</FishSpots>
-		</ExFish>
-		<If Condition="HasAtLeast(4904,1)">
-			<Desynth ItemIds="4904" DesynthDelay="6000" DesynthTimeout="10"/>
-		</If>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+		<LLoadProfile Path="../../Start.xml"/>
+
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>
