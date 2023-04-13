@@ -32,25 +32,25 @@ This profile set is still a work in progress, so use at your own risk and I'm no
 - [x] Mist
 
 ### The Black Shroud
-- [ ] New Gridania
-- [ ] Old Gridania
-- [ ] Central Shroud
-- [ ] East Shroud
-- [ ] South Shroud
-- [ ] North Shroud
-- [ ] The Lavender Beds
+- [x] New Gridania
+- [x] Old Gridania
+- [x] Central Shroud
+- [x] East Shroud
+- [x] South Shroud
+- [x] North Shroud
+- [x] The Lavender Beds
 
 ### Thanalan
-- [ ] Western Thanalan
-- [ ] Central Thanalan
-- [ ] Eastern Thanalan
-- [ ] Southern Thanalan
-- [ ] Northern Thanalan
-- [ ] The Goblet
+- [x] Western Thanalan
+- [x] Central Thanalan
+- [x] Eastern Thanalan
+- [x] Southern Thanalan
+- [x] Northern Thanalan
+- [x] The Goblet
 
 ### Coerthas
 - [x] Coerthas Central Highlands
-- [ ] Coerthas Western Highlands
+- [x] Coerthas Western Highlands
 
 ### Mor Dhona
 - [x] Mor Dhona
@@ -115,9 +115,9 @@ This profile set is still a work in progress, so use at your own risk and I'm no
 - [ ] The Bloodbrine Sea
 - [ ] The Rothlyt Sound
 
+# TODO:
+- More testing
+- Other Zones
+
 ## Looking to Donate? ♡
 I love Lattes: [BuyMeCoffee](https://buymeacoffee.com/miss_aoi)
-
-
-# TODO:
-- Update ExFish Conditions to include bait count
