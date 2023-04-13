@@ -12,9 +12,9 @@ This profile set is designed to catch all Big Fish until level 90.
 
 Open "Start.xml" and change the 0 to 1 for each Big fish you want.
 
-Some of the fishin locations in game are very, very specific and ExFish doesn't always seem to get in the same position. Because of this, it is advised to keep an eye on the character to see if they need to be moved a little in order to hit the appropriate fishing spot.
+Some of the fish in locations in game are very, very specific and ExFish doesn't always seem to go to exactly the same position. Because of this, it is advised to keep an eye on the character to see if they need to be moved a little in order to hit the appropriate fishing spot.
 
-All fish with timed window have the time check shifted to one hour earlier on the Start.xml profile. This is so you can get bait (if needed) and get to the spot so that time is spent fishing for those with short windows rather than getting there. The actual timed windows are used in the individual fish profiles.
+All fish with timed window have the time check shifted to one hour earlier on the Start.xml profile. This is so you can get bait (if needed) and get to the spot so that time is spent fishing for those with short windows rather than getting there. So if you get to a fishing spot and sit for a few minutes, double check if it's a timed window first.
 
 ## Disclaimer
 
