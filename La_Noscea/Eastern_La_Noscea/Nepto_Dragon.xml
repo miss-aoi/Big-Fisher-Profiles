@@ -27,7 +27,7 @@
 			<!-- 6x Wahoo for Fisher's Intuition -->
 			<ExFish Bait="Northern Krill" Condition="not Core.Player.HasAura(568)"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="1" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
+					Mooch="1" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="HiCordial">
 				<PatienceTugs>
 					<PatienceTug moochLevel="0" TugType="Medium" />
 				</PatienceTugs>
@@ -43,7 +43,7 @@
 			<!-- Now go for Nepto Dragon -->
 			<ExFish Bait="Northern Krill" Condition="Core.Player.HasAura(568)"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69"
-					Chum="True" Mooch="1" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
+					Chum="True" Mooch="1" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="HiCordial">
 				<PatienceTugs>
 					<PatienceTug moochLevel="0" TugType="Heavy" />
 				</PatienceTugs>

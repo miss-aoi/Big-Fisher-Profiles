@@ -26,7 +26,7 @@
 			</While>
 			<ExFish Bait="Spoon Worm" Condition="HasAtLeast(2596,1) and not HasAtLeast(7917,1) and IsTimeBetween(4,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(339, 'Clear Skies', 'Fair Skies')"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="2" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True">
+					Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True">
 				<PatienceTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />

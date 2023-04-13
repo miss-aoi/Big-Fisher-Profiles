@@ -26,7 +26,7 @@
 			</While>
 			<ExFish Bait="Midge Basket" Condition="HasAtLeast(2592,1) and not HasAtLeast(7923,1) and (IsTimeBetween(23,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(340, 'Fog')"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="2" Patience="Patience" MinimumGPPatience="300" ForceCordial="True" >
+					Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" >
 				<PatienceTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />

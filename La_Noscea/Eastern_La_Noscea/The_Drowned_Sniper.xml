@@ -21,7 +21,7 @@
 		</If>
 		<ExFish Bait="Snurble Fly" Condition="HasAtLeast(2618,1) and not HasAtLeast(7938,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')"
 				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-				Mooch="1" Patience="Patience">
+				Mooch="1" Patience="Patience2">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />
 			</PatienceTugs>

@@ -24,7 +24,7 @@
 			</While>
 			<ExFish Bait="Midge Basket" Condition="HasAtLeast(2592,1) and not HasAtLeast(7683,1) and (IsTimeBetween(18,24) or IsTimeBetween(0,2))"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
+					Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="HiCordial">
 				<PatienceTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />

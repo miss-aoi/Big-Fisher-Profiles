@@ -9,7 +9,7 @@
 -->
 <!DOCTYPE Profile [
 <!-- Profile Settings -->
-<!ENTITY Hi_Cordial "0">                        <!-- Set to 1 to farm -->
+<!ENTITY HQ_Cordial "0">                        <!-- Set to 1 to farm -->
 <!-- LA NOSCEA - Upper Decks -->
 <!ENTITY Goldenfin "0">                         <!-- TIMED -->                    <!-- PILL BUG -->
 <!-- LA NOSCEA - Lower Decks -->
@@ -205,9 +205,9 @@
         <If condition="LisbethPresent">
             <Log Message="Lisbeth found. Starting profile..." />
         </If>
-        <!-- Mecicine Checking Hi-Cordial -->
-        <If condition="&Hi_Cordial; == 1 and not HasAtLeast(12669,25)">
-            <Lisbeth Json="[{'Group':1,'Item':12669,'Amount':25,'Enabled':true,'Type':'Exchange'}]"/>
+        <!-- Mecicine Checking HQ Cordial -->
+        <If condition="&HQ_Cordial; == 1 and not HasAtLeast(6141,25)">
+            <Lisbeth Json="[{'Group':1,'Item':6141,'Amount':25,'Enabled':true,'Type':'Alchemist'}]"/>
         </If>
         <!-- Fisher Checking -->
         <If Condition="not ClassName == ClassJobType.Fisher">
