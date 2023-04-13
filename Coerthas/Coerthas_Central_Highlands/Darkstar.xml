@@ -38,7 +38,7 @@
 			<!-- Now go for Darkstar -->
 			<ExFish Bait="Stonefly Nymph" Condition="not HasAtLeast(8769,1)"
 					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="1" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="HiCordial">
+					Mooch="1" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
 				<PatienceTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />

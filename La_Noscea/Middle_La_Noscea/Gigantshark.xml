@@ -21,7 +21,7 @@
 		</If>
 		<ExFish Bait="Floating Minnow" Condition="HasAtLeast(2611,1) and not HasAtLeast(7686,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(134, 'Clear Skies', 'Fair Skies')"
 				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-				Mooch="1" Patience="Patience2">
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />
 			</PatienceTugs>

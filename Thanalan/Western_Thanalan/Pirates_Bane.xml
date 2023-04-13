@@ -27,7 +27,7 @@
 				<!-- 6x Wahoo for Fisher's Intuition -->
 				<ExFish Bait="Floating Minnow" Condition="not Core.Player.HasAura(568)"
 						MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-						Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="HiCordial">
+						Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
 					<PatienceTugs>
 						<PatienceTug moochLevel="0" TugType="Light" />
 						<PatienceTug moochLevel="1" TugType="Medium" />
@@ -44,7 +44,7 @@
 				<!-- Now go for Pirate's Bane -->
 				<ExFish Bait="Floating Minnow" Condition="Core.Player.HasAura(568)"
 						MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-						Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="HiCordial">
+						Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
 					<PatienceTugs>
 						<PatienceTug moochLevel="0" TugType="Light" />
 						<PatienceTug moochLevel="1" TugType="Medium" />

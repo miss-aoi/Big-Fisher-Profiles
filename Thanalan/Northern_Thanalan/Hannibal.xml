@@ -24,7 +24,7 @@
 			</While>
 			<ExFish Bait="Spinnerbait" Condition="HasAtLeast(2626,1) and not HasAtLeast(7943,1) and (IsTimeBetween(22,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog')"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="HiCordial">
+					Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
 				<PatienceTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />

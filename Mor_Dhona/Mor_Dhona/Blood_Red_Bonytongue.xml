@@ -24,7 +24,7 @@
 		</While>
 		<ExFish Bait="Honey Worm" Condition="HasAtLeast(2599,1) and not HasAtLeast(8776,1) and IsTimeBetween(4,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(156, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
 				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="HiCordial">
+				Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
 			<SurfaceSlaps>
 				<SurfaceSlap name="Giant Bass" />
 			</SurfaceSlaps>

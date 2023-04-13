@@ -21,7 +21,7 @@
 		</If>
 		<ExFish Bait="Caddisfly Larva" Condition="HasAtLeast(2607,1) and not HasAtLeast(16756,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(397, TimeSpan.FromHours(-8), 'Snow', 'Blizzards')"
 				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="HiCordial">
+				Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Heavy" />

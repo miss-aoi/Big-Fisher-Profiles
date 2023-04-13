@@ -26,7 +26,7 @@
 				<!-- 1x Giant Takitaro for Fisher's Intuition -->
 				<ExFish Bait="Glowworm" Condition="not Core.Player.HasAura(568)"
 						MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-						Mooch="0" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="HiCordial">
+						Mooch="0" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
 					<PatienceTugs>
 						<PatienceTug moochLevel="0" TugType="Heavy" />
 					</PatienceTugs>
@@ -42,7 +42,7 @@
 				<!-- Now go for Namitaro -->
 				<ExFish Bait="Topwater Frog" Condition="Core.Player.HasAura(568)"
 						MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-						Mooch="0" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="HiCordial">
+						Mooch="0" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
 					<PatienceTugs>
 						<PatienceTug moochLevel="0" TugType="Heavy" />
 					</PatienceTugs>
