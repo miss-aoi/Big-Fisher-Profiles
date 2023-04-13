@@ -19,7 +19,7 @@
 		<If condition="not IsOnSubMap(164)">
 			<LisbethTravel Area="Lower La Noscea" XYZ="151.2162, 34.94606, 66.3858"/>
 		</If>
-		<ExFish Bait="Moth Pupa" Condition="not HasAtLeast(7681,1)"
+		<ExFish Bait="Moth Pupa" Condition="HasAtLeast(2586,1) and not HasAtLeast(7681,1)"
 				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Caterwauler" />

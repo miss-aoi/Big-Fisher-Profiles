@@ -19,7 +19,7 @@
 		<If condition="not IsOnSubMap(945)">
 			<LisbethTravel Area="Western La Noscea" XYZ="-228.1734, -41.15087, 27.03734"/>
 		</If>
-		<ExFish Bait="Heavy Steel Jig" Condition="not HasAtLeast(7926,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Gales')"
+		<ExFish Bait="Heavy Steel Jig" Condition="HasAtLeast(2619,1) and not HasAtLeast(7926,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Gales')"
 				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="The Lone Ripper" />

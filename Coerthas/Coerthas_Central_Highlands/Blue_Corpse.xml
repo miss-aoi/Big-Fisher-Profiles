@@ -19,7 +19,7 @@
 			<If Condition="not ClassName == ClassJobType.Fisher">
 				<ChangeClass Job="Fisher" />
 			</If>
-			<ExFish Bait="Caddisfly Larva" Condition="not HasAtLeast(8770,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(-8), 'Snow', 'Blizzards')"
+			<ExFish Bait="Caddisfly Larva" Condition="HasAtLeast(2607,1) and not HasAtLeast(8770,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(-8), 'Snow', 'Blizzards')"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 				<Keepers>
 					<Keeper name="Blue Corpse" />

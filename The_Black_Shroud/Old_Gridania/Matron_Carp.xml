@@ -1,42 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Matron Carp (7708)
-  Authors: budesaal
+	Profile: Matron Carp (7708)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Matron Carp</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
-	<If condition="not HasAtLeast(7708,1)">
-		<Log Message="Start Fishing: Matron Carp..." />
-		<If condition="not HasAtLeast(2590,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2590,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+	<Name>Matron Carp</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+		<If condition="not HasAtLeast(7708,1)">
+			<Log Message="Start Fishing: Matron Carp..." />
+			<If condition="not HasAtLeast(2590,50)">
+				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2590,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			</If>
+			<If condition="not IsOnSubMap(0)">
+				<LisbethTravel Area="Gridania (Old Gridania)" XYZ="180.0303, -2.267064, -243.6821"/>
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<While Condition="IsTimeBetween(14,15)" >
+				<WaitTimer WaitTime="30" />
+			</While>
+			<ExFish Bait="Bloodworm" Condition="HasAtLeast(2590,1) and not HasAtLeast(7708,1) and IsTimeBetween(15,21)"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+				<Keepers>
+					<Keeper name="Matron Carp" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="221.3165, -2.582566, -243.9003" Heading="1.537036" Sit="True" />
+					<FishSpot XYZ="209.9247, -2.58255, -226.1134" Heading="4.714236" Sit="True" />
+					<FishSpot XYZ="210.48, -2.58255, -246.0894" Heading="2.668012" Sit="True" />
+				</FishSpots>
+			</ExFish>
 		</If>
-		<If condition="not IsOnSubMap(0)">
-			<LisbethTravel ZoneId="133" XYZ="180.0303, -2.267064, -243.6821"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>
-		<While Condition="not IsTimeBetween(15,21)" >
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Bloodworm" Condition="not HasAtLeast(7708,1) and IsTimeBetween(15,21)"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-			<Keepers>
-				<Keeper name="Matron Carp" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="221.341, -2.582566, -243.8897" Heading="1,679039" Sit="True"/>
-			</FishSpots>
-		</ExFish>	
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+		<LLoadProfile Path="../../Start.xml"/>
+
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Profile: Magicked Mushroom (8773)
-	Authors: budesaal
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
 	<Name>Magicked Mushroom</Name>
@@ -19,7 +19,7 @@
 			<If Condition="not ClassName == ClassJobType.Fisher">
 				<ChangeClass Job="Fisher" />
 			</If>
-			<ExFish Bait="Spinnerbait" Condition="not HasAtLeast(8773,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(152, 'Clouds', 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(152, TimeSpan.FromHours(-8), 'Rain', 'Thunder')"
+			<ExFish Bait="Spinnerbait" Condition="HasAtLeast(2626,1) and not HasAtLeast(8773,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(152, 'Clouds', 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(152, TimeSpan.FromHours(-8), 'Rain', 'Thunder')"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 					Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 				<PatienceTugs>

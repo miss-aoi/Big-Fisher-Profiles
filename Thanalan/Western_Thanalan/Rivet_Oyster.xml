@@ -19,7 +19,7 @@
 			<If Condition="not ClassName == ClassJobType.Fisher">
 				<ChangeClass Job="Fisher" />
 			</If>
-			<ExFish Bait="Heavy Steel Jig" Condition="HasAtLeast(2619,1) and not HasAtLeast(7711,1)"
+			<ExFish Bait="Heavy Steel Jig" Condition="HasAtLeast(2619,1) and HasAtLeast(2619,1) and not HasAtLeast(7711,1)"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 				<Keepers>
 					<Keeper name="Rivet Oyster" />

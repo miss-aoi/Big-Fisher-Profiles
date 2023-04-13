@@ -19,10 +19,10 @@
 		<If Condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While Condition="not IsTimeBetween(10,16)">
+		<While Condition="IsTimeBetween(9,10)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Purse Web Spider" Condition="not HasAtLeast(16746,1) and IsTimeBetween(10,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')"
+		<ExFish Bait="Purse Web Spider" Condition="HasAtLeast(12705,1) and not HasAtLeast(16746,1) and IsTimeBetween(10,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')"
 				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 				Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>

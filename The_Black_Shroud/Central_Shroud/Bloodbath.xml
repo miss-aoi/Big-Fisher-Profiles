@@ -19,7 +19,7 @@
 			<If Condition="not ClassName == ClassJobType.Fisher">
 				<ChangeClass Job="Fisher" />
 			</If>
-			<ExFish Bait="Honey Worm" Condition="not HasAtLeast(7935,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(148, 'Thunder')"
+			<ExFish Bait="Honey Worm" Condition="HasAtLeast(2599,1) and not HasAtLeast(7935,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(148, 'Thunder')"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 					Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 				<PatienceTugs>

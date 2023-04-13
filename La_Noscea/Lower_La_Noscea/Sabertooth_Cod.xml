@@ -19,10 +19,10 @@
 		<If condition="not IsOnSubMap(339)">
 			<LisbethTravel Area="Lower La Noscea" XYZ="-97.83857, 4.310742, 853.5196"/>
 		</If>
-		<While Condition="not IsTimeBetween(16,22)">
+		<While Condition="IsTimeBetween(15,16)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Goby Ball" Condition="not HasAtLeast(7691,1) and IsTimeBetween(16,22)"
+		<ExFish Bait="Goby Ball" Condition="HasAtLeast(2589,1) and not HasAtLeast(7691,1) and IsTimeBetween(16,22)"
 				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Sabertooth Cod" />

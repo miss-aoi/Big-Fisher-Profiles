@@ -19,7 +19,7 @@
 		<If condition="not IsOnSubMap(216)">
 			<LisbethTravel Area="Eastern La Noscea" XYZ="770.4676, 8.9, 221.7439"/>
 		</If>
-		<ExFish Bait="Lugworm" Condition="not HasAtLeast(20143,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')"
+		<ExFish Bait="Lugworm" Condition="HasAtLeast(2585,1) and not HasAtLeast(20143,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')"
 				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 				Mooch="3" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>

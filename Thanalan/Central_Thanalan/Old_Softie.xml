@@ -19,10 +19,10 @@
 		<If Condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While Condition="not IsTimeBetween(17,21)" >
+		<While Condition="IsTimeBetween(16,17)" >
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Bloodworm" Condition="not HasAtLeast(7703,1) and IsTimeBetween(17,21)"
+		<ExFish Bait="Bloodworm" Condition="HasAtLeast(2590,1) and not HasAtLeast(7703,1) and IsTimeBetween(17,21)"
 				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Old Softie" />

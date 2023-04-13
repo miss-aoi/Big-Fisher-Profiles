@@ -22,7 +22,7 @@
 		<While Condition="IsTimeBetween(2,19)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Lugworm" Condition="not HasAtLeast(8757,1) and (not IsTimeBetween(19,24) or not IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
+		<ExFish Bait="Lugworm" Condition="HasAtLeast(2585,1) and not HasAtLeast(8757,1) and (IsTimeBetween(19,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
 				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 				Mooch="3" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>

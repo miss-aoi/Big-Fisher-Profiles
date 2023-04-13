@@ -19,7 +19,7 @@
 		<If condition="not IsOnSubMap(190)">
 			<LisbethTravel Area="Middle La Noscea" XYZ="-297.3651, 7.54, -224.8838"/>
 		</If>
-		<ExFish Bait="Floating Minnow" Condition="not HasAtLeast(7686,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(134, 'Clear Skies', 'Fair Skies')"
+		<ExFish Bait="Floating Minnow" Condition="HasAtLeast(2611,1) and not HasAtLeast(7686,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(134, 'Clear Skies', 'Fair Skies')"
 				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 				Mooch="1" Patience="Patience">
 			<PatienceTugs>

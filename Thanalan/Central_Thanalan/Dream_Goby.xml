@@ -22,7 +22,7 @@
 			<While Condition="IsTimeBetween(16,17)" >
 				<WaitTimer WaitTime="30" />
 			</While>
-			<ExFish Bait="Crayfish Ball" Condition="not HasAtLeast(7692,1) and (IsTimeBetween(17,24) or IsTimeBetween(0,3))"
+			<ExFish Bait="Crayfish Ball" Condition="HasAtLeast(2588,1) and not HasAtLeast(7692,1) and (IsTimeBetween(17,24) or IsTimeBetween(0,3))"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 				<Keepers>
 					<Keeper name="Dream Goby" />

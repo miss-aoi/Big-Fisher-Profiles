@@ -1,42 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: The Sinker (7921)
-  Authors: budesaal
+	Profile: The Sinker (7921)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>The Sinker</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
-	<If condition="not HasAtLeast(7921,1)">
-		<Log Message="Start Fishing: The Sinker..." />
-		<If condition="not HasAtLeast(2617,3)">
-			<Lisbeth Json="[{'Item': 2617,'Group': 0,'Amount':3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
+	<Name>The Sinker</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+		<If condition="not HasAtLeast(7921,1)">
+			<Log Message="Start Fishing: The Sinker..." />
+			<If condition="not HasAtLeast(2617,3)">
+				<Lisbeth Json="[{'Item': 2617,'Group': 0,'Amount':3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
+			</If>
+			<If condition="not IsOnSubMap(78)">
+				<LisbethTravel ZoneId="153" XYZ="-74.81721, 0.2927306, 71.52535"/>
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<While Condition="IsTimeBetween(20,21)" >
+				<WaitTimer WaitTime="30" />
+			</While>
+			<ExFish Bait="Sinking Minnow" Condition="HasAtLeast(2617,1) and not HasAtLeast(7921,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Clear Skies', 'Fair Skies')"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+				<Keepers>
+					<Keeper name="The Sinker" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="-82.48419, -0.2808959, 67.98672" Heading="4.389839" Sit="True" />
+					<FishSpot XYZ="-97.30055, -0.1951752, 70.05416" Heading="2.724793" Sit="True" />
+					<FishSpot XYZ="-81.05979, -0.2929443, 47.26386" Heading="6.027212" Sit="True" />
+				</FishSpots>
+			</ExFish>	
 		</If>
-		<If condition="not IsOnSubMap(78)">
-			<LisbethTravel ZoneId="153" XYZ="-74.81721, 0.2927306, 71.52535"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>
-		<While Condition="IsTimeBetween(3,21)" >
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Sinking Minnow" Condition="not HasAtLeast(7921,1) and (not IsTimeBetween(21,24) or not IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Clear Skies', 'Fair Skies')"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-			<Keepers>
-				<Keeper name="The Sinker" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="-61.02209, -0.2991102, 66.59246" Heading="3,613123" Sit="True"/>
-			</FishSpots>
-		</ExFish>	
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+		<LLoadProfile Path="../../Start.xml"/>
+
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

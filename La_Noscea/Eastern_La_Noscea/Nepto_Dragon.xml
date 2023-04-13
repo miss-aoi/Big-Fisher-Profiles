@@ -23,9 +23,9 @@
 		<If Condition="HasAtLeast(4913,1)">
 			<Desynth ItemIds="4913" DesynthDelay="6000" DesynthTimeout="10"/>
 		</If>
-		<While Condition="not HasAtLeast(8764,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')">
+		<While Condition="HasAtLeast(2606,1) and not HasAtLeast(8754,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')">
 			<!-- 6x Wahoo for Fisher's Intuition -->
-			<ExFish Bait="Northern Krill" Condition="not HasAtLeast(4913,3) and not Core.Player.HasAura(568) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')"
+			<ExFish Bait="Northern Krill" Condition="not Core.Player.HasAura(568)"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 					Mooch="1" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 				<PatienceTugs>
@@ -41,7 +41,7 @@
 				</FishSpots>
 			</ExFish>
 			<!-- Now go for Nepto Dragon -->
-			<ExFish Bait="Northern Krill" Condition="not HasAtLeast(8754,1) and Core.Player.HasAura(568) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')"
+			<ExFish Bait="Northern Krill" Condition="Core.Player.HasAura(568)"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69"
 					Chum="True" Mooch="1" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 				<PatienceTugs>

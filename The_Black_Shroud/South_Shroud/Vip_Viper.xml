@@ -1,42 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Vip Viper (7908)
-  Authors: budesaal
+	Profile: Vip Viper (7908)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Vip Viper</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
-	<If condition="not HasAtLeast(7908,1)">
-		<Log Message="Start Fishing: Vip Viper..." />
-		<If condition="not HasAtLeast(2594,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+	<Name>Vip Viper</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+		<If condition="not HasAtLeast(7908,1)">
+			<Log Message="Start Fishing: Vip Viper..." />
+			<If condition="not HasAtLeast(2594,50)">
+				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			</If>
+			<If condition="not IsOnSubMap(78)">
+				<LisbethTravel ZoneId="153" XYZ="-179.9766, 10.14908, -139.1424"/>
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<While Condition="IsTimeBetween(17,18)" >
+				<WaitTimer WaitTime="30" />
+			</While>
+			<ExFish Bait="Butterworm" Condition="HasAtLeast(2594,1) and not HasAtLeast(7908,1) and IsTimeBetween(18,19)"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+				<Keepers>
+					<Keeper name="Vip Viper" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="-181.6259, 6.686643, -127.521" Heading="4.559937" Sit="True" />
+					<FishSpot XYZ="-203.8454, 8.566397, -140.8594" Heading="4.538989" Sit="True" />
+					<FishSpot XYZ="-161.2432, 6.347555, -109.6849" Heading="0.8256314" Sit="True" />
+				</FishSpots>
+			</ExFish>
 		</If>
-		<If condition="not IsOnSubMap(78)">
-			<LisbethTravel ZoneId="153" XYZ="-179.9766, 10.14908, -139.1424"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>
-		<While Condition="not IsTimeBetween(18,19)" >
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Butterworm" Condition="not HasAtLeast(7908,1) and IsTimeBetween(18,19)"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-			<Keepers>
-				<Keeper name="Vip Viper" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="-187.4081, 6.786765, -130.1809" Heading="4,24208" Sit="True"/>
-			</FishSpots>
-		</ExFish>	
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+		<LLoadProfile Path="../../Start.xml"/>
+
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

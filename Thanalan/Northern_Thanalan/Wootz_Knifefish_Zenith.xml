@@ -19,10 +19,10 @@
 			<If Condition="not ClassName == ClassJobType.Fisher">
 				<ChangeClass Job="Fisher" />
 			</If>
-			<While Condition="not IsTimeBetween(1,4)" >
+			<While Condition="IsTimeBetween(0,1)" >
 				<WaitTimer WaitTime="30" />
 			</While>
-			<ExFish Bait="Honey Worm" Condition="not HasAtLeast(8767,1) and IsTimeBetween(1,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(147, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
+				<ExFish Bait="Honey Worm" Condition="HasAtLeast(2599,1) and HasAtLeast(2599,1) and not HasAtLeast(8767,1) and IsTimeBetween(1,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(147, TimeSpan.FromHours(-8), 'Clear', 'Fair')"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 					Mooch="1" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial" >
 				<PatienceTugs>
@@ -33,9 +33,7 @@
 					<Keeper name="Wootz Knifefish Zenith" />
 				</Keepers>
 				<FishSpots>
-					<FishSpot XYZ="-54.39611, 46.326, 46.47876" Heading="5.94566" Sit="True" />
-					<FishSpot XYZ="-69.4479, 45.64478, 41.55211" Heading="5.742505" Sit="True" />
-					<FishSpot XYZ="-37.7699, 42.21489, 51.31788" Heading="5.544933" Sit="True" />
+					<FishSpot XYZ="-54.27203, 46.32491, 46.60146" Heading="6.100248" Sit="True" />
 				</FishSpots>
 			</ExFish>
 		</If>

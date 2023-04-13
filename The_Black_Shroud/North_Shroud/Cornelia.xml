@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Profile: Cornelia (8760)
-	Authors: budesaal
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
 	<Name>Cornelia</Name>
@@ -22,9 +22,9 @@
 			<If Condition="not ClassName == ClassJobType.Fisher">
 				<ChangeClass Job="Fisher" />
 			</If>
-			<While Condition="not HasAtLeast(8764,1)">
+			<While Condition="HasAtLeast(2603,1) and HasAtLeast(2625,1) and not HasAtLeast(8760,1)">
 				<!-- 5x Boxing Pleco for Fisher's Intuition -->
-				<ExFish Bait="Glowworm" Condition="not HasAtLeast(8760,1) and not Core.Player.HasAura(568)"
+				<ExFish Bait="Glowworm" Condition="not Core.Player.HasAura(568)"
 						MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 						Mooch="1" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial">
 					<PatienceTugs>
@@ -37,8 +37,8 @@
 						<FishSpot XYZ="-157.0592, -10.34948, -103.4891" Heading="2,029755" Sit="True"/>
 					</FishSpots>
 				</ExFish>
-				<!-- Now go after Cornelia -->
-				<ExFish Bait="Rainbow Spoon Lure" Condition="not HasAtLeast(8760,1) and Core.Player.HasAura(568)"
+				<!-- Now go for Cornelia -->
+				<ExFish Bait="Rainbow Spoon Lure" Condition="Core.Player.HasAura(568)"
 						MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 						Mooch="1" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial">
 					<PatienceTugs>

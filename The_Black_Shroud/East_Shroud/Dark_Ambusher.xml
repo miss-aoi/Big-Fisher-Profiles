@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Profile: Dark Ambusher (7694)
-	Authors: budesaal
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
 	<Name>Dark Ambusher</Name>
@@ -19,10 +19,10 @@
 			<If Condition="not ClassName == ClassJobType.Fisher">
 				<ChangeClass Job="Fisher" />
 			</If>
-			<While Condition="IsTimeBetween(3,21)" >
+			<While Condition="IsTimeBetween(20,21)" >
 				<WaitTimer WaitTime="30" />
 			</While>
-			<ExFish Bait="Moth Pupa" Condition="not HasAtLeast(7694,1) and (not IsTimeBetween(21,24) or not IsTimeBetween(0,3))"
+			<ExFish Bait="Moth Pupa" Condition="HasAtLeast(2586,1) and not HasAtLeast(7694,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,3))"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 					Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 				<PatienceTugs>

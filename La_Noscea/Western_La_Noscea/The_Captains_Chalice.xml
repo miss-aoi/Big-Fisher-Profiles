@@ -22,7 +22,7 @@
 		<While Condition="IsTimeBetween(2,23)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Steel Jig" Condition="not HasAtLeast(7948,1) and (not IsTimeBetween(23,24) or not IsTimeBetween(0,2))"
+		<ExFish Bait="Steel Jig" Condition="HasAtLeast(2616,1) and not HasAtLeast(7948,1) and (IsTimeBetween(23,24) or IsTimeBetween(0,2))"
 				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 				Mooch="2" Patience="Patience2" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 			<PatienceTugs>

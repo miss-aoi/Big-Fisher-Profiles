@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Profile: Stormdancer (7713)
-  Authors: budesaal
+	Profile: Stormdancer (7713)
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  <Name>Stormdancer</Name>
-  <BehaviorDirectory></BehaviorDirectory>
-  <Order>
-  
-	<If condition="not HasAtLeast(7713,1)">
-		<Log Message="Start Fishing: Stormdancer..." />
-		<If condition="not HasAtLeast(2601,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2601,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+	<Name>Stormdancer</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+		<If condition="not HasAtLeast(7713,1)">
+			<Log Message="Start Fishing: Stormdancer..." />
+			<If condition="not HasAtLeast(2601,50)">
+				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2601,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			</If>
+			<If condition="not IsOnMap(132) or not IsOnSubMap(0)">
+				<LisbethTravel Area="Gridania (New Gridania)" XYZ="71.02061, -7.759192, 107.6301"/>
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<While Condition="IsTimeBetween(16,17)" >
+				<WaitTimer WaitTime="30" />
+			</While>
+			<ExFish Bait="Stem Borer" Condition="HasAtLeast(2601,1) and not HasAtLeast(7713,1) and (IsTimeBetween(17,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(132, 'Rain', 'Snow')"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+				<Keepers>
+					<Keeper name="Stormdancer" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="131.1351, -14.69595, 166.3251" Heading="5.595587" Sit="True" />
+					<FishSpot XYZ="124.2217, -15.07236, 160.4096" Heading="5.411275" Sit="True" />
+					<FishSpot XYZ="114.95, -14.79039, 147.9822" Heading="5.444788" Sit="True" />
+				</FishSpots>
+			</ExFish>
 		</If>
-		<If condition="not IsOnMap(132) or not IsOnSubMap(0)">
-			<LisbethTravel Area="Gridania (New Gridania)" XYZ="71.02061, -7.759192, 107.6301"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>
-		<While Condition="IsTimeBetween(2,17)" >
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Stem Borer" Condition="not HasAtLeast(7713,1) and (not IsTimeBetween(17,24) or not IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(132, 'Rain', 'Snow')"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-			<Keepers>
-				<Keeper name="Stormdancer" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="131.1351, -14.69595, 166.3251" Heading="5.595587" Sit="True" />
-				<FishSpot XYZ="124.2217, -15.07236, 160.4096" Heading="5.411275" Sit="True" />
-				<FishSpot XYZ="114.95, -14.79039, 147.9822" Heading="5.444788" Sit="True" />
-			</FishSpots>
-		</ExFish>	
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
-  </Order>
-  <GrindAreas>
-  </GrindAreas>
-  <CodeChunks>
-  </CodeChunks>
+		<LLoadProfile Path="../../Start.xml"/>
+
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
 </Profile>

@@ -330,6 +330,9 @@
 		<If Condition="HasAtLeast(8761,1)">
 			<Desynth ItemIds="8761" DesynthDelay="6000" DesynthTimeout="10"/>
 		</If>
+		<If Condition="HasAtLeast(8762,1)">
+			<Desynth ItemIds="8762" DesynthDelay="6000" DesynthTimeout="10"/>
+		</If>
 		<If Condition="HasAtLeast(8763,1)">
 			<Desynth ItemIds="8763" DesynthDelay="6000" DesynthTimeout="10"/>
 		</If>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Profile: Namitaro (8775)
-	Authors: budesaal
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
-  	<Name>Namitaro</Name>
+	<Name>Namitaro</Name>
 	<BehaviorDirectory></BehaviorDirectory>
 	<Order>
-  
+
 		<If condition="not HasAtLeast(8775,1)">
 			<Log Message="Start Fishing: Namitaro..." />
 			<If condition="not HasAtLeast(2603,50)">
@@ -22,25 +22,40 @@
 			<If Condition="not ClassName == ClassJobType.Fisher">
 				<ChangeClass Job="Fisher" />
 			</If>
-			<ExFish Condition="not HasAtLeast(8775,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')"
-					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="0" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial">
-				<Baits>
-					<Bait name="Glowworm" condition="not Core.Player.HasAura(568)"/>
-					<Bait name="Topwater Frog" condition="Core.Player.HasAura(568)"/>
-				</Baits>	
-				<PatienceTugs>
-					<PatienceTug moochLevel="0" TugType="Heavy" />
-				</PatienceTugs>
-				<Keepers>
-					<Keeper name="Giant Takitaro" />
-					<Keeper name="Namitaro" />
-				</Keepers>
-				<FishSpots>
-					<!-- <FishSpot XYZ="525.553, 14.0207, 134.7129" Heading="4,492749" Sit="True"/> -->
-					<FishSpot XYZ="519.7296, 14.04219, 130.9952" Heading="1.422452" Sit="True" />
-				</FishSpots>
-			</ExFish>
+			<While Condition="HasAtLeast(2603,1) and HasAtLeast(2624,1) and not HasAtLeast(8775,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')">
+				<!-- 1x Giant Takitaro for Fisher's Intuition -->
+				<ExFish Bait="Glowworm" Condition="not Core.Player.HasAura(568)"
+						MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+						Mooch="0" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial">
+					<PatienceTugs>
+						<PatienceTug moochLevel="0" TugType="Heavy" />
+					</PatienceTugs>
+					<Keepers>
+						<Keeper name="Giant Takitaro" />
+					</Keepers>
+					<FishSpots>
+						<FishSpot XYZ="518.7339, 14.04607, 130.9605" Heading="1.535933" Sit="True" />
+						<FishSpot XYZ="528.3615, 14.0166, 140.5807" Heading="2.704321" Sit="True" />
+						<FishSpot XYZ="524.8389, 14.08908, 124.3318" Heading="5.889893" Sit="True" />
+					</FishSpots>
+				</ExFish>
+				<!-- Now go for Namitaro -->
+				<ExFish Bait="Topwater Frog" Condition="Core.Player.HasAura(568)"
+						MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+						Mooch="0" Patience="Patience" MinimumGPPatience="600" ForceCordial="True" CordialType="HiCordial">
+					<PatienceTugs>
+						<PatienceTug moochLevel="0" TugType="Heavy" />
+					</PatienceTugs>
+					<Keepers>
+						<Keeper name="Namitaro" />
+					</Keepers>
+					<FishSpots>
+						<FishSpot XYZ="518.7339, 14.04607, 130.9605" Heading="1.535933" Sit="True" />
+						<FishSpot XYZ="528.3615, 14.0166, 140.5807" Heading="2.704321" Sit="True" />
+						<FishSpot XYZ="524.8389, 14.08908, 124.3318" Heading="5.889893" Sit="True" />
+					</FishSpots>
+				</ExFish>
+			</While>
 		</If>
 		<LLoadProfile Path="../../Start.xml"/>
 	

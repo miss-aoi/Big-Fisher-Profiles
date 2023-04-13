@@ -19,7 +19,7 @@
 		<If condition="not IsOnSubMap(162)">
 			<LisbethTravel Area="Middle La Noscea" XYZ="-81.77495, 45.11634, -147.0452"/>
 		</If>
-		<ExFish Bait="Crayfish Ball" Condition="not HasAtLeast(7688,1)"
+		<ExFish Bait="Crayfish Ball" Condition="HasAtLeast(2588,1) and not HasAtLeast(7688,1)"
 				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Great Gudgeon" />

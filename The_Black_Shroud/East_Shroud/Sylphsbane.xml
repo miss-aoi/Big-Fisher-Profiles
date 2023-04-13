@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Profile: Sylphsbane (7912)
-	Authors: budesaal
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
 	<Name>Sylphsbane</Name>
@@ -19,7 +19,7 @@
 			<If Condition="not ClassName == ClassJobType.Fisher">
 				<ChangeClass Job="Fisher" />
 			</If>
-			<ExFish Bait="Butterworm" Condition="not HasAtLeast(7912,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(152, 'Rain')"
+			<ExFish Bait="Butterworm" Condition="HasAtLeast(2594,1) and not HasAtLeast(7912,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(152, 'Rain')"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 					Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
 				<PatienceTugs>

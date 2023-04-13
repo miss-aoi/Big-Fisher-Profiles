@@ -19,7 +19,7 @@
 			<If Condition="not ClassName == ClassJobType.Fisher">
 				<ChangeClass Job="Fisher" />
 			</If>
-			<ExFish Bait="Spinner" Condition="not HasAtLeast(7929,1) and SkywatcherPlugin.IsWeatherInZone(146, 'Fog')"
+			<ExFish Bait="Spinner" Condition="HasAtLeast(2620,1) and not HasAtLeast(7929,1) and SkywatcherPlugin.IsWeatherInZone(146, 'Fog')"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 				<Keepers>
 					<Keeper name="Iron Noose" />

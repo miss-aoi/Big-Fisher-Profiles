@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Profile: Levinlight (7920)
-	Authors: budesaal
+	Authors: budesaal, miss-aoi
 -->
 <Profile>
 	<Name>Levinlight</Name>
@@ -19,10 +19,10 @@
 			<If Condition="not ClassName == ClassJobType.Fisher">
 				<ChangeClass Job="Fisher" />
 			</If>
-			<While Condition="not IsTimeBetween(18,23)" >
+			<While Condition="IsTimeBetween(17,18)" >
 				<WaitTimer WaitTime="30" />
 			</While>
-			<ExFish Bait="Syrphid Basket" Condition="not HasAtLeast(7920,1) and IsTimeBetween(18,23)"
+			<ExFish Bait="Syrphid Basket" Condition="HasAtLeast(2597,1) and not HasAtLeast(7920,1) and IsTimeBetween(18,23)"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 				<Keepers>
 					<Keeper name="Levinlight" />

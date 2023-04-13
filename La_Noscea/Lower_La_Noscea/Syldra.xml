@@ -19,7 +19,7 @@
 		<If condition="not IsOnSubMap(201)">
 			<LisbethTravel Area="Lower La Noscea" XYZ="657.3607, 61.06521, -182.2135"/>
 		</If>
-		<ExFish Bait="Spoon Worm" Condition="not HasAtLeast(7710,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(135, 'Rain')"
+		<ExFish Bait="Spoon Worm" Condition="HasAtLeast(2596,1) and not HasAtLeast(7710,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(135, 'Rain')"
 				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
 			<Keepers>
 				<Keeper name="Syldra" />

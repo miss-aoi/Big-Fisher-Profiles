@@ -19,12 +19,15 @@
 		<If Condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While Condition="not IsTimeBetween(4,12)">
+		<While Condition="IsTimeBetween(3,4)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Honey Worm" Condition="not HasAtLeast(8776,1) and IsTimeBetween(4,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(156, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
+		<ExFish Bait="Honey Worm" Condition="HasAtLeast(2599,1) and not HasAtLeast(8776,1) and IsTimeBetween(4,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(156, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
 				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 				Mooch="2" Patience="Patience" MinimumGPPatience="500" ForceCordial="True" CordialType="HiCordial">
+			<SurfaceSlaps>
+				<SurfaceSlap name="Giant Bass" />
+			</SurfaceSlaps>
 			<PatienceTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Heavy" />
@@ -33,9 +36,9 @@
 				<Keeper name="Blood Red Bonytongue" />
 			</Keepers>
 			<FishSpots>
-				<FishSpot XYZ="143.8184, -28.36775, -427.127" Heading="0.1438355" Sit="True" />
-				<FishSpot XYZ="166.1766, -28.29997, -426.6662" Heading="0.5941291" Sit="True" />
-				<FishSpot XYZ="197.2962, -28.24627, -422.0775" Heading="0.1082254" Sit="True" />
+				<FishSpot XYZ="315.7721, 22.64252, -673.6241" Heading="1.17469" Sit="True" />
+				<FishSpot XYZ="334.5092, 25.11681, -679.5267" Heading="1.212389" Sit="True" />
+				<FishSpot XYZ="320.1711, 22.98494, -678.5112" Heading="0.7348647" Sit="True" />
 			</FishSpots>
 		</ExFish>
 	</If>

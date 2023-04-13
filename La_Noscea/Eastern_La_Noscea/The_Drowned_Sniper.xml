@@ -19,7 +19,7 @@
 		<If condition="not IsOnSubMap(168)">
 			<LisbethTravel Area="Eastern La Noscea" XYZ="-70.91592, 33.82394, 223.3905"/>
 		</If>
-		<ExFish Bait="Snurble Fly" Condition="not HasAtLeast(7938,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')"
+		<ExFish Bait="Snurble Fly" Condition="HasAtLeast(2618,1) and not HasAtLeast(7938,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')"
 				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 				Mooch="1" Patience="Patience">
 			<PatienceTugs>
