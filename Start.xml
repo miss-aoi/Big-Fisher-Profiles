@@ -309,7 +309,7 @@
             <LLoadProfile Path="La_Noscea/Eastern_La_Noscea/Bombardfish.xml"/>
         </If>
         <!-- The Old Man in the Sea -->
-        <If Condition="&The_Old_Man_in_the_Sea; == 1 and not HasAtLeast(8753,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(137, TimeSpan.FromHours(-4), 'Rain', 'Showers')">
+        <If Condition="&The_Old_Man_in_the_Sea; == 1 and not HasAtLeast(8753,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(137, TimeSpan.FromHours(-8), 'Rain', 'Showers')">
             <LLoadProfile Path="La_Noscea/Eastern_La_Noscea/The_Old_Man_in_the_Sea.xml"/>
         </If>    
         <!-- Nepto Dragon -->

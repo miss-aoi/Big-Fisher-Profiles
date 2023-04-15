@@ -38,7 +38,7 @@
 			</FishSpots>
 		</ExFish>
 	</If>
-	<LLoadProfile Path="../../Start.xml"/>
+	<!-- <LLoadProfile Path="../../Start.xml"/> -->
 	
 	</Order>
 	<GrindAreas>

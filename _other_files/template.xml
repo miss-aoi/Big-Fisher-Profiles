@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Profile: TEMP-fishName (TEMP-fishID)
+	Authors: 
+-->
+<Profile>
+	<Name>TEMP</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+		<If condition="not HasAtLeast(TEMP-fishID,1)">
+			<Log Message="Start Fishing: TEMP-fishName..." />
+			<If condition="not HasAtLeast(TEMP-baitID,50)">
+				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP-baitID,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			</If>
+			<If condition="not IsOnSubMap(TEMP-subMapID)">
+				<!-- Lisbeth Travel Cords -->
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<!-- CONDITIONS -->
+			<!-- and IsTimeBetween(X,Y) -->
+			<!-- and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(TEMP-zoneID, 'TEMP-weather') -->
+			<!-- and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(TEMP-zoneID, TimeSpan.FromHours(-8), 'TEMP-weather') -->
+			<!-- ExFish Options -->
+			<!-- Mooch="2" Patience="Patience2" MinimumGPPatience="650" -->
+			<!-- ForceCordial="True" CordialType="Auto" -->
+			<ExFish Bait="Hoverworm" Condition="HasAtLeast(TEMP-baitID,1) and not HasAtLeast(TEMP-fishID,1)"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">
+				<!-- <PatienceTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="0" TugType="Medium" />
+					<PatienceTug moochLevel="0" TugType="Heavy" />
+				</PatienceTugs> -->
+				<!-- <SurfacelSlap>
+					<SurfaceSlaps name="Other Fish"/>
+				</SurfacelSlap> -->
+				<Keepers>
+					<Keeper name="TEMP-fishName" />
+				</Keepers>
+				<FishSpots>
+					<!-- FISH CORDS -->
+				</FishSpots>
+			</ExFish>
+		</If>
+		<LLoadProfile Path="../../Start.xml"/>
+	
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
+</Profile>

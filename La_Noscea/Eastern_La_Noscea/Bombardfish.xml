@@ -10,8 +10,8 @@
   
 	<If condition="not HasAtLeast(7924,1)">
 		<Log Message="Start Fishing: Bombardfish..." />
-		<If condition="not HasAtLeast(2598,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2598,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+		<If condition="not IsOnSubMap(167)">
+			<LisbethTravel Area="Eastern La Noscea" XYZ="537.0127, 8.728938, 120.3512" />
 		</If>
 		<If Condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />

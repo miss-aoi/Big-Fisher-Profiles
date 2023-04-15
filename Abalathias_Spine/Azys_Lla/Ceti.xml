@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Profile: Ceti (16752)
+	Authors: miss-aoi
+-->
+<Profile>
+	<Name>Ceti</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+		<If condition="not HasAtLeast(15637,1)">
+			<Log Message="Start Fishing: Ceti..." />
+			<If condition="not HasAtLeast(12710,50)">
+				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12710,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			</If>
+			<If condition="not IsOnSubMap(383)">
+				
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<ExFish Bait="Hoverworm" Condition="HasAtLeast(12710,1) and not HasAtLeast(16752,1)"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+					Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
+				<PatienceTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Light" />
+				</PatienceTugs>
+				<Keepers>
+					<Keeper name="Ceti" />
+				</Keepers>
+				<FishSpots>
+					
+				</FishSpots>
+			</ExFish>
+		</If>
+		<LLoadProfile Path="../../Start.xml"/>
+	
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
+</Profile>
