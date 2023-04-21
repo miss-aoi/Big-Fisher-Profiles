@@ -36,6 +36,9 @@
 					<FishSpot XYZ="-197.7823, 11.86121, 750.546" Heading="4.203466" />
 					<FishSpot XYZ="-248.2603, 11.9524, 764.6677" Heading="3.401308" />
 				</FishSpots>
+				<Keepers>
+					<Keeper name="Shadeshifter" />
+				</Keepers>
 			</ExFish>
 			<ExFish Bait="Short Bill Minnow" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>

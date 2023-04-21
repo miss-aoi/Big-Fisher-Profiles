@@ -26,12 +26,15 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(33241,&Cinder_Surprise;) and HasAtLeast(27584,1) and IsTimeBetween(0,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Heat Waves')">
-			<ExFish Bait="Desert Dessert Frog" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<ExFish Bait="Desert Dessert Frog" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="472.8454, -49.40374, -440.5691" Heading="2.276201" />
 					<FishSpot XYZ="454.2035, -48.19075, -458.9115" Heading="2.483547" />
 					<FishSpot XYZ="431.857, -47.99002, -480.3968" Heading="2.925464" />
 				</FishSpots>
+				<Keepers>
+					<Keeper name="Sand Egg" />
+				</Keepers>
 			</ExFish>
 			<ExFish Bait="Desert Dessert Frog" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>

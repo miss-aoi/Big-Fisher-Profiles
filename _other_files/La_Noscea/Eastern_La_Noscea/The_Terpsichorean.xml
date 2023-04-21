@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(7939,&The_Terpsichorean;) and HasAtLeast(2599,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Fog')">
-			<ExFish Bait="Honey Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Honey Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-37.85912, 35.29853, 424.1711" Heading="0.4665878" />
 					<FishSpot XYZ="-52.09799, 34.67363, 441.288" Heading="4.324475" />

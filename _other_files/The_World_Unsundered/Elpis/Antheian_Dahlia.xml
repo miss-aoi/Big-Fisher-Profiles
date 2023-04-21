@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(38836,&Antheian_Dahlia;) and HasAtLeast(36591,1) and IsTimeBetween(9,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(961, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(961, TimeSpan.FromHours(-8), 'Clear Skies')">
-			<ExFish Bait="Mayfly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Mayfly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="495.3606, 138.5854, -212.613" Heading="0.708328" />
 					<FishSpot XYZ="463.4649, 138.5854, -187.2824" Heading="5.602932" />

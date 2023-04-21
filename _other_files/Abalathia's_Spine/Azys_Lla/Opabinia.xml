@@ -29,6 +29,9 @@
 					<FishSpot XYZ="-18.69696, 293.9, 44.98245" Heading="3.563382" />
 					<FishSpot XYZ="-29.53881, 293.8998, 39.58407" Heading="1.649106" />
 				</FishSpots>
+				<Keepers>
+					<Keeper name="Functional Proto-hropken" />
+				</Keepers>
 			</ExFish>
 			<ExFish Bait="Fiend Worm" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>

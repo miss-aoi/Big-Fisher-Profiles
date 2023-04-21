@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and HasAtLeast(20675,1) and IsTimeBetween(0,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Stonefly Larva" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Stonefly Larva" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Medium" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />
@@ -36,6 +36,9 @@
 					<FishSpot XYZ="374.0125, -16.22713, -713.4299" Heading="0.3165665" />
 					<FishSpot XYZ="404.476, -16.22713, -685.9282" Heading="3.843526" />
 				</FishSpots>
+				<Keepers>
+					<Keeper name="Indigo Prismfish" />
+				</Keepers>
 			</ExFish>
 			<ExFish Bait="Stonefly Larva" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 				<FishSpots>

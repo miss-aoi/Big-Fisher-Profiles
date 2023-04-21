@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(17581,&Crystal_Pigeon;) and HasAtLeast(12712,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Thunder') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(402, TimeSpan.FromHours(-8), 'Thunder')">
-			<ExFish Bait="Giant Crane Fly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Giant Crane Fly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Medium" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />

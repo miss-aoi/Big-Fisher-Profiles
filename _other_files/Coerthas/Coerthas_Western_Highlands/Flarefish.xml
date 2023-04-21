@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(16746,&Flarefish;) and HasAtLeast(28634,1) and IsTimeBetween(10,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')">
-			<ExFish Bait="Metal Spinner" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Metal Spinner" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />

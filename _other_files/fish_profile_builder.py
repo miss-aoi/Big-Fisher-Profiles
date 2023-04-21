@@ -57,10 +57,18 @@ def process_predator(fish_spot):
     if 'predator' in fish_spot:
         pred_fish_id = fish_spot.get('predator')[0].get('id')
         resp = requests.get(f'{gt_url}/db/doc/item/en/3/{pred_fish_id}.json')
+        pred_fish_name = json.loads(resp.text).get('item').get('name')
         pred_baits = json.loads(resp.text).get('item').get('fish').get('spots')[0].get('baits')
         pred_fish_spot = {'spot': fish_spot.get('spot'), 'baits': pred_baits, 'tug': fish_spot.get('tug')}
         pred_fish_details = process_bait_details(pred_fish_spot)
-        return {'bait_id': pred_fish_details.get('bait_id'), 'bait_name': pred_fish_details.get('bait_name'), 'fish_id': pred_fish_id, 'patience_tugs': pred_fish_details.get('patience_tugs')}
+        predator_data = {
+            'bait_id': pred_fish_details.get('bait_id'),
+            'bait_name': pred_fish_details.get('bait_name'),
+            'fish_id': pred_fish_id,
+            'fish_name': pred_fish_name,
+            'patience_tugs': pred_fish_details.get('patience_tugs')
+            }
+        return predator_data
     return {}
 
 
@@ -147,10 +155,9 @@ def add_exfish(root_string, fish_profile_data):
     # Add Elements
     root = ET.fromstring(root_string)
     order_elem = root.find("Order")
-    # if_not_has_fish_elem = order_elem.find("If")
     while_check_elem = ET.SubElement(order_elem, "While", condition=condition_block)
     
-    # Add predator entry in case Fisher's Intuition is needed
+    # Add predator entry for cases where Fisher's Intuition is needed
     if fish_profile_data.get('predator'):
         pred_exfish_elem = ET.SubElement(while_check_elem, "ExFish", Bait=f"{fish_profile_data.get('predator').get('bait_name')}")
         pred_exfish_elem.set('Condition', "not Core.Player.HasAura(568)")
@@ -170,10 +177,11 @@ def add_exfish(root_string, fish_profile_data):
                 ET.SubElement(pred_patience_tugs_elem, "PatienceTug", moochLevel=entry.get('level'), TugType=entry.get('tug'))
         else:
             pred_exfish_elem.set('Chum', 'True')
-        # pred_exfish_elem.set('Chum', 'True')
         fishspots_elem = ET.SubElement(pred_exfish_elem, "FishSpots")
         for fishspot in fish_profile_data.get('fishspot_cords'):
             ET.SubElement(fishspots_elem, "FishSpot", XYZ=f"{fishspot.get('XYZ')}", Heading=f"{fishspot.get('Heading')}")
+        pred_keepers_elem = ET.SubElement(pred_exfish_elem, "Keepers")
+        ET.SubElement(pred_keepers_elem, "Keeper", name=f"{fish_profile_data.get('predator').get('fish_name')}")
     
     # Main target that is pursued
     exfish_elem = ET.SubElement(while_check_elem, "ExFish", Bait=f"{fish_profile_data.get('bait_name','ERROR')}")

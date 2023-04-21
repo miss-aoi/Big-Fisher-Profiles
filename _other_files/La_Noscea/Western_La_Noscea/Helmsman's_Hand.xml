@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7941,&Helmsman's_Hand;) and HasAtLeast(2587,1) and IsTimeBetween(9,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clouds', 'Fog', 'Wind')">
-			<ExFish Bait="Pill Bug" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Pill Bug" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />

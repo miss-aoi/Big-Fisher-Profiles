@@ -34,8 +34,11 @@
 					<FishSpot XYZ="-278.8307, 33.78064, 296.5956" Heading="4.435918" />
 					<FishSpot XYZ="-280.1851, 33.99385, 304.9468" Heading="2.548871" />
 				</FishSpots>
+				<Keepers>
+					<Keeper name="Jungle Catfish" />
+				</Keepers>
 			</ExFish>
-			<ExFish Bait="Honey Worm" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Honey Worm" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />

@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7693,&Navigator's_Brand;) and HasAtLeast(2628,1) and IsTimeBetween(9,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Yumizuno" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<ExFish Bait="Yumizuno" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="429.9157, 14.96737, 446.2473" Heading="4.373005" />
 					<FishSpot XYZ="440.1911, 11.35679, 434.9116" Heading="4.488194" />

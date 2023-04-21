@@ -36,6 +36,9 @@
 					<FishSpot XYZ="499.6933, 347.5016, -730.2562" Heading="6.04072" />
 					<FishSpot XYZ="507.6468, 347.4637, -710.7338" Heading="3.726404" />
 				</FishSpots>
+				<Keepers>
+					<Keeper name="Lamp Marimo" />
+				</Keepers>
 			</ExFish>
 			<ExFish Bait="Stonefly Nymph" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>

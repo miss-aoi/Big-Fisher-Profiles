@@ -29,8 +29,11 @@
 					<FishSpot XYZ="-717.9724, 78.40404, -331.6538" Heading="0.7497356" />
 					<FishSpot XYZ="-725.8512, 78.40405, -304.4441" Heading="4.054691" />
 				</FishSpots>
+				<Keepers>
+					<Keeper name="Bondsplitter" />
+				</Keepers>
 			</ExFish>
-			<ExFish Bait="Suspending Minnow" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Suspending Minnow" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-749.2921, 78.40405, -326.2978" Heading="0.6973693" />
 					<FishSpot XYZ="-717.9724, 78.40404, -331.6538" Heading="0.7497356" />
