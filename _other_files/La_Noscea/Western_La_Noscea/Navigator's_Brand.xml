@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Navigator's Brand..." />
 		<If condition="not HasAtLeast(2628,50)">
 			<!--Yumizuno-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2628,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>
 		<If condition="not IsOnSubMap(220)">
 			<LisbethTravel Area="Western La Noscea" XYZ="445.8791, 14.54649, 451.3748" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7693,&Navigator's_Brand;) and HasAtLeast(2628,1) and IsTimeBetween(9,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Yumizuno" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Yumizuno" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="429.9157, 14.96737, 446.2473" Heading="4.373005" />
 					<FishSpot XYZ="440.1911, 11.35679, 434.9116" Heading="4.488194" />

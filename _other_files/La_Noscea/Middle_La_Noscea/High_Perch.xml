@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: High Perch..." />
 		<If condition="not HasAtLeast(2617,50)">
 			<!--Sinking Minnow-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2617,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>
 		<If condition="not IsOnSubMap(163)">
 			<LisbethTravel Area="Middle La Noscea" XYZ="-160.2664, 13.22471, -379.9702" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7709,&High_Perch;) and HasAtLeast(2617,1) and IsTimeBetween(5,8)">
-			<ExFish Bait="Sinking Minnow" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Sinking Minnow" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-121.0939, 12.21, -366.0357" Heading="3.868313" />
 					<FishSpot XYZ="-147.2776, 12.7062, -377.7298" Heading="1.248226" />

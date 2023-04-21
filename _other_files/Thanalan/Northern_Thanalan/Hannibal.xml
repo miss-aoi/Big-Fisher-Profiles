@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Hannibal..." />
 		<If condition="not HasAtLeast(2626,50)">
 			<!--Spinnerbait-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2626,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>
 		<If condition="not IsOnSubMap(258)">
 			<LisbethTravel Area="Northern Thanalan" XYZ="103.2273, 15.00176, 217.3866" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7943,&Hannibal;) and HasAtLeast(2626,1) and (IsTimeBetween(22,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog')">
-			<ExFish Bait="Spinnerbait" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Spinnerbait" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />

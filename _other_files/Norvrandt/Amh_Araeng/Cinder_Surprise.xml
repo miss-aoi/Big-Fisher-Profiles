@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Cinder Surprise..." />
 		<If condition="not HasAtLeast(27584,50)">
 			<!--Desert Dessert Frog-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27584,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3120)">
 			<LisbethTravel Area="Amh Araeng" XYZ="462.4595, -44.79192, -433.8012" />
@@ -26,14 +26,14 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(33241,&Cinder_Surprise;) and HasAtLeast(27584,1) and IsTimeBetween(0,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Heat Waves')">
-			<ExFish Bait="Desert Dessert Frog" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Desert Dessert Frog" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="472.8454, -49.40374, -440.5691" Heading="2.276201" />
 					<FishSpot XYZ="454.2035, -48.19075, -458.9115" Heading="2.483547" />
 					<FishSpot XYZ="431.857, -47.99002, -480.3968" Heading="2.925464" />
 				</FishSpots>
 			</ExFish>
-			<ExFish Bait="Desert Dessert Frog" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Desert Dessert Frog" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="472.8454, -49.40374, -440.5691" Heading="2.276201" />
 					<FishSpot XYZ="454.2035, -48.19075, -458.9115" Heading="2.483547" />

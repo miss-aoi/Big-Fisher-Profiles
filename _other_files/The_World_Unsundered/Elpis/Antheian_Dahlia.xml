@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Antheian Dahlia..." />
 		<If condition="not HasAtLeast(36591,50)">
 			<!--Mayfly-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36591,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3947)">
 			<LisbethTravel Area="Elpis" XYZ="495.3606, 138.5854, -212.613" />

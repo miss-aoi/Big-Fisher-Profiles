@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Princess Killifish..." />
 		<If condition="not HasAtLeast(20614,50)">
 			<!--Nightcrawler-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20614,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(1899)">
 			<LisbethTravel Area="Shirogane" XYZ="-33.41357, 20, 12.04718" />

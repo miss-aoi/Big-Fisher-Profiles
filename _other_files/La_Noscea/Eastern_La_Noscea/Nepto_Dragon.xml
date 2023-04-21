@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Nepto Dragon..." />
 		<If condition="not HasAtLeast(2606,50)">
 			<!--Northern Krill-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2606,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(216)">
 			<LisbethTravel Area="Eastern La Noscea" XYZ="885.8239, 20.75006, 144.7628" />
@@ -30,7 +30,7 @@
 					<FishSpot XYZ="874.2692, 20.16584, 162.1999" Heading="6.249492" />
 				</FishSpots>
 			</ExFish>
-			<ExFish Bait="Northern Krill" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Northern Krill" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="859.7519, 22.08624, 154.0708" Heading="4.228399" />
 					<FishSpot XYZ="862.3873, 22.24, 167.1437" Heading="5.273502" />

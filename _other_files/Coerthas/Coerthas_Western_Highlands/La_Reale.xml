@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: La Reale..." />
 		<If condition="not HasAtLeast(12711,50)">
 			<!--Brute Leech-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2202)">
 			<LisbethTravel Area="Coerthas Western Highlands" XYZ="-421.0156, 90.98969, -356.9834" />
@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(15628,&La_Reale;) and HasAtLeast(12711,1)">
-			<ExFish Bait="Brute Leech" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Brute Leech" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-418.0547, 89.61117, -323.2126" Heading="4.380158" />
 					<FishSpot XYZ="-418.3141, 89.59487, -333.7301" Heading="5.041987" />

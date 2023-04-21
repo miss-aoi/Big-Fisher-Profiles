@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Son of Levin..." />
 		<If condition="not HasAtLeast(2607,50)">
 			<!--Caddisfly Larva-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2607,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(126)">
 			<LisbethTravel Area="South Shroud" XYZ="-244.1569, 1.337763, 399.2985" />
@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(7936,&Son_of_Levin;) and HasAtLeast(2607,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunderstorms')">
-			<ExFish Bait="Caddisfly Larva" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Caddisfly Larva" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-224.8922, -0.4231508, 410.1203" Heading="1.001898" />
 					<FishSpot XYZ="-229.7109, -0.4257042, 425.6832" Heading="1.60299" />

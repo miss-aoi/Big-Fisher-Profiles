@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Suiten Ippeki..." />
 		<If condition="not HasAtLeast(20675,50)">
 			<!--Stonefly Larva-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20675,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2809)">
 			<LisbethTravel Area="Yanxia" XYZ="-369.1738, 1.230016, -377.8241" />

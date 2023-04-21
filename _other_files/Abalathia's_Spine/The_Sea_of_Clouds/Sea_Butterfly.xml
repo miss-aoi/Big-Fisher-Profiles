@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Sea Butterfly..." />
 		<If condition="not HasAtLeast(12712,50)">
 			<!--Giant Crane Fly-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12712,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not HasAtLeast(28634,50)">
 			<!--Giant Crane Fly-->
@@ -37,7 +37,7 @@
 					<FishSpot XYZ="-322.0511, 20.56616, -850.5399" Heading="1.887997" />
 				</FishSpots>
 			</ExFish>
-			<ExFish Bait="Giant Crane Fly" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Giant Crane Fly" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-353.6552, 19.58649, -832.2133" Heading="3.856718" />
 					<FishSpot XYZ="-339.0728, 19.71094, -849.5245" Heading="4.007522" />

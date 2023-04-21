@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Forbiddingway..." />
 		<If condition="not HasAtLeast(36597,50)">
 			<!--Stardust-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36597,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3970)">
 			<LisbethTravel Area="Ultima Thule" XYZ="-656.1792, 77.23194, 552.069" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(36685,&Forbiddingway;) and HasAtLeast(36597,1) and IsTimeBetween(8,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Astromagnetic Storm')">
-			<ExFish Bait="Stardust" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Stardust" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-660.4504, 76.32266, 559.2496" Heading="5.308353" />
 					<FishSpot XYZ="-664.7294, 77.29636, 549.6221" Heading="4.667468" />

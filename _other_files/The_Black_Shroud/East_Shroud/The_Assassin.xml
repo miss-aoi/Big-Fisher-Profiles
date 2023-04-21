@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: The Assassin..." />
 		<If condition="not HasAtLeast(2594,50)">
 			<!--Butterworm-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(112)">
 			<LisbethTravel Area="East Shroud" XYZ="-215.3548, 54.82919, -190.1448" />

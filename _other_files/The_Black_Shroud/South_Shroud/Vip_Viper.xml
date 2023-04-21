@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Vip Viper..." />
 		<If condition="not HasAtLeast(2594,50)">
 			<!--Butterworm-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(78)">
 			<LisbethTravel Area="South Shroud" XYZ="-179.9766, 10.14908, -139.1424" />

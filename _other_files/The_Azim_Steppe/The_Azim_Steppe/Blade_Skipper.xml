@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Blade Skipper..." />
 		<If condition="not HasAtLeast(20619,50)">
 			<!--Suspending Minnow-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20619,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2757)">
 			<LisbethTravel Area="The Azim Steppe" XYZ="-87.56224, 23.90741, -98.0011" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(24218,&Blade_Skipper;) and HasAtLeast(20619,1) and IsTimeBetween(4,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(622, 'Fog')">
-			<ExFish Bait="Suspending Minnow" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Suspending Minnow" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-95.88214, 21.83956, -84.44804" Heading="5.56986" />
 					<FishSpot XYZ="-117.1006, 22.21863, -88.59916" Heading="2.64818" />

@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Glarramundi..." />
 		<If condition="not HasAtLeast(20619,50)">
 			<!--Suspending Minnow-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20619,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2752)">
 			<LisbethTravel Area="Yanxia" XYZ="708.7523, 79.45234, -208.5964" />
@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(24886,&Glarramundi;) and HasAtLeast(20619,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clear Skies')">
-			<ExFish Bait="Suspending Minnow" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Suspending Minnow" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="704.0856, 75.94539, -213.747" Heading="3.889621" />
 					<FishSpot XYZ="681.0939, 71.25064, -201.362" Heading="4.790213" />

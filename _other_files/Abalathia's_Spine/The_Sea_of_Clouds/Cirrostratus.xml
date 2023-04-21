@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Cirrostratus..." />
 		<If condition="not HasAtLeast(12712,50)">
 			<!--Giant Crane Fly-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12712,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2117)">
 			<LisbethTravel Area="The Sea of Clouds" XYZ="-374.746, -185.1432, 793.9398" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(16750,&Cirrostratus;) and HasAtLeast(12712,1) and IsTimeBetween(10,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Giant Crane Fly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Giant Crane Fly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-377.334, -185.8585, 797.132" Heading="5.830033" />
 					<FishSpot XYZ="-393.6451, -184.8638, 780.6809" Heading="5.233132" />

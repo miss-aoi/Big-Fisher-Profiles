@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Downstream Loach..." />
 		<If condition="not HasAtLeast(20675,50)">
 			<!--Stonefly Larva-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20675,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2601)">
 			<LisbethTravel Area="The Fringes" XYZ="-180.7685, 59.63193, -582.6307" />
@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(24208,&Downstream_Loach;) and HasAtLeast(20675,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(612, 'Fog')">
-			<ExFish Bait="Stonefly Larva" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Stonefly Larva" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-181.0111, 58.77763, -591.9297" Heading="3.29916" />
 					<FishSpot XYZ="-159.1374, 58.74383, -587.0077" Heading="1.998541" />

@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Worm of Nym..." />
 		<If condition="not HasAtLeast(2594,50)">
 			<!--Butterworm-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(177)">
 			<LisbethTravel Area="Upper La Noscea" XYZ="601.1978, -3.052744, 152.88" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7916,&Worm_of_Nym;) and HasAtLeast(2594,1) and IsTimeBetween(19,22)">
-			<ExFish Bait="Butterworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Butterworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="569.3752, -3.4, 161.3159" Heading="1.647109" />
 					<FishSpot XYZ="572.0908, -3.4, 139.9327" Heading="2.901653" />

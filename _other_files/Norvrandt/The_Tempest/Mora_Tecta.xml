@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Mora Tecta..." />
 		<If condition="not HasAtLeast(27588,50)">
 			<!--Short Bill Minnow-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27588,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3193)">
 			<LisbethTravel Area="The Tempest" XYZ="-483.6885, 186.1969, -540.7681" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(33325,&Mora_Tecta;) and HasAtLeast(27588,1) and IsTimeBetween(22,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Fair Skies')">
-			<ExFish Bait="Short Bill Minnow" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Short Bill Minnow" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
 					<FishSpot XYZ="-475.9068, 184.7709, -558.5859" Heading="4.016154" />

@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Lancetfish..." />
 		<If condition="not HasAtLeast(27590,50)">
 			<!--Squid Strip-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27590,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not HasAtLeast(27588,50)">
 			<!--Squid Strip-->

@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Shadeshifter..." />
 		<If condition="not HasAtLeast(27590,50)">
 			<!--Squid Strip-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27590,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3090)">
 			<LisbethTravel Area="Kholusia" XYZ="-218.3601, 8.98271, 765.7238" />

@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Bokuden..." />
 		<If condition="not HasAtLeast(20675,50)">
 			<!--Stonefly Larva-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20675,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2808)">
 			<LisbethTravel Area="Yanxia" XYZ="-263.0353, 53.21751, -636.6583" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(23067,&Bokuden;) and HasAtLeast(20675,1) and IsTimeBetween(12,14)">
-			<ExFish Bait="Stonefly Larva" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Stonefly Larva" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-269.1512, 51.28176, -642.882" Heading="4.015261" />
 					<FishSpot XYZ="-250.8843, 49.98304, -664.4328" Heading="3.150276" />

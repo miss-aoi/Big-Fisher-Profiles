@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Vidofnir..." />
 		<If condition="not HasAtLeast(12711,50)">
 			<!--Brute Leech-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2013)">
 			<LisbethTravel Area="The Churning Mists" XYZ="700.6899, -50.2302, 427.8866" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(15633,&Vidofnir;) and HasAtLeast(12711,1) and IsTimeBetween(8,10)">
-			<ExFish Bait="Brute Leech" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Brute Leech" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="700.6899, -50.2302, 427.8866" Heading="2.677398" />
 					<FishSpot XYZ="729.3427, -50.22274, 423.9734" Heading="3.062758" />

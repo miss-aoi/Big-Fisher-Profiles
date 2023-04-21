@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Ondo Sigh..." />
 		<If condition="not HasAtLeast(27590,50)">
 			<!--Squid Strip-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27590,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3196)">
 			<LisbethTravel Area="The Tempest" XYZ="-428.7982, 393.7201, -670.8645" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(28930,&Ondo_Sigh;) and HasAtLeast(27590,1) and IsTimeBetween(12,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Squid Strip" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Squid Strip" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-428.7982, 393.7201, -670.8645" Heading="4.822519" />
 					<FishSpot XYZ="-453.8247, 393.7201, -675.4504" Heading="0.3467791" />

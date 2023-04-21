@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Recordkiller..." />
 		<If condition="not HasAtLeast(27589,50)">
 			<!--Baitbugs-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27589,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3167)">
 			<LisbethTravel Area="The Rak'tika Greatwood" XYZ="106.9933, -21.74073, 511.4975" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(30437,&Recordkiller;) and HasAtLeast(27589,1) and IsTimeBetween(18,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(817, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(817, TimeSpan.FromHours(-8), 'Fog')">
-			<ExFish Bait="Baitbugs" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Baitbugs" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="106.9933, -21.74073, 511.4975" Heading="5.064728" />
 					<FishSpot XYZ="98.01465, -21.3784, 534.3689" Heading="4.941159" />

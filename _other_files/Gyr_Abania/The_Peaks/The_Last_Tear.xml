@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: The Last Tear..." />
 		<If condition="not HasAtLeast(20613,50)">
 			<!--Salmon Roe-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20613,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2605)">
 			<LisbethTravel Area="The Peaks" XYZ="519.6665, 220.8684, -678.6077" />

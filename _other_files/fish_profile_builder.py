@@ -2,10 +2,11 @@
 I got tired of manually updating everything.
 Let's see if this other idea works out better...
 """
-import requests, json, time
+import requests, json, time, random
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+sit_percent = 0.70
 gt_url = 'https://garlandtools.org/'
 with open("gt_zone_mapping.json", "r") as file:
     gt_zone_mapping = json.load(file)
@@ -23,7 +24,7 @@ def process_bait_details(fish_spot):
     """
     mooch_fish = []
     patience_tugs = []
-    
+
     # Bait Details
     bait_lst = fish_spot.get('baits')[0]
     for bait_id in bait_lst:
@@ -36,7 +37,7 @@ def process_bait_details(fish_spot):
             bait_name = bait_data.get('name')
             bait_amount = baits.get(str(bait_id)).get('Amount')
             bait_type = baits.get(str(bait_id)).get('Type')
-    
+
     # Mooch Details
     if mooch_fish:
         for mooch_fish_id in mooch_fish:
@@ -110,9 +111,9 @@ def add_fish_checks(root_string, fish_profile_data):
     # Check if have the required bait
     if_not_has_bait_elem = ET.SubElement(order_elem, "If", condition=f"not HasAtLeast({fish_profile_data.get('bait_id','ERROR')},50)")
     lisbeth_order = "[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]"
-    lisbeth_order.replace('TEMP',fish_profile_data.get('bait_id','ERROR'))
-    lisbeth_order.replace('50',str(fish_profile_data.get('bait_amount')))
-    lisbeth_order.replace('Purchase',fish_profile_data.get('bait_type'))
+    lisbeth_order = lisbeth_order.replace('TEMP',str(fish_profile_data.get('bait_id','ERROR')))
+    lisbeth_order = lisbeth_order.replace('50',str(fish_profile_data.get('bait_amount')))
+    lisbeth_order = lisbeth_order.replace('Purchase',fish_profile_data.get('bait_type'))
     ET.SubElement(if_not_has_bait_elem, "Lisbeth", IgnoreHome="True", Json=lisbeth_order)
     if fish_profile_data.get('predator') and fish_profile_data.get('predator').get('bait_id') != fish_profile_data.get('bait_id'):
         if_not_has_pred_bait_elem = ET.SubElement(order_elem, "If", condition=f"not HasAtLeast({fish_profile_data.get('predator').get('bait_id')},50)")
@@ -158,6 +159,8 @@ def add_exfish(root_string, fish_profile_data):
         pred_exfish_elem.set('ShuffleFishSpots', 'True')
         pred_exfish_elem.set('ThaliaksFavor', 'True')
         pred_exfish_elem.set('Cordial', 'Auto')
+        if random.random() < sit_percent:
+            pred_exfish_elem.set('Sit', 'True')
         if len(fish_profile_data.get('predator').get('patience_tugs')) > 0:
             pred_exfish_elem.set('Mooch', f"{len(fish_profile_data.get('predator').get('patience_tugs'))}")
             pred_exfish_elem.set('Patience', 'Patience2')
@@ -181,6 +184,8 @@ def add_exfish(root_string, fish_profile_data):
     exfish_elem.set('ShuffleFishSpots', 'True')
     exfish_elem.set('ThaliaksFavor', 'True')
     exfish_elem.set('Cordial', 'Auto')
+    if random.random() < sit_percent:
+        exfish_elem.set('Sit', 'True')
     if len(fish_profile_data.get('patience_tugs')) > 0:
         exfish_elem.set('Mooch', f"{len(fish_profile_data.get('patience_tugs'))}")
         exfish_elem.set('Patience', 'Patience2')

@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Python Discus..." />
 		<If condition="not HasAtLeast(27582,50)">
 			<!--Fruit Worm-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27582,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3059)">
 			<LisbethTravel Area="Lakeland" XYZ="-30.73802, -0.480308, 637.7495" />
@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(33317,&Python_Discus;) and HasAtLeast(27582,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(813, 'Thunderstorms') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(813, TimeSpan.FromHours(-8), 'Thunderstorms')">
-			<ExFish Bait="Fruit Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Fruit Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-27.86252, -0.4972355, 636.3398" Heading="1.897425" />
 					<FishSpot XYZ="-32.49625, -0.4892691, 620.8665" Heading="3.338368" />

@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Glimmerscale..." />
 		<If condition="not HasAtLeast(2594,50)">
 			<!--Butterworm-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(264)">
 			<LisbethTravel Area="Western Thanalan" XYZ="105.2502, 17.53689, 46.49154" />
@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(7714,&Glimmerscale;) and HasAtLeast(2594,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Butterworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Butterworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="106.4375, 17.53689, 44.56209" Heading="2.609307" />
 					<FishSpot XYZ="119.5265, 17.53689, 33.86742" Heading="2.795709" />

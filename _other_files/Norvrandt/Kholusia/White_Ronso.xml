@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: White Ronso..." />
 		<If condition="not HasAtLeast(27589,50)">
 			<!--Baitbugs-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27589,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3070)">
 			<LisbethTravel Area="Kholusia" XYZ="433.7267, 7.458066, 192.0279" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(28926,&White_Ronso;) and HasAtLeast(27589,1) and IsTimeBetween(0,2)">
-			<ExFish Bait="Baitbugs" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Baitbugs" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="433.7267, 7.458066, 192.0279" Heading="0.2806373" />
 					<FishSpot XYZ="451.4574, 3.596465, 222.99" Heading="5.78889" />

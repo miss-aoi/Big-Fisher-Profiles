@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Great Gudgeon..." />
 		<If condition="not HasAtLeast(2588,50)">
 			<!--Crayfish Ball-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2588,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(162)">
 			<LisbethTravel Area="Middle La Noscea" XYZ="-81.77495, 45.11634, -147.0452" />
@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(7688,&Great_Gudgeon;) and HasAtLeast(2588,1)">
-			<ExFish Bait="Crayfish Ball" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Crayfish Ball" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-127.117, 42.0596, -122.7199" Heading="5.410823" />
 					<FishSpot XYZ="-37.02737, 46.38836, -213.9085" Heading="2.39071" />

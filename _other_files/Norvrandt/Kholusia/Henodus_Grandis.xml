@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Henodus Grandis..." />
 		<If condition="not HasAtLeast(27588,50)">
 			<!--Short Bill Minnow-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27588,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3074)">
 			<LisbethTravel Area="Kholusia" XYZ="582.0699, -0.6680323, 612.188" />

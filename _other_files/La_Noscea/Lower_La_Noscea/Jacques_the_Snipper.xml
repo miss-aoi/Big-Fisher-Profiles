@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Jacques the Snipper..." />
 		<If condition="not HasAtLeast(2589,50)">
 			<!--Goby Ball-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2589,'Amount':50,'Enabled':true,'Type':'Culinarian'}]" />
 		</If>
 		<If condition="not IsOnSubMap(337)">
 			<LisbethTravel Area="Lower La Noscea" XYZ="302.41, 8.000681, 709.0742" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7712,&Jacques_the_Snipper;) and HasAtLeast(2589,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,3))">
-			<ExFish Bait="Goby Ball" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Goby Ball" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="293.4721, 8.000008, 698.3556" Heading="2.634873" />
 					<FishSpot XYZ="297.6325, 8.000063, 716.9773" Heading="5.644516" />

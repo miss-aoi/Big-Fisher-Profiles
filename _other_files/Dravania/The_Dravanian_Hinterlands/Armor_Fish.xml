@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Armor Fish..." />
 		<If condition="not HasAtLeast(12705,50)">
 			<!--Purse Web Spider-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12705,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not HasAtLeast(28634,50)">
 			<!--Purse Web Spider-->
@@ -30,7 +30,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(17590,&Armor_Fish;) and HasAtLeast(12705,1) and IsTimeBetween(1,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(399, 'Clear Skies')">
-			<ExFish Bait="Metal Spinner" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Metal Spinner" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-44.38216, 152.3128, 729.8894" Heading="1.498923" />
 					<FishSpot XYZ="-59.0421, 152.3253, 709.8475" Heading="2.389042" />

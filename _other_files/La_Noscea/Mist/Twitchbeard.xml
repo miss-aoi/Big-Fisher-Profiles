@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Twitchbeard..." />
 		<If condition="not HasAtLeast(2596,50)">
 			<!--Spoon Worm-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2596,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(1203)">
 			<LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-81.17178, 18.864, -4.033834" />

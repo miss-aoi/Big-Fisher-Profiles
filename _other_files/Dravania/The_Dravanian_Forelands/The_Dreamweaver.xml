@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: The Dreamweaver..." />
 		<If condition="not HasAtLeast(12711,50)">
 			<!--Brute Leech-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2020)">
 			<LisbethTravel Area="The Dravanian Forelands" XYZ="139.6231, -94.10959, 247.7244" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(15630,&The_Dreamweaver;) and HasAtLeast(12711,1) and (IsTimeBetween(22,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clouds', 'Dust Storms', 'Fog')">
-			<ExFish Bait="Brute Leech" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Brute Leech" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="139.6231, -94.10959, 247.7244" Heading="2.956628" />
 					<FishSpot XYZ="149.6818, -91.39368, 213.1958" Heading="5.978841" />

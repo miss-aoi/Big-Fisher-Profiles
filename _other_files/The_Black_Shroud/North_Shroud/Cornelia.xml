@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Cornelia..." />
 		<If condition="not HasAtLeast(2625,50)">
 			<!--Rainbow Spoon Lure-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2625,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>
 		<If condition="not HasAtLeast(2603,50)">
 			<!--Rainbow Spoon Lure-->

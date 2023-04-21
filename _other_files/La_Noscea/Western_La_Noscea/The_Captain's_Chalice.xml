@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: The Captain's Chalice..." />
 		<If condition="not HasAtLeast(2616,50)">
 			<!--Steel Jig-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2616,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(363)">
 			<LisbethTravel Area="Western La Noscea" XYZ="-249.0802, -42.53819, -307.7516" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7948,&The_Captain's_Chalice;) and HasAtLeast(2616,1) and (IsTimeBetween(23,24) or IsTimeBetween(0,2))">
-			<ExFish Bait="Steel Jig" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Steel Jig" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />

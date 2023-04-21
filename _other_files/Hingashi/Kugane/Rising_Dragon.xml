@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Rising Dragon..." />
 		<If condition="not HasAtLeast(28634,50)">
 			<!--Metal Spinner-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':28634,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2928)">
 			<LisbethTravel Area="Kugane" XYZ="-47.71284, 15.28999, -23.70988" />

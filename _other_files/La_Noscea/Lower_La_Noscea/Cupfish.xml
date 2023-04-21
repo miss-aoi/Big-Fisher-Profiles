@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Cupfish..." />
 		<If condition="not HasAtLeast(2597,50)">
 			<!--Syrphid Basket-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2597,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(202)">
 			<LisbethTravel Area="Lower La Noscea" XYZ="282.0638, 74.05998, -277.2179" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7902,&Cupfish;) and HasAtLeast(2597,1) and IsTimeBetween(17,19)">
-			<ExFish Bait="Syrphid Basket" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Syrphid Basket" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="294.0248, 72.9422, -269.8851" Heading="1.62873" />
 					<FishSpot XYZ="295.4545, 72.94317, -268.3312" Heading="2.072731" />

@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Captain Nemo..." />
 		<If condition="not HasAtLeast(12711,50)">
 			<!--Brute Leech-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2202)">
 			<LisbethTravel Area="Coerthas Western Highlands" XYZ="-12.63069, 90.64453, -557.0477" />
@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(17578,&Captain_Nemo;) and HasAtLeast(12711,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(397, TimeSpan.FromHours(-8), 'Blizzards')">
-			<ExFish Bait="Brute Leech" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Brute Leech" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-23.51305, 88.99787, -555.3638" Heading="4.676697" />
 					<FishSpot XYZ="-33.74816, 89.23457, -571.0184" Heading="0.203069" />

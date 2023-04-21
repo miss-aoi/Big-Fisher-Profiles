@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Bondsplitter..." />
 		<If condition="not HasAtLeast(20619,50)">
 			<!--Suspending Minnow-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20619,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2604)">
 			<LisbethTravel Area="The Peaks" XYZ="-756.8716, 79.85998, -340.8803" />
@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(23060,&Bondsplitter;) and HasAtLeast(20619,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Dust Storms')">
-			<ExFish Bait="Suspending Minnow" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Suspending Minnow" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-749.2921, 78.40405, -326.2978" Heading="0.6973693" />
 					<FishSpot XYZ="-717.9724, 78.40404, -331.6538" Heading="0.7497356" />

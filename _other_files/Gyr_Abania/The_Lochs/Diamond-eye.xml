@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Diamond-eye..." />
 		<If condition="not HasAtLeast(20616,50)">
 			<!--Silkworm-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20616,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2609)">
 			<LisbethTravel Area="The Lochs" XYZ="-178.4802, -0.3, -88.88718" />
@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(23062,&Diamond-eye;) and HasAtLeast(20616,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Clear Skies')">
-			<ExFish Bait="Silkworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Silkworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Medium" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />

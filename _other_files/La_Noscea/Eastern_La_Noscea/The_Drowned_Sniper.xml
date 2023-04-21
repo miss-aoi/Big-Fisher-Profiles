@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: The Drowned Sniper..." />
 		<If condition="not HasAtLeast(2618,50)">
 			<!--Snurble Fly-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2618,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>
 		<If condition="not IsOnSubMap(168)">
 			<LisbethTravel Area="Eastern La Noscea" XYZ="-70.91592, 33.82394, 223.3905" />
@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(7938,&The_Drowned_Sniper;) and HasAtLeast(2618,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Snurble Fly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Snurble Fly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-111.6467, 33.92606, 231.1327" Heading="0.1593609" />
 					<FishSpot XYZ="-55.90533, 33.78047, 223.2611" Heading="4.696387" />

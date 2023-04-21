@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Lale Crab..." />
 		<If condition="not HasAtLeast(36592,50)">
 			<!--Shrimp Ball-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36592,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3880)">
 			<LisbethTravel Area="Thavnair" XYZ="213.2166, 0.7353816, 713.2293" />
@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(37847,&Lale_Crab;) and HasAtLeast(36592,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(957, TimeSpan.FromHours(-8), 'Fog')">
-			<ExFish Bait="Shrimp Ball" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Shrimp Ball" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="216.7248, -0.05152941, 720.3051" Heading="0.9009123" />
 					<FishSpot XYZ="209.3896, -0.06850439, 730.2487" Heading="0.2118552" />

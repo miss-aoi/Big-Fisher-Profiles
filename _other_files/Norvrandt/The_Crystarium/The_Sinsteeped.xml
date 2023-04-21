@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: The Sinsteeped..." />
 		<If condition="not HasAtLeast(27582,50)">
 			<!--Fruit Worm-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27582,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3255)">
 			<LisbethTravel Area="The Crystarium" XYZ="-15.01273, 3.999817, 231.1832" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(30432,&The_Sinsteeped;) and HasAtLeast(27582,1) and IsTimeBetween(22,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(819, 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Fruit Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Fruit Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-12.49402, 3.999817, 232.045" Heading="1.157362" />
 					<FishSpot XYZ="-3.469064, 3.999817, 225.3478" Heading="0.4704006" />

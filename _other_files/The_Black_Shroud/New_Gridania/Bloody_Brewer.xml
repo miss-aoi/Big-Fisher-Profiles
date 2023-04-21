@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Bloody Brewer..." />
 		<If condition="not HasAtLeast(2588,50)">
 			<!--Crayfish Ball-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2588,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(None)">
 			<LisbethTravel Area="Gridania (New Gridania)" XYZ="-17.69501, -3.492352, 9.125766" />
@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(7696,&Bloody_Brewer;) and HasAtLeast(2588,1)">
-			<ExFish Bait="Crayfish Ball" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Crayfish Ball" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-31.86116, -6.293079, -1.112373" Heading="3.290187" />
 					<FishSpot XYZ="-33.74464, -6.278622, -21.16908" Heading="3.18965" />

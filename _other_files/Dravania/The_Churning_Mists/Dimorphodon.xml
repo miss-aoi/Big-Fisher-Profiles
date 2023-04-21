@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Dimorphodon..." />
 		<If condition="not HasAtLeast(12712,50)">
 			<!--Giant Crane Fly-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12712,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2017)">
 			<LisbethTravel Area="The Churning Mists" XYZ="-247.6255, -28.12088, 824.0962" />

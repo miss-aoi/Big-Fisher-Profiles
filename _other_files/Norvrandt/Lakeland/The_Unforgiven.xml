@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: The Unforgiven..." />
 		<If condition="not HasAtLeast(27589,50)">
 			<!--Baitbugs-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27589,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3067)">
 			<LisbethTravel Area="Lakeland" XYZ="-519.2068, -1.595297, 236.8531" />
@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(28067,&The_Unforgiven;) and HasAtLeast(27589,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(813, 'Fog')">
-			<ExFish Bait="Baitbugs" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Baitbugs" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-519.2068, -1.595297, 236.8531" Heading="6.260023" />
 					<FishSpot XYZ="-489.1397, -1.791087, 242.9807" Heading="0.7894893" />

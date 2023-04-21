@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Nabaath Saw..." />
 		<If condition="not HasAtLeast(27586,50)">
 			<!--Jerked Ovim-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27586,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3115)">
 			<LisbethTravel Area="Amh Araeng" XYZ="473.2314, -72.78622, 487.9559" />

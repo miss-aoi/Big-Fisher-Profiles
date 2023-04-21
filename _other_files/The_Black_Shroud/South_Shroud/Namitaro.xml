@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Namitaro..." />
 		<If condition="not HasAtLeast(2624,50)">
 			<!--Topwater Frog-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2624,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>
 		<If condition="not HasAtLeast(2603,50)">
 			<!--Topwater Frog-->
@@ -34,7 +34,7 @@
 					<FishSpot XYZ="528.3615, 14.0166, 140.5807" Heading="2.704321" />
 				</FishSpots>
 			</ExFish>
-			<ExFish Bait="Topwater Frog" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Topwater Frog" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="518.7339, 14.04607, 130.9605" Heading="1.535933" />
 					<FishSpot XYZ="524.8389, 14.08908, 124.3318" Heading="5.889893" />

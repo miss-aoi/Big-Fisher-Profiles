@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Problematicus..." />
 		<If condition="not HasAtLeast(28634,50)">
 			<!--Metal Spinner-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':28634,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not HasAtLeast(12709,50)">
 			<!--Metal Spinner-->

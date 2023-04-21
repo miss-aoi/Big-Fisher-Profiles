@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: The Grinner..." />
 		<If condition="not HasAtLeast(2597,50)">
 			<!--Syrphid Basket-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2597,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(78)">
 			<LisbethTravel Area="South Shroud" XYZ="129.8805, 5.442289, 25.55154" />
@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(7914,&The_Grinner;) and HasAtLeast(2597,1)">
-			<ExFish Bait="Syrphid Basket" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Syrphid Basket" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="141.6422, 4.133486, 23.83754" Heading="1.421836" />
 					<FishSpot XYZ="153.3958, 3.990634, 21.9647" Heading="4.825229" />

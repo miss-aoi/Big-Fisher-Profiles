@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Spearnose..." />
 		<If condition="not HasAtLeast(2607,50)">
 			<!--Caddisfly Larva-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2607,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(0)">
 			<LisbethTravel Area="Ul'dah (Steps of Nald)" XYZ="-147.512, -3.154888, -166.1085" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7919,&Spearnose;) and HasAtLeast(2607,1) and IsTimeBetween(21,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(341, 'Clouds', 'Fog')">
-			<ExFish Bait="Caddisfly Larva" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Caddisfly Larva" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-13.18043, -24.07133, 41.33421" Heading="4.868697" />
 					<FishSpot XYZ="-13.18544, -24.07133, 58.71743" Heading="4.491707" />

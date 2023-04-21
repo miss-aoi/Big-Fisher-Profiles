@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Ndendecki..." />
 		<If condition="not HasAtLeast(2599,50)">
 			<!--Honey Worm-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(275)">
 			<LisbethTravel Area="Western Thanalan" XYZ="-220.5043, 15.77091, -736.3502" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(8765,&Ndendecki;) and HasAtLeast(2599,1) and (IsTimeBetween(18,24) or IsTimeBetween(0,5)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Fog')">
-			<ExFish Bait="Honey Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Honey Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Medium" />

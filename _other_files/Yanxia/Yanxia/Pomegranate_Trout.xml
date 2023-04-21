@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Pomegranate Trout..." />
 		<If condition="not HasAtLeast(20614,50)">
 			<!--Nightcrawler-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20614,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2752)">
 			<LisbethTravel Area="Yanxia" XYZ="631.852, 125.6617, -376.8253" />
@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(24885,&Pomegranate_Trout;) and HasAtLeast(20614,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Rain')">
-			<ExFish Bait="Nightcrawler" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Nightcrawler" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="640.8627, 124.1067, -374.8214" Heading="0.7165961" />
 					<FishSpot XYZ="657.3647, 123.7503, -385.4939" Heading="0.3961546" />

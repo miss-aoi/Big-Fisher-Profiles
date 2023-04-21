@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Mirrorscale..." />
 		<If condition="not HasAtLeast(2592,50)">
 			<!--Midge Basket-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2592,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(168)">
 			<LisbethTravel Area="Eastern La Noscea" XYZ="-242.7072, 44.33062, 512.5338" />

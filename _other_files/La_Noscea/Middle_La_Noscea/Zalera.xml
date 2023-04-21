@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Zalera..." />
 		<If condition="not HasAtLeast(2591,50)">
 			<!--Rat Tail-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2591,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(162)">
 			<LisbethTravel Area="Middle La Noscea" XYZ="-102.2953, 41.2394, 9.037899" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7678,&Zalera;) and HasAtLeast(2591,1) and IsTimeBetween(9,14)">
-			<ExFish Bait="Rat Tail" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Rat Tail" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-117.8397, 38.76151, 31.36633" Heading="0.02024531" />
 					<FishSpot XYZ="-141.294, 40.81226, 9.837191" Heading="5.185024" />

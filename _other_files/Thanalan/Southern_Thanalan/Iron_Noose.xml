@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Iron Noose..." />
 		<If condition="not HasAtLeast(2620,50)">
 			<!--Spinner-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2620,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>
 		<If condition="not IsOnSubMap(257)">
 			<LisbethTravel Area="Southern Thanalan" XYZ="-288.7281, 6.687322, 503.434" />
@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(7929,&Iron_Noose;) and HasAtLeast(2620,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Fog')">
-			<ExFish Bait="Spinner" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Spinner" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-295.7881, 5, 491.6447" Heading="3.627046" />
 					<FishSpot XYZ="-297.7134, 5, 457.9657" Heading="5.541336" />

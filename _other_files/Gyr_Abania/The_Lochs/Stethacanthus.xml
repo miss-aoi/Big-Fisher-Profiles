@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Stethacanthus..." />
 		<If condition="not HasAtLeast(20616,50)">
 			<!--Silkworm-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20616,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2609)">
 			<LisbethTravel Area="The Lochs" XYZ="-178.4802, -0.3, -88.88718" />
@@ -37,7 +37,7 @@
 					<FishSpot XYZ="-197.6503, -0.3, -120.0159" Heading="1.893329" />
 				</FishSpots>
 			</ExFish>
-			<ExFish Bait="Silkworm" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Silkworm" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Medium" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />

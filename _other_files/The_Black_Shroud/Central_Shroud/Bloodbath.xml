@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Bloodbath..." />
 		<If condition="not HasAtLeast(2599,50)">
 			<!--Honey Worm-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(102)">
 			<LisbethTravel Area="Central Shroud" XYZ="-525.0564, 65.06669, 126.0935" />

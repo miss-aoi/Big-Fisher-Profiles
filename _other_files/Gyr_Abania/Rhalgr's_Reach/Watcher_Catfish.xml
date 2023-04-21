@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Watcher Catfish..." />
 		<If condition="not HasAtLeast(20615,50)">
 			<!--Midge Larva-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20615,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(0)">
 			<LisbethTravel Area="Rhalgr's Reach" XYZ="-15.33974, 2.697035, -16.80799" />
@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(24205,&Watcher_Catfish;) and HasAtLeast(20615,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(635, 'Thunder')">
-			<ExFish Bait="Midge Larva" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Midge Larva" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Medium" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />

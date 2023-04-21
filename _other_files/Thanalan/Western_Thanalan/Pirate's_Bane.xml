@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Pirate's Bane..." />
 		<If condition="not HasAtLeast(2585,50)">
 			<!--Lugworm-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2585,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(277)">
 			<LisbethTravel Area="Western Thanalan" XYZ="-532.5146, 55.5936, -736.8478" />
@@ -34,7 +34,7 @@
 					<FishSpot XYZ="-544.7125, 55.05087, -735.2115" Heading="5.597829" />
 				</FishSpots>
 			</ExFish>
-			<ExFish Bait="Lugworm" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Lugworm" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Medium" />

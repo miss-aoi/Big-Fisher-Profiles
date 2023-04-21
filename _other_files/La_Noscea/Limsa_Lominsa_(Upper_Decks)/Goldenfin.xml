@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Goldenfin..." />
 		<If condition="not HasAtLeast(2587,50)">
 			<!--Pill Bug-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2587,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(None)">
 			<LisbethTravel Area="Limsa Lominsa (Upper Decks)" XYZ="19.86234, 40, 76.17139" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7685,&Goldenfin;) and HasAtLeast(2587,1) and IsTimeBetween(9,14)">
-			<ExFish Bait="Pill Bug" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Pill Bug" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="39.98388, 39.99995, 75.70851" Heading="0.08564156" />
 					<FishSpot XYZ="53.64757, 39.99995, 75.66903" Heading="5.981073" />

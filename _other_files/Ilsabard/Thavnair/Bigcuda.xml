@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Bigcuda..." />
 		<If condition="not HasAtLeast(36590,50)">
 			<!--Sky Spoon Lure-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36590,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3892)">
 			<LisbethTravel Area="Thavnair" XYZ="515.6667, 4.408312, 3.336241" />
@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(37848,&Bigcuda;) and HasAtLeast(36590,1) and IsTimeBetween(8,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Rain', 'Showers') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(957, TimeSpan.FromHours(-8), 'Rain', 'Showers')">
-			<ExFish Bait="Sky Spoon Lure" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Sky Spoon Lure" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="515.6667, 4.408312, 3.336241" Heading="5.35565" />
 					<FishSpot XYZ="506.4695, 4.204235, 28.28826" Heading="5.736829" />

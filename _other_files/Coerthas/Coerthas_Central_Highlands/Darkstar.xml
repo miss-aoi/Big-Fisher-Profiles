@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Darkstar..." />
 		<If condition="not HasAtLeast(12704,50)">
 			<!--Stonefly Nymph-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12704,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not HasAtLeast(2610,50)">
 			<!--Stonefly Nymph-->
@@ -30,14 +30,14 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(8769,&Darkstar;) and HasAtLeast(12704,1) and (IsTimeBetween(19,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards', 'Snow')">
-			<ExFish Bait="Chocobo Fly" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Chocobo Fly" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="492.7034, 347.5425, -699.8847" Heading="2.811154" />
 					<FishSpot XYZ="499.6933, 347.5016, -730.2562" Heading="6.04072" />
 					<FishSpot XYZ="507.6468, 347.4637, -710.7338" Heading="3.726404" />
 				</FishSpots>
 			</ExFish>
-			<ExFish Bait="Stonefly Nymph" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Stonefly Nymph" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />

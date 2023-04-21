@@ -14,7 +14,7 @@
 		<Log Message="Starting Fishing: Dream Goby..." />
 		<If condition="not HasAtLeast(2588,50)">
 			<!--Crayfish Ball-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2588,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(249)">
 			<LisbethTravel Area="Central Thanalan" XYZ="122.7786, -0.3588659, -162.882" />
