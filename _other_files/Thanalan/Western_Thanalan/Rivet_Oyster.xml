@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Rivet Oyster (7711)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Rivet_Oyster "1">
+]>
+<Profile>
+	<Name>Rivet Oyster</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Rivet Oyster..." />
+		<If condition="not HasAtLeast(2619,50)">
+			<!--Heavy Steel Jig-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(245)">
+			<LisbethTravel Area="Western Thanalan" XYZ="-470.7941, 23.14964, -456.7296" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7711,&Rivet_Oyster;) and HasAtLeast(2619,1)">
+			<ExFish Bait="Heavy Steel Jig" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-477.1317, 23.16101, -431.7676" Heading="4.869655" />
+					<FishSpot XYZ="-480.5109, 23.4737, -449.4571" Heading="5.020453" />
+					<FishSpot XYZ="-481.6847, 22.5132, -458.5653" Heading="4.712576" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Rivet Oyster" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

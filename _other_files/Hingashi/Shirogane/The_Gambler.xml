@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Gambler (23064)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Gambler "1">
+]>
+<Profile>
+	<Name>The Gambler</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Gambler..." />
+		<If condition="not HasAtLeast(20676,50)">
+			<!--Blue Bobbit-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2845)">
+			<LisbethTravel Area="Shirogane" XYZ="-119.0833, 2.02, 154.4393" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(23064,&The_Gambler;) and HasAtLeast(20676,1)">
+			<ExFish Bait="Blue Bobbit" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-125.8832, 2.019961, 161.1932" Heading="5.460682" />
+					<FishSpot XYZ="-112.8347, 0.6, 161.7038" Heading="1.158793" />
+					<FishSpot XYZ="-111.3883, 0.5999999, 174.3742" Heading="0.126256" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Gambler" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

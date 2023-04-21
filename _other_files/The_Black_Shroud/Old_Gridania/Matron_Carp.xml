@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Matron Carp (7708)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Matron_Carp "1">
+]>
+<Profile>
+	<Name>Matron Carp</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Matron Carp..." />
+		<If condition="not HasAtLeast(2590,50)">
+			<!--Bloodworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(None)">
+			<LisbethTravel Area="Gridania (Old Gridania)" XYZ="180.0303, -2.267064, -243.6821" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(14,15)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7708,&Matron_Carp;) and HasAtLeast(2590,1) and IsTimeBetween(15,21)">
+			<ExFish Bait="Bloodworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="209.9247, -2.58255, -226.1134" Heading="4.714236" />
+					<FishSpot XYZ="210.48, -2.58255, -246.0894" Heading="2.668012" />
+					<FishSpot XYZ="221.3165, -2.582566, -243.9003" Heading="1.537036" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Matron Carp" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

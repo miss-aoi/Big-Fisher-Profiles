@@ -1,0 +1,279 @@
+{
+    "Aetherolectric Guitarfish": {
+        "spot": 252,
+        "weather": [],
+        "transition": [],
+        "during": {
+            "start": 20,
+            "end": 24
+        },
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [[36593]]
+    },
+    "Jumbo Snook": {
+        "spot": 255,
+        "weather": ["Clouds"],
+        "transition": [],
+        "during": {
+            "start": 18,
+            "end": 20
+        },
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [[36591]]
+    },
+    "Earful": {
+        "spot": 260,
+        "weather": [],
+        "transition": [],
+        "during": {
+            "start": 4,
+            "end": 8
+        },
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [[36591]]
+    },
+    "Hippo Frog": {
+        "spot": 264,
+        "weather": ["Shower"],
+        "transition": [],
+        "during": {},
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [[36591]]
+    },
+    "Rimepike": {
+        "spot": 270,
+        "weather": ["Snow"],
+        "transition": [],
+        "during": {},
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [
+            [20675, 36458]
+        ]
+    },
+    "Foun Ahlm": {
+        "spot": 279,
+        "weather": ["Umbral Wind"],
+        "transition": [],
+        "during": {
+            "start": 10,
+            "end": 14
+        },
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [[36595]]
+    },
+    "Forbiddingway": {
+        "spot": 283,
+        "weather": ["Astromagnetic Storm"],
+        "transition": [],
+        "during": {
+            "start": 8,
+            "end": 12
+        },
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [[36597]]
+    },
+    "Greatsword Snook": {
+        "spot": 253,
+        "weather": ["Clouds"],
+        "transition": [],
+        "during": {
+            "start": 16,
+            "end": 20
+        },
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [[36591]]
+    },
+    "Swampsucker Bowfin": {
+        "spot": 257,
+        "weather": ["Clouds"],
+        "transition": [
+            "Clear Skies", "Fair Skies"
+        ],
+        "during": {
+            "start": 8,
+            "end": 16
+        },
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [[36590]]
+    },
+    "Lale Crab": {
+        "spot": 261,
+        "weather": ["Fog"],
+        "transition": [
+            "Clear Skies", "Fair Skies"
+        ],
+        "during": {},
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [[36592]]
+    },
+    "Bigcuda": {
+        "spot": 266,
+        "weather": [
+            "Rain", "Showers"
+        ],
+        "transition": [
+            "Clear Skies", "Fair Skies"
+        ],
+        "during": {
+            "start": 8,
+            "end": 16
+        },
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [[36590]]
+    },
+    "Sovereign Shadow": {
+        "spot": 271,
+        "weather": ["Snow"],
+        "transition": [
+            "Clouds", "Fog"
+        ],
+        "during": {
+            "start": 2,
+            "end": 8
+        },
+        "hookset": "Precision Hookset",
+        "tug": "Light",
+        "baits": [[36591]]
+    },
+    "Disappirarucu": {
+        "spot": 272,
+        "weather": [],
+        "transition": [],
+        "during": {
+            "start": 0,
+            "end": 2
+        },
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [[36591]]
+    },
+    "Starscryer": {
+        "spot": 281,
+        "weather": [],
+        "transition": [],
+        "during": {
+            "start": 2,
+            "end": 4
+        },
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [[36591]]
+    },
+    "Argonauta argo": {
+        "spot": 284,
+        "weather": ["Umbral Wind"],
+        "transition": [],
+        "during": {
+            "start": 2,
+            "end": 4
+        },
+        "hookset": "Precision Hookset",
+        "tug": "Light",
+        "baits": [[36597]]
+    },
+    "Planetes": {
+        "spot": 275,
+        "weather": ["Umbral Wind"],
+        "transition": [],
+        "during": {},
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [
+            [36591, 36478]
+        ]
+    },
+    "Catastrophizer": {
+        "spot": 254,
+        "weather": ["Clear Skies"],
+        "transition": ["Fair Skies"],
+        "during": {
+            "start": 8,
+            "end": 14
+        },
+        "hookset": "Precision Hookset",
+        "tug": "Heavy",
+        "baits": [[36591]]
+    },
+    "Mossgill Salmon": {
+        "spot": 256,
+        "weather": ["Rain"],
+        "transition": ["Clouds"],
+        "during": {},
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [[36590]]
+    },
+    "Vidyutvat Wrasse": {
+        "spot": 263,
+        "weather": ["Clear Skies"],
+        "transition": ["Clouds"],
+        "during": {
+            "start": 20,
+            "end": 24
+        },
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [[36592]]
+    },
+    "Browned Banana Eel": {
+        "spot": 267,
+        "weather": ["Rain"],
+        "transition": [],
+        "during": {
+            "start": 22,
+            "end": 2
+        },
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [[36591]]
+    },
+    "Frozen Regotoise": {
+        "spot": 274,
+        "weather": ["Umbral Wind"],
+        "transition": [],
+        "during": {
+            "start": 10,
+            "end": 13
+        },
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [[36595]]
+    },
+    "Cosmic Haze": {
+        "spot": 278,
+        "weather": ["Astromagnetic Storm"],
+        "transition": [],
+        "during": {
+            "start": 20,
+            "end": 4
+        },
+        "hookset": "Powerful Hookset",
+        "tug": "Heavy",
+        "baits": [
+            [36595, 36489]
+        ]
+    },
+    "Antheian Dahlia": {
+        "spot": 277,
+        "weather": ["Clear Skies"],
+        "transition": ["Clouds"],
+        "during": {
+            "start": 9,
+            "end": 14
+        },
+        "hookset": "Precision Hookset",
+        "tug": "Light",
+        "baits": [[36591]]
+    }
+}

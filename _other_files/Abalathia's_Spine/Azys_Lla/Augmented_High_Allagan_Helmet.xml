@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Augmented High Allagan Helmet (15637)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Augmented_High_Allagan_Helmet "1">
+]>
+<Profile>
+	<Name>Augmented High Allagan Helmet</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Augmented High Allagan Helmet..." />
+		<If condition="not HasAtLeast(12710,50)">
+			<!--Fiend Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2109)">
+			<LisbethTravel Area="Azys Lla" XYZ="-313.474, -160.3186, -513.3138" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(15637,&Augmented_High_Allagan_Helmet;) and HasAtLeast(12710,1)">
+			<ExFish Bait="Fiend Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-313.474, -160.3186, -513.3138" Heading="1.65339" />
+					<FishSpot XYZ="-296.0851, -160.375, -528.8223" Heading="1.182154" />
+					<FishSpot XYZ="-277.6676, -160.375, -501.9133" Heading="0.798882" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Augmented High Allagan Helmet" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

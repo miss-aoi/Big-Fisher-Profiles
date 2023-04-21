@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Unforgiven (28067)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Unforgiven "1">
+]>
+<Profile>
+	<Name>The Unforgiven</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Unforgiven..." />
+		<If condition="not HasAtLeast(27589,50)">
+			<!--Baitbugs-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3067)">
+			<LisbethTravel Area="Lakeland" XYZ="-519.2068, -1.595297, 236.8531" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(28067,&The_Unforgiven;) and HasAtLeast(27589,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(813, 'Fog')">
+			<ExFish Bait="Baitbugs" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-519.2068, -1.595297, 236.8531" Heading="6.260023" />
+					<FishSpot XYZ="-489.1397, -1.791087, 242.9807" Heading="0.7894893" />
+					<FishSpot XYZ="-489.1397, -1.791087, 242.9807" Heading="0.7894893" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Unforgiven" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

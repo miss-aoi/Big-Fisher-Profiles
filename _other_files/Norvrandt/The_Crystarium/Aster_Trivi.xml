@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Aster Trivi (33316)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Aster_Trivi "1">
+]>
+<Profile>
+	<Name>Aster Trivi</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Aster Trivi..." />
+		<If condition="not HasAtLeast(27585,50)">
+			<!--Marble Nymph-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3253)">
+			<LisbethTravel Area="The Crystarium" XYZ="-108.9467, -47.57088, -187.0644" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(21,22)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(33316,&Aster_Trivi;) and HasAtLeast(27585,1) and IsTimeBetween(22,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(819, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(819, TimeSpan.FromHours(-8), 'Clear Skies')">
+			<ExFish Bait="Marble Nymph" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-108.8917, -47.57088, -181.578" Heading="6.242635" />
+					<FishSpot XYZ="-127.6887, -47.53537, -172.758" Heading="0.009716034" />
+					<FishSpot XYZ="-129.2997, -47.4967, -151.2345" Heading="4.399572" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Aster Trivi" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

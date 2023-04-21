@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Cupfish (7902)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Cupfish "1">
+]>
+<Profile>
+	<Name>Cupfish</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Cupfish..." />
+		<If condition="not HasAtLeast(2597,50)">
+			<!--Syrphid Basket-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(202)">
+			<LisbethTravel Area="Lower La Noscea" XYZ="282.0638, 74.05998, -277.2179" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(16,17)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7902,&Cupfish;) and HasAtLeast(2597,1) and IsTimeBetween(17,19)">
+			<ExFish Bait="Syrphid Basket" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="294.0248, 72.9422, -269.8851" Heading="1.62873" />
+					<FishSpot XYZ="295.4545, 72.94317, -268.3312" Heading="2.072731" />
+					<FishSpot XYZ="296.8656, 72.97592, -273.1077" Heading="0.372087" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Cupfish" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

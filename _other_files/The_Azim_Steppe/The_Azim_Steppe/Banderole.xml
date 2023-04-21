@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Banderole (24893)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Banderole "1">
+]>
+<Profile>
+	<Name>Banderole</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Banderole..." />
+		<If condition="not HasAtLeast(20614,50)">
+			<!--Nightcrawler-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2756)">
+			<LisbethTravel Area="The Azim Steppe" XYZ="290.7906, 2.561297, 35.51476" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(-1,0)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(24893,&Banderole;) and HasAtLeast(20614,1) and IsTimeBetween(0,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(622, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(622, TimeSpan.FromHours(-8), 'Fog')">
+			<ExFish Bait="Nightcrawler" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="284.6599, 1.097346, 26.02484" Heading="3.504783" />
+					<FishSpot XYZ="263.931, 1.164645, 24.19918" Heading="4.826347" />
+					<FishSpot XYZ="269.2275, 1.148483, -4.950176" Heading="3.293249" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Banderole" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

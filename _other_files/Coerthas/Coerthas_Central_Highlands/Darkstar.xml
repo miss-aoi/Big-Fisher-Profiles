@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Darkstar (8769)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Darkstar "1">
+]>
+<Profile>
+	<Name>Darkstar</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Darkstar..." />
+		<If condition="not HasAtLeast(12704,50)">
+			<!--Stonefly Nymph-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not HasAtLeast(2610,50)">
+			<!--Stonefly Nymph-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2610,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(392)">
+			<LisbethTravel Area="Coerthas Central Highlands" XYZ="490.8867, 348.5036, -687.0253" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(18,19)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(8769,&Darkstar;) and HasAtLeast(12704,1) and (IsTimeBetween(19,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards', 'Snow')">
+			<ExFish Bait="Chocobo Fly" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="492.7034, 347.5425, -699.8847" Heading="2.811154" />
+					<FishSpot XYZ="499.6933, 347.5016, -730.2562" Heading="6.04072" />
+					<FishSpot XYZ="507.6468, 347.4637, -710.7338" Heading="3.726404" />
+				</FishSpots>
+			</ExFish>
+			<ExFish Bait="Stonefly Nymph" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="492.7034, 347.5425, -699.8847" Heading="2.811154" />
+					<FishSpot XYZ="499.6933, 347.5016, -730.2562" Heading="6.04072" />
+					<FishSpot XYZ="507.6468, 347.4637, -710.7338" Heading="3.726404" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Darkstar" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<If condition="HasAtLeast(5544,1)">
+			<Desynth ItemIds="5544" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Oschon's Print (7680)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Oschon's_Print "1">
+]>
+<Profile>
+	<Name>Oschon's Print</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Oschon's Print..." />
+		<If condition="not HasAtLeast(2589,50)">
+			<!--Goby Ball-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(164)">
+			<LisbethTravel Area="Lower La Noscea" XYZ="249.4097, 38.98185, 242.7699" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7680,&Oschon's_Print;) and HasAtLeast(2589,1)">
+			<ExFish Bait="Goby Ball" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="231.7537, 28.83405, 174.467" Heading="1.45568" />
+					<FishSpot XYZ="242.9352, 29.53038, 199.734" Heading="2.785623" />
+					<FishSpot XYZ="263.9069, 33.51923, 241.1577" Heading="2.400747" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Oschon's Print" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

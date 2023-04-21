@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Argonauta argo (37852)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Argonauta_argo "1">
+]>
+<Profile>
+	<Name>Argonauta argo</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Argonauta argo..." />
+		<If condition="not HasAtLeast(36597,50)">
+			<!--Stardust-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3975)">
+			<LisbethTravel Area="Ultima Thule" XYZ="583.4855, 286.8451, -497.8035" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(1,2)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(37852,&Argonauta_argo;) and HasAtLeast(36597,1) and IsTimeBetween(2,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Umbral Wind')">
+			<ExFish Bait="Stardust" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="591.6626, 287.142, -499.1921" Heading="1.67552" />
+					<FishSpot XYZ="590.0045, 286.6469, -479.0792" Heading="1.325757" />
+					<FishSpot XYZ="587.3627, 286.9947, -513.9117" Heading="2.077666" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Argonauta argo" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

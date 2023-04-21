@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Beguiler Chub (7679)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Beguiler_Chub "1">
+]>
+<Profile>
+	<Name>Beguiler Chub</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Beguiler Chub..." />
+		<If condition="not HasAtLeast(2586,50)">
+			<!--Moth Pupa-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(162)">
+			<LisbethTravel Area="Middle La Noscea" XYZ="30.95881, 42.41599, 36.89365" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(8,9)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7679,&Beguiler_Chub;) and HasAtLeast(2586,1) and IsTimeBetween(9,14)">
+			<ExFish Bait="Moth Pupa" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-6.263493, 42.15689, 54.21851" Heading="5.079866" />
+					<FishSpot XYZ="34.12083, 42.41599, 36.45387" Heading="1.881725" />
+					<FishSpot XYZ="93.79761, 43.03065, 31.39412" Heading="1.598982" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Beguiler Chub" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

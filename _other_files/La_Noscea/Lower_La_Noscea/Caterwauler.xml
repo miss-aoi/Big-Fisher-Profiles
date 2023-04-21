@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Caterwauler (7681)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Caterwauler "1">
+]>
+<Profile>
+	<Name>Caterwauler</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Caterwauler..." />
+		<If condition="not HasAtLeast(2586,50)">
+			<!--Moth Pupa-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(164)">
+			<LisbethTravel Area="Lower La Noscea" XYZ="151.2162, 34.94606, 66.3858" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7681,&Caterwauler;) and HasAtLeast(2586,1)">
+			<ExFish Bait="Moth Pupa" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="118.7678, 36.16429, 20.61327" Heading="3.593841" />
+					<FishSpot XYZ="190.3371, 28.83445, 84.1914" Heading="0.6889129" />
+					<FishSpot XYZ="209.8657, 25.46121, 101.347" Heading="3.606406" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Caterwauler" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

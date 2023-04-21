@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Vidofnir (15633)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Vidofnir "1">
+]>
+<Profile>
+	<Name>Vidofnir</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Vidofnir..." />
+		<If condition="not HasAtLeast(12711,50)">
+			<!--Brute Leech-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2013)">
+			<LisbethTravel Area="The Churning Mists" XYZ="700.6899, -50.2302, 427.8866" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(7,8)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(15633,&Vidofnir;) and HasAtLeast(12711,1) and IsTimeBetween(8,10)">
+			<ExFish Bait="Brute Leech" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="700.6899, -50.2302, 427.8866" Heading="2.677398" />
+					<FishSpot XYZ="729.3427, -50.22274, 423.9734" Heading="3.062758" />
+					<FishSpot XYZ="715.7658, -50.23019, 396.1885" Heading="5.03359" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Vidofnir" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

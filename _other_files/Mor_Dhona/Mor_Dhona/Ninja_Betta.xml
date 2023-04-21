@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Ninja Betta (8761)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Ninja_Betta "1">
+]>
+<Profile>
+	<Name>Ninja Betta</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Ninja Betta..." />
+		<If condition="not HasAtLeast(2614,50)">
+			<!--Crow Fly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(413)">
+			<LisbethTravel Area="Mor Dhona" XYZ="-410.9514, -16.49904, -421.2103" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(17,18)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(8761,&Ninja_Betta;) and HasAtLeast(2614,1) and (IsTimeBetween(18,24) or IsTimeBetween(0,9)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')">
+			<ExFish Bait="Crow Fly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+					<PatienceTug moochLevel="2" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-375.4692, -17.14841, -417.3067" Heading="0.7265582" />
+					<FishSpot XYZ="-392.5934, -17.14841, -463.8953" Heading="3.669184" />
+					<FishSpot XYZ="-393.3831, -17.14841, -428.5468" Heading="2.090004" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Ninja Betta" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

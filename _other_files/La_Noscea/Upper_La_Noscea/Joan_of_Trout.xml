@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Joan of Trout (7904)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Joan_of_Trout "1">
+]>
+<Profile>
+	<Name>Joan of Trout</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Joan of Trout..." />
+		<If condition="not HasAtLeast(2614,50)">
+			<!--Crow Fly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(715)">
+			<LisbethTravel Area="Upper La Noscea" XYZ="-608.467, -3.4, -27.02126" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(3,4)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7904,&Joan_of_Trout;) and HasAtLeast(2614,1) and IsTimeBetween(4,6)">
+			<ExFish Bait="Crow Fly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-583.9859, -3.4, -45.61539" Heading="4.04835" />
+					<FishSpot XYZ="-608.6689, -3.4, -30.51702" Heading="3.187551" />
+					<FishSpot XYZ="-638.4596, -3.4, -35.60034" Heading="0.2826598" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Joan of Trout" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

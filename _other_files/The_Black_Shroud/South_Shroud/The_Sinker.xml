@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Sinker (7921)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Sinker "1">
+]>
+<Profile>
+	<Name>The Sinker</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Sinker..." />
+		<If condition="not HasAtLeast(2617,50)">
+			<!--Sinking Minnow-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(78)">
+			<LisbethTravel Area="South Shroud" XYZ="-74.81721, 0.2927306, 71.52535" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(20,21)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7921,&The_Sinker;) and HasAtLeast(2617,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Clear Skies', 'Fair Skies')">
+			<ExFish Bait="Sinking Minnow" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-81.05979, -0.2929443, 47.26386" Heading="6.027212" />
+					<FishSpot XYZ="-82.48419, -0.2808959, 67.98672" Heading="4.389839" />
+					<FishSpot XYZ="-97.30055, -0.1951752, 70.05416" Heading="2.724793" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Sinker" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

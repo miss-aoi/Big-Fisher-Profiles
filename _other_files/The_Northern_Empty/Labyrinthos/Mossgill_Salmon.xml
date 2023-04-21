@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Mossgill Salmon (38831)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Mossgill_Salmon "1">
+]>
+<Profile>
+	<Name>Mossgill Salmon</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Mossgill Salmon..." />
+		<If condition="not HasAtLeast(36590,50)">
+			<!--Sky Spoon Lure-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3841)">
+			<LisbethTravel Area="Labyrinthos" XYZ="-183.2765, 78.46773, -691.5447" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(38831,&Mossgill_Salmon;) and HasAtLeast(36590,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(956, 'Rain') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(956, TimeSpan.FromHours(-8), 'Rain')">
+			<ExFish Bait="Sky Spoon Lure" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-183.2765, 78.46773, -691.5447" Heading="0.2429528" />
+					<FishSpot XYZ="-187.1021, 78.46772, -669.6534" Heading="0.5759552" />
+					<FishSpot XYZ="-171.1784, 78.46773, -663.64" Heading="3.275625" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Mossgill Salmon" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

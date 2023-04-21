@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Cosmic Haze (38835)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Cosmic_Haze "1">
+]>
+<Profile>
+	<Name>Cosmic Haze</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Cosmic Haze..." />
+		<If condition="not HasAtLeast(36595,50)">
+			<!--Chimera Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3970)">
+			<LisbethTravel Area="Ultima Thule" XYZ="-49.45981, 59.963, 770.6264" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(19,20)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(38835,&Cosmic_Haze;) and HasAtLeast(36595,1) and (IsTimeBetween(20,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Astromagnetic Storm')">
+			<ExFish Bait="Chimera Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Medium" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-49.45981, 59.963, 770.6264" Heading="1.842928" />
+					<FishSpot XYZ="-21.49617, 59.96301, 765.451" Heading="4.207498" />
+					<FishSpot XYZ="-47.78304, 59.96301, 740.5374" Heading="5.72386" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Cosmic Haze" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

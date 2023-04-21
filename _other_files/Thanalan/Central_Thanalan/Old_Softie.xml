@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Old Softie (7703)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Old_Softie "1">
+]>
+<Profile>
+	<Name>Old Softie</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Old Softie..." />
+		<If condition="not HasAtLeast(2590,50)">
+			<!--Bloodworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(249)">
+			<LisbethTravel Area="Central Thanalan" XYZ="367.2905, -20.87379, 8.175356" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(16,17)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7703,&Old_Softie;) and HasAtLeast(2590,1) and IsTimeBetween(17,21)">
+			<ExFish Bait="Bloodworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="342.5189, -18.55594, 16.56027" Heading="0.1498213" />
+					<FishSpot XYZ="370.7016, -22.94275, 13.6297" Heading="0.926841" />
+					<FishSpot XYZ="387.3842, -21.66257, -0.4775881" Heading="0.9289355" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Old Softie" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

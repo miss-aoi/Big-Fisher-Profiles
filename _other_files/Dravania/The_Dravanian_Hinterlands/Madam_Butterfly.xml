@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Madam Butterfly (16748)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Madam_Butterfly "1">
+]>
+<Profile>
+	<Name>Madam Butterfly</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Madam Butterfly..." />
+		<If condition="not HasAtLeast(12705,50)">
+			<!--Purse Web Spider-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2052)">
+			<LisbethTravel Area="The Dravanian Hinterlands" XYZ="-501.7314, 146.8684, 68.26116" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(20,21)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(16748,&Madam_Butterfly;) and HasAtLeast(12705,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(399, 'Clear Skies')">
+			<ExFish Bait="Purse Web Spider" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-501.7314, 146.8684, 68.26116" Heading="4.707539" />
+					<FishSpot XYZ="-534.8014, 146.8684, 53.24374" Heading="4.839485" />
+					<FishSpot XYZ="-548.5343, 146.8684, 91.87321" Heading="1.454943" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Madam Butterfly" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

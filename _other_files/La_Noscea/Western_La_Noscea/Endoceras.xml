@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Endoceras (8756)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Endoceras "1">
+]>
+<Profile>
+	<Name>Endoceras</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Endoceras..." />
+		<If condition="not HasAtLeast(2596,50)">
+			<!--Spoon Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(228)">
+			<LisbethTravel Area="Western La Noscea" XYZ="-464.1351, -38.0391, 737.9131" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(19,20)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(8756,&Endoceras;) and HasAtLeast(2596,1) and (IsTimeBetween(20,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clouds', 'Fog', 'Wind') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(-8), 'Clouds', 'Fog', 'Wind')">
+			<ExFish Bait="Spoon Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-453.0573, -37.94336, 745.8951" Heading="0.1122043" />
+					<FishSpot XYZ="-475.5448, -38.35024, 768.3134" Heading="6.152446" />
+					<FishSpot XYZ="-490.0315, -37.92073, 761.21" Heading="5.404744" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Endoceras" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

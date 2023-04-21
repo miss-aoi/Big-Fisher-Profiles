@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Greatest Bream in the World (7909)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Greatest_Bream_in_the_World "1">
+]>
+<Profile>
+	<Name>The Greatest Bream in the World</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Greatest Bream in the World..." />
+		<If condition="not HasAtLeast(2613,50)">
+			<!--Shrimp Cage Feeder-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(216)">
+			<LisbethTravel Area="Eastern La Noscea" XYZ="535.896, 8.662354, 619.4787" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(19,20)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7909,&The_Greatest_Bream_in_the_World;) and HasAtLeast(2613,1) and IsTimeBetween(20,23)">
+			<ExFish Bait="Shrimp Cage Feeder" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="518.6304, 8.678953, 675.7701" Heading="6.229812" />
+					<FishSpot XYZ="524.1935, 8.669197, 646.7106" Heading="0.958216" />
+					<FishSpot XYZ="535.7999, 8.662571, 619.3949" Heading="0.8534974" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Greatest Bream in the World" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

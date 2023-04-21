@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Olgoi-Khorkhoi (7930)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Olgoi-Khorkhoi "1">
+]>
+<Profile>
+	<Name>Olgoi-Khorkhoi</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Olgoi-Khorkhoi..." />
+		<If condition="not HasAtLeast(2600,50)">
+			<!--Sand Leech-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(257)">
+			<LisbethTravel Area="Southern Thanalan" XYZ="245.9949, 4.166918, 800.4512" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7930,&Olgoi-Khorkhoi;) and HasAtLeast(2600,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves')">
+			<ExFish Bait="Sand Leech" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Medium" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="206.0338, 1.959864, 780.3409" Heading="2.950645" />
+					<FishSpot XYZ="240.4931, 3.435918, 786.8776" Heading="3.550628" />
+					<FishSpot XYZ="259.4739, 3.068014, 785.2675" Heading="3.211339" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Olgoi-Khorkhoi" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

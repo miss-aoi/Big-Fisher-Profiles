@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Stormdancer (7713)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Stormdancer "1">
+]>
+<Profile>
+	<Name>Stormdancer</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Stormdancer..." />
+		<If condition="not HasAtLeast(2601,50)">
+			<!--Stem Borer-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(None)">
+			<LisbethTravel Area="Gridania (New Gridania)" XYZ="71.02061, -7.759192, 107.6301" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(16,17)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7713,&Stormdancer;) and HasAtLeast(2601,1) and (IsTimeBetween(17,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(132, 'Rain', 'Snow')">
+			<ExFish Bait="Stem Borer" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="114.95, -14.79039, 147.9822" Heading="5.444788" />
+					<FishSpot XYZ="124.2217, -15.07236, 160.4096" Heading="5.411275" />
+					<FishSpot XYZ="131.1351, -14.69595, 166.3251" Heading="5.595587" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Stormdancer" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

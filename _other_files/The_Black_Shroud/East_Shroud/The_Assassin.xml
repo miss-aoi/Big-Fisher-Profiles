@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Assassin (7907)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Assassin "1">
+]>
+<Profile>
+	<Name>The Assassin</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Assassin..." />
+		<If condition="not HasAtLeast(2594,50)">
+			<!--Butterworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(112)">
+			<LisbethTravel Area="East Shroud" XYZ="-215.3548, 54.82919, -190.1448" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(20,21)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7907,&The_Assassin;) and HasAtLeast(2594,1) and IsTimeBetween(21,23)">
+			<ExFish Bait="Butterworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-223.3734, 49.57124, -231.3031" Heading="1.602116" />
+					<FishSpot XYZ="-230.0043, 49.57919, -214.4796" Heading="3.313233" />
+					<FishSpot XYZ="-240.2707, 49.57919, -228.8123" Heading="4.641082" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Assassin" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

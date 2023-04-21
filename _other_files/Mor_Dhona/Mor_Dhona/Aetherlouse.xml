@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Aetherlouse (7951)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Aetherlouse "1">
+]>
+<Profile>
+	<Name>Aetherlouse</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Aetherlouse..." />
+		<If condition="not HasAtLeast(2603,50)">
+			<!--Glowworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(410)">
+			<LisbethTravel Area="Mor Dhona" XYZ="146.9707, -28.29212, -431.3828" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(2,3)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7951,&Aetherlouse;) and HasAtLeast(2603,1) and IsTimeBetween(3,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')">
+			<ExFish Bait="Glowworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="143.8184, -28.36775, -427.127" Heading="0.1438355" />
+					<FishSpot XYZ="166.1766, -28.29997, -426.6662" Heading="0.5941291" />
+					<FishSpot XYZ="197.2962, -28.24627, -422.0775" Heading="0.1082254" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Aetherlouse" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

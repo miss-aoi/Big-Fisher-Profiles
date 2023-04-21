@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Junkmonger (7684)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Junkmonger "1">
+]>
+<Profile>
+	<Name>Junkmonger</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Junkmonger..." />
+		<If condition="not HasAtLeast(2585,50)">
+			<!--Lugworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(223)">
+			<LisbethTravel Area="Western La Noscea" XYZ="213.9494, -36.40361, 310.5599" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(15,16)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7684,&Junkmonger;) and HasAtLeast(2585,1) and (IsTimeBetween(16,24) or IsTimeBetween(0,2))">
+			<ExFish Bait="Lugworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+					<PatienceTug moochLevel="2" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="203.27, -36.35403, 319.2234" Heading="5.066688" />
+					<FishSpot XYZ="213.7068, -36.35404, 333.0986" Heading="0.04436111" />
+					<FishSpot XYZ="223.5448, -36.35364, 333.0395" Heading="6.237484" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Junkmonger" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

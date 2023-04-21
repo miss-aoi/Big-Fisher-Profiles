@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Unconditional (24995)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Unconditional "1">
+]>
+<Profile>
+	<Name>The Unconditional</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Unconditional..." />
+		<If condition="not HasAtLeast(20675,50)">
+			<!--Stonefly Larva-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2842)">
+			<LisbethTravel Area="The Azim Steppe" XYZ="-406.8679, 2.301703, 595.6713" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(4,5)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(24995,&The_Unconditional;) and HasAtLeast(20675,1) and IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(622, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(622, TimeSpan.FromHours(-8), 'Clear Skies')">
+			<ExFish Bait="Stonefly Larva" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-414.9601, 1.498228, 598.4959" Heading="4.981417" />
+					<FishSpot XYZ="-440.6925, 1.448226, 608.5067" Heading="3.871379" />
+					<FishSpot XYZ="-454.2392, 1.464812, 576.8029" Heading="0.5182528" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Unconditional" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

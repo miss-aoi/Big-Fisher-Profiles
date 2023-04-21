@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Glimmerscale (7714)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Glimmerscale "1">
+]>
+<Profile>
+	<Name>Glimmerscale</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Glimmerscale..." />
+		<If condition="not HasAtLeast(2594,50)">
+			<!--Butterworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(264)">
+			<LisbethTravel Area="Western Thanalan" XYZ="105.2502, 17.53689, 46.49154" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7714,&Glimmerscale;) and HasAtLeast(2594,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Clear Skies', 'Fair Skies')">
+			<ExFish Bait="Butterworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="106.4375, 17.53689, 44.56209" Heading="2.609307" />
+					<FishSpot XYZ="119.5265, 17.53689, 33.86742" Heading="2.795709" />
+					<FishSpot XYZ="124.6305, 17.53689, 6.207276" Heading="6.182345" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Glimmerscale" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

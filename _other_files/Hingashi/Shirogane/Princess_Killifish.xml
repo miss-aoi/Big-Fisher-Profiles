@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Princess Killifish (24213)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Princess_Killifish "1">
+]>
+<Profile>
+	<Name>Princess Killifish</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Princess Killifish..." />
+		<If condition="not HasAtLeast(20614,50)">
+			<!--Nightcrawler-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(1899)">
+			<LisbethTravel Area="Shirogane" XYZ="-33.41357, 20, 12.04718" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(3,4)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(24213,&Princess_Killifish;) and HasAtLeast(20614,1) and IsTimeBetween(4,6)">
+			<ExFish Bait="Nightcrawler" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-38.1795, 20, 12.21121" Heading="5.575874" />
+					<FishSpot XYZ="-45.9562, 20.05, -1.787092" Heading="2.19133" />
+					<FishSpot XYZ="-23.50421, 20.04999, 12.31686" Heading="2.394487" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Princess Killifish" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

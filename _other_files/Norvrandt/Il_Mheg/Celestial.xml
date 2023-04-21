@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Celestial (33322)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Celestial "1">
+]>
+<Profile>
+	<Name>Celestial</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Celestial..." />
+		<If condition="not HasAtLeast(27589,50)">
+			<!--Baitbugs-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3146)">
+			<LisbethTravel Area="Il Mheg" XYZ="488.279, 151.9619, 59.71838" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(6,7)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(33322,&Celestial;) and HasAtLeast(27589,1) and IsTimeBetween(7,17) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(816, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(816, TimeSpan.FromHours(-8), 'Clear Skies')">
+			<ExFish Bait="Baitbugs" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="493.1508, 147.6246, 66.05174" Heading="0.3041556" />
+					<FishSpot XYZ="489.7285, 147.4722, 77.5322" Heading="5.26159" />
+					<FishSpot XYZ="502.6151, 147.4069, 53.75781" Heading="5.808232" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Celestial" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

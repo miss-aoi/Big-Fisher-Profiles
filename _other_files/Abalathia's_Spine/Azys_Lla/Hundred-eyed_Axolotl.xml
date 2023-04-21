@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Hundred-eyed Axolotl (16753)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Hundred-eyed_Axolotl "1">
+]>
+<Profile>
+	<Name>Hundred-eyed Axolotl</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Hundred-eyed Axolotl..." />
+		<If condition="not HasAtLeast(12705,50)">
+			<!--Purse Web Spider-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2112)">
+			<LisbethTravel Area="Azys Lla" XYZ="-729.2505, -47.36447, 579.8774" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(5,6)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(16753,&Hundred-eyed_Axolotl;) and HasAtLeast(12705,1) and IsTimeBetween(6,10)">
+			<ExFish Bait="Purse Web Spider" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-729.2505, -47.36447, 579.8774" Heading="5.467196" />
+					<FishSpot XYZ="-728.1754, -46.50059, 613.9347" Heading="0.1914086" />
+					<FishSpot XYZ="-763.56, -40.27856, 618.3411" Heading="4.734163" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Hundred-eyed Axolotl" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Magic Carpet (7931)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Magic_Carpet "1">
+]>
+<Profile>
+	<Name>Magic Carpet</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Magic Carpet..." />
+		<If condition="not HasAtLeast(2600,50)">
+			<!--Sand Leech-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(257)">
+			<LisbethTravel Area="Southern Thanalan" XYZ="-429.0695, -0.4089584, 736.3172" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(8,9)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7931,&Magic_Carpet;) and HasAtLeast(2600,1) and IsTimeBetween(9,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves')">
+			<ExFish Bait="Sand Leech" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Medium" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-441.4117, -0.9107453, 742.5688" Heading="4.968235" />
+					<FishSpot XYZ="-442.3548, -0.9186811, 725.9896" Heading="4.513752" />
+					<FishSpot XYZ="-445.7262, -1.34148, 700.6635" Heading="4.254045" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Magic Carpet" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

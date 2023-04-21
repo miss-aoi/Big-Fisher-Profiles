@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Soul of the Martyr (15634)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Soul_of_the_Martyr "1">
+]>
+<Profile>
+	<Name>The Soul of the Martyr</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Soul of the Martyr..." />
+		<If condition="not HasAtLeast(12712,50)">
+			<!--Giant Crane Fly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2014)">
+			<LisbethTravel Area="The Churning Mists" XYZ="340.6711, -32.70529, 127.3335" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(3,4)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(15634,&The_Soul_of_the_Martyr;) and HasAtLeast(12712,1) and IsTimeBetween(4,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Clear Skies', 'Fair Skies')">
+			<ExFish Bait="Giant Crane Fly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="335.211, -33.53859, 136.1184" Heading="0.4070821" />
+					<FishSpot XYZ="354.5157, -27.71697, 130.5761" Heading="0.2374353" />
+					<FishSpot XYZ="371.0076, -24.35324, 132.0326" Heading="6.214839" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Soul of the Martyr" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

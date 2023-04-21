@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Bloody Brewer (7696)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Bloody_Brewer "1">
+]>
+<Profile>
+	<Name>Bloody Brewer</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Bloody Brewer..." />
+		<If condition="not HasAtLeast(2588,50)">
+			<!--Crayfish Ball-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(None)">
+			<LisbethTravel Area="Gridania (New Gridania)" XYZ="-17.69501, -3.492352, 9.125766" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7696,&Bloody_Brewer;) and HasAtLeast(2588,1)">
+			<ExFish Bait="Crayfish Ball" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-31.86116, -6.293079, -1.112373" Heading="3.290187" />
+					<FishSpot XYZ="-33.74464, -6.278622, -21.16908" Heading="3.18965" />
+					<FishSpot XYZ="-35.39588, -8.127698, 24.24189" Heading="5.340596" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Bloody Brewer" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

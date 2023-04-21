@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Golden Pipira (33324)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Golden_Pipira "1">
+]>
+<Profile>
+	<Name>Golden Pipira</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Golden Pipira..." />
+		<If condition="not HasAtLeast(27587,50)">
+			<!--Robber Ball-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3183)">
+			<LisbethTravel Area="The Rak'tika Greatwood" XYZ="168.7025, -28.21481, 717.1523" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(5,6)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(33324,&Golden_Pipira;) and HasAtLeast(27587,1) and IsTimeBetween(6,7)">
+			<ExFish Bait="Robber Ball" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="168.7025, -28.21481, 717.1523" Heading="0.9555283" />
+					<FishSpot XYZ="195.6436, -28.21481, 717.3579" Heading="0.9303937" />
+					<FishSpot XYZ="166.5184, -28.21481, 746.852" Heading="6.227125" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Golden Pipira" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

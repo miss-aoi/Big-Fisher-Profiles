@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Listracanthus (33239)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Listracanthus "1">
+]>
+<Profile>
+	<Name>Listracanthus</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Listracanthus..." />
+		<If condition="not HasAtLeast(27589,50)">
+			<!--Baitbugs-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3068)">
+			<LisbethTravel Area="Lakeland" XYZ="-573.1496, 1.045666, 812.4247" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(15,16)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(33239,&Listracanthus;) and HasAtLeast(27589,1) and IsTimeBetween(16,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(813, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(813, TimeSpan.FromHours(-8), 'Fog')">
+			<ExFish Bait="Baitbugs" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Heavy" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-566.6547, -0.4500181, 818.3839" Heading="1.575036" />
+					<FishSpot XYZ="-571.9924, -1.495782, 808.0778" Heading="2.500757" />
+					<FishSpot XYZ="-614.087, 24.85095, 780.8807" Heading="2.513321" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Listracanthus" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

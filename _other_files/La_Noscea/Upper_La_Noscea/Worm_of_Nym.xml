@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Worm of Nym (7916)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Worm_of_Nym "1">
+]>
+<Profile>
+	<Name>Worm of Nym</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Worm of Nym..." />
+		<If condition="not HasAtLeast(2594,50)">
+			<!--Butterworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(177)">
+			<LisbethTravel Area="Upper La Noscea" XYZ="601.1978, -3.052744, 152.88" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(18,19)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7916,&Worm_of_Nym;) and HasAtLeast(2594,1) and IsTimeBetween(19,22)">
+			<ExFish Bait="Butterworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="569.3752, -3.4, 161.3159" Heading="1.647109" />
+					<FishSpot XYZ="572.0908, -3.4, 139.9327" Heading="2.901653" />
+					<FishSpot XYZ="589.8738, -3.4, 163.6648" Heading="5.289258" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Worm of Nym" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

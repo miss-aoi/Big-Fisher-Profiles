@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Bronze Sole (28068)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Bronze_Sole "1">
+]>
+<Profile>
+	<Name>Bronze Sole</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Bronze Sole..." />
+		<If condition="not HasAtLeast(27585,50)">
+			<!--Marble Nymph-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3070)">
+			<LisbethTravel Area="Kholusia" XYZ="46.32222, 15.08298, 287.0822" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(28068,&Bronze_Sole;) and HasAtLeast(27585,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Rain')">
+			<ExFish Bait="Marble Nymph" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="35.34202, 14.3387, 288.2809" Heading="3.782456" />
+					<FishSpot XYZ="18.07362, 12.52085, 297.0688" Heading="3.552073" />
+					<FishSpot XYZ="49.3438, 15.15893, 274.0573" Heading="4.444291" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Bronze Sole" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Maru Crab (33326)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Maru_Crab "1">
+]>
+<Profile>
+	<Name>Maru Crab</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Maru Crab..." />
+		<If condition="not HasAtLeast(27588,50)">
+			<!--Short Bill Minnow-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3202)">
+			<LisbethTravel Area="The Tempest" XYZ="-771.5961, 83.13901, -415.6524" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(15,16)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(33326,&Maru_Crab;) and HasAtLeast(27588,1) and IsTimeBetween(16,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds')">
+			<ExFish Bait="Short Bill Minnow" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-771.5961, 83.13901, -415.6524" Heading="4.604672" />
+					<FishSpot XYZ="-792.961, 83.13901, -413.6188" Heading="5.566009" />
+					<FishSpot XYZ="-746.6172, 83.13901, -413.8898" Heading="5.896914" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Maru Crab" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

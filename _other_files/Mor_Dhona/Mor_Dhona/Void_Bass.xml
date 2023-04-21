@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Void Bass (8759)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Void_Bass "1">
+]>
+<Profile>
+	<Name>Void Bass</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Void Bass..." />
+		<If condition="not HasAtLeast(2603,50)">
+			<!--Glowworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(414)">
+			<LisbethTravel Area="Mor Dhona" XYZ="-126.2753, 47.11922, -187.6791" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(8759,&Void_Bass;) and HasAtLeast(2603,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(156, TimeSpan.FromHours(-8), 'Gloom')">
+			<ExFish Bait="Glowworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-118.8273, 45.77808, -185.7387" Heading="1.138674" />
+					<FishSpot XYZ="-124.9568, 45.90577, -198.8519" Heading="2.386933" />
+					<FishSpot XYZ="-136.5102, 42.86941, -207.1343" Heading="2.548199" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Void Bass" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

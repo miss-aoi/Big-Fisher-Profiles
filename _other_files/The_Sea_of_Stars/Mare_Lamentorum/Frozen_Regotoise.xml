@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Frozen Regotoise (38834)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Frozen_Regotoise "1">
+]>
+<Profile>
+	<Name>Frozen Regotoise</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Frozen Regotoise..." />
+		<If condition="not HasAtLeast(36595,50)">
+			<!--Chimera Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3957)">
+			<LisbethTravel Area="Mare Lamentorum" XYZ="45.90171, 21.80864, 480.878" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(9,10)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(38834,&Frozen_Regotoise;) and HasAtLeast(36595,1) and IsTimeBetween(10,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(959, 'Umbral Wind')">
+			<ExFish Bait="Chimera Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="43.34983, 21.62704, 487.9487" Heading="0.004192829" />
+					<FishSpot XYZ="30.0364, 21.6996, 481.8654" Heading="5.016106" />
+					<FishSpot XYZ="60.7585, 22.10233, 489.4062" Heading="0.2157521" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Frozen Regotoise" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

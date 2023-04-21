@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Goldenfin (7685)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Goldenfin "1">
+]>
+<Profile>
+	<Name>Goldenfin</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Goldenfin..." />
+		<If condition="not HasAtLeast(2587,50)">
+			<!--Pill Bug-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(None)">
+			<LisbethTravel Area="Limsa Lominsa (Upper Decks)" XYZ="19.86234, 40, 76.17139" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(8,9)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7685,&Goldenfin;) and HasAtLeast(2587,1) and IsTimeBetween(9,14)">
+			<ExFish Bait="Pill Bug" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="39.98388, 39.99995, 75.70851" Heading="0.08564156" />
+					<FishSpot XYZ="53.64757, 39.99995, 75.66903" Heading="5.981073" />
+					<FishSpot XYZ="58.56662, 39.99997, 70.25841" Heading="2.929538" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Goldenfin" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

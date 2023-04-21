@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Drepanaspis (24991)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Drepanaspis "1">
+]>
+<Profile>
+	<Name>Drepanaspis</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Drepanaspis..." />
+		<If condition="not HasAtLeast(20619,50)">
+			<!--Suspending Minnow-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2604)">
+			<LisbethTravel Area="The Peaks" XYZ="-756.8716, 79.85998, -340.8803" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(24991,&Drepanaspis;) and HasAtLeast(20619,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Dust Storms')">
+			<ExFish Bait="Suspending Minnow" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-749.2921, 78.40405, -326.2978" Heading="0.6973693" />
+					<FishSpot XYZ="-717.9724, 78.40404, -331.6538" Heading="0.7497356" />
+					<FishSpot XYZ="-725.8512, 78.40405, -304.4441" Heading="4.054691" />
+				</FishSpots>
+			</ExFish>
+			<ExFish Bait="Suspending Minnow" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-749.2921, 78.40405, -326.2978" Heading="0.6973693" />
+					<FishSpot XYZ="-717.9724, 78.40404, -331.6538" Heading="0.7497356" />
+					<FishSpot XYZ="-725.8512, 78.40405, -304.4441" Heading="4.054691" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Drepanaspis" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<If condition="HasAtLeast(23060,1)">
+			<Desynth ItemIds="23060" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

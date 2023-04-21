@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Opal Shrimp (30439)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Opal_Shrimp "1">
+]>
+<Profile>
+	<Name>Opal Shrimp</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Opal Shrimp..." />
+		<If condition="not HasAtLeast(27590,50)">
+			<!--Squid Strip-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3192)">
+			<LisbethTravel Area="The Tempest" XYZ="338.1316, 231.6881, -323.2393" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(17,18)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(30439,&Opal_Shrimp;) and HasAtLeast(27590,1) and IsTimeBetween(18,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clear Skies')">
+			<ExFish Bait="Squid Strip" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="338.1316, 231.6881, -323.2393" Heading="1.166595" />
+					<FishSpot XYZ="343.39, 231.6881, -300.0095" Heading="0.9005857" />
+					<FishSpot XYZ="369.9417, 231.6881, -313.2129" Heading="2.994984" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Opal Shrimp" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

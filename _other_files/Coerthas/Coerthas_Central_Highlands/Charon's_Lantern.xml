@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Charon's Lantern (7933)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Charon's_Lantern "1">
+]>
+<Profile>
+	<Name>Charon's Lantern</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Charon's Lantern..." />
+		<If condition="not HasAtLeast(2603,50)">
+			<!--Glowworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(398)">
+			<LisbethTravel Area="Coerthas Central Highlands" XYZ="-451.1668, 285.7495, 108.6161" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(21,22)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7933,&Charon's_Lantern;) and HasAtLeast(2603,1) and (IsTimeBetween(22,24) or IsTimeBetween(0,4))">
+			<ExFish Bait="Glowworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-420.8456, 277.5037, 82.97137" Heading="4.029955" />
+					<FishSpot XYZ="-432.0216, 280.996, 94.30849" Heading="3.583848" />
+					<FishSpot XYZ="-449.4667, 283.0526, 97.06876" Heading="2.553407" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Charon's Lantern" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

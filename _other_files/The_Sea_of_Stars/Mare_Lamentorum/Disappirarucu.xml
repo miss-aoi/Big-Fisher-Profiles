@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Disappirarucu (37850)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Disappirarucu "1">
+]>
+<Profile>
+	<Name>Disappirarucu</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Disappirarucu..." />
+		<If condition="not HasAtLeast(36591,50)">
+			<!--Mayfly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3969)">
+			<LisbethTravel Area="Mare Lamentorum" XYZ="577.8911, -162.0345, -453.155" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(-1,0)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(37850,&Disappirarucu;) and HasAtLeast(36591,1) and IsTimeBetween(0,2)">
+			<ExFish Bait="Mayfly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="577.8911, -162.0345, -453.155" Heading="0.7853971" />
+					<FishSpot XYZ="598.0316, -162.0345, -447.8343" Heading="1.239881" />
+					<FishSpot XYZ="583.6926, -162.0345, -416.7118" Heading="5.550147" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Disappirarucu" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

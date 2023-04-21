@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Starscryer (37851)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Starscryer "1">
+]>
+<Profile>
+	<Name>Starscryer</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Starscryer..." />
+		<If condition="not HasAtLeast(36591,50)">
+			<!--Mayfly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3976)">
+			<LisbethTravel Area="Ultima Thule" XYZ="-364.1135, 266.818, -479.3374" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(1,2)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(37851,&Starscryer;) and HasAtLeast(36591,1) and IsTimeBetween(2,4)">
+			<ExFish Bait="Mayfly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-361.3567, 263.0327, -485.6256" Heading="3.077813" />
+					<FishSpot XYZ="-348.2276, 262.8528, -485.2868" Heading="2.579345" />
+					<FishSpot XYZ="-334.2025, 262.9309, -487.0633" Heading="3.121793" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Starscryer" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Lone Ripper (7926)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Lone_Ripper "1">
+]>
+<Profile>
+	<Name>The Lone Ripper</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Lone Ripper..." />
+		<If condition="not HasAtLeast(2619,50)">
+			<!--Heavy Steel Jig-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(945)">
+			<LisbethTravel Area="Western La Noscea" XYZ="-228.1734, -41.15087, 27.03734" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7926,&The_Lone_Ripper;) and HasAtLeast(2619,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Gales')">
+			<ExFish Bait="Heavy Steel Jig" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-241.2194, -42.11089, 44.17156" Heading="4.514718" />
+					<FishSpot XYZ="-244.774, -42.1517, 16.95212" Heading="4.160766" />
+					<FishSpot XYZ="-248.0168, -42.18903, 54.60107" Heading="4.250824" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Lone Ripper" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

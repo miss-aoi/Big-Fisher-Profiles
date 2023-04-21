@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Carp Diem (7701)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Carp_Diem "1">
+]>
+<Profile>
+	<Name>Carp Diem</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Carp Diem..." />
+		<If condition="not HasAtLeast(2614,50)">
+			<!--Crow Fly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(None)">
+			<LisbethTravel Area="None" XYZ="-113.6757, 6.369269, -150.6167" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(8,9)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7701,&Carp_Diem;) and HasAtLeast(2614,1) and IsTimeBetween(9,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(133, 'Clouds', 'Fog')">
+			<ExFish Bait="Crow Fly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-121.8741, 3.031262, -162.0318" Heading="4.686854" />
+					<FishSpot XYZ="-122.0327, 2.92517, -132.867" Heading="0.6865654" />
+					<FishSpot XYZ="-145.6641, 3.092318, -167.6399" Heading="0.8708653" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Carp Diem" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

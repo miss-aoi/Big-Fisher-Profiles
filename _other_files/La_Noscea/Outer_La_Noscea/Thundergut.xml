@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Thundergut (7937)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Thundergut "1">
+]>
+<Profile>
+	<Name>Thundergut</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Thundergut..." />
+		<If condition="not HasAtLeast(2601,50)">
+			<!--Stem Borer-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(235)">
+			<LisbethTravel Area="Outer La Noscea" XYZ="-330.9283, 32.90812, -470.4216" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(18,19)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7937,&Thundergut;) and HasAtLeast(2601,1) and (IsTimeBetween(19,24) or IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(180, 'Rain')">
+			<ExFish Bait="Stem Borer" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-323.2883, 32.5542, -457.3354" Heading="2.960396" />
+					<FishSpot XYZ="-329.0862, 34.76004, -457.2785" Heading="2.843106" />
+					<FishSpot XYZ="-340.5363, 38.69806, -449.6728" Heading="0.5665219" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Thundergut" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

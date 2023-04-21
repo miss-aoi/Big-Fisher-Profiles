@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Daniffen's Mark (7932)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Daniffen's_Mark "1">
+]>
+<Profile>
+	<Name>Daniffen's Mark</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Daniffen's Mark..." />
+		<If condition="not HasAtLeast(2623,50)">
+			<!--Wildfowl Fly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(380)">
+			<LisbethTravel Area="Coerthas Central Highlands" XYZ="-36.35629, 205.5014, 439.4049" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7932,&Daniffen's_Mark;) and HasAtLeast(2623,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards')">
+			<ExFish Bait="Wildfowl Fly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-41.51296, 204.1969, 439.9323" Heading="4.761396" />
+					<FishSpot XYZ="-56.52238, 200.1282, 466.597" Heading="0.01968575" />
+					<FishSpot XYZ="-74.65414, 199.246, 486.0047" Heading="4.57919" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Daniffen's Mark" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

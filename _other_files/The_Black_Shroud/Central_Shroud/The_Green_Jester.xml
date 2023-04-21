@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Green Jester (7934)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Green_Jester "1">
+]>
+<Profile>
+	<Name>The Green Jester</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Green Jester..." />
+		<If condition="not HasAtLeast(2599,50)">
+			<!--Honey Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(104)">
+			<LisbethTravel Area="Central Shroud" XYZ="-408.1958, 53.11435, 34.25052" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(17,18)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7934,&The_Green_Jester;) and HasAtLeast(2599,1) and IsTimeBetween(18,21)">
+			<ExFish Bait="Honey Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-400.1736, 49, 4.810299" Heading="5.30001" />
+					<FishSpot XYZ="-402.063, 49, 15.16597" Heading="2.556347" />
+					<FishSpot XYZ="-423.5688, 49, 16.69" Heading="6.072839" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Green Jester" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

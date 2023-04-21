@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Sweetnewt (7923)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Sweetnewt "1">
+]>
+<Profile>
+	<Name>Sweetnewt</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Sweetnewt..." />
+		<If condition="not HasAtLeast(2592,50)">
+			<!--Midge Basket-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(476)">
+			<LisbethTravel Area="Gridania (New Gridania)" XYZ="35.11273, 2.200001, 32.23121" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(22,23)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7923,&Sweetnewt;) and HasAtLeast(2592,1) and (IsTimeBetween(23,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(340, 'Fog')">
+			<ExFish Bait="Midge Basket" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-6.899338, 1.154556, 192.6779" Heading="4.952633" />
+					<FishSpot XYZ="17.03964, 2.610861, 215.6596" Heading="0.5292695" />
+					<FishSpot XYZ="8.996038, 2.61084, 195.7229" Heading="2.25086" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Sweetnewt" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

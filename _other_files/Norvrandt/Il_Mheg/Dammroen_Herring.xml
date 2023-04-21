@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Dammroen Herring (33321)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Dammroen_Herring "1">
+]>
+<Profile>
+	<Name>Dammroen Herring</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Dammroen Herring..." />
+		<If condition="not HasAtLeast(27589,50)">
+			<!--Baitbugs-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3146)">
+			<LisbethTravel Area="Il Mheg" XYZ="363.7969, 53.29515, -494.4348" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(33321,&Dammroen_Herring;) and HasAtLeast(27589,1)">
+			<ExFish Bait="Baitbugs" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="363.3964, 50.29507, -512.3802" Heading="4.149429" />
+					<FishSpot XYZ="327.5578, 43.13951, -501.499" Heading="5.190343" />
+					<FishSpot XYZ="400.4541, 59.48162, -500.4278" Heading="4.440549" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Dammroen Herring" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

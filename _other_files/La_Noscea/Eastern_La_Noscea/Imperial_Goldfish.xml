@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Imperial Goldfish (8752)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Imperial_Goldfish "1">
+]>
+<Profile>
+	<Name>Imperial Goldfish</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Imperial Goldfish..." />
+		<If condition="not HasAtLeast(2599,50)">
+			<!--Honey Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(168)">
+			<LisbethTravel Area="Eastern La Noscea" XYZ="-253.4813, 35.16173, 289.4978" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(8752,&Imperial_Goldfish;) and HasAtLeast(2599,1)">
+			<ExFish Bait="Honey Worm" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Light" />
+					<PatienceTug moochLevel="2" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-272.5454, 33.78063, 299.9305" Heading="4.463154" />
+					<FishSpot XYZ="-278.8307, 33.78064, 296.5956" Heading="4.435918" />
+					<FishSpot XYZ="-280.1851, 33.99385, 304.9468" Heading="2.548871" />
+				</FishSpots>
+			</ExFish>
+			<ExFish Bait="Honey Worm" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-272.5454, 33.78063, 299.9305" Heading="4.463154" />
+					<FishSpot XYZ="-278.8307, 33.78064, 296.5956" Heading="4.435918" />
+					<FishSpot XYZ="-280.1851, 33.99385, 304.9468" Heading="2.548871" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Imperial Goldfish" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<If condition="HasAtLeast(5031,1)">
+			<Desynth ItemIds="5031" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

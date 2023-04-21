@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Seven Stars (24883)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Seven_Stars "1">
+]>
+<Profile>
+	<Name>Seven Stars</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Seven Stars..." />
+		<If condition="not HasAtLeast(20676,50)">
+			<!--Blue Bobbit-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2750)">
+			<LisbethTravel Area="The Ruby Sea" XYZ="596.8623, 1.07736, 193.0941" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(9,10)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(24883,&Seven_Stars;) and HasAtLeast(20676,1) and IsTimeBetween(10,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(613, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(613, TimeSpan.FromHours(-8), 'Fair Skies')">
+			<ExFish Bait="Blue Bobbit" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="603.5583, -0.132894, 181.2658" Heading="3.257593" />
+					<FishSpot XYZ="567.3377, -0.1328939, 173.6032" Heading="4.292222" />
+					<FishSpot XYZ="570.6454, -0.132894, 214.5531" Heading="5.069233" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Seven Stars" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Second One (15636)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Second_One "1">
+]>
+<Profile>
+	<Name>The Second One</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Second One..." />
+		<If condition="not HasAtLeast(12712,50)">
+			<!--Giant Crane Fly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2128)">
+			<LisbethTravel Area="The Sea of Clouds" XYZ="-730.4734, -98.96046, -641.5324" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(15636,&The_Second_One;) and HasAtLeast(12712,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Wind')">
+			<ExFish Bait="Giant Crane Fly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-730.4734, -98.96046, -641.5324" Heading="4.715415" />
+					<FishSpot XYZ="-742.3828, -99.95825, -636.5696" Heading="0.141259" />
+					<FishSpot XYZ="-759.2081, -99.72325, -640.7861" Heading="5.967869" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Second One" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

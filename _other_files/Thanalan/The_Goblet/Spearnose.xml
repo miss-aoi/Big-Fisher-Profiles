@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Spearnose (7919)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Spearnose "1">
+]>
+<Profile>
+	<Name>Spearnose</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Spearnose..." />
+		<If condition="not HasAtLeast(2607,50)">
+			<!--Caddisfly Larva-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(0)">
+			<LisbethTravel Area="Ul'dah (Steps of Nald)" XYZ="-147.512, -3.154888, -166.1085" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(20,21)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7919,&Spearnose;) and HasAtLeast(2607,1) and IsTimeBetween(21,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(341, 'Clouds', 'Fog')">
+			<ExFish Bait="Caddisfly Larva" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-13.18043, -24.07133, 41.33421" Heading="4.868697" />
+					<FishSpot XYZ="-13.18544, -24.07133, 58.71743" Heading="4.491707" />
+					<FishSpot XYZ="-13.19689, -24.07133, 22.75558" Heading="5.258256" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Spearnose" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

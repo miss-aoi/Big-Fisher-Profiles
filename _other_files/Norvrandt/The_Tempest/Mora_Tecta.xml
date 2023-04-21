@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Mora Tecta (33325)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Mora_Tecta "1">
+]>
+<Profile>
+	<Name>Mora Tecta</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Mora Tecta..." />
+		<If condition="not HasAtLeast(27588,50)">
+			<!--Short Bill Minnow-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3193)">
+			<LisbethTravel Area="The Tempest" XYZ="-483.6885, 186.1969, -540.7681" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(21,22)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(33325,&Mora_Tecta;) and HasAtLeast(27588,1) and IsTimeBetween(22,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Fair Skies')">
+			<ExFish Bait="Short Bill Minnow" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
+					<FishSpot XYZ="-475.9068, 184.7709, -558.5859" Heading="4.016154" />
+					<FishSpot XYZ="-504.5959, 184.9594, -545.1892" Heading="3.138604" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Mora Tecta" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Moldva (7683)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Moldva "1">
+]>
+<Profile>
+	<Name>Moldva</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Moldva..." />
+		<If condition="not HasAtLeast(2592,50)">
+			<!--Midge Basket-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(76)">
+			<LisbethTravel Area="East Shroud" XYZ="156.0467, 8.370256, 192.1257" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(17,18)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7683,&Moldva;) and HasAtLeast(2592,1) and (IsTimeBetween(18,24) or IsTimeBetween(0,2))">
+			<ExFish Bait="Midge Basket" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="123.0522, 6.809838, 189.5636" Heading="3.106961" />
+					<FishSpot XYZ="135.8356, 6.932451, 192.504" Heading="6.133363" />
+					<FishSpot XYZ="147.3159, 7.554788, 186.7445" Heading="5.025425" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Moldva" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

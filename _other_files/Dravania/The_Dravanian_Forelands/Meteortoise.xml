@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Meteortoise (15631)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Meteortoise "1">
+]>
+<Profile>
+	<Name>Meteortoise</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Meteortoise..." />
+		<If condition="not HasAtLeast(12709,50)">
+			<!--Magma Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2008)">
+			<LisbethTravel Area="The Dravanian Forelands" XYZ="-475.2081, -10.16682, -474.4399" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(15631,&Meteortoise;) and HasAtLeast(12709,1)">
+			<ExFish Bait="Magma Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-471.8031, -10.14293, -475.2836" Heading="1.936656" />
+					<FishSpot XYZ="-478.3157, -11.6859, -448.0603" Heading="3.788103" />
+					<FishSpot XYZ="-455.5224, -12.17101, -456.36" Heading="3.277071" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Meteortoise" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

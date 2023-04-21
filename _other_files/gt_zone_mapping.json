@@ -1,0 +1,6102 @@
+{
+    "2": {
+        "name": "The Vein",
+        "region": "The Black Shroud",
+        "zone": "Central Shroud",
+        "zone_id": "148",
+        "submap_id": "68",
+        "fishspot_cords": [
+            {
+                "XYZ": "103.0872, -12, 97.26583",
+                "Heading": "5.280188"
+            }, {
+                "XYZ": "105.6798, -12, 117.9361",
+                "Heading": "0.8358781"
+            }, {
+                "XYZ": "87.16193, -12, 94.18873",
+                "Heading": "0.1363499"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Central Shroud",
+            "XYZ": "113.3784, -8.710942, 91.28718"
+        }
+    },
+    "3": {
+        "name": "The Mirror",
+        "region": "The Black Shroud",
+        "zone": "Central Shroud",
+        "zone_id": "148",
+        "submap_id": "70",
+        "fishspot_cords": [
+            {
+                "XYZ": "218.723, -33.06675, 384.3286",
+                "Heading": "2.596586"
+            }, {
+                "XYZ": "230.0516, -31.35194, 387.275",
+                "Heading": "2.393428"
+            }, {
+                "XYZ": "248.1566, -30.45172, 394.424",
+                "Heading": "3.23328"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Central Shroud",
+            "XYZ": "211.2545, -32.20573, 395.1728"
+        }
+    },
+    "4": {
+        "name": "Everschade",
+        "region": "The Black Shroud",
+        "zone": "Central Shroud",
+        "zone_id": "148",
+        "submap_id": "70",
+        "fishspot_cords": [
+            {
+                "XYZ": "-295.7599, 20.99179, 169.1394",
+                "Heading": "5.806733"
+            }, {
+                "XYZ": "-303.1868, 21, 193.6298",
+                "Heading": "2.94788"
+            }, {
+                "XYZ": "-311.5812, 20.99179, 154.1951",
+                "Heading": "0.3403623"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Central Shroud",
+            "XYZ": "-315.058, 21.97407, 147.0868"
+        }
+    },
+    "5": {
+        "name": "Hopeseed Pond",
+        "region": "The Black Shroud",
+        "zone": "Central Shroud",
+        "zone_id": "148",
+        "submap_id": "104",
+        "fishspot_cords": [
+            {
+                "XYZ": "-400.1736, 49, 4.810299",
+                "Heading": "5.30001"
+            }, {
+                "XYZ": "-402.063, 49, 15.16597",
+                "Heading": "2.556347"
+            }, {
+                "XYZ": "-423.5688, 49, 16.69",
+                "Heading": "6.072839"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Central Shroud",
+            "XYZ": "-408.1958, 53.11435, 34.25052"
+        }
+    },
+    "6": {
+        "name": "Sweetbloom Pier",
+        "region": "The Black Shroud",
+        "zone": "East Shroud",
+        "zone_id": "152",
+        "submap_id": "155",
+        "fishspot_cords": [
+            {
+                "XYZ": "-586.5031, 7.944592, 86.51789",
+                "Heading": "0.8807359"
+            }, {
+                "XYZ": "-597.1454, 7.944375, 107.6111",
+                "Heading": "5.36274"
+            }, {
+                "XYZ": "-607.4549, 7.944794, 100.3281",
+                "Heading": "5.385785"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "East Shroud",
+            "XYZ": "-571.7729, 8.910708, 73.77551"
+        }
+    },
+    "7": {
+        "name": "Verdant Drop",
+        "region": "The Black Shroud",
+        "zone": "East Shroud",
+        "zone_id": "152",
+        "submap_id": "76",
+        "fishspot_cords": [
+            {
+                "XYZ": "-24.03134, 18.69979, -11.85892",
+                "Heading": "4.376492"
+            }, {
+                "XYZ": "-25.97528, 16.52659, 23.46872",
+                "Heading": "5.794398"
+            }, {
+                "XYZ": "-29.64163, 16.51187, 7.951772",
+                "Heading": "4.619442"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "East Shroud",
+            "XYZ": "-19.55942, 17.47282, 22.46433"
+        }
+    },
+    "8": {
+        "name": "Springripple Brook",
+        "region": "The Black Shroud",
+        "zone": "East Shroud",
+        "zone_id": "152",
+        "submap_id": "76",
+        "fishspot_cords": [
+            {
+                "XYZ": "123.0522, 6.809838, 189.5636",
+                "Heading": "3.106961"
+            }, {
+                "XYZ": "135.8356, 6.932451, 192.504",
+                "Heading": "6.133363"
+            }, {
+                "XYZ": "147.3159, 7.554788, 186.7445",
+                "Heading": "5.025425"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "East Shroud",
+            "XYZ": "156.0467, 8.370256, 192.1257"
+        }
+    },
+    "9": {
+        "name": "Sylphlands",
+        "region": "The Black Shroud",
+        "zone": "East Shroud",
+        "zone_id": "152",
+        "submap_id": "76",
+        "fishspot_cords": [
+            {
+                "XYZ": "218.0279, -4.363929, -29.92402",
+                "Heading": "2.14835"
+            }, {
+                "XYZ": "221.8551, -5.356191, -46.99755",
+                "Heading": "0.5461359"
+            }, {
+                "XYZ": "240.2102, -5.228583, -41.99316",
+                "Heading": "5.193598"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "East Shroud",
+            "XYZ": "240.6766, -5.431757, -56.69833"
+        }
+    },
+    "10": {
+        "name": "Sanctum of the Twelve",
+        "region": "The Black Shroud",
+        "zone": "East Shroud",
+        "zone_id": "152",
+        "submap_id": "112",
+        "fishspot_cords": [
+            {
+                "XYZ": "-223.3734, 49.57124, -231.3031",
+                "Heading": "1.602116"
+            }, {
+                "XYZ": "-230.0043, 49.57919, -214.4796",
+                "Heading": "3.313233"
+            }, {
+                "XYZ": "-240.2707, 49.57919, -228.8123",
+                "Heading": "4.641082"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "East Shroud",
+            "XYZ": "-215.3548, 54.82919, -190.1448"
+        }
+    },
+    "11": {
+        "name": "Upper Hathoeva River",
+        "region": "The Black Shroud",
+        "zone": "South Shroud",
+        "zone_id": "153",
+        "submap_id": "78",
+        "fishspot_cords": [
+            {
+                "XYZ": "-161.2432, 6.347555, -109.6849",
+                "Heading": "0.8256314"
+            }, {
+                "XYZ": "-181.6259, 6.686643, -127.521",
+                "Heading": "4.559937"
+            }, {
+                "XYZ": "-203.8454, 8.566397, -140.8594",
+                "Heading": "4.538989"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "South Shroud",
+            "XYZ": "-179.9766, 10.14908, -139.1424"
+        }
+    },
+    "12": {
+        "name": "Middle Hathoeva River",
+        "region": "The Black Shroud",
+        "zone": "South Shroud",
+        "zone_id": "153",
+        "submap_id": "78",
+        "fishspot_cords": [
+            {
+                "XYZ": "-81.05979, -0.2929443, 47.26386",
+                "Heading": "6.027212"
+            }, {
+                "XYZ": "-82.48419, -0.2808959, 67.98672",
+                "Heading": "4.389839"
+            }, {
+                "XYZ": "-97.30055, -0.1951752, 70.05416",
+                "Heading": "2.724793"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "South Shroud",
+            "XYZ": "-74.81721, 0.2927306, 71.52535"
+        }
+    },
+    "13": {
+        "name": "Lower Hathoeva River",
+        "region": "The Black Shroud",
+        "zone": "South Shroud",
+        "zone_id": "153",
+        "submap_id": "79",
+        "fishspot_cords": [
+            {
+                "XYZ": "-141.2495, -0.2347637, 164.7361",
+                "Heading": "3.100041"
+            }, {
+                "XYZ": "-165.4892, -0.2811633, 158.3398",
+                "Heading": "3.567091"
+            }, {
+                "XYZ": "-173.4589, -0.2794424, 147.2547",
+                "Heading": "0.2600002"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "South Shroud",
+            "XYZ": "-164.9751, 2.177883, 171.357"
+        }
+    },
+    "14": {
+        "name": "East Hathoeva River",
+        "region": "The Black Shroud",
+        "zone": "South Shroud",
+        "zone_id": "153",
+        "submap_id": "78",
+        "fishspot_cords": [
+            {
+                "XYZ": "141.6422, 4.133486, 23.83754",
+                "Heading": "1.421836"
+            }, {
+                "XYZ": "153.3958, 3.990634, 21.9647",
+                "Heading": "4.825229"
+            }, {
+                "XYZ": "157.2906, 4.057076, 8.448708",
+                "Heading": "5.744668"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "South Shroud",
+            "XYZ": "129.8805, 5.442289, 25.55154"
+        }
+    },
+    "15": {
+        "name": "Goblinblood",
+        "region": "The Black Shroud",
+        "zone": "South Shroud",
+        "zone_id": "153",
+        "submap_id": "131",
+        "fishspot_cords": [
+            {
+                "XYZ": "288.2363, -0.3682871, 2.639",
+                "Heading": "1.687761"
+            }, {
+                "XYZ": "299.9633, -0.4391418, 5.733653",
+                "Heading": "2.370547"
+            }, {
+                "XYZ": "314.7709, -0.5025015, -1.395466",
+                "Heading": "5.231489"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "South Shroud",
+            "XYZ": "280.711, 0.9844905, 0.04253998"
+        }
+    },
+    "16": {
+        "name": "Rootslake",
+        "region": "The Black Shroud",
+        "zone": "South Shroud",
+        "zone_id": "153",
+        "submap_id": "126",
+        "fishspot_cords": [
+            {
+                "XYZ": "-224.8922, -0.4231508, 410.1203",
+                "Heading": "1.001898"
+            }, {
+                "XYZ": "-229.7109, -0.4257042, 425.6832",
+                "Heading": "1.60299"
+            }, {
+                "XYZ": "-235.2112, -0.422861, 445.4375",
+                "Heading": "5.439914"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "South Shroud",
+            "XYZ": "-244.1569, 1.337763, 399.2985"
+        }
+    },
+    "17": {
+        "name": "Urth's Gift",
+        "region": "The Black Shroud",
+        "zone": "South Shroud",
+        "zone_id": "153",
+        "submap_id": "82",
+        "fishspot_cords": [
+            {
+                "XYZ": "518.7339, 14.04607, 130.9605",
+                "Heading": "1.535933"
+            }, {
+                "XYZ": "524.8389, 14.08908, 124.3318",
+                "Heading": "5.889893"
+            }, {
+                "XYZ": "528.3615, 14.0166, 140.5807",
+                "Heading": "2.704321"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "South Shroud",
+            "XYZ": "507.079, 15.53178, 128.7852"
+        }
+    },
+    "18": {
+        "name": "Murmur Rills",
+        "region": "The Black Shroud",
+        "zone": "North Shroud",
+        "zone_id": "154",
+        "submap_id": "85",
+        "fishspot_cords": [
+            {
+                "XYZ": "189.6587, -30.66909, 195.119",
+                "Heading": "1.228501"
+            }, {
+                "XYZ": "205.4642, -28.51582, 182.1846",
+                "Heading": "0.5101242"
+            }, {
+                "XYZ": "223.7824, -29.00599, 175.474",
+                "Heading": "6.012096"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "North Shroud",
+            "XYZ": "235.4475, -27.25044, 163.2124"
+        }
+    },
+    "19": {
+        "name": "Fallgourd Float",
+        "region": "The Black Shroud",
+        "zone": "North Shroud",
+        "zone_id": "154",
+        "submap_id": "140",
+        "fishspot_cords": [
+            {
+                "XYZ": "-22.88442, -40.94998, 198.347",
+                "Heading": "6.159586"
+            }, {
+                "XYZ": "-35.6778, -39.79317, 204.5797",
+                "Heading": "4.301856"
+            }, {
+                "XYZ": "-37.19979, -40.94998, 194.5685",
+                "Heading": "5.929203"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "North Shroud",
+            "XYZ": "-37.45838, -40.499, 219.5168"
+        }
+    },
+    "20": {
+        "name": "Proud Creek",
+        "region": "The Black Shroud",
+        "zone": "North Shroud",
+        "zone_id": "154",
+        "submap_id": "145",
+        "fishspot_cords": [
+            {
+                "XYZ": "-26.52839, -10.12451, -52.77297",
+                "Heading": "2.658334"
+            }, {
+                "XYZ": "-27.09962, -8.5765, -42.95875",
+                "Heading": "6.019836"
+            }, {
+                "XYZ": "-28.64076, -12.07396, -63.1396",
+                "Heading": "1.489659"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "North Shroud",
+            "XYZ": "-30.23347, -9.153938, -46.34664"
+        }
+    },
+    "21": {
+        "name": "Lake Tahtotl",
+        "region": "The Black Shroud",
+        "zone": "North Shroud",
+        "zone_id": "154",
+        "submap_id": "145",
+        "fishspot_cords": [
+            {
+                "XYZ": "-157.0592, -10.34948, -103.4891",
+                "Heading": "2,029755"
+            }, {
+                "XYZ": "-156.9394, -10.31075, -103.5718",
+                "Heading": "4.345124"
+            }, {
+                "XYZ": "-161.8011, -9.443758, -87.41274",
+                "Heading": "4.927367"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "North Shroud",
+            "XYZ": "-150.08, -9.376681, -101.3697"
+        }
+    },
+    "22": {
+        "name": "North Silvertear",
+        "region": "Mor Dhona",
+        "zone": "Mor Dhona",
+        "zone_id": "156",
+        "submap_id": "410",
+        "fishspot_cords": [
+            {
+                "XYZ": "143.8184, -28.36775, -427.127",
+                "Heading": "0.1438355"
+            }, {
+                "XYZ": "166.1766, -28.29997, -426.6662",
+                "Heading": "0.5941291"
+            }, {
+                "XYZ": "197.2962, -28.24627, -422.0775",
+                "Heading": "0.1082254"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Mor Dhona",
+            "XYZ": "146.9707, -28.29212, -431.3828"
+        }
+    },
+    "23": {
+        "name": "Rathefrost",
+        "region": "Mor Dhona",
+        "zone": "Mor Dhona",
+        "zone_id": "156",
+        "submap_id": "414",
+        "fishspot_cords": [
+            {
+                "XYZ": "-118.8273, 45.77808, -185.7387",
+                "Heading": "1.138674"
+            }, {
+                "XYZ": "-124.9568, 45.90577, -198.8519",
+                "Heading": "2.386933"
+            }, {
+                "XYZ": "-136.5102, 42.86941, -207.1343",
+                "Heading": "2.548199"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Mor Dhona",
+            "XYZ": "-126.2753, 47.11922, -187.6791"
+        }
+    },
+    "24": {
+        "name": "The Tangle",
+        "region": "Mor Dhona",
+        "zone": "Mor Dhona",
+        "zone_id": "156",
+        "submap_id": "413",
+        "fishspot_cords": [
+            {
+                "XYZ": "-375.4692, -17.14841, -417.3067",
+                "Heading": "0.7265582"
+            }, {
+                "XYZ": "-392.5934, -17.14841, -463.8953",
+                "Heading": "3.669184"
+            }, {
+                "XYZ": "-393.3831, -17.14841, -428.5468",
+                "Heading": "2.090004"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Mor Dhona",
+            "XYZ": "-410.9514, -16.49904, -421.2103"
+        }
+    },
+    "25": {
+        "name": "The Deep Tangle",
+        "region": "Mor Dhona",
+        "zone": "Mor Dhona",
+        "zone_id": "156",
+        "submap_id": "409",
+        "fishspot_cords": [
+            {
+                "XYZ": "-443.3135, -9.525084, -509.0322",
+                "Heading": "0.6558053"
+            }, {
+                "XYZ": "-451.5324, -9.696232, -521.4935",
+                "Heading": "0.2955647"
+            }, {
+                "XYZ": "-468.8926, -9.696238, -531.501",
+                "Heading": "3.18164"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Mor Dhona",
+            "XYZ": "-452.5414, -8.948663, -513.92"
+        }
+    },
+    "26": {
+        "name": "Coerthas River",
+        "region": "Coerthas",
+        "zone": "Coerthas Central Highlands",
+        "zone_id": "155",
+        "submap_id": "380",
+        "fishspot_cords": [
+            {
+                "XYZ": "-41.51296, 204.1969, 439.9323",
+                "Heading": "4.761396"
+            }, {
+                "XYZ": "-56.52238, 200.1282, 466.597",
+                "Heading": "0.01968575"
+            }, {
+                "XYZ": "-74.65414, 199.246, 486.0047",
+                "Heading": "4.57919"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Coerthas Central Highlands",
+            "XYZ": "-36.35629, 205.5014, 439.4049"
+        }
+    },
+    "27": {
+        "name": "Witchdrop",
+        "region": "Coerthas",
+        "zone": "Coerthas Central Highlands",
+        "zone_id": "155",
+        "submap_id": "393",
+        "fishspot_cords": [
+            {
+                "XYZ": "576.5197, 300.6741, -171.3599",
+                "Heading": "3.279671"
+            }, {
+                "XYZ": "583.305, 300.7844, -148.4045",
+                "Heading": "0.9653695"
+            }, {
+                "XYZ": "587.6274, 302.0664, -169.4482",
+                "Heading": "2.506844"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Coerthas Central Highlands",
+            "XYZ": "580.0012, 302.5874, -163.7016"
+        }
+    },
+    "28": {
+        "name": "The Nail",
+        "region": "Coerthas",
+        "zone": "Coerthas Central Highlands",
+        "zone_id": "155",
+        "submap_id": "383",
+        "fishspot_cords": [
+            {
+                "XYZ": "-269.9615, 248.1604, 10.56468",
+                "Heading": "0.02401352"
+            }, {
+                "XYZ": "-292.2026, 242.4896, 17.62959",
+                "Heading": "1.029324"
+            }, {
+                "XYZ": "-299.8128, 242.6337, 32.33716",
+                "Heading": "1.896401"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Coerthas Central Highlands",
+            "XYZ": "-299.6851, 244.8674, 12.87033"
+        }
+    },
+    "29": {
+        "name": "The Weeping Saint",
+        "region": "Coerthas",
+        "zone": "Coerthas Central Highlands",
+        "zone_id": "155",
+        "submap_id": "392",
+        "fishspot_cords": [
+            {
+                "XYZ": "492.7034, 347.5425, -699.8847",
+                "Heading": "2.811154"
+            }, {
+                "XYZ": "499.6933, 347.5016, -730.2562",
+                "Heading": "6.04072"
+            }, {
+                "XYZ": "507.6468, 347.4637, -710.7338",
+                "Heading": "3.726404"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Coerthas Central Highlands",
+            "XYZ": "490.8867, 348.5036, -687.0253"
+        }
+    },
+    "30": {
+        "name": "Dragonhead Latrines",
+        "region": "Coerthas",
+        "zone": "Coerthas Central Highlands",
+        "zone_id": "155",
+        "submap_id": "380",
+        "fishspot_cords": [
+            {
+                "XYZ": "290.7569, 301, -251.3285",
+                "Heading": "0.2386003"
+            }, {
+                "XYZ": "309.8876, 301, -255.1656",
+                "Heading": "5.388716"
+            }, {
+                "XYZ": "320.1285, 301, -246.6241",
+                "Heading": "5.231636"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Coerthas Central Highlands",
+            "XYZ": "325.3246, 303.2775, -254.3248"
+        }
+    },
+    "31": {
+        "name": "Daniffen Pass",
+        "region": "Coerthas",
+        "zone": "Coerthas Central Highlands",
+        "zone_id": "155",
+        "submap_id": "398",
+        "fishspot_cords": [
+            {
+                "XYZ": "-420.8456, 277.5037, 82.97137",
+                "Heading": "4.029955"
+            }, {
+                "XYZ": "-432.0216, 280.996, 94.30849",
+                "Heading": "3.583848"
+            }, {
+                "XYZ": "-449.4667, 283.0526, 97.06876",
+                "Heading": "2.553407"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Coerthas Central Highlands",
+            "XYZ": "-451.1668, 285.7495, 108.6161"
+        }
+    },
+    "32": {
+        "name": "Exploratory Ice Hole",
+        "region": "Coerthas",
+        "zone": "Coerthas Central Highlands",
+        "zone_id": "155",
+        "submap_id": "383",
+        "fishspot_cords": [
+            {
+                "XYZ": "-735.4037, 222.6547, 63.49319",
+                "Heading": "3.7"
+            }, {
+                "XYZ": "-737.9011, 222.6547, 60.94794",
+                "Heading": "0.7446342"
+            }, {
+                "XYZ": "-738.4809, 222.6547, 63.54441",
+                "Heading": "2.186695"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Coerthas Central Highlands",
+            "XYZ": "-745.3611, 222.6547, 57.38375"
+        }
+    },
+    "33": {
+        "name": "Snowcloak",
+        "region": "Coerthas",
+        "zone": "Coerthas Central Highlands",
+        "zone_id": "155",
+        "submap_id": "383",
+        "fishspot_cords": [
+            {
+                "XYZ": "-835.9018, 223.9743, 16.83364",
+                "Heading": "2.504576"
+            }, {
+                "XYZ": "-849.4735, 223.9743, 11.95268",
+                "Heading": "3.775867"
+            }, {
+                "XYZ": "-856.2869, 223.8687, -0.9095947",
+                "Heading": "0.9526248"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Coerthas Central Highlands",
+            "XYZ": "-847.422, 223.9743, 9.084878"
+        }
+    },
+    "34": {
+        "name": "Sea of Clouds",
+        "region": "Coerthas",
+        "zone": "Coerthas Central Highlands",
+        "zone_id": "155",
+        "submap_id": "383",
+        "fishspot_cords": [
+            {
+                "XYZ": "-433.0484, 200.7377, -358.037",
+                "Heading": "1.987735"
+            }, {
+                "XYZ": "-448.98, 200.6491, -369.0937",
+                "Heading": "2.616056"
+            }, {
+                "XYZ": "-476.9392, 200.8663, -388.2444",
+                "Heading": "2.457772"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Coerthas Central Highlands",
+            "XYZ": "-452.3188, 202.7171, -362.1353"
+        }
+    },
+    "35": {
+        "name": "Limsa Lominsa Lower Decks",
+        "region": "La Noscea",
+        "zone": "Limsa Lominsa (Lower Decks)",
+        "zone_id": "129",
+        "fishspot_cords": [
+            {
+                "XYZ": "-170.0204, 1.999995, 221.3403",
+                "Heading": "2.986306"
+            }, {
+                "XYZ": "-182.248, 1.999995, 200.2238",
+                "Heading": "1.683593"
+            }, {
+                "XYZ": "-192.3636, 0.9999907, 219.1647",
+                "Heading": "5.947781"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Limsa Lominsa (Lower Decks)",
+            "XYZ": "-183.9088, 2, 194.1954"
+        }
+    },
+    "36": {
+        "name": "Limsa Lominsa Upper Decks",
+        "region": "La Noscea",
+        "zone": "Limsa Lominsa (Upper Decks)",
+        "zone_id": "128",
+        "fishspot_cords": [
+            {
+                "XYZ": "39.98388, 39.99995, 75.70851",
+                "Heading": "0.08564156"
+            }, {
+                "XYZ": "53.64757, 39.99995, 75.66903",
+                "Heading": "5.981073"
+            }, {
+                "XYZ": "58.56662, 39.99997, 70.25841",
+                "Heading": "2.929538"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Limsa Lominsa (Upper Decks)",
+            "XYZ": "19.86234, 40, 76.17139"
+        }
+    },
+    "37": {
+        "name": "Zephyr Drift",
+        "region": "La Noscea",
+        "zone": "Middle La Noscea",
+        "zone_id": "134",
+        "submap_id": "162",
+        "fishspot_cords": [
+            {
+                "XYZ": "-117.8397, 38.76151, 31.36633",
+                "Heading": "0.02024531"
+            }, {
+                "XYZ": "-141.294, 40.81226, 9.837191",
+                "Heading": "5.185024"
+            }, {
+                "XYZ": "-158.3341, 37.78846, -16.56896",
+                "Heading": "5.172457"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Middle La Noscea",
+            "XYZ": "-102.2953, 41.2394, 9.037899"
+        }
+    },
+    "38": {
+        "name": "Summerford",
+        "region": "La Noscea",
+        "zone": "Middle La Noscea",
+        "zone_id": "134",
+        "submap_id": "190",
+        "fishspot_cords": [
+            {
+                "XYZ": "-280.3257, 14.30417, -215.7465",
+                "Heading": "4.931087"
+            }, {
+                "XYZ": "-299.0035, 7.54, -223.1236",
+                "Heading": "5.51333"
+            }, {
+                "XYZ": "-303.9935, 10.9, -185.8521",
+                "Heading": "4.284627"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Middle La Noscea",
+            "XYZ": "-297.3651, 7.54, -224.8838"
+        }
+    },
+    "39": {
+        "name": "Rogue River",
+        "region": "La Noscea",
+        "zone": "Middle La Noscea",
+        "zone_id": "134",
+        "submap_id": "162",
+        "fishspot_cords": [
+            {
+                "XYZ": "-6.263493, 42.15689, 54.21851",
+                "Heading": "5.079866"
+            }, {
+                "XYZ": "34.12083, 42.41599, 36.45387",
+                "Heading": "1.881725"
+            }, {
+                "XYZ": "93.79761, 43.03065, 31.39412",
+                "Heading": "1.598982"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Middle La Noscea",
+            "XYZ": "30.95881, 42.41599, 36.89365"
+        }
+    },
+    "40": {
+        "name": "West Agelyss River",
+        "region": "La Noscea",
+        "zone": "Middle La Noscea",
+        "zone_id": "134",
+        "submap_id": "162",
+        "fishspot_cords": [
+            {
+                "XYZ": "-127.117, 42.0596, -122.7199",
+                "Heading": "5.410823"
+            }, {
+                "XYZ": "-37.02737, 46.38836, -213.9085",
+                "Heading": "2.39071"
+            }, {
+                "XYZ": "-87.41042, 44.98979, -138.8676",
+                "Heading": "5.683972"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Middle La Noscea",
+            "XYZ": "-81.77495, 45.11634, -147.0452"
+        }
+    },
+    "41": {
+        "name": "Nym River",
+        "region": "La Noscea",
+        "zone": "Middle La Noscea",
+        "zone_id": "134",
+        "submap_id": "163",
+        "fishspot_cords": [
+            {
+                "XYZ": "-121.0939, 12.21, -366.0357",
+                "Heading": "3.868313"
+            }, {
+                "XYZ": "-147.2776, 12.7062, -377.7298",
+                "Heading": "1.248226"
+            }, {
+                "XYZ": "-176.2276, 10.74121, -352.4113",
+                "Heading": "0.5256584"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Middle La Noscea",
+            "XYZ": "-160.2664, 13.22471, -379.9702"
+        }
+    },
+    "42": {
+        "name": "Woad Whisper Canyon",
+        "region": "La Noscea",
+        "zone": "Middle La Noscea",
+        "zone_id": "134",
+        "submap_id": "192",
+        "fishspot_cords": [
+            {
+                "XYZ": "-18.97313, 12.51912, -462.955",
+                "Heading": "3.889561"
+            }, {
+                "XYZ": "-3.548503, 13.95309, -470.5255",
+                "Heading": "3.872804"
+            }, {
+                "XYZ": "-32.13143, 10.2027, -438.6634",
+                "Heading": "4.21104"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Middle La Noscea",
+            "XYZ": "-12.28817, 13.29832, -455.9037"
+        }
+    },
+    "43": {
+        "name": "The Mourning Widow",
+        "region": "La Noscea",
+        "zone": "Lower La Noscea",
+        "zone_id": "135",
+        "submap_id": "164",
+        "fishspot_cords": [
+            {
+                "XYZ": "118.7678, 36.16429, 20.61327",
+                "Heading": "3.593841"
+            }, {
+                "XYZ": "190.3371, 28.83445, 84.1914",
+                "Heading": "0.6889129"
+            }, {
+                "XYZ": "209.8657, 25.46121, 101.347",
+                "Heading": "3.606406"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Lower La Noscea",
+            "XYZ": "151.2162, 34.94606, 66.3858"
+        }
+    },
+    "44": {
+        "name": "Moraby Bay",
+        "region": "La Noscea",
+        "zone": "Lower La Noscea",
+        "zone_id": "135",
+        "submap_id": "164",
+        "fishspot_cords": [
+            {
+                "XYZ": "231.7537, 28.83405, 174.467",
+                "Heading": "1.45568"
+            }, {
+                "XYZ": "242.9352, 29.53038, 199.734",
+                "Heading": "2.785623"
+            }, {
+                "XYZ": "263.9069, 33.51923, 241.1577",
+                "Heading": "2.400747"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Lower La Noscea",
+            "XYZ": "249.4097, 38.98185, 242.7699"
+        }
+    },
+    "45": {
+        "name": "Cedarwood",
+        "region": "La Noscea",
+        "zone": "Lower La Noscea",
+        "zone_id": "135",
+        "submap_id": "201",
+        "fishspot_cords": [
+            {
+                "XYZ": "673.3822, 59.80273, -173.9224",
+                "Heading": "1.117739"
+            }, {
+                "XYZ": "701.7157, 62.89587, -196.5944",
+                "Heading": "1.414895"
+            }, {
+                "XYZ": "717.3097, 63.97004, -221.9684",
+                "Heading": "0.862431"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Lower La Noscea",
+            "XYZ": "657.3607, 61.06521, -182.2135"
+        }
+    },
+    "46": {
+        "name": "Moraby Drydocks",
+        "region": "La Noscea",
+        "zone": "Lower La Noscea",
+        "zone_id": "135",
+        "submap_id": "337",
+        "fishspot_cords": [
+            {
+                "XYZ": "293.4721, 8.000008, 698.3556",
+                "Heading": "2.634873"
+            }, {
+                "XYZ": "297.6325, 8.000063, 716.9773",
+                "Heading": "5.644516"
+            }, {
+                "XYZ": "309.3279, 7.999974, 714.3629",
+                "Heading": "1.313309"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Lower La Noscea",
+            "XYZ": "302.41, 8.000681, 709.0742"
+        }
+    },
+    "47": {
+        "name": "Oschon's Torch",
+        "region": "La Noscea",
+        "zone": "Lower La Noscea",
+        "zone_id": "135",
+        "submap_id": "341",
+        "fishspot_cords": [
+            {
+                "XYZ": "116.8599, 59.74031, 951.6397",
+                "Heading": "0.3103869"
+            }, {
+                "XYZ": "140.6154, 57.81126, 932.4698",
+                "Heading": "0.7754359"
+            }, {
+                "XYZ": "140.8088, 57.75964, 932.426",
+                "Heading": "0.7795331"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Lower La Noscea",
+            "XYZ": "145.4249, 57.88197, 911.193"
+        }
+    },
+    "48": {
+        "name": "The Salt Strand",
+        "region": "La Noscea",
+        "zone": "Lower La Noscea",
+        "zone_id": "135",
+        "submap_id": "338",
+        "fishspot_cords": [
+            {
+                "XYZ": "-166.2906, -0.271, 748.7253",
+                "Heading": "1.937045"
+            }, {
+                "XYZ": "-196.9584, -0.1789726, 700.2988",
+                "Heading": "4.19792"
+            }, {
+                "XYZ": "-232.1735, -0.2515026, 666.2292",
+                "Heading": "5.016819"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Lower La Noscea",
+            "XYZ": "-185.0453, -0.3133438, 727.9094"
+        }
+    },
+    "49": {
+        "name": "Candlekeep Quay",
+        "region": "La Noscea",
+        "zone": "Lower La Noscea",
+        "zone_id": "135",
+        "submap_id": "339",
+        "fishspot_cords": [
+            {
+                "XYZ": "-132.2859, 4.310742, 860.4258",
+                "Heading": "0.04101062"
+            }, {
+                "XYZ": "-79.52073, 5.327857, 860.4695",
+                "Heading": "6.221565"
+            }, {
+                "XYZ": "-93.51559, 4.310742, 846.0161",
+                "Heading": "3.272657"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Lower La Noscea",
+            "XYZ": "-97.83857, 4.310742, 853.5196"
+        }
+    },
+    "50": {
+        "name": "Empty Heart",
+        "region": "La Noscea",
+        "zone": "Lower La Noscea",
+        "zone_id": "135",
+        "submap_id": "340",
+        "fishspot_cords": [
+            {
+                "XYZ": "32.4887, 35.44699, 653.9377",
+                "Heading": "0.4687796"
+            }, {
+                "XYZ": "38.34671, 35.54963, 688.4586",
+                "Heading": "4.213539"
+            }, {
+                "XYZ": "6.152539, 35.43816, 693.6091",
+                "Heading": "2.594563"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Lower La Noscea",
+            "XYZ": "18.71454, 35.43816, 685.6935"
+        }
+    },
+    "51": {
+        "name": "South Bloodshore",
+        "region": "La Noscea",
+        "zone": "Eastern La Noscea",
+        "zone_id": "137",
+        "submap_id": "216",
+        "fishspot_cords": [
+            {
+                "XYZ": "518.6304, 8.678953, 675.7701",
+                "Heading": "6.229812"
+            }, {
+                "XYZ": "524.1935, 8.669197, 646.7106",
+                "Heading": "0.958216"
+            }, {
+                "XYZ": "535.7999, 8.662571, 619.3949",
+                "Heading": "0.8534974"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Eastern La Noscea",
+            "XYZ": "535.896, 8.662354, 619.4787"
+        }
+    },
+    "52": {
+        "name": "Costa del Sol",
+        "region": "La Noscea",
+        "zone": "Eastern La Noscea",
+        "zone_id": "137",
+        "submap_id": "216",
+        "fishspot_cords": [
+            {
+                "XYZ": "540.4973, 8.875281, 408.9522",
+                "Heading": "1.583563"
+            }, {
+                "XYZ": "541.0124, 8.769853, 376.1528",
+                "Heading": "2.392"
+            }, {
+                "XYZ": "557.0814, 8.72471, 436.7764",
+                "Heading": "1.434063"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Eastern La Noscea",
+            "XYZ": "533.2231, 9.064485, 409.0189"
+        }
+    },
+    "53": {
+        "name": "North Bloodshore",
+        "region": "La Noscea",
+        "zone": "Eastern La Noscea",
+        "zone_id": "137",
+        "submap_id": "216",
+        "fishspot_cords": [
+            {
+                "XYZ": "537.8388, 8.730376, 120.295",
+                "Heading": "1.710845"
+            }, {
+                "XYZ": "553.2434, 8.6422, 142.5882",
+                "Heading": "1.241701"
+            }, {
+                "XYZ": "558.2892, 8.72472, 166.4168",
+                "Heading": "1.566341"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Eastern La Noscea",
+            "XYZ": "537.0127, 8.728938, 120.3512"
+        }
+    },
+    "54": {
+        "name": "Hidden Falls",
+        "region": "La Noscea",
+        "zone": "Eastern La Noscea",
+        "zone_id": "137",
+        "submap_id": "216",
+        "fishspot_cords": [
+            {
+                "XYZ": "468.0401, 8.434704, 76.06626",
+                "Heading": "2.070008"
+            }, {
+                "XYZ": "469.8491, 8.482638, 88.38069",
+                "Heading": "3.607294"
+            }, {
+                "XYZ": "494.2133, 8.734549, 67.54633",
+                "Heading": "0.07195473"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Eastern La Noscea",
+            "XYZ": "466.6412, 8.396084, 76.86406"
+        }
+    },
+    "55": {
+        "name": "East Agelyss River",
+        "region": "La Noscea",
+        "zone": "Eastern La Noscea",
+        "zone_id": "137",
+        "submap_id": "168",
+        "fishspot_cords": [
+            {
+                "XYZ": "-111.6467, 33.92606, 231.1327",
+                "Heading": "0.1593609"
+            }, {
+                "XYZ": "-55.90533, 33.78047, 223.2611",
+                "Heading": "4.696387"
+            }, {
+                "XYZ": "-76.91438, 33.88614, 224.1277",
+                "Heading": "4.626702"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Eastern La Noscea",
+            "XYZ": "-70.91592, 33.82394, 223.3905"
+        }
+    },
+    "56": {
+        "name": "Raincatcher Gully",
+        "region": "La Noscea",
+        "zone": "Eastern La Noscea",
+        "zone_id": "137",
+        "submap_id": "168",
+        "fishspot_cords": [
+            {
+                "XYZ": "-37.85912, 35.29853, 424.1711",
+                "Heading": "0.4665878"
+            }, {
+                "XYZ": "-52.09799, 34.67363, 441.288",
+                "Heading": "4.324475"
+            }, {
+                "XYZ": "-58.97574, 35.43839, 457.9216",
+                "Heading": "1.752568"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Eastern La Noscea",
+            "XYZ": "-68.43107, 36.05828, 471.5368"
+        }
+    },
+    "57": {
+        "name": "The Juggernaut",
+        "region": "La Noscea",
+        "zone": "Eastern La Noscea",
+        "zone_id": "137",
+        "submap_id": "168",
+        "fishspot_cords": [
+            {
+                "XYZ": "-214.7343, 44.36052, 529.5509",
+                "Heading": "6.139794"
+            }, {
+                "XYZ": "-222.4824, 44.41689, 566.0011",
+                "Heading": "3.544835"
+            }, {
+                "XYZ": "-242.376, 44.33062, 514.6062",
+                "Heading": "0.2000871"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Eastern La Noscea",
+            "XYZ": "-242.7072, 44.33062, 512.5338"
+        }
+    },
+    "58": {
+        "name": "Red Mantis Falls",
+        "region": "La Noscea",
+        "zone": "Eastern La Noscea",
+        "zone_id": "137",
+        "submap_id": "168",
+        "fishspot_cords": [
+            {
+                "XYZ": "-272.5454, 33.78063, 299.9305",
+                "Heading": "4.463154"
+            }, {
+                "XYZ": "-278.8307, 33.78064, 296.5956",
+                "Heading": "4.435918"
+            }, {
+                "XYZ": "-280.1851, 33.99385, 304.9468",
+                "Heading": "2.548871"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Eastern La Noscea",
+            "XYZ": "-253.4813, 35.16173, 289.4978"
+        }
+    },
+    "59": {
+        "name": "Swiftperch",
+        "region": "La Noscea",
+        "zone": "Western La Noscea",
+        "zone_id": "138",
+        "submap_id": "218",
+        "fishspot_cords": [
+            {
+                "XYZ": "591.8521, 4.822018, 471.4789",
+                "Heading": "5.331914"
+            }, {
+                "XYZ": "604.5823, 5.038345, 492.6462",
+                "Heading": "0.09802127"
+            }, {
+                "XYZ": "645.257, 5.578633, 556.2516",
+                "Heading": "5.217016"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Western La Noscea",
+            "XYZ": "658.0223, 9.094515, 510.2093"
+        }
+    },
+    "60": {
+        "name": "Skull Valley",
+        "region": "La Noscea",
+        "zone": "Western La Noscea",
+        "zone_id": "138",
+        "submap_id": "223",
+        "fishspot_cords": [
+            {
+                "XYZ": "203.27, -36.35403, 319.2234",
+                "Heading": "5.066688"
+            }, {
+                "XYZ": "213.7068, -36.35404, 333.0986",
+                "Heading": "0.04436111"
+            }, {
+                "XYZ": "223.5448, -36.35364, 333.0395",
+                "Heading": "6.237484"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Western La Noscea",
+            "XYZ": "213.9494, -36.40361, 310.5599"
+        }
+    },
+    "61": {
+        "name": "Halfstone",
+        "region": "La Noscea",
+        "zone": "Western La Noscea",
+        "zone_id": "138",
+        "submap_id": "945",
+        "fishspot_cords": [
+            {
+                "XYZ": "-241.2194, -42.11089, 44.17156",
+                "Heading": "4.514718"
+            }, {
+                "XYZ": "-244.774, -42.1517, 16.95212",
+                "Heading": "4.160766"
+            }, {
+                "XYZ": "-248.0168, -42.18903, 54.60107",
+                "Heading": "4.250824"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Western La Noscea",
+            "XYZ": "-228.1734, -41.15087, 27.03734"
+        }
+    },
+    "62": {
+        "name": "Isles of Umbra Northshore",
+        "region": "La Noscea",
+        "zone": "Western La Noscea",
+        "zone_id": "138",
+        "submap_id": "461",
+        "fishspot_cords": [
+            {
+                "XYZ": "-295.3371, -42.22972, 397.9655",
+                "Heading": "3.462338"
+            }, {
+                "XYZ": "-311.2322, -42.27152, 404.365",
+                "Heading": "3.956619"
+            }, {
+                "XYZ": "-328.48, -42.23154, 413.7472",
+                "Heading": "4.063434"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Western La Noscea",
+            "XYZ": "-292.056, -41.15286, 413.3401"
+        }
+    },
+    "63": {
+        "name": "Isles of Umbra Southshore",
+        "region": "La Noscea",
+        "zone": "Western La Noscea",
+        "zone_id": "138",
+        "submap_id": "228",
+        "fishspot_cords": [
+            {
+                "XYZ": "-453.0573, -37.94336, 745.8951",
+                "Heading": "0.1122043"
+            }, {
+                "XYZ": "-475.5448, -38.35024, 768.3134",
+                "Heading": "6.152446"
+            }, {
+                "XYZ": "-490.0315, -37.92073, 761.21",
+                "Heading": "5.404744"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Western La Noscea",
+            "XYZ": "-464.1351, -38.0391, 737.9131"
+        }
+    },
+    "64": {
+        "name": "The Brewer's Beacon",
+        "region": "La Noscea",
+        "zone": "Western La Noscea",
+        "zone_id": "138",
+        "submap_id": "220",
+        "fishspot_cords": [
+            {
+                "XYZ": "429.9157, 14.96737, 446.2473",
+                "Heading": "4.373005"
+            }, {
+                "XYZ": "440.1911, 11.35679, 434.9116",
+                "Heading": "4.488194"
+            }, {
+                "XYZ": "465.9861, 8.17081, 438.3685",
+                "Heading": "0.7598822"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Western La Noscea",
+            "XYZ": "445.8791, 14.54649, 451.3748"
+        }
+    },
+    "65": {
+        "name": "The Ship Graveyard",
+        "region": "La Noscea",
+        "zone": "Western La Noscea",
+        "zone_id": "138",
+        "submap_id": "228",
+        "fishspot_cords": [
+            {
+                "XYZ": "-221.2151, -42.28603, 753.1325",
+                "Heading": "0.003720999"
+            }, {
+                "XYZ": "-257.4962, -42.2619, 734.9879",
+                "Heading": "5.945528"
+            }, {
+                "XYZ": "-278.6465, -42.2572, 718.3185",
+                "Heading": "5.481596"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Western La Noscea",
+            "XYZ": "-248.5175, -41.66576, 717.8652"
+        }
+    },
+    "66": {
+        "name": "Oakwood",
+        "region": "La Noscea",
+        "zone": "Upper La Noscea",
+        "zone_id": "139",
+        "submap_id": "231",
+        "fishspot_cords": [
+            {
+                "XYZ": "-323.3856, -2.390284, 117.6317",
+                "Heading": "2.751819"
+            }, {
+                "XYZ": "-352.9603, -3.009619, 116.2184",
+                "Heading": "3.380132"
+            }, {
+                "XYZ": "-365.8256, -1.967316, 130.2256",
+                "Heading": "4.785471"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Upper La Noscea",
+            "XYZ": "-346.4047, -1.910502, 133.8583"
+        }
+    },
+    "67": {
+        "name": "Fool Falls",
+        "region": "La Noscea",
+        "zone": "Upper La Noscea",
+        "zone_id": "139",
+        "submap_id": "715",
+        "fishspot_cords": [
+            {
+                "XYZ": "-583.9859, -3.4, -45.61539",
+                "Heading": "4.04835"
+            }, {
+                "XYZ": "-608.6689, -3.4, -30.51702",
+                "Heading": "3.187551"
+            }, {
+                "XYZ": "-638.4596, -3.4, -35.60034",
+                "Heading": "0.2826598"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Upper La Noscea",
+            "XYZ": "-608.467, -3.4, -27.02126"
+        }
+    },
+    "68": {
+        "name": "Northeast Bronze Lake",
+        "region": "La Noscea",
+        "zone": "Upper La Noscea",
+        "zone_id": "139",
+        "submap_id": "177",
+        "fishspot_cords": [
+            {
+                "XYZ": "262.0699, -3.4, 52.85926",
+                "Heading": "1.506207"
+            }, {
+                "XYZ": "285.5044, -3.4, 21.87793",
+                "Heading": "4.689689"
+            }, {
+                "XYZ": "300.2574, -3.4, 49.42555",
+                "Heading": "3.5356"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Upper La Noscea",
+            "XYZ": "301.5934, -3.052745, 61.05919"
+        }
+    },
+    "69": {
+        "name": "The Silver Bazaar",
+        "region": "Thanalan",
+        "zone": "Western Thanalan",
+        "zone_id": "140",
+        "submap_id": "266",
+        "fishspot_cords": [
+            {
+                "XYZ": "-317.0293, 32.65864, 421.4394",
+                "Heading": "4.198692"
+            }, {
+                "XYZ": "-325.4308, 31.86579, 406.1303",
+                "Heading": "5.476267"
+            }, {
+                "XYZ": "-334.7412, 32.58686, 390.4811",
+                "Heading": "4.975707"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Western Thanalan",
+            "XYZ": "-323.066, 32.16915, 385.4688"
+        }
+    },
+    "70": {
+        "name": "Vesper Bay",
+        "region": "Thanalan",
+        "zone": "Western Thanalan",
+        "zone_id": "140",
+        "submap_id": "245",
+        "fishspot_cords": [
+            {
+                "XYZ": "-477.1317, 23.16101, -431.7676",
+                "Heading": "4.869655"
+            }, {
+                "XYZ": "-480.5109, 23.4737, -449.4571",
+                "Heading": "5.020453"
+            }, {
+                "XYZ": "-481.6847, 22.5132, -458.5653",
+                "Heading": "4.712576"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Western Thanalan",
+            "XYZ": "-470.7941, 23.14964, -456.7296"
+        }
+    },
+    "71": {
+        "name": "Crescent Cove",
+        "region": "Thanalan",
+        "zone": "Western Thanalan",
+        "zone_id": "140",
+        "submap_id": "370",
+        "fishspot_cords": [
+            {
+                "XYZ": "-324.3295, 13.9835, -99.37143",
+                "Heading": "1.510842"
+            }, {
+                "XYZ": "-340.3997, 13.90376, -99.89254",
+                "Heading": "0.01335144"
+            }, {
+                "XYZ": "-356.0331, 13.90376, -100.7579",
+                "Heading": "4.72364"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Western Thanalan",
+            "XYZ": "-328.2706, 13.9835, -100.0699"
+        }
+    },
+    "72": {
+        "name": "Nophica's Wells",
+        "region": "Thanalan",
+        "zone": "Western Thanalan",
+        "zone_id": "140",
+        "submap_id": "264",
+        "fishspot_cords": [
+            {
+                "XYZ": "106.4375, 17.53689, 44.56209",
+                "Heading": "2.609307"
+            }, {
+                "XYZ": "119.5265, 17.53689, 33.86742",
+                "Heading": "2.795709"
+            }, {
+                "XYZ": "124.6305, 17.53689, 6.207276",
+                "Heading": "6.182345"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Western Thanalan",
+            "XYZ": "105.2502, 17.53689, 46.49154"
+        }
+    },
+    "73": {
+        "name": "The Footfalls",
+        "region": "Thanalan",
+        "zone": "Western Thanalan",
+        "zone_id": "140",
+        "submap_id": "245",
+        "fishspot_cords": [
+            {
+                "XYZ": "-169.3685, 14.51384, -295.3834",
+                "Heading": "1.908895"
+            }, {
+                "XYZ": "-199.3176, 14.51384, -319.2296",
+                "Heading": "4.547829"
+            }, {
+                "XYZ": "-199.7656, 14.51385, -289.5831",
+                "Heading": "2.918395"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Western Thanalan",
+            "XYZ": "-196.8338, 15.78721, -273.8176"
+        }
+    },
+    "74": {
+        "name": "Cape Westwind",
+        "region": "Thanalan",
+        "zone": "Western Thanalan",
+        "zone_id": "140",
+        "submap_id": "277",
+        "fishspot_cords": [
+            {
+                "XYZ": "-535.9346, 55.54464, -729.137",
+                "Heading": "5.629245"
+            }, {
+                "XYZ": "-541.2679, 55.26532, -731.5655",
+                "Heading": "5.708457"
+            }, {
+                "XYZ": "-544.7125, 55.05087, -735.2115",
+                "Heading": "5.597829"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Western Thanalan",
+            "XYZ": "-532.5146, 55.5936, -736.8478"
+        }
+    },
+    "75": {
+        "name": "Upper Soot Creek",
+        "region": "Thanalan",
+        "zone": "Central Thanalan",
+        "zone_id": "141",
+        "submap_id": "249",
+        "fishspot_cords": [
+            {
+                "XYZ": "117.8282, -2, -169.3544",
+                "Heading": "3.84052"
+            }, {
+                "XYZ": "130.4337, -2, -188.6516",
+                "Heading": "2.627868"
+            }, {
+                "XYZ": "99.43066, -2, -168.8784",
+                "Heading": "1.578002"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Central Thanalan",
+            "XYZ": "122.7786, -0.3588659, -162.882"
+        }
+    },
+    "76": {
+        "name": "Lower Soot Creek",
+        "region": "Thanalan",
+        "zone": "Central Thanalan",
+        "zone_id": "141",
+        "submap_id": "248",
+        "fishspot_cords": [
+            {
+                "XYZ": "-148.8995, -32, 111.208",
+                "Heading": "4.601738"
+            }, {
+                "XYZ": "-173.101, -32, 103.916",
+                "Heading": "6.072006"
+            }, {
+                "XYZ": "-198.8511, -32, 112.3825",
+                "Heading": "4.800707"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Central Thanalan",
+            "XYZ": "-169.8532, -30.49648, 95.41872"
+        }
+    },
+    "77": {
+        "name": "The Unholy Heir",
+        "region": "Thanalan",
+        "zone": "Central Thanalan",
+        "zone_id": "141",
+        "submap_id": "249",
+        "fishspot_cords": [
+            {
+                "XYZ": "270.3185, -19.71835, -141.46",
+                "Heading": "3.679023"
+            }, {
+                "XYZ": "274.0152, -19.71835, -161.9428",
+                "Heading": "0.4138639"
+            }, {
+                "XYZ": "293.4185, -19.05349, -153.5947",
+                "Heading": "3.630853"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Central Thanalan",
+            "XYZ": "263.259, -19.71835, -135.9717"
+        }
+    },
+    "78": {
+        "name": "North Drybone",
+        "region": "Thanalan",
+        "zone": "Eastern Thanalan",
+        "zone_id": "145",
+        "submap_id": "250",
+        "fishspot_cords": [
+            {
+                "XYZ": "-386.024, -22.22363, -47.62962",
+                "Heading": "5.633923"
+            }, {
+                "XYZ": "-388.4815, -22.2028, -30.0866",
+                "Heading": "3.677758"
+            }, {
+                "XYZ": "-389.6942, -22.22362, -39.0976",
+                "Heading": "4.842243"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Eastern Thanalan",
+            "XYZ": "-380.4107, -21.45136, -34.88272"
+        }
+    },
+    "79": {
+        "name": "South Drybone",
+        "region": "Thanalan",
+        "zone": "Eastern Thanalan",
+        "zone_id": "145",
+        "submap_id": "250",
+        "fishspot_cords": [
+            {
+                "XYZ": "-202.5141, -37.89638, 161.2821",
+                "Heading": "4.560738"
+            }, {
+                "XYZ": "-206.6966, -37.5697, 144.3847",
+                "Heading": "6.121063"
+            }, {
+                "XYZ": "-221.8155, -36.71885, 148.0304",
+                "Heading": "0.6253672"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Eastern Thanalan",
+            "XYZ": "-222.5766, -36.75444, 147.0753"
+        }
+    },
+    "80": {
+        "name": "Yugr'am River",
+        "region": "Thanalan",
+        "zone": "Eastern Thanalan",
+        "zone_id": "145",
+        "submap_id": "308",
+        "fishspot_cords": [
+            {
+                "XYZ": "209.853, -7.265845, 58.57347",
+                "Heading": "4.702001"
+            }, {
+                "XYZ": "246.3821, -3.596932, 52.58365",
+                "Heading": "2.090189"
+            }, {
+                "XYZ": "263.5947, -2.646575, 37.97836",
+                "Heading": "6.040217"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Eastern Thanalan",
+            "XYZ": "244.7354, -3.677135, 52.97052"
+        }
+    },
+    "81": {
+        "name": "Whispering Gorge",
+        "region": "The Black Shroud",
+        "zone": "Old Gridania",
+        "zone_id": "133",
+        "fishspot_cords": [
+            {
+                "XYZ": "209.9247, -2.58255, -226.1134",
+                "Heading": "4.714236"
+            }, {
+                "XYZ": "210.48, -2.58255, -246.0894",
+                "Heading": "2.668012"
+            }, {
+                "XYZ": "221.3165, -2.582566, -243.9003",
+                "Heading": "1.537036"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Gridania (Old Gridania)",
+            "XYZ": "180.0303, -2.267064, -243.6821"
+        }
+    },
+    "82": {
+        "name": "The Burning Wall",
+        "region": "Thanalan",
+        "zone": "Eastern Thanalan",
+        "zone_id": "145",
+        "submap_id": "253",
+        "fishspot_cords": [
+            {
+                "XYZ": "419.1361, -64.63788, 194.8363",
+                "Heading": "3.501371"
+            }, {
+                "XYZ": "424.5287, -64.83167, 219.4854",
+                "Heading": "5.893176"
+            }, {
+                "XYZ": "432.0719, -64.65391, 190.2607",
+                "Heading": "3.237483"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Eastern Thanalan",
+            "XYZ": "423.4817, -64.36299, 201.4493"
+        }
+    },
+    "83": {
+        "name": "Burnt Lizard Creek",
+        "region": "Thanalan",
+        "zone": "Southern Thanalan",
+        "zone_id": "146",
+        "submap_id": "254",
+        "fishspot_cords": [
+            {
+                "XYZ": "23.47219, 3.685872, -342.0957",
+                "Heading": "6.081415"
+            }, {
+                "XYZ": "32.92961, 2.916063, -313.2552",
+                "Heading": "4.592296"
+            }, {
+                "XYZ": "37.10298, 2.982913, -332.3527",
+                "Heading": "1.507254"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Southern Thanalan",
+            "XYZ": "35.99311, 3.396969, -349.1804"
+        }
+    },
+    "84": {
+        "name": "Zahar'ak",
+        "region": "Thanalan",
+        "zone": "Southern Thanalan",
+        "zone_id": "146",
+        "submap_id": "320",
+        "fishspot_cords": [
+            {
+                "XYZ": "176.6495, 6.103661, -52.73915",
+                "Heading": "0.2789743"
+            }, {
+                "XYZ": "180.9414, 6.103661, -37.04559",
+                "Heading": "1.690596"
+            }, {
+                "XYZ": "191.8968, 6.103661, -28.69215",
+                "Heading": "4.934813"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Southern Thanalan",
+            "XYZ": "200.2428, 6.927657, -30.77603"
+        }
+    },
+    "85": {
+        "name": "Forgotten Springs",
+        "region": "Thanalan",
+        "zone": "Southern Thanalan",
+        "zone_id": "146",
+        "submap_id": "257",
+        "fishspot_cords": [
+            {
+                "XYZ": "-295.7881, 5, 491.6447",
+                "Heading": "3.627046"
+            }, {
+                "XYZ": "-297.7134, 5, 457.9657",
+                "Heading": "5.541336"
+            }, {
+                "XYZ": "-304.5948, 5, 474.3223",
+                "Heading": "2.852121"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Southern Thanalan",
+            "XYZ": "-288.7281, 6.687322, 503.434"
+        }
+    },
+    "86": {
+        "name": "Sagolii Desert",
+        "region": "Thanalan",
+        "zone": "Southern Thanalan",
+        "zone_id": "146",
+        "submap_id": "257",
+        "fishspot_cords": [
+            {
+                "XYZ": "-441.4117, -0.9107453, 742.5688",
+                "Heading": "4.968235"
+            }, {
+                "XYZ": "-442.3548, -0.9186811, 725.9896",
+                "Heading": "4.513752"
+            }, {
+                "XYZ": "-445.7262, -1.34148, 700.6635",
+                "Heading": "4.254045"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Southern Thanalan",
+            "XYZ": "-429.0695, -0.4089584, 736.3172"
+        }
+    },
+    "87": {
+        "name": "Sagolii Dunes",
+        "region": "Thanalan",
+        "zone": "Southern Thanalan",
+        "zone_id": "146",
+        "submap_id": "257",
+        "fishspot_cords": [
+            {
+                "XYZ": "206.0338, 1.959864, 780.3409",
+                "Heading": "2.950645"
+            }, {
+                "XYZ": "240.4931, 3.435918, 786.8776",
+                "Heading": "3.550628"
+            }, {
+                "XYZ": "259.4739, 3.068014, 785.2675",
+                "Heading": "3.211339"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Southern Thanalan",
+            "XYZ": "245.9949, 4.166918, 800.4512"
+        }
+    },
+    "88": {
+        "name": "Ceruleum Field",
+        "region": "Thanalan",
+        "zone": "Northern Thanalan",
+        "zone_id": "147",
+        "submap_id": "331",
+        "fishspot_cords": [
+            {
+                "XYZ": "-54.27203, 46.32491, 46.60146",
+                "Heading": "6.100248"
+            }, {
+                "XYZ": "-225.4317, 59.25958, -85.06227",
+                "Heading": "4.135532"
+            }, {
+                "XYZ": "-235.136, 59.02201, -70.44752",
+                "Heading": "3.762728"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Northern Thanalan",
+            "XYZ": "-52.10796, 47, 38.07734"
+        }
+    },
+    "89": {
+        "name": "Bluefog",
+        "region": "Thanalan",
+        "zone": "Northern Thanalan",
+        "zone_id": "147",
+        "submap_id": "258",
+        "fishspot_cords": [
+            {
+                "XYZ": "117.044, 14.36216, 237.177",
+                "Heading": "2.487101"
+            }, {
+                "XYZ": "118.6457, 12.16843, 221.7863",
+                "Heading": "1.835743"
+            }, {
+                "XYZ": "132.7265, 19.5851, 207.0147",
+                "Heading": "6.229785"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Northern Thanalan",
+            "XYZ": "103.2273, 15.00176, 217.3866"
+        }
+    },
+    "90": {
+        "name": "Jadeite Flood",
+        "region": "The Black Shroud",
+        "zone": "New Gridania",
+        "zone_id": "132",
+        "fishspot_cords": [
+            {
+                "XYZ": "114.95, -14.79039, 147.9822",
+                "Heading": "5.444788"
+            }, {
+                "XYZ": "124.2217, -15.07236, 160.4096",
+                "Heading": "5.411275"
+            }, {
+                "XYZ": "131.1351, -14.69595, 166.3251",
+                "Heading": "5.595587"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Gridania (New Gridania)",
+            "XYZ": "71.02061, -7.759192, 107.6301"
+        }
+    },
+    "91": {
+        "name": "Lower Black Tea Brook",
+        "region": "The Black Shroud",
+        "zone": "New Gridania",
+        "zone_id": "132",
+        "fishspot_cords": [
+            {
+                "XYZ": "-31.86116, -6.293079, -1.112373",
+                "Heading": "3.290187"
+            }, {
+                "XYZ": "-33.74464, -6.278622, -21.16908",
+                "Heading": "3.18965"
+            }, {
+                "XYZ": "-35.39588, -8.127698, 24.24189",
+                "Heading": "5.340596"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Gridania (New Gridania)",
+            "XYZ": "-17.69501, -3.492352, 9.125766"
+        }
+    },
+    "92": {
+        "name": "Haukke Manor",
+        "region": "The Black Shroud",
+        "zone": "Central Shroud",
+        "zone_id": "148",
+        "submap_id": "102",
+        "fishspot_cords": [
+            {
+                "XYZ": "-499.218, 63.70475, 130.739",
+                "Heading": "3.409516"
+            }, {
+                "XYZ": "-502.1729, 63.70475, 113.1046",
+                "Heading": "1.671165"
+            }, {
+                "XYZ": "-507.4021, 64.05696, 124.9387",
+                "Heading": "2.136122"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Central Shroud",
+            "XYZ": "-525.0564, 65.06669, 126.0935"
+        }
+    },
+    "93": {
+        "name": "Singing Shards",
+        "region": "Mor Dhona",
+        "zone": "Mor Dhona",
+        "zone_id": "156",
+        "submap_id": "410",
+        "fishspot_cords": [
+            {
+                "XYZ": "315.7721, 22.64252, -673.6241",
+                "Heading": "1.17469"
+            }, {
+                "XYZ": "320.1711, 22.98494, -678.5112",
+                "Heading": "0.7348647"
+            }, {
+                "XYZ": "334.5092, 25.11681, -679.5267",
+                "Heading": "1.212389"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Mor Dhona",
+            "XYZ": "543.8335, -9.70342, -730.1382"
+        }
+    },
+    "94": {
+        "name": "The North Shards",
+        "region": "Mor Dhona",
+        "zone": "Mor Dhona",
+        "zone_id": "156",
+        "submap_id": "410",
+        "fishspot_cords": [
+            {
+                "XYZ": "445.7883, -5.563284, -750.0673",
+                "Heading": "5.845725"
+            }, {
+                "XYZ": "460.5209, -4.923997, -748.8826",
+                "Heading": "1.007671"
+            }, {
+                "XYZ": "490.8825, -5.542807, -753.9091",
+                "Heading": "5.38077"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Mor Dhona",
+            "XYZ": "454.4445, -4.775482, -750.3284"
+        }
+    },
+    "95": {
+        "name": "Parata's Peace",
+        "region": "Thanalan",
+        "zone": "Western Thanalan",
+        "zone_id": "140",
+        "submap_id": "276",
+        "fishspot_cords": [
+            {
+                "XYZ": "-317.0771, 12.60398, -741.5321",
+                "Heading": "0.7704749"
+            }, {
+                "XYZ": "-323.1062, 12.59304, -717.5994",
+                "Heading": "3.243963"
+            }, {
+                "XYZ": "-336.2919, 12.74882, -741.1483",
+                "Heading": "1.777886"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Western Thanalan",
+            "XYZ": "-345.541, 14.71903, -739.8731"
+        }
+    },
+    "96": {
+        "name": "The Clutch",
+        "region": "Thanalan",
+        "zone": "Central Thanalan",
+        "zone_id": "141",
+        "submap_id": "249",
+        "fishspot_cords": [
+            {
+                "XYZ": "342.5189, -18.55594, 16.56027",
+                "Heading": "0.1498213"
+            }, {
+                "XYZ": "370.7016, -22.94275, 13.6297",
+                "Heading": "0.926841"
+            }, {
+                "XYZ": "387.3842, -21.66257, -0.4775881",
+                "Heading": "0.9289355"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Central Thanalan",
+            "XYZ": "367.2905, -20.87379, 8.175356"
+        }
+    },
+    "97": {
+        "name": "Blind Iron Mines",
+        "region": "La Noscea",
+        "zone": "Lower La Noscea",
+        "zone_id": "135",
+        "submap_id": "202",
+        "fishspot_cords": [
+            {
+                "XYZ": "294.0248, 72.9422, -269.8851",
+                "Heading": "1.62873"
+            }, {
+                "XYZ": "295.4545, 72.94317, -268.3312",
+                "Heading": "2.072731"
+            }, {
+                "XYZ": "296.8656, 72.97592, -273.1077",
+                "Heading": "0.372087"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Lower La Noscea",
+            "XYZ": "282.0638, 74.05998, -277.2179"
+        }
+    },
+    "98": {
+        "name": "Bronze Lake Shallows",
+        "region": "La Noscea",
+        "zone": "Upper La Noscea",
+        "zone_id": "139",
+        "submap_id": "177",
+        "fishspot_cords": [
+            {
+                "XYZ": "569.3752, -3.4, 161.3159",
+                "Heading": "1.647109"
+            }, {
+                "XYZ": "572.0908, -3.4, 139.9327",
+                "Heading": "2.901653"
+            }, {
+                "XYZ": "589.8738, -3.4, 163.6648",
+                "Heading": "5.289258"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Upper La Noscea",
+            "XYZ": "601.1978, -3.052744, 152.88"
+        }
+    },
+    "99": {
+        "name": "The Long Climb",
+        "region": "La Noscea",
+        "zone": "Outer La Noscea",
+        "zone_id": "180",
+        "submap_id": "235",
+        "fishspot_cords": [
+            {
+                "XYZ": "-323.2883, 32.5542, -457.3354",
+                "Heading": "2.960396"
+            }, {
+                "XYZ": "-329.0862, 34.76004, -457.2785",
+                "Heading": "2.843106"
+            }, {
+                "XYZ": "-340.5363, 38.69806, -449.6728",
+                "Heading": "0.5665219"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Outer La Noscea",
+            "XYZ": "-330.9283, 32.90812, -470.4216"
+        }
+    },
+    "100": {
+        "name": "Upper Black Tea Brook",
+        "region": "The Black Shroud",
+        "zone": "Old Gridania",
+        "zone_id": "133",
+        "fishspot_cords": [
+            {
+                "XYZ": "-121.8741, 3.031262, -162.0318",
+                "Heading": "4.686854"
+            }, {
+                "XYZ": "-122.0327, 2.92517, -132.867",
+                "Heading": "0.6865654"
+            }, {
+                "XYZ": "-145.6641, 3.092318, -167.6399",
+                "Heading": "0.8708653"
+            }
+        ],
+        "lisbeth_cords": {
+            "ARea": "Gridania (Old Gridania)",
+            "XYZ": "-113.6757, 6.369269, -150.6167"
+        }
+    },
+    "101": {
+        "name": "Sapsa Spawning Grounds",
+        "region": "La Noscea",
+        "zone": "Western La Noscea",
+        "zone_id": "138",
+        "submap_id": "363",
+        "fishspot_cords": [
+            {
+                "XYZ": "-202.8527, -42.29935, -304.7731",
+                "Heading": "2.019479"
+            }, {
+                "XYZ": "-231.6532, -42.58453, -299.9491",
+                "Heading": "5.098241"
+            }, {
+                "XYZ": "-249.0802, -42.53819, -307.7516",
+                "Heading": "0.1177614"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Western La Noscea",
+            "XYZ": "-249.0802, -42.53819, -307.7516"
+        }
+    },
+    "102": {
+        "name": "Reaver Hide",
+        "region": "La Noscea",
+        "zone": "Western La Noscea",
+        "zone_id": "138",
+        "submap_id": "363",
+        "fishspot_cords": [
+            {
+                "XYZ": "-333.7354, -40.54993, -348.5803",
+                "Heading": "1.075289"
+            }, {
+                "XYZ": "-344.2648, -38.81131, -378.0714",
+                "Heading": "2.943487"
+            }, {
+                "XYZ": "-362.0725, -39.38726, -367.4854",
+                "Heading": "4.304844"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Western La Noscea",
+            "XYZ": "-355.129, -39.56086, -358.0498"
+        }
+    },
+    "103": {
+        "name": "Moondrip",
+        "region": "Thanalan",
+        "zone": "Western Thanalan",
+        "zone_id": "140",
+        "submap_id": "275",
+        "fishspot_cords": [
+            {
+                "XYZ": "-176.5261, 14.63993, -720.3877",
+                "Heading": "3.323525"
+            }, {
+                "XYZ": "-180.7458, 14.63993, -742.4382",
+                "Heading": "0.525413"
+            }, {
+                "XYZ": "-212.2421, 14.67033, -736.3536",
+                "Heading": "1.601916"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Western Thanalan",
+            "XYZ": "-220.5043, 15.77091, -736.3502"
+        }
+    },
+    "104": {
+        "name": "Mist",
+        "region": "La Noscea",
+        "zone": "Mist",
+        "zone_id": "339",
+        "submap_id": "1203",
+        "fishspot_cords": [
+            {
+                "XYZ": "-39.94213, -0.2998141, 77.95563",
+                "Heading": "0.2739866"
+            }, {
+                "XYZ": "-64.23476, -0.4460256, 132.4761",
+                "Heading": "0.07711339"
+            }, {
+                "XYZ": "-89.91607, -0.3917423, 67.00573",
+                "Heading": "5.34662"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Limsa Lominsa (Lower Decks)",
+            "XYZ": "-81.17178, 18.864, -4.033834"
+        }
+    },
+    "105": {
+        "name": "The Lavender Beds",
+        "region": "The Black Shroud",
+        "zone": "The Lavender Beds",
+        "zone_id": "340",
+        "submap_id": "476",
+        "fishspot_cords": [
+            {
+                "XYZ": "-6.899338, 1.154556, 192.6779",
+                "Heading": "4.952633"
+            }, {
+                "XYZ": "17.03964, 2.610861, 215.6596",
+                "Heading": "0.5292695"
+            }, {
+                "XYZ": "8.996038, 2.61084, 195.7229",
+                "Heading": "2.25086"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Gridania (New Gridania)",
+            "XYZ": "35.11273, 2.200001, 32.23121"
+        }
+    },
+    "106": {
+        "name": "The Goblet",
+        "region": "Thanalan",
+        "zone": "The Goblet",
+        "zone_id": "341",
+        "submap_id": "0",
+        "fishspot_cords": [
+            {
+                "XYZ": "-13.18043, -24.07133, 41.33421",
+                "Heading": "4.868697"
+            }, {
+                "XYZ": "-13.18544, -24.07133, 58.71743",
+                "Heading": "4.491707"
+            }, {
+                "XYZ": "-13.19689, -24.07133, 22.75558",
+                "Heading": "5.258256"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Ul'dah (Steps of Nald)",
+            "XYZ": "-147.512, -3.154888, -166.1085"
+        }
+    },
+    "107": {
+        "name": "Rhotano Sea (Privateer Forecastle)",
+        "region": "La Noscea",
+        "zone": "Eastern La Noscea",
+        "zone_id": "137",
+        "submap_id": "216",
+        "fishspot_cords": [
+            {
+                "XYZ": "878.9365, 20.74535, 132.2115",
+                "Heading": "3.842931"
+            }, {
+                "XYZ": "887.8115, 20.74, 144.8793",
+                "Heading": "0.8144441"
+            }, {
+                "XYZ": "895.9836, 19.24, 127.6374",
+                "Heading": "1.909806"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Eastern La Noscea",
+            "XYZ": "885.8239, 20.75006, 144.7628"
+        }
+    },
+    "108": {
+        "name": "Rhotano Sea (Privateer Sterncastle)",
+        "region": "La Noscea",
+        "zone": "Eastern La Noscea",
+        "zone_id": "137",
+        "submap_id": "216",
+        "fishspot_cords": [
+            {
+                "XYZ": "859.7519, 22.08624, 154.0708",
+                "Heading": "4.228399"
+            }, {
+                "XYZ": "862.3873, 22.24, 167.1437",
+                "Heading": "5.273502"
+            }, {
+                "XYZ": "874.2692, 20.16584, 162.1999",
+                "Heading": "6.249492"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Eastern La Noscea",
+            "XYZ": "885.8239, 20.75006, 144.7628"
+        }
+    },
+    "109": {
+        "name": "Riversmeet",
+        "region": "Coerthas",
+        "zone": "Coerthas Western Highlands",
+        "zone_id": "397",
+        "submap_id": "2201",
+        "fishspot_cords": [
+            {
+                "XYZ": "495.5986, 143.3361, 240.9088",
+                "Heading": "1.271568"
+            }, {
+                "XYZ": "504.8778, 142.7666, 243.0081",
+                "Heading": "4.99959"
+            }, {
+                "XYZ": "511.0348, 142.4246, 246.2458",
+                "Heading": "5.449879"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Coerthas Western Highlands",
+            "XYZ": "510.4276, 142.6529, 239.808"
+        }
+    },
+    "110": {
+        "name": "Greytail Falls",
+        "region": "Coerthas",
+        "zone": "Coerthas Western Highlands",
+        "zone_id": "397",
+        "submap_id": "2217",
+        "fishspot_cords": [
+            {
+                "XYZ": "626.7681, 78.79021, 227.8886",
+                "Heading": "1.027059"
+            }, {
+                "XYZ": "628.3219, 78.429, 225.3806",
+                "Heading": "1.071042"
+            }, {
+                "XYZ": "632.4055, 78.45827, 218.4975",
+                "Heading": "0.9956429"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Coerthas Western Highlands",
+            "XYZ": "622.9797, 78.429, 222.7943"
+        }
+    },
+    "111": {
+        "name": "Unfrozen Pond",
+        "region": "Coerthas",
+        "zone": "Coerthas Western Highlands",
+        "zone_id": "397",
+        "submap_id": "2201",
+        "fishspot_cords": [
+            {
+                "XYZ": "240.2967, 132.1151, -206.4833",
+                "Heading": "1.130893"
+            }, {
+                "XYZ": "252.1819, 131.7576, -235.2873",
+                "Heading": "1.013605"
+            }, {
+                "XYZ": "276.9553, 131.7509, -237.6015",
+                "Heading": "5.675732"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Coerthas Western Highlands",
+            "XYZ": "280.3072, 132.3909, -244.9158"
+        }
+    },
+    "112": {
+        "name": "Clearpool",
+        "region": "Coerthas",
+        "zone": "Coerthas Western Highlands",
+        "zone_id": "397",
+        "submap_id": "2201",
+        "fishspot_cords": [
+            {
+                "XYZ": "-21.4197, 89.14197, -559.7135",
+                "Heading": "4.573871"
+            }, {
+                "XYZ": "-32.44563, 89.25902, -571.203",
+                "Heading": "6.274516"
+            }, {
+                "XYZ": "-48.33238, 89.17406, -557.7254",
+                "Heading": "1.37154"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Coerthas Western Highlands",
+            "XYZ": "692.1117, 132.263, -797.5139"
+        }
+    },
+    "113": {
+        "name": "Dragonspit",
+        "region": "Coerthas",
+        "zone": "Coerthas Western Highlands",
+        "zone_id": "397",
+        "submap_id": "2227",
+        "fishspot_cords": [
+            {
+                "XYZ": "-695.7986, 102.8, -640.8844",
+                "Heading": "3.362917"
+            }, {
+                "XYZ": "-702.4672, 102.8001, -634.7853",
+                "Heading": "3.046915"
+            }, {
+                "XYZ": "-703.6832, 102.8001, -644.2105",
+                "Heading": "5.606016"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Coerthas Western Highlands",
+            "XYZ": "-704.1292, 103.2534, -625.1243"
+        }
+    },
+    "114": {
+        "name": "South Banepool",
+        "region": "Coerthas",
+        "zone": "Coerthas Western Highlands",
+        "zone_id": "397",
+        "submap_id": "2202",
+        "fishspot_cords": [
+            {
+                "XYZ": "-23.51305, 88.99787, -555.3638",
+                "Heading": "4.676697"
+            }, {
+                "XYZ": "-33.74816, 89.23457, -571.0184",
+                "Heading": "0.203069"
+            }, {
+                "XYZ": "-49.15779, 89.21899, -555.2145",
+                "Heading": "1.220945"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Coerthas Western Highlands",
+            "XYZ": "-12.63069, 90.64453, -557.0477"
+        }
+    },
+    "115": {
+        "name": "Ashpool",
+        "region": "Coerthas",
+        "zone": "Coerthas Western Highlands",
+        "zone_id": "397",
+        "submap_id": "2202",
+        "fishspot_cords": [
+            {
+                "XYZ": "-418.0547, 89.61117, -323.2126",
+                "Heading": "4.380158"
+            }, {
+                "XYZ": "-418.3141, 89.59487, -333.7301",
+                "Heading": "5.041987"
+            }, {
+                "XYZ": "-421.955, 90.26937, -349.758",
+                "Heading": "6.204384"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Coerthas Western Highlands",
+            "XYZ": "-421.0156, 90.98969, -356.9834"
+        }
+    },
+    "116": {
+        "name": "West Banepool",
+        "region": "Coerthas",
+        "zone": "Coerthas Western Highlands",
+        "zone_id": "397",
+        "submap_id": "2202",
+        "fishspot_cords": [
+            {
+                "XYZ": "-448.3315, 90.52505, -671.4198",
+                "Heading": "4.060614"
+            }, {
+                "XYZ": "-454.2133, 90.26717, -669.1575",
+                "Heading": "3.815576"
+            }, {
+                "XYZ": "-470.4974, 90.01168, -649.8319",
+                "Heading": "3.920299"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Coerthas Western Highlands",
+            "XYZ": "-447.2483, 90.92711, -659.5029"
+        }
+    },
+    "117": {
+        "name": "The Hundred Throes",
+        "region": "Dravania",
+        "zone": "The Dravanian Forelands",
+        "zone_id": "398",
+        "submap_id": "2019",
+        "lisbeth_cords": {
+            "Area": "The Dravanian Forelands",
+            "XYZ": "447.6139, -26.25389, -524.89"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "447.6139, -26.25389, -524.89",
+                "Heading": "3.662424"
+            }, {
+                "XYZ": "420.4291, -26.25389, -543.6107",
+                "Heading": "5.884581"
+            }, {
+                "XYZ": "465.8523, -26.25389, -538.0203",
+                "Heading": "2.883308"
+            }
+        ]
+
+    },
+    "118": {
+        "name": "Whilom River",
+        "region": "Dravania",
+        "zone": "The Dravanian Forelands",
+        "zone_id": "398",
+        "submap_id": "2020",
+        "lisbeth_cords": {
+            "Area": "The Dravanian Forelands",
+            "XYZ": "408.8085, -46.34728, -398.6796"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "408.8085, -46.34728, -398.6796",
+                "Heading": "6.062608"
+            }, {
+                "XYZ": "419.7059, -47.16928, -371.279",
+                "Heading": "5.453138"
+            }, {
+                "XYZ": "420.4426, -46.94389, -347.9407",
+                "Heading": "3.24145"
+            }
+        ]
+
+    },
+    "119": {
+        "name": "The Smoldering Wastes",
+        "region": "Dravania",
+        "zone": "The Dravanian Forelands",
+        "zone_id": "398",
+        "submap_id": "2020",
+        "lisbeth_cords": {
+            "Area": "The Dravanian Forelands",
+            "XYZ": "139.6231, -94.10959, 247.7244"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "139.6231, -94.10959, 247.7244",
+                "Heading": "2.956628"
+            }, {
+                "XYZ": "149.6818, -91.39368, 213.1958",
+                "Heading": "5.978841"
+            }, {
+                "XYZ": "190.5107, -89.92871, 198.5515",
+                "Heading": "4.743151"
+            }
+        ]
+    },
+    "120": {
+        "name": "The Iron Feast",
+        "region": "Dravania",
+        "zone": "The Dravanian Forelands",
+        "zone_id": "398",
+        "submap_id": "2029",
+        "lisbeth_cords": {
+            "Area": "The Dravanian Forelands",
+            "XYZ": "458.238, 58.42916, -809.2572"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "458.238, 58.42916, -809.2572",
+                "Heading": "3.394347"
+            }, {
+                "XYZ": "480.1388, 58.42916, -845.8835",
+                "Heading": "3.762961"
+            }, {
+                "XYZ": "428.7514, 58.42916, -846.7012",
+                "Heading": "5.36937"
+            }
+        ]
+    },
+    "121": {
+        "name": "Mourn",
+        "region": "Dravania",
+        "zone": "The Dravanian Forelands",
+        "zone_id": "398",
+        "submap_id": "2008",
+        "lisbeth_cords": {
+            "Area": "The Dravanian Forelands",
+            "XYZ": "-475.2081, -10.16682, -474.4399"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-471.8031, -10.14293, -475.2836",
+                "Heading": "1.936656"
+            }, {
+                "XYZ": "-478.3157, -11.6859, -448.0603",
+                "Heading": "3.788103"
+            }, {
+                "XYZ": "-455.5224, -12.17101, -456.36",
+                "Heading": "3.277071"
+            }
+        ]
+    },
+    "122": {
+        "name": "West Mourn",
+        "region": "Dravania",
+        "zone": "The Dravanian Forelands",
+        "zone_id": "398",
+        "submap_id": "2008",
+        "lisbeth_cords": {
+            "Area": "The Dravanian Forelands",
+            "XYZ": "-651.3336, 3.351533, -768.7468"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-648.3218, 4.331171, -778.3206",
+                "Heading": "2.617355"
+            }, {
+                "XYZ": "-672.9894, 3.942748, -754.8378",
+                "Heading": "5.030098"
+            }, {
+                "XYZ": "-684.0073, 6.100186, -767.5778",
+                "Heading": "6.114972"
+            }
+        ]
+    },
+    "123": {
+        "name": "Anyx Old",
+        "region": "Dravania",
+        "zone": "The Dravanian Forelands",
+        "zone_id": "398",
+        "submap_id": "2008",
+        "lisbeth_cords": {
+            "Area": "The Dravanian Forelands",
+            "XYZ": "-181.3112, -18.43873, -581.1884"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-175.5578, -19.64622, -584.6446",
+                "Heading": "2.238262"
+            }, {
+                "XYZ": "-160.4408, -18.77417, -570.864",
+                "Heading": "2.305284"
+            }, {
+                "XYZ": "-155.9353, -18.16515, -552.3746",
+                "Heading": "1.046555"
+            }
+        ]
+    },
+    "124": {
+        "name": "Halo",
+        "region": "Dravania",
+        "zone": "The Dravanian Forelands",
+        "zone_id": "398",
+        "submap_id": "2030",
+        "lisbeth_cords": {
+            "Area": "The Dravanian Forelands",
+            "XYZ": "-737.6535, 4.907196, -819.5856"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-741.1226, 5.558385, -824.1998",
+                "Heading": "4.014312"
+            }, {
+                "XYZ": "-730.9006, 5.529306, -837.8148",
+                "Heading": "3.964034"
+            }, {
+                "XYZ": "-741.4175, 5.576777, -823.7872",
+                "Heading": "5.040553"
+            }
+        ]
+    },
+    "125": {
+        "name": "Thaliak River",
+        "region": "Dravania",
+        "zone": "The Dravanian Hinterlands",
+        "zone_id": "399",
+        "submap_id": "2039",
+        "lisbeth_cords": {
+            "Area": "The Dravanian Hinterlands",
+            "XYZ": "36.15239, 52.72531, 50.93495"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "29.71376, 52.60495, 50.8052",
+                "Heading": "4.73267"
+            }, {
+                "XYZ": "26.36157, 52.6711, 80.21965",
+                "Heading": "4.133673"
+            }, {
+                "XYZ": "25.77735, 52.40601, 40.15475",
+                "Heading": "4.818541"
+            }
+        ]
+    },
+    "126": {
+        "name": "Quickspill Delta",
+        "region": "Dravania",
+        "zone": "The Dravanian Hinterlands",
+        "zone_id": "399",
+        "submap_id": "2052",
+        "lisbeth_cords": {
+            "Area": "The Dravanian Hinterlands",
+            "XYZ": "-501.7314, 146.8684, 68.26116"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-501.7314, 146.8684, 68.26116",
+                "Heading": "4.707539"
+            }, {
+                "XYZ": "-534.8014, 146.8684, 53.24374",
+                "Heading": "4.839485"
+            }, {
+                "XYZ": "-548.5343, 146.8684, 91.87321",
+                "Heading": "1.454943"
+            }
+        ]
+    },
+    "127": {
+        "name": "Upper Thaliak River",
+        "region": "Dravania",
+        "zone": "The Dravanian Hinterlands",
+        "zone_id": "399",
+        "submap_id": "2011",
+        "lisbeth_cords": {
+            "Area": "The Dravanian Hinterlands",
+            "XYZ": "-59.0484, 152.7173, 733.5823"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-44.38216, 152.3128, 729.8894",
+                "Heading": "1.498923"
+            }, {
+                "XYZ": "-59.0421, 152.3253, 709.8475",
+                "Heading": "2.389042"
+            }, {
+                "XYZ": "-69.74203, 152.1237, 703.7979",
+                "Heading": "2.93568"
+            }
+        ]
+    },
+    "128": {
+        "name": "Middle Thaliak River",
+        "region": "Dravania",
+        "zone": "The Dravanian Hinterlands",
+        "zone_id": "399",
+        "submap_id": "2039",
+        "lisbeth_cords": {
+            "Area": "The Dravanian Hinterlands",
+            "XYZ": "-60.88793, 53.95971, 121.7971"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-55.23393, 53.8129, 119.0049",
+                "Heading": "1.762815"
+            }, {
+                "XYZ": "-54.50538, 54.01475, 142.2572",
+                "Heading": "0.7616963"
+            }, {
+                "XYZ": "-54.34693, 54.25716, 128.7334",
+                "Heading": "2.401608"
+            }
+        ]
+    },
+    "129": {
+        "name": "Eil Tohm",
+        "region": "Dravania",
+        "zone": "The Churning Mists",
+        "zone_id": "400",
+        "submap_id": "2013",
+        "lisbeth_cords": {
+            "Area": "The Churning Mists",
+            "XYZ": "700.6899, -50.2302, 427.8866"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "700.6899, -50.2302, 427.8866",
+                "Heading": "2.677398"
+            }, {
+                "XYZ": "729.3427, -50.22274, 423.9734",
+                "Heading": "3.062758"
+            }, {
+                "XYZ": "715.7658, -50.23019, 396.1885",
+                "Heading": "5.03359"
+            }
+        ]
+    },
+    "130": {
+        "name": "Greensward",
+        "region": "Dravania",
+        "zone": "The Churning Mists",
+        "zone_id": "400",
+        "submap_id": "2017",
+        "lisbeth_cords": {
+            "Area": "The Churning Mists",
+            "XYZ": "-660.2543, 180.4012, 598.8935"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-666.3004, 180.9492, 597.5695",
+                "Heading": "4.447162"
+            }, {
+                "XYZ": "-690.383, 180.9132, 609.1667",
+                "Heading": "2.689963"
+            }, {
+                "XYZ": "-702.2646, 181.0716, 585.9459",
+                "Heading": "1.293001"
+            }
+        ]
+    },
+    "131": {
+        "name": "Weston Waters",
+        "region": "Dravania",
+        "zone": "The Churning Mists",
+        "zone_id": "400",
+        "submap_id": "2016",
+        "lisbeth_cords": {
+            "Area": "The Churning Mists",
+            "XYZ": "-648.5742, 248.6951, -680.9523"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-648.5742, 248.6951, -680.9523",
+                "Heading": "3.1696"
+            }, {
+                "XYZ": "-651.9789, 248.6951, -713.6763",
+                "Heading": "4.231452"
+            }, {
+                "XYZ": "-682.9141, 248.6951, -727.9557",
+                "Heading": "1.008171"
+            }
+        ]
+    },
+    "132": {
+        "name": "Landlord Colony",
+        "region": "Dravania",
+        "zone": "The Churning Mists",
+        "zone_id": "400",
+        "submap_id": "2014",
+        "lisbeth_cords": {
+            "Area": "The Churning Mists",
+            "XYZ": "340.6711, -32.70529, 127.3335"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "335.211, -33.53859, 136.1184",
+                "Heading": "0.4070821"
+            }, {
+                "XYZ": "354.5157, -27.71697, 130.5761",
+                "Heading": "0.2374353"
+            }, {
+                "XYZ": "371.0076, -24.35324, 132.0326",
+                "Heading": "6.214839"
+            }
+        ]
+    },
+    "133": {
+        "name": "Sohm Al Summit",
+        "region": "Dravania",
+        "zone": "The Churning Mists",
+        "zone_id": "400",
+        "submap_id": "2017",
+        "lisbeth_cords": {
+            "Area": "The Churning Mists",
+            "XYZ": "-247.6255, -28.12088, 824.0962"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-248.7206, -29.96088, 846.6447",
+                "Heading": "6.237876"
+            }, {
+                "XYZ": "-271.8654, -30.83541, 850.251",
+                "Heading": "6.233688"
+            }, {
+                "XYZ": "-294.5105, -30.5052, 846.1914",
+                "Heading": "6.066137"
+            }
+        ]
+    },
+    "134": {
+        "name": "Tharl Oom Khash",
+        "region": "Dravania",
+        "zone": "The Churning Mists",
+        "zone_id": "400",
+        "submap_id": "2048",
+        "lisbeth_cords": {
+            "Area": "The Churning Mists",
+            "XYZ": "-128.8666, 162.6906, -793.0759"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-128.8666, 162.6906, -793.0759",
+                "Heading": "3.40847"
+            }, {
+                "XYZ": "-141.6965, 162.6906, -797.8688",
+                "Heading": "3.291184"
+            }, {
+                "XYZ": "-121.3011, 162.6906, -784.1735",
+                "Heading": "2.112038"
+            }
+        ]
+    },
+    "135": {
+        "name": "Voor Sian Siran",
+        "region": "Abalathia's Spine",
+        "zone": "The Sea of Clouds",
+        "zone_id": "401",
+        "submap_id": "2103",
+        "lisbeth_cords": {
+            "Area": "The Sea of Clouds",
+            "XYZ": "308.8001, -125.2893, 674.882"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "308.8001, -125.2893, 674.882",
+                "Heading": "2.009855"
+            }, {
+                "XYZ": "351.9214, -125.2895, 681.1732",
+                "Heading": "2.692616"
+            }, {
+                "XYZ": "382.7634, -125.3148, 637.7352",
+                "Heading": "4.003712"
+            }
+        ]
+    },
+    "136": {
+        "name": "The Eddies",
+        "region": "Abalathia's Spine",
+        "zone": "The Sea of Clouds",
+        "zone_id": "401",
+        "submap_id": "2120",
+        "lisbeth_cords": {
+            "Area": "The Sea of Clouds",
+            "XYZ": "417.2901, -186.454, 816.2855"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "423.3693, -185.7991, 808.4886",
+                "Heading": "1.231418"
+            }, {
+                "XYZ": "418.8947, -186.5599, 824.7328",
+                "Heading": "0.808352"
+            }, {
+                "XYZ": "406.8304, -186.536, 830.7789",
+                "Heading": "0.209358"
+            }
+        ]
+
+    },
+    "137": {
+        "name": "Cloudtop",
+        "region": "Abalathia's Spine",
+        "zone": "The Sea of Clouds",
+        "zone_id": "401",
+        "submap_id": "2117",
+        "lisbeth_cords": {
+            "Area": "The Sea of Clouds",
+            "XYZ": "-374.746, -185.1432, 793.9398"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-377.334, -185.8585, 797.132",
+                "Heading": "5.830033"
+            }, {
+                "XYZ": "-393.6451, -184.8638, 780.6809",
+                "Heading": "5.233132"
+            }, {
+                "XYZ": "-358.6042, -185.5136, 805.4165",
+                "Heading": "5.86354"
+            }, {
+                "XYZ": "423.1068, -186.2701, 810.8019",
+                "Heading": "1.073663"
+            }
+        ]
+    },
+    "138": {
+        "name": "The Blue Window",
+        "region": "Abalathia's Spine",
+        "zone": "The Sea of Clouds",
+        "zone_id": "401",
+        "submap_id": "2128",
+        "lisbeth_cords": {
+            "Area": "The Sea of Clouds",
+            "XYZ": "-730.4734, -98.96046, -641.5324"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-730.4734, -98.96046, -641.5324",
+                "Heading": "4.715415"
+            }, {
+                "XYZ": "-742.3828, -99.95825, -636.5696",
+                "Heading": "0.141259"
+            }, {
+                "XYZ": "-759.2081, -99.72325, -640.7861",
+                "Heading": "5.967869"
+            }
+        ]
+    },
+    "139": {
+        "name": "Mok Oogl Island",
+        "region": "Abalathia's Spine",
+        "zone": "The Sea of Clouds",
+        "zone_id": "401",
+        "submap_id": "2129",
+        "lisbeth_cords": {
+            "Area": "The Sea of Clouds",
+            "XYZ": "-342.964, 20.93506, -820.5392"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-353.6552, 19.58649, -832.2133",
+                "Heading": "3.856718"
+            }, {
+                "XYZ": "-339.0728, 19.71094, -849.5245",
+                "Heading": "4.007522"
+            }, {
+                "XYZ": "-322.0511, 20.56616, -850.5399",
+                "Heading": "1.887997"
+            }
+        ]
+    },
+    "140": {
+        "name": "Alpha Quadrant",
+        "region": "Abalathia's Spine",
+        "zone": "Azys Lla",
+        "zone_id": "402",
+        "submap_id": "2109",
+        "lisbeth_cords": {
+            "Area": "Azys Lla",
+            "XYZ": "-313.474, -160.3186, -513.3138"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-313.474, -160.3186, -513.3138",
+                "Heading": "1.65339"
+            }, {
+                "XYZ": "-296.0851, -160.375, -528.8223",
+                "Heading": "1.182154"
+            }, {
+                "XYZ": "-277.6676, -160.375, -501.9133",
+                "Heading": "0.798882"
+            }
+        ]
+    },
+    "141": {
+        "name": "Aetherochemical Spill",
+        "region": "Abalathia's Spine",
+        "zone": "Azys Lla",
+        "zone_id": "402",
+        "submap_id": "2110",
+        "fishspot_cords": [
+            {
+                "XYZ": "378.942, -53.41117, -761.7911",
+                "Heading": "2.49265"
+            }, {
+                "XYZ": "384.9145, -53.52942, -793.9514",
+                "Heading": "0.8422616"
+            }, {
+                "XYZ": "399.4146, -53.14585, -800.9404",
+                "Heading": "0.3462029"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Azys Lla",
+            "XYZ": "384.9145, -53.52942, -793.9514"
+        }
+    },
+    "142": {
+        "name": "Hyperstellar Downconverter",
+        "region": "Abalathia's Spine",
+        "zone": "Azys Lla",
+        "zone_id": "402",
+        "submap_id": "2177",
+        "lisbeth_cords": {
+            "Area": "Azys Lla",
+            "XYZ": "-754.7177, 26.048, -292.8931"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-761.8911, 25.44802, -291.2364",
+                "Heading": "4.815927"
+            }, {
+                "XYZ": "-763.5567, 26.9576, -303.4038",
+                "Heading": "5.268315"
+            }, {
+                "XYZ": "-762.8005, 24.58127, -282.8617",
+                "Heading": "4.108016"
+            }
+        ]
+    },
+    "143": {
+        "name": "Delta Quadrant",
+        "region": "Abalathia's Spine",
+        "zone": "Azys Lla",
+        "zone_id": "402",
+        "submap_id": "2112",
+        "lisbeth_cords": {
+            "Area": "Azys Lla",
+            "XYZ": "-582.2648, -68.21622, 398.7921"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-582.2648, -68.21622, 398.7921",
+                "Heading": "0.478368"
+            }, {
+                "XYZ": "-571.5521, -69.30607, 366.2041",
+                "Heading": "6.064119"
+            }, {
+                "XYZ": "-562.3863, -68.33007, 319.5214",
+                "Heading": "2.717259"
+            }
+        ]
+    },
+    "144": {
+        "name": "The Pappus Tree",
+        "region": "Abalathia's Spine",
+        "zone": "Azys Lla",
+        "zone_id": "402",
+        "submap_id": "2112",
+        "lisbeth_cords": {
+            "Area": "Azys Lla",
+            "XYZ": "-729.2505, -47.36447, 579.8774"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-729.2505, -47.36447, 579.8774",
+                "Heading": "5.467196"
+            }, {
+                "XYZ": "-728.1754, -46.50059, 613.9347",
+                "Heading": "0.1914086"
+            }, {
+                "XYZ": "-763.56, -40.27856, 618.3411",
+                "Heading": "4.734163"
+            }
+        ]
+    },
+    "145": {
+        "name": "The Habisphere",
+        "region": "Abalathia's Spine",
+        "zone": "Azys Lla",
+        "zone_id": "402",
+        "submap_id": "2113",
+        "lisbeth_cords": {
+            "Area": "Azys Lla",
+            "XYZ": "872.5102, 30.23042, -184.1454"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "876.0121, 30.3, -183.2697",
+                "Heading": "1.35798"
+            }, {
+                "XYZ": "867.404, 30.3, -164.5814",
+                "Heading": "1.15273"
+            }, {
+                "XYZ": "884.2114, 30.3, -229.1334",
+                "Heading": "1.552759"
+            }
+        ]
+    },
+    "146": {
+        "name": "The Flagship",
+        "region": "Abalathia's Spine",
+        "zone": "Azys Lla",
+        "zone_id": "402",
+        "submap_id": "2174",
+        "lisbeth_cords": {
+            "Area": "Azys Lla",
+            "XYZ": "-16.05849, 293.9713, 24.93498"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-17.71241, 293.9991, 32.3871",
+                "Heading": "5.695476"
+            }, {
+                "XYZ": "-18.69696, 293.9, 44.98245",
+                "Heading": "3.563382"
+            }, {
+                "XYZ": "-29.53881, 293.8998, 39.58407",
+                "Heading": "1.649106"
+            }
+        ]
+    },
+    "155": {
+        "name": "Northwest Bronze Lake",
+        "region": "La Noscea",
+        "zone": "Outer La Noscea",
+        "zone_id": "180",
+        "submap_id": "237",
+        "lisbeth_cords": {
+            "Area": "Outer La Noscea",
+            "XYZ": "-97.2752, 62.55459, -158.66"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-96.87947, 62.55459, -153.4084",
+                "Heading": "0.0436511"
+            }, {
+                "XYZ": "-97.94096, 62.55458, -153.4152",
+                "Heading": "6.104832"
+            }, {
+                "XYZ": "-103.941, 62.55458, -154.0574",
+                "Heading": "6.186514"
+            }
+        ]
+    },
+    "156": {
+        "name": "North Isle of Endless Summer",
+        "region": "La Noscea",
+        "zone": "Eastern La Noscea",
+        "zone_id": "137",
+        "submap_id": "216",
+        "fishspot_cords": [
+            {
+                "XYZ": "775.2599, 8.900001, 217.8145",
+                "Heading": "2.206204"
+            }, {
+                "XYZ": "799.2081, 8.9, 237.1664",
+                "Heading": "1.866913"
+            }, {
+                "XYZ": "821.451, 8.9, 270.8231",
+                "Heading": "1.527614"
+            }
+        ],
+        "lisbeth_cords": {
+            "Area": "Eastern La Noscea",
+            "XYZ": "770.4676, 8.9, 221.7439"
+        }
+    },
+    "157": {
+        "name": "Kugane Piers",
+        "region": "Hingashi",
+        "zone": "Kugane",
+        "zone_id": "628",
+        "submap_id": "2928",
+        "lisbeth_cords": {
+            "Area": "Kugane",
+            "XYZ": "-47.71284, 15.28999, -23.70988"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-53.11737, 15.55033, -21.72932",
+                "Heading": "4.866605"
+            }, {
+                "XYZ": "-42.8829, 16.75557, -6.839543",
+                "Heading": "1.716634"
+            }, {
+                "XYZ": "-53.09732, 16.58149, 10.49506",
+                "Heading": "4.833092"
+            }
+        ]
+    },
+    "158": {
+        "name": "The Ruby Price",
+        "region": "The Ruby Sea",
+        "zone": "The Ruby Sea",
+        "zone_id": "613",
+        "submap_id": "2760",
+        "lisbeth_cords": {
+            "Area": "The Ruby Sea",
+            "XYZ": "836.1324, 5.923008, 847.1952"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "827.5914, 0.7098792, 839.5884",
+                "Heading": "3.927474"
+            }, {
+                "XYZ": "806.7427, 7.027895, 838.9656",
+                "Heading": "3.908622"
+            }, {
+                "XYZ": "797.0493, 7.027895, 848.7556",
+                "Heading": "4.071139"
+            }
+        ]
+    },
+    "159": {
+        "name": "Hells' Lid",
+        "region": "The Ruby Sea",
+        "zone": "The Ruby Sea",
+        "zone_id": "613",
+        "submap_id": "2766",
+        "lisbeth_cords": {
+            "Area": "The Ruby Sea",
+            "XYZ": "470.893, -0.1, 888.3715"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "470.9957, -0.1, 896.1421",
+                "Heading": "0.02934432"
+            }, {
+                "XYZ": "435.5087, -0.1, 909.225",
+                "Heading": "5.895746"
+            }, {
+                "XYZ": "415.0017, -0.1037527, 904.9423",
+                "Heading": "4.990961"
+            }
+        ]
+    },
+    "160": {
+        "name": "The Isle of Bekko",
+        "region": "The Ruby Sea",
+        "zone": "The Ruby Sea",
+        "zone_id": "613",
+        "submap_id": "2750",
+        "lisbeth_cords": {
+            "Area": "The Ruby Sea",
+            "XYZ": "596.8623, 1.07736, 193.0941"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "603.5583, -0.132894, 181.2658",
+                "Heading": "3.257593"
+            }, {
+                "XYZ": "567.3377, -0.1328939, 173.6032",
+                "Heading": "4.292222"
+            }, {
+                "XYZ": "570.6454, -0.132894, 214.5531",
+                "Heading": "5.069233"
+            }
+        ]
+    },
+    "161": {
+        "name": "Shoal Rock",
+        "region": "The Ruby Sea",
+        "zone": "The Ruby Sea",
+        "zone_id": "613",
+        "submap_id": "2750",
+        "lisbeth_cords": {
+            "Area": "The Ruby Sea",
+            "XYZ": "655.6534, 2.262271, -672.4041"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "673.9354, 0.5334198, -672.6906",
+                "Heading": "2.172888"
+            }, {
+                "XYZ": "660.7391, 0.5285521, -686.4183",
+                "Heading": "2.526836"
+            }, {
+                "XYZ": "647.8447, 0.5923566, -704.5498",
+                "Heading": "2.216867"
+            }
+        ]
+    },
+    "162": {
+        "name": "Onokoro",
+        "region": "The Ruby Sea",
+        "zone": "The Ruby Sea",
+        "zone_id": "613",
+        "submap_id": "2774",
+        "lisbeth_cords": {
+            "Area": "The Ruby Sea",
+            "XYZ": "103.2366, 0.9811888, -561.0854"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "99.49242, -0.06214857, -540.0563",
+                "Heading": "0.1026537"
+            }, {
+                "XYZ": "112.3106, -0.2245278, -536.1719",
+                "Heading": "0.3686447"
+            }, {
+                "XYZ": "124.9046, 1.190252, -536.6122",
+                "Heading": "1.336249"
+            }
+        ]
+    },
+    "163": {
+        "name": "Isari",
+        "region": "The Ruby Sea",
+        "zone": "The Ruby Sea",
+        "zone_id": "613",
+        "submap_id": "2751",
+        "lisbeth_cords": {
+            "Area": "The Ruby Sea",
+            "XYZ": "-735.6036, 1.035747, -480.6779"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-715.4233, -0.1, -459.959",
+                "Heading": "1.411656"
+            }, {
+                "XYZ": "-713.6649, -0.1, -494.2176",
+                "Heading": "1.903837"
+            }, {
+                "XYZ": "-659.5365, 1.151, -481.1787",
+                "Heading": "1.587571"
+            }
+        ]
+    },
+    "164": {
+        "name": "The Isle of Zekki",
+        "region": "The Ruby Sea",
+        "zone": "The Ruby Sea",
+        "zone_id": "613",
+        "submap_id": "2786",
+        "lisbeth_cords": {
+            "Area": "The Ruby Sea",
+            "XYZ": "-550.863, 7.791518, 180.1463"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-524.6252, 6.503304, 182.1542",
+                "Heading": "1.794916"
+            }, {
+                "XYZ": "-525.9848, 6.987015, 167.2841",
+                "Heading": "1.813764"
+            }, {
+                "XYZ": "-527.9066, 6.995328, 161.4355",
+                "Heading": "1.729993"
+            }
+        ]
+    },
+    "165": {
+        "name": "The Heron's Nest",
+        "region": "Yanxia",
+        "zone": "Yanxia",
+        "zone_id": "614",
+        "submap_id": "2752",
+        "lisbeth_cords": {
+            "Area": "Yanxia",
+            "XYZ": "631.852, 125.6617, -376.8253"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "640.8627, 124.1067, -374.8214",
+                "Heading": "0.7165961"
+            }, {
+                "XYZ": "657.3647, 123.7503, -385.4939",
+                "Heading": "0.3961546"
+            }, {
+                "XYZ": "674.1044, 124.0649, -392.046",
+                "Heading": "0.1992848"
+            }
+        ]
+    },
+    "166": {
+        "name": "The Heron's Way",
+        "region": "Yanxia",
+        "zone": "Yanxia",
+        "zone_id": "614",
+        "submap_id": "2752",
+        "lisbeth_cords": {
+            "Area": "Yanxia",
+            "XYZ": "708.7523, 79.45234, -208.5964"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "704.0856, 75.94539, -213.747",
+                "Heading": "3.889621"
+            }, {
+                "XYZ": "681.0939, 71.25064, -201.362",
+                "Heading": "4.790213"
+            }, {
+                "XYZ": "717.4152, 81.48683, -234.1597",
+                "Heading": "6.193458"
+            }
+        ]
+    },
+    "167": {
+        "name": "Namai",
+        "region": "Yanxia",
+        "zone": "Yanxia",
+        "zone_id": "614",
+        "submap_id": "2752",
+        "lisbeth_cords": {
+            "Area": "Yanxia",
+            "XYZ": "415.9842, 0.7849607, -271.2573"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "411.9119, -0.3000069, -275.5999",
+                "Heading": "3.849829"
+            }, {
+                "XYZ": "393.0524, -0.3000069, -275.2616",
+                "Heading": "3.026734"
+            }, {
+                "XYZ": "419.3833, -0.3000069, -301.45",
+                "Heading": "5.332651"
+            }
+        ]
+    },
+    "168": {
+        "name": "Prism Lake",
+        "region": "Yanxia",
+        "zone": "Yanxia",
+        "zone_id": "614",
+        "submap_id": "2807",
+        "lisbeth_cords": {
+            "Area": "Yanxia",
+            "XYZ": "351.4591, -16.22713, -682.4466"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "358.0955, -16.22713, -688.6342",
+                "Heading": "2.647624"
+            }, {
+                "XYZ": "374.0125, -16.22713, -713.4299",
+                "Heading": "0.3165665"
+            }, {
+                "XYZ": "404.476, -16.22713, -685.9282",
+                "Heading": "3.843526"
+            }
+        ]
+    },
+    "169": {
+        "name": "Prism Canyon",
+        "region": "Yanxia",
+        "zone": "Yanxia",
+        "zone_id": "614",
+        "submap_id": "2806",
+        "lisbeth_cords": {
+            "Area": "Yanxia",
+            "XYZ": "487.2393, 20.57697, -702.0629"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "487.2393, 20.57697, -702.0629",
+                "Heading": "2.649719"
+            }, {
+                "XYZ": "506.578, 20.57697, -723.383",
+                "Heading": "1.912492"
+            }, {
+                "XYZ": "527.5124, 20.57698, -711.8538",
+                "Heading": "3.428826"
+            }
+        ]
+    },
+    "170": {
+        "name": "Doma Castle",
+        "region": "Yanxia",
+        "zone": "Yanxia",
+        "zone_id": "614",
+        "submap_id": "2808",
+        "lisbeth_cords": {
+            "Area": "Yanxia",
+            "XYZ": "-263.0353, 53.21751, -636.6583"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-269.1512, 51.28176, -642.882",
+                "Heading": "4.015261"
+            }, {
+                "XYZ": "-250.8843, 49.98304, -664.4328",
+                "Heading": "3.150276"
+            }, {
+                "XYZ": "-250.8843, 49.98304, -664.4328",
+                "Heading": "3.150276"
+            }
+        ]
+    },
+    "171": {
+        "name": "Mercantile Docks",
+        "region": "Yanxia",
+        "zone": "Yanxia",
+        "zone_id": "614",
+        "submap_id": "2809",
+        "lisbeth_cords": {
+            "Area": "Yanxia",
+            "XYZ": "-369.1738, 1.230016, -377.8241"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-372.2944, -0.2054873, -374.6753",
+                "Heading": "5.421563"
+            }, {
+                "XYZ": "-363.5536, 1.230066, -357.805",
+                "Heading": "6.093866"
+            }, {
+                "XYZ": "-349.8077, -0.4114811, -350.6641",
+                "Heading": "4.703186"
+            }
+        ]
+    },
+    "172": {
+        "name": "The One River (East)",
+        "region": "Yanxia",
+        "zone": "Yanxia",
+        "zone_id": "614",
+        "submap_id": "2753",
+        "lisbeth_cords": {
+            "Area": "Yanxia",
+            "XYZ": "35.11771, -0.3000001, 256.4848"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "35.4082, -0.3000002, 249.4484",
+                "Heading": "3.301119"
+            }, {
+                "XYZ": "16.94322, -0.3000001, 265.738",
+                "Heading": "4.394398"
+            }, {
+                "XYZ": "55.1014, -0.3000002, 253.8528",
+                "Heading": "2.178524"
+            }
+        ]
+    },
+    "173": {
+        "name": "The One River (West)",
+        "region": "Yanxia",
+        "zone": "Yanxia",
+        "zone_id": "614",
+        "submap_id": "2753",
+        "lisbeth_cords": {
+            "Area": "Yanxia",
+            "XYZ": "-461.198, 1.230005, 550.0615"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-463.0705, 0.683099, 557.986",
+                "Heading": "5.483477"
+            }, {
+                "XYZ": "-456.1641, 0.1489093, 569.0743",
+                "Heading": "5.338966"
+            }, {
+                "XYZ": "-474.0967, 0.1987277, 546.0172",
+                "Heading": "5.219588"
+            }
+        ]
+    },
+    "174": {
+        "name": "Plum Spring",
+        "region": "Yanxia",
+        "zone": "Yanxia",
+        "zone_id": "614",
+        "submap_id": "2794",
+        "lisbeth_cords": {
+            "Area": "Yanxia",
+            "XYZ": "696.0469, 170.2527, 97.66476"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "696.0469, 170.2527, 97.66476",
+                "Heading": "1.648643"
+            }, {
+                "XYZ": "719.2241, 170.2573, 103.3717",
+                "Heading": "1.152273"
+            }, {
+                "XYZ": "707.9413, 170.2509, 128.2147",
+                "Heading": "4.453081"
+            }
+        ]
+    },
+    "175": {
+        "name": "Nem Khaal",
+        "region": "The Azim Steppe",
+        "zone": "The Azim Steppe",
+        "zone_id": "622",
+        "submap_id": "2756",
+        "lisbeth_cords": {
+            "Area": "The Azim Steppe",
+            "XYZ": "494.108, -23.48081, 306.5688"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "488.0088, -25.04177, 299.4184",
+                "Heading": "4.25456"
+            }, {
+                "XYZ": "480.9908, -26.60763, 320.3468",
+                "Heading": "6.181407"
+            }, {
+                "XYZ": "478.5235, -28.58864, 355.2843",
+                "Heading": "0.02180147"
+            }
+        ]
+    },
+    "176": {
+        "name": "Hak Khaal",
+        "region": "The Azim Steppe",
+        "zone": "The Azim Steppe",
+        "zone_id": "622",
+        "submap_id": "2756",
+        "lisbeth_cords": {
+            "Area": "The Azim Steppe",
+            "XYZ": "290.7906, 2.561297, 35.51476"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "284.6599, 1.097346, 26.02484",
+                "Heading": "3.504783"
+            }, {
+                "XYZ": "263.931, 1.164645, 24.19918",
+                "Heading": "4.826347"
+            }, {
+                "XYZ": "269.2275, 1.148483, -4.950176",
+                "Heading": "3.293249"
+            }
+        ]
+    },
+    "177": {
+        "name": "Upper Yat Khaal",
+        "region": "The Azim Steppe",
+        "zone": "The Azim Steppe",
+        "zone_id": "622",
+        "submap_id": "2757",
+        "lisbeth_cords": {
+            "Area": "The Azim Steppe",
+            "XYZ": "-87.56224, 23.90741, -98.0011"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-95.88214, 21.83956, -84.44804",
+                "Heading": "5.56986"
+            }, {
+                "XYZ": "-117.1006, 22.21863, -88.59916",
+                "Heading": "2.64818"
+            }, {
+                "XYZ": "-133.8867, 22.82386, -111.6359",
+                "Heading": "4.12054"
+            }
+        ]
+    },
+    "178": {
+        "name": "Azim Khaat",
+        "region": "The Azim Steppe",
+        "zone": "The Azim Steppe",
+        "zone_id": "622",
+        "submap_id": "2822",
+        "lisbeth_cords": {
+            "Area": "The Azim Steppe",
+            "XYZ": "97.4893, 116.043, -41.54379"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "96.2347, 116.043, -49.97553",
+                "Heading": "3.73935"
+            }, {
+                "XYZ": "104.942, 116.043, -48.41993",
+                "Heading": "2.447108"
+            }, {
+                "XYZ": "101.5779, 116.043, -35.35352",
+                "Heading": "0.8574641"
+            }
+        ]
+    },
+    "179": {
+        "name": "Tao Khaal",
+        "region": "The Azim Steppe",
+        "zone": "The Azim Steppe",
+        "zone_id": "622",
+        "submap_id": "2757",
+        "lisbeth_cords": {
+            "Area": "The Azim Steppe",
+            "XYZ": "-228.8883, 58.65493, -357.8817"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-237.7518, 57.28605, -360.9993",
+                "Heading": "4.365572"
+            }, {
+                "XYZ": "-232.408, 59.49247, -389.6874",
+                "Heading": "2.924627"
+            }, {
+                "XYZ": "-245.026, 55.11513, -338.7039",
+                "Heading": "6.281946"
+            }
+        ]
+    },
+    "180": {
+        "name": "Lower Yat Khaal",
+        "region": "The Azim Steppe",
+        "zone": "The Azim Steppe",
+        "zone_id": "622",
+        "submap_id": "2759",
+        "lisbeth_cords": {
+            "Area": "The Azim Steppe",
+            "XYZ": "-18.11926, -1.373466, 310.3428"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-9.731633, -5.338995, 325.8565",
+                "Heading": "0.6083343"
+            }, {
+                "XYZ": "-35.89866, -4.717465, 345.3363",
+                "Heading": "4.98562"
+            }, {
+                "XYZ": "27.90487, -7.143641, 337.8614",
+                "Heading": "4.384519"
+            }
+        ]
+    },
+    "181": {
+        "name": "Dotharl Khaa",
+        "region": "The Azim Steppe",
+        "zone": "The Azim Steppe",
+        "zone_id": "622",
+        "submap_id": "2842",
+        "lisbeth_cords": {
+            "Area": "The Azim Steppe",
+            "XYZ": "-406.8679, 2.301703, 595.6713"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-414.9601, 1.498228, 598.4959",
+                "Heading": "4.981417"
+            }, {
+                "XYZ": "-440.6925, 1.448226, 608.5067",
+                "Heading": "3.871379"
+            }, {
+                "XYZ": "-454.2392, 1.464812, 576.8029",
+                "Heading": "0.5182528"
+            }
+        ]
+    },
+    "182": {
+        "name": "Upper Mirage Creek",
+        "region": "Gyr Abania",
+        "zone": "Rhalgr's Reach",
+        "zone_id": "635",
+        "submap_id": "0",
+        "lisbeth_cords": {
+            "Area": "Rhalgr's Reach",
+            "XYZ": "7.267575, -2.179601, 80.50803"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "7.267575, -2.179601, 80.50803",
+                "Heading": "6.131044"
+            }, {
+                "XYZ": "-2.573665, -1.96711, 109.1576",
+                "Heading": "0.574614"
+            }, {
+                "XYZ": "5.053344, -1.601119, 141.7926",
+                "Heading": "3.219832"
+            }
+        ]
+    },
+    "183": {
+        "name": "Rhalgr's Reach",
+        "region": "Gyr Abania",
+        "zone": "Rhalgr's Reach",
+        "zone_id": "635",
+        "submap_id": "0",
+        "lisbeth_cords": {
+            "Area": "Rhalgr's Reach",
+            "XYZ": "-15.33974, 2.697035, -16.80799"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-14.99483, 2.937019, -22.76287",
+                "Heading": "4.197911"
+            }, {
+                "XYZ": "-3.383132, 2.937027, -29.97495",
+                "Heading": "1.026996"
+            }, {
+                "XYZ": "3.042499, 2.937028, -54.91659",
+                "Heading": "1.722336"
+            }
+        ]
+    },
+    "184": {
+        "name": "The Outer Fist",
+        "region": "Gyr Abania",
+        "zone": "Rhalgr's Reach",
+        "zone_id": "635",
+        "submap_id": "0",
+        "lisbeth_cords": {
+            "Area": "Rhalgr's Reach",
+            "XYZ": "50.39249, 23.65948, -244.5867"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "44.76076, 23.22876, -251.3672",
+                "Heading": "4.212576"
+            }, {
+                "XYZ": "36.58512, 23.22876, -275.3936",
+                "Heading": "4.625172"
+            }, {
+                "XYZ": "62.93483, 23.22876, -273.329",
+                "Heading": "6.007465"
+            }
+        ]
+    },
+    "185": {
+        "name": "Timmon Beck",
+        "region": "Gyr Abania",
+        "zone": "The Fringes",
+        "zone_id": "612",
+        "submap_id": "2600",
+        "lisbeth_cords": {
+            "Area": "The Fringes",
+            "XYZ": "-499.0072, 82.00081, -262.1857"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-500.2141, 80.50189, -246.2518",
+                "Heading": "0.8887141"
+            }, {
+                "XYZ": "-490.678, 81.47359, -265.1501",
+                "Heading": "1.012286"
+            }, {
+                "XYZ": "-487.4555, 82.28168, -237.0961",
+                "Heading": "3.938151"
+            }
+        ]
+    },
+    "186": {
+        "name": "Dimwold",
+        "region": "Gyr Abania",
+        "zone": "The Fringes",
+        "zone_id": "612",
+        "submap_id": "2621",
+        "lisbeth_cords": {
+            "Area": "The Fringes",
+            "XYZ": "-555.2734, 35.56123, 288.9116"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-555.2734, 35.56123, 288.9116",
+                "Heading": "6.028213"
+            }, {
+                "XYZ": "-575.7146, 35.56123, 314.4277",
+                "Heading": "6.128724"
+            }, {
+                "XYZ": "-554.6403, 35.56123, 348.0015",
+                "Heading": "3.485587"
+            }
+        ]
+    },
+    "187": {
+        "name": "The Comet's Tail",
+        "region": "Gyr Abania",
+        "zone": "The Fringes",
+        "zone_id": "612",
+        "submap_id": "2624",
+        "lisbeth_cords": {
+            "Area": "The Fringes",
+            "XYZ": "-383.9916, 38.67, 497.0901"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-383.9916, 38.67, 497.0901",
+                "Heading": "1.470778"
+            }, {
+                "XYZ": "-353.8622, 38.67, 488.2345",
+                "Heading": "4.25423"
+            }, {
+                "XYZ": "-365.606, 38.67, 473.2102",
+                "Heading": "0.4759319"
+            }
+        ]
+    },
+    "188": {
+        "name": "The Velodyna River",
+        "region": "Gyr Abania",
+        "zone": "The Fringes",
+        "zone_id": "612",
+        "submap_id": "2601",
+        "lisbeth_cords": {
+            "Area": "The Fringes",
+            "XYZ": "-180.7685, 59.63193, -582.6307"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-181.0111, 58.77763, -591.9297",
+                "Heading": "3.29916"
+            }, {
+                "XYZ": "-159.1374, 58.74383, -587.0077",
+                "Heading": "1.998541"
+            }, {
+                "XYZ": "-150.7664, 58.71433, -561.8652",
+                "Heading": "1.164971"
+            }
+        ]
+    },
+    "189": {
+        "name": "Mirage Creek",
+        "region": "Gyr Abania",
+        "zone": "The Fringes",
+        "zone_id": "612",
+        "submap_id": "2602",
+        "lisbeth_cords": {
+            "Area": "The Fringes",
+            "XYZ": "332.2455, 44.88329, -322.4019"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "342.8258, 44.00168, -324.242",
+                "Heading": "5.954857"
+            }, {
+                "XYZ": "337.6121, 41.55943, -292.9322",
+                "Heading": "5.4878"
+            }, {
+                "XYZ": "319.0729, 39.91542, -274.8432",
+                "Heading": "5.709808"
+            }
+        ]
+    },
+    "190": {
+        "name": "Grymm & Enid",
+        "region": "Gyr Abania",
+        "zone": "The Peaks",
+        "zone_id": "620",
+        "submap_id": "2604",
+        "lisbeth_cords": {
+            "Area": "The Peaks",
+            "XYZ": "-756.8716, 79.85998, -340.8803"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-749.2921, 78.40405, -326.2978",
+                "Heading": "0.6973693"
+            }, {
+                "XYZ": "-717.9724, 78.40404, -331.6538",
+                "Heading": "0.7497356"
+            }, {
+                "XYZ": "-725.8512, 78.40405, -304.4441",
+                "Heading": "4.054691"
+            }
+        ]
+    },
+    "191": {
+        "name": "The Slow Wash",
+        "region": "Gyr Abania",
+        "zone": "The Peaks",
+        "zone_id": "620",
+        "submap_id": "2605",
+        "lisbeth_cords": {
+            "Area": "The Peaks",
+            "XYZ": "109.8604, 114.3518, -565.3806"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "109.8604, 114.3518, -565.3806",
+                "Heading": "2.454573"
+            }, {
+                "XYZ": "150.3323, 114.3518, -577.166",
+                "Heading": "4.136375"
+            }, {
+                "XYZ": "128.5622, 114.3333, -618.4976",
+                "Heading": "5.072576"
+            }
+        ]
+    },
+    "192": {
+        "name": "Heather Falls",
+        "region": "Gyr Abania",
+        "zone": "The Peaks",
+        "zone_id": "620",
+        "submap_id": "2605",
+        "lisbeth_cords": {
+            "Area": "The Peaks",
+            "XYZ": "519.6665, 220.8684, -678.6077"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "519.6665, 220.8684, -678.6077",
+                "Heading": "2.033621"
+            }, {
+                "XYZ": "563.2382, 220.8684, -674.5249",
+                "Heading": "4.829638"
+            }, {
+                "XYZ": "489.4137, 220.8684, -720.8292",
+                "Heading": "5.786788"
+            }
+        ]
+    },
+    "193": {
+        "name": "The Ephor",
+        "region": "Gyr Abania",
+        "zone": "The Peaks",
+        "zone_id": "620",
+        "submap_id": "2605",
+        "lisbeth_cords": {
+            "Area": "The Peaks",
+            "XYZ": "500.8577, 258.4252, -265.0808"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "507.1458, 258.4885, -263.7341",
+                "Heading": "1.867857"
+            }, {
+                "XYZ": "512.6552, 258.4881, -235.5906",
+                "Heading": "5.308947"
+            }, {
+                "XYZ": "531.7872, 258.382, -230.9962",
+                "Heading": "3.007208"
+            }
+        ]
+    },
+    "194": {
+        "name": "The Bull's Bath",
+        "region": "Gyr Abania",
+        "zone": "The Peaks",
+        "zone_id": "620",
+        "submap_id": "2606",
+        "lisbeth_cords": {
+            "Area": "The Peaks",
+            "XYZ": "-129.1576, 260.1313, 611.9782"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-129.1576, 260.1313, 611.9782",
+                "Heading": "4.391918"
+            }, {
+                "XYZ": "-153.1703, 260.1313, 581.0047",
+                "Heading": "4.190851"
+            }, {
+                "XYZ": "-167.5983, 260.1313, 621.3522",
+                "Heading": "2.112192"
+            }
+        ]
+    },
+    "195": {
+        "name": "The Arms of Meed",
+        "region": "Gyr Abania",
+        "zone": "The Peaks",
+        "zone_id": "620",
+        "submap_id": "2663",
+        "lisbeth_cords": {
+            "Area": "The Peaks",
+            "XYZ": "-607.8173, 306.4372, 759.2416"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-613.9669, 306.4274, 760.2048",
+                "Heading": "4.675731"
+            }, {
+                "XYZ": "-610.2891, 306.2659, 744.2916",
+                "Heading": "3.155199"
+            }, {
+                "XYZ": "-600.3286, 306.4324, 774.2994",
+                "Heading": "1.592787"
+            }
+        ]
+    },
+    "196": {
+        "name": "Loch Seld",
+        "region": "Gyr Abania",
+        "zone": "The Lochs",
+        "zone_id": "621",
+        "submap_id": "2609",
+        "lisbeth_cords": {
+            "Area": "The Lochs",
+            "XYZ": "-178.4802, -0.3, -88.88718"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-178.4802, -0.3, -88.88718",
+                "Heading": "2.481858"
+            }, {
+                "XYZ": "-157.1131, -0.3, -82.60224",
+                "Heading": "2.234722"
+            }, {
+                "XYZ": "-197.6503, -0.3, -120.0159",
+                "Heading": "1.893329"
+            }
+        ]
+    },
+    "197": {
+        "name": "Shirogane",
+        "region": "Hingashi",
+        "zone": "Shirogane",
+        "zone_id": "641",
+        "submap_id": "2845",
+        "lisbeth_cords": {
+            "Area": "Shirogane",
+            "XYZ": "-119.0833, 2.02, 154.4393"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-125.8832, 2.019961, 161.1932",
+                "Heading": "5.460682"
+            }, {
+                "XYZ": "-112.8347, 0.6, 161.7038",
+                "Heading": "1.158793"
+            }, {
+                "XYZ": "-111.3883, 0.5999999, 174.3742",
+                "Heading": "0.126256"
+            }
+        ]
+    },
+    "198": {
+        "name": "The Silver Canal",
+        "region": "Hingashi",
+        "zone": "Shirogane",
+        "zone_id": "641",
+        "submap_id": "1899",
+        "lisbeth_cords": {
+            "Area": "Shirogane",
+            "XYZ": "-33.41357, 20, 12.04718"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-38.1795, 20, 12.21121",
+                "Heading": "5.575874"
+            }, {
+                "XYZ": "-45.9562, 20.05, -1.787092",
+                "Heading": "2.19133"
+            }, {
+                "XYZ": "-23.50421, 20.04999, 12.31686",
+                "Heading": "2.394487"
+            }
+        ]
+    },
+    "199": {
+        "name": "The Trivium",
+        "region": "Norvrandt",
+        "zone": "The Crystarium",
+        "zone_id": "819",
+        "submap_id": "3253",
+        "lisbeth_cords": {
+            "Area": "The Crystarium",
+            "XYZ": "-108.9467, -47.57088, -187.0644"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-108.8917, -47.57088, -181.578",
+                "Heading": "6.242635"
+            }, {
+                "XYZ": "-127.6887, -47.53537, -172.758",
+                "Heading": "0.009716034"
+            }, {
+                "XYZ": "-129.2997, -47.4967, -151.2345",
+                "Heading": "4.399572"
+            }
+        ]
+    },
+    "200": {
+        "name": "The Quadrivium",
+        "region": "Norvrandt",
+        "zone": "The Crystarium",
+        "zone_id": "819",
+        "submap_id": "3255",
+        "lisbeth_cords": {
+            "Area": "The Crystarium",
+            "XYZ": "-15.01273, 3.999817, 231.1832"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-12.49402, 3.999817, 232.045",
+                "Heading": "1.157362"
+            }, {
+                "XYZ": "-3.469064, 3.999817, 225.3478",
+                "Heading": "0.4704006"
+            }, {
+                "XYZ": "-17.85625, 3.999817, 242.5577",
+                "Heading": "1.201348"
+            }
+        ]
+    },
+    "201": {
+        "name": "Crystarium Personal Suites",
+        "region": "Norvrandt",
+        "zone": "The Crystarium",
+        "zone_id": "819",
+        "submap_id": "3288",
+        "lisbeth_cords": {
+            "Area": "The Crystarium",
+            "XYZ": "68.41433, 1.7078, 239.2537"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "70.17109, 1.7078, 240.4027",
+                "Heading": "0.5498483"
+            }, {
+                "XYZ": "88.98681, 1.7078, 246.6087",
+                "Heading": "4.983681"
+            }, {
+                "XYZ": "64.67827, 1.7078, 256.6584",
+                "Heading": "1.979349"
+            }
+        ]
+    },
+    "202": {
+        "name": "The Rift of Sighs",
+        "region": "Norvrandt",
+        "zone": "Lakeland",
+        "zone_id": "813",
+        "submap_id": "3038",
+        "lisbeth_cords": {
+            "Area": "Lakeland",
+            "XYZ": "497.7614, 75.02838, -355.9837"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "511.6296, 77.2631, -347.2758",
+                "Heading": "2.198998"
+            }, {
+                "XYZ": "499.0318, 73.29858, -371.5919",
+                "Heading": "2.186429"
+            }, {
+                "XYZ": "490.1122, 71.20589, -388.8308",
+                "Heading": "2.039821"
+            }
+        ]
+    },
+    "203": {
+        "name": "The Rusted Reservoir",
+        "region": "Norvrandt",
+        "zone": "Lakeland",
+        "zone_id": "813",
+        "submap_id": "3036",
+        "lisbeth_cords": {
+            "Area": "Lakeland",
+            "XYZ": "-471.141, 1.16216, 13.13457"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-471.8417, 0.9272442, 5.575228",
+                "Heading": "3.128901"
+            }, {
+                "XYZ": "-459.9423, 0.8613912, 0.549422",
+                "Heading": "4.314328"
+            }, {
+                "XYZ": "-481.6026, 1.569031, 8.424436",
+                "Heading": "2.730964"
+            }
+        ]
+    },
+    "204": {
+        "name": "The Source",
+        "region": "Norvrandt",
+        "zone": "Lakeland",
+        "zone_id": "813",
+        "submap_id": "3067",
+        "lisbeth_cords": {
+            "Area": "Lakeland",
+            "XYZ": "-519.2068, -1.595297, 236.8531"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-519.2068, -1.595297, 236.8531",
+                "Heading": "6.260023"
+            }, {
+                "XYZ": "-489.1397, -1.791087, 242.9807",
+                "Heading": "0.7894893"
+            }, {
+                "XYZ": "-489.1397, -1.791087, 242.9807",
+                "Heading": "0.7894893"
+            }
+        ]
+    },
+    "205": {
+        "name": "Sullen",
+        "region": "Norvrandt",
+        "zone": "Lakeland",
+        "zone_id": "813",
+        "submap_id": "3059",
+        "lisbeth_cords": {
+            "Area": "Lakeland",
+            "XYZ": "-30.73802, -0.480308, 637.7495"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-27.86252, -0.4972355, 636.3398",
+                "Heading": "1.897425"
+            }, {
+                "XYZ": "-32.49625, -0.4892691, 620.8665",
+                "Heading": "3.338368"
+            }, {
+                "XYZ": "-32.66836, -0.4741216, 645.6116",
+                "Heading": "4.77931"
+            }
+        ]
+    },
+    "206": {
+        "name": "The Isle of Ken",
+        "region": "Norvrandt",
+        "zone": "Lakeland",
+        "zone_id": "813",
+        "submap_id": "3068",
+        "lisbeth_cords": {
+            "Area": "Lakeland",
+            "XYZ": "-573.1496, 1.045666, 812.4247"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-566.6547, -0.4500181, 818.3839",
+                "Heading": "1.575036"
+            }, {
+                "XYZ": "-571.9924, -1.495782, 808.0778",
+                "Heading": "2.500757"
+            }, {
+                "XYZ": "-614.087, 24.85095, 780.8807",
+                "Heading": "2.513321"
+            }
+        ]
+    },
+    "207": {
+        "name": "Upper Watts River",
+        "region": "Norvrandt",
+        "zone": "Kholusia",
+        "zone_id": "814",
+        "submap_id": "3072",
+        "lisbeth_cords": {
+            "Area": "Kholusia",
+            "XYZ": "232.0987, 319.7058, -582.9617"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "232.0987, 319.7058, -582.9617",
+                "Heading": "1.704814"
+            }, {
+                "XYZ": "247.9626, 317.0774, -566.7717",
+                "Heading": "0.1444907"
+            }, {
+                "XYZ": "254.702, 324.8494, -608.1593",
+                "Heading": "3.304929"
+            }
+        ]
+    },
+    "208": {
+        "name": "White Oil Falls",
+        "region": "Norvrandt",
+        "zone": "Kholusia",
+        "zone_id": "814",
+        "submap_id": "3078",
+        "lisbeth_cords": {
+            "Area": "Kholusia",
+            "XYZ": "399.8626, 20.62017, 34.13649"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "399.8626, 20.62017, 34.13649",
+                "Heading": "3.087113"
+            }, {
+                "XYZ": "383.4839, 20.69755, 29.01568",
+                "Heading": "3.698679"
+            }, {
+                "XYZ": "414.3354, 20.69754, 28.66264",
+                "Heading": "3.392897"
+            }
+        ]
+    },
+    "209": {
+        "name": "Lower Watts River",
+        "region": "Norvrandt",
+        "zone": "Kholusia",
+        "zone_id": "814",
+        "submap_id": "3070",
+        "lisbeth_cords": {
+            "Area": "Kholusia",
+            "XYZ": "433.7267, 7.458066, 192.0279"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "433.7267, 7.458066, 192.0279",
+                "Heading": "0.2806373"
+            }, {
+                "XYZ": "451.4574, 3.596465, 222.99",
+                "Heading": "5.78889"
+            }, {
+                "XYZ": "416.6208, 8.667081, 148.3187",
+                "Heading": "3.983521"
+            }, {
+                "XYZ": "416.6208, 8.667081, 148.3187",
+                "Heading": "3.983521"
+            }
+        ]
+    },
+    "210": {
+        "name": "Sharptongue Drip",
+        "region": "Norvrandt",
+        "zone": "Kholusia",
+        "zone_id": "814",
+        "submap_id": "3070",
+        "lisbeth_cords": {
+            "Area": "Kholusia",
+            "XYZ": "46.32222, 15.08298, 287.0822"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "35.34202, 14.3387, 288.2809",
+                "Heading": "3.782456"
+            }, {
+                "XYZ": "18.07362, 12.52085, 297.0688",
+                "Heading": "3.552073"
+            }, {
+                "XYZ": "49.3438, 15.15893, 274.0573",
+                "Heading": "4.444291"
+            }
+        ]
+    },
+    "211": {
+        "name": "The Western Kholusian Coast",
+        "region": "Norvrandt",
+        "zone": "Kholusia",
+        "zone_id": "814",
+        "submap_id": "3096",
+        "lisbeth_cords": {
+            "Area": "Kholusia",
+            "XYZ": "-709.7147, 0.2916105, 612.7394"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-698.0373, -0.4757038, 619.525",
+                "Heading": "1.09748"
+            }, {
+                "XYZ": "-728.0673, -0.5991126, 631.8834",
+                "Heading": "4.389868"
+            }, {
+                "XYZ": "-699.4139, -0.6014819, 655.8901",
+                "Heading": "1.495413"
+            }
+        ]
+    },
+    "212": {
+        "name": "Seagazer Shoals",
+        "region": "Norvrandt",
+        "zone": "Kholusia",
+        "zone_id": "814",
+        "submap_id": "3090",
+        "lisbeth_cords": {
+            "Area": "Kholusia",
+            "XYZ": "-218.3601, 8.98271, 765.7238"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-218.0921, 8.740814, 760.5208",
+                "Heading": "3.420164"
+            }, {
+                "XYZ": "-197.7823, 11.86121, 750.546",
+                "Heading": "4.203466"
+            }, {
+                "XYZ": "-248.2603, 11.9524, 764.6677",
+                "Heading": "3.401308"
+            }
+        ]
+    },
+    "213": {
+        "name": "The Eastern Kholusian Coast",
+        "region": "Norvrandt",
+        "zone": "Kholusia",
+        "zone_id": "814",
+        "submap_id": "3074",
+        "lisbeth_cords": {
+            "Area": "Kholusia",
+            "XYZ": "582.0699, -0.6680323, 612.188"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "582.0699, -0.6680323, 612.188",
+                "Heading": "0.7455881"
+            }, {
+                "XYZ": "549.6307, -0.5994223, 620.8198",
+                "Heading": "0.2240846"
+            }, {
+                "XYZ": "604.9731, -0.6434861, 595.2731",
+                "Heading": "1.0032"
+            }
+        ]
+    },
+    "214": {
+        "name": "The Derelicts",
+        "region": "Norvrandt",
+        "zone": "Eulmore",
+        "zone_id": "820",
+        "submap_id": "3258",
+        "lisbeth_cords": {
+            "Area": "Eulmore",
+            "XYZ": "44.8386, -23.72356, 106.9456"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "44.8386, -23.72356, 106.9456",
+                "Heading": "6.260114"
+            }, {
+                "XYZ": "23.39771, -23.74639, 108.9064",
+                "Heading": "0.8209686"
+            }, {
+                "XYZ": "30.68819, -23.75438, 124.3001",
+                "Heading": "1.349121"
+            }
+        ]
+    },
+    "215": {
+        "name": "The River of Sand",
+        "region": "Norvrandt",
+        "zone": "Amh Araeng",
+        "zone_id": "815",
+        "submap_id": "3120",
+        "lisbeth_cords": {
+            "Area": "Amh Araeng",
+            "XYZ": "462.4595, -44.79192, -433.8012"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "472.8454, -49.40374, -440.5691",
+                "Heading": "2.276201"
+            }, {
+                "XYZ": "454.2035, -48.19075, -458.9115",
+                "Heading": "2.483547"
+            }, {
+                "XYZ": "431.857, -47.99002, -480.3968",
+                "Heading": "2.925464"
+            }
+        ]
+    },
+    "216": {
+        "name": "The Hills of Amber",
+        "region": "Norvrandt",
+        "zone": "Amh Araeng",
+        "zone_id": "815",
+        "submap_id": "3117",
+        "lisbeth_cords": {
+            "Area": "Amh Araeng",
+            "XYZ": "-329.5753, 22.55194, -307.1822"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-339.1496, 19.91743, -323.5501",
+                "Heading": "3.68435"
+            }, {
+                "XYZ": "-314.253, 19.54304, -329.2903",
+                "Heading": "2.970156"
+            }, {
+                "XYZ": "-348.9078, 19.54023, -304.5909",
+                "Heading": "4.461364"
+            }
+        ]
+    },
+    "217": {
+        "name": "The Nabaath Severance",
+        "region": "Norvrandt",
+        "zone": "Amh Araeng",
+        "zone_id": "815",
+        "submap_id": "3115",
+        "lisbeth_cords": {
+            "Area": "Amh Araeng",
+            "XYZ": "473.2314, -72.78622, 487.9559"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "478.9986, -80.80603, 508.751",
+                "Heading": "6.071146"
+            }, {
+                "XYZ": "457.1977, -82.34267, 510.657",
+                "Heading": "0.3639209"
+            }, {
+                "XYZ": "499.3958, -78.25674, 483.9771",
+                "Heading": "1.522122"
+            }
+        ]
+    },
+    "218": {
+        "name": "Handmirror Lake",
+        "region": "Norvrandt",
+        "zone": "Il Mheg",
+        "zone_id": "816",
+        "submap_id": "3151",
+        "lisbeth_cords": {
+            "Area": "Il Mheg",
+            "XYZ": "-872.723, 9.301329, -36.21491"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-884.8255, 0.4473501, -43.6868",
+                "Heading": "4.560335"
+            }, {
+                "XYZ": "-887.7988, 0.9804235, -12.34238",
+                "Heading": "4.851459"
+            }, {
+                "XYZ": "-871.7499, 0.02563965, -86.90456",
+                "Heading": "4.43215"
+            }
+        ]
+    },
+    "219": {
+        "name": "Longmirror Lake",
+        "region": "Norvrandt",
+        "zone": "Il Mheg",
+        "zone_id": "816",
+        "submap_id": "3144",
+        "lisbeth_cords": {
+            "Area": "Il Mheg",
+            "XYZ": "-294.1939, 0.9144536, 182.5432"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-291.337, -0.3474985, 174.3676",
+                "Heading": "2.237679"
+            }, {
+                "XYZ": "-303.5754, -0.3267224, 149.0237",
+                "Heading": "2.56231"
+            }, {
+                "XYZ": "-278.1725, 0.2184548, 193.5368",
+                "Heading": "2.038707"
+            }
+        ]
+    },
+    "220": {
+        "name": "The Haughty One",
+        "region": "Norvrandt",
+        "zone": "Il Mheg",
+        "zone_id": "816",
+        "submap_id": "3146",
+        "lisbeth_cords": {
+            "Area": "Il Mheg",
+            "XYZ": "50.65385, 25.19238, -593.2662"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "61.2729, 20.82541, -590.6793",
+                "Heading": "0.2287085"
+            }, {
+                "XYZ": "40.46621, 17.84756, -584.0277",
+                "Heading": "0.7690632"
+            }, {
+                "XYZ": "52.60523, 11.1583, -553.0342",
+                "Heading": "0.05487919"
+            }
+        ]
+    },
+    "221": {
+        "name": "The Jealous One",
+        "region": "Norvrandt",
+        "zone": "Il Mheg",
+        "zone_id": "816",
+        "submap_id": "3146",
+        "lisbeth_cords": {
+            "Area": "Il Mheg",
+            "XYZ": "190.1969, 26.17331, -562.9788"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "179.9279, 21.22943, -560.8244",
+                "Heading": "5.860549"
+            }, {
+                "XYZ": "168.0139, 13.00776, -531.97",
+                "Heading": "5.78515"
+            }, {
+                "XYZ": "201.7044, 44.17758, -601.879",
+                "Heading": "5.85845"
+            }
+        ]
+    },
+    "222": {
+        "name": "Father Collard's Failings",
+        "region": "Norvrandt",
+        "zone": "Il Mheg",
+        "zone_id": "816",
+        "submap_id": "3146",
+        "lisbeth_cords": {
+            "Area": "Il Mheg",
+            "XYZ": "488.279, 151.9619, 59.71838"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "493.1508, 147.6246, 66.05174",
+                "Heading": "0.3041556"
+            }, {
+                "XYZ": "489.7285, 147.4722, 77.5322",
+                "Heading": "5.26159"
+            }, {
+                "XYZ": "502.6151, 147.4069, 53.75781",
+                "Heading": "5.808232"
+            }
+        ]
+
+    },
+    "223": {
+        "name": "The Spoiled One",
+        "region": "Norvrandt",
+        "zone": "Il Mheg",
+        "zone_id": "816",
+        "submap_id": "3146",
+        "lisbeth_cords": {
+            "Area": "Il Mheg",
+            "XYZ": "363.7969, 53.29515, -494.4348"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "363.3964, 50.29507, -512.3802",
+                "Heading": "4.149429"
+            }, {
+                "XYZ": "327.5578, 43.13951, -501.499",
+                "Heading": "5.190343"
+            }, {
+                "XYZ": "400.4541, 59.48162, -500.4278",
+                "Heading": "4.440549"
+            }
+        ]
+    },
+    "224": {
+        "name": "Saint Fathric's Temple",
+        "region": "Norvrandt",
+        "zone": "Il Mheg",
+        "zone_id": "816",
+        "submap_id": "3161",
+        "lisbeth_cords": {
+            "Area": "Il Mheg",
+            "XYZ": "605.39, 186.4337, 148.1893"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "607.4716, 183.4812, 132.3553",
+                "Heading": "4.786129"
+            }, {
+                "XYZ": "580.5107, 183.4812, 136.8384",
+                "Heading": "5.594576"
+            }, {
+                "XYZ": "647.1888, 184.8347, 132.7173",
+                "Heading": "4.733786"
+            }
+        ]
+    },
+    "225": {
+        "name": "Lake Tusi Mek'ta",
+        "region": "Norvrandt",
+        "zone": "The Rak'tika Greatwood",
+        "zone_id": "817",
+        "submap_id": "3166",
+        "lisbeth_cords": {
+            "Area": "The Rak'tika Greatwood",
+            "XYZ": "-457.0445, -0.3, 401.5692"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-457.0445, -0.3, 401.5692",
+                "Heading": "5.239766"
+            }, {
+                "XYZ": "-488.3843, -0.3000001, 399.7425",
+                "Heading": "4.875339"
+            }, {
+                "XYZ": "-482.7643, -0.3, 435.7073",
+                "Heading": "6.037733"
+            }
+        ]
+    },
+    "226": {
+        "name": "The Red Chalice",
+        "region": "Norvrandt",
+        "zone": "The Rak'tika Greatwood",
+        "zone_id": "817",
+        "submap_id": "3365",
+        "lisbeth_cords": {
+            "Area": "The Rak'tika Greatwood",
+            "XYZ": "-583.3825, -0.6000001, -10.59822"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-583.3825, -0.6000001, -10.59822",
+                "Heading": "3.52236"
+            }, {
+                "XYZ": "-570.646, -0.6, -45.78933",
+                "Heading": "4.075276"
+            }, {
+                "XYZ": "-608.9486, -0.6, -32.4343",
+                "Heading": "0.5085261"
+            }
+        ]
+    },
+    "227": {
+        "name": "The Lozatl",
+        "region": "Norvrandt",
+        "zone": "The Rak'tika Greatwood",
+        "zone_id": "817",
+        "submap_id": "3165",
+        "lisbeth_cords": {
+            "Area": "The Rak'tika Greatwood",
+            "XYZ": "-335.5941, 5.423997, -36.20679"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-335.5941, 5.423997, -36.20679",
+                "Heading": "1.604789"
+            }, {
+                "XYZ": "-311.312, 3.433282, -27.43502",
+                "Heading": "5.200866"
+            }, {
+                "XYZ": "-319.4145, 7.605494, -60.14938",
+                "Heading": "0.2434251"
+            }
+        ]
+    },
+    "228": {
+        "name": "South Mjrl's Regret",
+        "region": "Norvrandt",
+        "zone": "The Rak'tika Greatwood",
+        "zone_id": "817",
+        "submap_id": "3167",
+        "lisbeth_cords": {
+            "Area": "The Rak'tika Greatwood",
+            "XYZ": "106.9933, -21.74073, 511.4975"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "106.9933, -21.74073, 511.4975",
+                "Heading": "5.064728"
+            }, {
+                "XYZ": "98.01465, -21.3784, 534.3689",
+                "Heading": "4.941159"
+            }, {
+                "XYZ": "72.50151, -21.10941, 528.3228",
+                "Heading": "0.6476481"
+            }
+        ]
+    },
+    "229": {
+        "name": "Woven Oath",
+        "region": "Norvrandt",
+        "zone": "The Rak'tika Greatwood",
+        "zone_id": "817",
+        "submap_id": "3174",
+        "lisbeth_cords": {
+            "Area": "The Rak'tika Greatwood",
+            "XYZ": "-679.6891, 33.99178, -256.3607"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-679.6891, 33.99178, -256.3607",
+                "Heading": "5.737036"
+            }, {
+                "XYZ": "-689.1133, 33.99178, -240.8255",
+                "Heading": "4.2982"
+            }, {
+                "XYZ": "-695.9401, 33.99178, -251.408",
+                "Heading": "1.211056"
+            }
+        ]
+    },
+    "230": {
+        "name": "The Flounders' Floor",
+        "region": "Norvrandt",
+        "zone": "The Tempest",
+        "zone_id": "818",
+        "submap_id": "3196",
+        "lisbeth_cords": {
+            "Area": "The Tempest",
+            "XYZ": "-428.7982, 393.7201, -670.8645"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-428.7982, 393.7201, -670.8645",
+                "Heading": "4.822519"
+            }, {
+                "XYZ": "-453.8247, 393.7201, -675.4504",
+                "Heading": "0.3467791"
+            }, {
+                "XYZ": "-462.4988, 393.72, -650.2955",
+                "Heading": "5.239284"
+            }
+        ]
+    },
+    "231": {
+        "name": "Where the Dry Return",
+        "region": "Norvrandt",
+        "zone": "The Tempest",
+        "zone_id": "818",
+        "submap_id": "3199",
+        "lisbeth_cords": {
+            "Area": "The Tempest",
+            "XYZ": "785.0533, 448.4622, -719.5323"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "770.9969, 446.4425, -721.9981",
+                "Heading": "4.427551"
+            }, {
+                "XYZ": "777.5337, 448.4783, -732.9607",
+                "Heading": "3.981445"
+            }, {
+                "XYZ": "785.8091, 448.0647, -744.4491",
+                "Heading": "3.619115"
+            }
+        ]
+    },
+    "232": {
+        "name": "Northwest Caliban Gorge",
+        "region": "Norvrandt",
+        "zone": "The Tempest",
+        "zone_id": "818",
+        "submap_id": "3193",
+        "lisbeth_cords": {
+            "Area": "The Tempest",
+            "XYZ": "-483.6885, 186.1969, -540.7681"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-487.3695, 184.7268, -552.0118",
+                "Heading": "3.743883"
+            }, {
+                "XYZ": "-475.9068, 184.7709, -558.5859",
+                "Heading": "4.016154"
+            }, {
+                "XYZ": "-504.5959, 184.9594, -545.1892",
+                "Heading": "3.138604"
+            }
+        ]
+    },
+    "233": {
+        "name": "West Caliban Gap",
+        "region": "Norvrandt",
+        "zone": "The Tempest",
+        "zone_id": "818",
+        "submap_id": "3202",
+        "lisbeth_cords": {
+            "Area": "The Tempest",
+            "XYZ": "-771.5961, 83.13901, -415.6524"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-771.5961, 83.13901, -415.6524",
+                "Heading": "4.604672"
+            }, {
+                "XYZ": "-792.961, 83.13901, -413.6188",
+                "Heading": "5.566009"
+            }, {
+                "XYZ": "-746.6172, 83.13901, -413.8898",
+                "Heading": "5.896914"
+            }
+        ]
+    },
+    "234": {
+        "name": "East Caliban Gap",
+        "region": "Norvrandt",
+        "zone": "The Tempest",
+        "zone_id": "818",
+        "submap_id": "3202",
+        "lisbeth_cords": {
+            "Area": "The Tempest",
+            "XYZ": "-674.6121, 22.40509, -278.1714"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-670.6306, 20.95272, -282.5492",
+                "Heading": "2.554267"
+            }, {
+                "XYZ": "-658.7989, 20.69687, -281.0389",
+                "Heading": "3.335475"
+            }, {
+                "XYZ": "-677.1934, 20.74888, -287.2272",
+                "Heading": "2.610813"
+            }
+        ]
+    },
+    "235": {
+        "name": "Purpure",
+        "region": "Norvrandt",
+        "zone": "The Tempest",
+        "zone_id": "818",
+        "submap_id": "3201",
+        "lisbeth_cords": {
+            "Area": "The Tempest",
+            "XYZ": "574.8669, -241.6, 443.853"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "574.8669, -241.6, 443.853",
+                "Heading": "1.019983"
+            }, {
+                "XYZ": "605.5352, -241.6, 467.4916",
+                "Heading": "1.399071"
+            }, {
+                "XYZ": "615.0337, -241.6, 414.8083",
+                "Heading": "6.142887"
+            }
+        ]
+    },
+    "236": {
+        "name": "The Norvrandt Slope",
+        "region": "Norvrandt",
+        "zone": "The Tempest",
+        "zone_id": "818",
+        "submap_id": "3192",
+        "lisbeth_cords": {
+            "Area": "The Tempest",
+            "XYZ": "338.1316, 231.6881, -323.2393"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "338.1316, 231.6881, -323.2393",
+                "Heading": "1.166595"
+            }, {
+                "XYZ": "343.39, 231.6881, -300.0095",
+                "Heading": "0.9005857"
+            }, {
+                "XYZ": "369.9417, 231.6881, -313.2129",
+                "Heading": "2.994984"
+            }
+        ]
+    },
+    "237": {
+        "name": "Outer Galadion Bay",
+        "region": "The High Seas",
+        "zone": "The Endeavor"
+    },
+    "238": {
+        "name": "Galadion Spectral Current",
+        "region": "The High Seas",
+        "zone": "The Endeavor"
+    },
+    "239": {
+        "name": "The Southern Strait of Merlthor",
+        "region": "The High Seas",
+        "zone": "The Endeavor"
+    },
+    "240": {
+        "name": "Southern Merlthor Spectral Current",
+        "region": "The High Seas",
+        "zone": "The Endeavor"
+    },
+    "241": {
+        "name": "Open Rhotano Sea",
+        "region": "The High Seas",
+        "zone": "The Endeavor"
+    },
+    "242": {
+        "name": "Rhotano Spectral Current",
+        "region": "The High Seas",
+        "zone": "The Endeavor"
+    },
+    "243": {
+        "name": "The Northern Strait of Merlthor",
+        "region": "The High Seas",
+        "zone": "The Endeavor"
+    },
+    "244": {
+        "name": "Northern Merlthor Spectral Current",
+        "region": "The High Seas",
+        "zone": "The Endeavor"
+    },
+    "245": {
+        "name": "Mjrl's Tears",
+        "region": "Norvrandt",
+        "zone": "The Rak'tika Greatwood",
+        "zone_id": "817",
+        "submap_id": "3183",
+        "lisbeth_cords": {
+            "Area": "The Rak'tika Greatwood",
+            "XYZ": "168.7025, -28.21481, 717.1523"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "168.7025, -28.21481, 717.1523",
+                "Heading": "0.9555283"
+            }, {
+                "XYZ": "195.6436, -28.21481, 717.3579",
+                "Heading": "0.9303937"
+            }, {
+                "XYZ": "166.5184, -28.21481, 746.852",
+                "Heading": "6.227125"
+            }
+        ]
+    },
+    "246": {
+        "name": "Cieldalaes Margin",
+        "region": "The High Seas",
+        "zone": "The Endeavor"
+    },
+    "247": {
+        "name": "Cieldalaes Spectral Current",
+        "region": "The High Seas",
+        "zone": "The Endeavor"
+    },
+    "248": {
+        "name": "Open Bloodbrine Sea",
+        "region": "The High Seas",
+        "zone": "The Endeavor"
+    },
+    "249": {
+        "name": "Bloodbrine Spectral Current",
+        "region": "The High Seas",
+        "zone": "The Endeavor"
+    },
+    "250": {
+        "name": "Outer Rothlyt Sound",
+        "region": "The High Seas",
+        "zone": "The Endeavor"
+    },
+    "251": {
+        "name": "Rothlyt Spectral Current",
+        "region": "The High Seas",
+        "zone": "The Endeavor"
+    },
+    "252": {
+        "name": "Scholar's Harbor",
+        "region": "The Northern Empty",
+        "zone": "Old Sharlayan (Zone)",
+        "zone_id": "962",
+        "submap_id": "3822",
+        "lisbeth_cords": {
+            "Area": "Old Sharlayan",
+            "XYZ": "9.347091, -16.147, 141.4112"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "9.85795, -16.17681, 146.2283",
+                "Heading": "0.1031501"
+            }, {
+                "XYZ": "-7.712842, -16.147, 151.5749",
+                "Heading": "6.210406"
+            }, {
+                "XYZ": "18.40983, -16.147, 146.1455",
+                "Heading": "6.275333"
+            }
+        ]
+    },
+    "253": {
+        "name": "Oinops",
+        "region": "The Northern Empty",
+        "zone": "Old Sharlayan (Zone)",
+        "zone_id": "962",
+        "submap_id": "3809",
+        "lisbeth_cords": {
+            "Area": "Old Sharlayan",
+            "XYZ": "104.0227, 3.376965, -68.58138"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "108.1976, 2.795526, -63.9055",
+                "Heading": "0.9344072"
+            }, {
+                "XYZ": "116.1107, 3.378719, -72.75876",
+                "Heading": "0.8946145"
+            }, {
+                "XYZ": "103.1245, 0.9686922, -39.53026",
+                "Heading": "1.878975"
+            }
+        ]
+    },
+    "254": {
+        "name": "Reflecting Pool",
+        "region": "The Northern Empty",
+        "zone": "Old Sharlayan (Zone)",
+        "zone_id": "962",
+        "submap_id": "3807",
+        "lisbeth_cords": {
+            "Area": "Old Sharlayan",
+            "XYZ": "-170.4314, 8.00656, -20.56651"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-170.4314, 8.00656, -20.56651",
+                "Heading": "3.363976"
+            }, {
+                "XYZ": "-166.925, 8.050853, -30.69417",
+                "Heading": "4.811202"
+            }, {
+                "XYZ": "-179.5398, 7.847175, -29.2686",
+                "Heading": "1.66961"
+            }
+        ]
+    },
+    "255": {
+        "name": "Unmoved Source Alpha",
+        "region": "The Northern Empty",
+        "zone": "Labyrinthos",
+        "zone_id": "956",
+        "submap_id": "3832",
+        "lisbeth_cords": {
+            "Area": "Labyrinthos",
+            "XYZ": "-174.8388, 156.93, -806.4524"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-174.8388, 156.93, -806.4524",
+                "Heading": "4.47989"
+            }, {
+                "XYZ": "-191.3315, 156.93, -820.849",
+                "Heading": "0.1382294"
+            }, {
+                "XYZ": "-208.8137, 156.93, -800.7595",
+                "Heading": "5.286255"
+            }
+        ]
+    },
+    "256": {
+        "name": "The Mover Alpha",
+        "region": "The Northern Empty",
+        "zone": "Labyrinthos",
+        "zone_id": "956",
+        "submap_id": "3841",
+        "lisbeth_cords": {
+            "Area": "Labyrinthos",
+            "XYZ": "-183.2765, 78.46773, -691.5447"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-183.2765, 78.46773, -691.5447",
+                "Heading": "0.2429528"
+            }, {
+                "XYZ": "-187.1021, 78.46772, -669.6534",
+                "Heading": "0.5759552"
+            }, {
+                "XYZ": "-171.1784, 78.46773, -663.64",
+                "Heading": "3.275625"
+            }
+        ]
+    },
+    "257": {
+        "name": "Unmoved Source Beta",
+        "region": "The Northern Empty",
+        "zone": "Labyrinthos",
+        "zone_id": "956",
+        "submap_id": "3836",
+        "lisbeth_cords": {
+            "Area": "Labyrinthos",
+            "XYZ": "514.4223, 160.4621, -617.09"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "514.4223, 160.4621, -617.09",
+                "Heading": "2.29545"
+            }, {
+                "XYZ": "537.1671, 160.4621, -607.8107",
+                "Heading": "0.7518704"
+            }, {
+                "XYZ": "541.7667, 160.4621, -640.7153",
+                "Heading": "4.812914"
+            }
+        ]
+    },
+    "258": {
+        "name": "The Mover Beta",
+        "region": "The Northern Empty",
+        "zone": "Labyrinthos",
+        "zone_id": "956",
+        "submap_id": "3841",
+        "lisbeth_cords": {
+            "Area": "Labyrinthos",
+            "XYZ": "164.268, 56.66145, -413.1459"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "166.5199, 56.66145, -407.0892",
+                "Heading": "5.938316"
+            }, {
+                "XYZ": "163.7146, 58.84909, -392.4229",
+                "Heading": "4.424067"
+            }, {
+                "XYZ": "152.8269, 56.66145, -426.8776",
+                "Heading": "2.52445"
+            }
+        ]
+    },
+    "259": {
+        "name": "Deepmoat",
+        "region": "The Northern Empty",
+        "zone": "Labyrinthos",
+        "zone_id": "956",
+        "submap_id": "3841",
+        "lisbeth_cords": {
+            "Area": "Labyrinthos",
+            "XYZ": "-70.55151, 55.20669, -336.8639"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-73.81054, 54.513, -333.5905",
+                "Heading": "5.806361"
+            }, {
+                "XYZ": "-85.94711, 53.43071, -339.6185",
+                "Heading": "5.47335"
+            }, {
+                "XYZ": "-61.06239, 56.00881, -330.7405",
+                "Heading": "6.055752"
+            }
+        ]
+    },
+    "260": {
+        "name": "Meghaduta",
+        "region": "Ilsabard",
+        "zone": "Radz-at-Han",
+        "zone_id": "963",
+        "submap_id": "3864",
+        "lisbeth_cords": {
+            "Area": "Radz-at-Han",
+            "XYZ": "-270.539, 36, 36.05727"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-284.9658, 34.74522, 27.53073",
+                "Heading": "3.298184"
+            }, {
+                "XYZ": "-278.7176, 34.74521, 18.49108",
+                "Heading": "3.664698"
+            }, {
+                "XYZ": "-288.6003, 34.74522, 10.35258",
+                "Heading": "0.6110749"
+            }
+        ]
+    },
+    "261": {
+        "name": "Yedlihmad",
+        "region": "Ilsabard",
+        "zone": "Thavnair",
+        "zone_id": "957",
+        "submap_id": "3880",
+        "lisbeth_cords": {
+            "Area": "Thavnair",
+            "XYZ": "213.2166, 0.7353816, 713.2293"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "216.7248, -0.05152941, 720.3051",
+                "Heading": "0.9009123"
+            }, {
+                "XYZ": "209.3896, -0.06850439, 730.2487",
+                "Heading": "0.2118552"
+            }, {
+                "XYZ": "216.2335, -0.04255795, 699.671",
+                "Heading": "2.727221"
+            }
+        ]
+    },
+    "262": {
+        "name": "The Thavnairian Coast",
+        "region": "Ilsabard",
+        "zone": "Thavnair",
+        "zone_id": "957",
+        "submap_id": "3884",
+        "lisbeth_cords": {
+            "Area": "Thavnair",
+            "XYZ": "-328.684, 0.09303045, 560.3935"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-339.526, -0.2460347, 573.3192",
+                "Heading": "5.581886"
+            }, {
+                "XYZ": "-353.5731, -0.2018808, 557.9101",
+                "Heading": "5.18606"
+            }, {
+                "XYZ": "-321.3559, -0.1496097, 583.0001",
+                "Heading": "5.659391"
+            }
+        ]
+    },
+    "263": {
+        "name": "The Great Runoff",
+        "region": "Ilsabard",
+        "zone": "Thavnair",
+        "zone_id": "957",
+        "submap_id": "3886",
+        "lisbeth_cords": {
+            "Area": "Thavnair",
+            "XYZ": "-503.5855, -1.80006E-05, -14.78414"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-507.0609, -0.09078109, -5.07819",
+                "Heading": "0.002416611"
+            }, {
+                "XYZ": "-517.0122, -0.09809101, -15.86339",
+                "Heading": "5.204905"
+            }, {
+                "XYZ": "-532.3875, -0.1134137, -25.38276",
+                "Heading": "5.766209"
+            }
+        ]
+    },
+    "264": {
+        "name": "Giantsgall Grounds",
+        "region": "Ilsabard",
+        "zone": "Thavnair",
+        "zone_id": "957",
+        "submap_id": "3889",
+        "lisbeth_cords": {
+            "Area": "Thavnair",
+            "XYZ": "-41.68946, 89.63309, -647.3694"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-41.47999, 89.63315, -657.7039",
+                "Heading": "2.995251"
+            }, {
+                "XYZ": "-55.4754, 89.64625, -665.9265",
+                "Heading": "2.144926"
+            }, {
+                "XYZ": "-24.89498, 89.63316, -652.7765",
+                "Heading": "2.863297"
+            }
+        ]
+    },
+    "265": {
+        "name": "The Wakeful Torana",
+        "region": "Ilsabard",
+        "zone": "Thavnair",
+        "zone_id": "957",
+        "submap_id": "3892",
+        "lisbeth_cords": {
+            "Area": "Thavnair",
+            "XYZ": "537.3402, 4.227959, -457.7299"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "537.3402, 4.227959, -457.7299",
+                "Heading": "2.308309"
+            }, {
+                "XYZ": "546.7992, 4.308575, -480.8907",
+                "Heading": "2.004618"
+            }, {
+                "XYZ": "572.2454, 4.386624, -450.1942",
+                "Heading": "2.283174"
+            }
+        ]
+    },
+    "266": {
+        "name": "Ksiroda",
+        "region": "Ilsabard",
+        "zone": "Thavnair",
+        "zone_id": "957",
+        "submap_id": "3892",
+        "lisbeth_cords": {
+            "Area": "Thavnair",
+            "XYZ": "515.6667, 4.408312, 3.336241"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "515.6667, 4.408312, 3.336241",
+                "Heading": "5.35565"
+            }, {
+                "XYZ": "506.4695, 4.204235, 28.28826",
+                "Heading": "5.736829"
+            }, {
+                "XYZ": "494.5585, 4.212761, -17.29577",
+                "Heading": "4.048746"
+            }
+        ]
+    },
+    "267": {
+        "name": "Pavana's Remorse",
+        "region": "Ilsabard",
+        "zone": "Thavnair",
+        "zone_id": "957",
+        "submap_id": "3895",
+        "lisbeth_cords": {
+            "Area": "Thavnair",
+            "XYZ": "101.6033, 4.149, -347.1885"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "101.6033, 4.149, -347.1885",
+                "Heading": "1.043284"
+            }, {
+                "XYZ": "125.57, 4.149, -327.9035",
+                "Heading": "4.310533"
+            }, {
+                "XYZ": "140.0963, 4.149, -359.2698",
+                "Heading": "4.321018"
+            }
+        ]
+    },
+    "268": {
+        "name": "The Font of Maya",
+        "region": "Ilsabard",
+        "zone": "Thavnair",
+        "zone_id": "957",
+        "submap_id": "3898",
+        "lisbeth_cords": {
+            "Area": "Thavnair",
+            "XYZ": "256.9446, 11.84146, 140.6039"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "251.4118, 11.84146, 141.9294",
+                "Heading": "4.961901"
+            }, {
+                "XYZ": "254.0603, 11.84146, 154.5692",
+                "Heading": "5.165054"
+            }, {
+                "XYZ": "246.1964, 11.84146, 120.277",
+                "Heading": "4.888593"
+            }
+        ]
+    },
+    "269": {
+        "name": "The Perfumed Tides",
+        "region": "Ilsabard",
+        "zone": "Thavnair",
+        "zone_id": "957",
+        "submap_id": "3885",
+        "lisbeth_cords": {
+            "Area": "Thavnair",
+            "XYZ": "-678.8987, -0.03101504, -616.3395"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-678.8987, -0.03101504, -616.3395",
+                "Heading": "4.260292"
+            }, {
+                "XYZ": "-667.3033, -0.02954125, -633.024",
+                "Heading": "3.510498"
+            }, {
+                "XYZ": "-691.8505, -0.04579759, -596.7057",
+                "Heading": "4.725233"
+            }
+        ]
+    },
+    "270": {
+        "name": "The Eblan Thaw",
+        "region": "Ilsabard",
+        "zone": "Garlemald",
+        "zone_id": "958",
+        "submap_id": "3902",
+        "lisbeth_cords": {
+            "Area": "Garlemald",
+            "XYZ": "-483.788, 20.31418, 467.972"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-488.1785, 19.72799, 467.0263",
+                "Heading": "4.49876"
+            }, {
+                "XYZ": "-497.3484, 19.77185, 479.4931",
+                "Heading": "3.55"
+            }, {
+                "XYZ": "-488.7962, 19.46694, 454.1476",
+                "Heading": "5.101947"
+            }
+        ]
+    },
+    "271": {
+        "name": "The Stainless Course",
+        "region": "Ilsabard",
+        "zone": "Garlemald",
+        "zone_id": "958",
+        "submap_id": "3917",
+        "lisbeth_cords": {
+            "Area": "Garlemald",
+            "XYZ": "-1.396667, -6.484803, -737.0667"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-1.374654, -6.484802, -738.3751",
+                "Heading": "3.120423"
+            }, {
+                "XYZ": "21.5424, -6.484802, -738.3272",
+                "Heading": "2.917261"
+            }, {
+                "XYZ": "-31.91328, -6.484802, -738.3767",
+                "Heading": "3.271253"
+            }
+        ]
+    },
+    "272": {
+        "name": "Greatest Endsvale",
+        "region": "The Sea of Stars",
+        "zone": "Mare Lamentorum",
+        "zone_id": "959",
+        "submap_id": "3969",
+        "lisbeth_cords": {
+            "Area": "Mare Lamentorum",
+            "XYZ": "577.8911, -162.0345, -453.155"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "577.8911, -162.0345, -453.155",
+                "Heading": "0.7853971"
+            }, {
+                "XYZ": "598.0316, -162.0345, -447.8343",
+                "Heading": "1.239881"
+            }, {
+                "XYZ": "583.6926, -162.0345, -416.7118",
+                "Heading": "5.550147"
+            }
+        ]
+    },
+    "273": {
+        "name": "The Chlorophospond",
+        "region": "The Sea of Stars",
+        "zone": "Mare Lamentorum",
+        "zone_id": "959",
+        "submap_id": "3955",
+        "lisbeth_cords": {
+            "Area": "Mare Lamentorum",
+            "XYZ": "465.5063, 68.43545, 534.7042"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "463.0225, 68.68334, 539.798",
+                "Heading": "5.941837"
+            }, {
+                "XYZ": "451.4386, 68.8461, 540.1798",
+                "Heading": "6.268564"
+            }, {
+                "XYZ": "443.883, 68.7254, 531.5114",
+                "Heading": "4.865318"
+            }
+        ]
+    },
+    "274": {
+        "name": "The Frozen Fissure",
+        "region": "The Sea of Stars",
+        "zone": "Mare Lamentorum",
+        "zone_id": "959",
+        "submap_id": "3957",
+        "lisbeth_cords": {
+            "Area": "Mare Lamentorum",
+            "XYZ": "45.90171, 21.80864, 480.878"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "43.34983, 21.62704, 487.9487",
+                "Heading": "0.004192829"
+            }, {
+                "XYZ": "30.0364, 21.6996, 481.8654",
+                "Heading": "5.016106"
+            }, {
+                "XYZ": "60.7585, 22.10233, 489.4062",
+                "Heading": "0.2157521"
+            }
+        ]
+    },
+    "275": {
+        "name": "Rumination's Ramble",
+        "region": "The World Unsundered",
+        "zone": "Elpis",
+        "zone_id": "961",
+        "submap_id": "3934",
+        "lisbeth_cords": {
+            "Area": "Elpis",
+            "XYZ": "-428.6555, 135.3405, -175.0417"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-428.6555, 135.3405, -175.0417",
+                "Heading": "3.215565"
+            }, {
+                "XYZ": "-385.0914, 135.3405, -172.4323",
+                "Heading": "1.297101"
+            }, {
+                "XYZ": "-384.74, 135.3405, -200.5928",
+                "Heading": "2.836482"
+            }
+        ]
+    },
+    "276": {
+        "name": "The Lower Hungering Gardens",
+        "region": "The World Unsundered",
+        "zone": "Elpis",
+        "zone_id": "961",
+        "submap_id": "3945",
+        "lisbeth_cords": {
+            "Area": "Elpis",
+            "XYZ": "137.5721, 91.083, -573.8994"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "137.5721, 91.083, -573.8994",
+                "Heading": "1.998724"
+            }, {
+                "XYZ": "168.5475, 91.083, -554.4626",
+                "Heading": "0.8153932"
+            }, {
+                "XYZ": "176.0018, 91.083, -606.1489",
+                "Heading": "3.594653"
+            }
+        ]
+    },
+    "277": {
+        "name": "Lethe",
+        "region": "The World Unsundered",
+        "zone": "Elpis",
+        "zone_id": "961",
+        "submap_id": "3947",
+        "lisbeth_cords": {
+            "Area": "Elpis",
+            "XYZ": "495.3606, 138.5854, -212.613"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "495.3606, 138.5854, -212.613",
+                "Heading": "0.708328"
+            }, {
+                "XYZ": "463.4649, 138.5854, -187.2824",
+                "Heading": "5.602932"
+            }, {
+                "XYZ": "508.3931, 138.5854, -183.9252",
+                "Heading": "1.910515"
+            }
+        ]
+    },
+    "278": {
+        "name": "Apohelos 18-\u03b3",
+        "region": "The Sea of Stars",
+        "zone": "Ultima Thule",
+        "zone_id": "960",
+        "submap_id": "3970",
+        "lisbeth_cords": {
+            "Area": "Ultima Thule",
+            "XYZ": "-49.45981, 59.963, 770.6264"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-49.45981, 59.963, 770.6264",
+                "Heading": "1.842928"
+            }, {
+                "XYZ": "-21.49617, 59.96301, 765.451",
+                "Heading": "4.207498"
+            }, {
+                "XYZ": "-47.78304, 59.96301, 740.5374",
+                "Heading": "5.72386"
+            }
+        ]
+    },
+    "279": {
+        "name": "Apohelos 18-\u03b2",
+        "region": "The Sea of Stars",
+        "zone": "Ultima Thule",
+        "zone_id": "960",
+        "submap_id": "3970",
+        "lisbeth_cords": {
+            "Area": "Ultima Thule",
+            "XYZ": "-620.9103, 76.91122, 458.575"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-620.9103, 76.91122, 458.575",
+                "Heading": "0.5171647"
+            }, {
+                "XYZ": "-621.903, 76.91122, 478.4088",
+                "Heading": "1.976967"
+            }, {
+                "XYZ": "-597.0199, 76.91121, 462.901",
+                "Heading": "1.832453"
+            }
+        ]
+    },
+    "280": {
+        "name": "Apohelos 18-\u03b1",
+        "region": "The Sea of Stars",
+        "zone": "Ultima Thule",
+        "zone_id": "960",
+        "submap_id": "3970",
+        "lisbeth_cords": {
+            "Area": "Ultima Thule",
+            "XYZ": "-716.7943, 58.62499, 69.57766"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-716.7943, 58.62499, 69.57766",
+                "Heading": "4.132172"
+            }, {
+                "XYZ": "-727.0764, 58.625, 45.04861",
+                "Heading": "4.190834"
+            }, {
+                "XYZ": "-745.9589, 58.625, 59.11467",
+                "Heading": "1.579123"
+            }
+        ]
+    },
+    "281": {
+        "name": "The Wellspring of Regret",
+        "region": "The Sea of Stars",
+        "zone": "Ultima Thule",
+        "zone_id": "960",
+        "submap_id": "3976",
+        "lisbeth_cords": {
+            "Area": "Ultima Thule",
+            "XYZ": "-364.1135, 266.818, -479.3374"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-361.3567, 263.0327, -485.6256",
+                "Heading": "3.077813"
+            }, {
+                "XYZ": "-348.2276, 262.8528, -485.2868",
+                "Heading": "2.579345"
+            }, {
+                "XYZ": "-334.2025, 262.9309, -487.0633",
+                "Heading": "3.121793"
+            }
+        ]
+    },
+    "282": {
+        "name": "Abode of the Ea",
+        "region": "The Sea of Stars",
+        "zone": "Ultima Thule",
+        "zone_id": "960",
+        "submap_id": "3978",
+        "lisbeth_cords": {
+            "Area": "Ultima Thule",
+            "XYZ": "25.88649, 269.0002, -685.38"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "28.56499, 268.9984, -693.0225",
+                "Heading": "3.28306"
+            }, {
+                "XYZ": "24.33082, 268.9995, -675.2102",
+                "Heading": "0.7697828"
+            }, {
+                "XYZ": "43.38218, 269, -667.8574",
+                "Heading": "4.811965"
+            }
+        ]
+    },
+    "283": {
+        "name": "Limne 18",
+        "region": "The Sea of Stars",
+        "zone": "Ultima Thule",
+        "zone_id": "960",
+        "submap_id": "3970",
+        "lisbeth_cords": {
+            "Area": "Ultima Thule",
+            "XYZ": "-656.1792, 77.23194, 552.069"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "-660.4504, 76.32266, 559.2496",
+                "Heading": "5.308353"
+            }, {
+                "XYZ": "-664.7294, 77.29636, 549.6221",
+                "Heading": "4.667468"
+            }, {
+                "XYZ": "-651.1329, 74.37665, 576.5045",
+                "Heading": "5.811008"
+            }
+        ]
+    },
+    "284": {
+        "name": "Limne 3-\u03b1",
+        "region": "The Sea of Stars",
+        "zone": "Ultima Thule",
+        "zone_id": "960",
+        "submap_id": "3975",
+        "lisbeth_cords": {
+            "Area": "Ultima Thule",
+            "XYZ": "583.4855, 286.8451, -497.8035"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "591.6626, 287.142, -499.1921",
+                "Heading": "1.67552"
+            }, {
+                "XYZ": "590.0045, 286.6469, -479.0792",
+                "Heading": "1.325757"
+            }, {
+                "XYZ": "587.3627, 286.9947, -513.9117",
+                "Heading": "2.077666"
+            }
+        ]
+    },
+    "285": {
+        "name": "Limne 3-\u03b2",
+        "region": "The Sea of Stars",
+        "zone": "Ultima Thule",
+        "zone_id": "960",
+        "submap_id": "3975",
+        "lisbeth_cords": {
+            "Area": "Ultima Thule",
+            "XYZ": "123.1404, 233.8073, -253.5931"
+        },
+        "fishspot_cords": [
+            {
+                "XYZ": "116.9673, 233.491, -256.7817",
+                "Heading": "4.120822"
+            }, {
+                "XYZ": "128.8857, 233.4498, -263.5743",
+                "Heading": "3.368932"
+            }, {
+                "XYZ": "112.5492, 233.4928, -240.9609",
+                "Heading": "4.598341"
+            }
+        ]
+    }
+}

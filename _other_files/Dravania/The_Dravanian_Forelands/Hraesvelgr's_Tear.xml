@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Hraesvelgr's Tear (16751)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Hraesvelgr's_Tear "1">
+]>
+<Profile>
+	<Name>Hraesvelgr's Tear</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Hraesvelgr's Tear..." />
+		<If condition="not HasAtLeast(12709,50)">
+			<!--Magma Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2008)">
+			<LisbethTravel Area="The Dravanian Forelands" XYZ="-651.3336, 3.351533, -768.7468" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(1,2)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(16751,&Hraesvelgr's_Tear;) and HasAtLeast(12709,1) and IsTimeBetween(2,6)">
+			<ExFish Bait="Magma Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-648.3218, 4.331171, -778.3206" Heading="2.617355" />
+					<FishSpot XYZ="-672.9894, 3.942748, -754.8378" Heading="5.030098" />
+					<FishSpot XYZ="-684.0073, 6.100186, -767.5778" Heading="6.114972" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Hraesvelgr's Tear" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

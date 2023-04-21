@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Crystal Perch (7682)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Crystal_Perch "1">
+]>
+<Profile>
+	<Name>Crystal Perch</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Crystal Perch..." />
+		<If condition="not HasAtLeast(2594,50)">
+			<!--Butterworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(192)">
+			<LisbethTravel Area="Middle La Noscea" XYZ="-12.28817, 13.29832, -455.9037" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7682,&Crystal_Perch;) and HasAtLeast(2594,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(134, 'Clouds', 'Fog', 'Wind')">
+			<ExFish Bait="Butterworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-18.97313, 12.51912, -462.955" Heading="3.889561" />
+					<FishSpot XYZ="-3.548503, 13.95309, -470.5255" Heading="3.872804" />
+					<FishSpot XYZ="-32.13143, 10.2027, -438.6634" Heading="4.21104" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Crystal Perch" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

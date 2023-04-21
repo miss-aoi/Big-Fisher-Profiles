@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Priest of Yx'Lokwa (28071)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Priest_of_Yx'Lokwa "1">
+]>
+<Profile>
+	<Name>Priest of Yx'Lokwa</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Priest of Yx'Lokwa..." />
+		<If condition="not HasAtLeast(27587,50)">
+			<!--Robber Ball-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3166)">
+			<LisbethTravel Area="The Rak'tika Greatwood" XYZ="-457.0445, -0.3, 401.5692" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(9,10)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(28071,&Priest_of_Yx'Lokwa;) and HasAtLeast(27587,1) and IsTimeBetween(10,12)">
+			<ExFish Bait="Robber Ball" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+					<PatienceTug moochLevel="2" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-457.0445, -0.3, 401.5692" Heading="5.239766" />
+					<FishSpot XYZ="-488.3843, -0.3000001, 399.7425" Heading="4.875339" />
+					<FishSpot XYZ="-482.7643, -0.3, 435.7073" Heading="6.037733" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Priest of Yx'Lokwa" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

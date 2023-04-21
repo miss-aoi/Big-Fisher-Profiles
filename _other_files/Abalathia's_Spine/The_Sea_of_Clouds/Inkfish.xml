@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Inkfish (15635)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Inkfish "1">
+]>
+<Profile>
+	<Name>Inkfish</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Inkfish..." />
+		<If condition="not HasAtLeast(12711,50)">
+			<!--Brute Leech-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2103)">
+			<LisbethTravel Area="The Sea of Clouds" XYZ="308.8001, -125.2893, 674.882" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(13,14)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(15635,&Inkfish;) and HasAtLeast(12711,1) and IsTimeBetween(14,16)">
+			<ExFish Bait="Brute Leech" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="308.8001, -125.2893, 674.882" Heading="2.009855" />
+					<FishSpot XYZ="351.9214, -125.2895, 681.1732" Heading="2.692616" />
+					<FishSpot XYZ="382.7634, -125.3148, 637.7352" Heading="4.003712" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Inkfish" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Mother of All Pancakes (30438)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Mother_of_All_Pancakes "1">
+]>
+<Profile>
+	<Name>The Mother of All Pancakes</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Mother of All Pancakes..." />
+		<If condition="not HasAtLeast(27590,50)">
+			<!--Squid Strip-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3202)">
+			<LisbethTravel Area="The Tempest" XYZ="-674.6121, 22.40509, -278.1714" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(-1,0)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(30438,&The_Mother_of_All_Pancakes;) and HasAtLeast(27590,1) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Clear Skies')">
+			<ExFish Bait="Squid Strip" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-670.6306, 20.95272, -282.5492" Heading="2.554267" />
+					<FishSpot XYZ="-658.7989, 20.69687, -281.0389" Heading="3.335475" />
+					<FishSpot XYZ="-677.1934, 20.74888, -287.2272" Heading="2.610813" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Mother of All Pancakes" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

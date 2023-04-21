@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Starchaser (28072)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Starchaser "1">
+]>
+<Profile>
+	<Name>Starchaser</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Starchaser..." />
+		<If condition="not HasAtLeast(27590,50)">
+			<!--Squid Strip-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3201)">
+			<LisbethTravel Area="The Tempest" XYZ="574.8669, -241.6, 443.853" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(5,6)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(28072,&Starchaser;) and HasAtLeast(27590,1) and IsTimeBetween(6,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds')">
+			<ExFish Bait="Squid Strip" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="574.8669, -241.6, 443.853" Heading="1.019983" />
+					<FishSpot XYZ="605.5352, -241.6, 467.4916" Heading="1.399071" />
+					<FishSpot XYZ="615.0337, -241.6, 414.8083" Heading="6.142887" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Starchaser" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Moonlight Guppy (32049)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Moonlight_Guppy "1">
+]>
+<Profile>
+	<Name>Moonlight Guppy</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Moonlight Guppy..." />
+		<If condition="not HasAtLeast(27589,50)">
+			<!--Baitbugs-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3036)">
+			<LisbethTravel Area="Lakeland" XYZ="-471.141, 1.16216, 13.13457" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(5,6)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(32049,&Moonlight_Guppy;) and HasAtLeast(27589,1) and IsTimeBetween(6,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(813, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(813, TimeSpan.FromHours(-8), 'Fair Skies')">
+			<ExFish Bait="Baitbugs" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-471.8417, 0.9272442, 5.575228" Heading="3.128901" />
+					<FishSpot XYZ="-459.9423, 0.8613912, 0.549422" Heading="4.314328" />
+					<FishSpot XYZ="-481.6026, 1.569031, 8.424436" Heading="2.730964" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Moonlight Guppy" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

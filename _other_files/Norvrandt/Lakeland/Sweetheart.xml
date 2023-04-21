@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Sweetheart (30433)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Sweetheart "1">
+]>
+<Profile>
+	<Name>Sweetheart</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Sweetheart..." />
+		<If condition="not HasAtLeast(27589,50)">
+			<!--Baitbugs-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3038)">
+			<LisbethTravel Area="Lakeland" XYZ="497.7614, 75.02838, -355.9837" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(30433,&Sweetheart;) and HasAtLeast(27589,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(813, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(813, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
+			<ExFish Bait="Baitbugs" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="511.6296, 77.2631, -347.2758" Heading="2.198998" />
+					<FishSpot XYZ="499.0318, 73.29858, -371.5919" Heading="2.186429" />
+					<FishSpot XYZ="490.1122, 71.20589, -388.8308" Heading="2.039821" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Sweetheart" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Lancetfish (33244)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Lancetfish "1">
+]>
+<Profile>
+	<Name>Lancetfish</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Lancetfish..." />
+		<If condition="not HasAtLeast(27590,50)">
+			<!--Squid Strip-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not HasAtLeast(27588,50)">
+			<!--Squid Strip-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27588,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3193)">
+			<LisbethTravel Area="The Tempest" XYZ="-483.6885, 186.1969, -540.7681" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(-1,0)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(33244,&Lancetfish;) and HasAtLeast(27590,1) and IsTimeBetween(0,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Clouds')">
+			<ExFish Bait="Short Bill Minnow" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
+					<FishSpot XYZ="-475.9068, 184.7709, -558.5859" Heading="4.016154" />
+					<FishSpot XYZ="-504.5959, 184.9594, -545.1892" Heading="3.138604" />
+				</FishSpots>
+			</ExFish>
+			<ExFish Bait="Squid Strip" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
+					<FishSpot XYZ="-475.9068, 184.7709, -558.5859" Heading="4.016154" />
+					<FishSpot XYZ="-504.5959, 184.9594, -545.1892" Heading="3.138604" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Lancetfish" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<If condition="HasAtLeast(33325,1)">
+			<Desynth ItemIds="33325" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

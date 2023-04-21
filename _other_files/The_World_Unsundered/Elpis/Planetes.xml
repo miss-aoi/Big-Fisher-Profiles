@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Planetes (37853)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Planetes "1">
+]>
+<Profile>
+	<Name>Planetes</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Planetes..." />
+		<If condition="not HasAtLeast(36591,50)">
+			<!--Mayfly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3934)">
+			<LisbethTravel Area="Elpis" XYZ="-428.6555, 135.3405, -175.0417" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(37853,&Planetes;) and HasAtLeast(36591,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(961, 'Umbral Wind')">
+			<ExFish Bait="Mayfly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-428.6555, 135.3405, -175.0417" Heading="3.215565" />
+					<FishSpot XYZ="-385.0914, 135.3405, -172.4323" Heading="1.297101" />
+					<FishSpot XYZ="-384.74, 135.3405, -200.5928" Heading="2.836482" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Planetes" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

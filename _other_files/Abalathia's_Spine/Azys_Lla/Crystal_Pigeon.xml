@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Crystal Pigeon (17581)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Crystal_Pigeon "1">
+]>
+<Profile>
+	<Name>Crystal Pigeon</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Crystal Pigeon..." />
+		<If condition="not HasAtLeast(12712,50)">
+			<!--Giant Crane Fly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2113)">
+			<LisbethTravel Area="Azys Lla" XYZ="872.5102, 30.23042, -184.1454" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(17581,&Crystal_Pigeon;) and HasAtLeast(12712,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Thunder') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(402, TimeSpan.FromHours(-8), 'Thunder')">
+			<ExFish Bait="Giant Crane Fly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Medium" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="876.0121, 30.3, -183.2697" Heading="1.35798" />
+					<FishSpot XYZ="867.404, 30.3, -164.5814" Heading="1.15273" />
+					<FishSpot XYZ="884.2114, 30.3, -229.1334" Heading="1.552759" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Crystal Pigeon" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

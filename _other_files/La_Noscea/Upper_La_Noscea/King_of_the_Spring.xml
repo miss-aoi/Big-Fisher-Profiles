@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: King of the Spring (7927)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY King_of_the_Spring "1">
+]>
+<Profile>
+	<Name>King of the Spring</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: King of the Spring..." />
+		<If condition="not HasAtLeast(2626,50)">
+			<!--Spinnerbait-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(177)">
+			<LisbethTravel Area="Upper La Noscea" XYZ="301.5934, -3.052745, 61.05919" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(15,16)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7927,&King_of_the_Spring;) and HasAtLeast(2626,1) and IsTimeBetween(16,19)">
+			<ExFish Bait="Spinnerbait" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="262.0699, -3.4, 52.85926" Heading="1.506207" />
+					<FishSpot XYZ="285.5044, -3.4, 21.87793" Heading="4.689689" />
+					<FishSpot XYZ="300.2574, -3.4, 49.42555" Heading="3.5356" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="King of the Spring" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

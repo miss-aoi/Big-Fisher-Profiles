@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Thousand-year Itch (7942)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Thousand-year_Itch "1">
+]>
+<Profile>
+	<Name>The Thousand-year Itch</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Thousand-year Itch..." />
+		<If condition="not HasAtLeast(2601,50)">
+			<!--Stem Borer-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(253)">
+			<LisbethTravel Area="Eastern Thanalan" XYZ="423.4817, -64.36299, 201.4493" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7942,&The_Thousand-year_Itch;) and HasAtLeast(2601,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Fog')">
+			<ExFish Bait="Stem Borer" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="419.1361, -64.63788, 194.8363" Heading="3.501371" />
+					<FishSpot XYZ="424.5287, -64.83167, 219.4854" Heading="5.893176" />
+					<FishSpot XYZ="432.0719, -64.65391, 190.2607" Heading="3.237483" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Thousand-year Itch" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

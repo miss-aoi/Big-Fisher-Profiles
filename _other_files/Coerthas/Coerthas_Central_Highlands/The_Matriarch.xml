@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Matriarch (7946)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Matriarch "1">
+]>
+<Profile>
+	<Name>The Matriarch</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Matriarch..." />
+		<If condition="not HasAtLeast(2599,50)">
+			<!--Honey Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(383)">
+			<LisbethTravel Area="Coerthas Central Highlands" XYZ="-745.3611, 222.6547, 57.38375" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7946,&The_Matriarch;) and HasAtLeast(2599,1)">
+			<ExFish Bait="Honey Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-735.4037, 222.6547, 63.49319" Heading="3.7" />
+					<FishSpot XYZ="-737.9011, 222.6547, 60.94794" Heading="0.7446342" />
+					<FishSpot XYZ="-738.4809, 222.6547, 63.54441" Heading="2.186695" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Matriarch" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: White Ronso (28926)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY White_Ronso "1">
+]>
+<Profile>
+	<Name>White Ronso</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: White Ronso..." />
+		<If condition="not HasAtLeast(27589,50)">
+			<!--Baitbugs-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3070)">
+			<LisbethTravel Area="Kholusia" XYZ="433.7267, 7.458066, 192.0279" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(-1,0)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(28926,&White_Ronso;) and HasAtLeast(27589,1) and IsTimeBetween(0,2)">
+			<ExFish Bait="Baitbugs" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="433.7267, 7.458066, 192.0279" Heading="0.2806373" />
+					<FishSpot XYZ="451.4574, 3.596465, 222.99" Heading="5.78889" />
+					<FishSpot XYZ="416.6208, 8.667081, 148.3187" Heading="3.983521" />
+					<FishSpot XYZ="416.6208, 8.667081, 148.3187" Heading="3.983521" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="White Ronso" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

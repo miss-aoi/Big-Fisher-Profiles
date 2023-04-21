@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Drowned Sniper (7938)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Drowned_Sniper "1">
+]>
+<Profile>
+	<Name>The Drowned Sniper</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Drowned Sniper..." />
+		<If condition="not HasAtLeast(2618,50)">
+			<!--Snurble Fly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':TEMP,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(168)">
+			<LisbethTravel Area="Eastern La Noscea" XYZ="-70.91592, 33.82394, 223.3905" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7938,&The_Drowned_Sniper;) and HasAtLeast(2618,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')">
+			<ExFish Bait="Snurble Fly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-111.6467, 33.92606, 231.1327" Heading="0.1593609" />
+					<FishSpot XYZ="-55.90533, 33.78047, 223.2611" Heading="4.696387" />
+					<FishSpot XYZ="-76.91438, 33.88614, 224.1277" Heading="4.626702" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Drowned Sniper" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>
