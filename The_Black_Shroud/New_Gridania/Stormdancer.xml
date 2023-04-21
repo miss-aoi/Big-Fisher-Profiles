@@ -13,7 +13,7 @@
 			<If condition="not HasAtLeast(2601,50)">
 				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2601,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
 			</If>
-			<If condition="not IsOnMap(132) or not IsOnSubMap(0)">
+			<If condition="not IsOnMap(132)">
 				<LisbethTravel Area="Gridania (New Gridania)" XYZ="71.02061, -7.759192, 107.6301"/>
 			</If>
 			<If Condition="not ClassName == ClassJobType.Fisher">

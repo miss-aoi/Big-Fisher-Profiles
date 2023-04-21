@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Profile: Opabinia (17589)
+	Authors: 
+-->
+<Profile>
+	<Name>TEMP</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+		<If condition="not HasAtLeast(17589,1)">
+			<Log Message="Start Fishing: Darkstar..." />
+			<If Condition="not HasAtLeast(12710,50)">
+				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12710,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
+			</If>
+			<If condition="not IsOnSubMap(392)">
+				<LisbethTravel Area="Coerthas Central Highlands" XYZ="490.8867, 348.5036, -687.0253"/>
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<While Condition="IsTimeBetween(17,18)">
+				<WaitTimer WaitTime="30" />
+			</While>
+			<While Condition="HasAtLeast(12710,1) and HasAtLeast(TEMP-baitID2,1) and not HasAtLeast(17589,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(TEMP-zoneID, 'Thunder')" >
+				<!-- 5x Lamp Marimo for Fisher's Intuition -->
+				<ExFish Bait="TEMP-baitName1" Condition="not Core.Player.HasAura(568)"
+						MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True"
+                        Mooch="1" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
+					<PatienceTugs>
+						<PatienceTug moochLevel="0" TugType="Heavy" />
+					</PatienceTugs>
+					<FishSpots>
+						
+					</FishSpots>
+				</ExFish>
+				<!-- Now go for Darkstar -->
+				<ExFish Bait="Fiend Worm" Condition="Core.Player.HasAura(568)"
+						MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+						Mooch="1" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
+					<PatienceTugs>
+						<PatienceTug moochLevel="0" TugType="Light" />
+					</PatienceTugs>
+					<Keepers>
+						<Keeper name="Opabinia" />
+					</Keepers>
+					<FishSpots>
+						
+					</FishSpots>
+				</ExFish>
+			</While>
+			<If Condition="HasAtLeast(5544,1)">
+				<Desynth ItemIds="5544" DesynthDelay="6000" DesynthTimeout="10"/>
+			</If>
+		</If>
+		<LLoadProfile Path="../../Start.xml"/>
+	
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
+</Profile>

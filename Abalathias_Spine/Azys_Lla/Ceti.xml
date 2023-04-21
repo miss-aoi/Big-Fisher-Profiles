@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Profile: Ceti (16752)
-	Authors: miss-aoi
+	Authors: 
 -->
 <Profile>
 	<Name>Ceti</Name>
@@ -11,6 +11,9 @@
 		<If condition="not HasAtLeast(15637,1)">
 			<Log Message="Start Fishing: Ceti..." />
 			<If condition="not HasAtLeast(12710,50)">
+				<If Condition="not HasAtLeast(25200,50)">
+					<Lisbeth IgnoreHome="True" Json="[{'Group': 1, 'Item': 25200, 'Amount': 50, 'Enabled': true, 'Type': 'GatherMasterpiece'}]"/>
+				</If>	
 				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12710,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
 			</If>
 			<If condition="not IsOnSubMap(383)">
@@ -19,7 +22,10 @@
 			<If Condition="not ClassName == ClassJobType.Fisher">
 				<ChangeClass Job="Fisher" />
 			</If>
-			<ExFish Bait="Hoverworm" Condition="HasAtLeast(12710,1) and not HasAtLeast(16752,1)"
+			<While Condition="IsTimeBetween(8,9)">
+				<WaitTimer WaitTime="30" />
+			</While>
+			<ExFish Bait="Hoverworm" Condition="HasAtLeast(12710,1) and not HasAtLeast(16752,1) and IsTimeBetween(18,22) and and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(TEMP-zoneID, 'Thunder') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(TEMP-zoneID, TimeSpan.FromHours(-8), 'Clouds')"
 					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
 					Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
 				<PatienceTugs>
@@ -35,7 +41,7 @@
 			</ExFish>
 		</If>
 		<LLoadProfile Path="../../Start.xml"/>
-	
+
 	</Order>
 	<GrindAreas>
 	</GrindAreas>

@@ -8,31 +8,31 @@
 	<BehaviorDirectory></BehaviorDirectory>
 	<Order>
 
-	<If condition="not HasAtLeast(7932,1)">
-		<Log Message="Start Fishing: Daniffens Mark..." />
-		<If condition="not HasAtLeast(2623,3)">
-			<Lisbeth Json="[{'Item': 2623,'Group': 0,'Amount': 3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
+		<If condition="not HasAtLeast(7932,1)">
+			<Log Message="Start Fishing: Daniffens Mark..." />
+			<If condition="not HasAtLeast(2623,3)">
+				<Lisbeth Json="[{'Item': 2623,'Group': 0,'Amount': 3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
+			</If>
+			<If condition="not IsOnSubMap(380)">
+				<LisbethTravel Area="Coerthas Central Highlands" XYZ="-36.35629, 205.5014, 439.4049"/>
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<ExFish Bait="Wildfowl Fly" Condition="HasAtLeast(2623,1) and not HasAtLeast(7932,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards')"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+				<Keepers>
+					<Keeper name="Daniffen's Mark" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="-41.51296, 204.1969, 439.9323" Heading="4.761396" Sit="True" />
+					<FishSpot XYZ="-56.52238, 200.1282, 466.597" Heading="0.01968575" Sit="True" />
+					<FishSpot XYZ="-74.65414, 199.246, 486.0047" Heading="4.57919" Sit="True" />
+				</FishSpots>
+			</ExFish>
 		</If>
-		<If condition="not IsOnSubMap(380)">
-			<LisbethTravel Area="Coerthas Central Highlands" XYZ="-36.35629, 205.5014, 439.4049"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>
-		<ExFish Bait="Wildfowl Fly" Condition="HasAtLeast(2623,1) and not HasAtLeast(7932,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards')"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-			<Keepers>
-				<Keeper name="Daniffen's Mark" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="-41.51296, 204.1969, 439.9323" Heading="4.761396" Sit="True" />
-				<FishSpot XYZ="-56.52238, 200.1282, 466.597" Heading="0.01968575" Sit="True" />
-				<FishSpot XYZ="-74.65414, 199.246, 486.0047" Heading="4.57919" Sit="True" />
-			</FishSpots>
-		</ExFish>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<LLoadProfile Path="../../Start.xml"/>
+
 	</Order>
 	<GrindAreas>
 	</GrindAreas>

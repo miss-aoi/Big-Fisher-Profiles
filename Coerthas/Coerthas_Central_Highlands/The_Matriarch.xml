@@ -8,36 +8,36 @@
 	<BehaviorDirectory></BehaviorDirectory>
 	<Order>
 
-	<If condition="not HasAtLeast(7946,1)">
-		<Log Message="Start Fishing: The Matriarch..." />
-		<If condition="not HasAtLeast(2599,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+		<If condition="not HasAtLeast(7946,1)">
+			<Log Message="Start Fishing: The Matriarch..." />
+			<If condition="not HasAtLeast(2599,50)">
+				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			</If>
+			<If condition="not IsOnSubMap(383)">
+				<TeleportTo Name="Foundation" AetheryteId="70" /> <!-- Come from Foundation since from Dragonhead causes Lisbeth to sometimes get stuck above the spot -->
+				<LisbethTravel Zone="155" XYZ="-745.3611, 222.6547, 57.38375" />
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<ExFish Bait="Honey Worm" Condition="HasAtLeast(2599,1) and not HasAtLeast(7946,1)"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+					Mooch="1" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
+				<PatienceTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Light" />
+				</PatienceTugs>
+				<Keepers>
+					<Keeper name="The Matriarch" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="-735.4037, 222.6547, 63.49319" Heading="3.7" Sit="True" />
+					<FishSpot XYZ="-738.4809, 222.6547, 63.54441" Heading="2.186695" Sit="True" />
+					<FishSpot XYZ="-737.9011, 222.6547, 60.94794" Heading="0.7446342" Sit="True" />
+				</FishSpots>
+			</ExFish>
 		</If>
-		<If condition="not IsOnSubMap(383)">
-			<TeleportTo Name="Foundation" AetheryteId="70" /> <!-- Come from Foundation since from Dragonhead causes Lisbeth to sometimes get stuck above the spot -->
-			<LisbethTravel Zone="155" XYZ="-745.3611, 222.6547, 57.38375" />
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>
-		<ExFish Bait="Honey Worm" Condition="HasAtLeast(2599,1) and not HasAtLeast(7946,1)"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-				Mooch="1" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
-			<PatienceTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Light" />
-			</PatienceTugs>
-			<Keepers>
-				<Keeper name="The Matriarch" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="-735.4037, 222.6547, 63.49319" Heading="3.7" Sit="True" />
-				<FishSpot XYZ="-738.4809, 222.6547, 63.54441" Heading="2.186695" Sit="True" />
-				<FishSpot XYZ="-737.9011, 222.6547, 60.94794" Heading="0.7446342" Sit="True" />
-			</FishSpots>
-		</ExFish>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
+		<LLoadProfile Path="../../Start.xml"/>
 
 	</Order>
 	<GrindAreas>

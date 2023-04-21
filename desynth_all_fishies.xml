@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Profile: Desynth All Fishies (Big and Small)
+	Authors: miss-aoi
+	Wil desynth all Big Fish - you have to do smalls yourself.
+	Be sure to update "1" as needed in Start.xml as needed
+-->
+<Profile>
+	<Name>Desynth All Fishies</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+		<If Condition="HasAtLeast(4925,1)"> <!-- Crayfish -->
+			<Desynth ItemIds="4925" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4927,1)"> <!-- Striped Goby -->
+			<Desynth ItemIds="4927" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4932,1)"> <!-- Pipira -->
+			<Desynth ItemIds="4932" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4934,1)"> <!-- Gudgeon -->
+			<Desynth ItemIds="4934" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4935,1)"> <!-- Brass Loach -->
+			<Desynth ItemIds="4935" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4936,1)"> <!-- Maiden Carp -->
+			<Desynth ItemIds="4936" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4952,1)"> <!-- Eunuch Crayfish -->
+			<Desynth ItemIds="4952" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7705,1)"> <!-- Chirurgeon -->
+			<Desynth ItemIds="7705" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4948,1)"> <!-- Copperfish -->
+			<Desynth ItemIds="4948" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+	</Order>
+</Profile>

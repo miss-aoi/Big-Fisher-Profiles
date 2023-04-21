@@ -8,34 +8,34 @@
 	<BehaviorDirectory></BehaviorDirectory>
 	<Order>
 
-	<If condition="not HasAtLeast(17577,1)">
-		<Log Message="Start Fishing: Bishopfish..." />
-		<If condition="not HasAtLeast(12711,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
+		<If condition="not HasAtLeast(17577,1)">
+			<Log Message="Start Fishing: Bishopfish..." />
+			<If condition="not HasAtLeast(12711,50)">
+				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
+			</If>
+			<If condition="not IsOnSubMap(2201)">
+				<LisbethTravel Area="Coerthas Western Highlands" XYZ="692.1117, 132.263, -797.5139"/>
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<While Condition="IsTimeBetween(9,10)">
+				<WaitTimer WaitTime="30" />
+			</While>
+			<ExFish Bait="Brute Leech" Condition="HasAtLeast(12711,1) and not HasAtLeast(17577,1) and IsTimeBetween(10,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Clear Skies')"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+				<Keepers>
+					<Keeper name="Bishopfish" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="700.3533, 130.5082, -811.9639" Heading="2.642415" Sit="True" />
+					<FishSpot XYZ="697.6003, 130.462, -814.6788" Heading="3.000552" Sit="True" />
+					<FishSpot XYZ="705.3715, 130.7645, -807.4526" Heading="2.34919" Sit="True" />
+				</FishSpots>
+			</ExFish>
 		</If>
-		<If condition="not IsOnSubMap(2201)">
-			<LisbethTravel Area="Coerthas Western Highlands" XYZ="692.1117, 132.263, -797.5139"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>
-		<While Condition="IsTimeBetween(9,10)">
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Brute Leech" Condition="HasAtLeast(12711,1) and not HasAtLeast(17577,1) and IsTimeBetween(10,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Clear Skies')"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-			<Keepers>
-				<Keeper name="Bishopfish" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="700.3533, 130.5082, -811.9639" Heading="2.642415" Sit="True" />
-				<FishSpot XYZ="697.6003, 130.462, -814.6788" Heading="3.000552" Sit="True" />
-				<FishSpot XYZ="705.3715, 130.7645, -807.4526" Heading="2.34919" Sit="True" />
-			</FishSpots>
-		</ExFish>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<LLoadProfile Path="../../Start.xml"/>
+
 	</Order>
 	<GrindAreas>
 	</GrindAreas>

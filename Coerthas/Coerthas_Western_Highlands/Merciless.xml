@@ -8,36 +8,36 @@
 	<BehaviorDirectory></BehaviorDirectory>
 	<Order>
 
-	<If condition="not HasAtLeast(16756,1)">
-		<Log Message="Start Fishing: Merciless..." />
-		<If condition="not HasAtLeast(2607,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2607,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+		<If condition="not HasAtLeast(16756,1)">
+			<Log Message="Start Fishing: Merciless..." />
+			<If condition="not HasAtLeast(2607,50)">
+				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2607,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			</If>
+			<If condition="not IsOnSubMap(2202)">
+				<LisbethTravel Area="Coerthas Western Highlands" XYZ="-447.2483, 90.92711, -659.5029"/>
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<ExFish Bait="Caddisfly Larva" Condition="HasAtLeast(2607,1) and not HasAtLeast(16756,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(397, TimeSpan.FromHours(-8), 'Snow', 'Blizzards')"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
+					Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
+				<PatienceTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatienceTugs>
+				<Keepers>
+					<Keeper name="Merciless" />
+				</Keepers>
+				<FishSpots>
+					<FishSpot XYZ="-454.2133, 90.26717, -669.1575" Heading="3.815576" Sit="True" />
+					<FishSpot XYZ="-470.4974, 90.01168, -649.8319" Heading="3.920299" Sit="True" />
+					<FishSpot XYZ="-448.3315, 90.52505, -671.4198" Heading="4.060614" Sit="True" />
+				</FishSpots>
+			</ExFish>
 		</If>
-		<If condition="not IsOnSubMap(2202)">
-			<LisbethTravel Area="Coerthas Western Highlands" XYZ="-447.2483, 90.92711, -659.5029"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
-		</If>
-		<ExFish Bait="Caddisfly Larva" Condition="HasAtLeast(2607,1) and not HasAtLeast(16756,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(397, TimeSpan.FromHours(-8), 'Snow', 'Blizzards')"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
-			<PatienceTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Heavy" />
-			</PatienceTugs>
-			<Keepers>
-				<Keeper name="Merciless" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="-454.2133, 90.26717, -669.1575" Heading="3.815576" Sit="True" />
-				<FishSpot XYZ="-470.4974, 90.01168, -649.8319" Heading="3.920299" Sit="True" />
-				<FishSpot XYZ="-448.3315, 90.52505, -671.4198" Heading="4.060614" Sit="True" />
-			</FishSpots>
-		</ExFish>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<LLoadProfile Path="../../Start.xml"/>
+
 	</Order>
 	<GrindAreas>
 	</GrindAreas>

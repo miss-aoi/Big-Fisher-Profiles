@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Profile: Allagan Bladeshark (16744)
+	Authors: 
+-->
+<Profile>
+	<Name>TEMP</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+
+		<If condition="not HasAtLeast(16744,1)">
+			<Log Message="Start Fishing: Allagan Bladeshark..." />
+			<If condition="not HasAtLeast(12710,50)">
+				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12710,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			</If>
+			<If condition="not IsOnSubMap(TEMP-subMapID)">
+				<!-- Lisbeth Travel Cords -->
+			</If>
+			<If Condition="not ClassName == ClassJobType.Fisher">
+				<ChangeClass Job="Fisher" />
+			</If>
+			<ExFish Bait="TEMP-baitName" Condition="HasAtLeast(12710,1) and not HasAtLeast(16744,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(TEMP-zoneID, 'Thunder') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(TEMP-zoneID, TimeSpan.FromHours(-8), 'Clouds')"
+					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True">
+				<PatienceTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatienceTugs>
+				<Keepers>
+					<Keeper name="Allagan Bladeshark" />
+				</Keepers>
+				<FishSpots>
+					<!-- FISH CORDS -->
+				</FishSpots>
+			</ExFish>
+		</If>
+		<LLoadProfile Path="../../Start.xml"/>
+	
+	</Order>
+	<GrindAreas>
+	</GrindAreas>
+	<CodeChunks>
+	</CodeChunks>
+</Profile>

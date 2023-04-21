@@ -50,7 +50,7 @@
 <!ENTITY The_Lone_Ripper "0">                                   <!-- WEATHER -->  <!-- HEAVY STEEL JIG -->
 <!ENTITY Helmsmans_Hand "0">                    <!-- TIMED -->  <!-- WEATHER -->  <!-- PILL BUG -->
 <!ENTITY Frilled_Shark "0">                     <!-- TIMED -->  <!-- WEATHER -->  <!-- LUGWORM -->
-<!ENTITY The_Captains_Chalice "0">              <!-- TIMED -->                    <!-- STEEL JIG -->
+<!ENTITY The_Captains_Chalice "1">              <!-- TIMED -->                    <!-- STEEL JIG -->
 <!ENTITY Coelacanthus "0">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- SPOON WORM -->
 <!ENTITY Endoceras "0">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- STEEL JIG -->
 <!ENTITY Seahag "0">                            <!-- TIMED -->  <!-- WEATHER -->  <!-- LUGWORM -->
@@ -65,36 +65,36 @@
 <!-- LA NOSCEA - Mist -->
 <!ENTITY Twitchbeard "0">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- SPOON WORM -->
 <!-- THE BLACK SHROUD - New Gridania -->
-<!ENTITY Stormdancer "0">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- STEM BORER -->
-<!ENTITY Bloody_Brewer "0">                                                       <!-- CRAYFISH BALL -->
+<!ENTITY Stormdancer "1">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- STEM BORER -->
+<!ENTITY Bloody_Brewer "1">                                                       <!-- CRAYFISH BALL -->
 <!-- THE BLACK SHROUD - Old Gridania -->
-<!ENTITY Matron_Carp "0">                       <!-- TIMED -->                    <!-- BLOODWORM -->
-<!ENTITY Carp_Diem "0">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- CROW FLY -->
+<!ENTITY Matron_Carp "1">                       <!-- TIMED -->                    <!-- BLOODWORM -->
+<!ENTITY Carp_Diem "1">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- CROW FLY -->
 <!-- THE BLACK SHROUD - Central Shroud -->
 <!ENTITY Chirurgeon "0">                                                          <!-- MOTH PUPA -->
-<!ENTITY Ghost_Carp "0">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- BUTTERWORM -->
-<!ENTITY Levinlight "0">                        <!-- TIMED -->                    <!-- SYRPHID BASKET -->
-<!ENTITY The_Green_Jester "0">                  <!-- TIMED -->                    <!-- HONEY WORM -->
-<!ENTITY Bloodbath "0">                                         <!-- WEATHER -->  <!-- HONEY WORM -->
+<!ENTITY Ghost_Carp "1">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- BUTTERWORM -->
+<!ENTITY Levinlight "1">                        <!-- TIMED -->                    <!-- SYRPHID BASKET -->
+<!ENTITY The_Green_Jester "1">                  <!-- TIMED -->                    <!-- HONEY WORM -->
+<!ENTITY Bloodbath "1">                                         <!-- WEATHER -->  <!-- HONEY WORM -->
 <!-- THE BLACK SHROUD - East Shroud -->
-<!ENTITY Dark_Ambusher "0">                     <!-- TIMED -->                    <!-- MOTH PUPA -->
-<!ENTITY Moldva "0">                            <!-- TIMED -->                    <!-- MIDGE BASKET -->
-<!ENTITY The_Assassin "0">                      <!-- TIMED -->                    <!-- BUTTERWORM -->
-<!ENTITY Sylphsbane "0">                                        <!-- WEATHER -->  <!-- BUTTERWORM -->
-<!ENTITY Magicked_Mushroom "0">                                 <!-- WEATHER -->  <!-- SPINNERBAIT -->
+<!ENTITY Dark_Ambusher "1">                     <!-- TIMED -->                    <!-- MOTH PUPA -->
+<!ENTITY Moldva "1">                            <!-- TIMED -->                    <!-- MIDGE BASKET -->
+<!ENTITY The_Assassin "1">                      <!-- TIMED -->                    <!-- BUTTERWORM -->
+<!ENTITY Sylphsbane "1">                                        <!-- WEATHER -->  <!-- BUTTERWORM -->
+<!ENTITY Magicked_Mushroom "1">                                 <!-- WEATHER -->  <!-- SPINNERBAIT -->
 <!-- THE BLACK SHROUD - South Shroud -->
-<!ENTITY Vip_Viper "0">                         <!-- TIMED -->                    <!-- BUTTERWORM -->
-<!ENTITY Floating_Boulder "0">                  <!-- TIMED -->  <!-- WEATHER -->  <!-- BASS BALL -->
-<!ENTITY The_Grinner "0">                                                         <!-- SYRPHID BASKET -->
-<!ENTITY The_Sinker "0">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- SINKING MINNOW -->
-<!ENTITY The_Gobfather "0">                                     <!-- WEATHER -->  <!-- HONEY WORM -->
-<!ENTITY Son_of_Levin "0">                                      <!-- WEATHER -->  <!-- CADDISFLY LARVA -->
-<!ENTITY Giant_Takitaro "0">                                                      <!-- GLOWWORM -->
-<!ENTITY Namitaro "0">                                          <!-- WEATHER -->  <!-- TOPWATER FROG -->
+<!ENTITY Vip_Viper "1">                         <!-- TIMED -->                    <!-- BUTTERWORM -->
+<!ENTITY Floating_Boulder "1">                  <!-- TIMED -->  <!-- WEATHER -->  <!-- BASS BALL -->
+<!ENTITY The_Grinner "1">                                                         <!-- SYRPHID BASKET -->
+<!ENTITY The_Sinker "1">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- SINKING MINNOW -->
+<!ENTITY The_Gobfather "1">                                     <!-- WEATHER -->  <!-- HONEY WORM -->
+<!ENTITY Son_of_Levin "1">                                      <!-- WEATHER -->  <!-- CADDISFLY LARVA -->
+<!ENTITY Giant_Takitaro "1">                                                      <!-- GLOWWORM -->
+<!ENTITY Namitaro "1">                                          <!-- WEATHER -->  <!-- TOPWATER FROG -->
 <!-- THE BLACK SHROUD - North Shroud -->
-<!ENTITY Blue_Widow "0">                        <!-- TIMED -->                    <!-- FLOATING MINNOW -->
-<!ENTITY Judgeray "0">                          <!-- TIMED -->                    <!-- WILDFOWL FLY -->
-<!ENTITY Shadowstreak "0">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- TOPWATER FROG -->
+<!ENTITY Blue_Widow "1">                        <!-- TIMED -->                    <!-- FLOATING MINNOW -->
+<!ENTITY Judgeray "1">                          <!-- TIMED -->                    <!-- WILDFOWL FLY -->
+<!ENTITY Shadowstreak "1">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- TOPWATER FROG -->
 <!ENTITY Cornelia "0">                                                            <!-- GLOWWORM -->
 <!-- THE BLACK SHROUD - The Lavender Beds -->
 <!ENTITY Sweetnewt "0">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- MIDGE BASKET -->
@@ -114,29 +114,29 @@
 <!ENTITY Dark_Knight "0">                                       <!-- WEATHER -->  <!-- CROW FLY -->
 <!-- THANALAN - Eastern Thanalan -->
 <!ENTITY Marrow_Sucker "0">                     <!-- TIMED -->  <!-- WEATHER -->  <!-- SYRPHID BASKET -->
-<!ENTITY Mud_Pilgrim "0">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- BUTTERWORM -->
+<!ENTITY Mud_Pilgrim "1">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- BUTTERWORM -->
 <!ENTITY The_Wardens_Wand "0">                  <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
 <!ENTITY The_Thousand_year_Itch "0">                            <!-- WEATHER -->  <!-- STEM BORER -->
 <!-- THANALAN - Southern Thanalan -->
 <!ENTITY Old_Hollow_Eyes "0">                                   <!-- WEATHER -->  <!-- BUTTERWORM -->
 <!ENTITY Discobolus "0">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- GLOWWORM -->
-<!ENTITY Iron_Noose "0">                                        <!-- WEATHER -->  <!-- SPINNER -->
+<!ENTITY Iron_Noose "1">                                        <!-- WEATHER -->  <!-- SPINNER -->
 <!ENTITY Magic_Carpet "0">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- SAND LEECH -->
 <!ENTITY Helicoprion "0">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- SAND LEECH -->
 <!ENTITY Olgoi_Khorkhoi "0">                                    <!-- WEATHER -->  <!-- BLOODWORM -->
 <!-- THANALAN - Northern Thanalan -->
-<!ENTITY Hannibal "0">                          <!-- TIMED -->  <!-- WEATHER -->  <!-- SPINNERBAIT -->
+<!ENTITY Hannibal "1">                          <!-- TIMED -->  <!-- WEATHER -->  <!-- SPINNERBAIT -->
 <!ENTITY Wootz_Knifefish_Zenith "0">            <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
 <!-- THANALAN - The Goblet -->
-<!ENTITY Spearnose "0">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- CADDISFLY LARVA -->
+<!ENTITY Spearnose "1">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- CADDISFLY LARVA -->
 <!-- COERTHAS - Coerthas Central Highlands -->
 <!ENTITY Daniffens_Mark "0">                                    <!-- WEATHER -->  <!-- WILDFOWL FLY -->
-<!ENTITY Charons_Lantern "0">                   <!-- TIMED -->                    <!-- GLOWWORM -->
-<!ENTITY Starbright "0">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- SYRPHID BASKET -->
+<!ENTITY Charons_Lantern "1">                   <!-- TIMED -->                    <!-- GLOWWORM -->
+<!ENTITY Starbright "1">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- SYRPHID BASKET -->
 <!ENTITY Dawn_Maiden "0">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- WILDFOWL FLY -->
 <!ENTITY The_Matriarch "0">                                                       <!-- HONEY WORM -->
 <!ENTITY Darkstar "0">                                          <!-- WEATHER -->  <!-- STONEFLY NYMPH -->
-<!ENTITY Blue_Corpse "0">                                       <!-- WEATHER -->  <!-- CADDISFLY LARVA -->
+<!ENTITY Blue_Corpse "1">                                       <!-- WEATHER -->  <!-- CADDISFLY LARVA -->
 <!ENTITY Anomalocaris "0">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- HOVERWORM -->
 <!ENTITY Mahar "0">                                             <!-- WEATHER -->  <!-- HOVERWORM -->
 <!ENTITY Shonisaurus "0">                                       <!-- WEATHER -->  <!-- HOVERWORM -->
@@ -144,8 +144,8 @@
 <!ENTITY Fat_Purse "0">                                                           <!-- BRUTE LEECH -->
 <!ENTITY Hailfinder "0">                                        <!-- WEATHER -->  <!-- RED BALLOON -->
 <!ENTITY Flarefish "0">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- PURSE WEB SPIDER -->
-<!ENTITY Bishopfish "0">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- BRUTE LEECH -->
-<!ENTITY Charibenet "0">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- PURSE WEB SPIDER -->
+<!ENTITY Bishopfish "1">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- BRUTE LEECH -->
+<!ENTITY Charibenet "1">                        <!-- TIMED -->  <!-- WEATHER -->  <!-- PURSE WEB SPIDER -->
 <!ENTITY The_Impaler "0">                                                         <!-- BRUTE LEECH -->
 <!ENTITY Captain_Nemo "0">                                      <!-- WEATHER -->  <!-- BRUTE LEECH -->
 <!ENTITY La_Reale "0">                                                            <!-- BRUTE LEECH -->
@@ -153,13 +153,16 @@
 <!-- Mor Dhona - Mor Dhona -->
 <!ENTITY Aetherlouse "0">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- GLOWWORM -->
 <!ENTITY Ignus_Horn "0">                                        <!-- WEATHER -->  <!-- GLOWWORM -->
-<!ENTITY Blood_Red_Bonytongue "0">              <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
+<!ENTITY Blood_Red_Bonytongue "1">              <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
 <!ENTITY Void_Bass "0">                                         <!-- WEATHER -->  <!-- GLOWWORM -->
 <!ENTITY Ninja_Betta "0">                       <!-- TIMED -->  <!-- WEATHER -->  <!-- MIDGE BASKET -->
 <!ENTITY Canavan "0">                           <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
 <!ENTITY Kuno_the_Killer "0">                   <!-- TIMED -->  <!-- WEATHER -->  <!-- HONEY WORM -->
 <!-- ABALATHIA’S SPINE - The Sea of Clouds -->
 <!-- ABALATHIA’S SPINE - Azys Lla -->
+<!ENTITY Aetherochecmical_Compound_666 "0">                                       <!-- VERSATILE LURE -->
+<!ENTITY Augmented_High_Allagan_Helmet "0">                                       <!-- VERSATILE LURE -->
+<!ENTITY Ceti "1">                              <!-- TIMED -->  <!-- WEATHER -->  <!-- FIEND WORM -->
 <!-- DRAVANIA - The Dravanian Forelands -->
 <!-- DRAVANIA - The Dravanian Hinterlands -->
 <!-- DRAVANIA - The Churning Mists -->
@@ -778,8 +781,11 @@
         </If>
 
 
-        <!-- SPARE TIME TASKS -->
-        <Log Message="Nothing to fish right now. Checking tackle..." />
+        <!-- PURPLE GATHERES' SCRIP -->
+        <!-- <If Condition="&Ceti; == 1 and not HasAtLeast(33914,50)">
+            <Lisbeth IgnoreHome="True" Json="[{'Group': 1, 'Item': 33914, 'Amount': 50, 'Enabled': true, 'Type': 'GatherMasterpiece'
+            }]"/>
+        </If> -->
         <!-- BAIT - Generallly one used per cast -->
         <!-- BASS BALL -->
         <If Condition="&Floating_Boulder; == 1 and not HasAtLeast(2595,50)">
@@ -880,6 +886,13 @@
         <!-- SYRPHID BASKET -->
         <If Condition="(&Syldra; == 1 or &Shark_Tuna; == 1 or &Coelacanthus; == 1 or &Twitchbeard; == 1) and not HasAtLeast(2597,50)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2597,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+        </If>
+        <!-- FIEND WORM -->
+        <If Condition="(&Ceti; == 1) and not HasAtLeast(12710,50)">
+            <If Condition="not HasAtLeast(25200,50)">
+                <Lisbeth IgnoreHome="True" Json="[{'Group': 1, 'Item': 25200, 'Amount': 50, 'Enabled': true, 'Type': 'GatherMasterpiece'}]"/>
+            </If>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12710,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
 
         <!-- LURES - Usually these last longer -->
