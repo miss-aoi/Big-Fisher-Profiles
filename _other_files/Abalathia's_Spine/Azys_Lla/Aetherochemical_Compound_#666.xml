@@ -5,7 +5,7 @@
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY Aetherochemical_Compound_#666 "1">
+	<!ENTITY Aetherochemical_Compound_666 "1">
 ]>
 <Profile>
 	<Name>Aetherochemical Compound #666</Name>
@@ -22,7 +22,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(16752,&Aetherochemical_Compound_#666;) and HasAtLeast(12710,1)">
+		<While condition="not HasAtLeast(16752,&Aetherochemical_Compound_666;) and HasAtLeast(12710,1)">
 			<ExFish Bait="Fiend Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
