@@ -16,7 +16,7 @@
 			<!--Stem Borer-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2601,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
-		<If condition="not IsOnSubMap(None)">
+		<If condition="not IsOnMap(132) or not IsOnSubMap(0)">
 			<LisbethTravel Area="Gridania (New Gridania)" XYZ="71.02061, -7.759192, 107.6301" />
 		</If>
 		<If condition="not ClassName == ClassJobType.Fisher">

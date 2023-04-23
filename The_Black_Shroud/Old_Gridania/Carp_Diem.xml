@@ -16,8 +16,8 @@
 			<!--Crow Fly-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2614,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
-		<If condition="not IsOnSubMap(None)">
-			<LisbethTravel Area="None" XYZ="-113.6757, 6.369269, -150.6167" />
+		<If condition="not IsOnMap(133) or not IsOnSubMap(0)">
+			<LisbethTravel Area="Gridania (Old Gridania)" XYZ="-113.6757, 6.369269, -150.6167" />
 		</If>
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />

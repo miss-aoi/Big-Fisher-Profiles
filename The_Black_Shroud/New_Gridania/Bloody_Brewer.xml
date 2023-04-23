@@ -16,7 +16,7 @@
 			<!--Crayfish Ball-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2588,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
-		<If condition="not IsOnSubMap(None)">
+		<If condition="not IsOnMap(132) or not IsOnSubMap(0)">
 			<LisbethTravel Area="Gridania (New Gridania)" XYZ="-17.69501, -3.492352, 9.125766" />
 		</If>
 		<If condition="not ClassName == ClassJobType.Fisher">

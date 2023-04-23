@@ -16,7 +16,7 @@
 			<!--Bloodworm-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2590,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
-		<If condition="not IsOnSubMap(None)">
+		<If condition="not IsOnMap(133) or not IsOnSubMap(595)">
 			<LisbethTravel Area="Gridania (Old Gridania)" XYZ="180.0303, -2.267064, -243.6821" />
 		</If>
 		<If condition="not ClassName == ClassJobType.Fisher">

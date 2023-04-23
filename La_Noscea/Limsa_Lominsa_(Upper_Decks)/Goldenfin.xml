@@ -16,7 +16,7 @@
 			<!--Pill Bug-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2587,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
-		<If condition="not IsOnSubMap(None)">
+		<If condition="not IsOnMap(128) or not IsOnSubMap(0)">
 			<LisbethTravel Area="Limsa Lominsa (Upper Decks)" XYZ="19.86234, 40, 76.17139" />
 		</If>
 		<If condition="not ClassName == ClassJobType.Fisher">
