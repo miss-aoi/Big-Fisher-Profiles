@@ -1,41 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Blue Corpse (8770)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Blue_Corpse "1">
+]>
 <Profile>
 	<Name>Blue Corpse</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(8770,1)">
-			<Log Message="Start Fishing: Blue Corpse..."/>
-			<If condition="not HasAtLeast(2607,50)">
-				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2607,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-			</If>
-			<If condition="not IsOnSubMap(383)">
-				<LisbethTravel Area="Coerthas Central Highlands" XYZ="-847.422, 223.9743, 9.084878"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<ExFish Bait="Caddisfly Larva" Condition="HasAtLeast(2607,1) and not HasAtLeast(8770,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(-8), 'Snow', 'Blizzards')"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+		<Log Message="Starting Fishing: Blue Corpse..." />
+		<If condition="not HasAtLeast(2607,50)">
+			<!--Caddisfly Larva-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2607,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(383)">
+			<LisbethTravel Area="Coerthas Central Highlands" XYZ="-847.422, 223.9743, 9.084878" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(8770,&Blue_Corpse;) and HasAtLeast(2607,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
+			<ExFish Bait="Caddisfly Larva" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-835.9018, 223.9743, 16.83364" Heading="2.504576" />
+					<FishSpot XYZ="-849.4735, 223.9743, 11.95268" Heading="3.775867" />
+					<FishSpot XYZ="-856.2869, 223.8687, -0.9095947" Heading="0.9526248" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Blue Corpse" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-849.4735, 223.9743, 11.95268" Heading="3.775867" Sit="True" />
-					<FishSpot XYZ="-856.2869, 223.8687, -0.9095947" Heading="0.9526248" Sit="True" />
-					<FishSpot XYZ="-835.9018, 223.9743, 16.83364" Heading="2.504576" Sit="True" />
-				</FishSpots>
-			</ExFish>	
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-	
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

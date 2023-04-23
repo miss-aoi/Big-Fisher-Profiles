@@ -1,76 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Imperial Goldfish (8752)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Imperial_Goldfish "1">
+]>
 <Profile>
 	<Name>Imperial Goldfish</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(8752,5)">
-		<Log Message="Start Fishing: Imperial Goldfish..." />
+		<Log Message="Starting Fishing: Imperial Goldfish..." />
 		<If condition="not HasAtLeast(2599,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
+			<!--Honey Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(168)">
-			<LisbethTravel Area="Eastern La Noscea" XYZ="-253.4813, 35.16173, 289.4978"/>
+			<LisbethTravel Area="Eastern La Noscea" XYZ="-253.4813, 35.16173, 289.4978" />
 		</If>
-		<While Condition="HasAtLeast(2599,1) and not HasAtLeast(8752,1)">
-			<!-- 3x Jungle Catfish for Fisher's Intuition -->
-			<ExFish Bait="Honey Worm" Condition="not Core.Player.HasAura(568)"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="3" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True">
-				<PatienceTugs>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(8752,&Imperial_Goldfish;) and HasAtLeast(2599,1)">
+			<ExFish Bait="Honey Worm" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Light" />
-					<PatienceTug moochLevel="2" TugType="Medium" />
-				</PatienceTugs>
+					<PatienceTug moochLevel="2" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-272.5454, 33.78063, 299.9305" Heading="4.463154" />
+					<FishSpot XYZ="-278.8307, 33.78064, 296.5956" Heading="4.435918" />
+					<FishSpot XYZ="-280.1851, 33.99385, 304.9468" Heading="2.548871" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Jungle Catfish" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-278.8307, 33.78064, 296.5956" Heading="4.435918" Sit="True" />
-					<FishSpot XYZ="-280.1851, 33.99385, 304.9468" Heading="2.548871" Sit="True" />
-					<FishSpot XYZ="-272.5454, 33.78063, 299.9305" Heading="4.463154" Sit="True" />
-				</FishSpots>
 			</ExFish>
-			<!-- Now go for Imperial Goldfish -->
-			<ExFish Bait="Honey Worm" Condition="Core.Player.HasAura(568)"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="3" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True">
-				<PatienceTugs>
+			<ExFish Bait="Honey Worm" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />
-				</PatienceTugs>
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-272.5454, 33.78063, 299.9305" Heading="4.463154" />
+					<FishSpot XYZ="-278.8307, 33.78064, 296.5956" Heading="4.435918" />
+					<FishSpot XYZ="-280.1851, 33.99385, 304.9468" Heading="2.548871" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Imperial Goldfish" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-278.8307, 33.78064, 296.5956" Heading="4.435918" Sit="True" />
-					<FishSpot XYZ="-280.1851, 33.99385, 304.9468" Heading="2.548871" Sit="True" />
-					<FishSpot XYZ="-272.5454, 33.78063, 299.9305" Heading="4.463154" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
 		</While>
-	</If>
-	<If Condition="HasAtLeast(5031,1)">
-		<Desynth ItemIds="5031" DesynthDelay="6000" DesynthTimeout="10"/>
-	</If>
-	<If Condition="HasAtLeast(4978,1)">
-		<Desynth ItemIds="4978" DesynthDelay="6000" DesynthTimeout="10"/>
-	</If>
-	<If Condition="HasAtLeast(5011,1)">
-		<Desynth ItemIds="5011" DesynthDelay="6000" DesynthTimeout="10"/>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<If condition="HasAtLeast(5031,1)">
+			<Desynth ItemIds="5031" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

@@ -1,41 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Silver Sovereign (7690)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Silver_Sovereign "1">
+]>
 <Profile>
 	<Name>Silver Sovereign</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(7690,1)">
-		<Log Message="Start Fishing: Silver Sovereign..." />
-		<If condition="not HasAtLeast(2628,3)">
-			<Lisbeth Json="[{'Item': 2628,'Group': 0,'Amount':3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
+		<Log Message="Starting Fishing: Silver Sovereign..." />
+		<If condition="not HasAtLeast(2628,50)">
+			<!--Yumizuno-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2628,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>
 		<If condition="not IsOnSubMap(341)">
-			<LisbethTravel Area="Lower La Noscea" XYZ="145.4249, 57.88197, 911.193"/>
+			<LisbethTravel Area="Lower La Noscea" XYZ="145.4249, 57.88197, 911.193" />
 		</If>
-		<ExFish Bait="Yumizuno" Condition="HasAtLeast(2628,1) and not HasAtLeast(7690,1)"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-			<Keepers>
-				<Keeper name="Silver Sovereign" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="140.6154, 57.81126, 932.4698" Heading="0.7754359" Sit="True" />
-				<FishSpot XYZ="140.8088, 57.75964, 932.426" Heading="0.7795331" Sit="True" />
-				<FishSpot XYZ="116.8599, 59.74031, 951.6397" Heading="0.3103869" Sit="True" />
-			</FishSpots>
-		</ExFish>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7690,&Silver_Sovereign;) and HasAtLeast(2628,1)">
+			<ExFish Bait="Yumizuno" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="116.8599, 59.74031, 951.6397" Heading="0.3103869" />
+					<FishSpot XYZ="140.6154, 57.81126, 932.4698" Heading="0.7754359" />
+					<FishSpot XYZ="140.8088, 57.75964, 932.426" Heading="0.7795331" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Silver Sovereign" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

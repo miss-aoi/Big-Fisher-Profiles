@@ -1,44 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Mud Golem (7706)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Mud_Golem "1">
+]>
 <Profile>
 	<Name>Mud Golem</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(7706,1)">
-			<Log Message="Start Fishing: Mud Golem..." />
-			<If condition="not HasAtLeast(2594,50)">
-				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-			</If>
-			<If condition="not IsOnSubMap(245)">
-				<LisbethTravel Area="Western Thanalan" XYZ="-196.8338, 15.78721, -273.8176"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<While Condition="IsTimeBetween(20,21)" >
-				<WaitTimer WaitTime="30" />
-			</While>
-			<ExFish Bait="Butterworm" Condition="HasAtLeast(2594,1) and not HasAtLeast(7706,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,3))"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+		<Log Message="Starting Fishing: Mud Golem..." />
+		<If condition="not HasAtLeast(2594,50)">
+			<!--Butterworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(245)">
+			<LisbethTravel Area="Western Thanalan" XYZ="-196.8338, 15.78721, -273.8176" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(20,21)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7706,&Mud_Golem;) and HasAtLeast(2594,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,3))">
+			<ExFish Bait="Butterworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-169.3685, 14.51384, -295.3834" Heading="1.908895" />
+					<FishSpot XYZ="-199.3176, 14.51384, -319.2296" Heading="4.547829" />
+					<FishSpot XYZ="-199.7656, 14.51385, -289.5831" Heading="2.918395" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Mud Golem" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-199.7656, 14.51385, -289.5831" Heading="2.918395" Sit="True" />
-					<FishSpot XYZ="-169.3685, 14.51384, -295.3834" Heading="1.908895" Sit="True" />
-					<FishSpot XYZ="-199.3176, 14.51384, -319.2296" Heading="4.547829" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

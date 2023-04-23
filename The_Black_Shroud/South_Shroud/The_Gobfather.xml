@@ -1,43 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: The Gobfather (7922)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Gobfather "1">
+]>
 <Profile>
 	<Name>The Gobfather</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(7922,1)">		
-			<Log Message="Start Fishing: The Gobfather..." />
-			<If condition="not HasAtLeast(2599,50)">
-				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-			</If>
-			<If condition="not IsOnSubMap(131)">
-				<LisbethTravel ZoneId="153" XYZ="280.711, 0.9844905, 0.04253998"/>
-			</If>
-			<ExFish Bait="Honey Worm"  Condition="HasAtLeast(2599,1) and not HasAtLeast(7922,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
-				<PatienceTugs>
+		<Log Message="Starting Fishing: The Gobfather..." />
+		<If condition="not HasAtLeast(2599,50)">
+			<!--Honey Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(131)">
+			<LisbethTravel Area="South Shroud" XYZ="280.711, 0.9844905, 0.04253998" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7922,&The_Gobfather;) and HasAtLeast(2599,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')">
+			<ExFish Bait="Honey Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />
-				</PatienceTugs>
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="288.2363, -0.3682871, 2.639" Heading="1.687761" />
+					<FishSpot XYZ="299.9633, -0.4391418, 5.733653" Heading="2.370547" />
+					<FishSpot XYZ="314.7709, -0.5025015, -1.395466" Heading="5.231489" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="The Gobfather" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="288.2363, -0.3682871, 2.639" Heading="1.687761" Sit="True" />
-					<FishSpot XYZ="299.9633, -0.4391418, 5.733653" Heading="2.370547" Sit="True" />
-					<FishSpot XYZ="314.7709, -0.5025015, -1.395466" Heading="5.231489" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

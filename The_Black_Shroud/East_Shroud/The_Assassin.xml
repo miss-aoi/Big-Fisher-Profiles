@@ -1,48 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: The Assassin (7907)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Assassin "1">
+]>
 <Profile>
 	<Name>The Assassin</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(7907,1)">		
-			<Log Message="Start Fishing: The Assassin..." />
-			<If condition="not HasAtLeast(2594,50)">
-				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-			</If>
-			<If condition="not IsOnSubMap(112)">
-				<LisbethTravel ZoneId="152" XYZ="-215.3548, 54.82919, -190.1448"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<While Condition="IsTimeBetween(20,21)" >
-				<WaitTimer WaitTime="30" />
-			</While>
-			<ExFish Bait="Butterworm" Condition="HasAtLeast(2594,1) and not HasAtLeast(7907,1) and IsTimeBetween(21,23)"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="0" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
-				<PatienceTugs>
-					<PatienceTug moochLevel="0" TugType="Heavy" />
-				</PatienceTugs>
+		<Log Message="Starting Fishing: The Assassin..." />
+		<If condition="not HasAtLeast(2594,50)">
+			<!--Butterworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(112)">
+			<LisbethTravel Area="East Shroud" XYZ="-215.3548, 54.82919, -190.1448" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(20,21)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7907,&The_Assassin;) and HasAtLeast(2594,1) and IsTimeBetween(21,23)">
+			<ExFish Bait="Butterworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-223.3734, 49.57124, -231.3031" Heading="1.602116" />
+					<FishSpot XYZ="-230.0043, 49.57919, -214.4796" Heading="3.313233" />
+					<FishSpot XYZ="-240.2707, 49.57919, -228.8123" Heading="4.641082" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="The Assassin" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-230.0043, 49.57919, -214.4796" Heading="3.313233" Sit="True" />
-					<FishSpot XYZ="-240.2707, 49.57919, -228.8123" Heading="4.641082" Sit="True" />
-					<FishSpot XYZ="-223.3734, 49.57124, -231.3031" Heading="1.602116" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

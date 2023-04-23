@@ -1,75 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Cornelia (8760)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Cornelia "1">
+]>
 <Profile>
 	<Name>Cornelia</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(8760,1)">
-			<Log Message="Start Fishing: Cornelia..." />
-			<If condition="not HasAtLeast(2603,50)">
-				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2603,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-			</If>
-			<If condition="not HasAtLeast(2625,3)">
-				<Lisbeth Json="[{'Item': 2625,'Group': 0,'Amount':3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
-			</If>
-			<If condition="not IsOnSubMap(145)">
-				<LisbethTravel ZoneId="154" XYZ="-150.08, -9.376681, -101.3697"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<While Condition="HasAtLeast(2603,1) and HasAtLeast(2625,1) and not HasAtLeast(8760,1)">
-				<!-- 5x Boxing Pleco for Fisher's Intuition -->
-				<ExFish Bait="Glowworm" Condition="not Core.Player.HasAura(568)"
-						MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-						Mooch="1" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
-					<PatienceTugs>
-						<PatienceTug moochLevel="0" TugType="Medium" />
-					</PatienceTugs>
-					<Keepers>
-						<Keeper name="Boxing Pleco" />
-					</Keepers>
-					<FishSpots>
-						<FishSpot XYZ="-157.0592, -10.34948, -103.4891" Heading="2,029755" Sit="True"/>
-					</FishSpots>
-				</ExFish>
-				<!-- Now go for Cornelia -->
-				<ExFish Bait="Rainbow Spoon Lure" Condition="Core.Player.HasAura(568)"
-						MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-						Mooch="1" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
-					<PatienceTugs>
-						<PatienceTug moochLevel="0" TugType="Heavy" />
-					</PatienceTugs>
-					<Keepers>
-						<Keeper name="Cornelia" />
-					</Keepers>
-					<SurfaceSlaps>
-						<SurfaceSlap name="Bonytongue" />
-					</SurfaceSlaps>
-					<FishSpots>
-						<FishSpot XYZ="-157.0592, -10.34948, -103.4891" Heading="2,029755" Sit="True"/>
-					</FishSpots>
-				</ExFish>
-				<If condition="not HasAtLeast(2603,20) or not HasAtLeast(2625,1)">
-					<LLoadProfile Path="./Cornelia.xml"/>
-				</If>
-				<If condition="HasAtLeast(8764,1)">
-					<LLoadProfile Path="../../Start.xml"/>
-				</If>
-			</While>
-			<If Condition="HasAtLeast(5008,1)">
-				<Desynth ItemIds="5008" DesynthDelay="6000" DesynthTimeout="10"/>
-			</If>
+		<Log Message="Starting Fishing: Cornelia..." />
+		<If condition="not HasAtLeast(2625,50)">
+			<!--Rainbow Spoon Lure-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2625,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		<If condition="not HasAtLeast(2603,50)">
+			<!--Rainbow Spoon Lure-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2603,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(145)">
+			<LisbethTravel Area="North Shroud" XYZ="-150.08, -9.376681, -101.3697" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(8760,&Cornelia;) and HasAtLeast(2625,1)">
+			<ExFish Bait="Glowworm" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-157.0592, -10.34948, -103.4891" Heading="2,029755" />
+					<FishSpot XYZ="-156.9394, -10.31075, -103.5718" Heading="4.345124" />
+					<FishSpot XYZ="-161.8011, -9.443758, -87.41274" Heading="4.927367" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Boxing Pleco" />
+				</Keepers>
+			</ExFish>
+			<ExFish Bait="Rainbow Spoon Lure" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-157.0592, -10.34948, -103.4891" Heading="2,029755" />
+					<FishSpot XYZ="-156.9394, -10.31075, -103.5718" Heading="4.345124" />
+					<FishSpot XYZ="-161.8011, -9.443758, -87.41274" Heading="4.927367" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Cornelia" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<If condition="HasAtLeast(5008,1)">
+			<Desynth ItemIds="5008" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

@@ -1,41 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: The Terpsichorean (7939)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Terpsichorean "1">
+]>
 <Profile>
 	<Name>The Terpsichorean</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-  
-	<If condition="not HasAtLeast(7939,1)">
-		<Log Message="Start Fishing: The Terpsichorean..." />
+		<Log Message="Starting Fishing: The Terpsichorean..." />
 		<If condition="not HasAtLeast(2599,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
+			<!--Honey Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(168)">
-			<LisbethTravel Area="Eastern La Noscea" XYZ="-68.43107, 36.05828, 471.5368"/>
+			<LisbethTravel Area="Eastern La Noscea" XYZ="-68.43107, 36.05828, 471.5368" />
 		</If>
-		<ExFish Bait="Honey Worm" Condition="HasAtLeast(2599,1) and not HasAtLeast(7939,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Fog')"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-			<Keepers>
-				<Keeper name="The Terpsichorean" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="-58.97574, 35.43839, 457.9216" Heading="1.752568" Sit="True" />
-				<FishSpot XYZ="-52.09799, 34.67363, 441.288" Heading="4.324475" Sit="True" />
-				<FishSpot XYZ="-37.85912, 35.29853, 424.1711" Heading="0.4665878" Sit="True" />
-			</FishSpots>
-		</ExFish>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7939,&The_Terpsichorean;) and HasAtLeast(2599,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Fog')">
+			<ExFish Bait="Honey Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-37.85912, 35.29853, 424.1711" Heading="0.4665878" />
+					<FishSpot XYZ="-52.09799, 34.67363, 441.288" Heading="4.324475" />
+					<FishSpot XYZ="-58.97574, 35.43839, 457.9216" Heading="1.752568" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Terpsichorean" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

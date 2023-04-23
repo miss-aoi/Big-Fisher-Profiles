@@ -1,44 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Armorer (7687)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Armorer "1">
+]>
 <Profile>
 	<Name>Armorer</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(7687,1)">
-		<Log Message="Start Fishing: Armorer..." />
+		<Log Message="Starting Fishing: Armorer..." />
 		<If condition="not HasAtLeast(2606,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2606,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
+			<!--Northern Krill-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2606,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(218)">
-			<LisbethTravel Zone="138" XYZ="658.0223, 9.094515, 510.2093" />
+			<LisbethTravel Area="Western La Noscea" XYZ="658.0223, 9.094515, 510.2093" />
 		</If>
-		<While Condition="IsTimeBetween(18,19)">
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(18,19)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Northern Krill" Condition="HasAtLeast(2606,1) and not HasAtLeast(7687,1) and (IsTimeBetween(19,24) or IsTimeBetween(0,3))"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-			<Keepers>
-				<Keeper name="Armorer" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="645.257, 5.578633, 556.2516" Heading="5.217016" Sit="True" />
-				<FishSpot XYZ="604.5823, 5.038345, 492.6462" Heading="0.09802127" Sit="True" />
-				<FishSpot XYZ="591.8521, 4.822018, 471.4789" Heading="5.331914" Sit="True" />
-			</FishSpots>
-		</ExFish>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<While condition="not HasAtLeast(7687,&Armorer;) and HasAtLeast(2606,1) and (IsTimeBetween(19,24) or IsTimeBetween(0,3))">
+			<ExFish Bait="Northern Krill" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="591.8521, 4.822018, 471.4789" Heading="5.331914" />
+					<FishSpot XYZ="604.5823, 5.038345, 492.6462" Heading="0.09802127" />
+					<FishSpot XYZ="645.257, 5.578633, 556.2516" Heading="5.217016" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Armorer" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

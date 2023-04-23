@@ -1,41 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: La Reale (15628)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY La_Reale "1">
+]>
 <Profile>
 	<Name>La Reale</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(15628,1)">
-			<Log Message="Start Fishing: La Reale..." />
-			<If condition="not HasAtLeast(12711,50)">
-				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
-			</If>
-			<If condition="not IsOnSubMap(2202)">
-				<LisbethTravel Area="Coerthas Western Highlands" XYZ="-421.0156, 90.98969, -356.9834"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<ExFish Bait="Brute Leech" Condition="HasAtLeast(12711,1) and not HasAtLeast(15628,1)"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+		<Log Message="Starting Fishing: La Reale..." />
+		<If condition="not HasAtLeast(12711,50)">
+			<!--Brute Leech-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2202)">
+			<LisbethTravel Area="Coerthas Western Highlands" XYZ="-421.0156, 90.98969, -356.9834" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(15628,&La_Reale;) and HasAtLeast(12711,1)">
+			<ExFish Bait="Brute Leech" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-418.0547, 89.61117, -323.2126" Heading="4.380158" />
+					<FishSpot XYZ="-418.3141, 89.59487, -333.7301" Heading="5.041987" />
+					<FishSpot XYZ="-421.955, 90.26937, -349.758" Heading="6.204384" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="La Reale" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-421.955, 90.26937, -349.758" Heading="6.204384" Sit="True" />
-					<FishSpot XYZ="-418.3141, 89.59487, -333.7301" Heading="5.041987" Sit="True" />
-					<FishSpot XYZ="-418.0547, 89.61117, -323.2126" Heading="4.380158" Sit="True" />
-				</FishSpots>
-			</ExFish>	
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

@@ -1,44 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Aetherlouse (7951)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Aetherlouse "1">
+]>
 <Profile>
 	<Name>Aetherlouse</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(7951,1)">
-		<Log Message="Start Fishing: Aetherlouse..." />
+		<Log Message="Starting Fishing: Aetherlouse..." />
 		<If condition="not HasAtLeast(2603,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2603,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			<!--Glowworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2603,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(410)">
-			<LisbethTravel Area="Mor Dhona" XYZ="146.9707, -28.29212, -431.3828"/>
+			<LisbethTravel Area="Mor Dhona" XYZ="146.9707, -28.29212, -431.3828" />
 		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
+		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While Condition="IsTimeBetween(2,3)">
+		<While condition="IsTimeBetween(2,3)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Glowworm" Condition="HasAtLeast(2603,1) and not HasAtLeast(7951,1) and IsTimeBetween(3,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-			<Keepers>
-				<Keeper name="Aetherlouse" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="143.8184, -28.36775, -427.127" Heading="0.1438355" Sit="True" />
-				<FishSpot XYZ="166.1766, -28.29997, -426.6662" Heading="0.5941291" Sit="True" />
-				<FishSpot XYZ="197.2962, -28.24627, -422.0775" Heading="0.1082254" Sit="True" />
-			</FishSpots>
-		</ExFish>	
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<While condition="not HasAtLeast(7951,&Aetherlouse;) and HasAtLeast(2603,1) and IsTimeBetween(3,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')">
+			<ExFish Bait="Glowworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="143.8184, -28.36775, -427.127" Heading="0.1438355" />
+					<FishSpot XYZ="166.1766, -28.29997, -426.6662" Heading="0.5941291" />
+					<FishSpot XYZ="197.2962, -28.24627, -422.0775" Heading="0.1082254" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Aetherlouse" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

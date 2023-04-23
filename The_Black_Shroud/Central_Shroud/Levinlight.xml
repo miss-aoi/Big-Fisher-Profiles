@@ -1,44 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Levinlight (7920)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Levinlight "1">
+]>
 <Profile>
 	<Name>Levinlight</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(7920,1)">
-			<Log Message="Start Fishing: Levinlight..." />
-			<If condition="not HasAtLeast(2597,50)">
-				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2597,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-			</If>
-			<If condition="not IsOnSubMap(70)">
-				<LisbethTravel ZoneId="148" XYZ="-315.058, 21.97407, 147.0868"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<While Condition="IsTimeBetween(17,18)" >
-				<WaitTimer WaitTime="30" />
-			</While>
-			<ExFish Bait="Syrphid Basket" Condition="HasAtLeast(2597,1) and not HasAtLeast(7920,1) and IsTimeBetween(18,23)"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+		<Log Message="Starting Fishing: Levinlight..." />
+		<If condition="not HasAtLeast(2597,50)">
+			<!--Syrphid Basket-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2597,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(70)">
+			<LisbethTravel Area="Central Shroud" XYZ="-315.058, 21.97407, 147.0868" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(17,18)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7920,&Levinlight;) and HasAtLeast(2597,1) and IsTimeBetween(18,23)">
+			<ExFish Bait="Syrphid Basket" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-295.7599, 20.99179, 169.1394" Heading="5.806733" />
+					<FishSpot XYZ="-303.1868, 21, 193.6298" Heading="2.94788" />
+					<FishSpot XYZ="-311.5812, 20.99179, 154.1951" Heading="0.3403623" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Levinlight" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-311.5812, 20.99179, 154.1951" Heading="0.3403623" Sit="True" />
-					<FishSpot XYZ="-295.7599, 20.99179, 169.1394" Heading="5.806733" Sit="True" />
-					<FishSpot XYZ="-303.1868, 21, 193.6298" Heading="2.94788" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

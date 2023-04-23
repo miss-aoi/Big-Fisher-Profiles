@@ -1,41 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Son of Levin (7936)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Son_of_Levin "1">
+]>
 <Profile>
 	<Name>Son of Levin</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(7936,1)">
-			<Log Message="Start Fishing: Son of Levin..." />
-			<If condition="not HasAtLeast(2607,50)">
-				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2607,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-			</If>
-			<If condition="not IsOnSubMap(126)">
-				<LisbethTravel ZoneId="153" XYZ="-244.1569, 1.337763, 399.2985"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<ExFish Bait="Caddisfly Larva" Condition="HasAtLeast(2607,1) and not HasAtLeast(7936,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunderstorms')"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+		<Log Message="Starting Fishing: Son of Levin..." />
+		<If condition="not HasAtLeast(2607,50)">
+			<!--Caddisfly Larva-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2607,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(126)">
+			<LisbethTravel Area="South Shroud" XYZ="-244.1569, 1.337763, 399.2985" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7936,&Son_of_Levin;) and HasAtLeast(2607,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunderstorms')">
+			<ExFish Bait="Caddisfly Larva" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-224.8922, -0.4231508, 410.1203" Heading="1.001898" />
+					<FishSpot XYZ="-229.7109, -0.4257042, 425.6832" Heading="1.60299" />
+					<FishSpot XYZ="-235.2112, -0.422861, 445.4375" Heading="5.439914" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Son of Levin" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-224.8922, -0.4231508, 410.1203" Heading="1.001898" Sit="True" />
-					<FishSpot XYZ="-229.7109, -0.4257042, 425.6832" Heading="1.60299" Sit="True" />
-					<FishSpot XYZ="-235.2112, -0.422861, 445.4375" Heading="5.439914" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

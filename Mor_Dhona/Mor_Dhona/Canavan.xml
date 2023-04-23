@@ -1,50 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Canavan (8762)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Canavan "1">
+]>
 <Profile>
 	<Name>Canavan</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(8762,1)">
-		<Log Message="Start Fishing: Canavan..." />
+		<Log Message="Starting Fishing: Canavan..." />
 		<If condition="not HasAtLeast(2599,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			<!--Honey Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(410)">
-			<LisbethTravel Area="Mor Dhona" XYZ="454.4445, -4.775482, -750.3284"/>
+			<LisbethTravel Area="Mor Dhona" XYZ="454.4445, -4.775482, -750.3284" />
 		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
+		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While Condition="IsTimeBetween(7,8)">
+		<While condition="IsTimeBetween(7,8)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Honey Worm" Condition="HasAtLeast(2599,1) and not HasAtLeast(8762,1) and IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-				Mooch="3" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
-			<PatienceTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Light" />
-				<PatienceTug moochLevel="2" TugType="Heavy" />
-			</PatienceTugs>
-			<Keepers>
-				<Keeper name="Canavan" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="445.7883, -5.563284, -750.0673" Heading="5.845725" Sit="True" />
-				<FishSpot XYZ="460.5209, -4.923997, -748.8826" Heading="1.007671" Sit="True" />
-				<FishSpot XYZ="490.8825, -5.542807, -753.9091" Heading="5.38077" Sit="True" />
-			</FishSpots>
-		</ExFish>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<While condition="not HasAtLeast(8762,&Canavan;) and HasAtLeast(2599,1) and IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')">
+			<ExFish Bait="Honey Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Light" />
+					<PatienceTug moochLevel="2" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="445.7883, -5.563284, -750.0673" Heading="5.845725" />
+					<FishSpot XYZ="460.5209, -4.923997, -748.8826" Heading="1.007671" />
+					<FishSpot XYZ="490.8825, -5.542807, -753.9091" Heading="5.38077" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Canavan" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

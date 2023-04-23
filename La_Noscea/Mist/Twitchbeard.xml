@@ -1,51 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Twitchbeard (7917)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Twitchbeard "1">
+]>
 <Profile>
 	<Name>Twitchbeard</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(7917,1)">
-			<Log Message="Start Fishing: Twitchbeard..." />
-			<If condition="not HasAtLeast(2596,50)">
-				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2596,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-			</If>
-			<If condition="not IsOnSubMap(1203)">
-				<LisbethTravel ZoneId="129" XYZ="-81.17178, 18.864, -4.033834"/>
-				<RunCode Name="Mists"/>
-				<LisbethTravel ZoneId="339" XYZ="-63.83141, 1.999999, 73.22429" Name="Dock" AllowedVariance="0.0"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<While Condition="IsTimeBetween(3,4)">
-				<WaitTimer WaitTime="30" />
-			</While>
-			<ExFish Bait="Spoon Worm" Condition="HasAtLeast(2596,1) and not HasAtLeast(7917,1) and IsTimeBetween(4,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(339, 'Clear Skies', 'Fair Skies')"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True">
-				<PatienceTugs>
+		<Log Message="Starting Fishing: Twitchbeard..." />
+		<If condition="not HasAtLeast(2596,50)">
+			<!--Spoon Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2596,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(1203)">
+			<LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-81.17178, 18.864, -4.033834" />
+			<RunCode Name="Mists"/>
+			<LisbethTravel ZoneId="339" XYZ="-63.83141, 1.999999, 73.22429" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(3,4)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7917,&Twitchbeard;) and HasAtLeast(2596,1) and IsTimeBetween(4,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(339, 'Clear Skies', 'Fair Skies')">
+			<ExFish Bait="Spoon Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />
-				</PatienceTugs>
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-39.94213, -0.2998141, 77.95563" Heading="0.2739866" />
+					<FishSpot XYZ="-64.23476, -0.4460256, 132.4761" Heading="0.07711339" />
+					<FishSpot XYZ="-89.91607, -0.3917423, 67.00573" Heading="5.34662" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Twitchbeard" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-64.23476, -0.4460256, 132.4761" Heading="0.07711339" Sit="True" />
-					<FishSpot XYZ="-39.94213, -0.2998141, 77.95563" Heading="0.2739866" Sit="True" />
-					<FishSpot XYZ="-89.91607, -0.3917423, 67.00573" Heading="5.34662" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
+	<GrindAreas />
 	<CodeChunks>
 		<CodeChunk Name="Mists">
 			<![CDATA[ 

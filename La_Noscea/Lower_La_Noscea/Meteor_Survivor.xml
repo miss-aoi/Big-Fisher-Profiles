@@ -1,44 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Meteor Survivor (7903)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Meteor_Survivor "1">
+]>
 <Profile>
 	<Name>Meteor Survivor</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(7903,1)">
-		<Log Message="Start Fishing: Meteor Survivor..." />
+		<Log Message="Starting Fishing: Meteor Survivor..." />
 		<If condition="not HasAtLeast(2591,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2591,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
+			<!--Rat Tail-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2591,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(338)">
-			<LisbethTravel Area="Lower La Noscea" XYZ="-185.0453, -0.3133438, 727.9094"/>
+			<LisbethTravel Area="Lower La Noscea" XYZ="-185.0453, -0.3133438, 727.9094" />
 		</If>
-		<While Condition="IsTimeBetween(2,3)">
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(2,3)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Rat Tail" Condition="HasAtLeast(2591,1) and not HasAtLeast(7903,1) and IsTimeBetween(3,5) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(135, 'Clouds', 'Fog', 'Wind')"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-			<Keepers>
-				<Keeper name="Meteor Survivor" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="-166.2906, -0.271, 748.7253" Heading="1.937045" Sit="True" />
-				<FishSpot XYZ="-196.9584, -0.1789726, 700.2988" Heading="4.19792" Sit="True" />
-				<FishSpot XYZ="-232.1735, -0.2515026, 666.2292" Heading="5.016819" Sit="True" />
-			</FishSpots>
-		</ExFish>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<While condition="not HasAtLeast(7903,&Meteor_Survivor;) and HasAtLeast(2591,1) and IsTimeBetween(3,5) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(135, 'Clouds', 'Fog', 'Wind')">
+			<ExFish Bait="Rat Tail" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-166.2906, -0.271, 748.7253" Heading="1.937045" />
+					<FishSpot XYZ="-196.9584, -0.1789726, 700.2988" Heading="4.19792" />
+					<FishSpot XYZ="-232.1735, -0.2515026, 666.2292" Heading="5.016819" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Meteor Survivor" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

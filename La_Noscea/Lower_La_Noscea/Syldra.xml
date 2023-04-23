@@ -1,41 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Syldra (7710)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Syldra "1">
+]>
 <Profile>
 	<Name>Syldra</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(7710,1)">
-		<Log Message="Start Fishing: Syldra..." />
+		<Log Message="Starting Fishing: Syldra..." />
 		<If condition="not HasAtLeast(2596,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2596,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
+			<!--Spoon Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2596,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(201)">
-			<LisbethTravel Area="Lower La Noscea" XYZ="657.3607, 61.06521, -182.2135"/>
+			<LisbethTravel Area="Lower La Noscea" XYZ="657.3607, 61.06521, -182.2135" />
 		</If>
-		<ExFish Bait="Spoon Worm" Condition="HasAtLeast(2596,1) and not HasAtLeast(7710,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(135, 'Rain')"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-			<Keepers>
-				<Keeper name="Syldra" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="673.3822, 59.80273, -173.9224" Heading="1.117739" Sit="True" />
-				<FishSpot XYZ="701.7157, 62.89587, -196.5944" Heading="1.414895" Sit="True" />
-				<FishSpot XYZ="717.3097, 63.97004, -221.9684" Heading="0.862431" Sit="True" />
-			</FishSpots>
-		</ExFish>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7710,&Syldra;) and HasAtLeast(2596,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(135, 'Rain')">
+			<ExFish Bait="Spoon Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="673.3822, 59.80273, -173.9224" Heading="1.117739" />
+					<FishSpot XYZ="701.7157, 62.89587, -196.5944" Heading="1.414895" />
+					<FishSpot XYZ="717.3097, 63.97004, -221.9684" Heading="0.862431" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Syldra" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

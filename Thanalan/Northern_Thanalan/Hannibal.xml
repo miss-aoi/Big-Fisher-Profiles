@@ -1,49 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Hannibal (7943)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Hannibal "1">
+]>
 <Profile>
 	<Name>Hannibal</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(7943,1)">
-			<Log Message="Start Fishing: Hannibal..." />
-			<If condition="not HasAtLeast(2626,3)">
-				<Lisbeth Json="[{'Item': 2626,'Group': 0,'Amount':3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
-			</If>
-			<If condition="not IsOnSubMap(258)">
-				<LisbethTravel Area="Northern Thanalan" XYZ="103.2273, 15.00176, 217.3866"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<While Condition="IsTimeBetween(21,22)" >
-				<WaitTimer WaitTime="30" />
-			</While>
-			<ExFish Bait="Spinnerbait" Condition="HasAtLeast(2626,1) and not HasAtLeast(7943,1) and (IsTimeBetween(22,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog')"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
-				<PatienceTugs>
+		<Log Message="Starting Fishing: Hannibal..." />
+		<If condition="not HasAtLeast(2626,50)">
+			<!--Spinnerbait-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2626,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
+		</If>
+		<If condition="not IsOnSubMap(258)">
+			<LisbethTravel Area="Northern Thanalan" XYZ="103.2273, 15.00176, 217.3866" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(21,22)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7943,&Hannibal;) and HasAtLeast(2626,1) and (IsTimeBetween(22,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog')">
+			<ExFish Bait="Spinnerbait" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />
-				</PatienceTugs>
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="117.044, 14.36216, 237.177" Heading="2.487101" />
+					<FishSpot XYZ="118.6457, 12.16843, 221.7863" Heading="1.835743" />
+					<FishSpot XYZ="132.7265, 19.5851, 207.0147" Heading="6.229785" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Hannibal" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="118.6457, 12.16843, 221.7863" Heading="1.835743" Sit="True" />
-					<FishSpot XYZ="117.044, 14.36216, 237.177" Heading="2.487101" Sit="True" />
-					<FishSpot XYZ="132.7265, 19.5851, 207.0147" Heading="6.229785" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

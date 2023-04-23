@@ -1,50 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Junkmonger (7684)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Junkmonger "1">
+]>
 <Profile>
 	<Name>Junkmonger</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(7684,1)">
-		<Log Message="Start Fishing: Junkmonger..." />
+		<Log Message="Starting Fishing: Junkmonger..." />
 		<If condition="not HasAtLeast(2585,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2585,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
+			<!--Lugworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2585,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(223)">
-			<LisbethTravel Area="Western La Noscea" XYZ="213.9494, -36.40361, 310.5599"/>
+			<LisbethTravel Area="Western La Noscea" XYZ="213.9494, -36.40361, 310.5599" />
 		</If>
-		<While Condition="IsTimeBetween(2,16)">
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(15,16)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Lugworm" Condition="HasAtLeast(2585,1) and not HasAtLeast(7684,1) and (IsTimeBetween(16,24) or IsTimeBetween(0,2))"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-				Mooch="3" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
-			<PatienceTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-				<PatienceTug moochLevel="2" TugType="Heavy" />
-			</PatienceTugs>
-			<Keepers>
-				<Keeper name="Junkmonger" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="213.7068, -36.35404, 333.0986" Heading="0.04436111" Sit="True" />
-				<FishSpot XYZ="223.5448, -36.35364, 333.0395" Heading="6.237484" Sit="True" />
-				<FishSpot XYZ="203.27, -36.35403, 319.2234" Heading="5.066688" Sit="True" />
-			</FishSpots>
-		</ExFish>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<While condition="not HasAtLeast(7684,&Junkmonger;) and HasAtLeast(2585,1) and (IsTimeBetween(16,24) or IsTimeBetween(0,2))">
+			<ExFish Bait="Lugworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+					<PatienceTug moochLevel="2" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="203.27, -36.35403, 319.2234" Heading="5.066688" />
+					<FishSpot XYZ="213.7068, -36.35404, 333.0986" Heading="0.04436111" />
+					<FishSpot XYZ="223.5448, -36.35364, 333.0395" Heading="6.237484" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Junkmonger" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

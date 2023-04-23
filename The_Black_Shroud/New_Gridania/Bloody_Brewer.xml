@@ -1,41 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Bloody Brewer (7696)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Bloody_Brewer "1">
+]>
 <Profile>
 	<Name>Bloody Brewer</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(7696,1)">
-			<Log Message="Start Fishing: Bloody Brewer..." />
-			<If condition="not HasAtLeast(2588,50)">
-				<Lisbeth Json="[{'Item': 2588,'Group': 0,'Amount':50,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Culinarian','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
-			</If>
-			<If condition="not IsOnMap(132)">
-				<LisbethTravel Area="Gridania (New Gridania)" XYZ="-17.69501, -3.492352, 9.125766"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<ExFish Bait="Crayfish Ball" Condition="HasAtLeast(2588,1) and not HasAtLeast(7696,1)"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+		<Log Message="Starting Fishing: Bloody Brewer..." />
+		<If condition="not HasAtLeast(2588,50)">
+			<!--Crayfish Ball-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2588,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(None)">
+			<LisbethTravel Area="Gridania (New Gridania)" XYZ="-17.69501, -3.492352, 9.125766" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7696,&Bloody_Brewer;) and HasAtLeast(2588,1)">
+			<ExFish Bait="Crayfish Ball" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-31.86116, -6.293079, -1.112373" Heading="3.290187" />
+					<FishSpot XYZ="-33.74464, -6.278622, -21.16908" Heading="3.18965" />
+					<FishSpot XYZ="-35.39588, -8.127698, 24.24189" Heading="5.340596" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Bloody Brewer" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-31.86116, -6.293079, -1.112373" Heading="3.290187" Sit="True" />
-					<FishSpot XYZ="-35.39588, -8.127698, 24.24189" Heading="5.340596" Sit="True" />
-					<FishSpot XYZ="-33.74464, -6.278622, -21.16908" Heading="3.18965" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

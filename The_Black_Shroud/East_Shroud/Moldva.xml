@@ -1,49 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Moldva (7683)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Moldva "1">
+]>
 <Profile>
 	<Name>Moldva</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(7683,1)">
-			<Log Message="Start Fishing: Moldva..." />
-			<If condition="not HasAtLeast(2592,50)">
-				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2592,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-			</If>
-			<If condition="not IsOnSubMap(76)">
-				<LisbethTravel ZoneId="152" XYZ="156.0467, 8.370256, 192.1257"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<While Condition="IsTimeBetween(17,18)" >
-				<WaitTimer WaitTime="30" />
-			</While>
-			<ExFish Bait="Midge Basket" Condition="HasAtLeast(2592,1) and not HasAtLeast(7683,1) and (IsTimeBetween(18,24) or IsTimeBetween(0,2))"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
-				<PatienceTugs>
+		<Log Message="Starting Fishing: Moldva..." />
+		<If condition="not HasAtLeast(2592,50)">
+			<!--Midge Basket-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2592,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(76)">
+			<LisbethTravel Area="East Shroud" XYZ="156.0467, 8.370256, 192.1257" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(17,18)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7683,&Moldva;) and HasAtLeast(2592,1) and (IsTimeBetween(18,24) or IsTimeBetween(0,2))">
+			<ExFish Bait="Midge Basket" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />
-				</PatienceTugs>
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="123.0522, 6.809838, 189.5636" Heading="3.106961" />
+					<FishSpot XYZ="135.8356, 6.932451, 192.504" Heading="6.133363" />
+					<FishSpot XYZ="147.3159, 7.554788, 186.7445" Heading="5.025425" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Moldva" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="147.3159, 7.554788, 186.7445" Heading="5.025425" Sit="True" />
-					<FishSpot XYZ="135.8356, 6.932451, 192.504" Heading="6.133363" Sit="True" />
-					<FishSpot XYZ="123.0522, 6.809838, 189.5636" Heading="3.106961" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

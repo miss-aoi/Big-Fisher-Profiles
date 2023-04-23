@@ -1,44 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: The Salter (7925)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Salter "1">
+]>
 <Profile>
 	<Name>The Salter</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(7925,1)">
-		<Log Message="Start Fishing: The Salter..." />
+		<Log Message="Starting Fishing: The Salter..." />
 		<If condition="not HasAtLeast(2599,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
+			<!--Honey Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(216)">
-			<LisbethTravel Area="Eastern La Noscea" XYZ="466.6412, 8.396084, 76.86406"/>
+			<LisbethTravel Area="Eastern La Noscea" XYZ="466.6412, 8.396084, 76.86406" />
 		</If>
-		<While Condition="IsTimeBetween(16,17)">
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(16,17)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Honey Worm" Condition="HasAtLeast(2599,1) and not HasAtLeast(7925,1) and IsTimeBetween(17,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-			<Keepers>
-				<Keeper name="The Salter" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="468.0401, 8.434704, 76.06626" Heading="2.070008" Sit="True" />
-				<FishSpot XYZ="494.2133, 8.734549, 67.54633" Heading="0.07195473" Sit="True" />
-				<FishSpot XYZ="469.8491, 8.482638, 88.38069" Heading="3.607294" Sit="True" />
-			</FishSpots>
-		</ExFish>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<While condition="not HasAtLeast(7925,&The_Salter;) and HasAtLeast(2599,1) and IsTimeBetween(17,20)">
+			<ExFish Bait="Honey Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="468.0401, 8.434704, 76.06626" Heading="2.070008" />
+					<FishSpot XYZ="469.8491, 8.482638, 88.38069" Heading="3.607294" />
+					<FishSpot XYZ="494.2133, 8.734549, 67.54633" Heading="0.07195473" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Salter" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

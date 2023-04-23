@@ -1,44 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Marrow Sucker (7704)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Marrow_Sucker "1">
+]>
 <Profile>
 	<Name>Marrow Sucker</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(7704,1)">
-			<Log Message="Start Fishing: Marrow Sucker..." />
-			<If condition="not HasAtLeast(2597,50)">
-				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2597,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-			</If>
-			<If condition="not IsOnSubMap(250)">
-				<LisbethTravel Area="Eastern Thanalan" XYZ="-380.4107, -21.45136, -34.88272"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<While Condition="IsTimeBetween(19,20)" >
-				<WaitTimer WaitTime="30" />
-			</While>
-			<ExFish Bait="Syrphid Basket" Condition="HasAtLeast(2597,1) and not HasAtLeast(7704,1) and (IsTimeBetween(20,24) or IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Rain', 'Showers')"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+		<Log Message="Starting Fishing: Marrow Sucker..." />
+		<If condition="not HasAtLeast(2597,50)">
+			<!--Syrphid Basket-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2597,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(250)">
+			<LisbethTravel Area="Eastern Thanalan" XYZ="-380.4107, -21.45136, -34.88272" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(19,20)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7704,&Marrow_Sucker;) and HasAtLeast(2597,1) and (IsTimeBetween(20,24) or IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Rain', 'Showers')">
+			<ExFish Bait="Syrphid Basket" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-386.024, -22.22363, -47.62962" Heading="5.633923" />
+					<FishSpot XYZ="-388.4815, -22.2028, -30.0866" Heading="3.677758" />
+					<FishSpot XYZ="-389.6942, -22.22362, -39.0976" Heading="4.842243" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Marrow Sucker" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-388.4815, -22.2028, -30.0866" Heading="3.677758" Sit="True" />
-					<FishSpot XYZ="-389.6942, -22.22362, -39.0976" Heading="4.842243" Sit="True" />
-					<FishSpot XYZ="-386.024, -22.22363, -47.62962" Heading="5.633923" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-	
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

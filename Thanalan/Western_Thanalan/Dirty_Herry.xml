@@ -1,48 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Dirty Herry (7910)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Dirty_Herry "1">
+]>
 <Profile>
 	<Name>Dirty Herry</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(7910,1)">
-			<Log Message="Start Fishing: Dirty Herry..." />
-			<If condition="not HasAtLeast(2606,50)">
-				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2606,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-			</If>
-			<If condition="not IsOnSubMap(266)">
-				<LisbethTravel Area="Western Thanalan" XYZ="-323.066, 32.16915, 385.4688"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<While Condition="IsTimeBetween(19,20)" >
-				<WaitTimer WaitTime="30" />
-			</While>
-			<ExFish Bait="Northern Krill" Condition="HasAtLeast(2606,1) and not HasAtLeast(7910,1) and IsTimeBetween(20,22)"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="0" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
-				<PatienceTugs>
-					<PatienceTug moochLevel="0" TugType="Heavy" />
-				</PatienceTugs>
+		<Log Message="Starting Fishing: Dirty Herry..." />
+		<If condition="not HasAtLeast(2606,50)">
+			<!--Northern Krill-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2606,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(266)">
+			<LisbethTravel Area="Western Thanalan" XYZ="-323.066, 32.16915, 385.4688" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(19,20)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7910,&Dirty_Herry;) and HasAtLeast(2606,1) and IsTimeBetween(20,22)">
+			<ExFish Bait="Northern Krill" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-317.0293, 32.65864, 421.4394" Heading="4.198692" />
+					<FishSpot XYZ="-325.4308, 31.86579, 406.1303" Heading="5.476267" />
+					<FishSpot XYZ="-334.7412, 32.58686, 390.4811" Heading="4.975707" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Dirty Herry" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-334.7412, 32.58686, 390.4811" Heading="4.975707" Sit="True" />
-					<FishSpot XYZ="-325.4308, 31.86579, 406.1303" Heading="5.476267" Sit="True" />
-					<FishSpot XYZ="-317.0293, 32.65864, 421.4394" Heading="4.198692" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>
