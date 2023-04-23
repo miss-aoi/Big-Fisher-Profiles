@@ -1003,73 +1003,73 @@
         <!-- ABALATHIA'S SPINE - THE SEA OF CLOUDS -->
         <!-- Inkfish -->
         <If condition="not HasAtLeast(15635,&Inkfish;) and IsTimeBetween(14,16)">
-            <LLoadProfile Path="Abalathia's_Spine/The_Sea_of_Clouds/Inkfish.xml"/>
+            <LLoadProfile Path="Abalathias_Spine/The_Sea_of_Clouds/Inkfish.xml"/>
         </If>
 
         <!-- Paikiller -->
         <If condition="not HasAtLeast(17579,&Paikiller;) and IsTimeBetween(8,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(401, TimeSpan.FromHours(-8), 'Clear Skies')">
-            <LLoadProfile Path="Abalathia's_Spine/The_Sea_of_Clouds/Paikiller.xml"/>
+            <LLoadProfile Path="Abalathias_Spine/The_Sea_of_Clouds/Paikiller.xml"/>
         </If>
 
         <!-- Cirrostratus -->
         <If condition="not HasAtLeast(16750,&Cirrostratus;) and IsTimeBetween(10,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies', 'Fair Skies')">
-            <LLoadProfile Path="Abalathia's_Spine/The_Sea_of_Clouds/Cirrostratus.xml"/>
+            <LLoadProfile Path="Abalathias_Spine/The_Sea_of_Clouds/Cirrostratus.xml"/>
         </If>
 
         <!-- The_Second_One -->
         <If condition="not HasAtLeast(15636,&The_Second_One;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Wind')">
-            <LLoadProfile Path="Abalathia's_Spine/The_Sea_of_Clouds/The_Second_One.xml"/>
+            <LLoadProfile Path="Abalathias_Spine/The_Sea_of_Clouds/The_Second_One.xml"/>
         </If>
 
         <!-- Basking_Shark -->
         <If condition="not HasAtLeast(16743,&Basking_Shark;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(401, TimeSpan.FromHours(-8), 'Clear Skies')">
-            <LLoadProfile Path="Abalathia's_Spine/The_Sea_of_Clouds/Basking_Shark.xml"/>
+            <LLoadProfile Path="Abalathias_Spine/The_Sea_of_Clouds/Basking_Shark.xml"/>
         </If>
 
         <!-- Sea_Butterfly -->
         <If condition="not HasAtLeast(17591,&Sea_Butterfly;) and IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')">
-            <LLoadProfile Path="Abalathia's_Spine/The_Sea_of_Clouds/Sea_Butterfly.xml"/>
+            <LLoadProfile Path="Abalathias_Spine/The_Sea_of_Clouds/Sea_Butterfly.xml"/>
         </If>
 
         <!-- ABALATHIA'S SPINE - AZYS LLA -->
         <!-- Augmented_High_Allagan_Helmet -->
         <If condition="not HasAtLeast(15637,&Augmented_High_Allagan_Helmet;)">
-            <LLoadProfile Path="Abalathia's_Spine/Azys_Lla/Augmented_High_Allagan_Helmet.xml"/>
+            <LLoadProfile Path="Abalathias_Spine/Azys_Lla/Augmented_High_Allagan_Helmet.xml"/>
         </If>
 
         <!-- Aetherochemical_Compound_666 -->
         <If condition="not HasAtLeast(16752,&Aetherochemical_Compound_666;)">
-            <LLoadProfile Path="Abalathia's_Spine/Azys_Lla/Aetherochemical_Compound_666.xml"/>
+            <LLoadProfile Path="Abalathias_Spine/Azys_Lla/Aetherochemical_Compound_666.xml"/>
         </If>
 
         <!-- Ceti -->
         <If condition="not HasAtLeast(17580,&Ceti;) and IsTimeBetween(18,22) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Thunder') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(402, TimeSpan.FromHours(-8), 'Thunder')">
-            <LLoadProfile Path="Abalathia's_Spine/Azys_Lla/Ceti.xml"/>
+            <LLoadProfile Path="Abalathias_Spine/Azys_Lla/Ceti.xml"/>
         </If>
 
         <!-- Aphotic_Pirarucu -->
         <If condition="not HasAtLeast(15638,&Aphotic_Pirarucu;) and (IsTimeBetween(22,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Clouds')">
-            <LLoadProfile Path="Abalathia's_Spine/Azys_Lla/Aphotic_Pirarucu.xml"/>
+            <LLoadProfile Path="Abalathias_Spine/Azys_Lla/Aphotic_Pirarucu.xml"/>
         </If>
 
         <!-- Hundred-eyed_Axolotl -->
         <If condition="not HasAtLeast(16753,&Hundred-eyed_Axolotl;) and IsTimeBetween(6,10)">
-            <LLoadProfile Path="Abalathia's_Spine/Azys_Lla/Hundred-eyed_Axolotl.xml"/>
+            <LLoadProfile Path="Abalathias_Spine/Azys_Lla/Hundred-eyed_Axolotl.xml"/>
         </If>
 
         <!-- Crystal_Pigeon -->
         <If condition="not HasAtLeast(17581,&Crystal_Pigeon;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Thunder') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(402, TimeSpan.FromHours(-8), 'Thunder')">
-            <LLoadProfile Path="Abalathia's_Spine/Azys_Lla/Crystal_Pigeon.xml"/>
+            <LLoadProfile Path="Abalathias_Spine/Azys_Lla/Crystal_Pigeon.xml"/>
         </If>
 
         <!-- Allagan_Bladeshark -->
         <If condition="not HasAtLeast(16744,&Allagan_Bladeshark;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Thunder') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(402, TimeSpan.FromHours(-8), 'Thunder')">
-            <LLoadProfile Path="Abalathia's_Spine/Azys_Lla/Allagan_Bladeshark.xml"/>
+            <LLoadProfile Path="Abalathias_Spine/Azys_Lla/Allagan_Bladeshark.xml"/>
         </If>
 
         <!-- Opabinia -->
         <If condition="not HasAtLeast(17589,&Opabinia;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Thunder')">
-            <LLoadProfile Path="Abalathia's_Spine/Azys_Lla/Opabinia.xml"/>
+            <LLoadProfile Path="Abalathias_Spine/Azys_Lla/Opabinia.xml"/>
         </If>
 
         <!-- DRAVANIA - THE DRAVANIAN FORELANDS -->
