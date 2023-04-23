@@ -5,13 +5,13 @@
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY Bat-o'-Nine-Tails "1">
+	<!ENTITY Bat-o-Nine-Tails "1">
 ]>
 <Profile>
 	<Name>Bat-o'-Nine-Tails</Name>
 	<BehaviorDirectory />
 	<Order>
-		<Log Message="Starting Fishing: Bat-o'-Nine-Tails..." />
+		<Log Message="Starting Fishing: Bat-o-Nine-Tails..." />
 		<If condition="not HasAtLeast(2599,50)">
 			<!--Honey Worm-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
@@ -22,7 +22,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(8766,&Bat-o'-Nine-Tails;) and HasAtLeast(2599,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Clear Skies', 'Clouds', 'Fog', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(140, TimeSpan.FromHours(-8), 'Clear Skies', 'Clouds', 'Fog', 'Fair Skies')">
+		<While condition="not HasAtLeast(8766,&Bat-o-Nine-Tails;) and HasAtLeast(2599,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Clear Skies', 'Clouds', 'Fog', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(140, TimeSpan.FromHours(-8), 'Clear Skies', 'Clouds', 'Fog', 'Fair Skies')">
 			<ExFish Bait="Honey Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />

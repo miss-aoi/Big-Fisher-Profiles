@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Big Fish Profile
+    Big Fisher Profiles
     Need some Big Fish? Switch Variable from 0 to 1.
     While obtaining some Baits you need Miner, Gardener and Crafters.
-    Authors: budesaal, miss-aoi
-    Removed eating food. Use Gluttony instead: https://github.com/domesticwarlord86/Gluttony
-    Can add Extractor to extract spiritbound materia: https://github.com/domesticwarlord86/Extractor
+    Authors: miss-aoi
+    Need to eat food? Use Gluttony: https://github.com/domesticwarlord86/Gluttony
+    Want to extract materia? Use Extractor: https://github.com/domesticwarlord86/Extractor
 -->
 <!DOCTYPE Profile [
 <!-- Profile Settings -->

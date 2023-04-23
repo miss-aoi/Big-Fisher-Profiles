@@ -5,13 +5,13 @@
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY Daniffen's_Mark "1">
+	<!ENTITY Daniffens_Mark "1">
 ]>
 <Profile>
-	<Name>Daniffen's Mark</Name>
+	<Name>Daniffens Mark</Name>
 	<BehaviorDirectory />
 	<Order>
-		<Log Message="Starting Fishing: Daniffen's Mark..." />
+		<Log Message="Starting Fishing: Daniffens Mark..." />
 		<If condition="not HasAtLeast(2623,50)">
 			<!--Wildfowl Fly-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2623,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
@@ -22,7 +22,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(7932,&Daniffen's_Mark;) and HasAtLeast(2623,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards')">
+		<While condition="not HasAtLeast(7932,&Daniffens_Mark;) and HasAtLeast(2623,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards')">
 			<ExFish Bait="Wildfowl Fly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-41.51296, 204.1969, 439.9323" Heading="4.761396" />

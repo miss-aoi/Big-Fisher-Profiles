@@ -18,6 +18,8 @@
 		</If>
 		<If condition="not IsOnSubMap(0)">
 			<LisbethTravel Area="Ul'dah (Steps of Nald)" XYZ="-147.512, -3.154888, -166.1085" />
+			<RunCode Name="TheGoblet"/>
+			<LisbethTravel Area="The Goblet" XYZ="-10.33781, -24, 64.53981"/>
 		</If>
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
@@ -41,5 +43,34 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="TheGoblet">
+			<![CDATA[
+				var unit = GameObjectManager.GetObjectByNPCId(9);
+				unit.Target();
+				unit.Interact();
+				await Coroutine.Sleep(1000);
+				await Coroutine.Wait(5000, () => SelectString.IsOpen);
+				await Coroutine.Sleep(500);
+				if (SelectString.IsOpen)
+					SelectString.ClickSlot(1);
+				await Coroutine.Sleep(500);
+				await Coroutine.Wait(5000, () => SelectString.IsOpen);
+				await Coroutine.Sleep(500);
+				if (SelectString.IsOpen)
+					SelectString.ClickSlot(2);
+				await Coroutine.Wait(5000, () => RaptureAtkUnitManager.GetWindowByName("HousingSelectBlock") != null);
+
+				if (RaptureAtkUnitManager.GetWindowByName("HousingSelectBlock") != null)
+				{
+					RaptureAtkUnitManager.GetWindowByName("HousingSelectBlock").SendAction(1, 3, 0);
+					await Coroutine.Wait(5000, () => SelectYesno.IsOpen);
+					if (SelectYesno.IsOpen)
+						SelectYesno.Yes();
+					await Coroutine.Sleep(5000);
+					if (CommonBehaviors.IsLoading)
+						await Coroutine.Wait(-1, () => !CommonBehaviors.IsLoading);
+				}
+			]]>
+		</CodeChunk>
 </Profile>

@@ -5,13 +5,13 @@
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY Charon's_Lantern "1">
+	<!ENTITY Charons_Lantern "1">
 ]>
 <Profile>
-	<Name>Charon's Lantern</Name>
+	<Name>Charons Lantern</Name>
 	<BehaviorDirectory />
 	<Order>
-		<Log Message="Starting Fishing: Charon's Lantern..." />
+		<Log Message="Starting Fishing: Charons Lantern..." />
 		<If condition="not HasAtLeast(2603,50)">
 			<!--Glowworm-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2603,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
@@ -25,7 +25,7 @@
 		<While condition="IsTimeBetween(21,22)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7933,&Charon's_Lantern;) and HasAtLeast(2603,1) and (IsTimeBetween(22,24) or IsTimeBetween(0,4))">
+		<While condition="not HasAtLeast(7933,&Charons_Lantern;) and HasAtLeast(2603,1) and (IsTimeBetween(22,24) or IsTimeBetween(0,4))">
 			<ExFish Bait="Glowworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-420.8456, 277.5037, 82.97137" Heading="4.029955" />

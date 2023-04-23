@@ -5,13 +5,13 @@
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY Helmsman's_Hand "1">
+	<!ENTITY Helmsmans_Hand "1">
 ]>
 <Profile>
-	<Name>Helmsman's Hand</Name>
+	<Name>Helmsmans Hand</Name>
 	<BehaviorDirectory />
 	<Order>
-		<Log Message="Starting Fishing: Helmsman's Hand..." />
+		<Log Message="Starting Fishing: Helmsmans Hand..." />
 		<If condition="not HasAtLeast(2587,50)">
 			<!--Pill Bug-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2587,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
@@ -25,7 +25,7 @@
 		<While condition="IsTimeBetween(8,9)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7941,&Helmsman's_Hand;) and HasAtLeast(2587,1) and IsTimeBetween(9,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clouds', 'Fog', 'Wind')">
+		<While condition="not HasAtLeast(7941,&Helmsmans_Hand;) and HasAtLeast(2587,1) and IsTimeBetween(9,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clouds', 'Fog', 'Wind')">
 			<ExFish Bait="Pill Bug" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />

@@ -5,7 +5,7 @@
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY Priest_of_Yx'Lokwa "1">
+	<!ENTITY Priest_of_YxLokwa "1">
 ]>
 <Profile>
 	<Name>Priest of Yx'Lokwa</Name>
@@ -25,7 +25,7 @@
 		<While condition="IsTimeBetween(9,10)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(28071,&Priest_of_Yx'Lokwa;) and HasAtLeast(27587,1) and IsTimeBetween(10,12)">
+		<While condition="not HasAtLeast(28071,&Priest_of_YxLokwa;) and HasAtLeast(27587,1) and IsTimeBetween(10,12)">
 			<ExFish Bait="Robber Ball" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />

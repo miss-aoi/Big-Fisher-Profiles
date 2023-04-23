@@ -16,7 +16,7 @@
 			<If condition="not IsOnSubMap(476)">
 				<LisbethTravel ZoneId="132" XYZ="35.11273, 2.200001, 32.23121"/>
 				<RunCode Name="TheLavenderBeds"/>
-				<LisbethTravel ZoneId="340" XYZ="7.277023, 2.610901, 199.8097" Name="Dock" AllowedVariance="0.0"/>
+				<LisbethTravel ZoneId="340" XYZ="7.277023, 2.610901, 199.8097"/>
 			</If>
 			<If Condition="not ClassName == ClassJobType.Fisher">
 				<ChangeClass Job="Fisher" />

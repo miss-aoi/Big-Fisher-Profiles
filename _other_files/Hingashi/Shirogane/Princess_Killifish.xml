@@ -17,7 +17,9 @@
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20614,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(1899)">
-			<LisbethTravel Area="Shirogane" XYZ="-33.41357, 20, 12.04718" />
+			<LisbethTravel Area="Kugane" XYZ="39.04472, 4.685791, -32.06384" />
+			<RunCode Name="Shirogane"/>
+			<LisbethTravel Area="Shirogane" XYZ="-114.2855, 2.02, 147.0289"/>
 		</If>
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
@@ -41,5 +43,35 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="Shirogane">
+			<![CDATA[ 
+				var unit = GameObjectManager.GetObjectByNPCId(111);
+				unit.Target();
+				unit.Interact();
+				await Coroutine.Sleep(1000);
+				await Coroutine.Wait(5000, () => SelectString.IsOpen);
+				await Coroutine.Sleep(500);
+				if (SelectString.IsOpen)
+					SelectString.ClickSlot(1);
+				await Coroutine.Sleep(500);
+				await Coroutine.Wait(5000, () => SelectString.IsOpen);
+				await Coroutine.Sleep(500);
+				if (SelectString.IsOpen)
+					SelectString.ClickSlot(2);
+				await Coroutine.Wait(5000, () => RaptureAtkUnitManager.GetWindowByName("HousingSelectBlock") != null);
+
+				if (RaptureAtkUnitManager.GetWindowByName("HousingSelectBlock") != null)
+				{
+					RaptureAtkUnitManager.GetWindowByName("HousingSelectBlock").SendAction(1, 3, 0);
+					await Coroutine.Wait(5000, () => SelectYesno.IsOpen);
+					if (SelectYesno.IsOpen)
+						SelectYesno.Yes();
+					await Coroutine.Sleep(5000);
+					if (CommonBehaviors.IsLoading)
+						await Coroutine.Wait(-1, () => !CommonBehaviors.IsLoading);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

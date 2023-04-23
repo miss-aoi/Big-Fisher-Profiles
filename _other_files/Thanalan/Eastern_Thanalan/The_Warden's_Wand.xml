@@ -5,10 +5,10 @@
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY The_Warden's_Wand "1">
+	<!ENTITY The_Wardens_Wand "1">
 ]>
 <Profile>
-	<Name>The Warden's Wand</Name>
+	<Name>The Wardens Wand</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: The Warden's Wand..." />
@@ -25,7 +25,7 @@
 		<While condition="IsTimeBetween(16,17)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7918,&The_Warden's_Wand;) and HasAtLeast(2599,1) and IsTimeBetween(17,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Clear Skies')">
+		<While condition="not HasAtLeast(7918,&The_Wardens_Wand;) and HasAtLeast(2599,1) and IsTimeBetween(17,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Clear Skies')">
 			<ExFish Bait="Honey Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="209.853, -7.265845, 58.57347" Heading="4.702001" />

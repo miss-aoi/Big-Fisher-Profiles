@@ -5,13 +5,13 @@
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY Pirate's_Bane "1">
+	<!ENTITY Pirates_Bane "1">
 ]>
 <Profile>
-	<Name>Pirate's Bane</Name>
+	<Name>Pirates Bane</Name>
 	<BehaviorDirectory />
 	<Order>
-		<Log Message="Starting Fishing: Pirate's Bane..." />
+		<Log Message="Starting Fishing: Pirates Bane..." />
 		<If condition="not HasAtLeast(2585,50)">
 			<!--Lugworm-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2585,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
@@ -22,7 +22,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(8764,&Pirate's_Bane;) and HasAtLeast(2585,1)">
+		<While condition="not HasAtLeast(8764,&Pirates_Bane;) and HasAtLeast(2585,1)">
 			<ExFish Bait="Lugworm" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />

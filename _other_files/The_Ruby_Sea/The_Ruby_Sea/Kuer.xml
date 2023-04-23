@@ -5,7 +5,7 @@
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY Ku'er "1">
+	<!ENTITY Kuer "1">
 ]>
 <Profile>
 	<Name>Ku'er</Name>
@@ -25,7 +25,7 @@
 		<While condition="IsTimeBetween(-1,0)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(24214,&Ku'er;) and HasAtLeast(20676,1) and IsTimeBetween(0,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(613, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(613, TimeSpan.FromHours(-8), 'Clouds')">
+		<While condition="not HasAtLeast(24214,&Kuer;) and HasAtLeast(20676,1) and IsTimeBetween(0,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(613, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(613, TimeSpan.FromHours(-8), 'Clouds')">
 			<ExFish Bait="Blue Bobbit" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="827.5914, 0.7098792, 839.5884" Heading="3.927474" />

@@ -5,7 +5,7 @@
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY Nhaama's_Treasure "1">
+	<!ENTITY Nhaamas_Treasure "1">
 ]>
 <Profile>
 	<Name>Nhaama's Treasure</Name>
@@ -25,7 +25,7 @@
 		<While condition="IsTimeBetween(3,4)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(24891,&Nhaama's_Treasure;) and HasAtLeast(20619,1) and IsTimeBetween(4,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(622, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(622, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
+		<While condition="not HasAtLeast(24891,&Nhaamas_Treasure;) and HasAtLeast(20619,1) and IsTimeBetween(4,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(622, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(622, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
 			<ExFish Bait="Suspending Minnow" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-414.9601, 1.498228, 598.4959" Heading="4.981417" />

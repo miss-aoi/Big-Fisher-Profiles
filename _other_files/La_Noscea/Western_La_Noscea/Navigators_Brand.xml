@@ -5,13 +5,13 @@
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY Navigator's_Brand "1">
+	<!ENTITY Navigators_Brand "1">
 ]>
 <Profile>
-	<Name>Navigator's Brand</Name>
+	<Name>Navigators Brand</Name>
 	<BehaviorDirectory />
 	<Order>
-		<Log Message="Starting Fishing: Navigator's Brand..." />
+		<Log Message="Starting Fishing: Navigators Brand..." />
 		<If condition="not HasAtLeast(2628,50)">
 			<!--Yumizuno-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2628,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
@@ -25,7 +25,7 @@
 		<While condition="IsTimeBetween(8,9)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7693,&Navigator's_Brand;) and HasAtLeast(2628,1) and IsTimeBetween(9,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clear Skies', 'Fair Skies')">
+		<While condition="not HasAtLeast(7693,&Navigators_Brand;) and HasAtLeast(2628,1) and IsTimeBetween(9,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clear Skies', 'Fair Skies')">
 			<ExFish Bait="Yumizuno" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="429.9157, 14.96737, 446.2473" Heading="4.373005" />
