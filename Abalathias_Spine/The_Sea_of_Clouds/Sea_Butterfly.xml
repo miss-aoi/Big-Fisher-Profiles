@@ -30,7 +30,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(17591,&Sea_Butterfly;) and HasAtLeast(12712,1) and IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')">
-			<ExFish Bait="Metal Spinner" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Metal Spinner" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17591,&Sea_Butterfly;) and HasAtLeast(12712,1) and IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-353.6552, 19.58649, -832.2133" Heading="3.856718" />
 					<FishSpot XYZ="-339.0728, 19.71094, -849.5245" Heading="4.007522" />
@@ -40,7 +40,7 @@
 					<Keeper name="Scorpionfly" />
 				</Keepers>
 			</ExFish>
-			<ExFish Bait="Giant Crane Fly" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Giant Crane Fly" Condition="Core.Player.HasAura(568) and not HasAtLeast(17591,&Sea_Butterfly;) and HasAtLeast(12712,1) and IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-353.6552, 19.58649, -832.2133" Heading="3.856718" />
 					<FishSpot XYZ="-339.0728, 19.71094, -849.5245" Heading="4.007522" />

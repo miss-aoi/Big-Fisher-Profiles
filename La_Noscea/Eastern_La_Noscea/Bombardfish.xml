@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7924,&Bombardfish;) and HasAtLeast(2598,1) and IsTimeBetween(9,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies')">
-			<ExFish Bait="Herring Ball" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Herring Ball" condition="not HasAtLeast(7924,&Bombardfish;) and HasAtLeast(2598,1) and IsTimeBetween(9,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="537.8388, 8.730376, 120.295" Heading="1.710845" />
 					<FishSpot XYZ="553.2434, 8.6422, 142.5882" Heading="1.241701" />

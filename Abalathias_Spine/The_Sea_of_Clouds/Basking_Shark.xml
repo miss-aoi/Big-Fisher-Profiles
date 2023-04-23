@@ -23,10 +23,10 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(16743,&Basking_Shark;) and HasAtLeast(28634,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(401, TimeSpan.FromHours(-8), 'Clear Skies')">
-			<ExFish Bait="Metal Spinner" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Metal Spinner" condition="not HasAtLeast(16743,&Basking_Shark;) and HasAtLeast(28634,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(401, TimeSpan.FromHours(-8), 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Heavy" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
 				</PatientTugs>
 				<FishSpots>
 					<FishSpot XYZ="-353.6552, 19.58649, -832.2133" Heading="3.856718" />

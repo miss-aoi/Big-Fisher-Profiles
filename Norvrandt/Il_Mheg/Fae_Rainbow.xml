@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(28928,&Fae_Rainbow;) and HasAtLeast(27585,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(816, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(816, TimeSpan.FromHours(-8), 'Fog')">
-			<ExFish Bait="Marble Nymph" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<ExFish Bait="Marble Nymph" condition="not HasAtLeast(28928,&Fae_Rainbow;) and HasAtLeast(27585,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(816, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(816, TimeSpan.FromHours(-8), 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="179.9279, 21.22943, -560.8244" Heading="5.860549" />
 					<FishSpot XYZ="168.0139, 13.00776, -531.97" Heading="5.78515" />

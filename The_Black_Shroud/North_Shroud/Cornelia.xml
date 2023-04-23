@@ -27,7 +27,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(8760,&Cornelia;) and HasAtLeast(2625,1)">
-			<ExFish Bait="Glowworm" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<ExFish Bait="Glowworm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8760,&Cornelia;) and HasAtLeast(2625,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-157.0592, -10.34948, -103.4891" Heading="2,029755" />
 					<FishSpot XYZ="-156.9394, -10.31075, -103.5718" Heading="4.345124" />
@@ -37,7 +37,7 @@
 					<Keeper name="Boxing Pleco" />
 				</Keepers>
 			</ExFish>
-			<ExFish Bait="Rainbow Spoon Lure" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Rainbow Spoon Lure" Condition="Core.Player.HasAura(568) and not HasAtLeast(8760,&Cornelia;) and HasAtLeast(2625,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-157.0592, -10.34948, -103.4891" Heading="2,029755" />
 					<FishSpot XYZ="-156.9394, -10.31075, -103.5718" Heading="4.345124" />

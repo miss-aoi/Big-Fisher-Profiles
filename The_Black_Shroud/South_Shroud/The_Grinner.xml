@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(7914,&The_Grinner;) and HasAtLeast(2597,1)">
-			<ExFish Bait="Syrphid Basket" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Syrphid Basket" condition="not HasAtLeast(7914,&The_Grinner;) and HasAtLeast(2597,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="141.6422, 4.133486, 23.83754" Heading="1.421836" />
 					<FishSpot XYZ="153.3958, 3.990634, 21.9647" Heading="4.825229" />

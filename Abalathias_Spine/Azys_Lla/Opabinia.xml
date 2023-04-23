@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(17589,&Opabinia;) and HasAtLeast(12710,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Thunder')">
-			<ExFish Bait="Fiend Worm" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<ExFish Bait="Fiend Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17589,&Opabinia;) and HasAtLeast(12710,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Thunder')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-17.71241, 293.9991, 32.3871" Heading="5.695476" />
 					<FishSpot XYZ="-18.69696, 293.9, 44.98245" Heading="3.563382" />
@@ -33,10 +33,10 @@
 					<Keeper name="Functional Proto-hropken" />
 				</Keepers>
 			</ExFish>
-			<ExFish Bait="Fiend Worm" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Fiend Worm" Condition="Core.Player.HasAura(568) and not HasAtLeast(17589,&Opabinia;) and HasAtLeast(12710,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Thunder')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Heavy" />
+					<PatienceTug moochLevel="1" TugType="Light" />
 				</PatientTugs>
 				<FishSpots>
 					<FishSpot XYZ="-17.71241, 293.9991, 32.3871" Heading="5.695476" />

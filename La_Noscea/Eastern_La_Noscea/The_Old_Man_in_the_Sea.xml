@@ -23,11 +23,11 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(8753,&The_Old_Man_in_the_Sea;) and HasAtLeast(2587,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(137, TimeSpan.FromHours(-8), 'Clear Skies')">
-			<ExFish Bait="Pill Bug" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Pill Bug" condition="not HasAtLeast(8753,&The_Old_Man_in_the_Sea;) and HasAtLeast(2587,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(137, TimeSpan.FromHours(-8), 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Medium" />
 					<PatienceTug moochLevel="1" TugType="Medium" />
-					<PatienceTug moochLevel="2" TugType="Heavy" />
+					<PatienceTug moochLevel="2" TugType="Medium" />
 				</PatientTugs>
 				<FishSpots>
 					<FishSpot XYZ="878.9365, 20.74535, 132.2115" Heading="3.842931" />

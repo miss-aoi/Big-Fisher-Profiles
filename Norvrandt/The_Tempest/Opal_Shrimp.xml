@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(30439,&Opal_Shrimp;) and HasAtLeast(27590,1) and IsTimeBetween(18,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clear Skies')">
-			<ExFish Bait="Squid Strip" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Squid Strip" condition="not HasAtLeast(30439,&Opal_Shrimp;) and HasAtLeast(27590,1) and IsTimeBetween(18,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="338.1316, 231.6881, -323.2393" Heading="1.166595" />
 					<FishSpot XYZ="343.39, 231.6881, -300.0095" Heading="0.9005857" />

@@ -23,10 +23,10 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(7946,&The_Matriarch;) and HasAtLeast(2599,1)">
-			<ExFish Bait="Honey Worm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Honey Worm" condition="not HasAtLeast(7946,&The_Matriarch;) and HasAtLeast(2599,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Heavy" />
+					<PatienceTug moochLevel="1" TugType="Light" />
 				</PatientTugs>
 				<FishSpots>
 					<FishSpot XYZ="-735.4037, 222.6547, 63.49319" Heading="3.7" />

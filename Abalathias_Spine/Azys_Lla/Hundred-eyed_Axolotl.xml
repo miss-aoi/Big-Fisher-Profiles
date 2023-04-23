@@ -26,10 +26,10 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(16753,&Hundred-eyed_Axolotl;) and HasAtLeast(12705,1) and IsTimeBetween(6,10)">
-			<ExFish Bait="Purse Web Spider" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Purse Web Spider" condition="not HasAtLeast(16753,&Hundred-eyed_Axolotl;) and HasAtLeast(12705,1) and IsTimeBetween(6,10)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Heavy" />
+					<PatienceTug moochLevel="1" TugType="Light" />
 				</PatientTugs>
 				<FishSpots>
 					<FishSpot XYZ="-729.2505, -47.36447, 579.8774" Heading="5.467196" />

@@ -23,10 +23,10 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(36683,&Rimepike;) and HasAtLeast(20675,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(958, 'Snow')">
-			<ExFish Bait="Stonefly Larva" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(36683,&Rimepike;) and HasAtLeast(20675,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(958, 'Snow')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Medium" />
-					<PatienceTug moochLevel="1" TugType="Heavy" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
 				</PatientTugs>
 				<FishSpots>
 					<FishSpot XYZ="-488.1785, 19.72799, 467.0263" Heading="4.49876" />

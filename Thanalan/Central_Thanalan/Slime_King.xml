@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7698,&Slime_King;) and HasAtLeast(2588,1) and IsTimeBetween(19,24)">
-			<ExFish Bait="Crayfish Ball" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<ExFish Bait="Crayfish Ball" condition="not HasAtLeast(7698,&Slime_King;) and HasAtLeast(2588,1) and IsTimeBetween(19,24)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-148.8995, -32, 111.208" Heading="4.601738" />
 					<FishSpot XYZ="-173.101, -32, 103.916" Heading="6.072006" />

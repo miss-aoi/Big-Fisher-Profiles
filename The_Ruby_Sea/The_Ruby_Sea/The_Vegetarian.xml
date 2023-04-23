@@ -26,10 +26,10 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(24882,&The_Vegetarian;) and HasAtLeast(20617,1) and IsTimeBetween(20,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(613, 'Thunder')">
-			<ExFish Bait="Live Shrimp" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Live Shrimp" condition="not HasAtLeast(24882,&The_Vegetarian;) and HasAtLeast(20617,1) and IsTimeBetween(20,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(613, 'Thunder')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Heavy" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
 				</PatientTugs>
 				<FishSpots>
 					<FishSpot XYZ="470.9957, -0.1, 896.1421" Heading="0.02934432" />

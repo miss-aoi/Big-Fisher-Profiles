@@ -26,7 +26,8 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and HasAtLeast(20675,1) and IsTimeBetween(0,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Stonefly Larva" Condition="not Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<!-- Indigo Prismfish -->
+			<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(24203,1) and HasAtLeast(20675,3) not Core.Player.HasAura(568) and IsTimeBetween(0,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Medium" />
 					<PatienceTug moochLevel="1" TugType="Heavy" />
@@ -40,7 +41,38 @@
 					<Keeper name="Indigo Prismfish" />
 				</Keepers>
 			</ExFish>
-			<ExFish Bait="Stonefly Larva" Condition="Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<!-- Firelight Goldfish -->
+			<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(23056,1) and HasAtLeast(23056,3) not Core.Player.HasAura(568) and IsTimeBetween(0,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Medium" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="358.0955, -16.22713, -688.6342" Heading="2.647624" />
+					<FishSpot XYZ="374.0125, -16.22713, -713.4299" Heading="0.3165665" />
+					<FishSpot XYZ="404.476, -16.22713, -685.9282" Heading="3.843526" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Indigo Prismfish" />
+				</Keepers>
+			</ExFish>
+			<!-- Green Prismfish -->
+			<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(23056,1) and HasAtLeast(24204,3) not Core.Player.HasAura(568) and IsTimeBetween(0,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Medium" />
+					<PatienceTug moochLevel="1" TugType="Heavy" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="358.0955, -16.22713, -688.6342" Heading="2.647624" />
+					<FishSpot XYZ="374.0125, -16.22713, -713.4299" Heading="0.3165665" />
+					<FishSpot XYZ="404.476, -16.22713, -685.9282" Heading="3.843526" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Indigo Prismfish" />
+				</Keepers>
+			</ExFish>
+			<!-- Warden of the Seven Hues -->
+			<ExFish Bait="Stonefly Larva" Condition="Core.Player.HasAura(568) and IsTimeBetween(0,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="358.0955, -16.22713, -688.6342" Heading="2.647624" />
 					<FishSpot XYZ="374.0125, -16.22713, -713.4299" Heading="0.3165665" />
@@ -51,6 +83,15 @@
 				</Keepers>
 				<SurfaceSlaps />
 			</ExFish>
+			<If condition="HasAtLeast(20675,1)">
+				<Desynth ItemIds="20675" DesynthDelay="6000" DesynthTimeout="10" />
+			</If>
+			<If condition="HasAtLeast(23056,1)">
+				<Desynth ItemIds="23056" DesynthDelay="6000" DesynthTimeout="10" />
+			</If>
+			<If condition="HasAtLeast(24204,1)">
+				<Desynth ItemIds="24204" DesynthDelay="6000" DesynthTimeout="10" />
+			</If>
 		</While>
 		<If condition="HasAtLeast(24203,1)">
 			<Desynth ItemIds="24203" DesynthDelay="6000" DesynthTimeout="10" />

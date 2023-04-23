@@ -26,10 +26,10 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7694,&Dark_Ambusher;) and HasAtLeast(2586,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,3))">
-			<ExFish Bait="Moth Pupa" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Moth Pupa" condition="not HasAtLeast(7694,&Dark_Ambusher;) and HasAtLeast(2586,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,3))" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Heavy" />
+					<PatienceTug moochLevel="1" TugType="Light" />
 				</PatientTugs>
 				<FishSpots>
 					<FishSpot XYZ="-586.5031, 7.944592, 86.51789" Heading="0.8807359" />

@@ -26,10 +26,10 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(24217,&Duskfish;) and HasAtLeast(20614,1) and IsTimeBetween(8,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(622, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(622, TimeSpan.FromHours(-8), 'Clouds')">
-			<ExFish Bait="Nightcrawler" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Nightcrawler" condition="not HasAtLeast(24217,&Duskfish;) and HasAtLeast(20614,1) and IsTimeBetween(8,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(622, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(622, TimeSpan.FromHours(-8), 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Heavy" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
 				</PatientTugs>
 				<FishSpots>
 					<FishSpot XYZ="96.2347, 116.043, -49.97553" Heading="3.73935" />

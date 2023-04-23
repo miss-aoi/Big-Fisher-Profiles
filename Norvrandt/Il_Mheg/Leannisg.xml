@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(30435,&Leannisg;) and HasAtLeast(27585,1) and IsTimeBetween(6,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(816, 'Rain')">
-			<ExFish Bait="Marble Nymph" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<ExFish Bait="Marble Nymph" condition="not HasAtLeast(30435,&Leannisg;) and HasAtLeast(27585,1) and IsTimeBetween(6,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(816, 'Rain')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-884.8255, 0.4473501, -43.6868" Heading="4.560335" />
 					<FishSpot XYZ="-887.7988, 0.9804235, -12.34238" Heading="4.851459" />

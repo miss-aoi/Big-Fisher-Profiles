@@ -26,10 +26,10 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7931,&Magic_Carpet;) and HasAtLeast(2600,1) and IsTimeBetween(9,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves')">
-			<ExFish Bait="Sand Leech" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Sand Leech" condition="not HasAtLeast(7931,&Magic_Carpet;) and HasAtLeast(2600,1) and IsTimeBetween(9,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Medium" />
-					<PatienceTug moochLevel="1" TugType="Heavy" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
 				</PatientTugs>
 				<FishSpots>
 					<FishSpot XYZ="-441.4117, -0.9107453, 742.5688" Heading="4.968235" />

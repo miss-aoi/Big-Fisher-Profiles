@@ -23,10 +23,10 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(8773,&Magicked_Mushroom;) and HasAtLeast(2626,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(152, 'Clouds', 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(152, TimeSpan.FromHours(-8), 'Clouds', 'Fog')">
-			<ExFish Bait="Spinnerbait" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Spinnerbait" condition="not HasAtLeast(8773,&Magicked_Mushroom;) and HasAtLeast(2626,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(152, 'Clouds', 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(152, TimeSpan.FromHours(-8), 'Clouds', 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Heavy" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
 				</PatientTugs>
 				<FishSpots>
 					<FishSpot XYZ="218.0279, -4.363929, -29.92402" Heading="2.14835" />

@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7695,&Judgeray;) and HasAtLeast(2623,1) and IsTimeBetween(17,21)">
-			<ExFish Bait="Wildfowl Fly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<ExFish Bait="Wildfowl Fly" condition="not HasAtLeast(7695,&Judgeray;) and HasAtLeast(2623,1) and IsTimeBetween(17,21)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-22.88442, -40.94998, 198.347" Heading="6.159586" />
 					<FishSpot XYZ="-35.6778, -39.79317, 204.5797" Heading="4.301856" />

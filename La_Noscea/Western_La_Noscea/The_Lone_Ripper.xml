@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(7926,&The_Lone_Ripper;) and HasAtLeast(2619,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Gales')">
-			<ExFish Bait="Heavy Steel Jig" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<ExFish Bait="Heavy Steel Jig" condition="not HasAtLeast(7926,&The_Lone_Ripper;) and HasAtLeast(2619,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Gales')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-241.2194, -42.11089, 44.17156" Heading="4.514718" />
 					<FishSpot XYZ="-244.774, -42.1517, 16.95212" Heading="4.160766" />

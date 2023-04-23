@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7916,&Worm_of_Nym;) and HasAtLeast(2594,1) and IsTimeBetween(19,22)">
-			<ExFish Bait="Butterworm" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Butterworm" condition="not HasAtLeast(7916,&Worm_of_Nym;) and HasAtLeast(2594,1) and IsTimeBetween(19,22)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="569.3752, -3.4, 161.3159" Heading="1.647109" />
 					<FishSpot XYZ="572.0908, -3.4, 139.9327" Heading="2.901653" />

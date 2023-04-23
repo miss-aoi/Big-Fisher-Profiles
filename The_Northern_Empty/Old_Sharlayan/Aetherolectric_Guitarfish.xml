@@ -26,7 +26,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(36679,&Aetherolectric_Guitarfish;) and HasAtLeast(36593,1) and IsTimeBetween(20,24)">
-			<ExFish Bait="Mackerel Strip" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<ExFish Bait="Mackerel Strip" condition="not HasAtLeast(36679,&Aetherolectric_Guitarfish;) and HasAtLeast(36593,1) and IsTimeBetween(20,24)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="9.85795, -16.17681, 146.2283" Heading="0.1031501" />
 					<FishSpot XYZ="-7.712842, -16.147, 151.5749" Heading="6.210406" />

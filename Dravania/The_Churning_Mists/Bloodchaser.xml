@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="not HasAtLeast(17587,&Bloodchaser;) and HasAtLeast(12712,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(400, TimeSpan.FromHours(-8), 'Gales')">
-			<ExFish Bait="Giant Crane Fly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<ExFish Bait="Giant Crane Fly" condition="not HasAtLeast(17587,&Bloodchaser;) and HasAtLeast(12712,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(400, TimeSpan.FromHours(-8), 'Gales')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-128.8666, 162.6906, -793.0759" Heading="3.40847" />
 					<FishSpot XYZ="-141.6965, 162.6906, -797.8688" Heading="3.291184" />

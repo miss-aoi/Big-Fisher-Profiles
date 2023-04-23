@@ -26,11 +26,11 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(8761,&Ninja_Betta;) and HasAtLeast(2614,1) and (IsTimeBetween(18,24) or IsTimeBetween(0,9)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')">
-			<ExFish Bait="Crow Fly" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Crow Fly" condition="not HasAtLeast(8761,&Ninja_Betta;) and HasAtLeast(2614,1) and (IsTimeBetween(18,24) or IsTimeBetween(0,9)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Medium" />
-					<PatienceTug moochLevel="2" TugType="Heavy" />
+					<PatienceTug moochLevel="2" TugType="Medium" />
 				</PatientTugs>
 				<FishSpots>
 					<FishSpot XYZ="-375.4692, -17.14841, -417.3067" Heading="0.7265582" />

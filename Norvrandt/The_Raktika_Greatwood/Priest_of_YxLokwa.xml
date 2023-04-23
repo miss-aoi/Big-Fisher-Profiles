@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf8'?>
 <!--
-	Profile: Greater Serpent of Ronka (33243)
+	Profile: Priest of Yx'Lokwa (28071)
 	Authors: miss-aoi
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY Greater_Serpent_of_Ronka "1">
+	<!ENTITY Priest_of_YxLokwa "1">
 ]>
 <Profile>
-	<Name>Greater Serpent of Ronka</Name>
+	<Name>Priest of Yx'Lokwa</Name>
 	<BehaviorDirectory />
 	<Order>
-		<Log Message="Starting Fishing: Greater Serpent of Ronka..." />
+		<Log Message="Starting Fishing: Priest of Yx'Lokwa..." />
 		<If condition="not HasAtLeast(27587,50)">
 			<!--Robber Ball-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27587,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
@@ -25,13 +25,12 @@
 		<While condition="IsTimeBetween(9,10)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(33243,&Greater_Serpent_of_Ronka;) and HasAtLeast(27587,1) and IsTimeBetween(10,12)">
-			<ExFish Bait="Robber Ball" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="4" Patience="Patience2" MinimumGPPatience="650">
+		<While condition="not HasAtLeast(28071,&Priest_of_YxLokwa;) and HasAtLeast(27587,1) and IsTimeBetween(10,12)">
+			<ExFish Bait="Robber Ball" condition="not HasAtLeast(28071,&Priest_of_YxLokwa;) and HasAtLeast(27587,1) and IsTimeBetween(10,12)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Medium" />
-					<PatienceTug moochLevel="2" TugType="Heavy" />
-					<PatienceTug moochLevel="3" TugType="Heavy" />
+					<PatienceTug moochLevel="2" TugType="Medium" />
 				</PatientTugs>
 				<FishSpots>
 					<FishSpot XYZ="-457.0445, -0.3, 401.5692" Heading="5.239766" />
@@ -39,7 +38,7 @@
 					<FishSpot XYZ="-482.7643, -0.3, 435.7073" Heading="6.037733" />
 				</FishSpots>
 				<Keepers>
-					<Keeper name="Greater Serpent of Ronka" />
+					<Keeper name="Priest of Yx'Lokwa" />
 				</Keepers>
 				<SurfaceSlaps />
 			</ExFish>

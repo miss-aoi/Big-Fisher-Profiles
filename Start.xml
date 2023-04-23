@@ -1182,17 +1182,17 @@
         <!-- GYR ABANIA - RHALGR'S REACH -->
         <!-- Hookstealer -->
         <If condition="not HasAtLeast(23057,&Hookstealer;)">
-            <LLoadProfile Path="Gyr_Abania/Rhalgr's_Reach/Hookstealer.xml"/>
+            <LLoadProfile Path="Gyr_Abania/Rhalgrs_Reach/Hookstealer.xml"/>
         </If>
 
         <!-- Watcher_Catfish -->
         <If condition="not HasAtLeast(24205,&Watcher_Catfish;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(635, 'Thunder')">
-            <LLoadProfile Path="Gyr_Abania/Rhalgr's_Reach/Watcher_Catfish.xml"/>
+            <LLoadProfile Path="Gyr_Abania/Rhalgrs_Reach/Watcher_Catfish.xml"/>
         </If>
 
         <!-- Bloodtail_Zombie -->
         <If condition="not HasAtLeast(24206,&Bloodtail_Zombie;) and IsTimeBetween(8,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(635, 'Clouds')">
-            <LLoadProfile Path="Gyr_Abania/Rhalgr's_Reach/Bloodtail_Zombie.xml"/>
+            <LLoadProfile Path="Gyr_Abania/Rhalgrs_Reach/Bloodtail_Zombie.xml"/>
         </If>
 
         <!-- GYR ABANIA - THE FRINGES -->
@@ -1583,37 +1583,37 @@
         <!-- NORVRANDT - THE RAK'TIKA GREATWOOD -->
         <!-- Priest_of_YxLokwa -->
         <If condition="not HasAtLeast(28071,&Priest_of_YxLokwa;) and IsTimeBetween(10,12)">
-            <LLoadProfile Path="Norvrandt/The_Rak'tika_Greatwood/Priest_of_YxLokwa.xml"/>
+            <LLoadProfile Path="Norvrandt/The_Raktika_Greatwood/Priest_of_YxLokwa.xml"/>
         </If>
 
         <!-- Greater_Serpent_of_Ronka -->
         <If condition="not HasAtLeast(33243,&Greater_Serpent_of_Ronka;) and IsTimeBetween(10,12)">
-            <LLoadProfile Path="Norvrandt/The_Rak'tika_Greatwood/Greater_Serpent_of_Ronka.xml"/>
+            <LLoadProfile Path="Norvrandt/The_Raktika_Greatwood/Greater_Serpent_of_Ronka.xml"/>
         </If>
 
         <!-- Pearl_Pipira -->
         <If condition="not HasAtLeast(32053,&Pearl_Pipira;) and IsTimeBetween(17,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(817, 'Fog')">
-            <LLoadProfile Path="Norvrandt/The_Rak'tika_Greatwood/Pearl_Pipira.xml"/>
+            <LLoadProfile Path="Norvrandt/The_Raktika_Greatwood/Pearl_Pipira.xml"/>
         </If>
 
         <!-- Black_Jet -->
         <If condition="not HasAtLeast(28929,&Black_Jet;) and IsTimeBetween(2,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(817, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(817, TimeSpan.FromHours(-8), 'Fair Skies')">
-            <LLoadProfile Path="Norvrandt/The_Rak'tika_Greatwood/Black_Jet.xml"/>
+            <LLoadProfile Path="Norvrandt/The_Raktika_Greatwood/Black_Jet.xml"/>
         </If>
 
         <!-- Recordkiller -->
         <If condition="not HasAtLeast(30437,&Recordkiller;) and IsTimeBetween(18,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(817, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(817, TimeSpan.FromHours(-8), 'Fog')">
-            <LLoadProfile Path="Norvrandt/The_Rak'tika_Greatwood/Recordkiller.xml"/>
+            <LLoadProfile Path="Norvrandt/The_Raktika_Greatwood/Recordkiller.xml"/>
         </If>
 
         <!-- Deephaunt -->
         <If condition="not HasAtLeast(33323,&Deephaunt;) and IsTimeBetween(2,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(817, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(817, TimeSpan.FromHours(-8), 'Fog')">
-            <LLoadProfile Path="Norvrandt/The_Rak'tika_Greatwood/Deephaunt.xml"/>
+            <LLoadProfile Path="Norvrandt/The_Raktika_Greatwood/Deephaunt.xml"/>
         </If>
 
         <!-- Golden_Pipira -->
         <If condition="not HasAtLeast(33324,&Golden_Pipira;) and IsTimeBetween(6,7)">
-            <LLoadProfile Path="Norvrandt/The_Rak'tika_Greatwood/Golden_Pipira.xml"/>
+            <LLoadProfile Path="Norvrandt/The_Raktika_Greatwood/Golden_Pipira.xml"/>
         </If>
 
         <!-- NORVRANDT - THE TEMPEST -->
@@ -1676,17 +1676,17 @@
         <!-- THE NORTHERN EMPTY - OLD SHARLAYAN -->
         <!-- Aetherolectric_Guitarfish -->
         <If condition="not HasAtLeast(36679,&Aetherolectric_Guitarfish;) and IsTimeBetween(20,24)">
-            <LLoadProfile Path="The_Northern_Empty/Old_Sharlayan_(Zone)/Aetherolectric_Guitarfish.xml"/>
+            <LLoadProfile Path="The_Northern_Empty/Old_Sharlayan/Aetherolectric_Guitarfish.xml"/>
         </If>
 
         <!-- Greatsword_Snook -->
         <If condition="not HasAtLeast(37845,&Greatsword_Snook;) and IsTimeBetween(16,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(962, 'Clouds')">
-            <LLoadProfile Path="The_Northern_Empty/Old_Sharlayan_(Zone)/Greatsword_Snook.xml"/>
+            <LLoadProfile Path="The_Northern_Empty/Old_Sharlayan/Greatsword_Snook.xml"/>
         </If>
 
         <!-- Catastrophizer -->
         <If condition="not HasAtLeast(38830,&Catastrophizer;) and IsTimeBetween(8,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(962, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(962, TimeSpan.FromHours(-8), 'Clear Skies')">
-            <LLoadProfile Path="The_Northern_Empty/Old_Sharlayan_(Zone)/Catastrophizer.xml"/>
+            <LLoadProfile Path="The_Northern_Empty/Old_Sharlayan/Catastrophizer.xml"/>
         </If>
 
         <!-- ILSABARD - RADZ-AT-HAN -->
