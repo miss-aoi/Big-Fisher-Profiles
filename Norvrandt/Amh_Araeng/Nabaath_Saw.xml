@@ -25,8 +25,8 @@
 		<While condition="IsTimeBetween(5,6)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(33320,&Nabaath_Saw;) and HasAtLeast(27586,1) and IsTimeBetween(6,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Heat Waves')">
-			<ExFish Bait="Jerked Ovim" condition="not HasAtLeast(33320,&Nabaath_Saw;) and HasAtLeast(27586,1) and IsTimeBetween(6,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Heat Waves')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<While condition="not HasAtLeast(33320,&Nabaath_Saw;) and HasAtLeast(27586,1) and IsTimeBetween(6,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies', 'Heat Waves')">
+			<ExFish Bait="Jerked Ovim" condition="not HasAtLeast(33320,&Nabaath_Saw;) and HasAtLeast(27586,1) and IsTimeBetween(6,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies', 'Heat Waves')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Medium" />
 					<PatienceTug moochLevel="1" TugType="Medium" />

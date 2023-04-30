@@ -22,8 +22,8 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(24210,&The_Last_Tear;) and HasAtLeast(20613,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(620, TimeSpan.FromHours(-8), 'Fair Skies')">
-			<ExFish Bait="Salmon Roe" condition="not HasAtLeast(24210,&The_Last_Tear;) and HasAtLeast(20613,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(620, TimeSpan.FromHours(-8), 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+		<While condition="not HasAtLeast(24210,&The_Last_Tear;) and HasAtLeast(20613,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(620, TimeSpan.FromHours(-8), 'Fog')">
+			<ExFish Bait="Salmon Roe" condition="not HasAtLeast(24210,&The_Last_Tear;) and HasAtLeast(20613,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(620, TimeSpan.FromHours(-8), 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="519.6665, 220.8684, -678.6077" Heading="2.033621" />
 					<FishSpot XYZ="563.2382, 220.8684, -674.5249" Heading="4.829638" />

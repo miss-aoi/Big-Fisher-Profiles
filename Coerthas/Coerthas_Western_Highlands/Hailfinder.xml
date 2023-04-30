@@ -22,8 +22,8 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(16745,&Hailfinder;) and HasAtLeast(12708,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(397, TimeSpan.FromHours(-8), 'Blizzards')">
-			<ExFish Bait="Red Balloon" condition="not HasAtLeast(16745,&Hailfinder;) and HasAtLeast(12708,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(397, TimeSpan.FromHours(-8), 'Blizzards')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<While condition="not HasAtLeast(16745,&Hailfinder;) and HasAtLeast(12708,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(397, TimeSpan.FromHours(-8), 'Snow', 'Blizzards')">
+			<ExFish Bait="Red Balloon" condition="not HasAtLeast(16745,&Hailfinder;) and HasAtLeast(12708,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(397, TimeSpan.FromHours(-8), 'Snow', 'Blizzards')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Light" />

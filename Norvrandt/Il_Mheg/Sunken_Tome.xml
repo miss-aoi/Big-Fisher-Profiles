@@ -25,8 +25,8 @@
 		<While condition="IsTimeBetween(11,12)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(32052,&Sunken_Tome;) and HasAtLeast(27585,1) and IsTimeBetween(12,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(816, 'Thunderstorms') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(816, TimeSpan.FromHours(-8), 'Thunderstorms')">
-			<ExFish Bait="Marble Nymph" condition="not HasAtLeast(32052,&Sunken_Tome;) and HasAtLeast(27585,1) and IsTimeBetween(12,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(816, 'Thunderstorms') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(816, TimeSpan.FromHours(-8), 'Thunderstorms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+		<While condition="not HasAtLeast(32052,&Sunken_Tome;) and HasAtLeast(27585,1) and IsTimeBetween(12,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(816, 'Thunderstorms') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(816, TimeSpan.FromHours(-8), 'Fair Skies')">
+			<ExFish Bait="Marble Nymph" condition="not HasAtLeast(32052,&Sunken_Tome;) and HasAtLeast(27585,1) and IsTimeBetween(12,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(816, 'Thunderstorms') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(816, TimeSpan.FromHours(-8), 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="61.2729, 20.82541, -590.6793" Heading="0.2287085" />
 					<FishSpot XYZ="40.46621, 17.84756, -584.0277" Heading="0.7690632" />

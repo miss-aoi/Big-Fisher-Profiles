@@ -25,8 +25,8 @@
 		<While condition="IsTimeBetween(3,4)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(8776,&Blood_Red_Bonytongue;) and HasAtLeast(2599,1) and IsTimeBetween(4,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(156, TimeSpan.FromHours(-8), 'Fog')">
-			<ExFish Bait="Honey Worm" condition="not HasAtLeast(8776,&Blood_Red_Bonytongue;) and HasAtLeast(2599,1) and IsTimeBetween(4,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(156, TimeSpan.FromHours(-8), 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<While condition="not HasAtLeast(8776,&Blood_Red_Bonytongue;) and HasAtLeast(2599,1) and IsTimeBetween(4,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(156, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
+			<ExFish Bait="Honey Worm" condition="not HasAtLeast(8776,&Blood_Red_Bonytongue;) and HasAtLeast(2599,1) and IsTimeBetween(4,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(156, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Medium" />
