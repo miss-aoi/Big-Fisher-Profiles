@@ -1,4 +1,0 @@
-- [ ] Shark Tuna was seen to not be using cordials. Need to look more into cordial use in general. All uses were adjusted to "Auto" but they don't seem, to be getting used still. Shark Tuna is a timed/weather window, so need to test find an easier test case first
-- [ ] Mooch issues seen with The Matriarch. Similar to what I saw before, but I think this has to do with Mooch vs Mooch2
-- [ ] Can test more Patience stuff with The Matriarch
-- [ ] Double check Pirate's Bane fish cords. Maybe add something to break out since there are no other conditions?
