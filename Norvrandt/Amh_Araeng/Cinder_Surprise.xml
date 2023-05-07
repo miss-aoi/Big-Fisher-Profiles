@@ -12,7 +12,7 @@
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Cinder Surprise..." />
-		<If condition="not HasAtLeast(27584,50)">
+		<If condition="not HasAtLeast(27584,3)">
 			<!--Desert Dessert Frog-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27584,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
 		</If>

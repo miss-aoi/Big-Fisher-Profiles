@@ -12,7 +12,7 @@
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: The Captains Chalice..." />
-		<If condition="not HasAtLeast(2616,50)">
+		<If condition="not HasAtLeast(2616,3)">
 			<!--Steel Jig-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2616,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
 		</If>

@@ -12,7 +12,7 @@
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Bigcuda..." />
-		<If condition="not HasAtLeast(36590,50)">
+		<If condition="not HasAtLeast(36590,3)">
 			<!--Sky Spoon Lure-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36590,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
 		</If>

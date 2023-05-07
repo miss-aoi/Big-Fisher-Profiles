@@ -12,7 +12,7 @@
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Cornelia..." />
-		<If condition="not HasAtLeast(2625,50)">
+		<If condition="not HasAtLeast(2625,3)">
 			<!--Rainbow Spoon Lure-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2625,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>

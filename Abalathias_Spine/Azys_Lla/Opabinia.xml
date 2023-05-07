@@ -12,9 +12,9 @@
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Opabinia..." />
-		<If condition="not HasAtLeast(12710,50)">
+		<If condition="not HasAtLeast(12710,25)">
 			<!--Fiend Worm-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12710,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12710,'Amount':50,'Enabled':true,'Type':'Exchange','AmountMode':'Restock'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2174)">
 			<LisbethTravel Area="Azys Lla" XYZ="-16.05849, 293.9713, 24.93498" />

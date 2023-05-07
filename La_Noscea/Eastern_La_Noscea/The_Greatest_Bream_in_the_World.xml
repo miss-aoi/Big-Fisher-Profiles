@@ -12,7 +12,7 @@
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: The Greatest Bream in the World..." />
-		<If condition="not HasAtLeast(2613,50)">
+		<If condition="not HasAtLeast(2613,3)">
 			<!--Shrimp Cage Feeder-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2613,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
 		</If>

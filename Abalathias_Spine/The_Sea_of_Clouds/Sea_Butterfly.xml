@@ -16,9 +16,9 @@
 			<!--Giant Crane Fly-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12712,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
-		<If condition="not HasAtLeast(28634,50)">
-			<!--Giant Crane Fly-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':28634,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		<If condition="not HasAtLeast(28634,3)">
+			<!--Metal Spinner-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':28634,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2129)">
 			<LisbethTravel Area="The Sea of Clouds" XYZ="-342.964, 20.93506, -820.5392" />

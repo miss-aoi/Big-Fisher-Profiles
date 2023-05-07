@@ -12,7 +12,7 @@
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: The Ewer King..." />
-		<If condition="not HasAtLeast(12707,50)">
+		<If condition="not HasAtLeast(12707,3)">
 			<!--Bladed Steel Jig-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12707,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>

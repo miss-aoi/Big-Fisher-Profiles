@@ -12,7 +12,7 @@
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Magicked Mushroom..." />
-		<If condition="not HasAtLeast(2626,50)">
+		<If condition="not HasAtLeast(2626,3)">
 			<!--Spinnerbait-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2626,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>

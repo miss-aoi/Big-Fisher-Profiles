@@ -12,7 +12,7 @@
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: The Drowned Sniper..." />
-		<If condition="not HasAtLeast(2618,50)">
+		<If condition="not HasAtLeast(2618,3)">
 			<!--Snurble Fly-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2618,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>

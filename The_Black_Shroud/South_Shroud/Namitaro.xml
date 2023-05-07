@@ -12,7 +12,7 @@
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Namitaro..." />
-		<If condition="not HasAtLeast(2624,50)">
+		<If condition="not HasAtLeast(2624,3)">
 			<!--Topwater Frog-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2624,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>
