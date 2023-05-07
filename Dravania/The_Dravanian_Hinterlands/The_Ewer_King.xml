@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Ewer King (15632)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Ewer_King "1">
+]>
+<Profile>
+	<Name>The Ewer King</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Ewer King..." />
+		<If condition="not HasAtLeast(12707,3)">
+			<!--Bladed Steel Jig-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12707,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2039)">
+			<LisbethTravel Area="The Dravanian Hinterlands" XYZ="36.15239, 52.72531, 50.93495" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(15632,&The_Ewer_King;) and HasAtLeast(12707,1)">
+			<ExFish Bait="Bladed Steel Jig" condition="not HasAtLeast(15632,&The_Ewer_King;) and HasAtLeast(12707,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Medium" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="29.71376, 52.60495, 50.8052" Heading="4.73267" />
+					<FishSpot XYZ="26.36157, 52.6711, 80.21965" Heading="4.133673" />
+					<FishSpot XYZ="25.77735, 52.40601, 40.15475" Heading="4.818541" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Ewer King" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

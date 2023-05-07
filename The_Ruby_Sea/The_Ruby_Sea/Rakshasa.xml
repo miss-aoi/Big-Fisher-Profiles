@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Rakshasa (23066)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Rakshasa "1">
+]>
+<Profile>
+	<Name>Rakshasa</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Rakshasa..." />
+		<If condition="not HasAtLeast(28634,3)">
+			<!--Metal Spinner-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':28634,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2786)">
+			<LisbethTravel Area="The Ruby Sea" XYZ="-550.863, 7.791518, 180.1463" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(23066,&Rakshasa;) and HasAtLeast(28634,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(613, 'Thunder')">
+			<ExFish Bait="Metal Spinner" condition="not HasAtLeast(23066,&Rakshasa;) and HasAtLeast(28634,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(613, 'Thunder')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-524.6252, 6.503304, 182.1542" Heading="1.794916" />
+					<FishSpot XYZ="-525.9848, 6.987015, 167.2841" Heading="1.813764" />
+					<FishSpot XYZ="-527.9066, 6.995328, 161.4355" Heading="1.729993" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Rakshasa" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

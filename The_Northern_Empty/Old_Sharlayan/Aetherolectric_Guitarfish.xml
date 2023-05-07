@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Aetherolectric Guitarfish (36679)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Aetherolectric_Guitarfish "1">
+]>
+<Profile>
+	<Name>Aetherolectric Guitarfish</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Aetherolectric Guitarfish..." />
+		<If condition="not HasAtLeast(36593,50)">
+			<!--Mackerel Strip-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36593,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3822)">
+			<LisbethTravel Area="Old Sharlayan" XYZ="9.347091, -16.147, 141.4112" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(19,20)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(36679,&Aetherolectric_Guitarfish;) and HasAtLeast(36593,1) and IsTimeBetween(20,24)">
+			<ExFish Bait="Mackerel Strip" condition="not HasAtLeast(36679,&Aetherolectric_Guitarfish;) and HasAtLeast(36593,1) and IsTimeBetween(20,24)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="9.85795, -16.17681, 146.2283" Heading="0.1031501" />
+					<FishSpot XYZ="-7.712842, -16.147, 151.5749" Heading="6.210406" />
+					<FishSpot XYZ="18.40983, -16.147, 146.1455" Heading="6.275333" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Aetherolectric Guitarfish" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

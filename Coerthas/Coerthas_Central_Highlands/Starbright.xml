@@ -1,49 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Starbright (7945)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Starbright "1">
+]>
 <Profile>
 	<Name>Starbright</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(7945,1)">
-		<Log Message="Start Fishing: Starbright..." />
+		<Log Message="Starting Fishing: Starbright..." />
 		<If condition="not HasAtLeast(2597,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2597,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			<!--Syrphid Basket-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2597,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(383)">
-			<LisbethTravel Area="Coerthas Central Highlands" XYZ="-299.6851, 244.8674, 12.87033"/>
+			<LisbethTravel Area="Coerthas Central Highlands" XYZ="-299.6851, 244.8674, 12.87033" />
 		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
+		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While Condition="IsTimeBetween(20,21)">
+		<While condition="IsTimeBetween(20,21)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Syrphid Basket" Condition="HasAtLeast(2597,1) and not HasAtLeast(7945,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Clear Skies', 'Fair Skies')"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-				Mooch="1" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
-			<PatienceTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Heavy" />
-			</PatienceTugs>
-			<Keepers>
-				<Keeper name="Starbright" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="-292.2026, 242.4896, 17.62959" Heading="1.029324" Sit="True" />
-				<FishSpot XYZ="-269.9615, 248.1604, 10.56468" Heading="0.02401352" Sit="True" />
-				<FishSpot XYZ="-299.8128, 242.6337, 32.33716" Heading="1.896401" Sit="True" />
-			</FishSpots>
-		</ExFish>	
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<While condition="not HasAtLeast(7945,&Starbright;) and HasAtLeast(2597,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Clear Skies', 'Fair Skies')">
+			<ExFish Bait="Syrphid Basket" condition="not HasAtLeast(7945,&Starbright;) and HasAtLeast(2597,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-269.9615, 248.1604, 10.56468" Heading="0.02401352" />
+					<FishSpot XYZ="-292.2026, 242.4896, 17.62959" Heading="1.029324" />
+					<FishSpot XYZ="-299.8128, 242.6337, 32.33716" Heading="1.896401" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Starbright" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

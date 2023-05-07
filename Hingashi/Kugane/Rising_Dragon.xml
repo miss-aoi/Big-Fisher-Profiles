@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Rising Dragon (23063)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Rising_Dragon "1">
+]>
+<Profile>
+	<Name>Rising Dragon</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Rising Dragon..." />
+		<If condition="not HasAtLeast(28634,3)">
+			<!--Metal Spinner-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':28634,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2928)">
+			<LisbethTravel Area="Kugane" XYZ="-47.71284, 15.28999, -23.70988" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(23063,&Rising_Dragon;) and HasAtLeast(28634,1)">
+			<ExFish Bait="Metal Spinner" condition="not HasAtLeast(23063,&Rising_Dragon;) and HasAtLeast(28634,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-53.11737, 15.55033, -21.72932" Heading="4.866605" />
+					<FishSpot XYZ="-42.8829, 16.75557, -6.839543" Heading="1.716634" />
+					<FishSpot XYZ="-53.09732, 16.58149, 10.49506" Heading="4.833092" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Rising Dragon" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

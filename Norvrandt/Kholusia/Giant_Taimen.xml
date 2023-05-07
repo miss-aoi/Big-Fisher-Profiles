@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Giant Taimen (30434)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Giant_Taimen "1">
+]>
+<Profile>
+	<Name>Giant Taimen</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Giant Taimen..." />
+		<If condition="not HasAtLeast(27589,50)">
+			<!--Baitbugs-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27589,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3072)">
+			<LisbethTravel Area="Kholusia" XYZ="232.0987, 319.7058, -582.9617" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(30434,&Giant_Taimen;) and HasAtLeast(27589,1)">
+			<ExFish Bait="Baitbugs" condition="not HasAtLeast(30434,&Giant_Taimen;) and HasAtLeast(27589,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="232.0987, 319.7058, -582.9617" Heading="1.704814" />
+					<FishSpot XYZ="247.9626, 317.0774, -566.7717" Heading="0.1444907" />
+					<FishSpot XYZ="254.702, 324.8494, -608.1593" Heading="3.304929" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Giant Taimen" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

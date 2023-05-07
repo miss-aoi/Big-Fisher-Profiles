@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Corpse Chub (24209)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Corpse_Chub "1">
+]>
+<Profile>
+	<Name>Corpse Chub</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Corpse Chub..." />
+		<If condition="not HasAtLeast(20619,3)">
+			<!--Suspending Minnow-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20619,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2602)">
+			<LisbethTravel Area="The Fringes" XYZ="332.2455, 44.88329, -322.4019" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(19,20)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(24209,&Corpse_Chub;) and HasAtLeast(20619,1) and IsTimeBetween(20,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(612, 'Clear Skies')">
+			<ExFish Bait="Suspending Minnow" condition="not HasAtLeast(24209,&Corpse_Chub;) and HasAtLeast(20619,1) and IsTimeBetween(20,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(612, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="342.8258, 44.00168, -324.242" Heading="5.954857" />
+					<FishSpot XYZ="337.6121, 41.55943, -292.9322" Heading="5.4878" />
+					<FishSpot XYZ="319.0729, 39.91542, -274.8432" Heading="5.709808" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Corpse Chub" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

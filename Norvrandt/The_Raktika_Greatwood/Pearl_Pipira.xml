@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Pearl Pipira (32053)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Pearl_Pipira "1">
+]>
+<Profile>
+	<Name>Pearl Pipira</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Pearl Pipira..." />
+		<If condition="not HasAtLeast(27587,50)">
+			<!--Robber Ball-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27587,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3365)">
+			<LisbethTravel Area="The Rak'tika Greatwood" XYZ="-583.3825, -0.6000001, -10.59822" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(16,17)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(32053,&Pearl_Pipira;) and HasAtLeast(27587,1) and IsTimeBetween(17,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(817, 'Fog')">
+			<ExFish Bait="Robber Ball" condition="not HasAtLeast(32053,&Pearl_Pipira;) and HasAtLeast(27587,1) and IsTimeBetween(17,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(817, 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Medium" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-583.3825, -0.6000001, -10.59822" Heading="3.52236" />
+					<FishSpot XYZ="-570.646, -0.6, -45.78933" Heading="4.075276" />
+					<FishSpot XYZ="-608.9486, -0.6, -32.4343" Heading="0.5085261" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Pearl Pipira" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

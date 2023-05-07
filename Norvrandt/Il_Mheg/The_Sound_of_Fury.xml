@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Sound of Fury (28070)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Sound_of_Fury "1">
+]>
+<Profile>
+	<Name>The Sound of Fury</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Sound of Fury..." />
+		<If condition="not HasAtLeast(27589,50)">
+			<!--Baitbugs-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27589,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3144)">
+			<LisbethTravel Area="Il Mheg" XYZ="-294.1939, 0.9144536, 182.5432" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(19,20)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(28070,&The_Sound_of_Fury;) and HasAtLeast(27589,1) and (IsTimeBetween(20,24) or IsTimeBetween(0,0)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(816, 'Clear Skies', 'Fair Skies')">
+			<ExFish Bait="Baitbugs" condition="not HasAtLeast(28070,&The_Sound_of_Fury;) and HasAtLeast(27589,1) and (IsTimeBetween(20,24) or IsTimeBetween(0,0)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(816, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-291.337, -0.3474985, 174.3676" Heading="2.237679" />
+					<FishSpot XYZ="-303.5754, -0.3267224, 149.0237" Heading="2.56231" />
+					<FishSpot XYZ="-278.1725, 0.2184548, 193.5368" Heading="2.038707" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Sound of Fury" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

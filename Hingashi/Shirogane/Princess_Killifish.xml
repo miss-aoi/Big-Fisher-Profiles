@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Princess Killifish (24213)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Princess_Killifish "1">
+]>
+<Profile>
+	<Name>Princess Killifish</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Princess Killifish..." />
+		<If condition="not HasAtLeast(20614,50)">
+			<!--Nightcrawler-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20614,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(1899)">
+			<LisbethTravel Area="Kugane" XYZ="39.04472, 4.685791, -32.06384" />
+			<RunCode Name="Shirogane"/>
+			<LisbethTravel Area="Shirogane" XYZ="-114.2855, 2.02, 147.0289"/>
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(3,4)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(24213,&Princess_Killifish;) and HasAtLeast(20614,1) and IsTimeBetween(4,6)">
+			<ExFish Bait="Nightcrawler" condition="not HasAtLeast(24213,&Princess_Killifish;) and HasAtLeast(20614,1) and IsTimeBetween(4,6)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-38.1795, 20, 12.21121" Heading="5.575874" />
+					<FishSpot XYZ="-45.9562, 20.05, -1.787092" Heading="2.19133" />
+					<FishSpot XYZ="-23.50421, 20.04999, 12.31686" Heading="2.394487" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Princess Killifish" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks>
+		<CodeChunk Name="Shirogane">
+			<![CDATA[ 
+				var unit = GameObjectManager.GetObjectByNPCId(111);
+				unit.Target();
+				unit.Interact();
+				await Coroutine.Sleep(1000);
+				await Coroutine.Wait(5000, () => SelectString.IsOpen);
+				await Coroutine.Sleep(500);
+				if (SelectString.IsOpen)
+					SelectString.ClickSlot(1);
+				await Coroutine.Sleep(500);
+				await Coroutine.Wait(5000, () => SelectString.IsOpen);
+				await Coroutine.Sleep(500);
+				if (SelectString.IsOpen)
+					SelectString.ClickSlot(2);
+				await Coroutine.Wait(5000, () => RaptureAtkUnitManager.GetWindowByName("HousingSelectBlock") != null);
+
+				if (RaptureAtkUnitManager.GetWindowByName("HousingSelectBlock") != null)
+				{
+					RaptureAtkUnitManager.GetWindowByName("HousingSelectBlock").SendAction(1, 3, 0);
+					await Coroutine.Wait(5000, () => SelectYesno.IsOpen);
+					if (SelectYesno.IsOpen)
+						SelectYesno.Yes();
+					await Coroutine.Sleep(5000);
+					if (CommonBehaviors.IsLoading)
+						await Coroutine.Wait(-1, () => !CommonBehaviors.IsLoading);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
+</Profile>

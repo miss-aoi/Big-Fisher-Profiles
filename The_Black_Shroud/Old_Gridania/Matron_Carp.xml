@@ -1,44 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Matron Carp (7708)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Matron_Carp "1">
+]>
 <Profile>
 	<Name>Matron Carp</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(7708,1)">
-			<Log Message="Start Fishing: Matron Carp..." />
-			<If condition="not HasAtLeast(2590,50)">
-				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2590,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-			</If>
-			<If condition="not IsOnSubMap(0)">
-				<LisbethTravel Area="Gridania (Old Gridania)" XYZ="180.0303, -2.267064, -243.6821"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<While Condition="IsTimeBetween(14,15)" >
-				<WaitTimer WaitTime="30" />
-			</While>
-			<ExFish Bait="Bloodworm" Condition="HasAtLeast(2590,1) and not HasAtLeast(7708,1) and IsTimeBetween(15,21)"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+		<Log Message="Starting Fishing: Matron Carp..." />
+		<If condition="not HasAtLeast(2590,50)">
+			<!--Bloodworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2590,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnMap(133) or not IsOnSubMap(595)">
+			<LisbethTravel Area="Gridania (Old Gridania)" XYZ="180.0303, -2.267064, -243.6821" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(14,15)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7708,&Matron_Carp;) and HasAtLeast(2590,1) and IsTimeBetween(15,21)">
+			<ExFish Bait="Bloodworm" condition="not HasAtLeast(7708,&Matron_Carp;) and HasAtLeast(2590,1) and IsTimeBetween(15,21)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="209.9247, -2.58255, -226.1134" Heading="4.714236" />
+					<FishSpot XYZ="210.48, -2.58255, -246.0894" Heading="2.668012" />
+					<FishSpot XYZ="221.3165, -2.582566, -243.9003" Heading="1.537036" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Matron Carp" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="221.3165, -2.582566, -243.9003" Heading="1.537036" Sit="True" />
-					<FishSpot XYZ="209.9247, -2.58255, -226.1134" Heading="4.714236" Sit="True" />
-					<FishSpot XYZ="210.48, -2.58255, -246.0894" Heading="2.668012" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

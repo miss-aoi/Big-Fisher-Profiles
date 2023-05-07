@@ -1,47 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Little Perykos (20143)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Little_Perykos "1">
+]>
 <Profile>
 	<Name>Little Perykos</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(20143,1)">
-		<Log Message="Start Fishing: Little Perykos..." />
+		<Log Message="Starting Fishing: Little Perykos..." />
 		<If condition="not HasAtLeast(2585,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2585,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
+			<!--Lugworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2585,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(216)">
-			<LisbethTravel Area="Eastern La Noscea" XYZ="770.4676, 8.9, 221.7439"/>
+			<LisbethTravel Area="Eastern La Noscea" XYZ="770.4676, 8.9, 221.7439" />
 		</If>
-		<ExFish Bait="Lugworm" Condition="HasAtLeast(2585,1) and not HasAtLeast(20143,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-				Mooch="3" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
-			<PatienceTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-				<PatienceTug moochLevel="2" TugType="Medium" />
-			</PatienceTugs>
-			<Keepers>
-				<Keeper name="Little Perykos" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="775.2599, 8.900001, 217.8145" Heading="2.206204" Sit="True" />
-				<FishSpot XYZ="799.2081, 8.9, 237.1664" Heading="1.866913" Sit="True" />
-				<FishSpot XYZ="821.451, 8.9, 270.8231" Heading="1.527614" Sit="True" />
-			</FishSpots>
-		</ExFish>	
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(20143,&Little_Perykos;) and HasAtLeast(2585,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')">
+			<ExFish Bait="Lugworm" condition="not HasAtLeast(20143,&Little_Perykos;) and HasAtLeast(2585,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+					<PatienceTug moochLevel="2" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="775.2599, 8.900001, 217.8145" Heading="2.206204" />
+					<FishSpot XYZ="799.2081, 8.9, 237.1664" Heading="1.866913" />
+					<FishSpot XYZ="821.451, 8.9, 270.8231" Heading="1.527614" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Little Perykos" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Steel Fan (32050)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Steel_Fan "1">
+]>
+<Profile>
+	<Name>Steel Fan</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Steel Fan..." />
+		<If condition="not HasAtLeast(27585,50)">
+			<!--Marble Nymph-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27585,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3078)">
+			<LisbethTravel Area="Kholusia" XYZ="399.8626, 20.62017, 34.13649" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(32050,&Steel_Fan;) and HasAtLeast(27585,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(814, TimeSpan.FromHours(-8), 'Clouds')">
+			<ExFish Bait="Marble Nymph" condition="not HasAtLeast(32050,&Steel_Fan;) and HasAtLeast(27585,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(814, TimeSpan.FromHours(-8), 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="399.8626, 20.62017, 34.13649" Heading="3.087113" />
+					<FishSpot XYZ="383.4839, 20.69755, 29.01568" Heading="3.698679" />
+					<FishSpot XYZ="414.3354, 20.69754, 28.66264" Heading="3.392897" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Steel Fan" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

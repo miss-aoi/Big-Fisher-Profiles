@@ -1,44 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Mud Pilgrim (7702)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Mud_Pilgrim "1">
+]>
 <Profile>
 	<Name>Mud Pilgrim</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(7702,1)">
-			<Log Message="Start Fishing: Mud Pilgrim..." />
-			<If condition="not HasAtLeast(2592,50)">
-				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2592,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-			</If>
-			<If condition="not IsOnSubMap(250)">
-				<LisbethTravel Area="Eastern Thanalan" XYZ="-222.5766, -36.75444, 147.0753"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<While Condition="IsTimeBetween(16,17)" >
-				<WaitTimer WaitTime="30" />
-			</While>
-			<ExFish Bait="Midge Basket" Condition="not HasAtLeast(7702,1) and (IsTimeBetween(17,24) or IsTimeBetween(0,7)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Rain', 'Showers')"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+		<Log Message="Starting Fishing: Mud Pilgrim..." />
+		<If condition="not HasAtLeast(2592,50)">
+			<!--Midge Basket-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2592,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(250)">
+			<LisbethTravel Area="Eastern Thanalan" XYZ="-222.5766, -36.75444, 147.0753" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(16,17)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7702,&Mud_Pilgrim;) and HasAtLeast(2592,1) and (IsTimeBetween(17,24) or IsTimeBetween(0,7)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Rain', 'Showers')">
+			<ExFish Bait="Midge Basket" condition="not HasAtLeast(7702,&Mud_Pilgrim;) and HasAtLeast(2592,1) and (IsTimeBetween(17,24) or IsTimeBetween(0,7)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Rain', 'Showers')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-202.5141, -37.89638, 161.2821" Heading="4.560738" />
+					<FishSpot XYZ="-206.6966, -37.5697, 144.3847" Heading="6.121063" />
+					<FishSpot XYZ="-221.8155, -36.71885, 148.0304" Heading="0.6253672" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Mud Pilgrim" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-221.8155, -36.71885, 148.0304" Heading="0.6253672" Sit="True" />
-					<FishSpot XYZ="-206.6966, -37.5697, 144.3847" Heading="6.121063" Sit="True" />
-					<FishSpot XYZ="-202.5141, -37.89638, 161.2821" Heading="4.560738" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

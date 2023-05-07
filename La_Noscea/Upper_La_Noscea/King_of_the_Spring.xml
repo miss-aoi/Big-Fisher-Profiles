@@ -1,44 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: King of the Spring (7927)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY King_of_the_Spring "1">
+]>
 <Profile>
 	<Name>King of the Spring</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(7927,1)">
-		<Log Message="Start Fishing: King of the Spring..." />
+		<Log Message="Starting Fishing: King of the Spring..." />
 		<If condition="not HasAtLeast(2626,3)">
-			<Lisbeth Json="[{'Item': 2626,'Group': 0,'Amount':3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
+			<!--Spinnerbait-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2626,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>
 		<If condition="not IsOnSubMap(177)">
-			<LisbethTravel Area="Upper La Noscea" XYZ="301.5934, -3.052745, 61.05919"/>
+			<LisbethTravel Area="Upper La Noscea" XYZ="301.5934, -3.052745, 61.05919" />
 		</If>
-		<While Condition="IsTimeBetween(15,16)">
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(15,16)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Spinnerbait" Condition="HasAtLeast(2626,1) and not HasAtLeast(7927,1) and IsTimeBetween(16,19)"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-			<Keepers>
-				<Keeper name="King of the Spring" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="300.2574, -3.4, 49.42555" Heading="3.5356" Sit="True" />
-				<FishSpot XYZ="285.5044, -3.4, 21.87793" Heading="4.689689" Sit="True" />
-				<FishSpot XYZ="262.0699, -3.4, 52.85926" Heading="1.506207" Sit="True" />
-			</FishSpots>
-		</ExFish>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<While condition="not HasAtLeast(7927,&King_of_the_Spring;) and HasAtLeast(2626,1) and IsTimeBetween(16,19)">
+			<ExFish Bait="Spinnerbait" condition="not HasAtLeast(7927,&King_of_the_Spring;) and HasAtLeast(2626,1) and IsTimeBetween(16,19)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="262.0699, -3.4, 52.85926" Heading="1.506207" />
+					<FishSpot XYZ="285.5044, -3.4, 21.87793" Heading="4.689689" />
+					<FishSpot XYZ="300.2574, -3.4, 49.42555" Heading="3.5356" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="King of the Spring" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

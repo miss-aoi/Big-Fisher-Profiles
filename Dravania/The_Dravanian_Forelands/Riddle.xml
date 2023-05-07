@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Riddle (17583)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Riddle "1">
+]>
+<Profile>
+	<Name>Riddle</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Riddle..." />
+		<If condition="not HasAtLeast(12709,50)">
+			<!--Magma Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12709,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2008)">
+			<LisbethTravel Area="The Dravanian Forelands" XYZ="-181.3112, -18.43873, -581.1884" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(7,8)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(17583,&Riddle;) and HasAtLeast(12709,1) and IsTimeBetween(8,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(398, TimeSpan.FromHours(-8), 'Clear Skies')">
+			<ExFish Bait="Magma Worm" condition="not HasAtLeast(17583,&Riddle;) and HasAtLeast(12709,1) and IsTimeBetween(8,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(398, TimeSpan.FromHours(-8), 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-175.5578, -19.64622, -584.6446" Heading="2.238262" />
+					<FishSpot XYZ="-160.4408, -18.77417, -570.864" Heading="2.305284" />
+					<FishSpot XYZ="-155.9353, -18.16515, -552.3746" Heading="1.046555" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Riddle" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

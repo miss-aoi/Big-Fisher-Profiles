@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Henodus Grandis (32051)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Henodus_Grandis "1">
+]>
+<Profile>
+	<Name>Henodus Grandis</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Henodus Grandis..." />
+		<If condition="not HasAtLeast(27588,3)">
+			<!--Short Bill Minnow-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27588,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3074)">
+			<LisbethTravel Area="Kholusia" XYZ="582.0699, -0.6680323, 612.188" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(21,22)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(32051,&Henodus_Grandis;) and HasAtLeast(27588,1) and (IsTimeBetween(22,24) or IsTimeBetween(0,0)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Clouds')">
+			<ExFish Bait="Short Bill Minnow" condition="not HasAtLeast(32051,&Henodus_Grandis;) and HasAtLeast(27588,1) and (IsTimeBetween(22,24) or IsTimeBetween(0,0)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="582.0699, -0.6680323, 612.188" Heading="0.7455881" />
+					<FishSpot XYZ="549.6307, -0.5994223, 620.8198" Heading="0.2240846" />
+					<FishSpot XYZ="604.9731, -0.6434861, 595.2731" Heading="1.0032" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Henodus Grandis" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

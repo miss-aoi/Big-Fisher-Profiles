@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Black Jet (28929)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Black_Jet "1">
+]>
+<Profile>
+	<Name>Black Jet</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Black Jet..." />
+		<If condition="not HasAtLeast(27587,50)">
+			<!--Robber Ball-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27587,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3165)">
+			<LisbethTravel Area="The Rak'tika Greatwood" XYZ="-335.5941, 5.423997, -36.20679" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(1,2)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(28929,&Black_Jet;) and HasAtLeast(27587,1) and IsTimeBetween(2,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(817, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(817, TimeSpan.FromHours(-8), 'Clouds', 'Fog')">
+			<ExFish Bait="Robber Ball" condition="not HasAtLeast(28929,&Black_Jet;) and HasAtLeast(27587,1) and IsTimeBetween(2,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(817, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(817, TimeSpan.FromHours(-8), 'Clouds', 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-335.5941, 5.423997, -36.20679" Heading="1.604789" />
+					<FishSpot XYZ="-311.312, 3.433282, -27.43502" Heading="5.200866" />
+					<FishSpot XYZ="-319.4145, 7.605494, -60.14938" Heading="0.2434251" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Black Jet" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

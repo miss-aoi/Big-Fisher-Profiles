@@ -1,44 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: High Perch (7709)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY High_Perch "1">
+]>
 <Profile>
 	<Name>High Perch</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(7709,1)">
-		<Log Message="Start Fishing: High Perch..." />
+		<Log Message="Starting Fishing: High Perch..." />
 		<If condition="not HasAtLeast(2617,3)">
-			<Lisbeth Json="[{'Item': 2617,'Group': 0,'Amount':3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
+			<!--Sinking Minnow-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2617,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>
 		<If condition="not IsOnSubMap(163)">
-			<LisbethTravel Area="Middle La Noscea" XYZ="-160.2664, 13.22471, -379.9702"/>
+			<LisbethTravel Area="Middle La Noscea" XYZ="-160.2664, 13.22471, -379.9702" />
 		</If>
-		<While Condition="IsTimeBetween(4,5)">
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(4,5)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Sinking Minnow" Condition="HasAtLeast(2617,1) and not HasAtLeast(7709,1) and IsTimeBetween(5,8)"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-			<Keepers>
-				<Keeper name="High Perch" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="-147.2776, 12.7062, -377.7298" Heading="1.248226" Sit="True" />
-				<FishSpot XYZ="-176.2276, 10.74121, -352.4113" Heading="0.5256584" Sit="True" />
-				<FishSpot XYZ="-121.0939, 12.21, -366.0357" Heading="3.868313" Sit="True" />
-			</FishSpots>
-		</ExFish>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<While condition="not HasAtLeast(7709,&High_Perch;) and HasAtLeast(2617,1) and IsTimeBetween(5,8)">
+			<ExFish Bait="Sinking Minnow" condition="not HasAtLeast(7709,&High_Perch;) and HasAtLeast(2617,1) and IsTimeBetween(5,8)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-121.0939, 12.21, -366.0357" Heading="3.868313" />
+					<FishSpot XYZ="-147.2776, 12.7062, -377.7298" Heading="1.248226" />
+					<FishSpot XYZ="-176.2276, 10.74121, -352.4113" Heading="0.5256584" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="High Perch" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

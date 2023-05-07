@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Bloodtail Zombie (24206)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Bloodtail_Zombie "1">
+]>
+<Profile>
+	<Name>Bloodtail Zombie</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Bloodtail Zombie..." />
+		<If condition="not HasAtLeast(20613,50)">
+			<!--Salmon Roe-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20613,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(0)">
+			<LisbethTravel Area="Rhalgr's Reach" XYZ="50.39249, 23.65948, -244.5867" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(7,8)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(24206,&Bloodtail_Zombie;) and HasAtLeast(20613,1) and IsTimeBetween(8,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(635, 'Clouds')">
+			<ExFish Bait="Salmon Roe" condition="not HasAtLeast(24206,&Bloodtail_Zombie;) and HasAtLeast(20613,1) and IsTimeBetween(8,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(635, 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="44.76076, 23.22876, -251.3672" Heading="4.212576" />
+					<FishSpot XYZ="36.58512, 23.22876, -275.3936" Heading="4.625172" />
+					<FishSpot XYZ="62.93483, 23.22876, -273.329" Heading="6.007465" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Bloodtail Zombie" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

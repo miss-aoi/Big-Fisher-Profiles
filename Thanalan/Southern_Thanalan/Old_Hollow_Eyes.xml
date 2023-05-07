@@ -1,46 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Old Hollow Eyes (7911)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Old_Hollow_Eyes "1">
+]>
 <Profile>
 	<Name>Old Hollow Eyes</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(7911,1)">
-			<Log Message="Start Fishing: Old Hollow Eyes..." />
-			<If condition="not HasAtLeast(2594,50)">
-				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-			</If>
-			<If condition="not IsOnSubMap(254)">
-				<LisbethTravel Area="Southern Thanalan" XYZ="35.99311, 3.396969, -349.1804" />
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<ExFish Bait="Butterworm" Condition="HasAtLeast(2594,1) and not HasAtLeast(7911,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Fog')"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
-				<PatienceTugs>
+		<Log Message="Starting Fishing: Old Hollow Eyes..." />
+		<If condition="not HasAtLeast(2594,50)">
+			<!--Butterworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(254)">
+			<LisbethTravel Area="Southern Thanalan" XYZ="35.99311, 3.396969, -349.1804" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7911,&Old_Hollow_Eyes;) and HasAtLeast(2594,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Fog')">
+			<ExFish Bait="Butterworm" condition="not HasAtLeast(7911,&Old_Hollow_Eyes;) and HasAtLeast(2594,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Heavy" />
-				</PatienceTugs>
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="23.47219, 3.685872, -342.0957" Heading="6.081415" />
+					<FishSpot XYZ="32.92961, 2.916063, -313.2552" Heading="4.592296" />
+					<FishSpot XYZ="37.10298, 2.982913, -332.3527" Heading="1.507254" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Old Hollow Eyes" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="23.47219, 3.685872, -342.0957" Heading="6.081415" Sit="True" />
-					<FishSpot XYZ="37.10298, 2.982913, -332.3527" Heading="1.507254" Sit="True" />
-					<FishSpot XYZ="32.92961, 2.916063, -313.2552" Heading="4.592296" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

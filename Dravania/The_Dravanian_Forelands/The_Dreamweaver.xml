@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Dreamweaver (15630)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Dreamweaver "1">
+]>
+<Profile>
+	<Name>The Dreamweaver</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Dreamweaver..." />
+		<If condition="not HasAtLeast(12711,50)">
+			<!--Brute Leech-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2020)">
+			<LisbethTravel Area="The Dravanian Forelands" XYZ="139.6231, -94.10959, 247.7244" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(21,22)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(15630,&The_Dreamweaver;) and HasAtLeast(12711,1) and (IsTimeBetween(22,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clouds', 'Dust Storms', 'Fog')">
+			<ExFish Bait="Brute Leech" condition="not HasAtLeast(15630,&The_Dreamweaver;) and HasAtLeast(12711,1) and (IsTimeBetween(22,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clouds', 'Dust Storms', 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="139.6231, -94.10959, 247.7244" Heading="2.956628" />
+					<FishSpot XYZ="149.6818, -91.39368, 213.1958" Heading="5.978841" />
+					<FishSpot XYZ="190.5107, -89.92871, 198.5515" Heading="4.743151" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Dreamweaver" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

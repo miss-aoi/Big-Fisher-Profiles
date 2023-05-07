@@ -1,72 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Charibenet (17592)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Charibenet "1">
+]>
 <Profile>
 	<Name>Charibenet</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(17592,1)">
-		<Log Message="Start Fishing: Charibenet..." />
+		<Log Message="Starting Fishing: Charibenet..." />
 		<If condition="not HasAtLeast(12705,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12705,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			<!--Purse Web Spider-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12705,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not HasAtLeast(28634,3)">
+			<!--Metal Spinner-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':28634,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2201)">
-			<LisbethTravel Area="Coerthas Western Highlands" XYZ="692.1117, 132.263, -797.5139"/>
+			<LisbethTravel Area="Coerthas Western Highlands" XYZ="692.1117, 132.263, -797.5139" />
 		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
+		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<Dismount/>
-		<If Condition="HasAtLeast(12715,1)">
-			<Desynth ItemIds="12715" DesynthDelay="6000" DesynthTimeout="10"/>
-		</If>
-		<While Condition="IsTimeBetween(23,24)">
+		<While condition="IsTimeBetween(-1,0)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While Condition="HasAtLeast(12705,1) and not HasAtLeast(17592,1) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')">
-			<ExFish Bait="Purse Web Spider" Condition="not HasAtLeast(17592,1) and not Core.Player.HasAura(568) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
-				<PatienceTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-				</PatienceTugs>
+		<While condition="not HasAtLeast(17592,&Charibenet;) and HasAtLeast(12705,1) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')">
+			<ExFish Bait="Metal Spinner" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17592,&Charibenet;) and HasAtLeast(12705,1) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-21.4197, 89.14197, -559.7135" Heading="4.573871" />
+					<FishSpot XYZ="-32.44563, 89.25902, -571.203" Heading="6.274516" />
+					<FishSpot XYZ="-48.33238, 89.17406, -557.7254" Heading="1.37154" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Ice Faerie" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-21.4197, 89.14197, -559.7135" Heading="4.573871" Sit="True" />
-					<FishSpot XYZ="-32.44563, 89.25902, -571.203" Heading="6.274516" Sit="True" />
-					<FishSpot XYZ="-48.33238, 89.17406, -557.7254" Heading="1.37154" Sit="True" />
-				</FishSpots>
 			</ExFish>
-			<ExFish Bait="Purse Web Spider" Condition="not HasAtLeast(17592,1) and Core.Player.HasAura(568) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Patience="Patience2"  MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
-				<PatienceTugs>
+			<ExFish Bait="Purse Web Spider" Condition="Core.Player.HasAura(568) and not HasAtLeast(17592,&Charibenet;) and HasAtLeast(12705,1) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
-				</PatienceTugs>
+					<PatienceTug moochLevel="1" TugType="Light" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-21.4197, 89.14197, -559.7135" Heading="4.573871" />
+					<FishSpot XYZ="-32.44563, 89.25902, -571.203" Heading="6.274516" />
+					<FishSpot XYZ="-48.33238, 89.17406, -557.7254" Heading="1.37154" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Charibenet" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-21.4197, 89.14197, -559.7135" Heading="4.573871" Sit="True" />
-					<FishSpot XYZ="-32.44563, 89.25902, -571.203" Heading="6.274516" Sit="True" />
-					<FishSpot XYZ="-48.33238, 89.17406, -557.7254" Heading="1.37154" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
 		</While>
-		<If Condition="HasAtLeast(12715,1)">
-			<Desynth ItemIds="12715" DesynthDelay="6000" DesynthTimeout="10"/>
+		<If condition="HasAtLeast(12715,1)">
+			<Desynth ItemIds="12715" DesynthDelay="6000" DesynthTimeout="10" />
 		</If>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

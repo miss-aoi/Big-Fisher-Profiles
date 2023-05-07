@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Sea Butterfly (17591)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Sea_Butterfly "1">
+]>
+<Profile>
+	<Name>Sea Butterfly</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Sea Butterfly..." />
+		<If condition="not HasAtLeast(12712,50)">
+			<!--Giant Crane Fly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12712,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not HasAtLeast(28634,3)">
+			<!--Metal Spinner-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':28634,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2129)">
+			<LisbethTravel Area="The Sea of Clouds" XYZ="-342.964, 20.93506, -820.5392" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(4,5)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(17591,&Sea_Butterfly;) and HasAtLeast(12712,1) and IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')">
+			<ExFish Bait="Metal Spinner" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17591,&Sea_Butterfly;) and HasAtLeast(12712,1) and IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-353.6552, 19.58649, -832.2133" Heading="3.856718" />
+					<FishSpot XYZ="-339.0728, 19.71094, -849.5245" Heading="4.007522" />
+					<FishSpot XYZ="-322.0511, 20.56616, -850.5399" Heading="1.887997" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Scorpionfly" />
+				</Keepers>
+			</ExFish>
+			<ExFish Bait="Giant Crane Fly" Condition="Core.Player.HasAura(568) and not HasAtLeast(17591,&Sea_Butterfly;) and HasAtLeast(12712,1) and IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-353.6552, 19.58649, -832.2133" Heading="3.856718" />
+					<FishSpot XYZ="-339.0728, 19.71094, -849.5245" Heading="4.007522" />
+					<FishSpot XYZ="-322.0511, 20.56616, -850.5399" Heading="1.887997" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Sea Butterfly" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<If condition="HasAtLeast(12810,1)">
+			<Desynth ItemIds="12810" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

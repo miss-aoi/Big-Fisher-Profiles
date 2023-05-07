@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Last Tear (24210)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Last_Tear "1">
+]>
+<Profile>
+	<Name>The Last Tear</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Last Tear..." />
+		<If condition="not HasAtLeast(20613,50)">
+			<!--Salmon Roe-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20613,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2605)">
+			<LisbethTravel Area="The Peaks" XYZ="519.6665, 220.8684, -678.6077" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(24210,&The_Last_Tear;) and HasAtLeast(20613,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(620, TimeSpan.FromHours(-8), 'Fog')">
+			<ExFish Bait="Salmon Roe" condition="not HasAtLeast(24210,&The_Last_Tear;) and HasAtLeast(20613,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(620, TimeSpan.FromHours(-8), 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="519.6665, 220.8684, -678.6077" Heading="2.033621" />
+					<FishSpot XYZ="563.2382, 220.8684, -674.5249" Heading="4.829638" />
+					<FishSpot XYZ="489.4137, 220.8684, -720.8292" Heading="5.786788" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Last Tear" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

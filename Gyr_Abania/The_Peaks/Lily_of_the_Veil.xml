@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Lily of the Veil (24881)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Lily_of_the_Veil "1">
+]>
+<Profile>
+	<Name>Lily of the Veil</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Lily of the Veil..." />
+		<If condition="not HasAtLeast(20619,3)">
+			<!--Suspending Minnow-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20619,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2663)">
+			<LisbethTravel Area="The Peaks" XYZ="-607.8173, 306.4372, 759.2416" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(24881,&Lily_of_the_Veil;) and HasAtLeast(20619,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(620, TimeSpan.FromHours(-8), 'Clear Skies')">
+			<ExFish Bait="Suspending Minnow" condition="not HasAtLeast(24881,&Lily_of_the_Veil;) and HasAtLeast(20619,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(620, TimeSpan.FromHours(-8), 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-613.9669, 306.4274, 760.2048" Heading="4.675731" />
+					<FishSpot XYZ="-610.2891, 306.2659, 744.2916" Heading="3.155199" />
+					<FishSpot XYZ="-600.3286, 306.4324, 774.2994" Heading="1.592787" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Lily of the Veil" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

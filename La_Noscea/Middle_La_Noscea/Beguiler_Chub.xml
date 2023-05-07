@@ -1,44 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Beguiler Chub (7679)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Beguiler_Chub "1">
+]>
 <Profile>
 	<Name>Beguiler Chub</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(7679,1)">
-		<Log Message="Start Fishing: Beguiler Chub..." />
+		<Log Message="Starting Fishing: Beguiler Chub..." />
 		<If condition="not HasAtLeast(2586,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2586,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
+			<!--Moth Pupa-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2586,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(162)">
-			<LisbethTravel Area="Middle La Noscea" XYZ="30.95881, 42.41599, 36.89365"/>
+			<LisbethTravel Area="Middle La Noscea" XYZ="30.95881, 42.41599, 36.89365" />
 		</If>
-		<While Condition="IsTimeBetween(8,9)">
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(8,9)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Moth Pupa" Condition="HasAtLeast(2586,1) and not HasAtLeast(7679,1) and IsTimeBetween(9,14)"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-			<Keepers>
-				<Keeper name="Beguiler Chub" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="-6.263493, 42.15689, 54.21851" Heading="5.079866" Sit="True" />
-				<FishSpot XYZ="34.12083, 42.41599, 36.45387" Heading="1.881725" Sit="True" />
-				<FishSpot XYZ="93.79761, 43.03065, 31.39412" Heading="1.598982" Sit="True" />
-			</FishSpots>
-		</ExFish>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<While condition="not HasAtLeast(7679,&Beguiler_Chub;) and HasAtLeast(2586,1) and IsTimeBetween(9,14)">
+			<ExFish Bait="Moth Pupa" condition="not HasAtLeast(7679,&Beguiler_Chub;) and HasAtLeast(2586,1) and IsTimeBetween(9,14)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-6.263493, 42.15689, 54.21851" Heading="5.079866" />
+					<FishSpot XYZ="34.12083, 42.41599, 36.45387" Heading="1.881725" />
+					<FishSpot XYZ="93.79761, 43.03065, 31.39412" Heading="1.598982" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Beguiler Chub" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

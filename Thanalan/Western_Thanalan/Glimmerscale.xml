@@ -1,41 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Glimmerscale (7714)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Glimmerscale "1">
+]>
 <Profile>
 	<Name>Glimmerscale</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(7714,1)">
-			<Log Message="Start Fishing: Glimmerscale..." />
-			<If condition="not HasAtLeast(2594,50)">
-				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-			</If>
-			<If condition="not IsOnSubMap(264)">
-				<LisbethTravel Area="Western Thanalan" XYZ="105.2502, 17.53689, 46.49154"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<ExFish Bait="Butterworm" Condition="HasAtLeast(2594,1) and not HasAtLeast(7714,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Clear Skies', 'Fair Skies')"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+		<Log Message="Starting Fishing: Glimmerscale..." />
+		<If condition="not HasAtLeast(2594,50)">
+			<!--Butterworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(264)">
+			<LisbethTravel Area="Western Thanalan" XYZ="105.2502, 17.53689, 46.49154" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7714,&Glimmerscale;) and HasAtLeast(2594,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Clear Skies', 'Fair Skies')">
+			<ExFish Bait="Butterworm" condition="not HasAtLeast(7714,&Glimmerscale;) and HasAtLeast(2594,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="106.4375, 17.53689, 44.56209" Heading="2.609307" />
+					<FishSpot XYZ="119.5265, 17.53689, 33.86742" Heading="2.795709" />
+					<FishSpot XYZ="124.6305, 17.53689, 6.207276" Heading="6.182345" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Glimmerscale" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="106.4375, 17.53689, 44.56209" Heading="2.609307" Sit="True" />
-					<FishSpot XYZ="119.5265, 17.53689, 33.86742" Heading="2.795709" Sit="True" />
-					<FishSpot XYZ="124.6305, 17.53689, 6.207276" Heading="6.182345" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

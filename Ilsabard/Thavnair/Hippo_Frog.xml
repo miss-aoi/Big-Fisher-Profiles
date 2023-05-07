@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Hippo Frog (36682)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Hippo_Frog "1">
+]>
+<Profile>
+	<Name>Hippo Frog</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Hippo Frog..." />
+		<If condition="not HasAtLeast(36591,50)">
+			<!--Mayfly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36591,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3889)">
+			<LisbethTravel Area="Thavnair" XYZ="-41.68946, 89.63309, -647.3694" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(36682,&Hippo_Frog;) and HasAtLeast(36591,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Shower')">
+			<ExFish Bait="Mayfly" condition="not HasAtLeast(36682,&Hippo_Frog;) and HasAtLeast(36591,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Shower')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-41.47999, 89.63315, -657.7039" Heading="2.995251" />
+					<FishSpot XYZ="-55.4754, 89.64625, -665.9265" Heading="2.144926" />
+					<FishSpot XYZ="-24.89498, 89.63316, -652.7765" Heading="2.863297" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Hippo Frog" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

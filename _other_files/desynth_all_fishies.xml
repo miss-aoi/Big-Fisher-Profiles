@@ -1,0 +1,3862 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Profile: Desynth All Fishies (Big and Small)
+	Authors: miss-aoi
+	Wil desynth all Big Fish - you have to do smalls yourself.
+	Be sure to update "1" as needed in Start.xml as needed
+-->
+<Profile>
+	<Name>Desynth All Fishies</Name>
+	<BehaviorDirectory></BehaviorDirectory>
+	<Order>
+		<If Condition="HasAtLeast(4925,1)"> <!-- Crayfish -->
+			<Desynth ItemIds="4925" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4927,1)"> <!-- Striped Goby -->
+			<Desynth ItemIds="4927" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4932,1)"> <!-- Pipira -->
+			<Desynth ItemIds="4932" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4934,1)"> <!-- Gudgeon -->
+			<Desynth ItemIds="4934" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4935,1)"> <!-- Brass Loach -->
+			<Desynth ItemIds="4935" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4936,1)"> <!-- Maiden Carp -->
+			<Desynth ItemIds="4936" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4952,1)"> <!-- Eunuch Crayfish -->
+			<Desynth ItemIds="4952" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7705,1)"> <!-- Chirurgeon -->
+			<Desynth ItemIds="7705" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4948,1)"> <!-- Copperfish -->
+			<Desynth ItemIds="4948" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4929,1)"> <!-- Bone Crayfish -->
+			<Desynth ItemIds="4929" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4947,1)"> <!-- Moat Carp -->
+			<Desynth ItemIds="4947" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4951,1)"> <!-- Tricolored Carp -->
+			<Desynth ItemIds="4951" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7700,1)"> <!-- Ghost Carp -->
+			<Desynth ItemIds="7700" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4958,1)"> <!-- Black Eel -->
+			<Desynth ItemIds="4958" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4942,1)"> <!-- Ala Mhigan Fighting Fish -->
+			<Desynth ItemIds="4942" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4975,1)"> <!-- Monke Onke -->
+			<Desynth ItemIds="4975" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4974,1)"> <!-- Mitten Crab -->
+			<Desynth ItemIds="4974" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4968,1)"> <!-- Spotted Pleco -->
+			<Desynth ItemIds="4968" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4973,1)"> <!-- Bonytongue -->
+			<Desynth ItemIds="4973" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7920,1)"> <!-- Levinlight -->
+			<Desynth ItemIds="7920" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4950,1)"> <!-- Mudcrab -->
+			<Desynth ItemIds="4950" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4964,1)"> <!-- Black Ghost -->
+			<Desynth ItemIds="4964" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4939,1)"> <!-- Mudskipper -->
+			<Desynth ItemIds="4939" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4979,1)"> <!-- Clown Loach -->
+			<Desynth ItemIds="4979" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4976,1)"> <!-- Seema -->
+			<Desynth ItemIds="4976" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7934,1)"> <!-- The Green Jester -->
+			<Desynth ItemIds="7934" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4941,1)"> <!-- River Crab -->
+			<Desynth ItemIds="4941" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4945,1)"> <!-- Dark Sleeper -->
+			<Desynth ItemIds="4945" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7694,1)"> <!-- Dark Ambusher -->
+			<Desynth ItemIds="7694" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4940,1)"> <!-- Rainbow Trout -->
+			<Desynth ItemIds="4940" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4962,1)"> <!-- Climbing Perch -->
+			<Desynth ItemIds="4962" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4967,1)"> <!-- Yugr'am Salmon -->
+			<Desynth ItemIds="4967" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4992,1)"> <!-- Fall Jumper -->
+			<Desynth ItemIds="4992" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7912,1)"> <!-- Sylphsbane -->
+			<Desynth ItemIds="7912" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4949,1)"> <!-- Bluebell Salmon -->
+			<Desynth ItemIds="4949" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7683,1)"> <!-- Moldva -->
+			<Desynth ItemIds="7683" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4981,1)"> <!-- Giant Bass -->
+			<Desynth ItemIds="4981" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4982,1)"> <!-- Velodyna Carp -->
+			<Desynth ItemIds="4982" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4994,1)"> <!-- Oakroot -->
+			<Desynth ItemIds="4994" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4995,1)"> <!-- Common Sculpin -->
+			<Desynth ItemIds="4995" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4996,1)"> <!-- Southern Pike -->
+			<Desynth ItemIds="4996" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5022,1)"> <!-- Mushroom Crab -->
+			<Desynth ItemIds="5022" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8773,1)"> <!-- Magicked Mushroom -->
+			<Desynth ItemIds="8773" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4944,1)"> <!-- Acorn Snail -->
+			<Desynth ItemIds="4944" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4954,1)"> <!-- Pond Mussel -->
+			<Desynth ItemIds="4954" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4959,1)"> <!-- Dark Bass -->
+			<Desynth ItemIds="4959" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7907,1)"> <!-- The Assassin -->
+			<Desynth ItemIds="7907" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4943,1)"> <!-- Faerie Bass -->
+			<Desynth ItemIds="4943" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7908,1)"> <!-- Vip Viper -->
+			<Desynth ItemIds="7908" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4961,1)"> <!-- Five-ilm Pleco -->
+			<Desynth ItemIds="4961" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4980,1)"> <!-- Armored Pleco -->
+			<Desynth ItemIds="4980" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7921,1)"> <!-- The Sinker -->
+			<Desynth ItemIds="7921" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7913,1)"> <!-- Floating Boulder -->
+			<Desynth ItemIds="7913" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7914,1)"> <!-- The Grinner -->
+			<Desynth ItemIds="7914" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4978,1)"> <!-- Silverfish -->
+			<Desynth ItemIds="4978" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5000,1)"> <!-- Goblin Perch -->
+			<Desynth ItemIds="5000" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7922,1)"> <!-- The Gobfather -->
+			<Desynth ItemIds="7922" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4972,1)"> <!-- Root Skipper -->
+			<Desynth ItemIds="4972" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5023,1)"> <!-- Judgment Staff -->
+			<Desynth ItemIds="5023" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7936,1)"> <!-- Son of Levin -->
+			<Desynth ItemIds="7936" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5008,1)"> <!-- Boxing Pleco -->
+			<Desynth ItemIds="5008" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5028,1)"> <!-- Takitaro -->
+			<Desynth ItemIds="5028" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8774,1)"> <!-- Giant Takitaro -->
+			<Desynth ItemIds="8774" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8775,1)"> <!-- Namitaro -->
+			<Desynth ItemIds="8775" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7699,1)"> <!-- Blue Widow -->
+			<Desynth ItemIds="7699" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4963,1)"> <!-- Shadow Catfish -->
+			<Desynth ItemIds="4963" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7695,1)"> <!-- Judgeray -->
+			<Desynth ItemIds="7695" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4984,1)"> <!-- Golden Loach -->
+			<Desynth ItemIds="4984" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4990,1)"> <!-- Loyal Pleco -->
+			<Desynth ItemIds="4990" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5029,1)"> <!-- Pirarucu -->
+			<Desynth ItemIds="5029" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7947,1)"> <!-- Shadowstreak -->
+			<Desynth ItemIds="7947" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5002,1)"> <!-- Assassin Betta -->
+			<Desynth ItemIds="5002" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5011,1)"> <!-- Goldfish -->
+			<Desynth ItemIds="5011" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5026,1)"> <!-- Bowfin -->
+			<Desynth ItemIds="5026" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8760,1)"> <!-- Cornelia -->
+			<Desynth ItemIds="8760" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5544,1)"> <!-- Lamp Marimo -->
+			<Desynth ItemIds="5544" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4989,1)"> <!-- Ignus Snail -->
+			<Desynth ItemIds="4989" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5003,1)"> <!-- Sludgeskipper -->
+			<Desynth ItemIds="5003" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5006,1)"> <!-- Ilsabardian Bass -->
+			<Desynth ItemIds="5006" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5027,1)"> <!-- Heliobatis -->
+			<Desynth ItemIds="5027" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7951,1)"> <!-- Aetherlouse -->
+			<Desynth ItemIds="7951" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4993,1)"> <!-- Knifefish -->
+			<Desynth ItemIds="4993" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5024,1)"> <!-- Poxpike -->
+			<Desynth ItemIds="5024" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8759,1)"> <!-- Void Bass -->
+			<Desynth ItemIds="8759" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5004,1)"> <!-- Boltfish -->
+			<Desynth ItemIds="5004" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5021,1)"> <!-- Cadaver Carp -->
+			<Desynth ItemIds="5021" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8761,1)"> <!-- Ninja Betta -->
+			<Desynth ItemIds="8761" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8758,1)"> <!-- Ignus Horn -->
+			<Desynth ItemIds="8758" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4986,1)"> <!-- Crimson Trout -->
+			<Desynth ItemIds="4986" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5009,1)"> <!-- Kissing Trout -->
+			<Desynth ItemIds="5009" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7932,1)"> <!-- Daniffen's Mark -->
+			<Desynth ItemIds="7932" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5038,1)"> <!-- Cloud Jellyfish -->
+			<Desynth ItemIds="5038" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5039,1)"> <!-- Skyfish -->
+			<Desynth ItemIds="5039" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5040,1)"> <!-- Cloud Cutter -->
+			<Desynth ItemIds="5040" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5041,1)"> <!-- Blind Manta -->
+			<Desynth ItemIds="5041" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5042,1)"> <!-- Rift Sailor -->
+			<Desynth ItemIds="5042" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5044,1)"> <!-- Saucerfish -->
+			<Desynth ItemIds="5044" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5046,1)"> <!-- Rhamphorhynchus -->
+			<Desynth ItemIds="5046" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8771,1)"> <!-- Mahar -->
+			<Desynth ItemIds="8771" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8772,1)"> <!-- Shonisaurus -->
+			<Desynth ItemIds="8772" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4937,1)"> <!-- Abalathian Smelt -->
+			<Desynth ItemIds="4937" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4988,1)"> <!-- Bronze Lake Trout -->
+			<Desynth ItemIds="4988" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4997,1)"> <!-- Northern Pike -->
+			<Desynth ItemIds="4997" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5025,1)"> <!-- Emperor Fish -->
+			<Desynth ItemIds="5025" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7945,1)"> <!-- Starbright -->
+			<Desynth ItemIds="7945" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5010,1)"> <!-- Angry Pike -->
+			<Desynth ItemIds="5010" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8769,1)"> <!-- Darkstar -->
+			<Desynth ItemIds="8769" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7944,1)"> <!-- Dawn Maiden -->
+			<Desynth ItemIds="7944" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4938,1)"> <!-- Blindfish -->
+			<Desynth ItemIds="4938" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5014,1)"> <!-- Cave Cherax -->
+			<Desynth ItemIds="5014" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7933,1)"> <!-- Charon's Lantern -->
+			<Desynth ItemIds="7933" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7946,1)"> <!-- The Matriarch -->
+			<Desynth ItemIds="7946" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5013,1)"> <!-- Wandering Sculpin -->
+			<Desynth ItemIds="5013" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8770,1)"> <!-- Blue Corpse -->
+			<Desynth ItemIds="8770" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7949,1)"> <!-- Anomalocaris -->
+			<Desynth ItemIds="7949" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4869,1)"> <!-- Merlthor Goby -->
+			<Desynth ItemIds="4869" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4870,1)"> <!-- Lominsan Anchovy -->
+			<Desynth ItemIds="4870" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4776,1)"> <!-- Malm Kelp -->
+			<Desynth ItemIds="4776" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4871,1)"> <!-- Finger Shrimp -->
+			<Desynth ItemIds="4871" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4872,1)"> <!-- Ocean Cloud -->
+			<Desynth ItemIds="4872" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4874,1)"> <!-- Harbor Herring -->
+			<Desynth ItemIds="4874" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4876,1)"> <!-- Coral Butterfly -->
+			<Desynth ItemIds="4876" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4885,1)"> <!-- Blue Octopus -->
+			<Desynth ItemIds="4885" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7707,1)"> <!-- Octomammoth -->
+			<Desynth ItemIds="7707" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7685,1)"> <!-- Goldenfin -->
+			<Desynth ItemIds="7685" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4873,1)"> <!-- Sea Cucumber -->
+			<Desynth ItemIds="4873" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4883,1)"> <!-- Angelfish -->
+			<Desynth ItemIds="4883" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7678,1)"> <!-- Zalera -->
+			<Desynth ItemIds="7678" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5460,1)"> <!-- White Coral -->
+			<Desynth ItemIds="5460" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4875,1)"> <!-- Vongola Clam -->
+			<Desynth ItemIds="4875" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4888,1)"> <!-- Ogre Barracuda -->
+			<Desynth ItemIds="4888" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4903,1)"> <!-- Silver Shark -->
+			<Desynth ItemIds="4903" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7686,1)"> <!-- Gigantshark -->
+			<Desynth ItemIds="7686" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4926,1)"> <!-- Chub -->
+			<Desynth ItemIds="4926" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4928,1)"> <!-- Dwarf Catfish -->
+			<Desynth ItemIds="4928" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4930,1)"> <!-- Princess Trout -->
+			<Desynth ItemIds="4930" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4946,1)"> <!-- La Noscean Perch -->
+			<Desynth ItemIds="4946" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7679,1)"> <!-- Beguiler Chub -->
+			<Desynth ItemIds="7679" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7688,1)"> <!-- Great Gudgeon -->
+			<Desynth ItemIds="7688" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4931,1)"> <!-- Dusk Goby -->
+			<Desynth ItemIds="4931" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7709,1)"> <!-- High Perch -->
+			<Desynth ItemIds="7709" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4956,1)"> <!-- Glass Perch -->
+			<Desynth ItemIds="4956" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7682,1)"> <!-- Crystal Perch -->
+			<Desynth ItemIds="7682" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7681,1)"> <!-- Caterwauler -->
+			<Desynth ItemIds="7681" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4877,1)"> <!-- Moraby Flounder -->
+			<Desynth ItemIds="4877" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4878,1)"> <!-- Pebble Crab -->
+			<Desynth ItemIds="4878" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7680,1)"> <!-- Oschon's Print -->
+			<Desynth ItemIds="7680" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4879,1)"> <!-- Tiger Cod -->
+			<Desynth ItemIds="4879" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4897,1)"> <!-- Leafy Seadragon -->
+			<Desynth ItemIds="4897" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7710,1)"> <!-- Syldra -->
+			<Desynth ItemIds="7710" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4881,1)"> <!-- Rothlyt Oyster -->
+			<Desynth ItemIds="4881" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4882,1)"> <!-- Navigator's Dagger -->
+			<Desynth ItemIds="4882" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7712,1)"> <!-- Jacques the Snipper -->
+			<Desynth ItemIds="7712" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4915,1)"> <!-- Mahi-mahi -->
+			<Desynth ItemIds="4915" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7690,1)"> <!-- Silver Sovereign -->
+			<Desynth ItemIds="7690" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4880,1)"> <!-- Helmet Crab -->
+			<Desynth ItemIds="4880" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4884,1)"> <!-- Razor Clam -->
+			<Desynth ItemIds="4884" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4886,1)"> <!-- Blowfish -->
+			<Desynth ItemIds="4886" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4890,1)"> <!-- Sea Bo -->
+			<Desynth ItemIds="4890" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4892,1)"> <!-- Black Sole -->
+			<Desynth ItemIds="4892" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(6185,1)"> <!-- Tiny Tortoise -->
+			<Desynth ItemIds="6185" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7903,1)"> <!-- Meteor Survivor -->
+			<Desynth ItemIds="7903" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4914,1)"> <!-- Shall Shell -->
+			<Desynth ItemIds="4914" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7691,1)"> <!-- Sabertooth Cod -->
+			<Desynth ItemIds="7691" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4933,1)"> <!-- Crimson Crayfish -->
+			<Desynth ItemIds="4933" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4970,1)"> <!-- Grip Killifish -->
+			<Desynth ItemIds="4970" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7697,1)"> <!-- Faerie Queen -->
+			<Desynth ItemIds="7697" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5461,1)"> <!-- Blue Coral -->
+			<Desynth ItemIds="5461" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4891,1)"> <!-- Bianaq Bream -->
+			<Desynth ItemIds="4891" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4898,1)"> <!-- Fullmoon Sardine -->
+			<Desynth ItemIds="4898" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(10123,1)"> <!-- Gigant Clam -->
+			<Desynth ItemIds="10123" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7909,1)"> <!-- The Greatest Bream in the World -->
+			<Desynth ItemIds="7909" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4895,1)"> <!-- Indigo Herring -->
+			<Desynth ItemIds="4895" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4896,1)"> <!-- Ash Tuna -->
+			<Desynth ItemIds="4896" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4901,1)"> <!-- Lavender Remora -->
+			<Desynth ItemIds="4901" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4913,1)"> <!-- Little Thalaos -->
+			<Desynth ItemIds="4913" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7915,1)"> <!-- Shark Tuna -->
+			<Desynth ItemIds="7915" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4894,1)"> <!-- Sea Pickle -->
+			<Desynth ItemIds="4894" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4900,1)"> <!-- Whitelip Oyster -->
+			<Desynth ItemIds="4900" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4902,1)"> <!-- Balloonfish -->
+			<Desynth ItemIds="4902" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5462,1)"> <!-- Red Coral -->
+			<Desynth ItemIds="5462" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4917,1)"> <!-- Mazlaya Marlin -->
+			<Desynth ItemIds="4917" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7924,1)"> <!-- Bombardfish -->
+			<Desynth ItemIds="7924" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4983,1)"> <!-- Spotted Puffer -->
+			<Desynth ItemIds="4983" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4987,1)"> <!-- Discus -->
+			<Desynth ItemIds="4987" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4998,1)"> <!-- Kobold Puffer -->
+			<Desynth ItemIds="4998" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7925,1)"> <!-- The Salter -->
+			<Desynth ItemIds="7925" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4965,1)"> <!-- Lamprey -->
+			<Desynth ItemIds="4965" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4999,1)"> <!-- Archerfish -->
+			<Desynth ItemIds="4999" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5001,1)"> <!-- Agelyss Carp -->
+			<Desynth ItemIds="5001" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7938,1)"> <!-- The Drowned Sniper -->
+			<Desynth ItemIds="7938" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4991,1)"> <!-- Thunderbolt Sculpin -->
+			<Desynth ItemIds="4991" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7939,1)"> <!-- The Terpsichorean -->
+			<Desynth ItemIds="7939" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5012,1)"> <!-- Vampire Lampern -->
+			<Desynth ItemIds="5012" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7940,1)"> <!-- Mirrorscale -->
+			<Desynth ItemIds="7940" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5031,1)"> <!-- Jungle Catfish -->
+			<Desynth ItemIds="5031" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8752,1)"> <!-- Imperial Goldfish -->
+			<Desynth ItemIds="8752" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4916,1)"> <!-- Halibut -->
+			<Desynth ItemIds="4916" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7687,1)"> <!-- Armorer -->
+			<Desynth ItemIds="7687" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4904,1)"> <!-- Wahoo -->
+			<Desynth ItemIds="4904" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4912,1)"> <!-- Goosefish -->
+			<Desynth ItemIds="4912" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7684,1)"> <!-- Junkmonger -->
+			<Desynth ItemIds="7684" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4887,1)"> <!-- Saber Sardine -->
+			<Desynth ItemIds="4887" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4893,1)"> <!-- Hammerhead Shark -->
+			<Desynth ItemIds="4893" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7926,1)"> <!-- The Lone Ripper -->
+			<Desynth ItemIds="7926" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4907,1)"> <!-- Pike Eel -->
+			<Desynth ItemIds="4907" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4921,1)"> <!-- Sunfish -->
+			<Desynth ItemIds="4921" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7941,1)"> <!-- Helmsman's Hand -->
+			<Desynth ItemIds="7941" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5466,1)"> <!-- Blacklip Oyster -->
+			<Desynth ItemIds="5466" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4906,1)"> <!-- Nautilus -->
+			<Desynth ItemIds="4906" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4908,1)"> <!-- Mummer Wrasse -->
+			<Desynth ItemIds="4908" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4909,1)"> <!-- Plaice -->
+			<Desynth ItemIds="4909" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4910,1)"> <!-- Sea Devil -->
+			<Desynth ItemIds="4910" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4918,1)"> <!-- Coelacanth -->
+			<Desynth ItemIds="4918" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8755,1)"> <!-- Coelacanthus -->
+			<Desynth ItemIds="8755" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8756,1)"> <!-- Endoceras -->
+			<Desynth ItemIds="8756" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4920,1)"> <!-- Gigant Octopus -->
+			<Desynth ItemIds="4920" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7693,1)"> <!-- Navigator's Brand -->
+			<Desynth ItemIds="7693" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4919,1)"> <!-- Giant Squid -->
+			<Desynth ItemIds="4919" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4923,1)"> <!-- Megalodon -->
+			<Desynth ItemIds="4923" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7950,1)"> <!-- Frilled Shark -->
+			<Desynth ItemIds="7950" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4953,1)"> <!-- Jade Eel -->
+			<Desynth ItemIds="4953" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4955,1)"> <!-- Warmwater Trout -->
+			<Desynth ItemIds="4955" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4957,1)"> <!-- Four-eyed Fish -->
+			<Desynth ItemIds="4957" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5015,1)"> <!-- Coeurlfish -->
+			<Desynth ItemIds="5015" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7905,1)"> <!-- Toramafish -->
+			<Desynth ItemIds="7905" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7904,1)"> <!-- Joan of Trout -->
+			<Desynth ItemIds="7904" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5020,1)"> <!-- Giant Catfish -->
+			<Desynth ItemIds="5020" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7927,1)"> <!-- King of the Spring -->
+			<Desynth ItemIds="7927" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4899,1)"> <!-- Haraldr Haddock -->
+			<Desynth ItemIds="4899" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4911,1)"> <!-- Rock Lobster -->
+			<Desynth ItemIds="4911" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7910,1)"> <!-- Dirty Herry -->
+			<Desynth ItemIds="7910" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7711,1)"> <!-- Rivet Oyster -->
+			<Desynth ItemIds="7711" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4889,1)"> <!-- Monkfish -->
+			<Desynth ItemIds="4889" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7906,1)"> <!-- Fingers -->
+			<Desynth ItemIds="7906" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7714,1)"> <!-- Glimmerscale -->
+			<Desynth ItemIds="7714" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7706,1)"> <!-- Mud Golem -->
+			<Desynth ItemIds="7706" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4924,1)"> <!-- Titanic Sawfish -->
+			<Desynth ItemIds="4924" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8764,1)"> <!-- Pirate's Bane -->
+			<Desynth ItemIds="8764" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7692,1)"> <!-- Dream Goby -->
+			<Desynth ItemIds="7692" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4960,1)"> <!-- Aegis Shrimp -->
+			<Desynth ItemIds="4960" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7698,1)"> <!-- Slime King -->
+			<Desynth ItemIds="7698" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7689,1)"> <!-- Dark Knight -->
+			<Desynth ItemIds="7689" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4971,1)"> <!-- Bone Cleaner -->
+			<Desynth ItemIds="4971" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7704,1)"> <!-- Marrow Sucker -->
+			<Desynth ItemIds="7704" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7702,1)"> <!-- Mud Pilgrim -->
+			<Desynth ItemIds="7702" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4985,1)"> <!-- Trader Eel -->
+			<Desynth ItemIds="4985" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7918,1)"> <!-- The Warden's Wand -->
+			<Desynth ItemIds="7918" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4905,1)"> <!-- Raincaller -->
+			<Desynth ItemIds="4905" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7708,1)"> <!-- Matron Carp -->
+			<Desynth ItemIds="7708" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(6191,1)"> <!-- Gigantpole -->
+			<Desynth ItemIds="6191" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5017,1)"> <!-- Sundisc -->
+			<Desynth ItemIds="5017" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7942,1)"> <!-- The Thousand-year Itch -->
+			<Desynth ItemIds="7942" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4966,1)"> <!-- Plaguefish -->
+			<Desynth ItemIds="4966" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7911,1)"> <!-- Old Hollow Eyes -->
+			<Desynth ItemIds="7911" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5007,1)"> <!-- Paglth'an Discus -->
+			<Desynth ItemIds="5007" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7928,1)"> <!-- Discobolus -->
+			<Desynth ItemIds="7928" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4969,1)"> <!-- Ropefish -->
+			<Desynth ItemIds="4969" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7929,1)"> <!-- Iron Noose -->
+			<Desynth ItemIds="7929" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4977,1)"> <!-- Sandfish -->
+			<Desynth ItemIds="4977" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5032,1)"> <!-- Sand Bream -->
+			<Desynth ItemIds="5032" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5034,1)"> <!-- Dustfish -->
+			<Desynth ItemIds="5034" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5035,1)"> <!-- Storm Rider -->
+			<Desynth ItemIds="5035" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5036,1)"> <!-- Antlion Slug -->
+			<Desynth ItemIds="5036" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5037,1)"> <!-- Dune Manta -->
+			<Desynth ItemIds="5037" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5043,1)"> <!-- Sagolii Monkfish -->
+			<Desynth ItemIds="5043" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7931,1)"> <!-- Magic Carpet -->
+			<Desynth ItemIds="7931" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8768,1)"> <!-- Helicoprion -->
+			<Desynth ItemIds="8768" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5033,1)"> <!-- Desert Catfish -->
+			<Desynth ItemIds="5033" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5045,1)"> <!-- Caravan Eel -->
+			<Desynth ItemIds="5045" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7930,1)"> <!-- Olgoi-Khorkhoi -->
+			<Desynth ItemIds="7930" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5019,1)"> <!-- Wootz Knifefish -->
+			<Desynth ItemIds="5019" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8767,1)"> <!-- Wootz Knifefish Zenith -->
+			<Desynth ItemIds="8767" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5005,1)"> <!-- Garpike -->
+			<Desynth ItemIds="5005" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5018,1)"> <!-- Alligator Garfish -->
+			<Desynth ItemIds="5018" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7943,1)"> <!-- Hannibal -->
+			<Desynth ItemIds="7943" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7713,1)"> <!-- Stormdancer -->
+			<Desynth ItemIds="7713" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7696,1)"> <!-- Bloody Brewer -->
+			<Desynth ItemIds="7696" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7935,1)"> <!-- Bloodbath -->
+			<Desynth ItemIds="7935" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8776,1)"> <!-- Blood Red Bonytongue -->
+			<Desynth ItemIds="8776" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5030,1)"> <!-- Morinabaligi -->
+			<Desynth ItemIds="5030" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8762,1)"> <!-- Canavan -->
+			<Desynth ItemIds="8762" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8763,1)"> <!-- Kuno the Killer -->
+			<Desynth ItemIds="8763" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8766,1)"> <!-- Bat-o'-Nine-Tails -->
+			<Desynth ItemIds="8766" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7703,1)"> <!-- Old Softie -->
+			<Desynth ItemIds="7703" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7902,1)"> <!-- Cupfish -->
+			<Desynth ItemIds="7902" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7916,1)"> <!-- Worm of Nym -->
+			<Desynth ItemIds="7916" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(5016,1)"> <!-- Giant Donko -->
+			<Desynth ItemIds="5016" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7937,1)"> <!-- Thundergut -->
+			<Desynth ItemIds="7937" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7701,1)"> <!-- Carp Diem -->
+			<Desynth ItemIds="7701" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7948,1)"> <!-- The Captain's Chalice -->
+			<Desynth ItemIds="7948" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(4922,1)"> <!-- Dinichthys -->
+			<Desynth ItemIds="4922" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8757,1)"> <!-- Seahag -->
+			<Desynth ItemIds="8757" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8765,1)"> <!-- Ndendecki -->
+			<Desynth ItemIds="8765" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7917,1)"> <!-- Twitchbeard -->
+			<Desynth ItemIds="7917" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7923,1)"> <!-- Sweetnewt -->
+			<Desynth ItemIds="7923" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(7919,1)"> <!-- Spearnose -->
+			<Desynth ItemIds="7919" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8753,1)"> <!-- The Old Man in the Sea -->
+			<Desynth ItemIds="8753" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(8754,1)"> <!-- Nepto Dragon -->
+			<Desynth ItemIds="8754" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12718,1)"> <!-- Coerthan Crab -->
+			<Desynth ItemIds="12718" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12762,1)"> <!-- Coerthan Puffer -->
+			<Desynth ItemIds="12762" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(15626,1)"> <!-- Fat Purse -->
+			<Desynth ItemIds="15626" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12714,1)"> <!-- Cloud Coral -->
+			<Desynth ItemIds="12714" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12716,1)"> <!-- Skyworm -->
+			<Desynth ItemIds="12716" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12724,1)"> <!-- Glacier Core -->
+			<Desynth ItemIds="12724" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12799,1)"> <!-- Warballoon -->
+			<Desynth ItemIds="12799" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12766,1)"> <!-- Rime Eater -->
+			<Desynth ItemIds="12766" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(16745,1)"> <!-- Hailfinder -->
+			<Desynth ItemIds="16745" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12713,1)"> <!-- Icepick -->
+			<Desynth ItemIds="12713" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12715,1)"> <!-- Ice Faerie -->
+			<Desynth ItemIds="12715" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12726,1)"> <!-- Sorcerer Fish -->
+			<Desynth ItemIds="12726" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12796,1)"> <!-- Albino Octopus -->
+			<Desynth ItemIds="12796" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(13728,1)"> <!-- Coerthan Clione -->
+			<Desynth ItemIds="13728" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(16746,1)"> <!-- Flarefish -->
+			<Desynth ItemIds="16746" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12727,1)"> <!-- Hotrod -->
+			<Desynth ItemIds="12727" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12837,1)"> <!-- Capelin -->
+			<Desynth ItemIds="12837" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(14216,1)"> <!-- Priestfish -->
+			<Desynth ItemIds="14216" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17563,1)"> <!-- Ghost Faerie -->
+			<Desynth ItemIds="17563" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17577,1)"> <!-- Bishopfish -->
+			<Desynth ItemIds="17577" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17592,1)"> <!-- Charibenet -->
+			<Desynth ItemIds="17592" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12725,1)"> <!-- Ogre Horn Snail -->
+			<Desynth ItemIds="12725" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12824,1)"> <!-- Cherry Trout -->
+			<Desynth ItemIds="12824" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12809,1)"> <!-- Hospitalier Fish -->
+			<Desynth ItemIds="12809" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12823,1)"> <!-- Spring Urchin -->
+			<Desynth ItemIds="12823" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29678,1)"> <!-- Dragonspine -->
+			<Desynth ItemIds="29678" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(15627,1)"> <!-- The Impaler -->
+			<Desynth ItemIds="15627" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12720,1)"> <!-- Lake Urchin -->
+			<Desynth ItemIds="12720" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12738,1)"> <!-- Ammonite -->
+			<Desynth ItemIds="12738" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12737,1)"> <!-- Seema Patrician -->
+			<Desynth ItemIds="12737" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12719,1)"> <!-- Fanged Clam -->
+			<Desynth ItemIds="12719" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(14219,1)"> <!-- Mountain Kraken -->
+			<Desynth ItemIds="14219" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(15439,1)"> <!-- Magic Bucket -->
+			<Desynth ItemIds="15439" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17578,1)"> <!-- Captain Nemo -->
+			<Desynth ItemIds="17578" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12748,1)"> <!-- Gigant Grouper -->
+			<Desynth ItemIds="12748" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12817,1)"> <!-- Battle Galley -->
+			<Desynth ItemIds="12817" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24557,1)"> <!-- Northern Oyster -->
+			<Desynth ItemIds="24557" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(15628,1)"> <!-- La Reale -->
+			<Desynth ItemIds="15628" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12765,1)"> <!-- Mercy Staff -->
+			<Desynth ItemIds="12765" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12763,1)"> <!-- Snowcaller -->
+			<Desynth ItemIds="12763" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(14217,1)"> <!-- Coerthan Oyster -->
+			<Desynth ItemIds="14217" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23073,1)"> <!-- Warmscale Pleco -->
+			<Desynth ItemIds="23073" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(16756,1)"> <!-- Merciless -->
+			<Desynth ItemIds="16756" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12721,1)"> <!-- Whilom Catfish -->
+			<Desynth ItemIds="12721" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12741,1)"> <!-- Pipira Pira -->
+			<Desynth ItemIds="12741" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12722,1)"> <!-- Blueclaw Shrimp -->
+			<Desynth ItemIds="12722" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12740,1)"> <!-- Grass Carp -->
+			<Desynth ItemIds="12740" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12769,1)"> <!-- Shadowhisker -->
+			<Desynth ItemIds="12769" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(13729,1)"> <!-- Dravanian Smelt -->
+			<Desynth ItemIds="13729" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17566,1)"> <!-- River Shrimp -->
+			<Desynth ItemIds="17566" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(15629,1)"> <!-- Scaleripper -->
+			<Desynth ItemIds="15629" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12733,1)"> <!-- Rock Mussel -->
+			<Desynth ItemIds="12733" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12729,1)"> <!-- Three-lip Carp -->
+			<Desynth ItemIds="12729" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12761,1)"> <!-- Dravanian Bass -->
+			<Desynth ItemIds="12761" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(16747,1)"> <!-- Twin-tongued Carp -->
+			<Desynth ItemIds="16747" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12767,1)"> <!-- Warmwater Bichir -->
+			<Desynth ItemIds="12767" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12750,1)"> <!-- Marble Oscar -->
+			<Desynth ItemIds="12750" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(15630,1)"> <!-- The Dreamweaver -->
+			<Desynth ItemIds="15630" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12764,1)"> <!-- Dragonhead -->
+			<Desynth ItemIds="12764" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12802,1)"> <!-- Caiman -->
+			<Desynth ItemIds="12802" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12828,1)"> <!-- Thunderbolt Eel -->
+			<Desynth ItemIds="12828" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(14211,1)"> <!-- Amber Salamander -->
+			<Desynth ItemIds="14211" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17582,1)"> <!-- Thunderscale -->
+			<Desynth ItemIds="17582" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12745,1)"> <!-- Lava Crab -->
+			<Desynth ItemIds="12745" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12754,1)"> <!-- Granite Crab -->
+			<Desynth ItemIds="12754" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12772,1)"> <!-- Cindersmith -->
+			<Desynth ItemIds="12772" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12787,1)"> <!-- Cometoise -->
+			<Desynth ItemIds="12787" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12820,1)"> <!-- Oven Catfish -->
+			<Desynth ItemIds="12820" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(15631,1)"> <!-- Meteortoise -->
+			<Desynth ItemIds="15631" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12755,1)"> <!-- Aithon's Colt -->
+			<Desynth ItemIds="12755" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12759,1)"> <!-- Magma Tree -->
+			<Desynth ItemIds="12759" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12826,1)"> <!-- Black Magefish -->
+			<Desynth ItemIds="12826" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(16751,1)"> <!-- Hraesvelgr's Tear -->
+			<Desynth ItemIds="16751" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12786,1)"> <!-- Magma Louse -->
+			<Desynth ItemIds="12786" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30488,1)"> <!-- Hoplite -->
+			<Desynth ItemIds="30488" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17583,1)"> <!-- Riddle -->
+			<Desynth ItemIds="17583" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12800,1)"> <!-- Fossiltongue -->
+			<Desynth ItemIds="12800" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12832,1)"> <!-- Lavalord -->
+			<Desynth ItemIds="12832" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(14215,1)"> <!-- Lava Snail -->
+			<Desynth ItemIds="14215" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17584,1)"> <!-- The Lord of Lords -->
+			<Desynth ItemIds="17584" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17588,1)"> <!-- Problematicus -->
+			<Desynth ItemIds="17588" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12757,1)"> <!-- Hedgemole Cricket -->
+			<Desynth ItemIds="12757" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12780,1)"> <!-- Sweetfish -->
+			<Desynth ItemIds="12780" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12790,1)"> <!-- Philosopher's Stone -->
+			<Desynth ItemIds="12790" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12756,1)"> <!-- Shipworm -->
+			<Desynth ItemIds="12756" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12783,1)"> <!-- Autumn Leaf -->
+			<Desynth ItemIds="12783" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12804,1)"> <!-- Illuminati Perch -->
+			<Desynth ItemIds="12804" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12819,1)"> <!-- Hinterlands Perch -->
+			<Desynth ItemIds="12819" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29673,1)"> <!-- Thinker's Coral -->
+			<Desynth ItemIds="29673" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(15632,1)"> <!-- The Ewer King -->
+			<Desynth ItemIds="15632" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12730,1)"> <!-- Bullfrog -->
+			<Desynth ItemIds="12730" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12818,1)"> <!-- Yalm Lobster -->
+			<Desynth ItemIds="12818" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12781,1)"> <!-- Orn Butterfly -->
+			<Desynth ItemIds="12781" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12752,1)"> <!-- Tigerfish -->
+			<Desynth ItemIds="12752" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(14212,1)"> <!-- Gnomefish -->
+			<Desynth ItemIds="14212" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33219,1)"> <!-- Dravanian Scallop -->
+			<Desynth ItemIds="33219" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(16748,1)"> <!-- Madam Butterfly -->
+			<Desynth ItemIds="16748" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12747,1)"> <!-- Scholar Sculpin -->
+			<Desynth ItemIds="12747" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12830,1)"> <!-- Loosetongue -->
+			<Desynth ItemIds="12830" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(14220,1)"> <!-- Armored Catfish -->
+			<Desynth ItemIds="14220" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17562,1)"> <!-- Thavnairian Leaf -->
+			<Desynth ItemIds="17562" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17585,1)"> <!-- The Speaker -->
+			<Desynth ItemIds="17585" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17590,1)"> <!-- Armor Fish -->
+			<Desynth ItemIds="17590" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12831,1)"> <!-- Thaliak Caiman -->
+			<Desynth ItemIds="12831" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12836,1)"> <!-- Berserker Betta -->
+			<Desynth ItemIds="12836" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(13732,1)"> <!-- Goblin Bass -->
+			<Desynth ItemIds="13732" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30492,1)"> <!-- Inkshell -->
+			<Desynth ItemIds="30492" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(16754,1)"> <!-- Bobgoblin Bass -->
+			<Desynth ItemIds="16754" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12731,1)"> <!-- Cloudfish -->
+			<Desynth ItemIds="12731" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12743,1)"> <!-- Kissing Fish -->
+			<Desynth ItemIds="12743" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12768,1)"> <!-- Noontide Oscar -->
+			<Desynth ItemIds="12768" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(15633,1)"> <!-- Vidofnir -->
+			<Desynth ItemIds="15633" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12758,1)"> <!-- Mogpom -->
+			<Desynth ItemIds="12758" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(16749,1)"> <!-- Moggle Mogpom -->
+			<Desynth ItemIds="16749" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36662,1)"> <!-- Holier-than Mogpom -->
+			<Desynth ItemIds="36662" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12742,1)"> <!-- Dravanian Squeaker -->
+			<Desynth ItemIds="12742" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12792,1)"> <!-- Weston Bowfin -->
+			<Desynth ItemIds="12792" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12782,1)"> <!-- Hundred Fin -->
+			<Desynth ItemIds="12782" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17565,1)"> <!-- Lovers' Clam -->
+			<Desynth ItemIds="17565" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23075,1)"> <!-- Illuminati Mask -->
+			<Desynth ItemIds="23075" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17586,1)"> <!-- Thousand Fin -->
+			<Desynth ItemIds="17586" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12753,1)"> <!-- Sky Faerie -->
+			<Desynth ItemIds="12753" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12795,1)"> <!-- Gloaming Coral -->
+			<Desynth ItemIds="12795" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12760,1)"> <!-- Cloud Rider -->
+			<Desynth ItemIds="12760" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12771,1)"> <!-- Blue Medusa -->
+			<Desynth ItemIds="12771" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12793,1)"> <!-- Letter Puffer -->
+			<Desynth ItemIds="12793" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12797,1)"> <!-- Dragon's Soul -->
+			<Desynth ItemIds="12797" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(13731,1)"> <!-- Sunsail -->
+			<Desynth ItemIds="13731" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(15634,1)"> <!-- The Soul of the Martyr -->
+			<Desynth ItemIds="15634" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12805,1)"> <!-- Rudderfish -->
+			<Desynth ItemIds="12805" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12770,1)"> <!-- Gobbie Mask -->
+			<Desynth ItemIds="12770" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12794,1)"> <!-- Star Faerie -->
+			<Desynth ItemIds="12794" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12821,1)"> <!-- Pteranodon -->
+			<Desynth ItemIds="12821" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(16742,1)"> <!-- Dimorphodon -->
+			<Desynth ItemIds="16742" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12784,1)"> <!-- Manasail -->
+			<Desynth ItemIds="12784" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12789,1)"> <!-- Brown Bolo -->
+			<Desynth ItemIds="12789" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12813,1)"> <!-- Cobrafish -->
+			<Desynth ItemIds="12813" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12835,1)"> <!-- Storm Chaser -->
+			<Desynth ItemIds="12835" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(14214,1)"> <!-- Nyctosaur -->
+			<Desynth ItemIds="14214" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17587,1)"> <!-- Bloodchaser -->
+			<Desynth ItemIds="17587" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17593,1)"> <!-- Raimdellopterus -->
+			<Desynth ItemIds="17593" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12728,1)"> <!-- Maiboi -->
+			<Desynth ItemIds="12728" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12739,1)"> <!-- Bubble Eye -->
+			<Desynth ItemIds="12739" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33220,1)"> <!-- Cloud Kelp -->
+			<Desynth ItemIds="33220" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(15635,1)"> <!-- Inkfish -->
+			<Desynth ItemIds="15635" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12749,1)"> <!-- Vanuhead -->
+			<Desynth ItemIds="12749" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12829,1)"> <!-- Catkiller -->
+			<Desynth ItemIds="12829" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17564,1)"> <!-- Red Sky Coral -->
+			<Desynth ItemIds="17564" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17579,1)"> <!-- Paikiller -->
+			<Desynth ItemIds="17579" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12723,1)"> <!-- Starflower -->
+			<Desynth ItemIds="12723" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12734,1)"> <!-- Buoyant Oviform -->
+			<Desynth ItemIds="12734" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12732,1)"> <!-- Mahu Wai -->
+			<Desynth ItemIds="12732" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12744,1)"> <!-- Mitre Slug -->
+			<Desynth ItemIds="12744" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12736,1)"> <!-- Blue Cloud Coral -->
+			<Desynth ItemIds="12736" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(14213,1)"> <!-- Fleece Stingray -->
+			<Desynth ItemIds="14213" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(16750,1)"> <!-- Cirrostratus -->
+			<Desynth ItemIds="16750" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12735,1)"> <!-- Whiteloom -->
+			<Desynth ItemIds="12735" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12746,1)"> <!-- Storm Core -->
+			<Desynth ItemIds="12746" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12822,1)"> <!-- Winged Gurnard -->
+			<Desynth ItemIds="12822" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12785,1)"> <!-- Sky Sweeper -->
+			<Desynth ItemIds="12785" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12798,1)"> <!-- Tornado Shark -->
+			<Desynth ItemIds="12798" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30490,1)"> <!-- Cloudweed -->
+			<Desynth ItemIds="30490" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(15636,1)"> <!-- The Second One -->
+			<Desynth ItemIds="15636" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12810,1)"> <!-- Scorpionfly -->
+			<Desynth ItemIds="12810" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12814,1)"> <!-- Moogle Spirit -->
+			<Desynth ItemIds="12814" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12834,1)"> <!-- Vampiric Tapestry -->
+			<Desynth ItemIds="12834" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(13730,1)"> <!-- Heavens Coral -->
+			<Desynth ItemIds="13730" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(16743,1)"> <!-- Basking Shark -->
+			<Desynth ItemIds="16743" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17591,1)"> <!-- Sea Butterfly -->
+			<Desynth ItemIds="17591" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12776,1)"> <!-- Platinum Fish -->
+			<Desynth ItemIds="12776" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12773,1)"> <!-- Bullwhip -->
+			<Desynth ItemIds="12773" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12812,1)"> <!-- Blood Skipper -->
+			<Desynth ItemIds="12812" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12775,1)"> <!-- High Allagan Helmet -->
+			<Desynth ItemIds="12775" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31134,1)"> <!-- Allagan Hunter -->
+			<Desynth ItemIds="31134" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(15637,1)"> <!-- Augmented High Allagan Helmet -->
+			<Desynth ItemIds="15637" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12788,1)"> <!-- Aetherochemical Compound #123 -->
+			<Desynth ItemIds="12788" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12801,1)"> <!-- Proto-hropken -->
+			<Desynth ItemIds="12801" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(16752,1)"> <!-- Aetherochemical Compound #666 -->
+			<Desynth ItemIds="16752" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12778,1)"> <!-- Azysfish -->
+			<Desynth ItemIds="12778" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12815,1)"> <!-- Oil Eel -->
+			<Desynth ItemIds="12815" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12807,1)"> <!-- Mucous Minnow -->
+			<Desynth ItemIds="12807" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(14218,1)"> <!-- Oliphant's Trunk -->
+			<Desynth ItemIds="14218" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17580,1)"> <!-- Ceti -->
+			<Desynth ItemIds="17580" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12791,1)"> <!-- Fountfish -->
+			<Desynth ItemIds="12791" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12811,1)"> <!-- Rockclimber -->
+			<Desynth ItemIds="12811" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12777,1)"> <!-- Aether Eye -->
+			<Desynth ItemIds="12777" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12803,1)"> <!-- Euphotic Pirarucu -->
+			<Desynth ItemIds="12803" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31771,1)"> <!-- Pickled Pom -->
+			<Desynth ItemIds="31771" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(15638,1)"> <!-- Aphotic Pirarucu -->
+			<Desynth ItemIds="15638" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12779,1)"> <!-- Crystalfin -->
+			<Desynth ItemIds="12779" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12751,1)"> <!-- Lungfish -->
+			<Desynth ItemIds="12751" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12774,1)"> <!-- Tiny Axolotl -->
+			<Desynth ItemIds="12774" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31770,1)"> <!-- Flintstrike -->
+			<Desynth ItemIds="31770" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(16753,1)"> <!-- Hundred-eyed Axolotl -->
+			<Desynth ItemIds="16753" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12808,1)"> <!-- Unidentified Flying Biomass -->
+			<Desynth ItemIds="12808" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12806,1)"> <!-- Bomb Puffer -->
+			<Desynth ItemIds="12806" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12833,1)"> <!-- Tupuxuara -->
+			<Desynth ItemIds="12833" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12825,1)"> <!-- Stupendemys -->
+			<Desynth ItemIds="12825" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17581,1)"> <!-- Crystal Pigeon -->
+			<Desynth ItemIds="17581" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12816,1)"> <!-- Jeweled Jellyfish -->
+			<Desynth ItemIds="12816" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(12827,1)"> <!-- Barreleye -->
+			<Desynth ItemIds="12827" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(13727,1)"> <!-- Functional Proto-hropken -->
+			<Desynth ItemIds="13727" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(16744,1)"> <!-- Allagan Bladeshark -->
+			<Desynth ItemIds="16744" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17589,1)"> <!-- Opabinia -->
+			<Desynth ItemIds="17589" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20524,1)"> <!-- Castaway Chocobo Chick -->
+			<Desynth ItemIds="20524" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20143,1)"> <!-- Little Perykos -->
+			<Desynth ItemIds="20143" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20092,1)"> <!-- Grinning Anchovy -->
+			<Desynth ItemIds="20092" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20112,1)"> <!-- Ruby Shrimp -->
+			<Desynth ItemIds="20112" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20113,1)"> <!-- Striped Fugu -->
+			<Desynth ItemIds="20113" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20110,1)"> <!-- Glass Tuna -->
+			<Desynth ItemIds="20110" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20054,1)"> <!-- Hanatatsu -->
+			<Desynth ItemIds="20054" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22396,1)"> <!-- Ribbon Eel -->
+			<Desynth ItemIds="22396" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23063,1)"> <!-- Rising Dragon -->
+			<Desynth ItemIds="23063" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20093,1)"> <!-- Glass Herring -->
+			<Desynth ItemIds="20093" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20037,1)"> <!-- Coeurl Snake Eel -->
+			<Desynth ItemIds="20037" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20786,1)"> <!-- Coral Horse -->
+			<Desynth ItemIds="20786" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24214,1)"> <!-- Ku'er -->
+			<Desynth ItemIds="24214" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24993,1)"> <!-- The Ruby Dragon -->
+			<Desynth ItemIds="24993" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20094,1)"> <!-- Hellyfish -->
+			<Desynth ItemIds="20094" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20109,1)"> <!-- Blockhead -->
+			<Desynth ItemIds="20109" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20018,1)"> <!-- Liopleurodon -->
+			<Desynth ItemIds="20018" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(21176,1)"> <!-- Ukiki -->
+			<Desynth ItemIds="21176" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23054,1)"> <!-- Shrieker -->
+			<Desynth ItemIds="23054" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24560,1)"> <!-- Wicked Wartfish -->
+			<Desynth ItemIds="24560" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24882,1)"> <!-- The Vegetarian -->
+			<Desynth ItemIds="24882" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20099,1)"> <!-- Dafu -->
+			<Desynth ItemIds="20099" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20034,1)"> <!-- Tawny Wench Shark -->
+			<Desynth ItemIds="20034" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22393,1)"> <!-- Usuginu Octopus -->
+			<Desynth ItemIds="22393" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30491,1)"> <!-- Fatty Herring -->
+			<Desynth ItemIds="30491" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24883,1)"> <!-- Seven Stars -->
+			<Desynth ItemIds="24883" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20095,1)"> <!-- Ruby Coral -->
+			<Desynth ItemIds="20095" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20096,1)"> <!-- Sapphire Coral -->
+			<Desynth ItemIds="20096" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20097,1)"> <!-- Bone Coral -->
+			<Desynth ItemIds="20097" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20098,1)"> <!-- Butterfly Fish -->
+			<Desynth ItemIds="20098" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20048,1)"> <!-- Harutsuge -->
+			<Desynth ItemIds="20048" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24558,1)"> <!-- Ruby Laver -->
+			<Desynth ItemIds="24558" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23065,1)"> <!-- The Winter Queen -->
+			<Desynth ItemIds="23065" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17950,1)"> <!-- Harutsuge Sprag -->
+			<Desynth ItemIds="17950" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20101,1)"> <!-- Leaf Tatsunoko -->
+			<Desynth ItemIds="20101" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20102,1)"> <!-- Glass Flounder -->
+			<Desynth ItemIds="20102" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20022,1)"> <!-- Blackfin Snake Eel -->
+			<Desynth ItemIds="20022" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20100,1)"> <!-- Swordfish -->
+			<Desynth ItemIds="20100" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30489,1)"> <!-- Hook Fish -->
+			<Desynth ItemIds="30489" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24215,1)"> <!-- Argonautica -->
+			<Desynth ItemIds="24215" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17952,1)"> <!-- Giant Plesiosaur -->
+			<Desynth ItemIds="17952" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20106,1)"> <!-- Gliding Fish -->
+			<Desynth ItemIds="20106" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20107,1)"> <!-- Globefish -->
+			<Desynth ItemIds="20107" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20108,1)"> <!-- Fan Clam -->
+			<Desynth ItemIds="20108" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20032,1)"> <!-- Ruby Meagre -->
+			<Desynth ItemIds="20032" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22390,1)"> <!-- Triplespine -->
+			<Desynth ItemIds="22390" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23074,1)"> <!-- Shirogane Clam -->
+			<Desynth ItemIds="23074" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24884,1)"> <!-- Pinhead -->
+			<Desynth ItemIds="24884" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20104,1)"> <!-- Daio Squid -->
+			<Desynth ItemIds="20104" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20105,1)"> <!-- Koromo Octopus -->
+			<Desynth ItemIds="20105" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20038,1)"> <!-- Zekki Grouper -->
+			<Desynth ItemIds="20038" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20103,1)"> <!-- Zekki Gator -->
+			<Desynth ItemIds="20103" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23066,1)"> <!-- Rakshasa -->
+			<Desynth ItemIds="23066" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20123,1)"> <!-- Doman Trout -->
+			<Desynth ItemIds="20123" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20111,1)"> <!-- Doman Crayfish -->
+			<Desynth ItemIds="20111" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20787,1)"> <!-- Maiden's Heart -->
+			<Desynth ItemIds="20787" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24885,1)"> <!-- Pomegranate Trout -->
+			<Desynth ItemIds="24885" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20046,1)"> <!-- River Barramundi -->
+			<Desynth ItemIds="20046" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24886,1)"> <!-- Glarramundi -->
+			<Desynth ItemIds="24886" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20137,1)"> <!-- Nogoi -->
+			<Desynth ItemIds="20137" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24887,1)"> <!-- Hermit's End -->
+			<Desynth ItemIds="24887" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20052,1)"> <!-- Yellow Prismfish -->
+			<Desynth ItemIds="20052" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20053,1)"> <!-- Blue Prismfish -->
+			<Desynth ItemIds="20053" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(21177,1)"> <!-- Violet Prismfish -->
+			<Desynth ItemIds="21177" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22397,1)"> <!-- Red Prismfish -->
+			<Desynth ItemIds="22397" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23055,1)"> <!-- White Goldfish -->
+			<Desynth ItemIds="23055" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23056,1)"> <!-- Firelight Goldfish -->
+			<Desynth ItemIds="23056" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24203,1)"> <!-- Indigo Prismfish -->
+			<Desynth ItemIds="24203" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24204,1)"> <!-- Green Prismfish -->
+			<Desynth ItemIds="24204" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24994,1)"> <!-- Warden of the Seven Hues -->
+			<Desynth ItemIds="24994" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20124,1)"> <!-- Doman Eel -->
+			<Desynth ItemIds="20124" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24890,1)"> <!-- The Unraveled Bow -->
+			<Desynth ItemIds="24890" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20028,1)"> <!-- Samurai Fish -->
+			<Desynth ItemIds="20028" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20115,1)"> <!-- Blank Oscar -->
+			<Desynth ItemIds="20115" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20116,1)"> <!-- Dragonfish -->
+			<Desynth ItemIds="20116" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20114,1)"> <!-- Raitonfish -->
+			<Desynth ItemIds="20114" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23067,1)"> <!-- Bokuden -->
+			<Desynth ItemIds="23067" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20027,1)"> <!-- Doman Grass Carp -->
+			<Desynth ItemIds="20027" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20117,1)"> <!-- Lordly Salmon -->
+			<Desynth ItemIds="20117" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20119,1)"> <!-- Kotsu Zetsu -->
+			<Desynth ItemIds="20119" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33222,1)"> <!-- White Clam -->
+			<Desynth ItemIds="33222" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24888,1)"> <!-- Suiten Ippeki -->
+			<Desynth ItemIds="24888" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20118,1)"> <!-- Yanxian Koi -->
+			<Desynth ItemIds="20118" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20120,1)"> <!-- Longhair Catfish -->
+			<Desynth ItemIds="20120" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20020,1)"> <!-- Yanxian Barramundi -->
+			<Desynth ItemIds="20020" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24561,1)"> <!-- Othardian Salmon -->
+			<Desynth ItemIds="24561" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24889,1)"> <!-- Axelrod -->
+			<Desynth ItemIds="24889" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20021,1)"> <!-- Seraphim -->
+			<Desynth ItemIds="20021" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24216,1)"> <!-- Hagoromo Bijin -->
+			<Desynth ItemIds="24216" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20122,1)"> <!-- Pandamoth -->
+			<Desynth ItemIds="20122" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20051,1)"> <!-- Silken Koi -->
+			<Desynth ItemIds="20051" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20121,1)"> <!-- Plum Gazer -->
+			<Desynth ItemIds="20121" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31129,1)"> <!-- Petal Shell -->
+			<Desynth ItemIds="31129" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23068,1)"> <!-- Hagoromo Koi -->
+			<Desynth ItemIds="23068" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20036,1)"> <!-- Killifish -->
+			<Desynth ItemIds="20036" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20126,1)"> <!-- Othardian Trout -->
+			<Desynth ItemIds="20126" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20127,1)"> <!-- Zagas Khaal -->
+			<Desynth ItemIds="20127" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20128,1)"> <!-- Steppe Skipper -->
+			<Desynth ItemIds="20128" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20132,1)"> <!-- Dawn Crayfish -->
+			<Desynth ItemIds="20132" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24892,1)"> <!-- Garden Skipper -->
+			<Desynth ItemIds="24892" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20138,1)"> <!-- Curtain Pleco -->
+			<Desynth ItemIds="20138" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20129,1)"> <!-- Dry Steppe Skipper -->
+			<Desynth ItemIds="20129" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20133,1)"> <!-- Dusk Crayfish -->
+			<Desynth ItemIds="20133" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20030,1)"> <!-- Hak Bitterling -->
+			<Desynth ItemIds="20030" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24893,1)"> <!-- Banderole -->
+			<Desynth ItemIds="24893" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20023,1)"> <!-- Tail Mountains Minnow -->
+			<Desynth ItemIds="20023" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20131,1)"> <!-- Skytear -->
+			<Desynth ItemIds="20131" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24218,1)"> <!-- Blade Skipper -->
+			<Desynth ItemIds="24218" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22668,1)"> <!-- Sunshell -->
+			<Desynth ItemIds="22668" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22675,1)"> <!-- Fatty Eel -->
+			<Desynth ItemIds="22675" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22685,1)"> <!-- Leatherscale -->
+			<Desynth ItemIds="22685" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22692,1)"> <!-- Appleseed -->
+			<Desynth ItemIds="22692" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20130,1)"> <!-- Sun Bass -->
+			<Desynth ItemIds="20130" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20140,1)"> <!-- Hardscale -->
+			<Desynth ItemIds="20140" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20024,1)"> <!-- Sweatfish -->
+			<Desynth ItemIds="20024" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(21178,1)"> <!-- Guppy -->
+			<Desynth ItemIds="21178" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24217,1)"> <!-- Duskfish -->
+			<Desynth ItemIds="24217" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22670,1)"> <!-- Water Fan -->
+			<Desynth ItemIds="22670" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22678,1)"> <!-- Gigas Catfish -->
+			<Desynth ItemIds="22678" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22681,1)"> <!-- Greasy Strangler -->
+			<Desynth ItemIds="22681" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22687,1)"> <!-- Spikefish -->
+			<Desynth ItemIds="22687" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20134,1)"> <!-- Bowfish -->
+			<Desynth ItemIds="20134" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20044,1)"> <!-- Tao Bitterling -->
+			<Desynth ItemIds="20044" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22398,1)"> <!-- Elder Gourami -->
+			<Desynth ItemIds="22398" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23069,1)"> <!-- The Word of God -->
+			<Desynth ItemIds="23069" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22674,1)"> <!-- Fish Offering -->
+			<Desynth ItemIds="22674" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22677,1)"> <!-- Zagas A'khaal -->
+			<Desynth ItemIds="22677" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22680,1)"> <!-- Steppe Sweetfish -->
+			<Desynth ItemIds="22680" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22684,1)"> <!-- Moon Oyster -->
+			<Desynth ItemIds="22684" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20031,1)"> <!-- Yat Goby -->
+			<Desynth ItemIds="20031" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20135,1)"> <!-- Jade Sculpin -->
+			<Desynth ItemIds="20135" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33223,1)"> <!-- Fragrant Sweetfish -->
+			<Desynth ItemIds="33223" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23070,1)"> <!-- Yat Khan -->
+			<Desynth ItemIds="23070" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22676,1)"> <!-- Crimson Copperfish -->
+			<Desynth ItemIds="22676" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22686,1)"> <!-- Dusk Scallop -->
+			<Desynth ItemIds="22686" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22690,1)"> <!-- Granite Hardscale -->
+			<Desynth ItemIds="22690" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23171,1)"> <!-- Fishy Fish -->
+			<Desynth ItemIds="23171" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20125,1)"> <!-- Brassfish -->
+			<Desynth ItemIds="20125" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20080,1)"> <!-- Nhaama's Boon -->
+			<Desynth ItemIds="20080" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24891,1)"> <!-- Nhaama's Treasure -->
+			<Desynth ItemIds="24891" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24995,1)"> <!-- The Unconditional -->
+			<Desynth ItemIds="24995" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22669,1)"> <!-- Steppe Barramundi -->
+			<Desynth ItemIds="22669" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22671,1)"> <!-- Arrowhead Snail -->
+			<Desynth ItemIds="22671" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22691,1)"> <!-- Plump Trout -->
+			<Desynth ItemIds="22691" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22693,1)"> <!-- Crawling Cog -->
+			<Desynth ItemIds="22693" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20042,1)"> <!-- Abalathian Bitterling -->
+			<Desynth ItemIds="20042" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20055,1)"> <!-- Broken Crab -->
+			<Desynth ItemIds="20055" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20058,1)"> <!-- Miounnefish -->
+			<Desynth ItemIds="20058" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20056,1)"> <!-- Gyr Abanian Trout -->
+			<Desynth ItemIds="20056" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20057,1)"> <!-- Bloodsipper -->
+			<Desynth ItemIds="20057" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23057,1)"> <!-- Hookstealer -->
+			<Desynth ItemIds="23057" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20029,1)"> <!-- Golden Cichlid -->
+			<Desynth ItemIds="20029" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20062,1)"> <!-- Temple Carp -->
+			<Desynth ItemIds="20062" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20059,1)"> <!-- Monk Betta -->
+			<Desynth ItemIds="20059" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20060,1)"> <!-- Electric Catfish -->
+			<Desynth ItemIds="20060" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20061,1)"> <!-- Pagan Pirarucu -->
+			<Desynth ItemIds="20061" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24205,1)"> <!-- Watcher Catfish -->
+			<Desynth ItemIds="24205" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20026,1)"> <!-- Comet Minnow -->
+			<Desynth ItemIds="20026" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20064,1)"> <!-- Balloon Frog -->
+			<Desynth ItemIds="20064" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20065,1)"> <!-- Lantern Marimo -->
+			<Desynth ItemIds="20065" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20063,1)"> <!-- Gilfish -->
+			<Desynth ItemIds="20063" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22392,1)"> <!-- Redtail -->
+			<Desynth ItemIds="22392" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24206,1)"> <!-- Bloodtail Zombie -->
+			<Desynth ItemIds="24206" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20049,1)"> <!-- Steelhead Trout -->
+			<Desynth ItemIds="20049" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20066,1)"> <!-- Death Loach -->
+			<Desynth ItemIds="20066" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20785,1)"> <!-- Gyr Abanian Chub -->
+			<Desynth ItemIds="20785" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24207,1)"> <!-- Hardhead Trout -->
+			<Desynth ItemIds="24207" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24990,1)"> <!-- Xenacanthus -->
+			<Desynth ItemIds="24990" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20082,1)"> <!-- Bone Melter -->
+			<Desynth ItemIds="20082" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20083,1)"> <!-- Fallen Leaf -->
+			<Desynth ItemIds="20083" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20136,1)"> <!-- Padjali Loach -->
+			<Desynth ItemIds="20136" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20081,1)"> <!-- Cave Killifish -->
+			<Desynth ItemIds="20081" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20142,1)"> <!-- Wraithfish -->
+			<Desynth ItemIds="20142" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24559,1)"> <!-- Chakrafish -->
+			<Desynth ItemIds="24559" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23058,1)"> <!-- Sapphire Fan -->
+			<Desynth ItemIds="23058" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20084,1)"> <!-- Falling Star -->
+			<Desynth ItemIds="20084" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20085,1)"> <!-- Capsized Squeaker -->
+			<Desynth ItemIds="20085" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20086,1)"> <!-- Nirvana Crab -->
+			<Desynth ItemIds="20086" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(21174,1)"> <!-- Cardinalfish -->
+			<Desynth ItemIds="21174" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23072,1)"> <!-- Lake Sphairai -->
+			<Desynth ItemIds="23072" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23059,1)"> <!-- The Archbishop -->
+			<Desynth ItemIds="23059" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20087,1)"> <!-- Velodyna Grass Carp -->
+			<Desynth ItemIds="20087" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20033,1)"> <!-- Greenstream Loach -->
+			<Desynth ItemIds="20033" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20088,1)"> <!-- Black Velodyna Carp -->
+			<Desynth ItemIds="20088" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20788,1)"> <!-- Velodyna Salmon -->
+			<Desynth ItemIds="20788" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24208,1)"> <!-- Downstream Loach -->
+			<Desynth ItemIds="24208" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(17949,1)"> <!-- Deep Velodyna Carp -->
+			<Desynth ItemIds="17949" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20090,1)"> <!-- Highland Perch -->
+			<Desynth ItemIds="20090" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20047,1)"> <!-- Mirage Chub -->
+			<Desynth ItemIds="20047" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20091,1)"> <!-- Gravel Gudgeon -->
+			<Desynth ItemIds="20091" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20089,1)"> <!-- Rhalgr's Bolt -->
+			<Desynth ItemIds="20089" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22389,1)"> <!-- Mirage Mahi -->
+			<Desynth ItemIds="22389" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33221,1)"> <!-- Scarlet Frog -->
+			<Desynth ItemIds="33221" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24209,1)"> <!-- Corpse Chub -->
+			<Desynth ItemIds="24209" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20067,1)"> <!-- Grymm Crab -->
+			<Desynth ItemIds="20067" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20068,1)"> <!-- Enid Shrimp -->
+			<Desynth ItemIds="20068" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23071,1)"> <!-- Curefish -->
+			<Desynth ItemIds="23071" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23060,1)"> <!-- Bondsplitter -->
+			<Desynth ItemIds="23060" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24991,1)"> <!-- Drepanaspis -->
+			<Desynth ItemIds="24991" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20045,1)"> <!-- Idle Goby -->
+			<Desynth ItemIds="20045" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20070,1)"> <!-- Rapids Jumper -->
+			<Desynth ItemIds="20070" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20050,1)"> <!-- Heather Charr -->
+			<Desynth ItemIds="20050" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20069,1)"> <!-- Invisible Crayfish -->
+			<Desynth ItemIds="20069" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23061,1)"> <!-- The Undecided -->
+			<Desynth ItemIds="23061" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20072,1)"> <!-- Adamantite Bichir -->
+			<Desynth ItemIds="20072" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20071,1)"> <!-- Abalathian Salamander -->
+			<Desynth ItemIds="20071" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20043,1)"> <!-- Steelshark -->
+			<Desynth ItemIds="20043" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20789,1)"> <!-- Purple Buckler -->
+			<Desynth ItemIds="20789" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24210,1)"> <!-- The Last Tear -->
+			<Desynth ItemIds="24210" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20073,1)"> <!-- Meditator -->
+			<Desynth ItemIds="20073" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20075,1)"> <!-- Stonytongue -->
+			<Desynth ItemIds="20075" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20074,1)"> <!-- Deemster -->
+			<Desynth ItemIds="20074" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24212,1)"> <!-- Moksha -->
+			<Desynth ItemIds="24212" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20076,1)"> <!-- Bull's Bite -->
+			<Desynth ItemIds="20076" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20077,1)"> <!-- Peeping Pisces -->
+			<Desynth ItemIds="20077" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22391,1)"> <!-- Alligator Snapping Turtle -->
+			<Desynth ItemIds="22391" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24211,1)"> <!-- Hemon -->
+			<Desynth ItemIds="24211" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20079,1)"> <!-- Gigant Bass -->
+			<Desynth ItemIds="20079" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20141,1)"> <!-- Eastern Pike -->
+			<Desynth ItemIds="20141" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20078,1)"> <!-- Scimitarfish -->
+			<Desynth ItemIds="20078" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20019,1)"> <!-- Ala Mhigan Ribbon -->
+			<Desynth ItemIds="20019" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(21175,1)"> <!-- Rockfish -->
+			<Desynth ItemIds="21175" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24881,1)"> <!-- Lily of the Veil -->
+			<Desynth ItemIds="24881" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20025,1)"> <!-- Rock Saltfish -->
+			<Desynth ItemIds="20025" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20039,1)"> <!-- Saltshield Snapper -->
+			<Desynth ItemIds="20039" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20035,1)"> <!-- Whitehorse -->
+			<Desynth ItemIds="20035" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20041,1)"> <!-- Pearl-eye -->
+			<Desynth ItemIds="20041" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(20040,1)"> <!-- Sculptor -->
+			<Desynth ItemIds="20040" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22394,1)"> <!-- Saltmill -->
+			<Desynth ItemIds="22394" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23062,1)"> <!-- Diamond-eye -->
+			<Desynth ItemIds="23062" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24992,1)"> <!-- Stethacanthus -->
+			<Desynth ItemIds="24992" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(23064,1)"> <!-- The Gambler -->
+			<Desynth ItemIds="23064" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(22395,1)"> <!-- Bonsai Fish -->
+			<Desynth ItemIds="22395" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(24213,1)"> <!-- Princess Killifish -->
+			<Desynth ItemIds="24213" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27417,1)"> <!-- Crystal Knife -->
+			<Desynth ItemIds="27417" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27411,1)"> <!-- Laxan Carp -->
+			<Desynth ItemIds="27411" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27412,1)"> <!-- Asteroidea -->
+			<Desynth ItemIds="27412" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27414,1)"> <!-- Lover's Flower -->
+			<Desynth ItemIds="27414" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27413,1)"> <!-- Jacketed Snail -->
+			<Desynth ItemIds="27413" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33316,1)"> <!-- Aster Trivi -->
+			<Desynth ItemIds="33316" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27415,1)"> <!-- Sinspitter -->
+			<Desynth ItemIds="27415" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27416,1)"> <!-- Wandering Catfish -->
+			<Desynth ItemIds="27416" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30432,1)"> <!-- The Sinsteeped -->
+			<Desynth ItemIds="30432" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27410,1)"> <!-- Crystarium Tetra -->
+			<Desynth ItemIds="27410" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27418,1)"> <!-- Skeletonfish -->
+			<Desynth ItemIds="27418" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28065,1)"> <!-- Loose Pendant -->
+			<Desynth ItemIds="28065" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(26746,1)"> <!-- Eighteyes Eel -->
+			<Desynth ItemIds="26746" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27425,1)"> <!-- Hard Candy -->
+			<Desynth ItemIds="27425" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27427,1)"> <!-- Abyssal Snail -->
+			<Desynth ItemIds="27427" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27426,1)"> <!-- Water Ball -->
+			<Desynth ItemIds="27426" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27431,1)"> <!-- Albino Caiman -->
+			<Desynth ItemIds="27431" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30433,1)"> <!-- Sweetheart -->
+			<Desynth ItemIds="30433" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27433,1)"> <!-- Misty Killifish -->
+			<Desynth ItemIds="27433" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27432,1)"> <!-- Platinum Guppy -->
+			<Desynth ItemIds="27432" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32049,1)"> <!-- Moonlight Guppy -->
+			<Desynth ItemIds="32049" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27428,1)"> <!-- Clean Saucer -->
+			<Desynth ItemIds="27428" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27429,1)"> <!-- Rabbit Skipper -->
+			<Desynth ItemIds="27429" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27430,1)"> <!-- Xanthic Bass -->
+			<Desynth ItemIds="27430" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27434,1)"> <!-- Albino Rock Crab -->
+			<Desynth ItemIds="27434" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28189,1)"> <!-- Laxan Inkhorn -->
+			<Desynth ItemIds="28189" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(38792,1)"> <!-- Platinum Seahorse -->
+			<Desynth ItemIds="38792" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28067,1)"> <!-- The Unforgiven -->
+			<Desynth ItemIds="28067" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27435,1)"> <!-- Snakeskin Discus -->
+			<Desynth ItemIds="27435" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33317,1)"> <!-- Python Discus -->
+			<Desynth ItemIds="33317" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27436,1)"> <!-- Albino Garfish -->
+			<Desynth ItemIds="27436" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27437,1)"> <!-- Vicejaw -->
+			<Desynth ItemIds="27437" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28925,1)"> <!-- The Jaws of Undeath -->
+			<Desynth ItemIds="28925" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33239,1)"> <!-- Listracanthus -->
+			<Desynth ItemIds="33239" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27516,1)"> <!-- Grey Carp -->
+			<Desynth ItemIds="27516" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27523,1)"> <!-- Shade Gudgeon -->
+			<Desynth ItemIds="27523" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27524,1)"> <!-- Lakethistle -->
+			<Desynth ItemIds="27524" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27525,1)"> <!-- Platinum Bream -->
+			<Desynth ItemIds="27525" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27527,1)"> <!-- Finned Eggplant -->
+			<Desynth ItemIds="27527" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27526,1)"> <!-- Wardenfish -->
+			<Desynth ItemIds="27526" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27438,1)"> <!-- Skulleater -->
+			<Desynth ItemIds="27438" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27439,1)"> <!-- Toffee Snail -->
+			<Desynth ItemIds="27439" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27440,1)"> <!-- Watts Trout -->
+			<Desynth ItemIds="27440" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27441,1)"> <!-- Hucho Taimen -->
+			<Desynth ItemIds="27441" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27442,1)"> <!-- Winged Hatchetfish -->
+			<Desynth ItemIds="27442" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30434,1)"> <!-- Giant Taimen -->
+			<Desynth ItemIds="30434" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27443,1)"> <!-- Noble's Fan -->
+			<Desynth ItemIds="27443" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28190,1)"> <!-- White Oil Perch -->
+			<Desynth ItemIds="28190" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32050,1)"> <!-- Steel Fan -->
+			<Desynth ItemIds="32050" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27444,1)"> <!-- Zebra Catfish -->
+			<Desynth ItemIds="27444" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28926,1)"> <!-- White Ronso -->
+			<Desynth ItemIds="28926" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27445,1)"> <!-- Sepia Sole -->
+			<Desynth ItemIds="27445" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28068,1)"> <!-- Bronze Sole -->
+			<Desynth ItemIds="28068" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27449,1)"> <!-- South Kholusian Cod -->
+			<Desynth ItemIds="27449" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27448,1)"> <!-- Kholusian Flounder -->
+			<Desynth ItemIds="27448" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27446,1)"> <!-- Shellfracture Kelp -->
+			<Desynth ItemIds="27446" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(26747,1)"> <!-- Creamy Oyster -->
+			<Desynth ItemIds="26747" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27451,1)"> <!-- Rose Shrimp -->
+			<Desynth ItemIds="27451" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27450,1)"> <!-- Razorfish -->
+			<Desynth ItemIds="27450" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28193,1)"> <!-- Kholusian King Crab -->
+			<Desynth ItemIds="28193" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30487,1)"> <!-- Blue Crab -->
+			<Desynth ItemIds="30487" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33318,1)"> <!-- Steel Razor -->
+			<Desynth ItemIds="33318" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27447,1)"> <!-- Blood Cloud -->
+			<Desynth ItemIds="27447" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27452,1)"> <!-- Shapeshifter -->
+			<Desynth ItemIds="27452" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27453,1)"> <!-- Minstrelfish -->
+			<Desynth ItemIds="27453" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(38793,1)"> <!-- Clavekeeper -->
+			<Desynth ItemIds="38793" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33319,1)"> <!-- Shadeshifter -->
+			<Desynth ItemIds="33319" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33240,1)"> <!-- Aquamaton -->
+			<Desynth ItemIds="33240" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27457,1)"> <!-- Spearhead Squid -->
+			<Desynth ItemIds="27457" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27454,1)"> <!-- Kholusian Wrasse -->
+			<Desynth ItemIds="27454" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27455,1)"> <!-- Weedy Seadragon -->
+			<Desynth ItemIds="27455" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27456,1)"> <!-- Henodus -->
+			<Desynth ItemIds="27456" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(38810,1)"> <!-- Ondo Kelp -->
+			<Desynth ItemIds="38810" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32051,1)"> <!-- Henodus Grandis -->
+			<Desynth ItemIds="32051" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27419,1)"> <!-- Milky Coral -->
+			<Desynth ItemIds="27419" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27420,1)"> <!-- Gravel Mussel -->
+			<Desynth ItemIds="27420" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27422,1)"> <!-- Bonefish -->
+			<Desynth ItemIds="27422" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27421,1)"> <!-- Crimson Sea Spider -->
+			<Desynth ItemIds="27421" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27423,1)"> <!-- Eulmore Butterfly -->
+			<Desynth ItemIds="27423" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27424,1)"> <!-- Red Hammerhead -->
+			<Desynth ItemIds="27424" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28066,1)"> <!-- Winged Dame -->
+			<Desynth ItemIds="28066" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27458,1)"> <!-- Shadow Crab -->
+			<Desynth ItemIds="27458" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27459,1)"> <!-- Desert Dustfish -->
+			<Desynth ItemIds="27459" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27462,1)"> <!-- Sand Egg -->
+			<Desynth ItemIds="27462" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27460,1)"> <!-- Hornhelm -->
+			<Desynth ItemIds="27460" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27461,1)"> <!-- Web-footed Sand Gecko -->
+			<Desynth ItemIds="27461" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28069,1)"> <!-- The Horned King -->
+			<Desynth ItemIds="28069" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33241,1)"> <!-- Cinder Surprise -->
+			<Desynth ItemIds="33241" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27465,1)"> <!-- Garik Crab -->
+			<Desynth ItemIds="27465" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27466,1)"> <!-- Nabaath Manta -->
+			<Desynth ItemIds="27466" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(26749,1)"> <!-- Amber Monkfish -->
+			<Desynth ItemIds="26749" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27467,1)"> <!-- Thorned Lizard -->
+			<Desynth ItemIds="27467" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28927,1)"> <!-- Ambling Caltrop -->
+			<Desynth ItemIds="28927" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27463,1)"> <!-- Amber Lamprey -->
+			<Desynth ItemIds="27463" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27464,1)"> <!-- Desert Saw -->
+			<Desynth ItemIds="27464" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28192,1)"> <!-- Areng Dire -->
+			<Desynth ItemIds="28192" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33320,1)"> <!-- Nabaath Saw -->
+			<Desynth ItemIds="33320" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27470,1)"> <!-- Grey Skipper -->
+			<Desynth ItemIds="27470" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27471,1)"> <!-- Pixie Fish -->
+			<Desynth ItemIds="27471" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27475,1)"> <!-- Lemonfish -->
+			<Desynth ItemIds="27475" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27474,1)"> <!-- Wimple Carp -->
+			<Desynth ItemIds="27474" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28191,1)"> <!-- Faeshine Clam -->
+			<Desynth ItemIds="28191" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(38798,1)"> <!-- Mirror Image -->
+			<Desynth ItemIds="38798" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30435,1)"> <!-- Leannisg -->
+			<Desynth ItemIds="30435" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27479,1)"> <!-- Cerulean Loach -->
+			<Desynth ItemIds="27479" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27469,1)"> <!-- Official Ball -->
+			<Desynth ItemIds="27469" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27476,1)"> <!-- Rebel -->
+			<Desynth ItemIds="27476" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27477,1)"> <!-- Wild Red Betta -->
+			<Desynth ItemIds="27477" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30593,1)"> <!-- Fuchsia Bloom -->
+			<Desynth ItemIds="30593" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28070,1)"> <!-- The Sound of Fury -->
+			<Desynth ItemIds="28070" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33242,1)"> <!-- Ealad Skaan -->
+			<Desynth ItemIds="33242" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(26750,1)"> <!-- Calico Trout -->
+			<Desynth ItemIds="26750" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27472,1)"> <!-- Blood-eyed Frog -->
+			<Desynth ItemIds="27472" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27478,1)"> <!-- Spotted Ctenopoma -->
+			<Desynth ItemIds="27478" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32052,1)"> <!-- Sunken Tome -->
+			<Desynth ItemIds="32052" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27468,1)"> <!-- Spotted Blue-eye -->
+			<Desynth ItemIds="27468" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28928,1)"> <!-- Fae Rainbow -->
+			<Desynth ItemIds="28928" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27481,1)"> <!-- Toadhead -->
+			<Desynth ItemIds="27481" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33322,1)"> <!-- Celestial -->
+			<Desynth ItemIds="33322" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(26748,1)"> <!-- Brightmirror Clam -->
+			<Desynth ItemIds="26748" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27473,1)"> <!-- Cherry Herring -->
+			<Desynth ItemIds="27473" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33321,1)"> <!-- Dammroen Herring -->
+			<Desynth ItemIds="33321" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27480,1)"> <!-- Golden Lobster -->
+			<Desynth ItemIds="27480" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30436,1)"> <!-- Gold Hammer -->
+			<Desynth ItemIds="30436" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27482,1)"> <!-- Clawbow -->
+			<Desynth ItemIds="27482" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27486,1)"> <!-- Yellow Pipira -->
+			<Desynth ItemIds="27486" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27484,1)"> <!-- Robber Crab -->
+			<Desynth ItemIds="27484" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27490,1)"> <!-- Clown Tetra -->
+			<Desynth ItemIds="27490" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27491,1)"> <!-- Eryops -->
+			<Desynth ItemIds="27491" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(38799,1)"> <!-- Spangled Pirarucu -->
+			<Desynth ItemIds="38799" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28071,1)"> <!-- Priest of Yx'Lokwa -->
+			<Desynth ItemIds="28071" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33243,1)"> <!-- Greater Serpent of Ronka -->
+			<Desynth ItemIds="33243" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27487,1)"> <!-- Oathfish -->
+			<Desynth ItemIds="27487" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27485,1)"> <!-- Darkroot -->
+			<Desynth ItemIds="27485" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27492,1)"> <!-- Diamond Pipira -->
+			<Desynth ItemIds="27492" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32053,1)"> <!-- Pearl Pipira -->
+			<Desynth ItemIds="32053" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27489,1)"> <!-- Rak'tika Trout -->
+			<Desynth ItemIds="27489" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27488,1)"> <!-- Night's Bass -->
+			<Desynth ItemIds="27488" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27483,1)"> <!-- Black Tri-star -->
+			<Desynth ItemIds="27483" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28929,1)"> <!-- Black Jet -->
+			<Desynth ItemIds="28929" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27493,1)"> <!-- Silver Kitten -->
+			<Desynth ItemIds="27493" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30437,1)"> <!-- Recordkiller -->
+			<Desynth ItemIds="30437" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27494,1)"> <!-- Darkdweller -->
+			<Desynth ItemIds="27494" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33323,1)"> <!-- Deephaunt -->
+			<Desynth ItemIds="33323" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27497,1)"> <!-- Stormfish -->
+			<Desynth ItemIds="27497" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27495,1)"> <!-- Deep Purple Coral -->
+			<Desynth ItemIds="27495" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27499,1)"> <!-- Caliban -->
+			<Desynth ItemIds="27499" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27501,1)"> <!-- Bubble Angler -->
+			<Desynth ItemIds="27501" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27502,1)"> <!-- Ondo Harpoon -->
+			<Desynth ItemIds="27502" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28930,1)"> <!-- Ondo Sigh -->
+			<Desynth ItemIds="28930" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27504,1)"> <!-- Stippled Eel -->
+			<Desynth ItemIds="27504" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27503,1)"> <!-- Ondobane -->
+			<Desynth ItemIds="27503" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32054,1)"> <!-- The Ondotaker -->
+			<Desynth ItemIds="32054" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27496,1)"> <!-- Sycorax -->
+			<Desynth ItemIds="27496" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27500,1)"> <!-- Hoodwinker -->
+			<Desynth ItemIds="27500" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27505,1)"> <!-- Seatrap -->
+			<Desynth ItemIds="27505" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28719,1)"> <!-- Sweetmeat Mussel -->
+			<Desynth ItemIds="28719" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33325,1)"> <!-- Mora Tecta -->
+			<Desynth ItemIds="33325" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33244,1)"> <!-- Lancetfish -->
+			<Desynth ItemIds="33244" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27506,1)"> <!-- Ancient Shrimp -->
+			<Desynth ItemIds="27506" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27507,1)"> <!-- Yeti Crab -->
+			<Desynth ItemIds="27507" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27508,1)"> <!-- Aapoak -->
+			<Desynth ItemIds="27508" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33326,1)"> <!-- Maru Crab -->
+			<Desynth ItemIds="33326" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27509,1)"> <!-- Cyan Sea Devil -->
+			<Desynth ItemIds="27509" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27510,1)"> <!-- Pancake Octopus -->
+			<Desynth ItemIds="27510" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30438,1)"> <!-- The Mother of All Pancakes -->
+			<Desynth ItemIds="30438" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27511,1)"> <!-- Maneater Clam -->
+			<Desynth ItemIds="27511" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27498,1)"> <!-- Azure Sea Spider -->
+			<Desynth ItemIds="27498" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27512,1)"> <!-- Stargazer -->
+			<Desynth ItemIds="27512" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(38812,1)"> <!-- Purpure Cod -->
+			<Desynth ItemIds="38812" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28072,1)"> <!-- Starchaser -->
+			<Desynth ItemIds="28072" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27513,1)"> <!-- Sweetflesh Oyster -->
+			<Desynth ItemIds="27513" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27514,1)"> <!-- Rainbow Shrimp -->
+			<Desynth ItemIds="27514" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(27515,1)"> <!-- Predator -->
+			<Desynth ItemIds="27515" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(38814,1)"> <!-- Il Lydha -->
+			<Desynth ItemIds="38814" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30439,1)"> <!-- Opal Shrimp -->
+			<Desynth ItemIds="30439" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(26751,1)"> <!-- Prospero Eel -->
+			<Desynth ItemIds="26751" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28937,1)"> <!-- Galadion Goby -->
+			<Desynth ItemIds="28937" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28938,1)"> <!-- Galadion Chovy -->
+			<Desynth ItemIds="28938" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29723,1)"> <!-- Leopard Eel -->
+			<Desynth ItemIds="29723" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29719,1)"> <!-- Jasperhead -->
+			<Desynth ItemIds="29719" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28942,1)"> <!-- Tarnished Shark -->
+			<Desynth ItemIds="28942" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28939,1)"> <!-- Rosy Bream -->
+			<Desynth ItemIds="28939" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29734,1)"> <!-- Cyan Octopus -->
+			<Desynth ItemIds="29734" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29721,1)"> <!-- Heavenswimmer -->
+			<Desynth ItemIds="29721" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29784,1)"> <!-- Spectral Megalodon -->
+			<Desynth ItemIds="29784" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29744,1)"> <!-- Drunkfish -->
+			<Desynth ItemIds="29744" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29766,1)"> <!-- Merman's Mane -->
+			<Desynth ItemIds="29766" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29749,1)"> <!-- Heavenskey -->
+			<Desynth ItemIds="29749" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29750,1)"> <!-- Ghost Shark -->
+			<Desynth ItemIds="29750" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29754,1)"> <!-- Fishmonger -->
+			<Desynth ItemIds="29754" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29752,1)"> <!-- Navigator's Print -->
+			<Desynth ItemIds="29752" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29753,1)"> <!-- Casket Oyster -->
+			<Desynth ItemIds="29753" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29751,1)"> <!-- Quicksilver Blade -->
+			<Desynth ItemIds="29751" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29782,1)"> <!-- Funnel Shark -->
+			<Desynth ItemIds="29782" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29756,1)"> <!-- Nimble Dancer -->
+			<Desynth ItemIds="29756" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29788,1)"> <!-- Sothis -->
+			<Desynth ItemIds="29788" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29722,1)"> <!-- Ghoul Barracuda -->
+			<Desynth ItemIds="29722" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29739,1)"> <!-- La Noscean Jelly -->
+			<Desynth ItemIds="29739" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28941,1)"> <!-- Sunfly -->
+			<Desynth ItemIds="28941" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29724,1)"> <!-- Marine Bomb -->
+			<Desynth ItemIds="29724" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29740,1)"> <!-- Shaggy Seadragon -->
+			<Desynth ItemIds="29740" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29725,1)"> <!-- Momora Mora -->
+			<Desynth ItemIds="29725" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29726,1)"> <!-- Merlthor Butterfly -->
+			<Desynth ItemIds="29726" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29727,1)"> <!-- Gladius -->
+			<Desynth ItemIds="29727" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29785,1)"> <!-- Spectral Discus -->
+			<Desynth ItemIds="29785" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29745,1)"> <!-- Little Leviathan -->
+			<Desynth ItemIds="29745" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29757,1)"> <!-- Sea Nettle -->
+			<Desynth ItemIds="29757" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29758,1)"> <!-- Great Grandmarlin -->
+			<Desynth ItemIds="29758" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29759,1)"> <!-- Shipwreck's Sail -->
+			<Desynth ItemIds="29759" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29779,1)"> <!-- Charlatan Survivor -->
+			<Desynth ItemIds="29779" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29761,1)"> <!-- Hi-aetherlouse -->
+			<Desynth ItemIds="29761" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29760,1)"> <!-- Azeyma's Sleeve -->
+			<Desynth ItemIds="29760" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29763,1)"> <!-- Aetheric Seadragon -->
+			<Desynth ItemIds="29763" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29755,1)"> <!-- Mythril Sovereign -->
+			<Desynth ItemIds="29755" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29765,1)"> <!-- Roguesaurus -->
+			<Desynth ItemIds="29765" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29789,1)"> <!-- Coral Manta -->
+			<Desynth ItemIds="29789" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29728,1)"> <!-- Rhotano Wahoo -->
+			<Desynth ItemIds="29728" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29729,1)"> <!-- Rhotano Sardine -->
+			<Desynth ItemIds="29729" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29730,1)"> <!-- Deep Plaice -->
+			<Desynth ItemIds="29730" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29731,1)"> <!-- Crimson Monkfish -->
+			<Desynth ItemIds="29731" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29735,1)"> <!-- Chrome Hammerhead -->
+			<Desynth ItemIds="29735" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29733,1)"> <!-- Ogre Eel -->
+			<Desynth ItemIds="29733" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29742,1)"> <!-- Dark Nautilus -->
+			<Desynth ItemIds="29742" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29732,1)"> <!-- Lampfish -->
+			<Desynth ItemIds="29732" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29787,1)"> <!-- Spectral Bass -->
+			<Desynth ItemIds="29787" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29746,1)"> <!-- Sabaton -->
+			<Desynth ItemIds="29746" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29775,1)"> <!-- Aronnax -->
+			<Desynth ItemIds="29775" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29767,1)"> <!-- Sweeper -->
+			<Desynth ItemIds="29767" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29768,1)"> <!-- Silencer -->
+			<Desynth ItemIds="29768" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29769,1)"> <!-- Deep-sea Eel -->
+			<Desynth ItemIds="29769" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29770,1)"> <!-- Executioner -->
+			<Desynth ItemIds="29770" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29762,1)"> <!-- Floating Saucer -->
+			<Desynth ItemIds="29762" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29772,1)"> <!-- True Barramundi -->
+			<Desynth ItemIds="29772" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29780,1)"> <!-- Prodigal Son -->
+			<Desynth ItemIds="29780" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29774,1)"> <!-- Slipsnail -->
+			<Desynth ItemIds="29774" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29790,1)"> <!-- Stonescale -->
+			<Desynth ItemIds="29790" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29736,1)"> <!-- Floefish -->
+			<Desynth ItemIds="29736" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29737,1)"> <!-- Megasquid -->
+			<Desynth ItemIds="29737" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29738,1)"> <!-- Oschon's Stone -->
+			<Desynth ItemIds="29738" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29718,1)"> <!-- Tossed Dagger -->
+			<Desynth ItemIds="29718" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(28940,1)"> <!-- Tripod Fish -->
+			<Desynth ItemIds="28940" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29741,1)"> <!-- Net Crawler -->
+			<Desynth ItemIds="29741" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29720,1)"> <!-- Merlthor Lobster -->
+			<Desynth ItemIds="29720" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29743,1)"> <!-- Elder Dinichthys -->
+			<Desynth ItemIds="29743" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29786,1)"> <!-- Spectral Sea Bo -->
+			<Desynth ItemIds="29786" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29747,1)"> <!-- Shooting Star -->
+			<Desynth ItemIds="29747" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29748,1)"> <!-- Hammerclaw -->
+			<Desynth ItemIds="29748" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29776,1)"> <!-- Coccosteus -->
+			<Desynth ItemIds="29776" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29777,1)"> <!-- Bartholomew the Chopper -->
+			<Desynth ItemIds="29777" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29778,1)"> <!-- Prowler -->
+			<Desynth ItemIds="29778" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29773,1)"> <!-- Mopbeard -->
+			<Desynth ItemIds="29773" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29771,1)"> <!-- Wild Urchin -->
+			<Desynth ItemIds="29771" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29781,1)"> <!-- Gugrusaurus -->
+			<Desynth ItemIds="29781" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29764,1)"> <!-- Coral Seadragon -->
+			<Desynth ItemIds="29764" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29783,1)"> <!-- The Fallen One -->
+			<Desynth ItemIds="29783" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29791,1)"> <!-- Elasmosaurus -->
+			<Desynth ItemIds="29791" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(33324,1)"> <!-- Golden Pipira -->
+			<Desynth ItemIds="33324" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32055,1)"> <!-- Tortoiseshell Crab -->
+			<Desynth ItemIds="32055" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32056,1)"> <!-- Lady's Cameo -->
+			<Desynth ItemIds="32056" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32057,1)"> <!-- Metallic Boxfish -->
+			<Desynth ItemIds="32057" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32058,1)"> <!-- Goobbue Ray -->
+			<Desynth ItemIds="32058" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32059,1)"> <!-- Watermoura -->
+			<Desynth ItemIds="32059" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32060,1)"> <!-- King Cobrafish -->
+			<Desynth ItemIds="32060" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32061,1)"> <!-- Mamahi-mahi -->
+			<Desynth ItemIds="32061" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32062,1)"> <!-- Lavandin Remora -->
+			<Desynth ItemIds="32062" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32063,1)"> <!-- Spectral Butterfly -->
+			<Desynth ItemIds="32063" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32064,1)"> <!-- Cieldalaes Geode -->
+			<Desynth ItemIds="32064" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32065,1)"> <!-- Titanshell Crab -->
+			<Desynth ItemIds="32065" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32066,1)"> <!-- Mythril Boxfish -->
+			<Desynth ItemIds="32066" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32067,1)"> <!-- Mistbeard's Cup -->
+			<Desynth ItemIds="32067" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32068,1)"> <!-- Anomalocaris Saron -->
+			<Desynth ItemIds="32068" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32069,1)"> <!-- Flaming Eel -->
+			<Desynth ItemIds="32069" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32070,1)"> <!-- Jetborne Manta -->
+			<Desynth ItemIds="32070" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32071,1)"> <!-- Devil's Sting -->
+			<Desynth ItemIds="32071" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32072,1)"> <!-- Callichthyid -->
+			<Desynth ItemIds="32072" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32073,1)"> <!-- Meandering Mora -->
+			<Desynth ItemIds="32073" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32074,1)"> <!-- Hafgufa -->
+			<Desynth ItemIds="32074" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32075,1)"> <!-- Thaliak Crab -->
+			<Desynth ItemIds="32075" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32076,1)"> <!-- Star of the Destroyer -->
+			<Desynth ItemIds="32076" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32077,1)"> <!-- True Scad -->
+			<Desynth ItemIds="32077" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32078,1)"> <!-- Blooded Wrasse -->
+			<Desynth ItemIds="32078" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32079,1)"> <!-- Bloodpolish Crab -->
+			<Desynth ItemIds="32079" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32080,1)"> <!-- Blue Stitcher -->
+			<Desynth ItemIds="32080" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32081,1)"> <!-- Bloodfresh Tuna -->
+			<Desynth ItemIds="32081" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32082,1)"> <!-- Sunken Mask -->
+			<Desynth ItemIds="32082" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32083,1)"> <!-- Spectral Eel -->
+			<Desynth ItemIds="32083" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32084,1)"> <!-- Bareface -->
+			<Desynth ItemIds="32084" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32085,1)"> <!-- Oracular Crab -->
+			<Desynth ItemIds="32085" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32086,1)"> <!-- Dravanian Bream -->
+			<Desynth ItemIds="32086" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32087,1)"> <!-- Skaldminni -->
+			<Desynth ItemIds="32087" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32088,1)"> <!-- Serrated Clam -->
+			<Desynth ItemIds="32088" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32089,1)"> <!-- Beatific Vision -->
+			<Desynth ItemIds="32089" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32090,1)"> <!-- Exterminator -->
+			<Desynth ItemIds="32090" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32091,1)"> <!-- Gory Tuna -->
+			<Desynth ItemIds="32091" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32092,1)"> <!-- Ticinepomis -->
+			<Desynth ItemIds="32092" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32093,1)"> <!-- Quartz Hammerhead -->
+			<Desynth ItemIds="32093" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32094,1)"> <!-- Seafaring Toad -->
+			<Desynth ItemIds="32094" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32095,1)"> <!-- Crow Puffer -->
+			<Desynth ItemIds="32095" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32096,1)"> <!-- Rothlyt Kelp -->
+			<Desynth ItemIds="32096" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32097,1)"> <!-- Living Lantern -->
+			<Desynth ItemIds="32097" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32098,1)"> <!-- Honeycomb Fish -->
+			<Desynth ItemIds="32098" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32099,1)"> <!-- Godsbed -->
+			<Desynth ItemIds="32099" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32100,1)"> <!-- Lansquenet -->
+			<Desynth ItemIds="32100" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32101,1)"> <!-- Thavnairian Shark -->
+			<Desynth ItemIds="32101" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32102,1)"> <!-- Nephrite Eel -->
+			<Desynth ItemIds="32102" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32103,1)"> <!-- Spectresaur -->
+			<Desynth ItemIds="32103" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32104,1)"> <!-- Ginkgo Fin -->
+			<Desynth ItemIds="32104" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32105,1)"> <!-- Garum Jug -->
+			<Desynth ItemIds="32105" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32106,1)"> <!-- Smooth Jaguar -->
+			<Desynth ItemIds="32106" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32107,1)"> <!-- Rothlyt Mussel -->
+			<Desynth ItemIds="32107" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32108,1)"> <!-- Levi Elver -->
+			<Desynth ItemIds="32108" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32109,1)"> <!-- Pearl Bombfish -->
+			<Desynth ItemIds="32109" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32110,1)"> <!-- Trollfish -->
+			<Desynth ItemIds="32110" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32111,1)"> <!-- Panoptes -->
+			<Desynth ItemIds="32111" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32112,1)"> <!-- Crepe Sole -->
+			<Desynth ItemIds="32112" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32113,1)"> <!-- Knifejaw -->
+			<Desynth ItemIds="32113" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32114,1)"> <!-- Placodus -->
+			<Desynth ItemIds="32114" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36385,1)"> <!-- Pecten -->
+			<Desynth ItemIds="36385" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36386,1)"> <!-- Northern Herring -->
+			<Desynth ItemIds="36386" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36387,1)"> <!-- Dog-faced Puffer -->
+			<Desynth ItemIds="36387" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36388,1)"> <!-- Cobalt Chromis -->
+			<Desynth ItemIds="36388" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36389,1)"> <!-- Guitarfish -->
+			<Desynth ItemIds="36389" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36679,1)"> <!-- Aetherolectric Guitarfish -->
+			<Desynth ItemIds="36679" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36390,1)"> <!-- Astacus -->
+			<Desynth ItemIds="36390" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36392,1)"> <!-- Peacock Bass -->
+			<Desynth ItemIds="36392" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36393,1)"> <!-- Academician -->
+			<Desynth ItemIds="36393" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36394,1)"> <!-- Swordspine Snook -->
+			<Desynth ItemIds="36394" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(37845,1)"> <!-- Greatsword Snook -->
+			<Desynth ItemIds="37845" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36395,1)"> <!-- Ponderer -->
+			<Desynth ItemIds="36395" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36396,1)"> <!-- Tidal Dahlia -->
+			<Desynth ItemIds="36396" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(38830,1)"> <!-- Catastrophizer -->
+			<Desynth ItemIds="38830" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36397,1)"> <!-- Butterfly Fry -->
+			<Desynth ItemIds="36397" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36399,1)"> <!-- Topminnow -->
+			<Desynth ItemIds="36399" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36400,1)"> <!-- Tessera -->
+			<Desynth ItemIds="36400" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(35604,1)"> <!-- Giant Aetherlouse -->
+			<Desynth ItemIds="35604" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36402,1)"> <!-- Fat Snook -->
+			<Desynth ItemIds="36402" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36680,1)"> <!-- Jumbo Snook -->
+			<Desynth ItemIds="36680" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36403,1)"> <!-- Prochilodus Luminosus -->
+			<Desynth ItemIds="36403" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36398,1)"> <!-- Xenocypris -->
+			<Desynth ItemIds="36398" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36404,1)"> <!-- Mesonauta -->
+			<Desynth ItemIds="36404" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36405,1)"> <!-- Greengill Salmon -->
+			<Desynth ItemIds="36405" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(38831,1)"> <!-- Mossgill Salmon -->
+			<Desynth ItemIds="38831" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36407,1)"> <!-- Raiamas -->
+			<Desynth ItemIds="36407" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36408,1)"> <!-- Red Bowfin -->
+			<Desynth ItemIds="36408" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(37846,1)"> <!-- Swampsucker Bowfin -->
+			<Desynth ItemIds="37846" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36409,1)"> <!-- Macrobrachium Lar -->
+			<Desynth ItemIds="36409" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36410,1)"> <!-- Blowgun -->
+			<Desynth ItemIds="36410" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36411,1)"> <!-- Darksteel Knifefish -->
+			<Desynth ItemIds="36411" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36412,1)"> <!-- Astacus Aetherius -->
+			<Desynth ItemIds="36412" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36414,1)"> <!-- Labyrinthos Tilapia -->
+			<Desynth ItemIds="36414" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36415,1)"> <!-- Trunkblessed -->
+			<Desynth ItemIds="36415" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36417,1)"> <!-- Seema Duta -->
+			<Desynth ItemIds="36417" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36418,1)"> <!-- Longear Sunfish -->
+			<Desynth ItemIds="36418" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36419,1)"> <!-- Silver Characin -->
+			<Desynth ItemIds="36419" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36681,1)"> <!-- Earful -->
+			<Desynth ItemIds="36681" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36420,1)"> <!-- Thavnairian Goby -->
+			<Desynth ItemIds="36420" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36421,1)"> <!-- Qeyiq Sole -->
+			<Desynth ItemIds="36421" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36422,1)"> <!-- Gwl Crab -->
+			<Desynth ItemIds="36422" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36423,1)"> <!-- Pantherscale Grouper -->
+			<Desynth ItemIds="36423" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(37847,1)"> <!-- Lale Crab -->
+			<Desynth ItemIds="37847" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36425,1)"> <!-- Fate's Design -->
+			<Desynth ItemIds="36425" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36426,1)"> <!-- Shadowdart Sardine -->
+			<Desynth ItemIds="36426" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36427,1)"> <!-- Paksa Fish -->
+			<Desynth ItemIds="36427" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36663,1)"> <!-- Chalky Coral -->
+			<Desynth ItemIds="36663" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(38935,1)"> <!-- Jhinga -->
+			<Desynth ItemIds="38935" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(35605,1)"> <!-- Garjana Wrasse -->
+			<Desynth ItemIds="35605" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36430,1)"> <!-- Golden Barramundi -->
+			<Desynth ItemIds="36430" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(38832,1)"> <!-- Vidyutvat Wrasse -->
+			<Desynth ItemIds="38832" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36431,1)"> <!-- Kadjaya's Castaway -->
+			<Desynth ItemIds="36431" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36432,1)"> <!-- Marid Frog -->
+			<Desynth ItemIds="36432" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36434,1)"> <!-- Bluegill -->
+			<Desynth ItemIds="36434" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36435,1)"> <!-- Bronze Pipira -->
+			<Desynth ItemIds="36435" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36682,1)"> <!-- Hippo Frog -->
+			<Desynth ItemIds="36682" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36436,1)"> <!-- Green Swordtail -->
+			<Desynth ItemIds="36436" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36438,1)"> <!-- Ksirapayin -->
+			<Desynth ItemIds="36438" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36439,1)"> <!-- Wakeful Watcher -->
+			<Desynth ItemIds="36439" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36440,1)"> <!-- Red Drum -->
+			<Desynth ItemIds="36440" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36441,1)"> <!-- Forgeflame -->
+			<Desynth ItemIds="36441" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36442,1)"> <!-- Bicuda -->
+			<Desynth ItemIds="36442" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36660,1)"> <!-- Seedtoad -->
+			<Desynth ItemIds="36660" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(37848,1)"> <!-- Bigcuda -->
+			<Desynth ItemIds="37848" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(35849,1)"> <!-- Alnairan Salmon -->
+			<Desynth ItemIds="35849" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36443,1)"> <!-- Radzbalik -->
+			<Desynth ItemIds="36443" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36444,1)"> <!-- Half-moon Betta -->
+			<Desynth ItemIds="36444" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36446,1)"> <!-- Banana Eel -->
+			<Desynth ItemIds="36446" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(38833,1)"> <!-- Browned Banana Eel -->
+			<Desynth ItemIds="38833" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36447,1)"> <!-- Handy Hamsa -->
+			<Desynth ItemIds="36447" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36448,1)"> <!-- Flowerhorn -->
+			<Desynth ItemIds="36448" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36449,1)"> <!-- Thavnairian Caiman -->
+			<Desynth ItemIds="36449" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(37697,1)"> <!-- Mayashell -->
+			<Desynth ItemIds="37697" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36450,1)"> <!-- Fiery Goby -->
+			<Desynth ItemIds="36450" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36451,1)"> <!-- Puff-paya -->
+			<Desynth ItemIds="36451" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36452,1)"> <!-- Narunnairian Octopus -->
+			<Desynth ItemIds="36452" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36453,1)"> <!-- Roosterfish -->
+			<Desynth ItemIds="36453" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36454,1)"> <!-- Basilosaurus -->
+			<Desynth ItemIds="36454" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36686,1)"> <!-- Thavnairian Calamari -->
+			<Desynth ItemIds="36686" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(35606,1)"> <!-- Garlean Clam -->
+			<Desynth ItemIds="35606" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36457,1)"> <!-- Animulus -->
+			<Desynth ItemIds="36457" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36456,1)"> <!-- Eblan Trout -->
+			<Desynth ItemIds="36456" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36458,1)"> <!-- Cerule Core -->
+			<Desynth ItemIds="36458" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36459,1)"> <!-- Icepike -->
+			<Desynth ItemIds="36459" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36683,1)"> <!-- Rimepike -->
+			<Desynth ItemIds="36683" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36460,1)"> <!-- Dark Crown -->
+			<Desynth ItemIds="36460" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36461,1)"> <!-- Imperial Pleco -->
+			<Desynth ItemIds="36461" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36462,1)"> <!-- Bluetail -->
+			<Desynth ItemIds="36462" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(37849,1)"> <!-- Sovereign Shadow -->
+			<Desynth ItemIds="37849" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36463,1)"> <!-- Star-blue Guppy -->
+			<Desynth ItemIds="36463" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36465,1)"> <!-- Lunar Cichlid -->
+			<Desynth ItemIds="36465" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36466,1)"> <!-- Teareye -->
+			<Desynth ItemIds="36466" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36467,1)"> <!-- Replipirarucu -->
+			<Desynth ItemIds="36467" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(37850,1)"> <!-- Disappirarucu -->
+			<Desynth ItemIds="37850" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36468,1)"> <!-- Feverfish -->
+			<Desynth ItemIds="36468" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36470,1)"> <!-- Calicia -->
+			<Desynth ItemIds="36470" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36471,1)"> <!-- Protomyke #987 -->
+			<Desynth ItemIds="36471" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36472,1)"> <!-- Lunar Deathworm -->
+			<Desynth ItemIds="36472" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36473,1)"> <!-- Fleeting Brand -->
+			<Desynth ItemIds="36473" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36475,1)"> <!-- Regotoise -->
+			<Desynth ItemIds="36475" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(38834,1)"> <!-- Frozen Regotoise -->
+			<Desynth ItemIds="38834" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(35850,1)"> <!-- Lunar Lamenter -->
+			<Desynth ItemIds="35850" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36476,1)"> <!-- Isle Skipper -->
+			<Desynth ItemIds="36476" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36478,1)"> <!-- Albino Loach -->
+			<Desynth ItemIds="36478" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36477,1)"> <!-- Iribainion -->
+			<Desynth ItemIds="36477" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36479,1)"> <!-- Golden Shiner -->
+			<Desynth ItemIds="36479" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36480,1)"> <!-- Mangar -->
+			<Desynth ItemIds="36480" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(37853,1)"> <!-- Planetes -->
+			<Desynth ItemIds="37853" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36481,1)"> <!-- Dermogenys -->
+			<Desynth ItemIds="36481" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36485,1)"> <!-- Colossoma -->
+			<Desynth ItemIds="36485" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(39240,1)"> <!-- Phyllinos -->
+			<Desynth ItemIds="39240" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36484,1)"> <!-- Antheia -->
+			<Desynth ItemIds="36484" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(35607,1)"> <!-- Smaragdos -->
+			<Desynth ItemIds="35607" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(38836,1)"> <!-- Antheian Dahlia -->
+			<Desynth ItemIds="38836" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36487,1)"> <!-- Superstring -->
+			<Desynth ItemIds="36487" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36489,1)"> <!-- Vacuum Shrimp -->
+			<Desynth ItemIds="36489" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36488,1)"> <!-- Star Eater -->
+			<Desynth ItemIds="36488" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36491,1)"> <!-- Cosmic Noise -->
+			<Desynth ItemIds="36491" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(38835,1)"> <!-- Cosmic Haze -->
+			<Desynth ItemIds="38835" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36492,1)"> <!-- Glassfish -->
+			<Desynth ItemIds="36492" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36494,1)"> <!-- Foun Myhk -->
+			<Desynth ItemIds="36494" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36684,1)"> <!-- Foun Ahlm -->
+			<Desynth ItemIds="36684" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36495,1)"> <!-- Dragonscale -->
+			<Desynth ItemIds="36495" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36496,1)"> <!-- Ypupîara -->
+			<Desynth ItemIds="36496" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36497,1)"> <!-- Eehs Forhnesh -->
+			<Desynth ItemIds="36497" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36503,1)"> <!-- Protoflesh -->
+			<Desynth ItemIds="36503" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36499,1)"> <!-- Katoptron -->
+			<Desynth ItemIds="36499" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36501,1)"> <!-- Comet Tail -->
+			<Desynth ItemIds="36501" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36502,1)"> <!-- Aoide -->
+			<Desynth ItemIds="36502" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(37851,1)"> <!-- Starscryer -->
+			<Desynth ItemIds="37851" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36505,1)"> <!-- Wandering Starscale -->
+			<Desynth ItemIds="36505" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36506,1)"> <!-- Wormhole Worm -->
+			<Desynth ItemIds="36506" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36507,1)"> <!-- Unidentified Flying Biomass II -->
+			<Desynth ItemIds="36507" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36509,1)"> <!-- Sophos Deka-okto -->
+			<Desynth ItemIds="36509" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36510,1)"> <!-- Class Twenty-four -->
+			<Desynth ItemIds="36510" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36511,1)"> <!-- Terrifyingway -->
+			<Desynth ItemIds="36511" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36512,1)"> <!-- Alien Mertone -->
+			<Desynth ItemIds="36512" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36513,1)"> <!-- Monster Carrot -->
+			<Desynth ItemIds="36513" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36685,1)"> <!-- Forbiddingway -->
+			<Desynth ItemIds="36685" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36612,1)"> <!-- Timeworn Kumbhiraskin Map -->
+			<Desynth ItemIds="36612" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36508,1)"> <!-- Triaina -->
+			<Desynth ItemIds="36508" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36514,1)"> <!-- Argonaut -->
+			<Desynth ItemIds="36514" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36515,1)"> <!-- Echinos -->
+			<Desynth ItemIds="36515" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36516,1)"> <!-- Space Bishop -->
+			<Desynth ItemIds="36516" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36517,1)"> <!-- Alyketos -->
+			<Desynth ItemIds="36517" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(37852,1)"> <!-- Argonauta argo -->
+			<Desynth ItemIds="37852" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36518,1)"> <!-- Horizon Event -->
+			<Desynth ItemIds="36518" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36519,1)"> <!-- E.B.E.-9318 -->
+			<Desynth ItemIds="36519" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36520,1)"> <!-- Unbegotten -->
+			<Desynth ItemIds="36520" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(36521,1)"> <!-- Phallaina -->
+			<Desynth ItemIds="36521" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29994,1)"> <!-- Grade 2 Skybuilders' Cloudskipper -->
+			<Desynth ItemIds="29994" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29995,1)"> <!-- Grade 2 Skybuilders' Meditator -->
+			<Desynth ItemIds="29995" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30000,1)"> <!-- Grade 2 Skybuilders' Bitterling -->
+			<Desynth ItemIds="30000" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30001,1)"> <!-- Grade 2 Skybuilders' Caiman -->
+			<Desynth ItemIds="30001" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29996,1)"> <!-- Grade 2 Skybuilders' Coeurlfish -->
+			<Desynth ItemIds="29996" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29997,1)"> <!-- Grade 2 Skybuilders' Garpike -->
+			<Desynth ItemIds="29997" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29998,1)"> <!-- Grade 2 Skybuilders' Pirarucu -->
+			<Desynth ItemIds="29998" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(29999,1)"> <!-- Grade 2 Skybuilders' Brown Bolo -->
+			<Desynth ItemIds="29999" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30002,1)"> <!-- Grade 2 Skybuilders' Cloud Cutter -->
+			<Desynth ItemIds="30002" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30003,1)"> <!-- Grade 2 Skybuilders' Vampiric Tapestry -->
+			<Desynth ItemIds="30003" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30004,1)"> <!-- Grade 2 Skybuilders' Tupuxuara -->
+			<Desynth ItemIds="30004" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30006,1)"> <!-- Grade 2 Artisanal Skybuilders' Rhomaleosaurus -->
+			<Desynth ItemIds="30006" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30010,1)"> <!-- Grade 2 Artisanal Skybuilders' Cometfish -->
+			<Desynth ItemIds="30010" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30005,1)"> <!-- Grade 2 Skybuilders' Blind Manta -->
+			<Desynth ItemIds="30005" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30007,1)"> <!-- Grade 2 Artisanal Skybuilders' Gobbie Mask -->
+			<Desynth ItemIds="30007" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30011,1)"> <!-- Grade 2 Artisanal Skybuilders' Anomalocaris -->
+			<Desynth ItemIds="30011" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30008,1)"> <!-- Grade 2 Artisanal Skybuilders' Pterodactyl -->
+			<Desynth ItemIds="30008" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30012,1)"> <!-- Grade 2 Artisanal Skybuilders' Rhamphorhynchus -->
+			<Desynth ItemIds="30012" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30009,1)"> <!-- Grade 2 Artisanal Skybuilders' Skyfish -->
+			<Desynth ItemIds="30009" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(30013,1)"> <!-- Grade 2 Artisanal Skybuilders' Dragon's Soul -->
+			<Desynth ItemIds="30013" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31586,1)"> <!-- Grade 3 Skybuilders' Cherax -->
+			<Desynth ItemIds="31586" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31587,1)"> <!-- Grade 3 Skybuilders' Marimo -->
+			<Desynth ItemIds="31587" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31588,1)"> <!-- Grade 3 Skybuilders' Catfish -->
+			<Desynth ItemIds="31588" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31589,1)"> <!-- Grade 3 Skybuilders' Ricefish -->
+			<Desynth ItemIds="31589" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31578,1)"> <!-- Grade 3 Skybuilders' Thunderbolt Sculpin -->
+			<Desynth ItemIds="31578" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31579,1)"> <!-- Grade 3 Skybuilders' Alligator Snapping Turtle -->
+			<Desynth ItemIds="31579" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31580,1)"> <!-- Grade 3 Skybuilders' Bonytongue -->
+			<Desynth ItemIds="31580" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31581,1)"> <!-- Grade 3 Skybuilders' Hermit Goby -->
+			<Desynth ItemIds="31581" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31582,1)"> <!-- Grade 3 Skybuilders' Mudskipper -->
+			<Desynth ItemIds="31582" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31583,1)"> <!-- Grade 3 Skybuilders' Steppe Bullfrog -->
+			<Desynth ItemIds="31583" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31584,1)"> <!-- Grade 3 Skybuilders' Golden Loach -->
+			<Desynth ItemIds="31584" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31585,1)"> <!-- Grade 3 Skybuilders' Bass -->
+			<Desynth ItemIds="31585" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31590,1)"> <!-- Grade 3 Skybuilders' Scorpionfly -->
+			<Desynth ItemIds="31590" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31591,1)"> <!-- Grade 3 Skybuilders' Whiteloom -->
+			<Desynth ItemIds="31591" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31592,1)"> <!-- Grade 3 Skybuilders' Pteranodon -->
+			<Desynth ItemIds="31592" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31596,1)"> <!-- Grade 3 Artisanal Skybuilders' Oscar -->
+			<Desynth ItemIds="31596" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31600,1)"> <!-- Grade 3 Artisanal Skybuilders' Archaeopteryx -->
+			<Desynth ItemIds="31600" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31593,1)"> <!-- Grade 3 Skybuilders' King's Mantle -->
+			<Desynth ItemIds="31593" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31597,1)"> <!-- Grade 3 Artisanal Skybuilders' Blind Manta -->
+			<Desynth ItemIds="31597" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31602,1)"> <!-- Grade 3 Artisanal Skybuilders' Cloudshark -->
+			<Desynth ItemIds="31602" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31594,1)"> <!-- Grade 3 Skybuilders' Blue Medusa -->
+			<Desynth ItemIds="31594" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31598,1)"> <!-- Grade 3 Artisanal Skybuilders' Mosasaur -->
+			<Desynth ItemIds="31598" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31601,1)"> <!-- Grade 3 Artisanal Skybuilders' Wyvern -->
+			<Desynth ItemIds="31601" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31595,1)"> <!-- Grade 3 Skybuilders' Gurnard -->
+			<Desynth ItemIds="31595" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31599,1)"> <!-- Grade 3 Artisanal Skybuilders' Storm Chaser -->
+			<Desynth ItemIds="31599" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(31603,1)"> <!-- Grade 3 Artisanal Skybuilders' Helicoprion -->
+			<Desynth ItemIds="31603" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32890,1)"> <!-- Grade 4 Skybuilders' Starflower -->
+			<Desynth ItemIds="32890" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32891,1)"> <!-- Grade 4 Skybuilders' Cyan Crab -->
+			<Desynth ItemIds="32891" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32892,1)"> <!-- Grade 4 Skybuilders' Fickle Krait -->
+			<Desynth ItemIds="32892" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32893,1)"> <!-- Grade 4 Skybuilders' Proto-hropken -->
+			<Desynth ItemIds="32893" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(13740,1)"> <!-- Goldsmith Crab -->
+			<Desynth ItemIds="13740" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(13737,1)"> <!-- Crown Trout -->
+			<Desynth ItemIds="13737" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(13738,1)"> <!-- Retribution Staff -->
+			<Desynth ItemIds="13738" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32882,1)"> <!-- Grade 4 Skybuilders' Zagas Khaal -->
+			<Desynth ItemIds="32882" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32883,1)"> <!-- Grade 4 Skybuilders' Goldsmith Crab -->
+			<Desynth ItemIds="32883" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32884,1)"> <!-- Grade 4 Skybuilders' Common Bitterling -->
+			<Desynth ItemIds="32884" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32885,1)"> <!-- Grade 4 Skybuilders' Skyloach -->
+			<Desynth ItemIds="32885" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32886,1)"> <!-- Grade 4 Skybuilders' Glacier Core -->
+			<Desynth ItemIds="32886" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32887,1)"> <!-- Grade 4 Skybuilders' Kissing Fish -->
+			<Desynth ItemIds="32887" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32888,1)"> <!-- Grade 4 Skybuilders' Cavalry Catfish -->
+			<Desynth ItemIds="32888" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32889,1)"> <!-- Grade 4 Skybuilders' Manasail -->
+			<Desynth ItemIds="32889" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32894,1)"> <!-- Grade 4 Skybuilders' Ghost Faerie -->
+			<Desynth ItemIds="32894" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32895,1)"> <!-- Grade 4 Skybuilders' Ashfish -->
+			<Desynth ItemIds="32895" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32896,1)"> <!-- Grade 4 Skybuilders' Whitehorse -->
+			<Desynth ItemIds="32896" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32900,1)"> <!-- Grade 4 Artisanal Skybuilders' Sweatfish -->
+			<Desynth ItemIds="32900" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32904,1)"> <!-- Grade 4 Artisanal Skybuilders' Marrella -->
+			<Desynth ItemIds="32904" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(13733,1)"> <!-- Pterodactyl -->
+			<Desynth ItemIds="13733" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32897,1)"> <!-- Grade 4 Skybuilders' Ocean Cloud -->
+			<Desynth ItemIds="32897" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32901,1)"> <!-- Grade 4 Artisanal Skybuilders' Sculptor -->
+			<Desynth ItemIds="32901" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32905,1)"> <!-- Grade 4 Artisanal Skybuilders' Crimson Namitaro -->
+			<Desynth ItemIds="32905" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(13734,1)"> <!-- Eurhinosaur -->
+			<Desynth ItemIds="13734" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(13736,1)"> <!-- Gem Marimo -->
+			<Desynth ItemIds="13736" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32898,1)"> <!-- Grade 4 Skybuilders' Black Fanfish -->
+			<Desynth ItemIds="32898" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32902,1)"> <!-- Grade 4 Artisanal Skybuilders' Little Thalaos -->
+			<Desynth ItemIds="32902" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32906,1)"> <!-- Grade 4 Artisanal Skybuilders' Griffin -->
+			<Desynth ItemIds="32906" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32899,1)"> <!-- Grade 4 Skybuilders' Sunfish -->
+			<Desynth ItemIds="32899" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32903,1)"> <!-- Grade 4 Artisanal Skybuilders' Lightning Chaser -->
+			<Desynth ItemIds="32903" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+		<If Condition="HasAtLeast(32907,1)"> <!-- Grade 4 Artisanal Skybuilders' Meganeura -->
+			<Desynth ItemIds="32907" DesynthDelay="6000" DesynthTimefile="10"/>
+		</If>
+	</Order>
+</Profile>

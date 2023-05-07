@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Vidyutvat Wrasse (38832)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Vidyutvat_Wrasse "1">
+]>
+<Profile>
+	<Name>Vidyutvat Wrasse</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Vidyutvat Wrasse..." />
+		<If condition="not HasAtLeast(36592,50)">
+			<!--Shrimp Ball-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36592,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3886)">
+			<LisbethTravel Area="Thavnair" XYZ="-503.5855, -1.80006E-05, -14.78414" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(19,20)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(38832,&Vidyutvat_Wrasse;) and HasAtLeast(36592,1) and IsTimeBetween(20,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(957, TimeSpan.FromHours(-8), 'Clouds')">
+			<ExFish Bait="Shrimp Ball" condition="not HasAtLeast(38832,&Vidyutvat_Wrasse;) and HasAtLeast(36592,1) and IsTimeBetween(20,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(957, TimeSpan.FromHours(-8), 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-507.0609, -0.09078109, -5.07819" Heading="0.002416611" />
+					<FishSpot XYZ="-517.0122, -0.09809101, -15.86339" Heading="5.204905" />
+					<FishSpot XYZ="-532.3875, -0.1134137, -25.38276" Heading="5.766209" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Vidyutvat Wrasse" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

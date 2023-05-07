@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Rimepike (36683)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Rimepike "1">
+]>
+<Profile>
+	<Name>Rimepike</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Rimepike..." />
+		<If condition="not HasAtLeast(20675,50)">
+			<!--Stonefly Larva-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20675,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3902)">
+			<LisbethTravel Area="Garlemald" XYZ="-483.788, 20.31418, 467.972" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(36683,&Rimepike;) and HasAtLeast(20675,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(958, 'Snow')">
+			<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(36683,&Rimepike;) and HasAtLeast(20675,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(958, 'Snow')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Medium" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-488.1785, 19.72799, 467.0263" Heading="4.49876" />
+					<FishSpot XYZ="-497.3484, 19.77185, 479.4931" Heading="3.55" />
+					<FishSpot XYZ="-488.7962, 19.46694, 454.1476" Heading="5.101947" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Rimepike" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

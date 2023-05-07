@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Steel Razor (33318)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Steel_Razor "1">
+]>
+<Profile>
+	<Name>Steel Razor</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Steel Razor..." />
+		<If condition="not HasAtLeast(27583,50)">
+			<!--Moyebi Shrimp-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27583,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3096)">
+			<LisbethTravel Area="Kholusia" XYZ="-709.7147, 0.2916105, 612.7394" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(5,6)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(33318,&Steel_Razor;) and HasAtLeast(27583,1) and IsTimeBetween(6,8)">
+			<ExFish Bait="Moyebi Shrimp" condition="not HasAtLeast(33318,&Steel_Razor;) and HasAtLeast(27583,1) and IsTimeBetween(6,8)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-698.0373, -0.4757038, 619.525" Heading="1.09748" />
+					<FishSpot XYZ="-728.0673, -0.5991126, 631.8834" Heading="4.389868" />
+					<FishSpot XYZ="-699.4139, -0.6014819, 655.8901" Heading="1.495413" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Steel Razor" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

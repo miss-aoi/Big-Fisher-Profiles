@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Horned King (28069)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Horned_King "1">
+]>
+<Profile>
+	<Name>The Horned King</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Horned King..." />
+		<If condition="not HasAtLeast(27586,50)">
+			<!--Jerked Ovim-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27586,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3120)">
+			<LisbethTravel Area="Amh Araeng" XYZ="462.4595, -44.79192, -433.8012" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(-1,0)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(28069,&The_Horned_King;) and HasAtLeast(27586,1) and IsTimeBetween(0,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Dust Storms')">
+			<ExFish Bait="Jerked Ovim" condition="not HasAtLeast(28069,&The_Horned_King;) and HasAtLeast(27586,1) and IsTimeBetween(0,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Dust Storms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Medium" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="472.8454, -49.40374, -440.5691" Heading="2.276201" />
+					<FishSpot XYZ="454.2035, -48.19075, -458.9115" Heading="2.483547" />
+					<FishSpot XYZ="431.857, -47.99002, -480.3968" Heading="2.925464" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Horned King" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

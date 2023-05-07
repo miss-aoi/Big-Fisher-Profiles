@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Cirrostratus (16750)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Cirrostratus "1">
+]>
+<Profile>
+	<Name>Cirrostratus</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Cirrostratus..." />
+		<If condition="not HasAtLeast(12712,50)">
+			<!--Giant Crane Fly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12712,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2117)">
+			<LisbethTravel Area="The Sea of Clouds" XYZ="-374.746, -185.1432, 793.9398" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(9,10)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(16750,&Cirrostratus;) and HasAtLeast(12712,1) and IsTimeBetween(10,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies', 'Fair Skies')">
+			<ExFish Bait="Giant Crane Fly" condition="not HasAtLeast(16750,&Cirrostratus;) and HasAtLeast(12712,1) and IsTimeBetween(10,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-377.334, -185.8585, 797.132" Heading="5.830033" />
+					<FishSpot XYZ="-393.6451, -184.8638, 780.6809" Heading="5.233132" />
+					<FishSpot XYZ="-358.6042, -185.5136, 805.4165" Heading="5.86354" />
+					<FishSpot XYZ="423.1068, -186.2701, 810.8019" Heading="1.073663" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Cirrostratus" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

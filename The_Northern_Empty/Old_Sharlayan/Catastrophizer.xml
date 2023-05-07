@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Catastrophizer (38830)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Catastrophizer "1">
+]>
+<Profile>
+	<Name>Catastrophizer</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Catastrophizer..." />
+		<If condition="not HasAtLeast(36591,50)">
+			<!--Mayfly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36591,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3807)">
+			<LisbethTravel Area="Old Sharlayan" XYZ="-170.4314, 8.00656, -20.56651" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(7,8)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(38830,&Catastrophizer;) and HasAtLeast(36591,1) and IsTimeBetween(8,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(962, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(962, TimeSpan.FromHours(-8), 'Fair Skies')">
+			<ExFish Bait="Mayfly" condition="not HasAtLeast(38830,&Catastrophizer;) and HasAtLeast(36591,1) and IsTimeBetween(8,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(962, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(962, TimeSpan.FromHours(-8), 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-170.4314, 8.00656, -20.56651" Heading="3.363976" />
+					<FishSpot XYZ="-166.925, 8.050853, -30.69417" Heading="4.811202" />
+					<FishSpot XYZ="-179.5398, 7.847175, -29.2686" Heading="1.66961" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Catastrophizer" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

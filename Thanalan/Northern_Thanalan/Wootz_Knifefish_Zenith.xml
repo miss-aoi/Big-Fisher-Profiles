@@ -1,47 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Wootz Knifefish Zenith (8767)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Wootz_Knifefish_Zenith "1">
+]>
 <Profile>
 	<Name>Wootz Knifefish Zenith</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(8767,1)">
-			<Log Message="Start Fishing: Wootz Knifefish Zenith..." />
-			<If condition="not HasAtLeast(2599,50)">
-				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-			</If>
-			<If condition="not IsOnSubMap(331)">
-				<LisbethTravel Area="Northern Thanalan" XYZ="-52.10796, 47, 38.07734"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<While Condition="IsTimeBetween(0,1)" >
-				<WaitTimer WaitTime="30" />
-			</While>
-				<ExFish Bait="Honey Worm" Condition="HasAtLeast(2599,1) and HasAtLeast(2599,1) and not HasAtLeast(8767,1) and IsTimeBetween(1,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(147, TimeSpan.FromHours(-8), 'Clear', 'Fair')"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="1" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto" >
-				<PatienceTugs>
+		<Log Message="Starting Fishing: Wootz Knifefish Zenith..." />
+		<If condition="not HasAtLeast(2599,50)">
+			<!--Honey Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(331)">
+			<LisbethTravel Area="Northern Thanalan" XYZ="-52.10796, 47, 38.07734" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(0,1)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(8767,&Wootz_Knifefish_Zenith;) and HasAtLeast(2599,1) and IsTimeBetween(1,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(147, TimeSpan.FromHours(-8), 'Fog')">
+			<ExFish Bait="Honey Worm" condition="not HasAtLeast(8767,&Wootz_Knifefish_Zenith;) and HasAtLeast(2599,1) and IsTimeBetween(1,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(147, TimeSpan.FromHours(-8), 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Heavy" />
-				</PatienceTugs>
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-54.27203, 46.32491, 46.60146" Heading="6.100248" />
+					<FishSpot XYZ="-225.4317, 59.25958, -85.06227" Heading="4.135532" />
+					<FishSpot XYZ="-235.136, 59.02201, -70.44752" Heading="3.762728" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Wootz Knifefish Zenith" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-54.27203, 46.32491, 46.60146" Heading="6.100248" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

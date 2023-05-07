@@ -1,41 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Rivet Oyster (7711)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Rivet_Oyster "1">
+]>
 <Profile>
 	<Name>Rivet Oyster</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(7711,1)">
-			<Log Message="Start Fishing: Rivet Oyster..." />
-			<If condition="not HasAtLeast(2619,3)">
-				<Lisbeth Json="[{'Item': 2619,'Group': 0,'Amount':3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
-			</If>
-			<If condition="not IsOnSubMap(245)">
-				<LisbethTravel Area="Western Thanalan" XYZ="-470.7941, 23.14964, -456.7296"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<ExFish Bait="Heavy Steel Jig" Condition="HasAtLeast(2619,1) and HasAtLeast(2619,1) and not HasAtLeast(7711,1)"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+		<Log Message="Starting Fishing: Rivet Oyster..." />
+		<If condition="not HasAtLeast(2619,3)">
+			<!--Heavy Steel Jig-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2619,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
+		</If>
+		<If condition="not IsOnSubMap(245)">
+			<LisbethTravel Area="Western Thanalan" XYZ="-470.7941, 23.14964, -456.7296" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7711,&Rivet_Oyster;) and HasAtLeast(2619,1)">
+			<ExFish Bait="Heavy Steel Jig" condition="not HasAtLeast(7711,&Rivet_Oyster;) and HasAtLeast(2619,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-477.1317, 23.16101, -431.7676" Heading="4.869655" />
+					<FishSpot XYZ="-480.5109, 23.4737, -449.4571" Heading="5.020453" />
+					<FishSpot XYZ="-481.6847, 22.5132, -458.5653" Heading="4.712576" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Rivet Oyster" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-481.6847, 22.5132, -458.5653" Heading="4.712576" Sit="True" />
-					<FishSpot XYZ="-480.5109, 23.4737, -449.4571" Heading="5.020453" Sit="True" />
-					<FishSpot XYZ="-477.1317, 23.16101, -431.7676" Heading="4.869655" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

@@ -1,41 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Faerie Queen (7697)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Faerie_Queen "1">
+]>
 <Profile>
 	<Name>Faerie Queen</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(7697,1)">
-		<Log Message="Start Fishing: Faerie Queen..." />
+		<Log Message="Starting Fishing: Faerie Queen..." />
 		<If condition="not HasAtLeast(2626,3)">
-			<Lisbeth Json="[{'Item': 2626,'Group': 0,'Amount':3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
+			<!--Spinnerbait-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2626,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>
 		<If condition="not IsOnSubMap(340)">
-			<LisbethTravel Area="Lower La Noscea" XYZ="18.71454, 35.43816, 685.6935"/>
+			<LisbethTravel Area="Lower La Noscea" XYZ="18.71454, 35.43816, 685.6935" />
 		</If>
-		<ExFish Bait="Spinnerbait" Condition="HasAtLeast(2626,1) and not HasAtLeast(7697,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(135, 'Clouds', 'Fog', 'Wind')"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-			<Keepers>
-				<Keeper name="Faerie Queen" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="32.4887, 35.44699, 653.9377" Heading="0.4687796" Sit="True" />
-				<FishSpot XYZ="38.34671, 35.54963, 688.4586" Heading="4.213539" Sit="True" />
-				<FishSpot XYZ="6.152539, 35.43816, 693.6091" Heading="2.594563" Sit="True" />
-			</FishSpots>
-		</ExFish>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(7697,&Faerie_Queen;) and HasAtLeast(2626,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(135, 'Clouds', 'Fog', 'Wind')">
+			<ExFish Bait="Spinnerbait" condition="not HasAtLeast(7697,&Faerie_Queen;) and HasAtLeast(2626,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(135, 'Clouds', 'Fog', 'Wind')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="32.4887, 35.44699, 653.9377" Heading="0.4687796" />
+					<FishSpot XYZ="38.34671, 35.54963, 688.4586" Heading="4.213539" />
+					<FishSpot XYZ="6.152539, 35.43816, 693.6091" Heading="2.594563" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Faerie Queen" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

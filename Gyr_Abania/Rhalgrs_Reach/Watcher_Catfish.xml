@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Watcher Catfish (24205)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Watcher_Catfish "1">
+]>
+<Profile>
+	<Name>Watcher Catfish</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Watcher Catfish..." />
+		<If condition="not HasAtLeast(20615,50)">
+			<!--Midge Larva-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20615,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(0)">
+			<LisbethTravel Area="Rhalgr's Reach" XYZ="-15.33974, 2.697035, -16.80799" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(24205,&Watcher_Catfish;) and HasAtLeast(20615,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(635, 'Thunder')">
+			<ExFish Bait="Midge Larva" condition="not HasAtLeast(24205,&Watcher_Catfish;) and HasAtLeast(20615,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(635, 'Thunder')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Medium" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-14.99483, 2.937019, -22.76287" Heading="4.197911" />
+					<FishSpot XYZ="-3.383132, 2.937027, -29.97495" Heading="1.026996" />
+					<FishSpot XYZ="3.042499, 2.937028, -54.91659" Heading="1.722336" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Watcher Catfish" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

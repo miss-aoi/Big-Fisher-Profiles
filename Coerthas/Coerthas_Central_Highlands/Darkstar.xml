@@ -1,67 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Darkstar (8769)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Darkstar "1">
+]>
 <Profile>
 	<Name>Darkstar</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(8769,1)">
-		<Log Message="Start Fishing: Darkstar..." />
-		<If Condition="not HasAtLeast(2610,3)">
-            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2610,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
-        </If>
+		<Log Message="Starting Fishing: Darkstar..." />
 		<If condition="not HasAtLeast(12704,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12704,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+			<!--Stonefly Nymph-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12704,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not HasAtLeast(2610,50)">
+			<!--Stonefly Nymph-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2610,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(392)">
-			<LisbethTravel Area="Coerthas Central Highlands" XYZ="490.8867, 348.5036, -687.0253"/>
+			<LisbethTravel Area="Coerthas Central Highlands" XYZ="490.8867, 348.5036, -687.0253" />
 		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
+		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While Condition="IsTimeBetween(17,18)">
+		<While condition="IsTimeBetween(18,19)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While Condition="HasAtLeast(2610,1) and HasAtLeast(12704,1) and not HasAtLeast(8769,1) and (IsTimeBetween(18,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Snow', 'Blizzards')" >
-			<!-- 5x Lamp Marimo for Fisher's Intuition -->
-			<ExFish Bait="Chocobo Fly" Condition="not Core.Player.HasAura(568)"
-					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+		<While condition="not HasAtLeast(8769,&Darkstar;) and HasAtLeast(12704,1) and (IsTimeBetween(19,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards', 'Snow')">
+			<ExFish Bait="Chocobo Fly" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8769,&Darkstar;) and HasAtLeast(12704,1) and (IsTimeBetween(19,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards', 'Snow')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
-					<FishSpot XYZ="492.7034, 347.5425, -699.8847" Heading="2.811154" Sit="True" />
-					<FishSpot XYZ="507.6468, 347.4637, -710.7338" Heading="3.726404" Sit="True" />
-					<FishSpot XYZ="499.6933, 347.5016, -730.2562" Heading="6.04072" Sit="True" />
+					<FishSpot XYZ="492.7034, 347.5425, -699.8847" Heading="2.811154" />
+					<FishSpot XYZ="499.6933, 347.5016, -730.2562" Heading="6.04072" />
+					<FishSpot XYZ="507.6468, 347.4637, -710.7338" Heading="3.726404" />
 				</FishSpots>
+				<Keepers>
+					<Keeper name="Lamp Marimo" />
+				</Keepers>
 			</ExFish>
-			<!-- Now go for Darkstar -->
-			<ExFish Bait="Stonefly Nymph" Condition="not HasAtLeast(8769,1)"
-					MinFish="10" MaxFish="15" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="1" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
-				<PatienceTugs>
+			<ExFish Bait="Stonefly Nymph" Condition="Core.Player.HasAura(568) and not HasAtLeast(8769,&Darkstar;) and HasAtLeast(12704,1) and (IsTimeBetween(19,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards', 'Snow')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Heavy" />
-				</PatienceTugs>
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="492.7034, 347.5425, -699.8847" Heading="2.811154" />
+					<FishSpot XYZ="499.6933, 347.5016, -730.2562" Heading="6.04072" />
+					<FishSpot XYZ="507.6468, 347.4637, -710.7338" Heading="3.726404" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Darkstar" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="492.7034, 347.5425, -699.8847" Heading="2.811154" Sit="True" />
-					<FishSpot XYZ="507.6468, 347.4637, -710.7338" Heading="3.726404" Sit="True" />
-					<FishSpot XYZ="499.6933, 347.5016, -730.2562" Heading="6.04072" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
 		</While>
-		<If Condition="HasAtLeast(5544,1)">
-			<Desynth ItemIds="5544" DesynthDelay="6000" DesynthTimeout="10"/>
+		<If condition="HasAtLeast(5544,1)">
+			<Desynth ItemIds="5544" DesynthDelay="6000" DesynthTimeout="10" />
 		</If>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

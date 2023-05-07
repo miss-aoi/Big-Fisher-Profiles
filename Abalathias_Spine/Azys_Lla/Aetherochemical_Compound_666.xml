@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Aetherochemical Compound #666 (16752)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Aetherochemical_Compound_666 "1">
+]>
+<Profile>
+	<Name>Aetherochemical Compound 666</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Aetherochemical Compound #666..." />
+		<If condition="not HasAtLeast(12710,50)">
+			<!--Fiend Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12710,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2110)">
+			<LisbethTravel Area="Azys Lla" XYZ="384.9145, -53.52942, -793.9514" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(16752,&Aetherochemical_Compound_666;) and HasAtLeast(12710,1)">
+			<ExFish Bait="Fiend Worm" condition="not HasAtLeast(16752,&Aetherochemical_Compound_666;) and HasAtLeast(12710,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Light" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="378.942, -53.41117, -761.7911" Heading="2.49265" />
+					<FishSpot XYZ="384.9145, -53.52942, -793.9514" Heading="0.8422616" />
+					<FishSpot XYZ="399.4146, -53.14585, -800.9404" Heading="0.3462029" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Aetherochemical Compound #666" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

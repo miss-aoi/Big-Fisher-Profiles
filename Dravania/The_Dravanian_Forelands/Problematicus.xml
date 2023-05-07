@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Problematicus (17588)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Problematicus "1">
+]>
+<Profile>
+	<Name>Problematicus</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Problematicus..." />
+		<If condition="not HasAtLeast(28634,3)">
+			<!--Metal Spinner-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':28634,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not HasAtLeast(12709,50)">
+			<!--Magma Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12709,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2030)">
+			<LisbethTravel Area="The Dravanian Forelands" XYZ="-737.6535, 4.907196, -819.5856" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(9,10)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(17588,&Problematicus;) and HasAtLeast(28634,1) and IsTimeBetween(10,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies', 'Fair Skies')">
+			<ExFish Bait="Magma Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17588,&Problematicus;) and HasAtLeast(28634,1) and IsTimeBetween(10,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-741.1226, 5.558385, -824.1998" Heading="4.014312" />
+					<FishSpot XYZ="-730.9006, 5.529306, -837.8148" Heading="3.964034" />
+					<FishSpot XYZ="-741.4175, 5.576777, -823.7872" Heading="5.040553" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Fossiltongue" />
+				</Keepers>
+			</ExFish>
+			<ExFish Bait="Metal Spinner" Condition="Core.Player.HasAura(568) and not HasAtLeast(17588,&Problematicus;) and HasAtLeast(28634,1) and IsTimeBetween(10,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-741.1226, 5.558385, -824.1998" Heading="4.014312" />
+					<FishSpot XYZ="-730.9006, 5.529306, -837.8148" Heading="3.964034" />
+					<FishSpot XYZ="-741.4175, 5.576777, -823.7872" Heading="5.040553" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Problematicus" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<If condition="HasAtLeast(12800,1)">
+			<Desynth ItemIds="12800" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

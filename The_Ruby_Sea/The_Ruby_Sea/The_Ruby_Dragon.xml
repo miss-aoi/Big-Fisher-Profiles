@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Ruby Dragon (24993)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Ruby_Dragon "1">
+]>
+<Profile>
+	<Name>The Ruby Dragon</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Ruby Dragon..." />
+		<If condition="not HasAtLeast(20676,50)">
+			<!--Blue Bobbit-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20676,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2760)">
+			<LisbethTravel Area="The Ruby Sea" XYZ="836.1324, 5.923008, 847.1952" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(3,4)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(24993,&The_Ruby_Dragon;) and HasAtLeast(20676,1) and IsTimeBetween(4,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(613, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(613, TimeSpan.FromHours(-8), 'Thunder')">
+			<ExFish Bait="Blue Bobbit" condition="not HasAtLeast(24993,&The_Ruby_Dragon;) and HasAtLeast(20676,1) and IsTimeBetween(4,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(613, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(613, TimeSpan.FromHours(-8), 'Thunder')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Medium" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="827.5914, 0.7098792, 839.5884" Heading="3.927474" />
+					<FishSpot XYZ="806.7427, 7.027895, 838.9656" Heading="3.908622" />
+					<FishSpot XYZ="797.0493, 7.027895, 848.7556" Heading="4.071139" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Ruby Dragon" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

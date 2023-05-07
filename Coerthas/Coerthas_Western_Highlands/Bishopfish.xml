@@ -1,44 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Bishopfish (17577)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Bishopfish "1">
+]>
 <Profile>
 	<Name>Bishopfish</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(17577,1)">
-		<Log Message="Start Fishing: Bishopfish..." />
+		<Log Message="Starting Fishing: Bishopfish..." />
 		<If condition="not HasAtLeast(12711,50)">
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
+			<!--Brute Leech-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2201)">
-			<LisbethTravel Area="Coerthas Western Highlands" XYZ="692.1117, 132.263, -797.5139"/>
+			<LisbethTravel Area="Coerthas Western Highlands" XYZ="692.1117, 132.263, -797.5139" />
 		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
+		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While Condition="IsTimeBetween(9,10)">
+		<While condition="IsTimeBetween(9,10)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Brute Leech" Condition="HasAtLeast(12711,1) and not HasAtLeast(17577,1) and IsTimeBetween(10,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Clear Skies')"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
-			<Keepers>
-				<Keeper name="Bishopfish" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="700.3533, 130.5082, -811.9639" Heading="2.642415" Sit="True" />
-				<FishSpot XYZ="697.6003, 130.462, -814.6788" Heading="3.000552" Sit="True" />
-				<FishSpot XYZ="705.3715, 130.7645, -807.4526" Heading="2.34919" Sit="True" />
-			</FishSpots>
-		</ExFish>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<While condition="not HasAtLeast(17577,&Bishopfish;) and HasAtLeast(12711,1) and IsTimeBetween(10,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Clear Skies')">
+			<ExFish Bait="Brute Leech" condition="not HasAtLeast(17577,&Bishopfish;) and HasAtLeast(12711,1) and IsTimeBetween(10,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-21.4197, 89.14197, -559.7135" Heading="4.573871" />
+					<FishSpot XYZ="-32.44563, 89.25902, -571.203" Heading="6.274516" />
+					<FishSpot XYZ="-48.33238, 89.17406, -557.7254" Heading="1.37154" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Bishopfish" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

@@ -1,44 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Carp Diem (7701)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Carp_Diem "1">
+]>
 <Profile>
 	<Name>Carp Diem</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(7701,1)">
-			<Log Message="Start Fishing: Carp Diem..." />
-			<If condition="not HasAtLeast(2614,3)">
-				<Lisbeth Json="[{'Item': 2614,'Group': 0,'Amount':3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
-			</If>
-			<If condition="not IsOnSubMap(0)">
-				<LisbethTravel ARea="Gridania (Old Gridania)" XYZ="-113.6757, 6.369269, -150.6167"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<While Condition="IsTimeBetween(8,9)" >
-				<WaitTimer WaitTime="30" />
-			</While>
-			<ExFish Bait="Crow Fly" Condition="HasAtLeast(2614,1) and not HasAtLeast(7701,1) and IsTimeBetween(9,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(133, 'Clouds', 'Fog')"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+		<Log Message="Starting Fishing: Carp Diem..." />
+		<If condition="not HasAtLeast(2614,3)">
+			<!--Crow Fly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2614,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnMap(133) or not IsOnSubMap(0)">
+			<LisbethTravel Area="Gridania (Old Gridania)" XYZ="-113.6757, 6.369269, -150.6167" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(8,9)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7701,&Carp_Diem;) and HasAtLeast(2614,1) and IsTimeBetween(9,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(133, 'Clouds', 'Fog')">
+			<ExFish Bait="Crow Fly" condition="not HasAtLeast(7701,&Carp_Diem;) and HasAtLeast(2614,1) and IsTimeBetween(9,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(133, 'Clouds', 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-121.8741, 3.031262, -162.0318" Heading="4.686854" />
+					<FishSpot XYZ="-122.0327, 2.92517, -132.867" Heading="0.6865654" />
+					<FishSpot XYZ="-145.6641, 3.092318, -167.6399" Heading="0.8708653" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Carp Diem" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-121.8741, 3.031262, -162.0318" Heading="4.686854" Sit="True" />
-					<FishSpot XYZ="-145.6641, 3.092318, -167.6399" Heading="0.8708653" Sit="True" />
-					<FishSpot XYZ="-122.0327, 2.92517, -132.867" Heading="0.6865654" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

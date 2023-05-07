@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Earful (36681)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Earful "1">
+]>
+<Profile>
+	<Name>Earful</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Earful..." />
+		<If condition="not HasAtLeast(36591,50)">
+			<!--Mayfly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36591,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3864)">
+			<LisbethTravel Area="Radz-at-Han" XYZ="-270.539, 36, 36.05727" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(3,4)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(36681,&Earful;) and HasAtLeast(36591,1) and IsTimeBetween(4,8)">
+			<ExFish Bait="Mayfly" condition="not HasAtLeast(36681,&Earful;) and HasAtLeast(36591,1) and IsTimeBetween(4,8)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-284.9658, 34.74522, 27.53073" Heading="3.298184" />
+					<FishSpot XYZ="-278.7176, 34.74521, 18.49108" Heading="3.664698" />
+					<FishSpot XYZ="-288.6003, 34.74522, 10.35258" Heading="0.6110749" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Earful" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

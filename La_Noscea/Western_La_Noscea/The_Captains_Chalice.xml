@@ -1,49 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
-	Profile: The Captains Chalice (7948)
-	Authors: budesaal, miss-aoi
+	Profile: The Captain's Chalice (7948)
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Captains_Chalice "1">
+]>
 <Profile>
 	<Name>The Captains Chalice</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-	<If condition="not HasAtLeast(7948,1)">
-		<Log Message="Start Fishing: The Captains Chalice..." />
+		<Log Message="Starting Fishing: The Captains Chalice..." />
 		<If condition="not HasAtLeast(2616,3)">
-			<Lisbeth Json="[{'Item': 2616,'Group': 0,'Amount':3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
-		</If>
-		<If Condition="not ClassName == ClassJobType.Fisher">
-			<ChangeClass Job="Fisher" />
+			<!--Steel Jig-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2616,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(363)">
-			<LisbethTravel Area="Western La Noscea" XYZ="-249.0802, -42.53819, -307.7516"/>
+			<LisbethTravel Area="Western La Noscea" XYZ="-249.0802, -42.53819, -307.7516" />
 		</If>
-		<While Condition="IsTimeBetween(2,23)">
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(22,23)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Steel Jig" Condition="HasAtLeast(2616,1) and not HasAtLeast(7948,1) and (IsTimeBetween(23,24) or IsTimeBetween(0,2))"
-				MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto">
-			<PatienceTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Heavy" />
-			</PatienceTugs>
-			<Keepers>
-				<Keeper name="The Captain's Chalice" />
-			</Keepers>
-			<FishSpots>
-				<FishSpot XYZ="-249.0802, -42.53819, -307.7516" Heading="0.1177614" Sit="True" />
-				<FishSpot XYZ="-202.8527, -42.29935, -304.7731" Heading="2.019479" Sit="True" />
-				<FishSpot XYZ="-231.6532, -42.58453, -299.9491" Heading="5.098241" Sit="True" />
-			</FishSpots>
-		</ExFish>
-	</If>
-	<LLoadProfile Path="../../Start.xml"/>
-	
+		<While condition="not HasAtLeast(7948,&The_Captains_Chalice;) and HasAtLeast(2616,1) and (IsTimeBetween(23,24) or IsTimeBetween(0,2))">
+			<ExFish Bait="Steel Jig" condition="not HasAtLeast(7948,&The_Captains_Chalice;) and HasAtLeast(2616,1) and (IsTimeBetween(23,24) or IsTimeBetween(0,2))" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-202.8527, -42.29935, -304.7731" Heading="2.019479" />
+					<FishSpot XYZ="-231.6532, -42.58453, -299.9491" Heading="5.098241" />
+					<FishSpot XYZ="-249.0802, -42.53819, -307.7516" Heading="0.1177614" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Captain's Chalice" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

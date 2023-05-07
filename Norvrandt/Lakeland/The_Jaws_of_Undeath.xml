@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Jaws of Undeath (28925)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Jaws_of_Undeath "1">
+]>
+<Profile>
+	<Name>The Jaws of Undeath</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Jaws of Undeath..." />
+		<If condition="not HasAtLeast(27589,50)">
+			<!--Baitbugs-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27589,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3068)">
+			<LisbethTravel Area="Lakeland" XYZ="-573.1496, 1.045666, 812.4247" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(15,16)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(28925,&The_Jaws_of_Undeath;) and HasAtLeast(27589,1) and IsTimeBetween(16,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(813, 'Clouds', 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(813, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
+			<ExFish Bait="Baitbugs" condition="not HasAtLeast(28925,&The_Jaws_of_Undeath;) and HasAtLeast(27589,1) and IsTimeBetween(16,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(813, 'Clouds', 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(813, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-566.6547, -0.4500181, 818.3839" Heading="1.575036" />
+					<FishSpot XYZ="-571.9924, -1.495782, 808.0778" Heading="2.500757" />
+					<FishSpot XYZ="-614.087, 24.85095, 780.8807" Heading="2.513321" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Jaws of Undeath" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Python Discus (33317)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Python_Discus "1">
+]>
+<Profile>
+	<Name>Python Discus</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Python Discus..." />
+		<If condition="not HasAtLeast(27582,50)">
+			<!--Fruit Worm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27582,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3059)">
+			<LisbethTravel Area="Lakeland" XYZ="-30.73802, -0.480308, 637.7495" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(33317,&Python_Discus;) and HasAtLeast(27582,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(813, 'Thunderstorms') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(813, TimeSpan.FromHours(-8), 'Rain')">
+			<ExFish Bait="Fruit Worm" condition="not HasAtLeast(33317,&Python_Discus;) and HasAtLeast(27582,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(813, 'Thunderstorms') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(813, TimeSpan.FromHours(-8), 'Rain')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-27.86252, -0.4972355, 636.3398" Heading="1.897425" />
+					<FishSpot XYZ="-32.49625, -0.4892691, 620.8665" Heading="3.338368" />
+					<FishSpot XYZ="-32.66836, -0.4741216, 645.6116" Heading="4.77931" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Python Discus" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

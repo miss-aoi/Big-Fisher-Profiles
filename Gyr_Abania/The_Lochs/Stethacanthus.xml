@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Stethacanthus (24992)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Stethacanthus "1">
+]>
+<Profile>
+	<Name>Stethacanthus</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Stethacanthus..." />
+		<If condition="not HasAtLeast(20616,50)">
+			<!--Silkworm-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20616,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2609)">
+			<LisbethTravel Area="The Lochs" XYZ="-178.4802, -0.3, -88.88718" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(15,16)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and IsTimeBetween(16,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Thunderstorms')">
+			<ExFish Bait="Silkworm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and IsTimeBetween(16,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Thunderstorms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Medium" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-178.4802, -0.3, -88.88718" Heading="2.481858" />
+					<FishSpot XYZ="-157.1131, -0.3, -82.60224" Heading="2.234722" />
+					<FishSpot XYZ="-197.6503, -0.3, -120.0159" Heading="1.893329" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Sculptor" />
+				</Keepers>
+			</ExFish>
+			<ExFish Bait="Silkworm" Condition="Core.Player.HasAura(568) and not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and IsTimeBetween(16,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Thunderstorms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Medium" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-178.4802, -0.3, -88.88718" Heading="2.481858" />
+					<FishSpot XYZ="-157.1131, -0.3, -82.60224" Heading="2.234722" />
+					<FishSpot XYZ="-197.6503, -0.3, -120.0159" Heading="1.893329" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Stethacanthus" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<If condition="HasAtLeast(20040,1)">
+			<Desynth ItemIds="20040" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

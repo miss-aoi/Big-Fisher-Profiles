@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Jumbo Snook (36680)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Jumbo_Snook "1">
+]>
+<Profile>
+	<Name>Jumbo Snook</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Jumbo Snook..." />
+		<If condition="not HasAtLeast(36591,50)">
+			<!--Mayfly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36591,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(3832)">
+			<LisbethTravel Area="Labyrinthos" XYZ="-174.8388, 156.93, -806.4524" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(17,18)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(36680,&Jumbo_Snook;) and HasAtLeast(36591,1) and IsTimeBetween(18,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(956, 'Clouds')">
+			<ExFish Bait="Mayfly" condition="not HasAtLeast(36680,&Jumbo_Snook;) and HasAtLeast(36591,1) and IsTimeBetween(18,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(956, 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-174.8388, 156.93, -806.4524" Heading="4.47989" />
+					<FishSpot XYZ="-191.3315, 156.93, -820.849" Heading="0.1382294" />
+					<FishSpot XYZ="-208.8137, 156.93, -800.7595" Heading="5.286255" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Jumbo Snook" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Twin-tongued Carp (16747)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Twin-tongued_Carp "1">
+]>
+<Profile>
+	<Name>Twin-tongued Carp</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Twin-tongued Carp..." />
+		<If condition="not HasAtLeast(12711,50)">
+			<!--Brute Leech-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2020)">
+			<LisbethTravel Area="The Dravanian Forelands" XYZ="408.8085, -46.34728, -398.6796" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(11,12)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(16747,&Twin-tongued_Carp;) and HasAtLeast(12711,1) and IsTimeBetween(12,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(398, TimeSpan.FromHours(-8), 'Clouds', 'Dust Storms')">
+			<ExFish Bait="Brute Leech" condition="not HasAtLeast(16747,&Twin-tongued_Carp;) and HasAtLeast(12711,1) and IsTimeBetween(12,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(398, TimeSpan.FromHours(-8), 'Clouds', 'Dust Storms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="408.8085, -46.34728, -398.6796" Heading="6.062608" />
+					<FishSpot XYZ="419.7059, -47.16928, -371.279" Heading="5.453138" />
+					<FishSpot XYZ="420.4426, -46.94389, -347.9407" Heading="3.24145" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Twin-tongued Carp" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

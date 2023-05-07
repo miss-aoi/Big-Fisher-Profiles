@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Hardhead Trout (24207)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Hardhead_Trout "1">
+]>
+<Profile>
+	<Name>Hardhead Trout</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Hardhead Trout..." />
+		<If condition="not HasAtLeast(20675,50)">
+			<!--Stonefly Larva-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20675,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2600)">
+			<LisbethTravel Area="The Fringes" XYZ="-499.0072, 82.00081, -262.1857" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(15,16)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(24207,&Hardhead_Trout;) and HasAtLeast(20675,1) and IsTimeBetween(16,20)">
+			<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(24207,&Hardhead_Trout;) and HasAtLeast(20675,1) and IsTimeBetween(16,20)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-500.2141, 80.50189, -246.2518" Heading="0.8887141" />
+					<FishSpot XYZ="-490.678, 81.47359, -265.1501" Heading="1.012286" />
+					<FishSpot XYZ="-487.4555, 82.28168, -237.0961" Heading="3.938151" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Hardhead Trout" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

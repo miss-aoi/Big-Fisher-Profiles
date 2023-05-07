@@ -56,64 +56,64 @@ This profile set is still a work in progress, so use at your own risk and I'm no
 - [x] Mor Dhona
 
 ### Abalathia's Spine
-- [ ] The Sea of Clouds
-- [ ] Azys Lla
+- [x] The Sea of Clouds
+- [x] Azys Lla
 
 ### Dravania
-- [ ] The Dravanian Forelands
-- [ ] The Dravanian Hinterlands
-- [ ] The Churning Mists
+- [x] The Dravanian Forelands
+- [x] The Dravanian Hinterlands
+- [x] The Churning Mists
 
 ### Gyr Abania
-- [ ] Rhalgr's Reach
-- [ ] The Fringes
-- [ ] The Peaks
-- [ ] The Lochs
+- [x] Rhalgr's Reach
+- [x] The Fringes
+- [x] The Peaks
+- [x] The Lochs
 
 ### Othard
-- [ ] The Ruby Sea
-- [ ] Yanxia
-- [ ] The Azim Steppe
-- [ ] The Doman Enclave
+- [x] The Ruby Sea
+- [x] Yanxia
+- [x] The Azim Steppe
+- [x] The Doman Enclave
 
 ### Hingashi
-- [ ] Kugane
-- [ ] Shirogane
+- [x] Kugane
+- [x] Shirogane
 
 ### Norvrandt
-- [ ] The Crystarium
-- [ ] Eulmore
-- [ ] Lakeland
-- [ ] Kholusia
-- [ ] Amh Araeng
-- [ ] Il Mheg
-- [ ] The Rak'tika Greatwood
-- [ ] The Tempest
+- [x] The Crystarium
+- [x] Eulmore
+- [x] Lakeland
+- [x] Kholusia
+- [x] Amh Araeng
+- [x] Il Mheg
+- [x] The Rak'tika Greatwood
+- [x] The Tempest
 
 ### The North Empty
-- [ ] Old Sharlayan
-- [ ] Labyinthos
+- [x] Old Sharlayan
+- [x] Labyinthos
 
 ### Ilsabard
-- [ ] Radz-at-Han
-- [ ] Thavnair
-- [ ] Garlemald
+- [x] Radz-at-Han
+- [x] Thavnair
+- [x] Garlemald
 
 ### The Sea of Stars
-- [ ] Mare Lametorum
-- [ ] Ultima Thule
+- [x] Mare Lametorum
+- [x] Ultima Thule
 
 ### The World Unsundered
-- [ ] Elpis
+- [x] Elpis
 
 ### The High Seas
-- [ ] Galadion Bay
-- [ ] The Southern Strait of Merlthor
-- [ ] The Northern Strait of Merlthor
-- [ ] Rhotano Sea
-- [ ] The Cieldalaes
-- [ ] The Bloodbrine Sea
-- [ ] The Rothlyt Sound
+- [x] Galadion Bay
+- [x] The Southern Strait of Merlthor
+- [x] The Northern Strait of Merlthor
+- [x] Rhotano Sea
+- [x] The Cieldalaes
+- [x] The Bloodbrine Sea
+- [x] The Rothlyt Sound
 
 ### TODO:
 - More testing

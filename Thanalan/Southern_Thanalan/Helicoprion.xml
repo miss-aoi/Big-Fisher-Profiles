@@ -1,49 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Helicoprion (8768)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Helicoprion "1">
+]>
 <Profile>
 	<Name>Helicoprion</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(8768,1)">
-			<Log Message="Start Fishing: Helicoprion..." />
-			<If condition="not HasAtLeast(2600,50)">
-				<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2600,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
-			</If>
-			<If condition="not IsOnSubMap(257)">
-				<LisbethTravel Area="Southern Thanalan" XYZ="-429.0695, -0.4089584, 736.3172"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<While Condition="IsTimeBetween(7,8)" >
-				<WaitTimer WaitTime="30" />
-			</While>
-			<ExFish Bait="Sand Leech" Condition="HasAtLeast(2600,1) and not HasAtLeast(8768,1) and IsTimeBetween(8,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(-8), 'Clouds', 'Fog')"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True"
-					Mooch="2" Patience="Patience2" MinimumGPPatience="650" ForceCordial="True" CordialType="Auto" >
-				<PatienceTugs>
+		<Log Message="Starting Fishing: Helicoprion..." />
+		<If condition="not HasAtLeast(2600,50)">
+			<!--Sand Leech-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2600,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(257)">
+			<LisbethTravel Area="Southern Thanalan" XYZ="-429.0695, -0.4089584, 736.3172" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(7,8)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(8768,&Helicoprion;) and HasAtLeast(2600,1) and IsTimeBetween(8,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(-8), 'Fog', 'Clouds')">
+			<ExFish Bait="Sand Leech" condition="not HasAtLeast(8768,&Helicoprion;) and HasAtLeast(2600,1) and IsTimeBetween(8,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(-8), 'Fog', 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Medium" />
-					<PatienceTug moochLevel="1" TugType="Heavy" />
-				</PatienceTugs>
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="-441.4117, -0.9107453, 742.5688" Heading="4.968235" />
+					<FishSpot XYZ="-442.3548, -0.9186811, 725.9896" Heading="4.513752" />
+					<FishSpot XYZ="-445.7262, -1.34148, 700.6635" Heading="4.254045" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Helicoprion" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-441.4117, -0.9107453, 742.5688" Heading="4.968235" Sit="True" />
-					<FishSpot XYZ="-442.3548, -0.9186811, 725.9896" Heading="4.513752" Sit="True" />
-					<FishSpot XYZ="-445.7262, -1.34148, 700.6635" Heading="4.254045" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

@@ -1,44 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf8'?>
 <!--
 	Profile: Judgeray (7695)
-	Authors: budesaal, miss-aoi
+	Authors: miss-aoi
 -->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Judgeray "1">
+]>
 <Profile>
 	<Name>Judgeray</Name>
-	<BehaviorDirectory></BehaviorDirectory>
+	<BehaviorDirectory />
 	<Order>
-
-		<If condition="not HasAtLeast(7695,1)">
-			<Log Message="Start Fishing: Judgeray..." />
-			<If condition="not HasAtLeast(2623,3)">
-				<Lisbeth Json="[{'Item': 2623,'Group': 0,'Amount':3,'Collectable': false,'QuickSynth': false,'SuborderQuickSynth': false,'Hq': false,'Food': 0,'Primary': true,'Type': 'Goldsmith','Enabled': true,'Manual': 0,'Medicine': 0}]"/>
-			</If>
-			<If condition="not IsOnSubMap(140)">
-				<LisbethTravel ZoneId="154" XYZ="-37.45838, -40.499, 219.5168"/>
-			</If>
-			<If Condition="not ClassName == ClassJobType.Fisher">
-				<ChangeClass Job="Fisher" />
-			</If>
-			<While Condition="IsTimeBetween(16,17)" >
-				<WaitTimer WaitTime="30" />
-			</While>
-			<ExFish Bait="Wildfowl Fly" Condition="HasAtLeast(2623,1) and not HasAtLeast(7695,1) and IsTimeBetween(17,21)"
-					MinFish="15" MaxFish="20" ShuffleFishSpots="True" SitRate=".69" ThaliaksFavor="True" Chum="True">
+		<Log Message="Starting Fishing: Judgeray..." />
+		<If condition="not HasAtLeast(2623,50)">
+			<!--Wildfowl Fly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2623,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(140)">
+			<LisbethTravel Area="North Shroud" XYZ="-37.45838, -40.499, 219.5168" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(16,17)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(7695,&Judgeray;) and HasAtLeast(2623,1) and IsTimeBetween(17,21)">
+			<ExFish Bait="Wildfowl Fly" condition="not HasAtLeast(7695,&Judgeray;) and HasAtLeast(2623,1) and IsTimeBetween(17,21)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-22.88442, -40.94998, 198.347" Heading="6.159586" />
+					<FishSpot XYZ="-35.6778, -39.79317, 204.5797" Heading="4.301856" />
+					<FishSpot XYZ="-37.19979, -40.94998, 194.5685" Heading="5.929203" />
+				</FishSpots>
 				<Keepers>
 					<Keeper name="Judgeray" />
 				</Keepers>
-				<FishSpots>
-					<FishSpot XYZ="-35.6778, -39.79317, 204.5797" Heading="4.301856" Sit="True" />
-					<FishSpot XYZ="-37.19979, -40.94998, 194.5685" Heading="5.929203" Sit="True" />
-					<FishSpot XYZ="-22.88442, -40.94998, 198.347" Heading="6.159586" Sit="True" />
-				</FishSpots>
+				<SurfaceSlaps />
 			</ExFish>
-		</If>
-		<LLoadProfile Path="../../Start.xml"/>
-
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
 	</Order>
-	<GrindAreas>
-	</GrindAreas>
-	<CodeChunks>
-	</CodeChunks>
+	<GrindAreas />
+	<CodeChunks />
 </Profile>

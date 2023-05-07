@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Word of God (23069)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Word_of_God "1">
+]>
+<Profile>
+	<Name>The Word of God</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Word of God..." />
+		<If condition="not HasAtLeast(20675,50)">
+			<!--Stonefly Larva-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20675,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2757)">
+			<LisbethTravel Area="The Azim Steppe" XYZ="-228.8883, 58.65493, -357.8817" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(19,20)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(23069,&The_Word_of_God;) and HasAtLeast(20675,1) and IsTimeBetween(20,24)">
+			<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(23069,&The_Word_of_God;) and HasAtLeast(20675,1) and IsTimeBetween(20,24)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="-237.7518, 57.28605, -360.9993" Heading="4.365572" />
+					<FishSpot XYZ="-232.408, 59.49247, -389.6874" Heading="2.924627" />
+					<FishSpot XYZ="-245.026, 55.11513, -338.7039" Heading="6.281946" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Word of God" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>
