@@ -195,7 +195,7 @@
 <!ENTITY Thousand_Fin "1">                                       <!-- WEATHER -->                      <!-- BRUTE LEECH -->
 <!ENTITY The_Soul_of_the_Martyr "0">             <!-- TIMED -->  <!-- WEATHER -->                      <!-- GIANT CRANE FLY -->
 <!ENTITY Dimorphodon "0">                                        <!-- WEATHER -->                      <!-- GIANT CRANE FLY -->
-<!ENTITY Bloodchaser "1">                                        <!-- WEATHER -->                      <!-- GIANT CRANE FLY -->
+<!ENTITY Bloodchaser "0">                                        <!-- WEATHER -->                      <!-- GIANT CRANE FLY -->
 <!ENTITY Raimdellopterus "1">                    <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- GIANT CRANE FLY -->
 <!-- GYR ABANIA - Rhalgr's Reach -->
 <!ENTITY Hookstealer "0">                                                                              <!-- MIDGE LARVA -->
@@ -204,7 +204,7 @@
 <!-- GYR ABANIA - The Fringes -->
 <!ENTITY Hardhead_Trout "1">                     <!-- TIMED -->                                        <!-- STONEFLY LARVA -->
 <!ENTITY Xenacanthus "1">                        <!-- TIMED -->                                        <!-- STONEFLY LARVA -->
-<!ENTITY Sapphire_Fan "1">                                      <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY Sapphire_Fan "1">                                       <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
 <!ENTITY The_Archbishop "0">                     <!-- TIMED -->                                        <!-- SUSPENDING MINNOW -->
 <!ENTITY Downstream_Loach "1">                                   <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
 <!ENTITY Corpse_Chub "1">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
@@ -220,34 +220,34 @@
 <!ENTITY Diamond-eye "1">                                        <!-- WEATHER -->                      <!-- SILKWORM -->
 <!ENTITY Stethacanthus "1">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- SILKWORM -->
 <!-- OTHARD - The Ruby Sea -->
-<!ENTITY Kuer "0">                                                                                     <!-- BLUE BOBBIT -->
-<!ENTITY The_Ruby_Dragon "0">                    <!-- TIMED -->  <!-- WEATHER -->                      <!-- BLUE BOBBIT -->
+<!ENTITY Kuer "1">                                                                                     <!-- BLUE BOBBIT -->
+<!ENTITY The_Ruby_Dragon "1">                    <!-- TIMED -->  <!-- WEATHER -->                      <!-- BLUE BOBBIT -->
 <!ENTITY The_Vegetarian "0">                     <!-- TIMED -->  <!-- WEATHER -->                      <!-- LIVE SHRIMP -->
-<!ENTITY Seven_Stars "0">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- BLUE BOBBIT -->
+<!ENTITY Seven_Stars "1">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- BLUE BOBBIT -->
+<!ENTITY The_Winter_Queen "1">                   <!-- TIMED -->                                        <!-- BLUE BOBBIT -->
 <!ENTITY Argonautica "0">                                        <!-- WEATHER -->                      <!-- LIVE SHRIMP -->
-<!ENTITY The_Winter_Queen "0">                   <!-- TIMED -->                                        <!-- BLUE BOBBIT -->
 <!ENTITY Pinhead "0">                            <!-- TIMED -->  <!-- WEATHER -->                      <!-- LIVE SHRIMP -->
 <!ENTITY Rakshasa "0">                                           <!-- WEATHER -->                      <!-- METAL SPINNER -->
 <!-- OTHARD - Yanxia -->
 <!ENTITY Pomegranate_Trout "0">                                  <!-- WEATHER -->                      <!-- NIGHTCRAWLER -->
-<!ENTITY Glarramundi "0">                                        <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
-<!ENTITY Hermits_End "0">                                                                              <!-- STONEFLY LARVE -->
-<!ENTITY Warden_of_the_Seven_Hues "0">           <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- STONEFLY LARVA -->
-<!ENTITY The_Unraveled_Bow "0">                  <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
-<!ENTITY Bokuden "0">                            <!-- TIMED -->                                        <!-- STONEFLY LARVA -->
-<!ENTITY Suiten_Ippeki "0">                      <!-- TIMED -->  <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
-<!ENTITY Axelrod "0">                            <!-- TIMED -->  <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
-<!ENTITY Hagoromo_Bijin "0">                                     <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
-<!ENTITY Hagoromo_Koi "0">                                       <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY Glarramundi "1">                                        <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
+<!ENTITY Hermits_End "1">                                                                              <!-- STONEFLY LARVE -->
+<!ENTITY Warden_of_the_Seven_Hues "1">           <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- STONEFLY LARVA -->
+<!ENTITY The_Unraveled_Bow "1">                  <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
+<!ENTITY Bokuden "1">                            <!-- TIMED -->                                        <!-- STONEFLY LARVA -->
+<!ENTITY Suiten_Ippeki "1">                      <!-- TIMED -->  <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY Axelrod "1">                            <!-- TIMED -->  <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY Hagoromo_Bijin "1">                                     <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY Hagoromo_Koi "1">                                       <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
 <!-- OTHARD - The Azim Steppe -->
 <!ENTITY Garden_Skipper "0">                     <!-- TIMED -->  <!-- WEATHER -->                      <!-- MIDGE LARVA -->
-<!ENTITY Banderole "0">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- NIGHTCRAWLER -->
-<!ENTITY Blade_Skipper "0">                      <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
-<!ENTITY Duskfish "0">                           <!-- TIMED -->  <!-- WEATHER -->                      <!-- NIGHTCRAWLER -->
-<!ENTITY The_Word_of_God "0">                    <!-- TIMED -->                                        <!-- STONEFLY LARVA -->
-<!ENTITY Yat_Khan "0">                                           <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
-<!ENTITY Nhaamas_Treasure "0">                                                                         <!-- SUSPENDING MINNOW -->
-<!ENTITY The_Unconditional "0">                  <!-- TIMED -->  <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY Banderole "1">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- NIGHTCRAWLER -->
+<!ENTITY Blade_Skipper "1">                      <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
+<!ENTITY Duskfish "1">                           <!-- TIMED -->  <!-- WEATHER -->                      <!-- NIGHTCRAWLER -->
+<!ENTITY The_Word_of_God "1">                    <!-- TIMED -->                                        <!-- STONEFLY LARVA -->
+<!ENTITY Yat_Khan "1">                                           <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY Nhaamas_Treasure "1">                                                                         <!-- SUSPENDING MINNOW -->
+<!ENTITY The_Unconditional "1">                  <!-- TIMED -->  <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
 <!-- HINGASHI - Kugane -->
 <!ENTITY Rising_Dragon "0">                                                                            <!-- METAL SPINNER -->
 <!-- HINGASHI - Shirogane -->
