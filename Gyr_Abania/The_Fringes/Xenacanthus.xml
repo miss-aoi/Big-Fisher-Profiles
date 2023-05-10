@@ -26,10 +26,9 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(24990,&Xenacanthus;) and HasAtLeast(20675,1) and IsTimeBetween(16,20)">
-			<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(24990,&Xenacanthus;) and HasAtLeast(20675,1) and IsTimeBetween(16,20)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(24990,&Xenacanthus;) and HasAtLeast(20675,1) and IsTimeBetween(16,20)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="1" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Medium" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
 				</PatientTugs>
 				<FishSpots>
 					<FishSpot XYZ="-500.2141, 80.50189, -246.2518" Heading="0.8887141" />
@@ -39,7 +38,9 @@
 				<Keepers>
 					<Keeper name="Xenacanthus" />
 				</Keepers>
-				<SurfaceSlaps />
+				<SurfaceSlaps>
+					<SurfaceSlap name="Balloon Frog" />
+				</SurfaceSlaps>
 			</ExFish>
 		</While>
 		<LLoadProfile Path="../../Start.xml" />
