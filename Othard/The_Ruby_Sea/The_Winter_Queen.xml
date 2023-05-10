@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Winter Queen (23065)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Winter_Queen "1">
+]>
+<Profile>
+	<Name>The Winter Queen</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Winter Queen..." />
+		<If condition="not HasAtLeast(20676,50)">
+			<!--Blue Bobbit-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20676,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2750)">
+			<LisbethTravel Area="The Ruby Sea" XYZ="655.6534, 2.262271, -672.4041" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(15,16)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(23065,&The_Winter_Queen;) and HasAtLeast(20676,1) and IsTimeBetween(16,20)">
+			<ExFish Bait="Blue Bobbit" condition="not HasAtLeast(23065,&The_Winter_Queen;) and HasAtLeast(20676,1) and IsTimeBetween(16,20)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="673.9354, 0.5334198, -672.6906" Heading="2.172888" />
+					<FishSpot XYZ="660.7391, 0.5285521, -686.4183" Heading="2.526836" />
+					<FishSpot XYZ="647.8447, 0.5923566, -704.5498" Heading="2.216867" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Winter Queen" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

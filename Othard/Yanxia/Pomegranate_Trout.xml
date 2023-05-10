@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Pomegranate Trout (24885)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Pomegranate_Trout "1">
+]>
+<Profile>
+	<Name>Pomegranate Trout</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Pomegranate Trout..." />
+		<If condition="not HasAtLeast(20614,50)">
+			<!--Nightcrawler-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20614,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2752)">
+			<LisbethTravel Area="Yanxia (Fierce)" XYZ="631.852, 125.6617, -376.8253" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(24885,&Pomegranate_Trout;) and HasAtLeast(20614,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Rain')">
+			<ExFish Bait="Nightcrawler" condition="not HasAtLeast(24885,&Pomegranate_Trout;) and HasAtLeast(20614,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Rain')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="640.8627, 124.1067, -374.8214" Heading="0.7165961" />
+					<FishSpot XYZ="657.3647, 123.7503, -385.4939" Heading="0.3961546" />
+					<FishSpot XYZ="674.1044, 124.0649, -392.046" Heading="0.1992848" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Pomegranate Trout" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

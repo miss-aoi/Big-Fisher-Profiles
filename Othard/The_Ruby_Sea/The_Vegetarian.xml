@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: The Vegetarian (24882)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY The_Vegetarian "1">
+]>
+<Profile>
+	<Name>The Vegetarian</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: The Vegetarian..." />
+		<If condition="not HasAtLeast(20617,50)">
+			<!--Live Shrimp-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20617,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2766)">
+			<LisbethTravel Area="The Ruby Sea" XYZ="470.893, -0.1, 888.3715" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(19,20)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(24882,&The_Vegetarian;) and HasAtLeast(20617,1) and IsTimeBetween(20,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(613, 'Thunder')">
+			<ExFish Bait="Live Shrimp" condition="not HasAtLeast(24882,&The_Vegetarian;) and HasAtLeast(20617,1) and IsTimeBetween(20,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(613, 'Thunder')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+				<PatientTugs>
+					<PatienceTug moochLevel="0" TugType="Light" />
+					<PatienceTug moochLevel="1" TugType="Medium" />
+				</PatientTugs>
+				<FishSpots>
+					<FishSpot XYZ="470.9957, -0.1, 896.1421" Heading="0.02934432" />
+					<FishSpot XYZ="435.5087, -0.1, 909.225" Heading="5.895746" />
+					<FishSpot XYZ="415.0017, -0.1037527, 904.9423" Heading="4.990961" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="The Vegetarian" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

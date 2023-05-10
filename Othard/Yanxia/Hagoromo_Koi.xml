@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Hagoromo Koi (23068)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Hagoromo_Koi "1">
+]>
+<Profile>
+	<Name>Hagoromo Koi</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Hagoromo Koi..." />
+		<If condition="not HasAtLeast(20675,50)">
+			<!--Stonefly Larva-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20675,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2794)">
+			<LisbethTravel Area="Yanxia (Fierce)" XYZ="696.0469, 170.2527, 97.66476" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="not HasAtLeast(23068,&Hagoromo_Koi;) and HasAtLeast(20675,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Fog')">
+			<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(23068,&Hagoromo_Koi;) and HasAtLeast(20675,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="696.0469, 170.2527, 97.66476" Heading="1.648643" />
+					<FishSpot XYZ="719.2241, 170.2573, 103.3717" Heading="1.152273" />
+					<FishSpot XYZ="707.9413, 170.2509, 128.2147" Heading="4.453081" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Hagoromo Koi" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>

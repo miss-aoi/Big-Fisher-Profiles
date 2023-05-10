@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Axelrod (24889)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Axelrod "1">
+]>
+<Profile>
+	<Name>Axelrod</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Axelrod..." />
+		<If condition="not HasAtLeast(20675,50)">
+			<!--Stonefly Larva-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20675,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		</If>
+		<If condition="not IsOnSubMap(2753)">
+			<LisbethTravel Area="Yanxia (Fierce)" XYZ="35.11771, -0.3000001, 256.4848" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<While condition="IsTimeBetween(-1,0)">
+			<WaitTimer WaitTime="30" />
+		</While>
+		<While condition="not HasAtLeast(24889,&Axelrod;) and HasAtLeast(20675,1) and IsTimeBetween(0,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clouds')">
+			<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(24889,&Axelrod;) and HasAtLeast(20675,1) and IsTimeBetween(0,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+				<FishSpots>
+					<FishSpot XYZ="35.4082, -0.3000002, 249.4484" Heading="3.301119" />
+					<FishSpot XYZ="16.94322, -0.3000001, 265.738" Heading="4.394398" />
+					<FishSpot XYZ="55.1014, -0.3000002, 253.8528" Heading="2.178524" />
+				</FishSpots>
+				<Keepers>
+					<Keeper name="Axelrod" />
+				</Keepers>
+				<SurfaceSlaps />
+			</ExFish>
+		</While>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks />
+</Profile>
