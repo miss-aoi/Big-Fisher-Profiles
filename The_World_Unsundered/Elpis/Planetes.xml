@@ -17,7 +17,7 @@
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36591,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3934)">
-			<LisbethTravel Area="Elpis" XYZ="-428.6555, 135.3405, -175.0417" />
+			<LisbethTravel Area="Elpis (Philomythes Notos)" XYZ="-428.6555, 135.3405, -175.0417" />
 		</If>
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
