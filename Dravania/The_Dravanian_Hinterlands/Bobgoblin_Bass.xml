@@ -25,8 +25,8 @@
 		<While condition="IsTimeBetween(1,2)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(16754,&Bobgoblin_Bass;) and HasAtLeast(12706,1) and IsTimeBetween(2,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(399, 'Showers') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(399, TimeSpan.FromHours(-8), 'Rain')">
-			<ExFish Bait="Goblin Jig" condition="not HasAtLeast(16754,&Bobgoblin_Bass;) and HasAtLeast(12706,1) and IsTimeBetween(2,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(399, 'Showers') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(399, TimeSpan.FromHours(-8), 'Rain')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<While condition="not HasAtLeast(16754,&Bobgoblin_Bass;) and HasAtLeast(12706,1) and IsTimeBetween(2,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Showers') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(398, TimeSpan.FromHours(-8), 'Rain')">
+			<ExFish Bait="Goblin Jig" condition="not HasAtLeast(16754,&Bobgoblin_Bass;) and HasAtLeast(12706,1) and IsTimeBetween(2,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Showers') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(398, TimeSpan.FromHours(-8), 'Rain')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Medium" />
 					<PatienceTug moochLevel="1" TugType="Medium" />

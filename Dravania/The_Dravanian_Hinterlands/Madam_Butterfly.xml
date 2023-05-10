@@ -25,8 +25,8 @@
 		<While condition="IsTimeBetween(20,21)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(16748,&Madam_Butterfly;) and HasAtLeast(12705,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(399, 'Clear Skies')">
-			<ExFish Bait="Purse Web Spider" condition="not HasAtLeast(16748,&Madam_Butterfly;) and HasAtLeast(12705,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(399, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<While condition="not HasAtLeast(16748,&Madam_Butterfly;) and HasAtLeast(12705,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies')">
+			<ExFish Bait="Purse Web Spider" condition="not HasAtLeast(16748,&Madam_Butterfly;) and HasAtLeast(12705,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Medium" />
