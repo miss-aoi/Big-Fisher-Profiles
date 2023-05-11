@@ -2049,208 +2049,210 @@
                 <Log Message="AFK at your own spot..."/>
                 <!-- Add your own teleport location to always just AFK here -->
             </If>
-            <If Condition="IsTimeBetween(0,2)">
-                <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
-                    <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-86.37854, 18.60032, -10.73389"/>
+            <If Condition="&AFK_MY_SPOT; == 0">
+                <If Condition="IsTimeBetween(0,2)">
+                    <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
+                        <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-86.37854, 18.60032, -10.73389"/>
+                    </If>
+                    <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
+                        <LisbethTravel Area="Girdania (New Gridania)" XYZ="32.34108, 1.2, 36.84202" />
+                    </If>
+                    <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
+                        <LisbethTravel Area="Ul'dah (Steps of Nald)" XYZ="-144.2607, -3.154888, -163.0237" />
+                    </If>
+                    <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
+                        <LisbethTravel Area="Kugane" XYZ="48.00587, 4.504962, -46.90244" />
+                    </If>
+                    <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
+                        <LisbethTravel Area="The Pillars" XYZ="-140.1117, -12.63491, -18.41707" />
+                    </If>
                 </If>
-                <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
-                    <LisbethTravel Area="Girdania (New Gridania)" XYZ="32.34108, 1.2, 36.84202" />
+                <If Condition="IsTimeBetween(2,4)">
+                    <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
+                        <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-96.17102, 18.5624, 9.125985"/>
+                    </If>
+                    <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
+                        <LisbethTravel Area="Gridania (Old Gridania)" XYZ="142.8056, 13.75429, -103.9115" />
+                    </If>
+                    <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
+                        <LisbethTravel Area="Ul'dah (Steps of Nald)" XYZ="-138.2134, -3.187193, -172.7698" />
+                    </If>
+                    <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
+                        <LisbethTravel Area="Kugane" XYZ="21.75903, 4, 55.2698" />
+                    </If>
+                    <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
+                        <LisbethTravel Area="Foundation" XYZ="-60.32226, 8.113304, 36.54247" />
+                    </If>
                 </If>
-                <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
-                    <LisbethTravel Area="Ul'dah (Steps of Nald)" XYZ="-144.2607, -3.154888, -163.0237" />
+                <If Condition="IsTimeBetween(4,6)">
+                    <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
+                        <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-82.34045, 18.60033, 10.16381"/>
+                    </If>
+                    <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
+                        <LisbethTravel Area="Gridania (New Gridania)" XYZ="38.21149, 1.44097, 29.62102" />
+                    </If>
+                    <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
+                        <LisbethTravel Area="Ul'dah (Steps of Nald)" XYZ="-140.5345, -3.154888, -167.0508" />
+                    </If>
+                    <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
+                        <LisbethTravel Area="Kugane" XYZ="40.64618, 4.589056, -36.53889" />
+                    </If>
+                    <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
+                        <LisbethTravel Area="The Pillars" XYZ="-148.9002, -12.63491, -13.18678" />
+                    </If>
                 </If>
-                <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
-                    <LisbethTravel Area="Kugane" XYZ="48.00587, 4.504962, -46.90244" />
+                <If Condition="IsTimeBetween(6,8)">
+                    <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
+                        <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-83.50173, 18.80033, -6.082156"/>
+                    </If>
+                    <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
+                        <LisbethTravel Area="Gridania (Old Gridania)" XYZ="161.1307, 15.5, -99.83402" />
+                    </If>
+                    <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
+                        <LisbethTravel Area="Ul'dah (Steps of Thal)" XYZ="131.1188, 4, -33.34523" />
+                    </If>
+                    <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
+                        <LisbethTravel Area="Kugane" XYZ="27.62083, 4, 68.8378" />
+                    </If>
+                    <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
+                        <LisbethTravel Area="Foundation" XYZ="-55.72417, 8.113304, 45.02952" />
+                    </If>
                 </If>
-                <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
-                    <LisbethTravel Area="The Pillars" XYZ="-140.1117, -12.63491, -18.41707" />
+                <If Condition="IsTimeBetween(8,10)">
+                    <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
+                        <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-96.32515, 18.00033, -17.43454"/>
+                    </If>
+                    <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
+                        <LisbethTravel Area="Gridania (New Gridania)" XYZ="36.84464, 1.2, 22.32854" />
+                    </If>
+                    <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
+                        <LisbethTravel Area="Ul'dah (Steps of Nald)" XYZ="-139.8963, -3.154888, -164.4597" />
+                    </If>
+                    <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
+                        <LisbethTravel Area="Kugane" XYZ="21.75903, 4, 55.2698" />
+                    </If>
+                    <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
+                        <LisbethTravel Area="The Pillars" XYZ="-150.181, -12.63491, -10.46092" />
+                    </If>
                 </If>
-            </If>
-            <If Condition="IsTimeBetween(2,4)">
-                <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
-                    <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-96.17102, 18.5624, 9.125985"/>
+                <If Condition="IsTimeBetween(10,12)">
+                    <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
+                        <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-87.26067, 18.80032, -5.982514"/>
+                    </If>
+                    <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
+                        <LisbethTravel Area="Gridania (New Gridania)" XYZ="22.25253, 1.183726, 24.19609" />
+                    </If>
+                    <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
+                        <LisbethTravel Area="Ul'dah (Steps of Thal)" XYZ="130.1848, 4, -33.93323" />
+                    </If>
+                    <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
+                        <LisbethTravel Area="Kugane" XYZ="44.50659, 4.49946, -45.98738" />
+                    </If>
+                    <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
+                        <LisbethTravel Area="Foundation" XYZ="-62.9909, 8.113297, 52.50819" />
+                    </If>
                 </If>
-                <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
-                    <LisbethTravel Area="Gridania (Old Gridania)" XYZ="142.8056, 13.75429, -103.9115" />
+                <If Condition="IsTimeBetween(12,14)">
+                    <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
+                        <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-63.91333, 18.00033, 6.933312"/>
+                    </If>
+                    <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
+                        <LisbethTravel Area="Gridania (Old Gridania)" XYZ="160.3802, 15.5, -92.46111" />
+                    </If>
+                    <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
+                        <LisbethTravel Area="Ul'dah (Steps of Nald)" XYZ="-148.8869, -3.154898, -166.1572" />
+                    </If>
+                    <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
+                        <LisbethTravel Area="Kugane" XYZ="21.75903, 4, 55.2698" />
+                    </If>
+                    <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
+                        <LisbethTravel Area="The Pillars" XYZ="-151.6621, -12.53491, -16.96282" />
+                    </If>
                 </If>
-                <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
-                    <LisbethTravel Area="Ul'dah (Steps of Nald)" XYZ="-138.2134, -3.187193, -172.7698" />
+                <If Condition="IsTimeBetween(14,16)">
+                    <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
+                        <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-90.6589, 18.00033, 15.89221"/>
+                    </If>
+                    <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
+                        <LisbethTravel Area="Gridania (Old Gridania)" XYZ="169.812, 15.5, -99.99718" />
+                    </If>
+                    <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
+                        <LisbethTravel Area="Ul'dah (Steps of Thal)" XYZ="146.6422, 4, -33.43933" />
+                    </If>
+                    <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
+                        <LisbethTravel Area="Kugane" XYZ="50.40289, 4.199996, -38.77065" />
+                    </If>
+                    <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
+                        <LisbethTravel Area="Foundation" XYZ="-71.83434, 8.113303, 43.88265" />
+                    </If>
                 </If>
-                <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
-                    <LisbethTravel Area="Kugane" XYZ="21.75903, 4, 55.2698" />
+                <If Condition="IsTimeBetween(16,18)">
+                    <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
+                        <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-91.82682, 18.80033, -1.728218"/>
+                    </If>
+                    <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
+                        <LisbethTravel Area="Gridania (New Gridania)" XYZ="29.63864, 2.117157, 32.13496" />
+                    </If>
+                    <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
+                        <LisbethTravel Area="Ul'dah (Steps of Thal)" XYZ="148.5661, 4, -42.37902" />
+                    </If>
+                    <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
+                        <LisbethTravel Area="Kugane" XYZ="21.75903, 4, 55.2698" />
+                    </If>
+                    <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
+                        <LisbethTravel Area="The Pillars" XYZ="-152.7795, -12.53492, -38.29865" />
+                    </If>
                 </If>
-                <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
-                    <LisbethTravel Area="Foundation" XYZ="-60.32226, 8.113304, 36.54247" />
+                <If Condition="IsTimeBetween(18,20)">
+                    <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
+                        <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-73.89733, 18.60033, -7.523132"/>
+                    </If>
+                    <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
+                        <LisbethTravel Area="Gridania (Old Gridania)" XYZ="168.535, 15.5, -83.16253" />
+                    </If>
+                    <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
+                        <LisbethTravel Area="Ul'dah (Steps of Nald)" XYZ="-148.6227, -2.776354, -174.5129" />
+                    </If>
+                    <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
+                        <LisbethTravel Area="Kugane" XYZ="51.18199, 4.631481, -31.08974" />
+                    </If>
+                    <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
+                        <LisbethTravel Area="Foundation" XYZ="-66.83006, 8.113304, 39.16719" />
+                    </If>
                 </If>
-            </If>
-            <If Condition="IsTimeBetween(4,6)">
-                <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
-                    <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-82.34045, 18.60033, 10.16381"/>
+                <If Condition="IsTimeBetween(20,22)">
+                    <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
+                        <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-89.97563, 18.60033, -12.3395"/>
+                    </If>
+                    <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
+                        <LisbethTravel Area="Gridania (New Gridania)" XYZ="34.49138, 1.2, 37.8167" />
+                    </If>
+                    <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
+                        <LisbethTravel Area="Ul'dah (Steps of Thal)" XYZ="144.4679, 4, -42.8445" />
+                    </If>
+                    <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
+                        <LisbethTravel Area="Kugane" XYZ="21.75903, 4, 55.2698" />
+                    </If>
+                    <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
+                        <LisbethTravel Area="The Pillars" XYZ="-155.1078, -12.53492, -40.97233" />
+                    </If>
                 </If>
-                <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
-                    <LisbethTravel Area="Gridania (New Gridania)" XYZ="38.21149, 1.44097, 29.62102" />
-                </If>
-                <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
-                    <LisbethTravel Area="Ul'dah (Steps of Nald)" XYZ="-140.5345, -3.154888, -167.0508" />
-                </If>
-                <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
-                    <LisbethTravel Area="Kugane" XYZ="40.64618, 4.589056, -36.53889" />
-                </If>
-                <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
-                    <LisbethTravel Area="The Pillars" XYZ="-148.9002, -12.63491, -13.18678" />
-                </If>
-            </If>
-            <If Condition="IsTimeBetween(6,8)">
-                <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
-                    <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-83.50173, 18.80033, -6.082156"/>
-                </If>
-                <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
-                    <LisbethTravel Area="Gridania (Old Gridania)" XYZ="161.1307, 15.5, -99.83402" />
-                </If>
-                <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
-                    <LisbethTravel Area="Ul'dah (Steps of Thal)" XYZ="131.1188, 4, -33.34523" />
-                </If>
-                <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
-                    <LisbethTravel Area="Kugane" XYZ="27.62083, 4, 68.8378" />
-                </If>
-                <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
-                    <LisbethTravel Area="Foundation" XYZ="-55.72417, 8.113304, 45.02952" />
-                </If>
-            </If>
-            <If Condition="IsTimeBetween(8,10)">
-                <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
-                    <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-96.32515, 18.00033, -17.43454"/>
-                </If>
-                <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
-                    <LisbethTravel Area="Gridania (New Gridania)" XYZ="36.84464, 1.2, 22.32854" />
-                </If>
-                <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
-                    <LisbethTravel Area="Ul'dah (Steps of Nald)" XYZ="-139.8963, -3.154888, -164.4597" />
-                </If>
-                <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
-                    <LisbethTravel Area="Kugane" XYZ="21.75903, 4, 55.2698" />
-                </If>
-                <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
-                    <LisbethTravel Area="The Pillars" XYZ="-150.181, -12.63491, -10.46092" />
-                </If>
-            </If>
-            <If Condition="IsTimeBetween(10,12)">
-                <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
-                    <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-87.26067, 18.80032, -5.982514"/>
-                </If>
-                <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
-                    <LisbethTravel Area="Gridania (New Gridania)" XYZ="22.25253, 1.183726, 24.19609" />
-                </If>
-                <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
-                    <LisbethTravel Area="Ul'dah (Steps of Thal)" XYZ="130.1848, 4, -33.93323" />
-                </If>
-                <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
-                    <LisbethTravel Area="Kugane" XYZ="44.50659, 4.49946, -45.98738" />
-                </If>
-                <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
-                    <LisbethTravel Area="Foundation" XYZ="-62.9909, 8.113297, 52.50819" />
-                </If>
-            </If>
-            <If Condition="IsTimeBetween(12,14)">
-                <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
-                    <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-63.91333, 18.00033, 6.933312"/>
-                </If>
-                <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
-                    <LisbethTravel Area="Gridania (Old Gridania)" XYZ="160.3802, 15.5, -92.46111" />
-                </If>
-                <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
-                    <LisbethTravel Area="Ul'dah (Steps of Nald)" XYZ="-148.8869, -3.154898, -166.1572" />
-                </If>
-                <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
-                    <LisbethTravel Area="Kugane" XYZ="21.75903, 4, 55.2698" />
-                </If>
-                <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
-                    <LisbethTravel Area="The Pillars" XYZ="-151.6621, -12.53491, -16.96282" />
-                </If>
-            </If>
-            <If Condition="IsTimeBetween(14,16)">
-                <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
-                    <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-90.6589, 18.00033, 15.89221"/>
-                </If>
-                <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
-                    <LisbethTravel Area="Gridania (Old Gridania)" XYZ="169.812, 15.5, -99.99718" />
-                </If>
-                <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
-                    <LisbethTravel Area="Ul'dah (Steps of Thal)" XYZ="146.6422, 4, -33.43933" />
-                </If>
-                <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
-                    <LisbethTravel Area="Kugane" XYZ="50.40289, 4.199996, -38.77065" />
-                </If>
-                <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
-                    <LisbethTravel Area="Foundation" XYZ="-71.83434, 8.113303, 43.88265" />
-                </If>
-            </If>
-            <If Condition="IsTimeBetween(16,18)">
-                <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
-                    <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-91.82682, 18.80033, -1.728218"/>
-                </If>
-                <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
-                    <LisbethTravel Area="Gridania (New Gridania)" XYZ="29.63864, 2.117157, 32.13496" />
-                </If>
-                <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
-                    <LisbethTravel Area="Ul'dah (Steps of Thal)" XYZ="148.5661, 4, -42.37902" />
-                </If>
-                <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
-                    <LisbethTravel Area="Kugane" XYZ="21.75903, 4, 55.2698" />
-                </If>
-                <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
-                    <LisbethTravel Area="The Pillars" XYZ="-152.7795, -12.53492, -38.29865" />
-                </If>
-            </If>
-            <If Condition="IsTimeBetween(18,20)">
-                <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
-                    <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-73.89733, 18.60033, -7.523132"/>
-                </If>
-                <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
-                    <LisbethTravel Area="Gridania (Old Gridania)" XYZ="168.535, 15.5, -83.16253" />
-                </If>
-                <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
-                    <LisbethTravel Area="Ul'dah (Steps of Nald)" XYZ="-148.6227, -2.776354, -174.5129" />
-                </If>
-                <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
-                    <LisbethTravel Area="Kugane" XYZ="51.18199, 4.631481, -31.08974" />
-                </If>
-                <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
-                    <LisbethTravel Area="Foundation" XYZ="-66.83006, 8.113304, 39.16719" />
-                </If>
-            </If>
-            <If Condition="IsTimeBetween(20,22)">
-                <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
-                    <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-89.97563, 18.60033, -12.3395"/>
-                </If>
-                <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
-                    <LisbethTravel Area="Gridania (New Gridania)" XYZ="34.49138, 1.2, 37.8167" />
-                </If>
-                <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
-                    <LisbethTravel Area="Ul'dah (Steps of Thal)" XYZ="144.4679, 4, -42.8445" />
-                </If>
-                <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
-                    <LisbethTravel Area="Kugane" XYZ="21.75903, 4, 55.2698" />
-                </If>
-                <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
-                    <LisbethTravel Area="The Pillars" XYZ="-155.1078, -12.53492, -40.97233" />
-                </If>
-            </If>
-            <If Condition="IsTimeBetween(22,24)">
-                <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
-                    <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-76.589, 18.60033, 12.61149"/>
-                </If>
-                <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
-                    <LisbethTravel Area="Gridania (Old Gridania)" XYZ="169.8863, 15.5, -102.2497" />
-                </If>
-                <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
-                    <LisbethTravel Area="Ul'dah (Steps of Thal)" XYZ="130.4843, 4, -40.1525" />
-                </If>
-                <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
-                    <LisbethTravel Area="Kugane" XYZ="36.31169, 4.496474, -39.13747" />
-                </If>
-                <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
-                    <LisbethTravel Area="The Pillars" XYZ="-154.6501, -12.53491, -39.0576" />
+                <If Condition="IsTimeBetween(22,24)">
+                    <If Condition="&AFK_LIMSA; == 1 and not IsOnMap(129)">
+                        <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-76.589, 18.60033, 12.61149"/>
+                    </If>
+                    <If Condition="&AFK_GRIDANIA; == 1 and not (IsOnMap(132) or IsOnMap(133))">
+                        <LisbethTravel Area="Gridania (Old Gridania)" XYZ="169.8863, 15.5, -102.2497" />
+                    </If>
+                    <If Condition="&AFK_ULDAH; == 1 and not (IsOnMap(130) or IsOnMap(131))">
+                        <LisbethTravel Area="Ul'dah (Steps of Thal)" XYZ="130.4843, 4, -40.1525" />
+                    </If>
+                    <If Condition="&AFK_KUGANE; == 1 and not IsOnMap(628)">
+                        <LisbethTravel Area="Kugane" XYZ="36.31169, 4.496474, -39.13747" />
+                    </If>
+                    <If Condition="&AFK_ISHGARD; == 1 and not (IsOnMap(418) or IsOnMap(419))">
+                        <LisbethTravel Area="The Pillars" XYZ="-154.6501, -12.53491, -39.0576" />
+                    </If>
                 </If>
             </If>
         </If>
