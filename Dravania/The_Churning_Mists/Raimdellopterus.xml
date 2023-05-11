@@ -22,36 +22,47 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
+		<!-- Catch 4 Rudderfish -->
+		<ExFish Bait="Giant Crane Fly" Condition="not Core.Player.HasAura(568) and not HasAtLeast(12805,4) and not HasAtLeast(17593,&Raimdellopterus;) and HasAtLeast(12712,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-128.8666, 162.6906, -793.0759" Heading="3.40847" />
+				<FishSpot XYZ="-141.6965, 162.6906, -797.8688" Heading="3.291184" />
+				<FishSpot XYZ="-121.3011, 162.6906, -784.1735" Heading="2.112038" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Rudderfish" />
+			</Keepers>
+		</ExFish>
 		<While condition="IsTimeBetween(4,5)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(17593,&Raimdellopterus;) and HasAtLeast(12712,1) and IsTimeBetween(5,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales')">
-			<ExFish Bait="Giant Crane Fly" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17593,&Raimdellopterus;) and HasAtLeast(12712,1) and IsTimeBetween(5,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-128.8666, 162.6906, -793.0759" Heading="3.40847" />
-					<FishSpot XYZ="-141.6965, 162.6906, -797.8688" Heading="3.291184" />
-					<FishSpot XYZ="-121.3011, 162.6906, -784.1735" Heading="2.112038" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Rudderfish" />
-				</Keepers>
-			</ExFish>
-			<ExFish Bait="Giant Crane Fly" Condition="Core.Player.HasAura(568) and not HasAtLeast(17593,&Raimdellopterus;) and HasAtLeast(12712,1) and IsTimeBetween(5,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Medium" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="-128.8666, 162.6906, -793.0759" Heading="3.40847" />
-					<FishSpot XYZ="-141.6965, 162.6906, -797.8688" Heading="3.291184" />
-					<FishSpot XYZ="-121.3011, 162.6906, -784.1735" Heading="2.112038" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Raimdellopterus" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<!-- Catch last fish once window starts -->
+		<ExFish Bait="Giant Crane Fly" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17593,&Raimdellopterus;) and HasAtLeast(12712,1) and IsTimeBetween(5,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-128.8666, 162.6906, -793.0759" Heading="3.40847" />
+				<FishSpot XYZ="-141.6965, 162.6906, -797.8688" Heading="3.291184" />
+				<FishSpot XYZ="-121.3011, 162.6906, -784.1735" Heading="2.112038" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Rudderfish" />
+			</Keepers>
+		</ExFish>
+		<!-- Go after Raimdellopterus -->
+		<ExFish Bait="Giant Crane Fly" Condition="Core.Player.HasAura(568) and not HasAtLeast(17593,&Raimdellopterus;) and HasAtLeast(12712,1) and IsTimeBetween(5,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Medium" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="-128.8666, 162.6906, -793.0759" Heading="3.40847" />
+				<FishSpot XYZ="-141.6965, 162.6906, -797.8688" Heading="3.291184" />
+				<FishSpot XYZ="-121.3011, 162.6906, -784.1735" Heading="2.112038" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Raimdellopterus" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<If condition="HasAtLeast(12805,1)">
 			<Desynth ItemIds="12805" DesynthDelay="6000" DesynthTimeout="10" />
 		</If>

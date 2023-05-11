@@ -26,32 +26,40 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
+		<ExFish Bait="Short Bill Minnow" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33244,&Lancetfish;) and HasAtLeast(33325,2) and HasAtLeast(27590,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
+				<FishSpot XYZ="-475.9068, 184.7709, -558.5859" Heading="4.016154" />
+				<FishSpot XYZ="-504.5959, 184.9594, -545.1892" Heading="3.138604" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Mora Tecta" />
+			</Keepers>
+		</ExFish>
 		<While condition="IsTimeBetween(-1,0)">
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(33244,&Lancetfish;) and HasAtLeast(27590,1) and IsTimeBetween(0,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Fair Skies')">
-			<ExFish Bait="Short Bill Minnow" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33244,&Lancetfish;) and HasAtLeast(27590,1) and IsTimeBetween(0,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
-					<FishSpot XYZ="-475.9068, 184.7709, -558.5859" Heading="4.016154" />
-					<FishSpot XYZ="-504.5959, 184.9594, -545.1892" Heading="3.138604" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Mora Tecta" />
-				</Keepers>
-			</ExFish>
-			<ExFish Bait="Squid Strip" Condition="Core.Player.HasAura(568) and not HasAtLeast(33244,&Lancetfish;) and HasAtLeast(27590,1) and IsTimeBetween(0,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
-					<FishSpot XYZ="-475.9068, 184.7709, -558.5859" Heading="4.016154" />
-					<FishSpot XYZ="-504.5959, 184.9594, -545.1892" Heading="3.138604" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Lancetfish" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Short Bill Minnow" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33244,&Lancetfish;) and HasAtLeast(27590,1) and IsTimeBetween(0,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
+				<FishSpot XYZ="-475.9068, 184.7709, -558.5859" Heading="4.016154" />
+				<FishSpot XYZ="-504.5959, 184.9594, -545.1892" Heading="3.138604" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Mora Tecta" />
+			</Keepers>
+		</ExFish>
+		<ExFish Bait="Squid Strip" Condition="Core.Player.HasAura(568) and not HasAtLeast(33244,&Lancetfish;) and HasAtLeast(27590,1) and IsTimeBetween(0,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
+				<FishSpot XYZ="-475.9068, 184.7709, -558.5859" Heading="4.016154" />
+				<FishSpot XYZ="-504.5959, 184.9594, -545.1892" Heading="3.138604" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Lancetfish" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<If condition="HasAtLeast(33325,1)">
 			<Desynth ItemIds="33325" DesynthDelay="6000" DesynthTimeout="10" />
 		</If>

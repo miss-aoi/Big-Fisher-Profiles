@@ -96,7 +96,7 @@
 <!ENTITY Shadowstreak "0">                       <!-- TIMED -->  <!-- WEATHER -->                      <!-- TOPWATER FROG -->
 <!ENTITY Cornelia "0">                                                             <!-- INTUITION -->  <!-- GLOWWORM -->
 <!-- THE BLACK SHROUD - The Lavender Beds -->
-<!ENTITY Sweetnewt "0">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- MIDGE BASKET -->
+<!ENTITY Sweetnewt "1">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- MIDGE BASKET -->
 <!-- THANALAN - Western Thanalan -->
 <!ENTITY Glimmerscale "0">                                       <!-- WEATHER -->                      <!-- BUTTERWORM -->
 <!ENTITY Mud_Golem "0">                          <!-- TIMED -->                                        <!-- MIDGE BASKET -->
@@ -144,7 +144,7 @@
 <!ENTITY Hailfinder "0">                                         <!-- WEATHER -->                      <!-- RED BALLOON -->
 <!ENTITY Flarefish "0">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- PURSE WEB SPIDER -->
 <!ENTITY Bishopfish "0">                         <!-- TIMED -->  <!-- WEATHER -->                      <!-- BRUTE LEECH -->
-<!ENTITY Charibenet "0">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- PURSE WEB SPIDER -->
+<!ENTITY Charibenet "1">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- PURSE WEB SPIDER -->
 <!ENTITY The_Impaler "0">                                                                              <!-- BRUTE LEECH -->
 <!ENTITY Captain_Nemo "0">                                       <!-- WEATHER -->                      <!-- BRUTE LEECH -->
 <!ENTITY La_Reale "0">                                                                                 <!-- BRUTE LEECH -->
@@ -159,11 +159,11 @@
 <!ENTITY Kuno_the_Killer "0">                    <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- HONEY WORM -->
 <!-- ABALATHIA’S SPINE - The Sea of Clouds -->
 <!ENTITY Inkfish "0">                            <!-- TIMED -->                                        <!-- BRUTE LEECH -->
-<!ENTITY Paikiller "0">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- BLADED STEEL JIG -->
+<!ENTITY Paikiller "1">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- BLADED STEEL JIG -->
 <!ENTITY Cirrostratus "0">                       <!-- TIMED -->  <!-- WEATHER -->                      <!-- GIANT CRANE FLY -->
 <!ENTITY The_Second_One "0">                                     <!-- WEATHER -->                      <!-- GIANT CRANE FLY -->
 <!ENTITY Basking_Shark "0">                                      <!-- WEATHER -->                      <!-- METAL SPINNER -->
-<!ENTITY Sea_Butterfly "0">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- GIANT CRANE FLY -->
+<!ENTITY Sea_Butterfly "1">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- GIANT CRANE FLY -->
 <!-- ABALATHIA’S SPINE - Azys Lla -->
 <!ENTITY Augmented_High_Allagan_Helmet "0">                                                            <!-- FIEND WORM -->
 <!ENTITY Aetherochemical_Compound_666 "0">                                                             <!-- FIEND WORM -->
@@ -172,7 +172,7 @@
 <!ENTITY Hundred-eyed_Axolotl "0">               <!-- TIMED -->                                        <!-- PURSE WEB SPIDER -->
 <!ENTITY Crystal_Pigeon "0">                                     <!-- WEATHER -->                      <!-- GIANT CRANE FLY -->
 <!ENTITY Allagan_Bladeshark "0">                                 <!-- WEATHER -->                      <!-- FIEND WORM -->
-<!ENTITY Opabinia "0">                                           <!-- WEATHER -->  <!-- INTUITION -->  <!-- FIEND WORM -->
+<!ENTITY Opabinia "1">                                           <!-- WEATHER -->  <!-- INTUITION -->  <!-- FIEND WORM -->
 <!-- DRAVANIA - The Dravanian Forelands -->
 <!ENTITY Scaleripper "0">                                        <!-- WEATHER -->                      <!-- BRUTE LEECH -->
 <!ENTITY Twin-tongued_Carp "0">                  <!-- TIMED -->  <!-- WEATHER -->                      <!-- BRUTE LEECH -->
@@ -187,67 +187,67 @@
 <!ENTITY The_Ewer_King "0">                                                                            <!-- BLADED STEEL JIG -->
 <!ENTITY Madam_Butterfly "0">                    <!-- TIMED -->  <!-- WEATHER -->                      <!-- PURSE WEB SPIDER -->
 <!ENTITY The_Speaker "0">                                        <!-- WEATHER -->                      <!-- PURSE WEB SPIDER -->
-<!ENTITY Armor_Fish "0">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- PURSE WEB SPIDER -->
+<!ENTITY Armor_Fish "1">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- PURSE WEB SPIDER -->
 <!ENTITY Bobgoblin_Bass "0">                     <!-- TIMED -->  <!-- WEATHER -->                      <!-- GOBLIN JIG -->
 <!-- DRAVANIA - The Churning Mists -->
 <!ENTITY Vidofnir "0">                           <!-- TIMED -->                                        <!-- BRUTE LEECH -->
 <!ENTITY Moggle_Mogpom "0">                      <!-- TIMED -->  <!-- WEATHER -->                      <!-- BRUTE LEECH -->
-<!ENTITY Thousand_Fin "0">                                       <!-- WEATHER -->                      <!-- BRUTE LEECH -->
+<!ENTITY Thousand_Fin "1">                                       <!-- WEATHER -->                      <!-- BRUTE LEECH -->
 <!ENTITY The_Soul_of_the_Martyr "0">             <!-- TIMED -->  <!-- WEATHER -->                      <!-- GIANT CRANE FLY -->
 <!ENTITY Dimorphodon "0">                                        <!-- WEATHER -->                      <!-- GIANT CRANE FLY -->
 <!ENTITY Bloodchaser "0">                                        <!-- WEATHER -->                      <!-- GIANT CRANE FLY -->
-<!ENTITY Raimdellopterus "0">                    <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- GIANT CRANE FLY -->
+<!ENTITY Raimdellopterus "1">                    <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- GIANT CRANE FLY -->
 <!-- GYR ABANIA - Rhalgr's Reach -->
 <!ENTITY Hookstealer "0">                                                                              <!-- MIDGE LARVA -->
 <!ENTITY Watcher_Catfish "0">                                    <!-- WEATHER -->                      <!-- MIDGE LARVA -->
 <!ENTITY Bloodtail_Zombie "0">                   <!-- TIMED -->  <!-- WEATHER -->                      <!-- SALMON ROE -->
 <!-- GYR ABANIA - The Fringes -->
-<!ENTITY Hardhead_Trout "1">                     <!-- TIMED -->                                        <!-- STONEFLY LARVA -->
+<!ENTITY Hardhead_Trout "0">                     <!-- TIMED -->                                        <!-- STONEFLY LARVA -->
 <!ENTITY Xenacanthus "1">                        <!-- TIMED -->                                        <!-- STONEFLY LARVA -->
 <!ENTITY Sapphire_Fan "1">                                       <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
 <!ENTITY The_Archbishop "0">                     <!-- TIMED -->                                        <!-- SUSPENDING MINNOW -->
 <!ENTITY Downstream_Loach "1">                                   <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
 <!ENTITY Corpse_Chub "1">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
 <!-- GYR ABANIA - The Peaks -->
-<!ENTITY Bondsplitter "1">                                       <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
-<!ENTITY Drepanaspis "1">                                        <!-- WEATHER -->  <!-- INTUITION -->  <!-- SUSPENDING MINNOW -->
-<!ENTITY The_Undecided "1">                      <!-- TIMED -->                                        <!-- MIDGE LARVA -->
-<!ENTITY The_Last_Tear "1">                                      <!-- WEATHER -->                      <!-- SALMON ROE -->
-<!ENTITY Moksha "1">                                             <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
-<!ENTITY Hemon "1">                              <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
-<!ENTITY Lily_of_the_Veil "1">                                   <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
+<!ENTITY Bondsplitter "0">                                       <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
+<!ENTITY Drepanaspis "0">                                        <!-- WEATHER -->  <!-- INTUITION -->  <!-- SUSPENDING MINNOW -->
+<!ENTITY The_Undecided "0">                      <!-- TIMED -->                                        <!-- MIDGE LARVA -->
+<!ENTITY The_Last_Tear "0">                                      <!-- WEATHER -->                      <!-- SALMON ROE -->
+<!ENTITY Moksha "0">                                             <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
+<!ENTITY Hemon "0">                              <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
+<!ENTITY Lily_of_the_Veil "0">                                   <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
 <!-- GYR ABANIA - The Lochs -->
-<!ENTITY Diamond-eye "1">                                        <!-- WEATHER -->                      <!-- SILKWORM -->
-<!ENTITY Stethacanthus "1">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- SILKWORM -->
+<!ENTITY Diamond-eye "0">                                        <!-- WEATHER -->                      <!-- SILKWORM -->
+<!ENTITY Stethacanthus "0">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- SILKWORM -->
 <!-- OTHARD - The Ruby Sea -->
-<!ENTITY Kuer "1">                                                                                     <!-- BLUE BOBBIT -->
-<!ENTITY The_Ruby_Dragon "1">                    <!-- TIMED -->  <!-- WEATHER -->                      <!-- BLUE BOBBIT -->
-<!ENTITY The_Vegetarian "1">                     <!-- TIMED -->  <!-- WEATHER -->                      <!-- LIVE SHRIMP -->
-<!ENTITY Seven_Stars "1">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- BLUE BOBBIT -->
-<!ENTITY The_Winter_Queen "1">                   <!-- TIMED -->                                        <!-- BLUE BOBBIT -->
-<!ENTITY Argonautica "1">                                        <!-- WEATHER -->                      <!-- LIVE SHRIMP -->
-<!ENTITY Pinhead "1">                            <!-- TIMED -->  <!-- WEATHER -->                      <!-- LIVE SHRIMP -->
-<!ENTITY Rakshasa "1">                                           <!-- WEATHER -->                      <!-- METAL SPINNER -->
+<!ENTITY Kuer "0">                                                                                     <!-- BLUE BOBBIT -->
+<!ENTITY The_Ruby_Dragon "0">                    <!-- TIMED -->  <!-- WEATHER -->                      <!-- BLUE BOBBIT -->
+<!ENTITY The_Vegetarian "0">                     <!-- TIMED -->  <!-- WEATHER -->                      <!-- LIVE SHRIMP -->
+<!ENTITY Seven_Stars "0">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- BLUE BOBBIT -->
+<!ENTITY The_Winter_Queen "0">                   <!-- TIMED -->                                        <!-- BLUE BOBBIT -->
+<!ENTITY Argonautica "0">                                        <!-- WEATHER -->                      <!-- LIVE SHRIMP -->
+<!ENTITY Pinhead "0">                            <!-- TIMED -->  <!-- WEATHER -->                      <!-- LIVE SHRIMP -->
+<!ENTITY Rakshasa "0">                                           <!-- WEATHER -->                      <!-- METAL SPINNER -->
 <!-- OTHARD - Yanxia -->
-<!ENTITY Pomegranate_Trout "1">                                  <!-- WEATHER -->                      <!-- NIGHTCRAWLER -->
-<!ENTITY Glarramundi "1">                                        <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
-<!ENTITY Hermits_End "1">                                                                              <!-- STONEFLY LARVE -->
+<!ENTITY Pomegranate_Trout "0">                                  <!-- WEATHER -->                      <!-- NIGHTCRAWLER -->
+<!ENTITY Glarramundi "0">                                        <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
+<!ENTITY Hermits_End "0">                                                                              <!-- STONEFLY LARVE -->
 <!ENTITY Warden_of_the_Seven_Hues "0">           <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- STONEFLY LARVA -->
-<!ENTITY The_Unraveled_Bow "1">                  <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
-<!ENTITY Bokuden "1">                            <!-- TIMED -->                                        <!-- STONEFLY LARVA -->
-<!ENTITY Suiten_Ippeki "1">                      <!-- TIMED -->  <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
-<!ENTITY Axelrod "1">                            <!-- TIMED -->  <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
-<!ENTITY Hagoromo_Bijin "1">                                     <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
-<!ENTITY Hagoromo_Koi "1">                                       <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY The_Unraveled_Bow "0">                  <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
+<!ENTITY Bokuden "0">                            <!-- TIMED -->                                        <!-- STONEFLY LARVA -->
+<!ENTITY Suiten_Ippeki "0">                      <!-- TIMED -->  <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY Axelrod "0">                            <!-- TIMED -->  <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY Hagoromo_Bijin "0">                                     <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY Hagoromo_Koi "0">                                       <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
 <!-- OTHARD - The Azim Steppe -->
-<!ENTITY Garden_Skipper "1">                     <!-- TIMED -->  <!-- WEATHER -->                      <!-- MIDGE LARVA -->
-<!ENTITY Banderole "1">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- NIGHTCRAWLER -->
-<!ENTITY Blade_Skipper "1">                      <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
-<!ENTITY Duskfish "1">                           <!-- TIMED -->  <!-- WEATHER -->                      <!-- NIGHTCRAWLER -->
+<!ENTITY Garden_Skipper "0">                     <!-- TIMED -->  <!-- WEATHER -->                      <!-- MIDGE LARVA -->
+<!ENTITY Banderole "0">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- NIGHTCRAWLER -->
+<!ENTITY Blade_Skipper "0">                      <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
+<!ENTITY Duskfish "0">                           <!-- TIMED -->  <!-- WEATHER -->                      <!-- NIGHTCRAWLER -->
 <!ENTITY The_Word_of_God "0">                    <!-- TIMED -->                                        <!-- STONEFLY LARVA -->
-<!ENTITY Yat_Khan "1">                                           <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
-<!ENTITY Nhaamas_Treasure "1">                                                                         <!-- SUSPENDING MINNOW -->
-<!ENTITY The_Unconditional "1">                  <!-- TIMED -->  <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY Yat_Khan "0">                                           <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY Nhaamas_Treasure "0">                                                                         <!-- SUSPENDING MINNOW -->
+<!ENTITY The_Unconditional "0">                  <!-- TIMED -->  <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
 <!-- HINGASHI - Kugane -->
 <!ENTITY Rising_Dragon "0">                                                                            <!-- METAL SPINNER -->
 <!-- HINGASHI - Shirogane -->
@@ -256,22 +256,22 @@
 <!-- NORVRANDT - The Crystarium -->
 <!ENTITY Aster_Trivi "0">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- MARBLE NYMPH -->
 <!ENTITY The_Sinsteeped "0">                     <!-- TIMED -->  <!-- WEATHER -->                      <!-- FRUIT WORM -->
-<!ENTITY Loose_Pendant "1">                      <!-- TIMED -->                                        <!-- BAITBUGS -->
+<!ENTITY Loose_Pendant "0">                      <!-- TIMED -->                                        <!-- BAITBUGS -->
 <!-- NORVRANDT - Eulmore -->
 <!ENTITY Winged_Dame "0">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- SQUID STRIP -->
 <!-- NORVRANDT - Lakeland -->
-<!ENTITY Sweetheart "0">                                         <!-- WEATHER -->                      <!-- BAITBUGS -->
+<!ENTITY Sweetheart "1">                                         <!-- WEATHER -->                      <!-- BAITBUGS -->
 <!ENTITY Moonlight_Guppy "0">                    <!-- TIMED -->  <!-- WEATHER -->                      <!-- BAITBUGS -->
 <!ENTITY The_Unforgiven "0">                                     <!-- WEATHER -->                      <!-- BAITBUGS -->
 <!ENTITY Python_Discus "0">                                      <!-- WEATHER -->                      <!-- FRUIT WORM -->
 <!ENTITY The_Jaws_of_Undeath "0">                <!-- TIMED -->  <!-- WEATHER -->                      <!-- BAITBUGS -->
 <!ENTITY Listracanthus "0">                      <!-- TIMED -->  <!-- WEATHER -->                      <!-- BAITBUGS -->
 <!-- NORVRANDT - Kholusia -->
-<!ENTITY Giant_Taimen "1">                                                                             <!-- BAITBUGS -->
+<!ENTITY Giant_Taimen "0">                                                                             <!-- BAITBUGS -->
 <!ENTITY Steel_Fan "0">                                          <!-- WEATHER -->                      <!-- MARBLE NYMPH -->
-<!ENTITY White_Ronso "1">                        <!-- TIMED -->                                        <!-- BAITBUGS -->
+<!ENTITY White_Ronso "0">                        <!-- TIMED -->                                        <!-- BAITBUGS -->
 <!ENTITY Bronze_Sole "0">                                        <!-- WEATHER -->                      <!-- MARBLE NYMPH -->
-<!ENTITY Steel_Razor "1">                        <!-- TIMED -->                                        <!-- MOYEBI SHRIMP -->
+<!ENTITY Steel_Razor "0">                        <!-- TIMED -->                                        <!-- MOYEBI SHRIMP -->
 <!ENTITY Shadeshifter "0">                                       <!-- WEATHER -->                      <!-- SQUID STRIP -->
 <!ENTITY Aquamaton "0">                          <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- SHORT BILL MINNOW -->
 <!ENTITY Henodus_Grandis "0">                    <!-- TIMED -->  <!-- WEATHER -->                      <!-- SHORT BILL MINNOW -->
@@ -287,16 +287,16 @@
 <!ENTITY Sunken_Tome "0">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- MARBLE NYMPH -->
 <!ENTITY Fae_Rainbow "0">                                        <!-- WEATHER -->                      <!-- MARBLE NYMPH -->
 <!ENTITY Celestial "0">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- BAITBUGS -->
-<!ENTITY Dammroen_Herring "1">                                                                         <!-- BAITBUGS -->
+<!ENTITY Dammroen_Herring "0">                                                                         <!-- BAITBUGS -->
 <!ENTITY Gold_Hammer "0">                                        <!-- WEATHER -->                      <!-- BAITBUGS -->
 <!-- NORVRANDT - The Rak'tika Greatwood -->
-<!ENTITY Priest_of_YxLokwa "1">                                                                        <!-- ROBBER BALL -->
-<!ENTITY Greater_Serpent_of_Ronka "1">           <!-- TIMED -->                                        <!-- ROBBER BALL -->
+<!ENTITY Priest_of_YxLokwa "0">                                                                        <!-- ROBBER BALL -->
+<!ENTITY Greater_Serpent_of_Ronka "0">           <!-- TIMED -->                                        <!-- ROBBER BALL -->
 <!ENTITY Pearl_Pipira "0">                       <!-- TIMED -->  <!-- WEATHER -->                      <!-- ROBBER BALL -->
 <!ENTITY Black_Jet "0">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- ROBBER BALL -->
 <!ENTITY Recordkiller "0">                       <!-- TIMED -->  <!-- WEATHER -->                      <!-- BAITBUGS -->
 <!ENTITY Deephaunt "0">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- BAITBUGS -->
-<!ENTITY Golden_Pipira "1">                      <!-- TIMED -->                                        <!-- ROBBER BALL -->
+<!ENTITY Golden_Pipira "0">                      <!-- TIMED -->                                        <!-- ROBBER BALL -->
 <!-- NORVRANDT - The Tempest -->
 <!ENTITY Ondo_Sigh "0">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- SQUID STRIP -->
 <!ENTITY The_Ondotaker "0">                      <!-- TIMED -->  <!-- WEATHER -->                      <!-- SQUID STRIP -->
@@ -311,11 +311,11 @@
 <!ENTITY Mossgill_Salmon "0">                                    <!-- WEATHER -->                      <!-- SKY SPOON LURE -->
 <!ENTITY Swampsucker_Bowfin "0">                 <!-- TIMED -->  <!-- WEATHER -->                      <!-- SKY SPOON LURE -->
 <!-- THE NORTHERN EMPTY - Old Sharlayan -->
-<!ENTITY Aetherolectric_Guitarfish "1">          <!-- TIMED -->                                        <!-- MACKEREL STRIP -->
+<!ENTITY Aetherolectric_Guitarfish "0">          <!-- TIMED -->                                        <!-- MACKEREL STRIP -->
 <!ENTITY Greatsword_Snook "0">                   <!-- TIMED -->  <!-- WEATHER -->                      <!-- MAYFLY -->
 <!ENTITY Catastrophizer "0">                     <!-- TIMED -->  <!-- WEATHER -->                      <!-- MAYFLY -->
 <!-- ILSABARD - Radz-at-Han -->
-<!ENTITY Earful "1">                             <!-- TIMED -->                                        <!-- MAYFLY -->
+<!ENTITY Earful "0">                             <!-- TIMED -->                                        <!-- MAYFLY -->
 <!-- ILSABARD - Thavnair -->
 <!ENTITY Lale_Crab "0">                                          <!-- WEATHER -->                      <!-- SHRIMP BALL -->
 <!ENTITY Vidyutvat_Wrasse "0">                   <!-- TIMED -->  <!-- WEATHER -->                      <!-- SHRIMP BALL -->
@@ -330,7 +330,7 @@
 <!ENTITY Frozen_Regotoise "0">                   <!-- TIMED -->  <!-- WEATHER -->                      <!-- CHIMERA WORM -->
 <!-- THE SEA OF STARS - Ultima Thule -->
 <!ENTITY Foun_Ahlm "0">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- CHIMERA WORM -->
-<!ENTITY Starscryer "1">                         <!-- TIMED -->                                        <!-- MAYFLY -->
+<!ENTITY Starscryer "0">                         <!-- TIMED -->                                        <!-- MAYFLY -->
 <!ENTITY Forbiddingway "0">                      <!-- TIMED -->  <!-- WEATHER -->                      <!-- STARDUST -->
 <!ENTITY Argonauta_argo "0">                     <!-- TIMED -->  <!-- WEATHER -->                      <!-- STARDUST -->
 <!ENTITY Cosmic_Haze "0">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- CHIMERA WORM -->
@@ -939,7 +939,7 @@
         </If>
 
         <!-- Charibenet -->
-        <If condition="not HasAtLeast(17592,&Charibenet;) and (IsTimeBetween(23,24) or IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')">
+        <If condition="not HasAtLeast(17592,&Charibenet;) and (IsTimeBetween(20,24) or IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')">
             <LLoadProfile Path="Coerthas/Coerthas_Western_Highlands/Charibenet.xml"/>
         </If>
 
@@ -1113,7 +1113,7 @@
         </If>
 
         <!-- Problematicus -->
-        <If condition="not HasAtLeast(17588,&Problematicus;) and IsTimeBetween(9,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies', 'Fair Skies')">
+        <If condition="not HasAtLeast(17588,&Problematicus;) and IsTimeBetween(4,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies', 'Fair Skies')">
             <LLoadProfile Path="Dravania/The_Dravanian_Forelands/Problematicus.xml"/>
         </If>
 
@@ -1174,7 +1174,7 @@
         </If>
 
         <!-- Raimdellopterus -->
-        <If condition="not HasAtLeast(17593,&Raimdellopterus;) and IsTimeBetween(4,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales')">
+        <If condition="not HasAtLeast(17593,&Raimdellopterus;) and IsTimeBetween(0,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales')">
             <LLoadProfile Path="Dravania/The_Churning_Mists/Raimdellopterus.xml"/>
         </If>
 
@@ -1269,7 +1269,7 @@
 
         <!-- GYR ABANIA - THE LOCHS -->
         <!-- Stethacanthus -->
-        <If condition="not HasAtLeast(24992,&Stethacanthus;) and IsTimeBetween(15,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Thunderstorms')">
+        <If condition="not HasAtLeast(24992,&Stethacanthus;) and IsTimeBetween(12,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Thunderstorms')">
             <LLoadProfile Path="Gyr_Abania/The_Lochs/Stethacanthus.xml"/>
         </If>
 
@@ -1508,7 +1508,7 @@
         </If>
 
         <!-- Aquamaton -->
-        <If condition="not HasAtLeast(33240,&Aquamaton;) and IsTimeBetween(9,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Gales') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(814, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
+        <If condition="not HasAtLeast(33240,&Aquamaton;) and IsTimeBetween(6,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Gales') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(814, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
             <LLoadProfile Path="Norvrandt/Kholusia/Aquamaton.xml"/>
         </If>
 
@@ -1524,7 +1524,7 @@
         </If>
 
         <!-- Cinder_Surprise -->
-        <If condition="not HasAtLeast(33241,&Cinder_Surprise;) and (IsTimeBetween(23,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Dust Storms')">
+        <If condition="not HasAtLeast(33241,&Cinder_Surprise;) and (IsTimeBetween(18,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Dust Storms')">
             <LLoadProfile Path="Norvrandt/Amh_Araeng/Cinder_Surprise.xml"/>
         </If>
 
@@ -1632,7 +1632,7 @@
         </If>
 
         <!-- Lancetfish -->
-        <If condition="not HasAtLeast(33244,&Lancetfish;) and (IsTimeBetween(23,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Fair Skies')">
+        <If condition="not HasAtLeast(33244,&Lancetfish;) and (IsTimeBetween(21,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Fair Skies')">
             <LLoadProfile Path="Norvrandt/The_Tempest/Lancetfish.xml"/>
         </If>
 
