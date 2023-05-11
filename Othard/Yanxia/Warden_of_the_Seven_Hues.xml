@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<!-- Indigo Prismfish -->
-		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(24203,3) and HasAtLeast(20675,1) not Core.Player.HasAura(568) and IsTimeBetween(0,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(24203,3) and HasAtLeast(20675,1) and not Core.Player.HasAura(568) and IsTimeBetween(0,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />
 				<PatienceTug moochLevel="1" TugType="Heavy" />
@@ -35,13 +35,14 @@
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Indigo Prismfish" />
+				<Keeper name="Green Prismfish" />
 			</Keepers>
 		</ExFish>
-		<While condition="IsTimeBetewen(0,4)">
+		<While condition="IsTimeBetween(0,4)">
 			<WaitTimer WaitTime="30" />
 		</While>
 		<!-- Firelight Goldfish -->
-		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(23056,3) and HasAtLeast(20675,1) not Core.Player.HasAura(568) and IsTimeBetween(4,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(23056,3) and HasAtLeast(24203,3) and HasAtLeast(20675,1) and not Core.Player.HasAura(568) and IsTimeBetween(4,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />
 				<PatienceTug moochLevel="1" TugType="Heavy" />
@@ -52,14 +53,15 @@
 				<FishSpot XYZ="404.476, -16.22713, -685.9282" Heading="3.843526" />
 			</FishSpots>
 			<Keepers>
-				<Keeper name="Indigo Prismfish" />
+				<Keeper name="Firelight Prismfish" />
+				<Keeper name="Green Prismfish" />
 			</Keepers>
 		</ExFish>
-		<While condition="IsTimeBetewen(4,8)">
+		<While condition="IsTimeBetween(4,8)">
 			<WaitTimer WaitTime="30" />
 		</While>
 		<!-- Green Prismfish -->
-		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(24204,5) and HasAtLeast(20675,1) not Core.Player.HasAura(568) and IsTimeBetween(0,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(24204,5) and HasAtLeast(23056,3) and HasAtLeast(24203,3) and HasAtLeast(20675,1) and not Core.Player.HasAura(568) and IsTimeBetween(0,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />
 				<PatienceTug moochLevel="1" TugType="Heavy" />
@@ -70,7 +72,7 @@
 				<FishSpot XYZ="404.476, -16.22713, -685.9282" Heading="3.843526" />
 			</FishSpots>
 			<Keepers>
-				<Keeper name="Indigo Prismfish" />
+				<Keeper name="Green Prismfish" />
 			</Keepers>
 		</ExFish>
 		<!-- Warden of the Seven Hues -->

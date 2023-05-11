@@ -10,6 +10,7 @@
 <!DOCTYPE Profile [
 <!-- Profile Settings -->
 <!ENTITY HQ_Cordial "0">                         <!-- Set to 1 to farm -->
+<!ENTITY RETURN_TO_LIMSA "0">                    <!-- Set to 1 to AFK in Limsa Lominsa between fishing windows-->
 <!-- LA NOSCEA - Upper Decks -->
 <!ENTITY Goldenfin "0">                          <!-- TIMED -->                                        <!-- PILL BUG -->
 <!-- LA NOSCEA - Lower Decks -->
@@ -172,7 +173,7 @@
 <!ENTITY Hundred-eyed_Axolotl "0">               <!-- TIMED -->                                        <!-- PURSE WEB SPIDER -->
 <!ENTITY Crystal_Pigeon "0">                                     <!-- WEATHER -->                      <!-- GIANT CRANE FLY -->
 <!ENTITY Allagan_Bladeshark "0">                                 <!-- WEATHER -->                      <!-- FIEND WORM -->
-<!ENTITY Opabinia "1">                                           <!-- WEATHER -->  <!-- INTUITION -->  <!-- FIEND WORM -->
+<!ENTITY Opabinia "0">                                           <!-- WEATHER -->  <!-- INTUITION -->  <!-- FIEND WORM -->
 <!-- DRAVANIA - The Dravanian Forelands -->
 <!ENTITY Scaleripper "0">                                        <!-- WEATHER -->                      <!-- BRUTE LEECH -->
 <!ENTITY Twin-tongued_Carp "0">                  <!-- TIMED -->  <!-- WEATHER -->                      <!-- BRUTE LEECH -->
@@ -209,45 +210,45 @@
 <!ENTITY Downstream_Loach "1">                                   <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
 <!ENTITY Corpse_Chub "1">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
 <!-- GYR ABANIA - The Peaks -->
-<!ENTITY Bondsplitter "0">                                       <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
-<!ENTITY Drepanaspis "0">                                        <!-- WEATHER -->  <!-- INTUITION -->  <!-- SUSPENDING MINNOW -->
+<!ENTITY Bondsplitter "1">                                       <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
+<!ENTITY Drepanaspis "1">                                        <!-- WEATHER -->  <!-- INTUITION -->  <!-- SUSPENDING MINNOW -->
 <!ENTITY The_Undecided "0">                      <!-- TIMED -->                                        <!-- MIDGE LARVA -->
 <!ENTITY The_Last_Tear "0">                                      <!-- WEATHER -->                      <!-- SALMON ROE -->
-<!ENTITY Moksha "0">                                             <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
-<!ENTITY Hemon "0">                              <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
-<!ENTITY Lily_of_the_Veil "0">                                   <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
+<!ENTITY Moksha "1">                                             <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
+<!ENTITY Hemon "1">                              <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
+<!ENTITY Lily_of_the_Veil "1">                                   <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
 <!-- GYR ABANIA - The Lochs -->
-<!ENTITY Diamond-eye "0">                                        <!-- WEATHER -->                      <!-- SILKWORM -->
-<!ENTITY Stethacanthus "0">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- SILKWORM -->
+<!ENTITY Diamond-eye "1">                                        <!-- WEATHER -->                      <!-- SILKWORM -->
+<!ENTITY Stethacanthus "1">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- SILKWORM -->
 <!-- OTHARD - The Ruby Sea -->
 <!ENTITY Kuer "0">                                                                                     <!-- BLUE BOBBIT -->
-<!ENTITY The_Ruby_Dragon "0">                    <!-- TIMED -->  <!-- WEATHER -->                      <!-- BLUE BOBBIT -->
-<!ENTITY The_Vegetarian "0">                     <!-- TIMED -->  <!-- WEATHER -->                      <!-- LIVE SHRIMP -->
-<!ENTITY Seven_Stars "0">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- BLUE BOBBIT -->
-<!ENTITY The_Winter_Queen "0">                   <!-- TIMED -->                                        <!-- BLUE BOBBIT -->
+<!ENTITY The_Ruby_Dragon "1">                    <!-- TIMED -->  <!-- WEATHER -->                      <!-- BLUE BOBBIT -->
+<!ENTITY The_Vegetarian "1">                     <!-- TIMED -->  <!-- WEATHER -->                      <!-- LIVE SHRIMP -->
+<!ENTITY Seven_Stars "1">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- BLUE BOBBIT -->
+<!ENTITY The_Winter_Queen "1">                   <!-- TIMED -->                                        <!-- BLUE BOBBIT -->
 <!ENTITY Argonautica "0">                                        <!-- WEATHER -->                      <!-- LIVE SHRIMP -->
 <!ENTITY Pinhead "0">                            <!-- TIMED -->  <!-- WEATHER -->                      <!-- LIVE SHRIMP -->
 <!ENTITY Rakshasa "0">                                           <!-- WEATHER -->                      <!-- METAL SPINNER -->
 <!-- OTHARD - Yanxia -->
 <!ENTITY Pomegranate_Trout "0">                                  <!-- WEATHER -->                      <!-- NIGHTCRAWLER -->
-<!ENTITY Glarramundi "0">                                        <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
-<!ENTITY Hermits_End "0">                                                                              <!-- STONEFLY LARVE -->
-<!ENTITY Warden_of_the_Seven_Hues "0">           <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- STONEFLY LARVA -->
-<!ENTITY The_Unraveled_Bow "0">                  <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
-<!ENTITY Bokuden "0">                            <!-- TIMED -->                                        <!-- STONEFLY LARVA -->
-<!ENTITY Suiten_Ippeki "0">                      <!-- TIMED -->  <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
-<!ENTITY Axelrod "0">                            <!-- TIMED -->  <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
-<!ENTITY Hagoromo_Bijin "0">                                     <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
-<!ENTITY Hagoromo_Koi "0">                                       <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY Glarramundi "1">                                        <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
+<!ENTITY Hermits_End "1">                                                                              <!-- STONEFLY LARVE -->
+<!ENTITY Warden_of_the_Seven_Hues "1">           <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- STONEFLY LARVA -->
+<!ENTITY The_Unraveled_Bow "1">                  <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
+<!ENTITY Bokuden "1">                            <!-- TIMED -->                                        <!-- STONEFLY LARVA -->
+<!ENTITY Suiten_Ippeki "1">                      <!-- TIMED -->  <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY Axelrod "1">                            <!-- TIMED -->  <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY Hagoromo_Bijin "1">                                     <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY Hagoromo_Koi "1">                                       <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
 <!-- OTHARD - The Azim Steppe -->
 <!ENTITY Garden_Skipper "0">                     <!-- TIMED -->  <!-- WEATHER -->                      <!-- MIDGE LARVA -->
-<!ENTITY Banderole "0">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- NIGHTCRAWLER -->
-<!ENTITY Blade_Skipper "0">                      <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
-<!ENTITY Duskfish "0">                           <!-- TIMED -->  <!-- WEATHER -->                      <!-- NIGHTCRAWLER -->
+<!ENTITY Banderole "1">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- NIGHTCRAWLER -->
+<!ENTITY Blade_Skipper "1">                      <!-- TIMED -->  <!-- WEATHER -->                      <!-- SUSPENDING MINNOW -->
+<!ENTITY Duskfish "1">                           <!-- TIMED -->  <!-- WEATHER -->                      <!-- NIGHTCRAWLER -->
 <!ENTITY The_Word_of_God "0">                    <!-- TIMED -->                                        <!-- STONEFLY LARVA -->
-<!ENTITY Yat_Khan "0">                                           <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
-<!ENTITY Nhaamas_Treasure "0">                                                                         <!-- SUSPENDING MINNOW -->
-<!ENTITY The_Unconditional "0">                  <!-- TIMED -->  <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY Yat_Khan "1">                                           <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
+<!ENTITY Nhaamas_Treasure "1">                                                                         <!-- SUSPENDING MINNOW -->
+<!ENTITY The_Unconditional "1">                  <!-- TIMED -->  <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
 <!-- HINGASHI - Kugane -->
 <!ENTITY Rising_Dragon "0">                                                                            <!-- METAL SPINNER -->
 <!-- HINGASHI - Shirogane -->
@@ -260,7 +261,7 @@
 <!-- NORVRANDT - Eulmore -->
 <!ENTITY Winged_Dame "0">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- SQUID STRIP -->
 <!-- NORVRANDT - Lakeland -->
-<!ENTITY Sweetheart "1">                                         <!-- WEATHER -->                      <!-- BAITBUGS -->
+<!ENTITY Sweetheart "0">                                         <!-- WEATHER -->                      <!-- BAITBUGS -->
 <!ENTITY Moonlight_Guppy "0">                    <!-- TIMED -->  <!-- WEATHER -->                      <!-- BAITBUGS -->
 <!ENTITY The_Unforgiven "0">                                     <!-- WEATHER -->                      <!-- BAITBUGS -->
 <!ENTITY Python_Discus "0">                                      <!-- WEATHER -->                      <!-- FRUIT WORM -->
@@ -1331,7 +1332,7 @@
         </If>
 
         <!-- Warden_of_the_Seven_Hues -->
-        <If condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and (IsTimeBetween(23,24) or IsTimeBetween(0,16)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Fair Skies')">
+        <If condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and (IsTimeBetween(23,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Fair Skies')">
             <LLoadProfile Path="Othard/Yanxia/Warden_of_the_Seven_Hues.xml"/>
         </If>
 
@@ -2037,40 +2038,40 @@
         </If>
 
         <Log Message="Nothing to fish. Waiting for next fishing window..."/>
-        <If Condition="not IsOnMap(129) and IsTimeBetween(0,2)">
+        <If Condition="not IsOnMap(129) and IsTimeBetween(0,2) and &RETURN_TO_LIMSA; == 1">
             <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-86.37854, 18.60032, -10.73389"/>
         </If>
-        <If Condition="not IsOnMap(129) and IsTimeBetween(2,4)">
+        <If Condition="not IsOnMap(129) and IsTimeBetween(2,4) and &RETURN_TO_LIMSA; == 1">
             <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-96.17102, 18.5624, 9.125985"/>
         </If>
-        <If Condition="not IsOnMap(129) and IsTimeBetween(4,6)">
+        <If Condition="not IsOnMap(129) and IsTimeBetween(4,6) and &RETURN_TO_LIMSA; == 1">
             <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-82.34045, 18.60033, 10.16381"/>
         </If>
-        <If Condition="not IsOnMap(129) and IsTimeBetween(6,8)">
+        <If Condition="not IsOnMap(129) and IsTimeBetween(6,8) and &RETURN_TO_LIMSA; == 1">
             <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-83.50173, 18.80033, -6.082156"/>
         </If>
-        <If Condition="not IsOnMap(129) and IsTimeBetween(8,10)">
+        <If Condition="not IsOnMap(129) and IsTimeBetween(8,10) and &RETURN_TO_LIMSA; == 1">
             <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-96.32515, 18.00033, -17.43454"/>
         </If>
-        <If Condition="not IsOnMap(129) and IsTimeBetween(10,12)">
+        <If Condition="not IsOnMap(129) and IsTimeBetween(10,12) and &RETURN_TO_LIMSA; == 1">
             <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-87.26067, 18.80032, -5.982514"/>
         </If>
-        <If Condition="not IsOnMap(129) and IsTimeBetween(12,14)">
+        <If Condition="not IsOnMap(129) and IsTimeBetween(12,14) and &RETURN_TO_LIMSA; == 1">
             <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-63.91333, 18.00033, 6.933312"/>
         </If>
-        <If Condition="not IsOnMap(129) and IsTimeBetween(14,16)">
+        <If Condition="not IsOnMap(129) and IsTimeBetween(14,16) and &RETURN_TO_LIMSA; == 1">
             <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-90.6589, 18.00033, 15.89221"/>
         </If>
-        <If Condition="not IsOnMap(129) and IsTimeBetween(16,18)">
+        <If Condition="not IsOnMap(129) and IsTimeBetween(16,18) and &RETURN_TO_LIMSA; == 1">
             <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-91.82682, 18.80033, -1.728218"/>
         </If>
-        <If Condition="not IsOnMap(129) and IsTimeBetween(18,20)">
+        <If Condition="not IsOnMap(129) and IsTimeBetween(18,20) and &RETURN_TO_LIMSA; == 1">
             <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-73.89733, 18.60033, -7.523132"/>
         </If>
-        <If Condition="not IsOnMap(129) and IsTimeBetween(20,22)">
+        <If Condition="not IsOnMap(129) and IsTimeBetween(20,22) and &RETURN_TO_LIMSA; == 1">
             <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-89.97563, 18.60033, -12.3395"/>
         </If>
-        <If Condition="not IsOnMap(129) and IsTimeBetween(22,24)">
+        <If Condition="not IsOnMap(129) and IsTimeBetween(22,24) and &RETURN_TO_LIMSA; == 1">
             <LisbethTravel Area="Limsa Lominsa (Lower Decks)" XYZ="-76.589, 18.60033, 12.61149"/>
         </If>
 

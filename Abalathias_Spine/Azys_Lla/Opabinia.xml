@@ -33,7 +33,6 @@
 			</Keepers>
 			<SurfaceSlaps>
 				<SurfaceSlap name = "Platinum Fish"/>
-				<SurfaceSlap name = "Azysfish"/>
 			</SurfaceSlaps>
 		</ExFish>
 		<ExFish Bait="Versatile Lure" Condition="Core.Player.HasAura(568) and not HasAtLeast(17589,&Opabinia;) and HasAtLeast(12710,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Thunder')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
