@@ -23,7 +23,8 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="IsTimeBetween(19,20)">
-			<WaitTimer WaitTime="30" />
+			<Log Message="Waiting for window to open..." />
+                        <WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(38832,&Vidyutvat_Wrasse;) and HasAtLeast(36592,1) and IsTimeBetween(20,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(957, TimeSpan.FromHours(-8), 'Clouds')">
 			<ExFish Bait="Shrimp Ball" condition="not HasAtLeast(38832,&Vidyutvat_Wrasse;) and HasAtLeast(36592,1) and IsTimeBetween(20,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(957, TimeSpan.FromHours(-8), 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">

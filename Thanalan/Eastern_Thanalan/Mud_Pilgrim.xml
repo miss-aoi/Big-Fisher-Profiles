@@ -23,7 +23,8 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="IsTimeBetween(16,17)">
-			<WaitTimer WaitTime="30" />
+			<Log Message="Waiting for window to open..." />
+                        <WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7702,&Mud_Pilgrim;) and HasAtLeast(2592,1) and (IsTimeBetween(17,24) or IsTimeBetween(0,7)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Rain', 'Showers')">
 			<ExFish Bait="Midge Basket" condition="not HasAtLeast(7702,&Mud_Pilgrim;) and HasAtLeast(2592,1) and (IsTimeBetween(17,24) or IsTimeBetween(0,7)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Rain', 'Showers')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">

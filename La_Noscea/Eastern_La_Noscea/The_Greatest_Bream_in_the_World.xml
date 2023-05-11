@@ -23,7 +23,8 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="IsTimeBetween(19,20)">
-			<WaitTimer WaitTime="30" />
+			<Log Message="Waiting for window to open..." />
+                        <WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(7909,&The_Greatest_Bream_in_the_World;) and HasAtLeast(2613,1) and IsTimeBetween(20,23)">
 			<ExFish Bait="Shrimp Cage Feeder" condition="not HasAtLeast(7909,&The_Greatest_Bream_in_the_World;) and HasAtLeast(2613,1) and IsTimeBetween(20,23)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">

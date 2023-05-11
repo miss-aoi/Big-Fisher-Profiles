@@ -27,7 +27,8 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="IsTimeBetween(18,19)">
-			<WaitTimer WaitTime="30" />
+			<Log Message="Waiting for window to open..." />
+                        <WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(8769,&Darkstar;) and HasAtLeast(12704,1) and (IsTimeBetween(19,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards', 'Snow')">
 			<ExFish Bait="Chocobo Fly" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8769,&Darkstar;) and HasAtLeast(12704,1) and (IsTimeBetween(19,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards', 'Snow')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">

@@ -34,7 +34,8 @@
 			</Keepers>
 		</ExFish>
 		<While condition="IsTimeBetween(4,5)">
-			<WaitTimer WaitTime="30" />
+			<Log Message="Waiting for window to open..." />
+                        <WaitTimer WaitTime="30" />
 		</While>
 		<!-- Catch last fish once window starts -->
 		<ExFish Bait="Giant Crane Fly" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17593,&Raimdellopterus;) and HasAtLeast(12712,1) and IsTimeBetween(5,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">

@@ -34,7 +34,8 @@
 			</Keepers>
 		</ExFish>
 		<While condition="IsTimeBetween(20,24)">
-			<WaitTimer WaitTime="30" />
+			<Log Message="Waiting for window to open..." />
+                        <WaitTimer WaitTime="30" />
 		</While>
 		<ExFish Bait="Desert Dessert Frog" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33241,&Cinder_Surprise;) and HasAtLeast(27584,1) and IsTimeBetween(0,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Dust Storms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 			<FishSpots>

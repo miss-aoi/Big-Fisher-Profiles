@@ -23,7 +23,8 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<While condition="IsTimeBetween(1,2)">
-			<WaitTimer WaitTime="30" />
+			<Log Message="Waiting for window to open..." />
+                        <WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(37849,&Sovereign_Shadow;) and HasAtLeast(36591,1) and IsTimeBetween(2,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(958, 'Snow') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(958, TimeSpan.FromHours(-8), 'Clouds', 'Fog')">
 			<ExFish Bait="Mayfly" condition="not HasAtLeast(37849,&Sovereign_Shadow;) and HasAtLeast(36591,1) and IsTimeBetween(2,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(958, 'Snow') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(958, TimeSpan.FromHours(-8), 'Clouds', 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">

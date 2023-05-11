@@ -39,7 +39,8 @@
 			</Keepers>
 		</ExFish>
 		<While condition="IsTimeBetween(9,10)">
-			<WaitTimer WaitTime="30" />
+			<Log Message="Waiting for window to open..." />
+                        <WaitTimer WaitTime="30" />
 		</While>
 		<!-- Catch last ones once window starts -->
 		<ExFish Bait="Magma Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17588,&Problematicus;) and HasAtLeast(28634,1) and IsTimeBetween(10,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
