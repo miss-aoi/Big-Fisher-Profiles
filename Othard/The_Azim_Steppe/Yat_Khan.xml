@@ -22,7 +22,6 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(23070,&Yat_Khan;) and HasAtLeast(20675,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(622, 'Wind')">
 			<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(23070,&Yat_Khan;) and HasAtLeast(20675,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(622, 'Wind')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-9.731633, -5.338995, 325.8565" Heading="0.6083343" />
@@ -34,7 +33,6 @@
 				</Keepers>
 				<SurfaceSlaps />
 			</ExFish>
-		</While>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

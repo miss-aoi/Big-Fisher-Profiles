@@ -24,25 +24,23 @@
 		</If>
 		<While condition="IsTimeBetween(18,19)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7915,&Shark_Tuna;) and HasAtLeast(2596,1) and IsTimeBetween(19,21) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Spoon Worm" condition="not HasAtLeast(7915,&Shark_Tuna;) and HasAtLeast(2596,1) and IsTimeBetween(19,21) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="540.4973, 8.875281, 408.9522" Heading="1.583563" />
-					<FishSpot XYZ="541.0124, 8.769853, 376.1528" Heading="2.392" />
-					<FishSpot XYZ="557.0814, 8.72471, 436.7764" Heading="1.434063" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Shark Tuna" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Spoon Worm" condition="not HasAtLeast(7915,&Shark_Tuna;) and HasAtLeast(2596,1) and IsTimeBetween(19,21) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="540.4973, 8.875281, 408.9522" Heading="1.583563" />
+				<FishSpot XYZ="541.0124, 8.769853, 376.1528" Heading="2.392" />
+				<FishSpot XYZ="557.0814, 8.72471, 436.7764" Heading="1.434063" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Shark Tuna" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

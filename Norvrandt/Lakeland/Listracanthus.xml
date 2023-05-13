@@ -24,25 +24,23 @@
 		</If>
 		<While condition="IsTimeBetween(15,16)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(33239,&Listracanthus;) and HasAtLeast(27589,1) and IsTimeBetween(16,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(813, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(813, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Baitbugs" condition="not HasAtLeast(33239,&Listracanthus;) and HasAtLeast(27589,1) and IsTimeBetween(16,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(813, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(813, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Medium" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="-566.6547, -0.4500181, 818.3839" Heading="1.575036" />
-					<FishSpot XYZ="-571.9924, -1.495782, 808.0778" Heading="2.500757" />
-					<FishSpot XYZ="-614.087, 24.85095, 780.8807" Heading="2.513321" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Listracanthus" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Baitbugs" condition="not HasAtLeast(33239,&Listracanthus;) and HasAtLeast(27589,1) and IsTimeBetween(16,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(813, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(813, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Medium" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="-566.6547, -0.4500181, 818.3839" Heading="1.575036" />
+				<FishSpot XYZ="-571.9924, -1.495782, 808.0778" Heading="2.500757" />
+				<FishSpot XYZ="-614.087, 24.85095, 780.8807" Heading="2.513321" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Listracanthus" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

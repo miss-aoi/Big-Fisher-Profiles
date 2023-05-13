@@ -24,9 +24,8 @@
 		</If>
 		<While condition="IsTimeBetween(4,5)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(24995,&The_Unconditional;) and HasAtLeast(20675,1) and IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(622, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(622, TimeSpan.FromHours(-8), 'Rain')">
 			<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(24995,&The_Unconditional;) and HasAtLeast(20675,1) and IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(622, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(622, TimeSpan.FromHours(-8), 'Rain')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-414.9601, 1.498228, 598.4959" Heading="4.981417" />
@@ -38,7 +37,6 @@
 				</Keepers>
 				<SurfaceSlaps />
 			</ExFish>
-		</While>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

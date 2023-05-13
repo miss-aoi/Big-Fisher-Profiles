@@ -24,9 +24,8 @@
 		</If>
 		<While condition="IsTimeBetween(-1,0)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(24893,&Banderole;) and HasAtLeast(20614,1) and IsTimeBetween(0,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(622, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(622, TimeSpan.FromHours(-8), 'Fair Skies')">
 			<ExFish Bait="Nightcrawler" condition="not HasAtLeast(24893,&Banderole;) and HasAtLeast(20614,1) and IsTimeBetween(0,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(622, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(622, TimeSpan.FromHours(-8), 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
@@ -42,7 +41,6 @@
 				</Keepers>
 				<SurfaceSlaps />
 			</ExFish>
-		</While>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

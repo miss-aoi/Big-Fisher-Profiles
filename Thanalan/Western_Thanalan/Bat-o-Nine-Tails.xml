@@ -22,23 +22,21 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(8766,&Bat-o-Nine-Tails;) and HasAtLeast(2599,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Clear Skies', 'Clouds', 'Fog', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(140, TimeSpan.FromHours(-8), 'Rain')">
-			<ExFish Bait="Honey Worm" condition="not HasAtLeast(8766,&Bat-o-Nine-Tails;) and HasAtLeast(2599,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Clear Skies', 'Clouds', 'Fog', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(140, TimeSpan.FromHours(-8), 'Rain')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Honey Worm" condition="not HasAtLeast(8766,&Bat-o-Nine-Tails;) and HasAtLeast(2599,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Clear Skies', 'Clouds', 'Fog', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(140, TimeSpan.FromHours(-8), 'Rain')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Medium" />
 				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="-317.0771, 12.60398, -741.5321" Heading="0.7704749" />
-					<FishSpot XYZ="-323.1062, 12.59304, -717.5994" Heading="3.243963" />
-					<FishSpot XYZ="-336.2919, 12.74882, -741.1483" Heading="1.777886" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Bat-o'-Nine-Tails" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+			<FishSpots>
+				<FishSpot XYZ="-317.0771, 12.60398, -741.5321" Heading="0.7704749" />
+				<FishSpot XYZ="-323.1062, 12.59304, -717.5994" Heading="3.243963" />
+				<FishSpot XYZ="-336.2919, 12.74882, -741.1483" Heading="1.777886" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Bat-o'-Nine-Tails" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

@@ -34,14 +34,14 @@
 				<PatienceTug moochLevel="1" TugType="Medium" />
 			</PatientTugs>
 			<FishSpots>
-				<FishSpot XYZ="-6.899338, 1.154556, 192.6779" Heading="4.952633" />
-				<FishSpot XYZ="17.03964, 2.610861, 215.6596" Heading="0.5292695" />
-				<FishSpot XYZ="8.996038, 2.61084, 195.7229" Heading="2.25086" />
+			<FishSpot XYZ="-6.899338, 1.154556, 192.6779" Heading="4.952633" />
+			<FishSpot XYZ="17.03964, 2.610861, 215.6596" Heading="0.5292695" />
+			<FishSpot XYZ="8.996038, 2.61084, 195.7229" Heading="2.25086" />
 			</FishSpots>
 			<Keepers>
-				<Keeper name="Sweetnewt" />
+			<Keeper name="Sweetnewt" />
 			</Keepers>
-			<SurfaceSlaps />
+		<SurfaceSlaps />
 		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>

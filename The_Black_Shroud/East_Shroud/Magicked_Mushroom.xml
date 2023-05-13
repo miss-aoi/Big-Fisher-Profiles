@@ -22,23 +22,21 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(8773,&Magicked_Mushroom;) and HasAtLeast(2626,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(152, 'Clouds', 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(152, TimeSpan.FromHours(-8), 'Rain', 'Thunder')">
-			<ExFish Bait="Spinnerbait" condition="not HasAtLeast(8773,&Magicked_Mushroom;) and HasAtLeast(2626,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(152, 'Clouds', 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(152, TimeSpan.FromHours(-8), 'Rain', 'Thunder')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Spinnerbait" condition="not HasAtLeast(8773,&Magicked_Mushroom;) and HasAtLeast(2626,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(152, 'Clouds', 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(152, TimeSpan.FromHours(-8), 'Rain', 'Thunder')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Medium" />
 				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="218.0279, -4.363929, -29.92402" Heading="2.14835" />
-					<FishSpot XYZ="221.8551, -5.356191, -46.99755" Heading="0.5461359" />
-					<FishSpot XYZ="240.2102, -5.228583, -41.99316" Heading="5.193598" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Magicked Mushroom" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+			<FishSpots>
+				<FishSpot XYZ="218.0279, -4.363929, -29.92402" Heading="2.14835" />
+				<FishSpot XYZ="221.8551, -5.356191, -46.99755" Heading="0.5461359" />
+				<FishSpot XYZ="240.2102, -5.228583, -41.99316" Heading="5.193598" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Magicked Mushroom" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

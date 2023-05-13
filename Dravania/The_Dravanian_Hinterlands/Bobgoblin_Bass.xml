@@ -24,25 +24,23 @@
 		</If>
 		<While condition="IsTimeBetween(1,2)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(16754,&Bobgoblin_Bass;) and HasAtLeast(12706,1) and IsTimeBetween(2,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Showers') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(398, TimeSpan.FromHours(-8), 'Rain')">
-			<ExFish Bait="Goblin Jig" condition="not HasAtLeast(16754,&Bobgoblin_Bass;) and HasAtLeast(12706,1) and IsTimeBetween(2,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Showers') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(398, TimeSpan.FromHours(-8), 'Rain')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Medium" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="-55.23393, 53.8129, 119.0049" Heading="1.762815" />
-					<FishSpot XYZ="-54.50538, 54.01475, 142.2572" Heading="0.7616963" />
-					<FishSpot XYZ="-54.34693, 54.25716, 128.7334" Heading="2.401608" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Bobgoblin Bass" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Goblin Jig" condition="not HasAtLeast(16754,&Bobgoblin_Bass;) and HasAtLeast(12706,1) and IsTimeBetween(2,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Showers') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(398, TimeSpan.FromHours(-8), 'Rain')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Medium" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="-55.23393, 53.8129, 119.0049" Heading="1.762815" />
+				<FishSpot XYZ="-54.50538, 54.01475, 142.2572" Heading="0.7616963" />
+				<FishSpot XYZ="-54.34693, 54.25716, 128.7334" Heading="2.401608" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Bobgoblin Bass" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

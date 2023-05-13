@@ -22,19 +22,17 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(30434,&Giant_Taimen;) and HasAtLeast(27589,1)">
-			<ExFish Bait="Baitbugs" condition="not HasAtLeast(30434,&Giant_Taimen;) and HasAtLeast(27589,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="232.0987, 319.7058, -582.9617" Heading="1.704814" />
-					<FishSpot XYZ="247.9626, 317.0774, -566.7717" Heading="0.1444907" />
-					<FishSpot XYZ="254.702, 324.8494, -608.1593" Heading="3.304929" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Giant Taimen" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Baitbugs" condition="not HasAtLeast(30434,&Giant_Taimen;) and HasAtLeast(27589,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="232.0987, 319.7058, -582.9617" Heading="1.704814" />
+				<FishSpot XYZ="247.9626, 317.0774, -566.7717" Heading="0.1444907" />
+				<FishSpot XYZ="254.702, 324.8494, -608.1593" Heading="3.304929" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Giant Taimen" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

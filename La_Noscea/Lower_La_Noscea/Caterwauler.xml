@@ -22,19 +22,17 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(7681,&Caterwauler;) and HasAtLeast(2586,1)">
-			<ExFish Bait="Moth Pupa" condition="not HasAtLeast(7681,&Caterwauler;) and HasAtLeast(2586,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="118.7678, 36.16429, 20.61327" Heading="3.593841" />
-					<FishSpot XYZ="190.3371, 28.83445, 84.1914" Heading="0.6889129" />
-					<FishSpot XYZ="209.8657, 25.46121, 101.347" Heading="3.606406" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Caterwauler" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Moth Pupa" condition="not HasAtLeast(7681,&Caterwauler;) and HasAtLeast(2586,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="118.7678, 36.16429, 20.61327" Heading="3.593841" />
+				<FishSpot XYZ="190.3371, 28.83445, 84.1914" Heading="0.6889129" />
+				<FishSpot XYZ="209.8657, 25.46121, 101.347" Heading="3.606406" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Caterwauler" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

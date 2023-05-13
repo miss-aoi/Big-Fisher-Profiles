@@ -22,23 +22,21 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(16744,&Allagan_Bladeshark;) and HasAtLeast(12710,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Thunder') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(402, TimeSpan.FromHours(-8), 'Clouds')">
-			<ExFish Bait="Fiend Worm" condition="not HasAtLeast(16744,&Allagan_Bladeshark;) and HasAtLeast(12710,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Thunder') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(402, TimeSpan.FromHours(-8), 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="-17.71241, 293.9991, 32.3871" Heading="5.695476" />
-					<FishSpot XYZ="-18.69696, 293.9, 44.98245" Heading="3.563382" />
-					<FishSpot XYZ="-29.53881, 293.8998, 39.58407" Heading="1.649106" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Allagan Bladeshark" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Fiend Worm" condition="not HasAtLeast(16744,&Allagan_Bladeshark;) and HasAtLeast(12710,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Thunder') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(402, TimeSpan.FromHours(-8), 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="-17.71241, 293.9991, 32.3871" Heading="5.695476" />
+				<FishSpot XYZ="-18.69696, 293.9, 44.98245" Heading="3.563382" />
+				<FishSpot XYZ="-29.53881, 293.8998, 39.58407" Heading="1.649106" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Allagan Bladeshark" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

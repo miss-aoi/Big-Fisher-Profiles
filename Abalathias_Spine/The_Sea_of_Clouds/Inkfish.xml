@@ -24,21 +24,19 @@
 		</If>
 		<While condition="IsTimeBetween(13,14)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(15635,&Inkfish;) and HasAtLeast(12711,1) and IsTimeBetween(14,16)">
-			<ExFish Bait="Brute Leech" condition="not HasAtLeast(15635,&Inkfish;) and HasAtLeast(12711,1) and IsTimeBetween(14,16)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="308.8001, -125.2893, 674.882" Heading="2.009855" />
-					<FishSpot XYZ="351.9214, -125.2895, 681.1732" Heading="2.692616" />
-					<FishSpot XYZ="382.7634, -125.3148, 637.7352" Heading="4.003712" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Inkfish" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Brute Leech" condition="not HasAtLeast(15635,&Inkfish;) and HasAtLeast(12711,1) and IsTimeBetween(14,16)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="308.8001, -125.2893, 674.882" Heading="2.009855" />
+				<FishSpot XYZ="351.9214, -125.2895, 681.1732" Heading="2.692616" />
+				<FishSpot XYZ="382.7634, -125.3148, 637.7352" Heading="4.003712" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Inkfish" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

@@ -26,25 +26,23 @@
 		</If>
 		<While condition="IsTimeBetween(3,4)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7917,&Twitchbeard;) and HasAtLeast(2596,1) and IsTimeBetween(4,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(339, 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Spoon Worm" condition="not HasAtLeast(7917,&Twitchbeard;) and HasAtLeast(2596,1) and IsTimeBetween(4,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(339, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="-39.94213, -0.2998141, 77.95563" Heading="0.2739866" />
-					<FishSpot XYZ="-64.23476, -0.4460256, 132.4761" Heading="0.07711339" />
-					<FishSpot XYZ="-89.91607, -0.3917423, 67.00573" Heading="5.34662" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Twitchbeard" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Spoon Worm" condition="not HasAtLeast(7917,&Twitchbeard;) and HasAtLeast(2596,1) and IsTimeBetween(4,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(339, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="-39.94213, -0.2998141, 77.95563" Heading="0.2739866" />
+				<FishSpot XYZ="-64.23476, -0.4460256, 132.4761" Heading="0.07711339" />
+				<FishSpot XYZ="-89.91607, -0.3917423, 67.00573" Heading="5.34662" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Twitchbeard" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

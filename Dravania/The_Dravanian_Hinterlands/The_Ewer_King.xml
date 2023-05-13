@@ -22,23 +22,21 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(15632,&The_Ewer_King;) and HasAtLeast(12707,1)">
-			<ExFish Bait="Bladed Steel Jig" condition="not HasAtLeast(15632,&The_Ewer_King;) and HasAtLeast(12707,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Medium" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="29.71376, 52.60495, 50.8052" Heading="4.73267" />
-					<FishSpot XYZ="26.36157, 52.6711, 80.21965" Heading="4.133673" />
-					<FishSpot XYZ="25.77735, 52.40601, 40.15475" Heading="4.818541" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="The Ewer King" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Bladed Steel Jig" condition="not HasAtLeast(15632,&The_Ewer_King;) and HasAtLeast(12707,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Medium" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="29.71376, 52.60495, 50.8052" Heading="4.73267" />
+				<FishSpot XYZ="26.36157, 52.6711, 80.21965" Heading="4.133673" />
+				<FishSpot XYZ="25.77735, 52.40601, 40.15475" Heading="4.818541" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="The Ewer King" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

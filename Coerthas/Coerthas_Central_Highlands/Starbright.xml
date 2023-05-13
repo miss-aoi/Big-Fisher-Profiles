@@ -22,27 +22,25 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="IsTimeBetween(20,21)">
+		<While condition="IsTimeBetween(19,22)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7945,&Starbright;) and HasAtLeast(2597,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Syrphid Basket" condition="not HasAtLeast(7945,&Starbright;) and HasAtLeast(2597,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="-269.9615, 248.1604, 10.56468" Heading="0.02401352" />
-					<FishSpot XYZ="-292.2026, 242.4896, 17.62959" Heading="1.029324" />
-					<FishSpot XYZ="-299.8128, 242.6337, 32.33716" Heading="1.896401" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Starbright" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Syrphid Basket" condition="not HasAtLeast(7945,&Starbright;) and HasAtLeast(2597,1) and (IsTimeBetween(20,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="-269.9615, 248.1604, 10.56468" Heading="0.02401352" />
+				<FishSpot XYZ="-292.2026, 242.4896, 17.62959" Heading="1.029324" />
+				<FishSpot XYZ="-299.8128, 242.6337, 32.33716" Heading="1.896401" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Starbright" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

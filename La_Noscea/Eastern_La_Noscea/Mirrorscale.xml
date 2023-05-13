@@ -24,25 +24,23 @@
 		</If>
 		<While condition="IsTimeBetween(8,9)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7940,&Mirrorscale;) and HasAtLeast(2592,1) and IsTimeBetween(9,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Midge Basket" condition="not HasAtLeast(7940,&Mirrorscale;) and HasAtLeast(2592,1) and IsTimeBetween(9,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Light" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="-214.7343, 44.36052, 529.5509" Heading="6.139794" />
-					<FishSpot XYZ="-222.4824, 44.41689, 566.0011" Heading="3.544835" />
-					<FishSpot XYZ="-242.376, 44.33062, 514.6062" Heading="0.2000871" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Mirrorscale" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Midge Basket" condition="not HasAtLeast(7940,&Mirrorscale;) and HasAtLeast(2592,1) and IsTimeBetween(9,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Light" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="-214.7343, 44.36052, 529.5509" Heading="6.139794" />
+				<FishSpot XYZ="-222.4824, 44.41689, 566.0011" Heading="3.544835" />
+				<FishSpot XYZ="-242.376, 44.33062, 514.6062" Heading="0.2000871" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Mirrorscale" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

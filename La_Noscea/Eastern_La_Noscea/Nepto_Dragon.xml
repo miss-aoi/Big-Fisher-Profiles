@@ -22,29 +22,27 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(8754,&Nepto_Dragon;) and HasAtLeast(2606,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')">
-			<ExFish Bait="Northern Krill" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8754,&Nepto_Dragon;) and HasAtLeast(2606,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="859.7519, 22.08624, 154.0708" Heading="4.228399" />
-					<FishSpot XYZ="862.3873, 22.24, 167.1437" Heading="5.273502" />
-					<FishSpot XYZ="874.2692, 20.16584, 162.1999" Heading="6.249492" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Little Thalaos" />
-				</Keepers>
-			</ExFish>
-			<ExFish Bait="Northern Krill" Condition="Core.Player.HasAura(568) and not HasAtLeast(8754,&Nepto_Dragon;) and HasAtLeast(2606,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="859.7519, 22.08624, 154.0708" Heading="4.228399" />
-					<FishSpot XYZ="862.3873, 22.24, 167.1437" Heading="5.273502" />
-					<FishSpot XYZ="874.2692, 20.16584, 162.1999" Heading="6.249492" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Nepto Dragon" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Northern Krill" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8754,&Nepto_Dragon;) and HasAtLeast(2606,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="859.7519, 22.08624, 154.0708" Heading="4.228399" />
+				<FishSpot XYZ="862.3873, 22.24, 167.1437" Heading="5.273502" />
+				<FishSpot XYZ="874.2692, 20.16584, 162.1999" Heading="6.249492" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Little Thalaos" />
+			</Keepers>
+		</ExFish>
+		<ExFish Bait="Northern Krill" Condition="Core.Player.HasAura(568) and not HasAtLeast(8754,&Nepto_Dragon;) and HasAtLeast(2606,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="859.7519, 22.08624, 154.0708" Heading="4.228399" />
+				<FishSpot XYZ="862.3873, 22.24, 167.1437" Heading="5.273502" />
+				<FishSpot XYZ="874.2692, 20.16584, 162.1999" Heading="6.249492" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Nepto Dragon" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<If condition="HasAtLeast(4913,1)">
 			<Desynth ItemIds="4913" DesynthDelay="6000" DesynthTimeout="10" />
 		</If>

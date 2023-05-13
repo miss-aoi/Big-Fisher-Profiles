@@ -24,21 +24,19 @@
 		</If>
 		<While condition="IsTimeBetween(3,4)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(36681,&Earful;) and HasAtLeast(36591,1) and IsTimeBetween(4,8)">
-			<ExFish Bait="Mayfly" condition="not HasAtLeast(36681,&Earful;) and HasAtLeast(36591,1) and IsTimeBetween(4,8)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-284.9658, 34.74522, 27.53073" Heading="3.298184" />
-					<FishSpot XYZ="-278.7176, 34.74521, 18.49108" Heading="3.664698" />
-					<FishSpot XYZ="-288.6003, 34.74522, 10.35258" Heading="0.6110749" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Earful" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Mayfly" condition="not HasAtLeast(36681,&Earful;) and HasAtLeast(36591,1) and IsTimeBetween(4,8)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-284.9658, 34.74522, 27.53073" Heading="3.298184" />
+				<FishSpot XYZ="-278.7176, 34.74521, 18.49108" Heading="3.664698" />
+				<FishSpot XYZ="-288.6003, 34.74522, 10.35258" Heading="0.6110749" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Earful" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

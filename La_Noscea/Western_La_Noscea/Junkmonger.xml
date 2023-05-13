@@ -24,26 +24,24 @@
 		</If>
 		<While condition="IsTimeBetween(15,16)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7684,&Junkmonger;) and HasAtLeast(2585,1) and (IsTimeBetween(16,24) or IsTimeBetween(0,2))">
-			<ExFish Bait="Lugworm" condition="not HasAtLeast(7684,&Junkmonger;) and HasAtLeast(2585,1) and (IsTimeBetween(16,24) or IsTimeBetween(0,2))" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-					<PatienceTug moochLevel="2" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="203.27, -36.35403, 319.2234" Heading="5.066688" />
-					<FishSpot XYZ="213.7068, -36.35404, 333.0986" Heading="0.04436111" />
-					<FishSpot XYZ="223.5448, -36.35364, 333.0395" Heading="6.237484" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Junkmonger" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Lugworm" condition="not HasAtLeast(7684,&Junkmonger;) and HasAtLeast(2585,1) and (IsTimeBetween(16,24) or IsTimeBetween(0,2))" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+				<PatienceTug moochLevel="2" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="203.27, -36.35403, 319.2234" Heading="5.066688" />
+				<FishSpot XYZ="213.7068, -36.35404, 333.0986" Heading="0.04436111" />
+				<FishSpot XYZ="223.5448, -36.35364, 333.0395" Heading="6.237484" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Junkmonger" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

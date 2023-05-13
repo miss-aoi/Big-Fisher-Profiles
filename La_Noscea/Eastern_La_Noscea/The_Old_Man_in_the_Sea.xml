@@ -22,24 +22,22 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(8753,&The_Old_Man_in_the_Sea;) and HasAtLeast(2587,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(137, TimeSpan.FromHours(-8), 'Rain', 'Showers')">
-			<ExFish Bait="Pill Bug" condition="not HasAtLeast(8753,&The_Old_Man_in_the_Sea;) and HasAtLeast(2587,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(137, TimeSpan.FromHours(-8), 'Rain', 'Showers')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Medium" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-					<PatienceTug moochLevel="2" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="878.9365, 20.74535, 132.2115" Heading="3.842931" />
-					<FishSpot XYZ="887.8115, 20.74, 144.8793" Heading="0.8144441" />
-					<FishSpot XYZ="895.9836, 19.24, 127.6374" Heading="1.909806" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="The Old Man in the Sea" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Pill Bug" condition="not HasAtLeast(8753,&The_Old_Man_in_the_Sea;) and HasAtLeast(2587,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(137, TimeSpan.FromHours(-8), 'Rain', 'Showers')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Medium" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+				<PatienceTug moochLevel="2" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="878.9365, 20.74535, 132.2115" Heading="3.842931" />
+				<FishSpot XYZ="887.8115, 20.74, 144.8793" Heading="0.8144441" />
+				<FishSpot XYZ="895.9836, 19.24, 127.6374" Heading="1.909806" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="The Old Man in the Sea" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

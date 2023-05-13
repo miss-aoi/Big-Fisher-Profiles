@@ -22,19 +22,17 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(7929,&Iron_Noose;) and HasAtLeast(2620,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Fog')">
-			<ExFish Bait="Spinner" condition="not HasAtLeast(7929,&Iron_Noose;) and HasAtLeast(2620,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-295.7881, 5, 491.6447" Heading="3.627046" />
-					<FishSpot XYZ="-297.7134, 5, 457.9657" Heading="5.541336" />
-					<FishSpot XYZ="-304.5948, 5, 474.3223" Heading="2.852121" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Iron Noose" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Spinner" condition="not HasAtLeast(7929,&Iron_Noose;) and HasAtLeast(2620,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-295.7881, 5, 491.6447" Heading="3.627046" />
+				<FishSpot XYZ="-297.7134, 5, 457.9657" Heading="5.541336" />
+				<FishSpot XYZ="-304.5948, 5, 474.3223" Heading="2.852121" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Iron Noose" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

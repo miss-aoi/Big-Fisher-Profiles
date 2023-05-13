@@ -27,27 +27,27 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<!-- Catch Granite Crabs and Fossiltongues leading up to window -->
-		<ExFish Bait="Magma Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(12800,3) and not HasAtLeast(12754,5) and not HasAtLeast(17588,&Problematicus;) and HasAtLeast(28634,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+		<ExFish Bait="Magma Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(12800,2) and not HasAtLeast(12754,4) and not HasAtLeast(17588,&Problematicus;) and HasAtLeast(28634,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 			<FishSpots>
-				<FishSpot XYZ="-741.1226, 5.558385, -824.1998" Heading="4.014312" />
-				<FishSpot XYZ="-730.9006, 5.529306, -837.8148" Heading="3.964034" />
-				<FishSpot XYZ="-741.4175, 5.576777, -823.7872" Heading="5.040553" />
+				<FishSpot XYZ="-740.1883, 5.498933, -826.3872" Heading="4.0164" Sit="True" />
+				<FishSpot XYZ="-731.7888, 5.523361, -836.9976" Heading="3.765071" Sit="True" />
+				<FishSpot XYZ="-726.6816, 5.195183, -840.1033" Heading="3.718992" Sit="True" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Fossiltongue" />
 				<Keeper name="Granite Crab" />
 			</Keepers>
 		</ExFish>
-		<While condition="IsTimeBetween(9,10)">
+		<While condition="IsTimeBetween(6,10)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
 		<!-- Catch last ones once window starts -->
 		<ExFish Bait="Magma Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17588,&Problematicus;) and HasAtLeast(28634,1) and IsTimeBetween(10,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
 			<FishSpots>
-				<FishSpot XYZ="-741.1226, 5.558385, -824.1998" Heading="4.014312" />
-				<FishSpot XYZ="-730.9006, 5.529306, -837.8148" Heading="3.964034" />
-				<FishSpot XYZ="-741.4175, 5.576777, -823.7872" Heading="5.040553" />
+				<FishSpot XYZ="-740.1883, 5.498933, -826.3872" Heading="4.0164" Sit="True" />
+				<FishSpot XYZ="-731.7888, 5.523361, -836.9976" Heading="3.765071" Sit="True" />
+				<FishSpot XYZ="-726.6816, 5.195183, -840.1033" Heading="3.718992" Sit="True" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Fossiltongue" />
@@ -61,9 +61,9 @@
 				<PatienceTug moochLevel="1" TugType="Medium" />
 			</PatientTugs>
 			<FishSpots>
-				<FishSpot XYZ="-741.1226, 5.558385, -824.1998" Heading="4.014312" />
-				<FishSpot XYZ="-730.9006, 5.529306, -837.8148" Heading="3.964034" />
-				<FishSpot XYZ="-741.4175, 5.576777, -823.7872" Heading="5.040553" />
+				<FishSpot XYZ="-740.1883, 5.498933, -826.3872" Heading="4.0164" Sit="True" />
+				<FishSpot XYZ="-731.7888, 5.523361, -836.9976" Heading="3.765071" Sit="True" />
+				<FishSpot XYZ="-726.6816, 5.195183, -840.1033" Heading="3.718992" Sit="True" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Problematicus" />

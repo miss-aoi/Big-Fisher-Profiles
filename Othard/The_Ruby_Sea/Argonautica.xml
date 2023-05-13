@@ -22,7 +22,6 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(24215,&Argonautica;) and HasAtLeast(20617,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(613, 'Wind')">
 			<ExFish Bait="Live Shrimp" condition="not HasAtLeast(24215,&Argonautica;) and HasAtLeast(20617,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(613, 'Wind')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
@@ -38,7 +37,6 @@
 				</Keepers>
 				<SurfaceSlaps />
 			</ExFish>
-		</While>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

@@ -24,25 +24,23 @@
 		</If>
 		<While condition="IsTimeBetween(16,17)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7905,&Toramafish;) and HasAtLeast(2626,1) and IsTimeBetween(17,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(139, 'Clouds', 'Fog')">
-			<ExFish Bait="Spinnerbait" condition="not HasAtLeast(7905,&Toramafish;) and HasAtLeast(2626,1) and IsTimeBetween(17,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(139, 'Clouds', 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="-323.3856, -2.390284, 117.6317" Heading="2.751819" />
-					<FishSpot XYZ="-352.9603, -3.009619, 116.2184" Heading="3.380132" />
-					<FishSpot XYZ="-365.8256, -1.967316, 130.2256" Heading="4.785471" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Toramafish" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Spinnerbait" condition="not HasAtLeast(7905,&Toramafish;) and HasAtLeast(2626,1) and IsTimeBetween(17,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(139, 'Clouds', 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="-323.3856, -2.390284, 117.6317" Heading="2.751819" />
+				<FishSpot XYZ="-352.9603, -3.009619, 116.2184" Heading="3.380132" />
+				<FishSpot XYZ="-365.8256, -1.967316, 130.2256" Heading="4.785471" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Toramafish" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

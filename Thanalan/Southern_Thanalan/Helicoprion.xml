@@ -24,25 +24,23 @@
 		</If>
 		<While condition="IsTimeBetween(7,8)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(8768,&Helicoprion;) and HasAtLeast(2600,1) and IsTimeBetween(8,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(-8), 'Fog', 'Clouds')">
-			<ExFish Bait="Sand Leech" condition="not HasAtLeast(8768,&Helicoprion;) and HasAtLeast(2600,1) and IsTimeBetween(8,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(-8), 'Fog', 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Sand Leech" condition="not HasAtLeast(8768,&Helicoprion;) and HasAtLeast(2600,1) and IsTimeBetween(8,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(-8), 'Fog', 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Medium" />
 					<PatienceTug moochLevel="1" TugType="Medium" />
 				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="-441.4117, -0.9107453, 742.5688" Heading="4.968235" />
-					<FishSpot XYZ="-442.3548, -0.9186811, 725.9896" Heading="4.513752" />
-					<FishSpot XYZ="-445.7262, -1.34148, 700.6635" Heading="4.254045" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Helicoprion" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+			<FishSpots>
+				<FishSpot XYZ="-441.4117, -0.9107453, 742.5688" Heading="4.968235" />
+				<FishSpot XYZ="-442.3548, -0.9186811, 725.9896" Heading="4.513752" />
+				<FishSpot XYZ="-445.7262, -1.34148, 700.6635" Heading="4.254045" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Helicoprion" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

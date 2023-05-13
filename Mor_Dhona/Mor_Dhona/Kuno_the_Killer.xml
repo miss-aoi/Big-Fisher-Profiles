@@ -24,41 +24,39 @@
 		</If>
 		<While condition="IsTimeBetween(7,8)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(8763,&Kuno_the_Killer;) and HasAtLeast(2599,1) and IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')">
-			<ExFish Bait="Honey Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8763,&Kuno_the_Killer;) and HasAtLeast(2599,1) and IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Light" />
-					<PatienceTug moochLevel="2" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="445.7883, -5.563284, -750.0673" Heading="5.845725" />
-					<FishSpot XYZ="460.5209, -4.923997, -748.8826" Heading="1.007671" />
-					<FishSpot XYZ="490.8825, -5.542807, -753.9091" Heading="5.38077" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Canavan" />
-				</Keepers>
-			</ExFish>
-			<ExFish Bait="Honey Worm" Condition="Core.Player.HasAura(568) and not HasAtLeast(8763,&Kuno_the_Killer;) and HasAtLeast(2599,1) and IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-					<PatienceTug moochLevel="2" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="445.7883, -5.563284, -750.0673" Heading="5.845725" />
-					<FishSpot XYZ="460.5209, -4.923997, -748.8826" Heading="1.007671" />
-					<FishSpot XYZ="490.8825, -5.542807, -753.9091" Heading="5.38077" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Kuno the Killer" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Honey Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8763,&Kuno_the_Killer;) and HasAtLeast(2599,1) and IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Light" />
+				<PatienceTug moochLevel="2" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="445.7883, -5.563284, -750.0673" Heading="5.845725" />
+				<FishSpot XYZ="460.5209, -4.923997, -748.8826" Heading="1.007671" />
+				<FishSpot XYZ="490.8825, -5.542807, -753.9091" Heading="5.38077" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Canavan" />
+			</Keepers>
+		</ExFish>
+		<ExFish Bait="Honey Worm" Condition="Core.Player.HasAura(568) and not HasAtLeast(8763,&Kuno_the_Killer;) and HasAtLeast(2599,1) and IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+				<PatienceTug moochLevel="2" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="445.7883, -5.563284, -750.0673" Heading="5.845725" />
+				<FishSpot XYZ="460.5209, -4.923997, -748.8826" Heading="1.007671" />
+				<FishSpot XYZ="490.8825, -5.542807, -753.9091" Heading="5.38077" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Kuno the Killer" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<If condition="HasAtLeast(8762,1)">
 			<Desynth ItemIds="8762" DesynthDelay="6000" DesynthTimeout="10" />
 		</If>

@@ -22,23 +22,21 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(7705,&Chirurgeon;) and HasAtLeast(2586,1)">
-			<ExFish Bait="Moth Pupa" condition="not HasAtLeast(7705,&Chirurgeon;) and HasAtLeast(2586,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Moth Pupa" condition="not HasAtLeast(7705,&Chirurgeon;) and HasAtLeast(2586,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Light" />
 				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="103.0872, -12, 97.26583" Heading="5.280188" />
-					<FishSpot XYZ="105.6798, -12, 117.9361" Heading="0.8358781" />
-					<FishSpot XYZ="87.16193, -12, 94.18873" Heading="0.1363499" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Chirurgeon" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+			<FishSpots>
+				<FishSpot XYZ="103.0872, -12, 97.26583" Heading="5.280188" />
+				<FishSpot XYZ="105.6798, -12, 117.9361" Heading="0.8358781" />
+				<FishSpot XYZ="87.16193, -12, 94.18873" Heading="0.1363499" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Chirurgeon" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

@@ -26,29 +26,27 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(8775,&Namitaro;) and HasAtLeast(2624,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')">
-			<ExFish Bait="Glowworm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8775,&Namitaro;) and HasAtLeast(2624,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="518.7339, 14.04607, 130.9605" Heading="1.535933" />
-					<FishSpot XYZ="524.8389, 14.08908, 124.3318" Heading="5.889893" />
-					<FishSpot XYZ="528.3615, 14.0166, 140.5807" Heading="2.704321" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Giant Takitaro" />
-				</Keepers>
-			</ExFish>
+		<ExFish Bait="Glowworm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8775,&Namitaro;) and HasAtLeast(2624,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="518.7339, 14.04607, 130.9605" Heading="1.535933" />
+				<FishSpot XYZ="524.8389, 14.08908, 124.3318" Heading="5.889893" />
+				<FishSpot XYZ="528.3615, 14.0166, 140.5807" Heading="2.704321" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Giant Takitaro" />
+			</Keepers>
+		</ExFish>
 			<ExFish Bait="Topwater Frog" Condition="Core.Player.HasAura(568) and not HasAtLeast(8775,&Namitaro;) and HasAtLeast(2624,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="518.7339, 14.04607, 130.9605" Heading="1.535933" />
-					<FishSpot XYZ="524.8389, 14.08908, 124.3318" Heading="5.889893" />
-					<FishSpot XYZ="528.3615, 14.0166, 140.5807" Heading="2.704321" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Namitaro" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+			<FishSpots>
+				<FishSpot XYZ="518.7339, 14.04607, 130.9605" Heading="1.535933" />
+				<FishSpot XYZ="524.8389, 14.08908, 124.3318" Heading="5.889893" />
+				<FishSpot XYZ="528.3615, 14.0166, 140.5807" Heading="2.704321" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Namitaro" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<If condition="HasAtLeast(8774,1)">
 			<Desynth ItemIds="8774" DesynthDelay="6000" DesynthTimeout="10" />
 		</If>

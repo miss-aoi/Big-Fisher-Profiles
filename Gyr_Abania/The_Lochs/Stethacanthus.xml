@@ -39,7 +39,7 @@
 		</ExFish>
 		<While condition="IsTimeBetween(12,16)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
 		<!-- Catch last fish once window starts -->
 		<ExFish Bait="Silkworm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and IsTimeBetween(16,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Thunderstorms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">

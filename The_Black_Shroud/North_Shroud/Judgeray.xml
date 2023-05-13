@@ -26,19 +26,17 @@
 			<Log Message="Waiting for window to open..." />
                         <WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7695,&Judgeray;) and HasAtLeast(2623,1) and IsTimeBetween(17,21)">
-			<ExFish Bait="Wildfowl Fly" condition="not HasAtLeast(7695,&Judgeray;) and HasAtLeast(2623,1) and IsTimeBetween(17,21)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-22.88442, -40.94998, 198.347" Heading="6.159586" />
-					<FishSpot XYZ="-35.6778, -39.79317, 204.5797" Heading="4.301856" />
-					<FishSpot XYZ="-37.19979, -40.94998, 194.5685" Heading="5.929203" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Judgeray" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Wildfowl Fly" condition="not HasAtLeast(7695,&Judgeray;) and HasAtLeast(2623,1) and IsTimeBetween(17,21)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-22.88442, -40.94998, 198.347" Heading="6.159586" />
+				<FishSpot XYZ="-35.6778, -39.79317, 204.5797" Heading="4.301856" />
+				<FishSpot XYZ="-37.19979, -40.94998, 194.5685" Heading="5.929203" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Judgeray" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

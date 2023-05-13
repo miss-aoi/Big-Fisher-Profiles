@@ -24,21 +24,19 @@
 		</If>
 		<While condition="IsTimeBetween(11,12)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(28930,&Ondo_Sigh;) and HasAtLeast(27590,1) and IsTimeBetween(12,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Squid Strip" condition="not HasAtLeast(28930,&Ondo_Sigh;) and HasAtLeast(27590,1) and IsTimeBetween(12,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-428.7982, 393.7201, -670.8645" Heading="4.822519" />
-					<FishSpot XYZ="-453.8247, 393.7201, -675.4504" Heading="0.3467791" />
-					<FishSpot XYZ="-462.4988, 393.72, -650.2955" Heading="5.239284" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Ondo Sigh" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Squid Strip" condition="not HasAtLeast(28930,&Ondo_Sigh;) and HasAtLeast(27590,1) and IsTimeBetween(12,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-428.7982, 393.7201, -670.8645" Heading="4.822519" />
+				<FishSpot XYZ="-453.8247, 393.7201, -675.4504" Heading="0.3467791" />
+				<FishSpot XYZ="-462.4988, 393.72, -650.2955" Heading="5.239284" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Ondo Sigh" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

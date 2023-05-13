@@ -24,25 +24,23 @@
 		</If>
 		<While condition="IsTimeBetween(0,1)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(8767,&Wootz_Knifefish_Zenith;) and HasAtLeast(2599,1) and IsTimeBetween(1,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(147, TimeSpan.FromHours(-8), 'Fog')">
-			<ExFish Bait="Honey Worm" condition="not HasAtLeast(8767,&Wootz_Knifefish_Zenith;) and HasAtLeast(2599,1) and IsTimeBetween(1,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(147, TimeSpan.FromHours(-8), 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Honey Worm" condition="not HasAtLeast(8767,&Wootz_Knifefish_Zenith;) and HasAtLeast(2599,1) and IsTimeBetween(1,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(147, TimeSpan.FromHours(-8), 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Medium" />
 				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="-54.27203, 46.32491, 46.60146" Heading="6.100248" />
-					<FishSpot XYZ="-225.4317, 59.25958, -85.06227" Heading="4.135532" />
-					<FishSpot XYZ="-235.136, 59.02201, -70.44752" Heading="3.762728" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Wootz Knifefish Zenith" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+			<FishSpots>
+				<FishSpot XYZ="-54.27203, 46.32491, 46.60146" Heading="6.100248" />
+				<FishSpot XYZ="-225.4317, 59.25958, -85.06227" Heading="4.135532" />
+				<FishSpot XYZ="-235.136, 59.02201, -70.44752" Heading="3.762728" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Wootz Knifefish Zenith" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

@@ -24,27 +24,25 @@
 		</If>
 		<While condition="IsTimeBetween(9,10)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(33243,&Greater_Serpent_of_Ronka;) and HasAtLeast(27587,1) and IsTimeBetween(10,12)">
-			<ExFish Bait="Robber Ball" condition="not HasAtLeast(33243,&Greater_Serpent_of_Ronka;) and HasAtLeast(27587,1) and IsTimeBetween(10,12)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="4" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-					<PatienceTug moochLevel="2" TugType="Medium" />
-					<PatienceTug moochLevel="3" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="-457.0445, -0.3, 401.5692" Heading="5.239766" />
-					<FishSpot XYZ="-488.3843, -0.3000001, 399.7425" Heading="4.875339" />
-					<FishSpot XYZ="-482.7643, -0.3, 435.7073" Heading="6.037733" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Greater Serpent of Ronka" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Robber Ball" condition="not HasAtLeast(33243,&Greater_Serpent_of_Ronka;) and HasAtLeast(27587,1) and IsTimeBetween(10,12)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="4" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+				<PatienceTug moochLevel="2" TugType="Medium" />
+				<PatienceTug moochLevel="3" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="-457.0445, -0.3, 401.5692" Heading="5.239766" />
+				<FishSpot XYZ="-488.3843, -0.3000001, 399.7425" Heading="4.875339" />
+				<FishSpot XYZ="-482.7643, -0.3, 435.7073" Heading="6.037733" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Greater Serpent of Ronka" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

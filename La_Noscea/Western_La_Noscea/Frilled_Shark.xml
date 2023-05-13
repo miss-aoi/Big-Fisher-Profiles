@@ -24,27 +24,25 @@
 		</If>
 		<While condition="IsTimeBetween(16,17)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7950,&Frilled_Shark;) and HasAtLeast(2585,1) and (IsTimeBetween(17,24) or IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clouds', 'Fog', 'Wind')">
-			<ExFish Bait="Lugworm" condition="not HasAtLeast(7950,&Frilled_Shark;) and HasAtLeast(2585,1) and (IsTimeBetween(17,24) or IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clouds', 'Fog', 'Wind')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="4" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-					<PatienceTug moochLevel="2" TugType="Medium" />
-					<PatienceTug moochLevel="3" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="-221.2151, -42.28603, 753.1325" Heading="0.003720999" />
-					<FishSpot XYZ="-257.4962, -42.2619, 734.9879" Heading="5.945528" />
-					<FishSpot XYZ="-278.6465, -42.2572, 718.3185" Heading="5.481596" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Frilled Shark" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Lugworm" condition="not HasAtLeast(7950,&Frilled_Shark;) and HasAtLeast(2585,1) and (IsTimeBetween(17,24) or IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Clouds', 'Fog', 'Wind')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="4" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+				<PatienceTug moochLevel="2" TugType="Medium" />
+				<PatienceTug moochLevel="3" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="-221.2151, -42.28603, 753.1325" Heading="0.003720999" />
+				<FishSpot XYZ="-257.4962, -42.2619, 734.9879" Heading="5.945528" />
+				<FishSpot XYZ="-278.6465, -42.2572, 718.3185" Heading="5.481596" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Frilled Shark" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

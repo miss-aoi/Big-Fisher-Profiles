@@ -24,21 +24,19 @@
 		</If>
 		<While condition="IsTimeBetween(1,2)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(37852,&Argonauta_argo;) and HasAtLeast(36597,1) and IsTimeBetween(2,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Umbral Wind')">
-			<ExFish Bait="Stardust" condition="not HasAtLeast(37852,&Argonauta_argo;) and HasAtLeast(36597,1) and IsTimeBetween(2,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Umbral Wind')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="591.6626, 287.142, -499.1921" Heading="1.67552" />
-					<FishSpot XYZ="590.0045, 286.6469, -479.0792" Heading="1.325757" />
-					<FishSpot XYZ="587.3627, 286.9947, -513.9117" Heading="2.077666" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Argonauta argo" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Stardust" condition="not HasAtLeast(37852,&Argonauta_argo;) and HasAtLeast(36597,1) and IsTimeBetween(2,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Umbral Wind')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="591.6626, 287.142, -499.1921" Heading="1.67552" />
+				<FishSpot XYZ="590.0045, 286.6469, -479.0792" Heading="1.325757" />
+				<FishSpot XYZ="587.3627, 286.9947, -513.9117" Heading="2.077666" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Argonauta argo" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

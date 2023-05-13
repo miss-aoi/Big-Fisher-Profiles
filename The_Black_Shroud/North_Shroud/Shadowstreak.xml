@@ -26,19 +26,17 @@
 			<Log Message="Waiting for window to open..." />
                         <WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7947,&Shadowstreak;) and HasAtLeast(2624,1) and IsTimeBetween(4,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(154, 'Fog')">
-			<ExFish Bait="Topwater Frog" condition="not HasAtLeast(7947,&Shadowstreak;) and HasAtLeast(2624,1) and IsTimeBetween(4,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(154, 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-26.52839, -10.12451, -52.77297" Heading="2.658334" />
-					<FishSpot XYZ="-27.09962, -8.5765, -42.95875" Heading="6.019836" />
-					<FishSpot XYZ="-28.64076, -12.07396, -63.1396" Heading="1.489659" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Shadowstreak" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Topwater Frog" condition="not HasAtLeast(7947,&Shadowstreak;) and HasAtLeast(2624,1) and IsTimeBetween(4,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(154, 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-26.52839, -10.12451, -52.77297" Heading="2.658334" />
+				<FishSpot XYZ="-27.09962, -8.5765, -42.95875" Heading="6.019836" />
+				<FishSpot XYZ="-28.64076, -12.07396, -63.1396" Heading="1.489659" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Shadowstreak" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

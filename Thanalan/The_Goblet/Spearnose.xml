@@ -26,21 +26,19 @@
 		</If>
 		<While condition="IsTimeBetween(20,21)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7919,&Spearnose;) and HasAtLeast(2607,1) and IsTimeBetween(21,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(341, 'Clouds', 'Fog')">
-			<ExFish Bait="Caddisfly Larva" condition="not HasAtLeast(7919,&Spearnose;) and HasAtLeast(2607,1) and IsTimeBetween(21,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(341, 'Clouds', 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-13.18043, -24.07133, 41.33421" Heading="4.868697" />
-					<FishSpot XYZ="-13.18544, -24.07133, 58.71743" Heading="4.491707" />
-					<FishSpot XYZ="-13.19689, -24.07133, 22.75558" Heading="5.258256" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Spearnose" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Caddisfly Larva" condition="not HasAtLeast(7919,&Spearnose;) and HasAtLeast(2607,1) and IsTimeBetween(21,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(341, 'Clouds', 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-13.18043, -24.07133, 41.33421" Heading="4.868697" />
+				<FishSpot XYZ="-13.18544, -24.07133, 58.71743" Heading="4.491707" />
+				<FishSpot XYZ="-13.19689, -24.07133, 22.75558" Heading="5.258256" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Spearnose" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

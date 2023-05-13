@@ -24,26 +24,24 @@
 		</If>
 		<While condition="IsTimeBetween(7,8)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(8762,&Canavan;) and HasAtLeast(2599,1) and IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')">
-			<ExFish Bait="Honey Worm" condition="not HasAtLeast(8762,&Canavan;) and HasAtLeast(2599,1) and IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Light" />
-					<PatienceTug moochLevel="2" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="445.7883, -5.563284, -750.0673" Heading="5.845725" />
-					<FishSpot XYZ="460.5209, -4.923997, -748.8826" Heading="1.007671" />
-					<FishSpot XYZ="490.8825, -5.542807, -753.9091" Heading="5.38077" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Canavan" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Honey Worm" condition="not HasAtLeast(8762,&Canavan;) and HasAtLeast(2599,1) and IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Light" />
+				<PatienceTug moochLevel="2" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="445.7883, -5.563284, -750.0673" Heading="5.845725" />
+				<FishSpot XYZ="460.5209, -4.923997, -748.8826" Heading="1.007671" />
+				<FishSpot XYZ="490.8825, -5.542807, -753.9091" Heading="5.38077" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Canavan" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

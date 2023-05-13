@@ -24,25 +24,23 @@
 		</If>
 		<While condition="IsTimeBetween(17,18)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7683,&Moldva;) and HasAtLeast(2592,1) and (IsTimeBetween(18,24) or IsTimeBetween(0,2))">
-			<ExFish Bait="Midge Basket" condition="not HasAtLeast(7683,&Moldva;) and HasAtLeast(2592,1) and (IsTimeBetween(18,24) or IsTimeBetween(0,2))" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Midge Basket" condition="not HasAtLeast(7683,&Moldva;) and HasAtLeast(2592,1) and (IsTimeBetween(18,24) or IsTimeBetween(0,2))" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Medium" />
 				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="123.0522, 6.809838, 189.5636" Heading="3.106961" />
-					<FishSpot XYZ="135.8356, 6.932451, 192.504" Heading="6.133363" />
-					<FishSpot XYZ="147.3159, 7.554788, 186.7445" Heading="5.025425" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Moldva" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+			<FishSpots>
+				<FishSpot XYZ="123.0522, 6.809838, 189.5636" Heading="3.106961" />
+				<FishSpot XYZ="135.8356, 6.932451, 192.504" Heading="6.133363" />
+				<FishSpot XYZ="147.3159, 7.554788, 186.7445" Heading="5.025425" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Moldva" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

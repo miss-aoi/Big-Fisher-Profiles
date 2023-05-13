@@ -24,22 +24,20 @@
 		</If>
 		<While condition="IsTimeBetween(9,10)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(16750,&Cirrostratus;) and HasAtLeast(12712,1) and IsTimeBetween(10,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Giant Crane Fly" condition="not HasAtLeast(16750,&Cirrostratus;) and HasAtLeast(12712,1) and IsTimeBetween(10,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-377.334, -185.8585, 797.132" Heading="5.830033" />
-					<FishSpot XYZ="-393.6451, -184.8638, 780.6809" Heading="5.233132" />
-					<FishSpot XYZ="-358.6042, -185.5136, 805.4165" Heading="5.86354" />
-					<FishSpot XYZ="423.1068, -186.2701, 810.8019" Heading="1.073663" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Cirrostratus" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Giant Crane Fly" condition="not HasAtLeast(16750,&Cirrostratus;) and HasAtLeast(12712,1) and IsTimeBetween(10,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-377.334, -185.8585, 797.132" Heading="5.830033" />
+				<FishSpot XYZ="-393.6451, -184.8638, 780.6809" Heading="5.233132" />
+				<FishSpot XYZ="-358.6042, -185.5136, 805.4165" Heading="5.86354" />
+				<FishSpot XYZ="423.1068, -186.2701, 810.8019" Heading="1.073663" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Cirrostratus" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

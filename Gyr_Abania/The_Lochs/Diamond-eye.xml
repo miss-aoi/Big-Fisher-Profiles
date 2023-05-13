@@ -22,23 +22,21 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(23062,&Diamond-eye;) and HasAtLeast(20616,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Clear Skies')">
-			<ExFish Bait="Silkworm" condition="not HasAtLeast(23062,&Diamond-eye;) and HasAtLeast(20616,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Medium" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="-178.4802, -0.3, -88.88718" Heading="2.481858" />
-					<FishSpot XYZ="-157.1131, -0.3, -82.60224" Heading="2.234722" />
-					<FishSpot XYZ="-197.6503, -0.3, -120.0159" Heading="1.893329" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Diamond-eye" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Silkworm" condition="not HasAtLeast(23062,&Diamond-eye;) and HasAtLeast(20616,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Medium" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="-178.4802, -0.3, -88.88718" Heading="2.481858" />
+				<FishSpot XYZ="-157.1131, -0.3, -82.60224" Heading="2.234722" />
+				<FishSpot XYZ="-197.6503, -0.3, -120.0159" Heading="1.893329" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Diamond-eye" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

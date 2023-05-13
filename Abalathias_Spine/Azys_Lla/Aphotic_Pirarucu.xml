@@ -24,25 +24,23 @@
 		</If>
 		<While condition="IsTimeBetween(21,22)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(15638,&Aphotic_Pirarucu;) and HasAtLeast(12705,1) and (IsTimeBetween(22,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Clouds')">
-			<ExFish Bait="Purse Web Spider" condition="not HasAtLeast(15638,&Aphotic_Pirarucu;) and HasAtLeast(12705,1) and (IsTimeBetween(22,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="-582.2648, -68.21622, 398.7921" Heading="0.478368" />
-					<FishSpot XYZ="-571.5521, -69.30607, 366.2041" Heading="6.064119" />
-					<FishSpot XYZ="-562.3863, -68.33007, 319.5214" Heading="2.717259" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Aphotic Pirarucu" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Purse Web Spider" condition="not HasAtLeast(15638,&Aphotic_Pirarucu;) and HasAtLeast(12705,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="-582.2648, -68.21622, 398.7921" Heading="0.478368" />
+				<FishSpot XYZ="-571.5521, -69.30607, 366.2041" Heading="6.064119" />
+				<FishSpot XYZ="-562.3863, -68.33007, 319.5214" Heading="2.717259" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Aphotic Pirarucu" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

@@ -24,25 +24,23 @@
 		</If>
 		<While condition="IsTimeBetween(21,22)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7943,&Hannibal;) and HasAtLeast(2626,1) and (IsTimeBetween(22,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog')">
-			<ExFish Bait="Spinnerbait" condition="not HasAtLeast(7943,&Hannibal;) and HasAtLeast(2626,1) and (IsTimeBetween(22,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Spinnerbait" condition="not HasAtLeast(7943,&Hannibal;) and HasAtLeast(2626,1) and (IsTimeBetween(22,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Medium" />
 				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="117.044, 14.36216, 237.177" Heading="2.487101" />
-					<FishSpot XYZ="118.6457, 12.16843, 221.7863" Heading="1.835743" />
-					<FishSpot XYZ="132.7265, 19.5851, 207.0147" Heading="6.229785" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Hannibal" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+			<FishSpots>
+				<FishSpot XYZ="117.044, 14.36216, 237.177" Heading="2.487101" />
+				<FishSpot XYZ="118.6457, 12.16843, 221.7863" Heading="1.835743" />
+				<FishSpot XYZ="132.7265, 19.5851, 207.0147" Heading="6.229785" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Hannibal" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

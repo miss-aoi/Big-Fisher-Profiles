@@ -24,21 +24,19 @@
 		</If>
 		<While condition="IsTimeBetween(16,17)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7918,&The_Wardens_Wand;) and HasAtLeast(2599,1) and IsTimeBetween(17,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Clear Skies')">
-			<ExFish Bait="Honey Worm" condition="not HasAtLeast(7918,&The_Wardens_Wand;) and HasAtLeast(2599,1) and IsTimeBetween(17,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="209.853, -7.265845, 58.57347" Heading="4.702001" />
-					<FishSpot XYZ="246.3821, -3.596932, 52.58365" Heading="2.090189" />
-					<FishSpot XYZ="263.5947, -2.646575, 37.97836" Heading="6.040217" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="The Warden's Wand" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Honey Worm" condition="not HasAtLeast(7918,&The_Wardens_Wand;) and HasAtLeast(2599,1) and IsTimeBetween(17,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="209.853, -7.265845, 58.57347" Heading="4.702001" />
+				<FishSpot XYZ="246.3821, -3.596932, 52.58365" Heading="2.090189" />
+				<FishSpot XYZ="263.5947, -2.646575, 37.97836" Heading="6.040217" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="The Warden's Wand" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

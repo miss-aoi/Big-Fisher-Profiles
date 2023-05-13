@@ -24,21 +24,19 @@
 		</If>
 		<While condition="IsTimeBetween(11,12)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7928,&Discobolus;) and HasAtLeast(2603,1) and IsTimeBetween(12,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves')">
-			<ExFish Bait="Glowworm" condition="not HasAtLeast(7928,&Discobolus;) and HasAtLeast(2603,1) and IsTimeBetween(12,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="176.6495, 6.103661, -52.73915" Heading="0.2789743" />
-					<FishSpot XYZ="180.9414, 6.103661, -37.04559" Heading="1.690596" />
-					<FishSpot XYZ="191.8968, 6.103661, -28.69215" Heading="4.934813" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Discobolus" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Glowworm" condition="not HasAtLeast(7928,&Discobolus;) and HasAtLeast(2603,1) and IsTimeBetween(12,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="176.6495, 6.103661, -52.73915" Heading="0.2789743" />
+				<FishSpot XYZ="180.9414, 6.103661, -37.04559" Heading="1.690596" />
+				<FishSpot XYZ="191.8968, 6.103661, -28.69215" Heading="4.934813" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Discobolus" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

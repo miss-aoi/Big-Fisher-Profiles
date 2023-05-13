@@ -24,21 +24,19 @@
 		</If>
 		<While condition="IsTimeBetween(19,20)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(28070,&The_Sound_of_Fury;) and HasAtLeast(27589,1) and (IsTimeBetween(20,24) or IsTimeBetween(0,0)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(816, 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Baitbugs" condition="not HasAtLeast(28070,&The_Sound_of_Fury;) and HasAtLeast(27589,1) and (IsTimeBetween(20,24) or IsTimeBetween(0,0)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(816, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-291.337, -0.3474985, 174.3676" Heading="2.237679" />
-					<FishSpot XYZ="-303.5754, -0.3267224, 149.0237" Heading="2.56231" />
-					<FishSpot XYZ="-278.1725, 0.2184548, 193.5368" Heading="2.038707" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="The Sound of Fury" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Baitbugs" condition="not HasAtLeast(28070,&The_Sound_of_Fury;) and HasAtLeast(27589,1) and (IsTimeBetween(20,24) or IsTimeBetween(0,0)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(816, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-291.337, -0.3474985, 174.3676" Heading="2.237679" />
+				<FishSpot XYZ="-303.5754, -0.3267224, 149.0237" Heading="2.56231" />
+				<FishSpot XYZ="-278.1725, 0.2184548, 193.5368" Heading="2.038707" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="The Sound of Fury" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

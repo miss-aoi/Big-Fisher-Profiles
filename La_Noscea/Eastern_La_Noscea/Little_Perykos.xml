@@ -22,24 +22,22 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(20143,&Little_Perykos;) and HasAtLeast(2585,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')">
-			<ExFish Bait="Lugworm" condition="not HasAtLeast(20143,&Little_Perykos;) and HasAtLeast(2585,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-					<PatienceTug moochLevel="2" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="775.2599, 8.900001, 217.8145" Heading="2.206204" />
-					<FishSpot XYZ="799.2081, 8.9, 237.1664" Heading="1.866913" />
-					<FishSpot XYZ="821.451, 8.9, 270.8231" Heading="1.527614" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Little Perykos" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Lugworm" condition="not HasAtLeast(20143,&Little_Perykos;) and HasAtLeast(2585,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+				<PatienceTug moochLevel="2" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="775.2599, 8.900001, 217.8145" Heading="2.206204" />
+				<FishSpot XYZ="799.2081, 8.9, 237.1664" Heading="1.866913" />
+				<FishSpot XYZ="821.451, 8.9, 270.8231" Heading="1.527614" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Little Perykos" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

@@ -22,19 +22,17 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(37847,&Lale_Crab;) and HasAtLeast(36592,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(957, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Shrimp Ball" condition="not HasAtLeast(37847,&Lale_Crab;) and HasAtLeast(36592,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(957, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="216.7248, -0.05152941, 720.3051" Heading="0.9009123" />
-					<FishSpot XYZ="209.3896, -0.06850439, 730.2487" Heading="0.2118552" />
-					<FishSpot XYZ="216.2335, -0.04255795, 699.671" Heading="2.727221" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Lale Crab" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Shrimp Ball" condition="not HasAtLeast(37847,&Lale_Crab;) and HasAtLeast(36592,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(957, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="216.7248, -0.05152941, 720.3051" Heading="0.9009123" />
+				<FishSpot XYZ="209.3896, -0.06850439, 730.2487" Heading="0.2118552" />
+				<FishSpot XYZ="216.2335, -0.04255795, 699.671" Heading="2.727221" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Lale Crab" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

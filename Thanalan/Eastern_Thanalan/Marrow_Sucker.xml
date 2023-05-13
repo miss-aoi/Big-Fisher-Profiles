@@ -24,21 +24,19 @@
 		</If>
 		<While condition="IsTimeBetween(19,20)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7704,&Marrow_Sucker;) and HasAtLeast(2597,1) and (IsTimeBetween(20,24) or IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Rain', 'Showers')">
-			<ExFish Bait="Syrphid Basket" condition="not HasAtLeast(7704,&Marrow_Sucker;) and HasAtLeast(2597,1) and (IsTimeBetween(20,24) or IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Rain', 'Showers')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-386.024, -22.22363, -47.62962" Heading="5.633923" />
-					<FishSpot XYZ="-388.4815, -22.2028, -30.0866" Heading="3.677758" />
-					<FishSpot XYZ="-389.6942, -22.22362, -39.0976" Heading="4.842243" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Marrow Sucker" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Syrphid Basket" condition="not HasAtLeast(7704,&Marrow_Sucker;) and HasAtLeast(2597,1) and (IsTimeBetween(20,24) or IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Rain', 'Showers')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-386.024, -22.22363, -47.62962" Heading="5.633923" />
+				<FishSpot XYZ="-388.4815, -22.2028, -30.0866" Heading="3.677758" />
+				<FishSpot XYZ="-389.6942, -22.22362, -39.0976" Heading="4.842243" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Marrow Sucker" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

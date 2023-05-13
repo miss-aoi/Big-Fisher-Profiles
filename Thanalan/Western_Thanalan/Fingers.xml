@@ -24,21 +24,19 @@
 		</If>
 		<While condition="IsTimeBetween(16,17)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7906,&Fingers;) and HasAtLeast(2606,1) and IsTimeBetween(17,18)">
-			<ExFish Bait="Northern Krill" condition="not HasAtLeast(7906,&Fingers;) and HasAtLeast(2606,1) and IsTimeBetween(17,18)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-324.3295, 13.9835, -99.37143" Heading="1.510842" />
-					<FishSpot XYZ="-340.3997, 13.90376, -99.89254" Heading="0.01335144" />
-					<FishSpot XYZ="-356.0331, 13.90376, -100.7579" Heading="4.72364" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Fingers" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Northern Krill" condition="not HasAtLeast(7906,&Fingers;) and HasAtLeast(2606,1) and IsTimeBetween(17,18)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-324.3295, 13.9835, -99.37143" Heading="1.510842" />
+				<FishSpot XYZ="-340.3997, 13.90376, -99.89254" Heading="0.01335144" />
+				<FishSpot XYZ="-356.0331, 13.90376, -100.7579" Heading="4.72364" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Fingers" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

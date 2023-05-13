@@ -22,19 +22,17 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(24208,&Downstream_Loach;) and HasAtLeast(20675,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(612, 'Fog')">
-			<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(24208,&Downstream_Loach;) and HasAtLeast(20675,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(612, 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-181.0111, 58.77763, -591.9297" Heading="3.29916" />
-					<FishSpot XYZ="-159.1374, 58.74383, -587.0077" Heading="1.998541" />
-					<FishSpot XYZ="-150.7664, 58.71433, -561.8652" Heading="1.164971" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Downstream Loach" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(24208,&Downstream_Loach;) and HasAtLeast(20675,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(612, 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-181.0111, 58.77763, -591.9297" Heading="3.29916" />
+				<FishSpot XYZ="-159.1374, 58.74383, -587.0077" Heading="1.998541" />
+				<FishSpot XYZ="-150.7664, 58.71433, -561.8652" Heading="1.164971" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Downstream Loach" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

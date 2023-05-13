@@ -24,21 +24,19 @@
 		</If>
 		<While condition="IsTimeBetween(16,17)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7692,&Dream_Goby;) and HasAtLeast(2588,1) and (IsTimeBetween(17,24) or IsTimeBetween(0,3))">
-			<ExFish Bait="Crayfish Ball" condition="not HasAtLeast(7692,&Dream_Goby;) and HasAtLeast(2588,1) and (IsTimeBetween(17,24) or IsTimeBetween(0,3))" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="117.8282, -2, -169.3544" Heading="3.84052" />
-					<FishSpot XYZ="130.4337, -2, -188.6516" Heading="2.627868" />
-					<FishSpot XYZ="99.43066, -2, -168.8784" Heading="1.578002" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Dream Goby" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Crayfish Ball" condition="not HasAtLeast(7692,&Dream_Goby;) and HasAtLeast(2588,1) and (IsTimeBetween(17,24) or IsTimeBetween(0,3))" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="117.8282, -2, -169.3544" Heading="3.84052" />
+				<FishSpot XYZ="130.4337, -2, -188.6516" Heading="2.627868" />
+				<FishSpot XYZ="99.43066, -2, -168.8784" Heading="1.578002" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Dream Goby" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

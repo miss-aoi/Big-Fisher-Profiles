@@ -24,21 +24,19 @@
 		</If>
 		<While condition="IsTimeBetween(17,18)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(30437,&Recordkiller;) and HasAtLeast(27589,1) and IsTimeBetween(18,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(817, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(817, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Baitbugs" condition="not HasAtLeast(30437,&Recordkiller;) and HasAtLeast(27589,1) and IsTimeBetween(18,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(817, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(817, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="106.9933, -21.74073, 511.4975" Heading="5.064728" />
-					<FishSpot XYZ="98.01465, -21.3784, 534.3689" Heading="4.941159" />
-					<FishSpot XYZ="72.50151, -21.10941, 528.3228" Heading="0.6476481" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Recordkiller" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Baitbugs" condition="not HasAtLeast(30437,&Recordkiller;) and HasAtLeast(27589,1) and IsTimeBetween(18,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(817, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(817, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="106.9933, -21.74073, 511.4975" Heading="5.064728" />
+				<FishSpot XYZ="98.01465, -21.3784, 534.3689" Heading="4.941159" />
+				<FishSpot XYZ="72.50151, -21.10941, 528.3228" Heading="0.6476481" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Recordkiller" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

@@ -22,23 +22,21 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(15631,&Meteortoise;) and HasAtLeast(12709,1)">
-			<ExFish Bait="Magma Worm" condition="not HasAtLeast(15631,&Meteortoise;) and HasAtLeast(12709,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="-471.8031, -10.14293, -475.2836" Heading="1.936656" />
-					<FishSpot XYZ="-478.3157, -11.6859, -448.0603" Heading="3.788103" />
-					<FishSpot XYZ="-455.5224, -12.17101, -456.36" Heading="3.277071" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Meteortoise" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Magma Worm" condition="not HasAtLeast(15631,&Meteortoise;) and HasAtLeast(12709,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="-471.8031, -10.14293, -475.2836" Heading="1.936656" />
+				<FishSpot XYZ="-478.3157, -11.6859, -448.0603" Heading="3.788103" />
+				<FishSpot XYZ="-455.5224, -12.17101, -456.36" Heading="3.277071" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Meteortoise" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

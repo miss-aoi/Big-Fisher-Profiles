@@ -24,21 +24,19 @@
 		</If>
 		<While condition="IsTimeBetween(8,9)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7679,&Beguiler_Chub;) and HasAtLeast(2586,1) and IsTimeBetween(9,14)">
-			<ExFish Bait="Moth Pupa" condition="not HasAtLeast(7679,&Beguiler_Chub;) and HasAtLeast(2586,1) and IsTimeBetween(9,14)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-6.263493, 42.15689, 54.21851" Heading="5.079866" />
-					<FishSpot XYZ="34.12083, 42.41599, 36.45387" Heading="1.881725" />
-					<FishSpot XYZ="93.79761, 43.03065, 31.39412" Heading="1.598982" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Beguiler Chub" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Moth Pupa" condition="not HasAtLeast(7679,&Beguiler_Chub;) and HasAtLeast(2586,1) and IsTimeBetween(9,14)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-6.263493, 42.15689, 54.21851" Heading="5.079866" />
+				<FishSpot XYZ="34.12083, 42.41599, 36.45387" Heading="1.881725" />
+				<FishSpot XYZ="93.79761, 43.03065, 31.39412" Heading="1.598982" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Beguiler Chub" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

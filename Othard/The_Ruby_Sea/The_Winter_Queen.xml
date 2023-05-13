@@ -24,9 +24,8 @@
 		</If>
 		<While condition="IsTimeBetween(15,16)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(23065,&The_Winter_Queen;) and HasAtLeast(20676,1) and IsTimeBetween(16,20)">
 			<ExFish Bait="Blue Bobbit" condition="not HasAtLeast(23065,&The_Winter_Queen;) and HasAtLeast(20676,1) and IsTimeBetween(16,20)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="673.9354, 0.5334198, -672.6906" Heading="2.172888" />
@@ -38,7 +37,6 @@
 				</Keepers>
 				<SurfaceSlaps />
 			</ExFish>
-		</While>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

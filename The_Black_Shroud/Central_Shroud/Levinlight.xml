@@ -24,21 +24,19 @@
 		</If>
 		<While condition="IsTimeBetween(17,18)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7920,&Levinlight;) and HasAtLeast(2597,1) and IsTimeBetween(18,23)">
-			<ExFish Bait="Syrphid Basket" condition="not HasAtLeast(7920,&Levinlight;) and HasAtLeast(2597,1) and IsTimeBetween(18,23)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-295.7599, 20.99179, 169.1394" Heading="5.806733" />
-					<FishSpot XYZ="-303.1868, 21, 193.6298" Heading="2.94788" />
-					<FishSpot XYZ="-311.5812, 20.99179, 154.1951" Heading="0.3403623" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Levinlight" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Syrphid Basket" condition="not HasAtLeast(7920,&Levinlight;) and HasAtLeast(2597,1) and IsTimeBetween(18,23)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-295.7599, 20.99179, 169.1394" Heading="5.806733" />
+				<FishSpot XYZ="-303.1868, 21, 193.6298" Heading="2.94788" />
+				<FishSpot XYZ="-311.5812, 20.99179, 154.1951" Heading="0.3403623" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Levinlight" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

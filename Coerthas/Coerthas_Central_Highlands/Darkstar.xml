@@ -17,7 +17,7 @@
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12704,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not HasAtLeast(2610,50)">
-			<!--Stonefly Nymph-->
+			<!--Chocobo Fly-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2610,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(392)">
@@ -28,7 +28,7 @@
 		</If>
 		<While condition="IsTimeBetween(18,19)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
 		<While condition="not HasAtLeast(8769,&Darkstar;) and HasAtLeast(12704,1) and (IsTimeBetween(19,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards', 'Snow')">
 			<ExFish Bait="Chocobo Fly" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8769,&Darkstar;) and HasAtLeast(12704,1) and (IsTimeBetween(19,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards', 'Snow')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">

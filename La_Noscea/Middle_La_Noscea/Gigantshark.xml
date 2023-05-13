@@ -22,23 +22,21 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(7686,&Gigantshark;) and HasAtLeast(2611,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(134, 'Clear Skies', 'Fair Skies')">
-			<ExFish Bait="Floating Minnow" condition="not HasAtLeast(7686,&Gigantshark;) and HasAtLeast(2611,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(134, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Medium" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="-280.3257, 14.30417, -215.7465" Heading="4.931087" />
-					<FishSpot XYZ="-299.0035, 7.54, -223.1236" Heading="5.51333" />
-					<FishSpot XYZ="-303.9935, 10.9, -185.8521" Heading="4.284627" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Gigantshark" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Floating Minnow" condition="not HasAtLeast(7686,&Gigantshark;) and HasAtLeast(2611,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(134, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Medium" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="-280.3257, 14.30417, -215.7465" Heading="4.931087" />
+				<FishSpot XYZ="-299.0035, 7.54, -223.1236" Heading="5.51333" />
+				<FishSpot XYZ="-303.9935, 10.9, -185.8521" Heading="4.284627" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Gigantshark" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

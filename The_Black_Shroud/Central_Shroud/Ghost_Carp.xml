@@ -24,21 +24,19 @@
 		</If>
 		<While condition="IsTimeBetween(20,21)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7700,&Ghost_Carp;) and HasAtLeast(2594,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(148, 'Rain')">
-			<ExFish Bait="Butterworm" condition="not HasAtLeast(7700,&Ghost_Carp;) and HasAtLeast(2594,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(148, 'Rain')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="218.723, -33.06675, 384.3286" Heading="2.596586" />
-					<FishSpot XYZ="230.0516, -31.35194, 387.275" Heading="2.393428" />
-					<FishSpot XYZ="248.1566, -30.45172, 394.424" Heading="3.23328" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Ghost Carp" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Butterworm" condition="not HasAtLeast(7700,&Ghost_Carp;) and HasAtLeast(2594,1) and (IsTimeBetween(21,24) or IsTimeBetween(0,3)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(148, 'Rain')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="218.723, -33.06675, 384.3286" Heading="2.596586" />
+				<FishSpot XYZ="230.0516, -31.35194, 387.275" Heading="2.393428" />
+				<FishSpot XYZ="248.1566, -30.45172, 394.424" Heading="3.23328" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Ghost Carp" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

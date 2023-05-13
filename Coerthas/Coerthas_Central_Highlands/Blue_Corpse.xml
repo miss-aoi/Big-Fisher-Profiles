@@ -22,19 +22,17 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(8770,&Blue_Corpse;) and HasAtLeast(2607,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(-8), 'Blizzards', 'Snow')">
-			<ExFish Bait="Caddisfly Larva" condition="not HasAtLeast(8770,&Blue_Corpse;) and HasAtLeast(2607,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(-8), 'Blizzards', 'Snow')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-835.9018, 223.9743, 16.83364" Heading="2.504576" />
-					<FishSpot XYZ="-849.4735, 223.9743, 11.95268" Heading="3.775867" />
-					<FishSpot XYZ="-856.2869, 223.8687, -0.9095947" Heading="0.9526248" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Blue Corpse" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Caddisfly Larva" condition="not HasAtLeast(8770,&Blue_Corpse;) and HasAtLeast(2607,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(-8), 'Blizzards', 'Snow')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-835.9018, 223.9743, 16.83364" Heading="2.504576" />
+				<FishSpot XYZ="-849.4735, 223.9743, 11.95268" Heading="3.775867" />
+				<FishSpot XYZ="-856.2869, 223.8687, -0.9095947" Heading="0.9526248" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Blue Corpse" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

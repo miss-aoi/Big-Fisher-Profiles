@@ -26,19 +26,17 @@
 			<Log Message="Waiting for window to open..." />
                         <WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7913,&Floating_Boulder;) and HasAtLeast(2595,1) and IsTimeBetween(0,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Clouds', 'Fog')">
-			<ExFish Bait="Bass Ball" condition="not HasAtLeast(7913,&Floating_Boulder;) and HasAtLeast(2595,1) and IsTimeBetween(0,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Clouds', 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-141.2495, -0.2347637, 164.7361" Heading="3.100041" />
-					<FishSpot XYZ="-165.4892, -0.2811633, 158.3398" Heading="3.567091" />
-					<FishSpot XYZ="-173.4589, -0.2794424, 147.2547" Heading="0.2600002" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Floating Boulder" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Bass Ball" condition="not HasAtLeast(7913,&Floating_Boulder;) and HasAtLeast(2595,1) and IsTimeBetween(0,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Clouds', 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-141.2495, -0.2347637, 164.7361" Heading="3.100041" />
+				<FishSpot XYZ="-165.4892, -0.2811633, 158.3398" Heading="3.567091" />
+				<FishSpot XYZ="-173.4589, -0.2794424, 147.2547" Heading="0.2600002" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Floating Boulder" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

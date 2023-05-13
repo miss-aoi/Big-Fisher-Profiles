@@ -24,25 +24,23 @@
 		</If>
 		<While condition="IsTimeBetween(7,8)">
 			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(17579,&Paikiller;) and HasAtLeast(12707,1) and IsTimeBetween(8,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(401, TimeSpan.FromHours(-8), 'Fog')">
-			<ExFish Bait="Bladed Steel Jig" condition="not HasAtLeast(17579,&Paikiller;) and HasAtLeast(12707,1) and IsTimeBetween(8,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(401, TimeSpan.FromHours(-8), 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="423.3693, -185.7991, 808.4886" Heading="1.231418" />
-					<FishSpot XYZ="418.8947, -186.5599, 824.7328" Heading="0.808352" />
-					<FishSpot XYZ="406.8304, -186.536, 830.7789" Heading="0.209358" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Paikiller" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Bladed Steel Jig" condition="not HasAtLeast(17579,&Paikiller;) and HasAtLeast(12707,1) and IsTimeBetween(8,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(401, TimeSpan.FromHours(-8), 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Light" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="423.3693, -185.7991, 808.4886" Heading="1.231418" />
+				<FishSpot XYZ="418.8947, -186.5599, 824.7328" Heading="0.808352" />
+				<FishSpot XYZ="406.8304, -186.536, 830.7789" Heading="0.209358" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Paikiller" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

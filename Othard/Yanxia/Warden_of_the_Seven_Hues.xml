@@ -39,8 +39,8 @@
 		</ExFish>
 		<While condition="IsTimeBetween(0,4)">
 			<Log Message="Waiting for window to open..." />
-                        <Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<Log Message="Waiting for window to open..." />
+			<WaitTimer WaitTime="30" />
 		</While>
 		<!-- Firelight Goldfish -->
 		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(23056,3) and HasAtLeast(24203,3) and HasAtLeast(20675,1) and not Core.Player.HasAura(568) and IsTimeBetween(4,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="1" Patience="Patience2" MinimumGPPatience="650">
@@ -59,8 +59,8 @@
 		</ExFish>
 		<While condition="IsTimeBetween(4,8)">
 			<Log Message="Waiting for window to open..." />
-                        <Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
+			<Log Message="Waiting for window to open..." />
+			<WaitTimer WaitTime="30" />
 		</While>
 		<!-- Green Prismfish -->
 		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(24204,5) and HasAtLeast(23056,3) and HasAtLeast(24203,3) and HasAtLeast(20675,1) and not Core.Player.HasAura(568) and IsTimeBetween(0,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" >

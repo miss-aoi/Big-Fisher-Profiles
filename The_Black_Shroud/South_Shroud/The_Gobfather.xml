@@ -22,23 +22,21 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not HasAtLeast(7922,&The_Gobfather;) and HasAtLeast(2599,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')">
-			<ExFish Bait="Honey Worm" condition="not HasAtLeast(7922,&The_Gobfather;) and HasAtLeast(2599,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Honey Worm" condition="not HasAtLeast(7922,&The_Gobfather;) and HasAtLeast(2599,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Medium" />
 				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="288.2363, -0.3682871, 2.639" Heading="1.687761" />
-					<FishSpot XYZ="299.9633, -0.4391418, 5.733653" Heading="2.370547" />
-					<FishSpot XYZ="314.7709, -0.5025015, -1.395466" Heading="5.231489" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="The Gobfather" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+			<FishSpots>
+				<FishSpot XYZ="288.2363, -0.3682871, 2.639" Heading="1.687761" />
+				<FishSpot XYZ="299.9633, -0.4391418, 5.733653" Heading="2.370547" />
+				<FishSpot XYZ="314.7709, -0.5025015, -1.395466" Heading="5.231489" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="The Gobfather" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
