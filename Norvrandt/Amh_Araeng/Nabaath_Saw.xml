@@ -26,23 +26,21 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(33320,&Nabaath_Saw;) and HasAtLeast(27586,1) and IsTimeBetween(6,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies', 'Heat Waves')">
-			<ExFish Bait="Jerked Ovim" condition="not HasAtLeast(33320,&Nabaath_Saw;) and HasAtLeast(27586,1) and IsTimeBetween(6,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies', 'Heat Waves')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Medium" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="478.9986, -80.80603, 508.751" Heading="6.071146" />
-					<FishSpot XYZ="457.1977, -82.34267, 510.657" Heading="0.3639209" />
-					<FishSpot XYZ="499.3958, -78.25674, 483.9771" Heading="1.522122" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Nabaath Saw" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Jerked Ovim" condition="not HasAtLeast(33320,&Nabaath_Saw;) and HasAtLeast(27586,1) and IsTimeBetween(6,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies', 'Heat Waves')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+			<PatientTugs>
+				<PatienceTug moochLevel="0" TugType="Medium" />
+				<PatienceTug moochLevel="1" TugType="Medium" />
+			</PatientTugs>
+			<FishSpots>
+				<FishSpot XYZ="478.9986, -80.80603, 508.751" Heading="6.071146" />
+				<FishSpot XYZ="457.1977, -82.34267, 510.657" Heading="0.3639209" />
+				<FishSpot XYZ="499.3958, -78.25674, 483.9771" Heading="1.522122" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Nabaath Saw" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

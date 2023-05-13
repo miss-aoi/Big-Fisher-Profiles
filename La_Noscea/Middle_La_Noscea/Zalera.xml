@@ -26,19 +26,17 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<While condition="not HasAtLeast(7678,&Zalera;) and HasAtLeast(2591,1) and IsTimeBetween(9,14)">
-			<ExFish Bait="Rat Tail" condition="not HasAtLeast(7678,&Zalera;) and HasAtLeast(2591,1) and IsTimeBetween(9,14)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-117.8397, 38.76151, 31.36633" Heading="0.02024531" />
-					<FishSpot XYZ="-141.294, 40.81226, 9.837191" Heading="5.185024" />
-					<FishSpot XYZ="-158.3341, 37.78846, -16.56896" Heading="5.172457" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Zalera" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
-		</While>
+		<ExFish Bait="Rat Tail" condition="not HasAtLeast(7678,&Zalera;) and HasAtLeast(2591,1) and IsTimeBetween(9,14)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-117.8397, 38.76151, 31.36633" Heading="0.02024531" />
+				<FishSpot XYZ="-141.294, 40.81226, 9.837191" Heading="5.185024" />
+				<FishSpot XYZ="-158.3341, 37.78846, -16.56896" Heading="5.172457" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Zalera" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
