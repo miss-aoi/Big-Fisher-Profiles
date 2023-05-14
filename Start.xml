@@ -48,7 +48,7 @@
 <!ENTITY The_Drowned_Sniper "0">                                 <!-- WEATHER -->                      <!-- SNURBLE FLY -->
 <!ENTITY The_Terpsichorean "0">                                  <!-- WEATHER -->                      <!-- HONEY WORM -->
 <!ENTITY Mirrorscale "0">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- BUTTERWORM -->
-<!ENTITY Imperial_Goldfish "0">                                                    <!-- INTUITION -->  <!-- HONEY WORM -->
+<!ENTITY Imperial_Goldfish "1">                                                    <!-- INTUITION -->  <!-- HONEY WORM -->
 <!ENTITY Little_Perykos "0">                                     <!-- WEATHER -->                      <!-- LUGWORM -->
 <!-- LA NOSCEA - Western La Noscea -->
 <!ENTITY Armorer "0">                            <!-- TIMED -->                                        <!-- NORTHERN KRILL -->
@@ -1966,7 +1966,7 @@
         </If>
         <!-- SUSPENDING MINNOW -->
         <If Condition="(&Blade_Skipper; == 1) and (&Bondsplitter; == 1) and (&Corpse_Chub; == 1) and (&Drepanaspis; == 1) and (&Glarramundi; == 1) and (&Hemon; == 1) and (&Lily_of_the_Veil; == 1) and (&Moksha; == 1) and (&Nhaamas_Treasure; == 1) and (&The_Archbishop; == 1) and (&The_Unraveled_Bow; == 1) and not HasAtLeast(20619,50)">
-            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20619,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20619,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- SYRPHID BASKET -->
         <If Condition="(&Cupfish; == 1) and (&Levinlight; == 1) and (&Marrow_Sucker; == 1) and (&Starbright; == 1) and (&The_Grinner; == 1) and not HasAtLeast(2597,50)">

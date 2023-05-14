@@ -27,11 +27,11 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<!-- Prep for Fisher's Intuition -->
-		<ExFish Bait="Metal Spinner" Condition="not Core.Player.HasAura(568) and not HasAtLeast(12810,3) and not HasAtLeast(12753,3) and not HasAtLeast(17591,&Sea_Butterfly;) and HasAtLeast(12712,1) and IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
+		<ExFish Bait="Metal Spinner" Condition="not HasAtLeast(12810,3) and not HasAtLeast(12753,3) and not HasAtLeast(17591,&Sea_Butterfly;) and HasAtLeast(12712,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 			<FishSpots>
-				<FishSpot XYZ="-353.6552, 19.58649, -832.2133" Heading="3.856718" />
-				<FishSpot XYZ="-339.0728, 19.71094, -849.5245" Heading="4.007522" />
-				<FishSpot XYZ="-322.0511, 20.56616, -850.5399" Heading="1.887997" />
+				<FishSpot XYZ="-352.8858, 19.60465, -832.8619" Heading="3.788245" Sit="True" />
+				<FishSpot XYZ="-341.4707, 19.71922, -846.3356" Heading="3.987214" Sit="True" />
+				<FishSpot XYZ="-322.1035, 20.58396, -850.4589" Heading="1.645681" Sit="True" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Scorpionfly" />
@@ -45,9 +45,9 @@
 		<!-- Get Fisher's Intuition -->
 		<ExFish Bait="Metal Spinner" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17591,&Sea_Butterfly;) and HasAtLeast(12712,1) and IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 			<FishSpots>
-				<FishSpot XYZ="-353.6552, 19.58649, -832.2133" Heading="3.856718" />
-				<FishSpot XYZ="-339.0728, 19.71094, -849.5245" Heading="4.007522" />
-				<FishSpot XYZ="-322.0511, 20.56616, -850.5399" Heading="1.887997" />
+				<FishSpot XYZ="-352.8858, 19.60465, -832.8619" Heading="3.788245" Sit="True" />
+				<FishSpot XYZ="-341.4707, 19.71922, -846.3356" Heading="3.987214" Sit="True" />
+				<FishSpot XYZ="-322.1035, 20.58396, -850.4589" Heading="1.645681" Sit="True" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Scorpionfly" />
@@ -57,9 +57,9 @@
 		<!-- Go after Goal -->
 		<ExFish Bait="Giant Crane Fly" Condition="Core.Player.HasAura(568) and not HasAtLeast(17591,&Sea_Butterfly;) and HasAtLeast(12712,1) and IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 			<FishSpots>
-				<FishSpot XYZ="-353.6552, 19.58649, -832.2133" Heading="3.856718" />
-				<FishSpot XYZ="-339.0728, 19.71094, -849.5245" Heading="4.007522" />
-				<FishSpot XYZ="-322.0511, 20.56616, -850.5399" Heading="1.887997" />
+				<FishSpot XYZ="-352.8858, 19.60465, -832.8619" Heading="3.788245" Sit="True" />
+				<FishSpot XYZ="-341.4707, 19.71922, -846.3356" Heading="3.987214" Sit="True" />
+				<FishSpot XYZ="-322.1035, 20.58396, -850.4589" Heading="1.645681" Sit="True" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Sea Butterfly" />
@@ -68,6 +68,9 @@
 		</ExFish>
 		<If condition="HasAtLeast(12810,1)">
 			<Desynth ItemIds="12810" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
+		<If condition="HasAtLeast(12753,1)">
+			<Desynth ItemIds="12753" DesynthDelay="6000" DesynthTimeout="10" />
 		</If>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>

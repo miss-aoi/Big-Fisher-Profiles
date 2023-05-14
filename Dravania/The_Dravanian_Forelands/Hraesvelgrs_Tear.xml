@@ -16,7 +16,7 @@
 			<!--Magma Worm-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12709,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
-		<If condition="not IsOnSubMap(2008)">
+		<If condition="not IsOnSubMap(2008) or not IsOnSubMap(2030)">
 			<LisbethTravel Area="The Dravanian Forelands" XYZ="-651.3336, 3.351533, -768.7468" />
 		</If>
 		<If condition="not ClassName == ClassJobType.Fisher">
@@ -28,8 +28,8 @@
 		</While>
 		<ExFish Bait="Magma Worm" condition="not HasAtLeast(16751,&Hraesvelgrs_Tear;) and HasAtLeast(12709,1) and IsTimeBetween(2,6)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Chum="True">
 			<FishSpots>
-				<FishSpot XYZ="-648.3218, 4.331171, -778.3206" Heading="2.617355" />
-				<FishSpot XYZ="-672.9894, 3.942748, -754.8378" Heading="5.030098" />
+				<FishSpot XYZ="-677.582, 4.137827, -759.8658" Heading="5.281163" Sit="True" />
+				<FishSpot XYZ="-648.8766, 4.698694, -778.8278" Heading="2.486038" Sit="True" />
 				<FishSpot XYZ="-684.0073, 6.100186, -767.5778" Heading="6.114972" />
 			</FishSpots>
 			<Keepers>
