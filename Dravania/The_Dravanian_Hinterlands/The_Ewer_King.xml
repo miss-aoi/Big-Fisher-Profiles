@@ -28,7 +28,7 @@
 				<PatienceTug moochLevel="1" TugType="Medium" />
 			</PatientTugs>
 			<FishSpots>
-				<FishSpot XYZ="29.71376, 52.60495, 50.8052" Heading="4.73267" />
+				<FishSpot XYZ="28.95352, 52.31477, 48.62481" Heading="4.73267" />
 				<FishSpot XYZ="26.36157, 52.6711, 80.21965" Heading="4.133673" />
 				<FishSpot XYZ="25.77735, 52.40601, 40.15475" Heading="4.818541" />
 			</FishSpots>
