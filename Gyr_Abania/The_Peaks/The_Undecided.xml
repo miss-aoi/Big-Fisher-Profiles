@@ -26,7 +26,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Midge Larva" condition="not HasAtLeast(23061,&The_Undecided;) and HasAtLeast(20615,1) and IsTimeBetween(8,12)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Midge Larva" condition="not HasAtLeast(23061,&The_Undecided;) and HasAtLeast(20615,1) and IsTimeBetween(8,12)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />
 				<PatienceTug moochLevel="1" TugType="Medium" />

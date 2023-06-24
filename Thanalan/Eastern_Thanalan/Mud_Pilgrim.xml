@@ -26,7 +26,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Midge Basket" condition="not HasAtLeast(7702,&Mud_Pilgrim;) and HasAtLeast(2592,1) and (IsTimeBetween(17,24) or IsTimeBetween(0,7)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Rain', 'Showers')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+		<ExFish Bait="Midge Basket" condition="not HasAtLeast(7702,&Mud_Pilgrim;) and HasAtLeast(2592,1) and (IsTimeBetween(17,24) or IsTimeBetween(0,7)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(145, 'Rain', 'Showers')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-202.5141, -37.89638, 161.2821" Heading="4.560738" />
 				<FishSpot XYZ="-206.6966, -37.5697, 144.3847" Heading="6.121063" />

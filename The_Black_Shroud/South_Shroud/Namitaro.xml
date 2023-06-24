@@ -26,7 +26,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Glowworm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8775,&Namitaro;) and HasAtLeast(2624,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+		<ExFish Bait="Glowworm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8775,&Namitaro;) and HasAtLeast(2624,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="518.7339, 14.04607, 130.9605" Heading="1.535933" />
 				<FishSpot XYZ="524.8389, 14.08908, 124.3318" Heading="5.889893" />
@@ -36,7 +36,7 @@
 				<Keeper name="Giant Takitaro" />
 			</Keepers>
 		</ExFish>
-			<ExFish Bait="Topwater Frog" Condition="Core.Player.HasAura(568) and not HasAtLeast(8775,&Namitaro;) and HasAtLeast(2624,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" Cordial="Auto" Sit="True" Chum="True">
+			<ExFish Bait="Topwater Frog" Condition="Core.Player.HasAura(568) and not HasAtLeast(8775,&Namitaro;) and HasAtLeast(2624,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="518.7339, 14.04607, 130.9605" Heading="1.535933" />
 				<FishSpot XYZ="524.8389, 14.08908, 124.3318" Heading="5.889893" />
