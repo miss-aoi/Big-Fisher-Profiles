@@ -52,7 +52,6 @@
 			</Keepers>
 			<SurfaceSlaps />
 		</ExFish>
-		</While>
 		<If condition="HasAtLeast(4904,1)">
 			<Desynth ItemIds="4904" DesynthDelay="6000" DesynthTimeout="10" />
 		</If>

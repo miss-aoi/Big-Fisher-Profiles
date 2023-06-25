@@ -42,7 +42,6 @@
 			</Keepers>
 			<SurfaceSlaps />
 		</ExFish>
-		</While>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />

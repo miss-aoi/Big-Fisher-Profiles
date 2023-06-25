@@ -1,42 +1,47 @@
-###  LA NOSCEA - Upper Decks
+# Fish Checks
+The following fish have been verified using this profile collection.
+
+## La Noscea
+
+### Upper Decks
 - [ ] Goldenfin
 
-###  LA NOSCEA - Lower Decks
-- [ ] Octomammoth
+### Lower Decks
+- [x] Octomammoth
 
-###  LA NOSCEA - Middle La Noscea
+### Middle La Noscea
 - [ ] Zalera 
 - [ ] Beguiler_Chub
-- [ ] Great_Gudgeon
+- [x] Great_Gudgeon
 - [x] Gigantshark
 - [x] High_Perch
-- [ ] Crystal_Perch
+- [x] Crystal_Perch
 
-###  LA NOSCEA - Lower La Noscea
-- [ ] Caterwauler
-- [ ] Oschons_Print
+### Lower La Noscea
+- [x] Caterwauler
+- [x] Oschons_Print
 - [x] Syldra
-- [ ] Silver_Sovereign
-- [ ] Sabertooth_Cod
+- [x] Silver_Sovereign
+- [x] Sabertooth_Cod
 - [x] Jacques_the_Snipper
 - [ ] Faerie_Queen
 - [ ] Meteor_Survivor
-- [ ] Cupfish
+- [x] Cupfish
 
-###  LA NOSCEA - Eastern La Noscea
-- [ ] The_Greatest_Bream_in_the_World
-- [ ] Shark_Tuna
+### Eastern La Noscea
+- [x] The_Greatest_Bream_in_the_World
+- [x] Shark_Tuna
 - [ ] Bombardfish
 - [x] The_Old_Man_in_the_Sea
 - [x] Nepto_Dragon
-- [ ] The_Salter
+- [x] The_Salter
 - [x] The_Drowned_Sniper
 - [ ] The_Terpsichorean
 - [ ] Mirrorscale
-- [ ] Imperial_Goldfish
+- [x] Imperial_Goldfish
 - [ ] Little_Perykos
 
-###  LA NOSCEA - Western La Noscea
+### Western La Noscea
 - [x] Armorer
 - [x] Junkmonger
 - [x] Navigators_Brand
@@ -46,99 +51,105 @@
 - [ ] The_Captains_Chalice
 - [x] Coelacanthus
 - [ ] Endoceras
-- [ ] Seahag
+- [x] Seahag
 
-###  LA NOSCEA - Upper La Noscea
+### Upper La Noscea
 - [ ] Toramafish
 - [x] Joan_of_Trout
-- [ ] Worm_of_Nym
+- [x] Worm_of_Nym
 - [ ] King_of_the_Spring
 
-###  LA NOSCEA - Outer La Noscea
+### Outer La Noscea
 - [x] Thundergut
 
-###  LA NOSCEA - Mist
+### Mist
 - [x] Twitchbeard
 
-###  THE BLACK SHROUD - New Gridania
-- [ ] Stormdancer
-- [ ] Bloody_Brewer
+## The Black Shroud
 
-###  THE BLACK SHROUD - Old Gridania
-- [ ] Matron_Carp
+### New Gridania
+- [ ] Stormdancer
+- [x] Bloody_Brewer
+
+### Old Gridania
+- [x] Matron_Carp
 - [x] Carp_Diem
 
-###  THE BLACK SHROUD - Central Shroud
-- [ ] Chirurgeon
+### Central Shroud
+- [x] Chirurgeon
 - [ ] Ghost_Carp
 - [ ] Levinlight
 - [ ] The_Green_Jester
 - [ ] Bloodbath
 
-###  THE BLACK SHROUD - East Shroud
+### East Shroud
 - [ ] Dark_Ambusher
 - [x] Moldva 
 - [ ] The_Assassin 
 - [ ] Sylphsbane 
 - [ ] Magicked_Mushroom
 
-###  THE BLACK SHROUD - South Shroud
+### South Shroud
 - [ ] Vip_Viper
 - [x] Floating_Boulder
-- [ ] The_Grinner
+- [x] The_Grinner
 - [ ] The_Sinker
 - [x] The_Gobfather
 - [ ] Son_of_Levin
 - [x] Giant_Takitaro
 - [x] Namitaro
 
-###  THE BLACK SHROUD - North Shroud
+### North Shroud
 - [ ] Blue_Widow
 - [ ] Judgeray
 - [x] Shadowstreak
-- [ ] Cornelia 
+- [x] Cornelia 
 
-###  THE BLACK SHROUD - The Lavender Beds
+### The Lavender Beds
 - [x] Sweetnewt
 
-###  THANALAN - Western Thanalan
+## Thanalan
+
+### Western Thanalan
 - [x] Glimmerscale
 - [x] Mud_Golem
-- [ ] Rivet_Oyster
+- [x] Rivet_Oyster
 - [ ] Fingers
 - [ ] Dirty_Herry
 - [ ] Pirates_Bane
 - [ ] Ndendecki
 - [x] Bat-o-Nine-Tails
 
-###  THANALAN - Central Thanalan
+### Central Thanalan
 - [x] Dream_Goby
 - [ ] Slime_King
 - [ ] Old_Softie
 - [ ] Dark_Knight
 
-###  THANALAN - Eastern Thanalan
+### Eastern Thanalan
 - [ ] Marrow_Sucker 
 - [x] Mud_Pilgrim
 - [ ] The_Wardens_Wand
 - [ ] The_Thousand-year_Itch
 
-###  THANALAN - Southern Thanalan
+### Southern Thanalan
 - [x] Old_Hollow_Eyes
 - [ ] Discobolus
 - [x] Iron_Noose 
 - [ ] Magic_Carpet
 - [ ] Helicoprion
-- [ ] Olgoi-Khorkhoi
+- [x] Olgoi-Khorkhoi
 
-###  THANALAN - Northern Thanalan
+### Northern Thanalan
 - [x] Hannibal
 - [ ] Wootz_Knifefish_Zenith
 
-###  THANALAN - The Goblet
+### The Goblet
 - [ ] Spearnose
 
-###  COERTHAS - Coerthas Central Highlands
+## Coerthas
+
+### Coerthas Central Highlands
 - [ ] Daniffens_Mark
 - [x] Charons_Lantern
 - [x] Starbright
@@ -150,7 +161,7 @@
 - [ ] Mahar
 - [ ] Shonisaurus
 
-###  COERTHAS - Coerthas Western Highlands
+### Coerthas Western Highlands
 - [ ] Fat_Purse 
 - [ ] Hailfinder 
 - [ ] Flarefish
@@ -161,7 +172,9 @@
 - [ ] La_Reale
 - [ ] Merciless
 
-###  Mor Dhona - Mor Dhona
+## Mor Dhona
+
+### Mor Dhona
 - [ ] Aetherlouse
 - [ ] Ignus_Horn 
 - [x] Blood_Red_Bonytongue
@@ -170,7 +183,9 @@
 - [ ] Canavan 
 - [ ] Kuno_the_Killer
 
-###  ABALATHIA’S SPINE - The Sea of Clouds
+## Abalathia's Spine
+
+### The Sea of Clouds
 - [x] Inkfish
 - [ ] Paikiller
 - [x] Cirrostratus
@@ -178,17 +193,19 @@
 - [ ] Basking_Shark
 - [x] Sea_Butterfly
 
-###  ABALATHIA’S SPINE - Azys Lla
-- [ ] Augmented_High_Allagan_Helmet
-- [ ] Aetherochemical_Compound_666
-- [ ] Ceti
+### Azys Lla
+- [x] Augmented_High_Allagan_Helmet
+- [x] Aetherochemical_Compound_666
+- [x] Ceti
 - [ ] Aphotic_Pirarucu
 - [x] Hundred-eyed_Axolotl
 - [ ] Crystal_Pigeon
 - [x] Allagan_Bladeshark
 - [x] Opabinia
 
-###  DRAVANIA - The Dravanian Forelands
+## Dravania
+
+### The Dravanian Forelands
 - [ ] Scaleripper
 - [ ] Twin-tongued_Carp
 - [ ] The_Dreamweaver
@@ -199,14 +216,14 @@
 - [ ] The_Lord_of_Lords
 - [ ] Problematicus
 
-###  DRAVANIA - The Dravanian Hinterlands
-- [ ] The_Ewer_King
+### The Dravanian Hinterlands
+- [x] The_Ewer_King
 - [x] Madam_Butterfly
 - [ ] The_Speaker
 - [x] Armor_Fish
 - [ ] Bobgoblin_Bass
 
-###  DRAVANIA - The Churning Mists
+### The Churning Mists
 - [x] Vidofnir
 - [ ] Moggle_Mogpom 
 - [ ] Thousand_Fin
@@ -215,12 +232,14 @@
 - [ ] Bloodchaser
 - [ ] Raimdellopterus
 
-###  GYR ABANIA - Rhalgr's Reach
+## Gyr Abania
+
+### Rhalgr's Reach
 - [ ] Hookstealer
 - [ ] Watcher_Catfish
 - [ ] Bloodtail_Zombie
 
-###  GYR ABANIA - The Fringes
+### The Fringes
 - [ ] Hardhead_Trout
 - [ ] Xenacanthus
 - [ ] Sapphire_Fan
@@ -228,7 +247,7 @@
 - [ ] Downstream_Loach "1">
 - [ ] Corpse_Chub
 
-###  GYR ABANIA - The Peaks
+### The Peaks
 - [ ] Bondsplitter
 - [ ] Drepanaspis
 - [ ] The_Undecided
@@ -237,11 +256,13 @@
 - [ ] Hemon
 - [ ] Lily_of_the_Veil
 
-###  GYR ABANIA - The Lochs
+### The Lochs
 - [ ] Diamond-eye
 - [ ] Stethacanthus
 
-###  OTHARD - The Ruby Sea
+## Othard
+
+### The Ruby Sea
 - [ ] Kuer
 - [ ] The_Ruby_Dragon
 - [ ] The_Vegetarian
@@ -251,7 +272,7 @@
 - [ ] Pinhead 
 - [ ] Rakshasa
 
-###  OTHARD - Yanxia
+### Yanxia
 - [ ] Pomegranate_Trout
 - [ ] Glarramundi
 - [ ] Hermits_End
@@ -263,7 +284,7 @@
 - [ ] Hagoromo_Bijin
 - [ ] Hagoromo_Koi
 
-###  OTHARD - The Azim Steppe
+### The Azim Steppe
 - [ ] Garden_Skipper
 - [ ] Banderole
 - [ ] Blade_Skipper 
@@ -273,22 +294,26 @@
 - [ ] Nhaamas_Treasure
 - [ ] The_Unconditional
 
-###  HINGASHI - Kugane
+## Hingashi
+
+### Kugane
 - [ ] Rising_Dragon
 
-###  HINGASHI - Shirogane
+### Shirogane
 - [ ] The_Gambler
 - [ ] Princess_Killifish
 
-###  NORVRANDT - The Crystarium
+## Norvrandt
+
+### The Crystarium
 - [ ] Aster_Trivi
 - [ ] The_Sinsteeped
 - [ ] Loose_Pendant
 
-###  NORVRANDT - Eulmore
+### Eulmore
 - [ ] Winged_Dame
 
-###  NORVRANDT - Lakeland
+### Lakeland
 - [ ] Sweetheart 
 - [ ] Moonlight_Guppy
 - [ ] The_Unforgiven
@@ -296,7 +321,7 @@
 - [ ] The_Jaws_of_Undeath
 - [ ] Listracanthus 
 
-###  NORVRANDT - Kholusia
+### Kholusia
 - [ ] Giant_Taimen
 - [ ] Steel_Fan
 - [ ] White_Ronso
@@ -306,13 +331,13 @@
 - [ ] Aquamaton
 - [ ] Henodus_Grandis
 
-###  NORVRANDT - Amh Araeng
+### Amh Araeng
 - [ ] The_Horned_King
 - [ ] Cinder_Surprise
 - [ ] Ambling_Caltrop
 - [ ] Nabaath_Saw
 
-###  NORVRANDT - Il Mheg
+### Il Mheg
 - [ ] Leannisg
 - [ ] The_Sound_of_Fury
 - [ ] Ealad_Skaan
@@ -322,7 +347,7 @@
 - [ ] Dammroen_Herring
 - [ ] Gold_Hammer
 
-###  NORVRANDT - The Rak'tika Greatwood
+### The Rak'tika Greatwood
 - [ ] Priest_of_YxLokwa
 - [ ] Greater_Serpent_of_Ronka
 - [ ] Pearl_Pipira
@@ -331,7 +356,7 @@
 - [ ] Deephaunt
 - [ ] Golden_Pipira
 
-###  NORVRANDT - The Tempest
+### The Tempest
 - [ ] Ondo_Sigh
 - [ ] The_Ondotaker 
 - [ ] Mora_Tecta
@@ -341,41 +366,49 @@
 - [ ] Starchaser
 - [ ] Opal_Shrimp
 
-###  THE NORTHERN EMPTY - Labrinthos
+## The Northern Empty
+
+### Labrinthos
 - [ ] Jumbo_Snook
 - [ ] Mossgill_Salmon
 - [ ] Swampsucker_Bowfin
 
-###  THE NORTHERN EMPTY - Old Sharlayan
+### Old Sharlayan
 - [ ] Aetherolectric_Guitarfish
 - [ ] Greatsword_Snook
 - [ ] Catastrophizer
 
-###  ILSABARD - Radz-at-Han
-- [ ] Earful 
+## ILSABARD
 
-###  ILSABARD - Thavnair
+### Radz-at-Han
+- [ ] Earful
+
+### Thavnair
 - [ ] Lale_Crab
 - [ ] Vidyutvat_Wrasse
 - [ ] Hippo_Frog 
 - [ ] Bigcuda 
 - [ ] Browned_Banana_Eel
 
-###  ILSABARD - Garlemald
+### Garlemald
 - [ ] Rimepike
 - [ ] Sovereign_Shadow
 
-###  THE SEA OF STARS - Mare Lamentorum
+## The Sea Of Stars
+
+### Mare Lamentorum
 - [ ] Disappirarucu
 - [ ] Frozen_Regotoise
 
-###  THE SEA OF STARS - Ultima Thule
+### Ultima Thule
 - [ ] Foun_Ahlm
 - [ ] Starscryer
 - [ ] Forbiddingway 
 - [ ] Argonauta_argo
 - [ ] Cosmic_Haze
 
-###  THE WORLD UNSUNDERED - Elpis
+## The Wworld Unsundered
+
+### Elpis
 - [ ] Planetes
 - [ ] Antheian_Dahlia
