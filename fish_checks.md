@@ -4,14 +4,14 @@ The following fish have been verified using this profile collection.
 ## La Noscea
 
 ### Upper Decks
-- [ ] Goldenfin
+- [x] Goldenfin
 
 ### Lower Decks
 - [x] Octomammoth
 
 ### Middle La Noscea
-- [ ] Zalera 
-- [ ] Beguiler_Chub
+- [x] Zalera
+- [x] Beguiler_Chub
 - [x] Great_Gudgeon
 - [x] Gigantshark
 - [x] High_Perch
@@ -24,8 +24,8 @@ The following fish have been verified using this profile collection.
 - [x] Silver_Sovereign
 - [x] Sabertooth_Cod
 - [x] Jacques_the_Snipper
-- [ ] Faerie_Queen
-- [ ] Meteor_Survivor
+- [x] Faerie_Queen
+- [x] Meteor_Survivor
 - [x] Cupfish
 
 ### Eastern La Noscea
@@ -37,9 +37,9 @@ The following fish have been verified using this profile collection.
 - [x] The_Salter
 - [x] The_Drowned_Sniper
 - [ ] The_Terpsichorean
-- [ ] Mirrorscale
+- [x] Mirrorscale
 - [x] Imperial_Goldfish
-- [ ] Little_Perykos
+- [x] Little_Perykos
 
 ### Western La Noscea
 - [x] Armorer
@@ -47,14 +47,14 @@ The following fish have been verified using this profile collection.
 - [x] Navigators_Brand
 - [x] The_Lone_Ripper
 - [ ] Helmsmans_Hand
-- [ ] Frilled_Shark 
-- [ ] The_Captains_Chalice
+- [x] Frilled_Shark
+- [x] The_Captains_Chalice
 - [x] Coelacanthus
-- [ ] Endoceras
+- [x] Endoceras
 - [x] Seahag
 
 ### Upper La Noscea
-- [ ] Toramafish
+- [x] Toramafish
 - [x] Joan_of_Trout
 - [x] Worm_of_Nym
 - [ ] King_of_the_Spring
@@ -68,7 +68,7 @@ The following fish have been verified using this profile collection.
 ## The Black Shroud
 
 ### New Gridania
-- [ ] Stormdancer
+- [x] Stormdancer
 - [x] Bloody_Brewer
 
 ### Old Gridania
@@ -84,9 +84,9 @@ The following fish have been verified using this profile collection.
 
 ### East Shroud
 - [ ] Dark_Ambusher
-- [x] Moldva 
-- [ ] The_Assassin 
-- [ ] Sylphsbane 
+- [x] Moldva
+- [ ] The_Assassin
+- [ ] Sylphsbane
 - [ ] Magicked_Mushroom
 
 ### South Shroud
@@ -103,7 +103,7 @@ The following fish have been verified using this profile collection.
 - [ ] Blue_Widow
 - [ ] Judgeray
 - [x] Shadowstreak
-- [x] Cornelia 
+- [x] Cornelia
 
 ### The Lavender Beds
 - [x] Sweetnewt
@@ -116,7 +116,7 @@ The following fish have been verified using this profile collection.
 - [x] Rivet_Oyster
 - [ ] Fingers
 - [ ] Dirty_Herry
-- [ ] Pirates_Bane
+- [x] Pirates_Bane
 - [ ] Ndendecki
 - [x] Bat-o-Nine-Tails
 
@@ -124,18 +124,18 @@ The following fish have been verified using this profile collection.
 - [x] Dream_Goby
 - [ ] Slime_King
 - [ ] Old_Softie
-- [ ] Dark_Knight
+- [x] Dark_Knight
 
 ### Eastern Thanalan
-- [ ] Marrow_Sucker 
+- [ ] Marrow_Sucker
 - [x] Mud_Pilgrim
 - [ ] The_Wardens_Wand
-- [ ] The_Thousand-year_Itch
+- [x] The_Thousand-year_Itch
 
 ### Southern Thanalan
 - [x] Old_Hollow_Eyes
 - [ ] Discobolus
-- [x] Iron_Noose 
+- [x] Iron_Noose
 - [ ] Magic_Carpet
 - [ ] Helicoprion
 - [x] Olgoi-Khorkhoi
@@ -150,37 +150,37 @@ The following fish have been verified using this profile collection.
 ## Coerthas
 
 ### Coerthas Central Highlands
-- [ ] Daniffens_Mark
+- [x] Daniffens_Mark
 - [x] Charons_Lantern
 - [x] Starbright
 - [x] Dawn_Maiden
-- [ ] The_Matriarch
-- [ ] Darkstar
+- [x] The_Matriarch
+- [x] Darkstar
 - [ ] Blue_Corpse
 - [ ] Anomalocaris
 - [ ] Mahar
 - [ ] Shonisaurus
 
 ### Coerthas Western Highlands
-- [ ] Fat_Purse 
-- [ ] Hailfinder 
+- [x] Fat_Purse
+- [x] Hailfinder
 - [ ] Flarefish
 - [ ] Bishopfish
 - [ ] Charibenet
-- [ ] The_Impaler
+- [x] The_Impaler
 - [ ] Captain_Nemo
-- [ ] La_Reale
+- [x] La_Reale
 - [ ] Merciless
 
 ## Mor Dhona
 
 ### Mor Dhona
 - [ ] Aetherlouse
-- [ ] Ignus_Horn 
+- [ ] Ignus_Horn
 - [x] Blood_Red_Bonytongue
 - [ ] Void_Bass
 - [ ] Ninja_Betta
-- [ ] Canavan 
+- [x] Canavan
 - [ ] Kuno_the_Killer
 
 ## Abalathia's Spine
@@ -199,7 +199,7 @@ The following fish have been verified using this profile collection.
 - [x] Ceti
 - [ ] Aphotic_Pirarucu
 - [x] Hundred-eyed_Axolotl
-- [ ] Crystal_Pigeon
+- [x] Crystal_Pigeon
 - [x] Allagan_Bladeshark
 - [x] Opabinia
 
@@ -225,7 +225,7 @@ The following fish have been verified using this profile collection.
 
 ### The Churning Mists
 - [x] Vidofnir
-- [ ] Moggle_Mogpom 
+- [ ] Moggle_Mogpom
 - [ ] Thousand_Fin
 - [x] The_Soul_of_the_Martyr
 - [ ] Dimorphodon
@@ -235,7 +235,7 @@ The following fish have been verified using this profile collection.
 ## Gyr Abania
 
 ### Rhalgr's Reach
-- [ ] Hookstealer
+- [x] Hookstealer
 - [ ] Watcher_Catfish
 - [ ] Bloodtail_Zombie
 
@@ -269,7 +269,7 @@ The following fish have been verified using this profile collection.
 - [ ] Seven_Stars
 - [ ] The_Winter_Queen "1">
 - [ ] Argonautica
-- [ ] Pinhead 
+- [ ] Pinhead
 - [ ] Rakshasa
 
 ### Yanxia
@@ -279,15 +279,15 @@ The following fish have been verified using this profile collection.
 - [ ] Warden_of_the_Seven_Hues
 - [ ] The_Unraveled_Bow
 - [ ] Bokuden
-- [ ] Suiten_Ippeki 
-- [ ] Axelrod 
+- [ ] Suiten_Ippeki
+- [ ] Axelrod
 - [ ] Hagoromo_Bijin
 - [ ] Hagoromo_Koi
 
 ### The Azim Steppe
 - [ ] Garden_Skipper
 - [ ] Banderole
-- [ ] Blade_Skipper 
+- [ ] Blade_Skipper
 - [ ] Duskfish
 - [ ] The_Word_of_God
 - [ ] Yat_Khan
@@ -314,12 +314,12 @@ The following fish have been verified using this profile collection.
 - [ ] Winged_Dame
 
 ### Lakeland
-- [ ] Sweetheart 
+- [ ] Sweetheart
 - [ ] Moonlight_Guppy
 - [ ] The_Unforgiven
 - [ ] Python_Discus
 - [ ] The_Jaws_of_Undeath
-- [ ] Listracanthus 
+- [ ] Listracanthus
 
 ### Kholusia
 - [ ] Giant_Taimen
@@ -358,7 +358,7 @@ The following fish have been verified using this profile collection.
 
 ### The Tempest
 - [ ] Ondo_Sigh
-- [ ] The_Ondotaker 
+- [ ] The_Ondotaker
 - [ ] Mora_Tecta
 - [ ] Lancetfish
 - [ ] Maru_Crab
@@ -386,8 +386,8 @@ The following fish have been verified using this profile collection.
 ### Thavnair
 - [ ] Lale_Crab
 - [ ] Vidyutvat_Wrasse
-- [ ] Hippo_Frog 
-- [ ] Bigcuda 
+- [ ] Hippo_Frog
+- [ ] Bigcuda
 - [ ] Browned_Banana_Eel
 
 ### Garlemald
@@ -403,7 +403,7 @@ The following fish have been verified using this profile collection.
 ### Ultima Thule
 - [ ] Foun_Ahlm
 - [ ] Starscryer
-- [ ] Forbiddingway 
+- [ ] Forbiddingway
 - [ ] Argonauta_argo
 - [ ] Cosmic_Haze
 

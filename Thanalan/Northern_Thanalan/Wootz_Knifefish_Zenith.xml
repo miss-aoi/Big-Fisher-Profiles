@@ -32,9 +32,9 @@
 					<PatienceTug moochLevel="1" TugType="Medium" />
 				</PatientTugs>
 			<FishSpots>
-				<FishSpot XYZ="-54.27203, 46.32491, 46.60146" Heading="6.100248" />
-				<FishSpot XYZ="-225.4317, 59.25958, -85.06227" Heading="4.135532" />
-				<FishSpot XYZ="-235.136, 59.02201, -70.44752" Heading="3.762728" />
+				<FishSpot XYZ="-53.95806, 46.3118, 46.86571" Heading="6.056502" Sit="True" />
+				<FishSpot XYZ="-69.34203, 45.6293, 41.65791" Heading="5.809361" Sit="True" />
+				<FishSpot XYZ="-61.20588, 45.9164, 43.82962" Heading="5.972723" Sit="True" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Wootz Knifefish Zenith" />

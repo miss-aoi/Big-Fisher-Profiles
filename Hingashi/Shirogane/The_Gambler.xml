@@ -19,7 +19,7 @@
 		<If condition="not IsOnSubMap(1899)">
 			<LisbethTravel Area="Kugane" XYZ="39.04472, 4.685791, -32.06384" />
 			<RunCode Name="Shirogane"/>
-			<LisbethTravel Area="Shirogane" XYZ="-114.2855, 2.02, 147.0289"/>
+			<LisbethTravel Area="Shirogane" XYZ="-119.0833, 2.02, 154.4393" />
 		</If>
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
