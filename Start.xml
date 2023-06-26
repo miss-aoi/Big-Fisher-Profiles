@@ -47,7 +47,7 @@
 <!ENTITY Nepto_Dragon "0">                                       <!-- WEATHER -->  <!-- INTUITION -->  <!-- NORTHERN KRILL -->
 <!ENTITY The_Salter "0">                         <!-- TIMED -->  <!-- WEATHER -->                      <!-- HONEY WORM -->
 <!ENTITY The_Drowned_Sniper "0">                                 <!-- WEATHER -->                      <!-- SNURBLE FLY -->
-<!ENTITY The_Terpsichorean "1">                                  <!-- WEATHER -->                      <!-- HONEY WORM -->
+<!ENTITY The_Terpsichorean "0">                                  <!-- WEATHER -->                      <!-- HONEY WORM -->
 <!ENTITY Mirrorscale "0">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- BUTTERWORM -->
 <!ENTITY Imperial_Goldfish "0">                                                    <!-- INTUITION -->  <!-- HONEY WORM -->
 <!ENTITY Little_Perykos "0">                                     <!-- WEATHER -->                      <!-- LUGWORM -->
@@ -95,7 +95,7 @@
 <!ENTITY The_Grinner "0">                                                                              <!-- SYRPHID BASKET -->
 <!ENTITY The_Sinker "1">                         <!-- TIMED -->  <!-- WEATHER -->                      <!-- SINKING MINNOW -->
 <!ENTITY The_Gobfather "0">                                      <!-- WEATHER -->                      <!-- HONEY WORM -->
-<!ENTITY Son_of_Levin "1">                                       <!-- WEATHER -->                      <!-- CADDISFLY LARVA -->
+<!ENTITY Son_of_Levin "0">                                       <!-- WEATHER -->                      <!-- CADDISFLY LARVA -->
 <!ENTITY Giant_Takitaro "0">                                                                           <!-- GLOWWORM -->
 <!ENTITY Namitaro "0">                                           <!-- WEATHER -->  <!-- INTUITION -->  <!-- TOPWATER FROG -->
 <!-- THE BLACK SHROUD - North Shroud -->
@@ -189,7 +189,7 @@
 <!ENTITY Meteortoise "0">                                                                              <!-- MAGMA WORM -->
 <!ENTITY Hraesvelgrs_Tear "0">                                   <!-- WEATHER -->                      <!-- MAGMA WORM -->
 <!ENTITY Riddle "1">                             <!-- TIMED -->  <!-- WEATHER -->                      <!-- MAGMA WORM -->
-<!ENTITY The_Lord_of_Lords "1">                  <!-- TIMED -->  <!-- WEATHER -->                      <!-- METAL SPINNER -->
+<!ENTITY The_Lord_of_Lords "0">                  <!-- TIMED -->  <!-- WEATHER -->                      <!-- METAL SPINNER -->
 <!ENTITY Problematicus "1">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- METAL SPINNER -->
 <!-- DRAVANIA - The Dravanian Hinterlands -->
 <!ENTITY The_Ewer_King "0">                                                                            <!-- BLADED STEEL JIG -->

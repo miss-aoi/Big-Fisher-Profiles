@@ -213,7 +213,7 @@ The following fish have been verified using this profile collection.
 - [ ] Meteortoise
 - [x] Hraesvelgrs_Tear
 - [ ] Riddle
-- [ ] The_Lord_of_Lords
+- [x] The_Lord_of_Lords
 - [ ] Problematicus
 
 ### The Dravanian Hinterlands

@@ -16,22 +16,18 @@
 			<!--Purse Web Spider-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12705,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
-		<If condition="not HasAtLeast(28634,3)">
-			<!--Metal Spinner-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':28634,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
-		</If>
-		<If condition="not IsOnSubMap(2202)">
-			<LisbethTravel Area="Coerthas Western Highlands" XYZ="-32.91364, 89.56251, -571.7196" />
+		<If condition="not IsOnSubMap(2201)">
+			<LisbethTravel Area="Coerthas Western Highlands" XYZ="694.4288, 131.6431, -803.657" />
 		</If>
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
 		<!-- Catch 4 Ice Faerie leading up to window -->
-		<ExFish Bait="Metal Spinner" Condition="not Core.Player.HasAura(568) and not HasAtLeast(12715,4) and HasAtLeast(12705,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Chum="True">
+		<ExFish Bait="Purse Web Spider" Condition="not Core.Player.HasAura(568) and not HasAtLeast(12715,4) and HasAtLeast(12705,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Chum="True">
 			<FishSpots>
-				<FishSpot XYZ="-21.4197, 89.14197, -559.7135" Heading="4.573871" />
-				<FishSpot XYZ="-32.44563, 89.25902, -571.203" Heading="6.274516" />
-				<FishSpot XYZ="-48.33238, 89.17406, -557.7254" Heading="1.37154" />
+				<FishSpot XYZ="700.9606, 130.4927, -812.5688" Heading="2.43003" Sit="True" />
+				<FishSpot XYZ="705.4149, 130.772, -807.4819" Heading="2.409086" Sit="True" />
+				<FishSpot XYZ="697.2401, 130.4616, -814.8465" Heading="2.989224" Sit="True" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Ice Faerie" />
@@ -42,11 +38,11 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<!-- Catch 5th Ice Faerie once window starts -->
-		<ExFish Bait="Metal Spinner" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17592,&Charibenet;) and HasAtLeast(12705,1) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Chum="True">
+		<ExFish Bait="Purse Web Spider" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17592,&Charibenet;) and HasAtLeast(12705,1) and IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Chum="True">
 			<FishSpots>
-				<FishSpot XYZ="-21.4197, 89.14197, -559.7135" Heading="4.573871" />
-				<FishSpot XYZ="-32.44563, 89.25902, -571.203" Heading="6.274516" />
-				<FishSpot XYZ="-48.33238, 89.17406, -557.7254" Heading="1.37154" />
+				<FishSpot XYZ="700.9606, 130.4927, -812.5688" Heading="2.43003" Sit="True" />
+				<FishSpot XYZ="705.4149, 130.772, -807.4819" Heading="2.409086" Sit="True" />
+				<FishSpot XYZ="697.2401, 130.4616, -814.8465" Heading="2.989224" Sit="True" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Ice Faerie" />
@@ -59,9 +55,9 @@
 				<PatienceTug moochLevel="1" TugType="Light" />
 			</PatientTugs>
 			<FishSpots>
-				<FishSpot XYZ="-21.4197, 89.14197, -559.7135" Heading="4.573871" />
-				<FishSpot XYZ="-32.44563, 89.25902, -571.203" Heading="6.274516" />
-				<FishSpot XYZ="-48.33238, 89.17406, -557.7254" Heading="1.37154" />
+				<FishSpot XYZ="700.9606, 130.4927, -812.5688" Heading="2.43003" Sit="True" />
+				<FishSpot XYZ="705.4149, 130.772, -807.4819" Heading="2.409086" Sit="True" />
+				<FishSpot XYZ="697.2401, 130.4616, -814.8465" Heading="2.989224" Sit="True" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Charibenet" />
