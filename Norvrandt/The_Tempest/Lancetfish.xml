@@ -26,7 +26,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Short Bill Minnow" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33244,&Lancetfish;) and HasAtLeast(33325,2) and HasAtLeast(27590,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Chum="True">
+		<ExFish Bait="Short Bill Minnow" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33244,&Lancetfish;) and HasAtLeast(33325,2) and HasAtLeast(27590,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
 				<FishSpot XYZ="-475.9068, 184.7709, -558.5859" Heading="4.016154" />
@@ -40,7 +40,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Short Bill Minnow" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33244,&Lancetfish;) and HasAtLeast(27590,1) and IsTimeBetween(0,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Chum="True">
+		<ExFish Bait="Short Bill Minnow" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33244,&Lancetfish;) and HasAtLeast(27590,1) and IsTimeBetween(0,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
 				<FishSpot XYZ="-475.9068, 184.7709, -558.5859" Heading="4.016154" />
@@ -50,7 +50,7 @@
 				<Keeper name="Mora Tecta" />
 			</Keepers>
 		</ExFish>
-		<ExFish Bait="Squid Strip" Condition="Core.Player.HasAura(568) and not HasAtLeast(33244,&Lancetfish;) and HasAtLeast(27590,1) and IsTimeBetween(0,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Chum="True">
+		<ExFish Bait="Squid Strip" Condition="Core.Player.HasAura(568) and not HasAtLeast(33244,&Lancetfish;) and HasAtLeast(27590,1) and IsTimeBetween(0,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
 				<FishSpot XYZ="-475.9068, 184.7709, -558.5859" Heading="4.016154" />

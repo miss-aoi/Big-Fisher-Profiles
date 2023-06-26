@@ -22,7 +22,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Giant Crane Fly" condition="not HasAtLeast(16742,&Dimorphodon;) and HasAtLeast(12712,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(400, TimeSpan.FromHours(-8), 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Giant Crane Fly" condition="not HasAtLeast(16742,&Dimorphodon;) and HasAtLeast(12712,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(400, TimeSpan.FromHours(-8), 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />
 				<PatienceTug moochLevel="1" TugType="Medium" />

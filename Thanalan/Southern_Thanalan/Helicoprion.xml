@@ -26,7 +26,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Sand Leech" condition="not HasAtLeast(8768,&Helicoprion;) and HasAtLeast(2600,1) and IsTimeBetween(8,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(-8), 'Fog', 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Sand Leech" condition="not HasAtLeast(8768,&Helicoprion;) and HasAtLeast(2600,1) and IsTimeBetween(8,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(-8), 'Fog', 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Medium" />
 					<PatienceTug moochLevel="1" TugType="Medium" />

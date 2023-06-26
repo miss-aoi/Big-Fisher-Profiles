@@ -26,7 +26,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Mayfly" condition="not HasAtLeast(37849,&Sovereign_Shadow;) and HasAtLeast(36591,1) and IsTimeBetween(2,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(958, 'Snow') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(958, TimeSpan.FromHours(-8), 'Clouds', 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Chum="True">
+		<ExFish Bait="Mayfly" condition="not HasAtLeast(37849,&Sovereign_Shadow;) and HasAtLeast(36591,1) and IsTimeBetween(2,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(958, 'Snow') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(958, TimeSpan.FromHours(-8), 'Clouds', 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-1.374654, -6.484802, -738.3751" Heading="3.120423" />
 				<FishSpot XYZ="21.5424, -6.484802, -738.3272" Heading="2.917261" />

@@ -26,7 +26,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Brute Leech" condition="not HasAtLeast(15633,&Vidofnir;) and HasAtLeast(12711,1) and IsTimeBetween(8,10)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Chum="True">
+		<ExFish Bait="Brute Leech" condition="not HasAtLeast(15633,&Vidofnir;) and HasAtLeast(12711,1) and IsTimeBetween(8,10)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="700.6899, -50.2302, 427.8866" Heading="2.677398" />
 				<FishSpot XYZ="729.3427, -50.22274, 423.9734" Heading="3.062758" />

@@ -22,7 +22,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Crayfish Ball" condition="not HasAtLeast(7688,&Great_Gudgeon;) and HasAtLeast(2588,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Chum="True">
+		<ExFish Bait="Crayfish Ball" condition="not HasAtLeast(7688,&Great_Gudgeon;) and HasAtLeast(2588,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-127.117, 42.0596, -122.7199" Heading="5.410823" />
 				<FishSpot XYZ="-37.02737, 46.38836, -213.9085" Heading="2.39071" />

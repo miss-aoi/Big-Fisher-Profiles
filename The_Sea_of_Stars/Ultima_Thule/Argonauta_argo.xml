@@ -26,7 +26,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Stardust" condition="not HasAtLeast(37852,&Argonauta_argo;) and HasAtLeast(36597,1) and IsTimeBetween(2,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Umbral Wind')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Chum="True">
+		<ExFish Bait="Stardust" condition="not HasAtLeast(37852,&Argonauta_argo;) and HasAtLeast(36597,1) and IsTimeBetween(2,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Umbral Wind')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="591.6626, 287.142, -499.1921" Heading="1.67552" />
 				<FishSpot XYZ="590.0045, 286.6469, -479.0792" Heading="1.325757" />

@@ -26,7 +26,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Floating Minnow" condition="not HasAtLeast(7699,&Blue_Widow;) and HasAtLeast(2611,1) and IsTimeBetween(9,14)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Chum="True">
+		<ExFish Bait="Floating Minnow" condition="not HasAtLeast(7699,&Blue_Widow;) and HasAtLeast(2611,1) and IsTimeBetween(9,14)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="189.6587, -30.66909, 195.119" Heading="1.228501" />
 				<FishSpot XYZ="205.4642, -28.51582, 182.1846" Heading="0.5101242" />

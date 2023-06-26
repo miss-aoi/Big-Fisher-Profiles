@@ -26,7 +26,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-			<ExFish Bait="Suspending Minnow" condition="not HasAtLeast(24218,&Blade_Skipper;) and HasAtLeast(20619,1) and IsTimeBetween(4,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(622, 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Chum="True">
+			<ExFish Bait="Suspending Minnow" condition="not HasAtLeast(24218,&Blade_Skipper;) and HasAtLeast(20619,1) and IsTimeBetween(4,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(622, 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-95.88214, 21.83956, -84.44804" Heading="5.56986" />
 					<FishSpot XYZ="-117.1006, 22.21863, -88.59916" Heading="2.64818" />

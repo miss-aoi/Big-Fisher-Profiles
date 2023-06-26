@@ -66,7 +66,7 @@
 <!ENTITY Toramafish "0">                         <!-- TIMED -->  <!-- WEATHER -->                      <!-- SPINNERBAIT -->
 <!ENTITY Joan_of_Trout "0">                      <!-- TIMED -->                                        <!-- CROW FLY -->
 <!ENTITY Worm_of_Nym "0">                        <!-- TIMED -->                                        <!-- BUTTERWORM -->
-<!ENTITY King_of_the_Spring "1">                 <!-- TIMED -->                                        <!-- SPINNERBAIT -->
+<!ENTITY King_of_the_Spring "0">                 <!-- TIMED -->                                        <!-- SPINNERBAIT -->
 <!-- LA NOSCEA - Outer La Noscea -->
 <!ENTITY Thundergut "0">                         <!-- TIMED -->  <!-- WEATHER -->                      <!-- STEM BORER -->
 <!-- LA NOSCEA - Mist -->
@@ -81,8 +81,8 @@
 <!ENTITY Chirurgeon "0">                                                                               <!-- MOTH PUPA -->
 <!ENTITY Ghost_Carp "1">                         <!-- TIMED -->  <!-- WEATHER -->                      <!-- BUTTERWORM -->
 <!ENTITY Levinlight "1">                         <!-- TIMED -->                                        <!-- SYRPHID BASKET -->
-<!ENTITY The_Green_Jester "1">                   <!-- TIMED -->                                        <!-- HONEY WORM -->
-<!ENTITY Bloodbath "1">                                          <!-- WEATHER -->                      <!-- HONEY WORM -->
+<!ENTITY The_Green_Jester "0">                   <!-- TIMED -->                                        <!-- HONEY WORM -->
+<!ENTITY Bloodbath "0">                                          <!-- WEATHER -->                      <!-- HONEY WORM -->
 <!-- THE BLACK SHROUD - East Shroud -->
 <!ENTITY Dark_Ambusher "0">                      <!-- TIMED -->                                        <!-- MOTH PUPA -->
 <!ENTITY Moldva "0">                             <!-- TIMED -->                                        <!-- MIDGE BASKET -->
@@ -100,11 +100,11 @@
 <!ENTITY Namitaro "0">                                           <!-- WEATHER -->  <!-- INTUITION -->  <!-- TOPWATER FROG -->
 <!-- THE BLACK SHROUD - North Shroud -->
 <!ENTITY Blue_Widow "1">                         <!-- TIMED -->                                        <!-- FLOATING MINNOW -->
-<!ENTITY Judgeray "1">                           <!-- TIMED -->                                        <!-- WILDFOWL FLY -->
+<!ENTITY Judgeray "0">                           <!-- TIMED -->                                        <!-- WILDFOWL FLY -->
 <!ENTITY Shadowstreak "0">                       <!-- TIMED -->  <!-- WEATHER -->                      <!-- TOPWATER FROG -->
 <!ENTITY Cornelia "0">                                                             <!-- INTUITION -->  <!-- GLOWWORM -->
 <!-- THE BLACK SHROUD - The Lavender Beds -->
-<!ENTITY Sweetnewt "0">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- MIDGE BASKET -->
+<!ENTITY Sweetnewt "1">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- MIDGE BASKET -->
 <!-- THANALAN - Western Thanalan -->
 <!ENTITY Glimmerscale "0">                                       <!-- WEATHER -->                      <!-- BUTTERWORM -->
 <!ENTITY Mud_Golem "0">                          <!-- TIMED -->                                        <!-- MIDGE BASKET -->
@@ -116,7 +116,7 @@
 <!ENTITY Bat-o-Nine-Tails "0">                                   <!-- WEATHER -->                      <!-- HONEY WORM -->
 <!-- THANALAN - Central Thanalan -->
 <!ENTITY Dream_Goby "0">                                                                               <!-- CRAYFISH BALL -->
-<!ENTITY Slime_King "1">                         <!-- TIMED -->                                        <!-- CRAYFISH BALL -->
+<!ENTITY Slime_King "0">                         <!-- TIMED -->                                        <!-- CRAYFISH BALL -->
 <!ENTITY Old_Softie "1">                         <!-- TIMED -->                                        <!-- BLOODWORM -->
 <!ENTITY Dark_Knight "0">                                        <!-- WEATHER -->                      <!-- CROW FLY -->
 <!-- THANALAN - Eastern Thanalan -->
@@ -128,7 +128,7 @@
 <!ENTITY Old_Hollow_Eyes "0">                                    <!-- WEATHER -->                      <!-- BUTTERWORM -->
 <!ENTITY Discobolus "1">                         <!-- TIMED -->  <!-- WEATHER -->                      <!-- GLOWWORM -->
 <!ENTITY Iron_Noose "0">                                         <!-- WEATHER -->                      <!-- SPINNER -->
-<!ENTITY Magic_Carpet "1">                       <!-- TIMED -->  <!-- WEATHER -->                      <!-- SAND LEECH -->
+<!ENTITY Magic_Carpet "0">                       <!-- TIMED -->  <!-- WEATHER -->                      <!-- SAND LEECH -->
 <!ENTITY Helicoprion "1">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- SAND LEECH -->
 <!ENTITY Olgoi-Khorkhoi "0">                                     <!-- WEATHER -->                      <!-- BLOODWORM -->
 <!-- THANALAN - Northern Thanalan -->
@@ -143,9 +143,9 @@
 <!ENTITY Dawn_Maiden "0">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- WILDFOWL FLY -->
 <!ENTITY The_Matriarch "0">                                                                            <!-- HONEY WORM -->
 <!ENTITY Darkstar "0">                                           <!-- WEATHER -->  <!-- INTUITION -->  <!-- STONEFLY NYMPH -->
-<!ENTITY Blue_Corpse "1">                                        <!-- WEATHER -->                      <!-- CADDISFLY LARVA -->
+<!ENTITY Blue_Corpse "0">                                        <!-- WEATHER -->                      <!-- CADDISFLY LARVA -->
 <!ENTITY Anomalocaris "1">                       <!-- TIMED -->  <!-- WEATHER -->                      <!-- HOVERWORM -->
-<!ENTITY Mahar "1">                                              <!-- WEATHER -->                      <!-- HOVERWORM -->
+<!ENTITY Mahar "0">                                              <!-- WEATHER -->                      <!-- HOVERWORM -->
 <!ENTITY Shonisaurus "1">                                        <!-- WEATHER -->                      <!-- HOVERWORM -->
 <!-- COERTHAS - Coerthas Western Highlands -->
 <!ENTITY Fat_Purse "0">                                                                                <!-- BRUTE LEECH -->
@@ -158,7 +158,7 @@
 <!ENTITY La_Reale "0">                                                                                 <!-- BRUTE LEECH -->
 <!ENTITY Merciless "1">                                          <!-- WEATHER -->                      <!-- CADDISFLY LARVA -->
 <!-- Mor Dhona - Mor Dhona -->
-<!ENTITY Aetherlouse "1">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- GLOWWORM -->
+<!ENTITY Aetherlouse "0">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- GLOWWORM -->
 <!ENTITY Ignus_Horn "1">                                         <!-- WEATHER -->                      <!-- GLOWWORM -->
 <!ENTITY Blood_Red_Bonytongue "0">               <!-- TIMED -->  <!-- WEATHER -->                      <!-- HONEY WORM -->
 <!ENTITY Void_Bass "1">                                          <!-- WEATHER -->                      <!-- GLOWWORM -->
@@ -171,7 +171,7 @@
 <!ENTITY Cirrostratus "0">                       <!-- TIMED -->  <!-- WEATHER -->                      <!-- GIANT CRANE FLY -->
 <!ENTITY The_Second_One "1">                                     <!-- WEATHER -->                      <!-- GIANT CRANE FLY -->
 <!ENTITY Basking_Shark "1">                                      <!-- WEATHER -->                      <!-- METAL SPINNER -->
-<!ENTITY Sea_Butterfly "0">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- GIANT CRANE FLY -->
+<!ENTITY Sea_Butterfly "1">                      <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- GIANT CRANE FLY -->
 <!-- ABALATHIA’S SPINE - Azys Lla -->
 <!ENTITY Augmented_High_Allagan_Helmet "0">                                                            <!-- FIEND WORM -->
 <!ENTITY Aetherochemical_Compound_666 "0">                                                             <!-- FIEND WORM -->
@@ -195,7 +195,7 @@
 <!ENTITY The_Ewer_King "0">                                                                            <!-- BLADED STEEL JIG -->
 <!ENTITY Madam_Butterfly "0">                    <!-- TIMED -->  <!-- WEATHER -->                      <!-- PURSE WEB SPIDER -->
 <!ENTITY The_Speaker "1">                                        <!-- WEATHER -->                      <!-- PURSE WEB SPIDER -->
-<!ENTITY Armor_Fish "0">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- PURSE WEB SPIDER -->
+<!ENTITY Armor_Fish "1">                         <!-- TIMED -->  <!-- WEATHER -->  <!-- INTUITION -->  <!-- PURSE WEB SPIDER -->
 <!ENTITY Bobgoblin_Bass "1">                     <!-- TIMED -->  <!-- WEATHER -->                      <!-- GOBLIN JIG -->
 <!-- DRAVANIA - The Churning Mists -->
 <!ENTITY Vidofnir "0">                           <!-- TIMED -->                                        <!-- BRUTE LEECH -->
@@ -259,7 +259,7 @@
 <!-- HINGASHI - Kugane -->
 <!ENTITY Rising_Dragon "1">                                                                            <!-- METAL SPINNER -->
 <!-- HINGASHI - Shirogane -->
-<!ENTITY The_Gambler "1">                                                                              <!-- BLUE BOBBIT -->
+<!ENTITY The_Gambler "0">                                                                              <!-- BLUE BOBBIT -->
 <!ENTITY Princess_Killifish "1">                 <!-- TIMED -->                                        <!-- NIGHTCRAWLER -->
 <!-- NORVRANDT - The Crystarium -->
 <!ENTITY Aster_Trivi "1">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- MARBLE NYMPH -->

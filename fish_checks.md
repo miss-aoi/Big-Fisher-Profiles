@@ -36,7 +36,7 @@ The following fish have been verified using this profile collection.
 - [x] Nepto_Dragon
 - [x] The_Salter
 - [x] The_Drowned_Sniper
-- [ ] The_Terpsichorean
+- [x] The_Terpsichorean
 - [x] Mirrorscale
 - [x] Imperial_Goldfish
 - [x] Little_Perykos
@@ -57,7 +57,7 @@ The following fish have been verified using this profile collection.
 - [x] Toramafish
 - [x] Joan_of_Trout
 - [x] Worm_of_Nym
-- [ ] King_of_the_Spring
+- [x] King_of_the_Spring
 
 ### Outer La Noscea
 - [x] Thundergut
@@ -78,9 +78,9 @@ The following fish have been verified using this profile collection.
 ### Central Shroud
 - [x] Chirurgeon
 - [ ] Ghost_Carp
-- [ ] Levinlight
-- [ ] The_Green_Jester
-- [ ] Bloodbath
+- [x] Levinlight
+- [x] The_Green_Jester
+- [x] Bloodbath
 
 ### East Shroud
 - [ ] Dark_Ambusher
@@ -100,13 +100,13 @@ The following fish have been verified using this profile collection.
 - [x] Namitaro
 
 ### North Shroud
-- [ ] Blue_Widow
-- [ ] Judgeray
+- [x] Blue_Widow
+- [x] Judgeray
 - [x] Shadowstreak
 - [x] Cornelia
 
 ### The Lavender Beds
-- [x] Sweetnewt
+- [ ] Sweetnewt
 
 ## Thanalan
 
@@ -122,7 +122,7 @@ The following fish have been verified using this profile collection.
 
 ### Central Thanalan
 - [x] Dream_Goby
-- [ ] Slime_King
+- [x] Slime_King
 - [ ] Old_Softie
 - [x] Dark_Knight
 
@@ -136,7 +136,7 @@ The following fish have been verified using this profile collection.
 - [x] Old_Hollow_Eyes
 - [ ] Discobolus
 - [x] Iron_Noose
-- [ ] Magic_Carpet
+- [x] Magic_Carpet
 - [ ] Helicoprion
 - [x] Olgoi-Khorkhoi
 
@@ -158,7 +158,7 @@ The following fish have been verified using this profile collection.
 - [x] Darkstar
 - [ ] Blue_Corpse
 - [ ] Anomalocaris
-- [ ] Mahar
+- [x] Mahar
 - [ ] Shonisaurus
 
 ### Coerthas Western Highlands
@@ -175,7 +175,7 @@ The following fish have been verified using this profile collection.
 ## Mor Dhona
 
 ### Mor Dhona
-- [ ] Aetherlouse
+- [x] Aetherlouse
 - [ ] Ignus_Horn
 - [x] Blood_Red_Bonytongue
 - [ ] Void_Bass
@@ -191,7 +191,7 @@ The following fish have been verified using this profile collection.
 - [x] Cirrostratus
 - [ ] The_Second_One
 - [ ] Basking_Shark
-- [x] Sea_Butterfly
+- [ ] Sea_Butterfly
 
 ### Azys Lla
 - [x] Augmented_High_Allagan_Helmet
@@ -300,7 +300,7 @@ The following fish have been verified using this profile collection.
 - [ ] Rising_Dragon
 
 ### Shirogane
-- [ ] The_Gambler
+- [x] The_Gambler
 - [ ] Princess_Killifish
 
 ## Norvrandt
