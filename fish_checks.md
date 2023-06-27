@@ -31,7 +31,7 @@ The following fish have been verified using this profile collection.
 ### Eastern La Noscea
 - [x] The_Greatest_Bream_in_the_World
 - [x] Shark_Tuna
-- [ ] Bombardfish
+- [x] Bombardfish
 - [x] The_Old_Man_in_the_Sea
 - [x] Nepto_Dragon
 - [x] The_Salter
@@ -46,7 +46,7 @@ The following fish have been verified using this profile collection.
 - [x] Junkmonger
 - [x] Navigators_Brand
 - [x] The_Lone_Ripper
-- [ ] Helmsmans_Hand
+- [x] Helmsmans_Hand
 - [x] Frilled_Shark
 - [x] The_Captains_Chalice
 - [x] Coelacanthus
@@ -77,7 +77,7 @@ The following fish have been verified using this profile collection.
 
 ### Central Shroud
 - [x] Chirurgeon
-- [ ] Ghost_Carp
+- [x] Ghost_Carp
 - [x] Levinlight
 - [x] The_Green_Jester
 - [x] Bloodbath
@@ -90,10 +90,10 @@ The following fish have been verified using this profile collection.
 - [ ] Magicked_Mushroom
 
 ### South Shroud
-- [ ] Vip_Viper
+- [x] Vip_Viper
 - [x] Floating_Boulder
 - [x] The_Grinner
-- [ ] The_Sinker
+- [x] The_Sinker
 - [x] The_Gobfather
 - [ ] Son_of_Levin
 - [x] Giant_Takitaro
@@ -114,27 +114,27 @@ The following fish have been verified using this profile collection.
 - [x] Glimmerscale
 - [x] Mud_Golem
 - [x] Rivet_Oyster
-- [ ] Fingers
-- [ ] Dirty_Herry
+- [x] Fingers
+- [x] Dirty_Herry
 - [x] Pirates_Bane
-- [ ] Ndendecki
+- [x] Ndendecki
 - [x] Bat-o-Nine-Tails
 
 ### Central Thanalan
 - [x] Dream_Goby
 - [x] Slime_King
-- [ ] Old_Softie
+- [x] Old_Softie
 - [x] Dark_Knight
 
 ### Eastern Thanalan
-- [ ] Marrow_Sucker
+- [x] Marrow_Sucker
 - [x] Mud_Pilgrim
-- [ ] The_Wardens_Wand
+- [x] The_Wardens_Wand
 - [x] The_Thousand-year_Itch
 
 ### Southern Thanalan
 - [x] Old_Hollow_Eyes
-- [ ] Discobolus
+- [x] Discobolus
 - [x] Iron_Noose
 - [x] Magic_Carpet
 - [ ] Helicoprion
@@ -157,7 +157,7 @@ The following fish have been verified using this profile collection.
 - [x] The_Matriarch
 - [x] Darkstar
 - [ ] Blue_Corpse
-- [ ] Anomalocaris
+- [x] Anomalocaris
 - [x] Mahar
 - [ ] Shonisaurus
 
@@ -168,18 +168,18 @@ The following fish have been verified using this profile collection.
 - [ ] Bishopfish
 - [ ] Charibenet
 - [x] The_Impaler
-- [ ] Captain_Nemo
+- [x] Captain_Nemo
 - [x] La_Reale
-- [ ] Merciless
+- [x] Merciless
 
 ## Mor Dhona
 
 ### Mor Dhona
 - [x] Aetherlouse
-- [ ] Ignus_Horn
+- [x] Ignus_Horn
 - [x] Blood_Red_Bonytongue
 - [ ] Void_Bass
-- [ ] Ninja_Betta
+- [x] Ninja_Betta
 - [x] Canavan
 - [ ] Kuno_the_Killer
 
@@ -189,7 +189,7 @@ The following fish have been verified using this profile collection.
 - [x] Inkfish
 - [ ] Paikiller
 - [x] Cirrostratus
-- [ ] The_Second_One
+- [x] The_Second_One
 - [ ] Basking_Shark
 - [ ] Sea_Butterfly
 
@@ -206,15 +206,15 @@ The following fish have been verified using this profile collection.
 ## Dravania
 
 ### The Dravanian Forelands
-- [ ] Scaleripper
-- [ ] Twin-tongued_Carp
+- [x] Scaleripper
+- [x] Twin-tongued_Carp
 - [ ] The_Dreamweaver
 - [ ] Thunderscale
 - [ ] Meteortoise
 - [x] Hraesvelgrs_Tear
-- [ ] Riddle
+- [x] Riddle
 - [x] The_Lord_of_Lords
-- [ ] Problematicus
+- [x] Problematicus
 
 ### The Dravanian Hinterlands
 - [x] The_Ewer_King
@@ -225,10 +225,10 @@ The following fish have been verified using this profile collection.
 
 ### The Churning Mists
 - [x] Vidofnir
-- [ ] Moggle_Mogpom
-- [ ] Thousand_Fin
+- [x] Moggle_Mogpom
+- [x] Thousand_Fin
 - [x] The_Soul_of_the_Martyr
-- [ ] Dimorphodon
+- [x] Dimorphodon
 - [ ] Bloodchaser
 - [ ] Raimdellopterus
 
@@ -240,7 +240,7 @@ The following fish have been verified using this profile collection.
 - [ ] Bloodtail_Zombie
 
 ### The Fringes
-- [ ] Hardhead_Trout
+- [x] Hardhead_Trout
 - [ ] Xenacanthus
 - [ ] Sapphire_Fan
 - [ ] The_Archbishop
@@ -289,7 +289,7 @@ The following fish have been verified using this profile collection.
 - [ ] Banderole
 - [ ] Blade_Skipper
 - [ ] Duskfish
-- [ ] The_Word_of_God
+- [x] The_Word_of_God
 - [ ] Yat_Khan
 - [ ] Nhaamas_Treasure
 - [ ] The_Unconditional
@@ -297,11 +297,11 @@ The following fish have been verified using this profile collection.
 ## Hingashi
 
 ### Kugane
-- [ ] Rising_Dragon
+- [x] Rising_Dragon
 
 ### Shirogane
 - [x] The_Gambler
-- [ ] Princess_Killifish
+- [x] Princess_Killifish
 
 ## Norvrandt
 
@@ -322,7 +322,7 @@ The following fish have been verified using this profile collection.
 - [ ] Listracanthus
 
 ### Kholusia
-- [ ] Giant_Taimen
+- [x] Giant_Taimen
 - [ ] Steel_Fan
 - [ ] White_Ronso
 - [ ] Bronze_Sole
@@ -412,3 +412,5 @@ The following fish have been verified using this profile collection.
 ### Elpis
 - [ ] Planetes
 - [ ] Antheian_Dahlia
+
+Warden's Wand is looping
