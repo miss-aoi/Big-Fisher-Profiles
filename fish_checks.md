@@ -159,7 +159,7 @@ The following fish have been verified using this profile collection.
 - [ ] Blue_Corpse
 - [x] Anomalocaris
 - [x] Mahar
-- [ ] Shonisaurus
+- [x] Shonisaurus
 
 ### Coerthas Western Highlands
 - [x] Fat_Purse
@@ -178,10 +178,10 @@ The following fish have been verified using this profile collection.
 - [x] Aetherlouse
 - [x] Ignus_Horn
 - [x] Blood_Red_Bonytongue
-- [ ] Void_Bass
+- [x] Void_Bass
 - [x] Ninja_Betta
 - [x] Canavan
-- [ ] Kuno_the_Killer
+- [x] Kuno_the_Killer
 
 ## Abalathia's Spine
 
@@ -197,7 +197,7 @@ The following fish have been verified using this profile collection.
 - [x] Augmented_High_Allagan_Helmet
 - [x] Aetherochemical_Compound_666
 - [x] Ceti
-- [ ] Aphotic_Pirarucu
+- [x] Aphotic_Pirarucu
 - [x] Hundred-eyed_Axolotl
 - [x] Crystal_Pigeon
 - [x] Allagan_Bladeshark
@@ -208,7 +208,7 @@ The following fish have been verified using this profile collection.
 ### The Dravanian Forelands
 - [x] Scaleripper
 - [x] Twin-tongued_Carp
-- [ ] The_Dreamweaver
+- [x] The_Dreamweaver
 - [ ] Thunderscale
 - [ ] Meteortoise
 - [x] Hraesvelgrs_Tear
@@ -241,10 +241,10 @@ The following fish have been verified using this profile collection.
 
 ### The Fringes
 - [x] Hardhead_Trout
-- [ ] Xenacanthus
+- [x] Xenacanthus
 - [ ] Sapphire_Fan
-- [ ] The_Archbishop
-- [ ] Downstream_Loach "1">
+- [x] The_Archbishop
+- [ ] Downstream_Loach
 - [ ] Corpse_Chub
 
 ### The Peaks
@@ -267,7 +267,7 @@ The following fish have been verified using this profile collection.
 - [ ] The_Ruby_Dragon
 - [ ] The_Vegetarian
 - [ ] Seven_Stars
-- [ ] The_Winter_Queen "1">
+- [x] The_Winter_Queen
 - [ ] Argonautica
 - [ ] Pinhead
 - [ ] Rakshasa
@@ -278,7 +278,7 @@ The following fish have been verified using this profile collection.
 - [ ] Hermits_End
 - [ ] Warden_of_the_Seven_Hues
 - [ ] The_Unraveled_Bow
-- [ ] Bokuden
+- [x] Bokuden
 - [ ] Suiten_Ippeki
 - [ ] Axelrod
 - [ ] Hagoromo_Bijin
@@ -308,7 +308,7 @@ The following fish have been verified using this profile collection.
 ### The Crystarium
 - [ ] Aster_Trivi
 - [ ] The_Sinsteeped
-- [ ] Loose_Pendant
+- [x] Loose_Pendant
 
 ### Eulmore
 - [ ] Winged_Dame
@@ -324,9 +324,9 @@ The following fish have been verified using this profile collection.
 ### Kholusia
 - [x] Giant_Taimen
 - [ ] Steel_Fan
-- [ ] White_Ronso
+- [x] White_Ronso
 - [ ] Bronze_Sole
-- [ ] Steel_Razor
+- [x] Steel_Razor
 - [ ] Shadeshifter
 - [ ] Aquamaton
 - [ ] Henodus_Grandis
@@ -339,7 +339,7 @@ The following fish have been verified using this profile collection.
 
 ### Il Mheg
 - [ ] Leannisg
-- [ ] The_Sound_of_Fury
+- [x] The_Sound_of_Fury
 - [ ] Ealad_Skaan
 - [ ] Sunken_Tome
 - [ ] Fae_Rainbow
@@ -357,9 +357,9 @@ The following fish have been verified using this profile collection.
 - [ ] Golden_Pipira
 
 ### The Tempest
-- [ ] Ondo_Sigh
+- [x] Ondo_Sigh
 - [ ] The_Ondotaker
-- [ ] Mora_Tecta
+- [x] Mora_Tecta
 - [ ] Lancetfish
 - [ ] Maru_Crab
 - [ ] The_Mother_of_All_Pancakes
@@ -374,14 +374,14 @@ The following fish have been verified using this profile collection.
 - [ ] Swampsucker_Bowfin
 
 ### Old Sharlayan
-- [ ] Aetherolectric_Guitarfish
+- [x] Aetherolectric_Guitarfish
 - [ ] Greatsword_Snook
 - [ ] Catastrophizer
 
 ## ILSABARD
 
 ### Radz-at-Han
-- [ ] Earful
+- [x] Earful
 
 ### Thavnair
 - [ ] Lale_Crab
@@ -397,7 +397,7 @@ The following fish have been verified using this profile collection.
 ## The Sea Of Stars
 
 ### Mare Lamentorum
-- [ ] Disappirarucu
+- [x] Disappirarucu
 - [ ] Frozen_Regotoise
 
 ### Ultima Thule
