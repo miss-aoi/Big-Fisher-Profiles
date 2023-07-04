@@ -87,7 +87,7 @@ The following fish have been verified using this profile collection.
 - [x] Moldva
 - [x] The_Assassin
 - [ ] Sylphsbane
-- [ ] Magicked_Mushroom
+- [x] Magicked_Mushroom
 
 ### South Shroud
 - [x] Vip_Viper
@@ -244,8 +244,8 @@ The following fish have been verified using this profile collection.
 - [x] Xenacanthus
 - [ ] Sapphire_Fan
 - [x] The_Archbishop
-- [ ] Downstream_Loach
-- [ ] Corpse_Chub
+- [x] Downstream_Loach
+- [x] Corpse_Chub
 
 ### The Peaks
 - [ ] Bondsplitter
@@ -274,7 +274,7 @@ The following fish have been verified using this profile collection.
 
 ### Yanxia
 - [ ] Pomegranate_Trout
-- [ ] Glarramundi
+- [x] Glarramundi
 - [x] Hermits_End
 - [ ] Warden_of_the_Seven_Hues
 - [ ] The_Unraveled_Bow
@@ -351,7 +351,7 @@ The following fish have been verified using this profile collection.
 - [x] Priest_of_YxLokwa
 - [x] Greater_Serpent_of_Ronka
 - [ ] Pearl_Pipira
-- [ ] Black_Jet
+- [x] Black_Jet
 - [ ] Recordkiller
 - [ ] Deephaunt
 - [x] Golden_Pipira
@@ -403,7 +403,7 @@ The following fish have been verified using this profile collection.
 ### Ultima Thule
 - [x] Foun_Ahlm
 - [ ] Starscryer
-- [ ] Forbiddingway
+- [x] Forbiddingway
 - [ ] Argonauta_argo
 - [ ] Cosmic_Haze
 

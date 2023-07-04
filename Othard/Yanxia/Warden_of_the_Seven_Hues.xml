@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<!-- Indigo Prismfish -->
-		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(24203,3) and HasAtLeast(20675,1) and not Core.Player.HasAura(568) and IsTimeBetween(0,4)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Mooch="1" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(24203,3) and HasAtLeast(20675,1) and not Core.Player.HasAura(568) and IsTimeBetween(0,4)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Heavy" />
 			</PatientTugs>
@@ -45,7 +45,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<!-- Firelight Goldfish -->
-		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(23056,3) and HasAtLeast(24203,3) and HasAtLeast(20675,1) and not Core.Player.HasAura(568) and IsTimeBetween(4,8)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Mooch="1" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(23056,3) and HasAtLeast(24203,3) and HasAtLeast(20675,1) and not Core.Player.HasAura(568) and IsTimeBetween(4,8)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Heavy" />
 			</PatientTugs>
