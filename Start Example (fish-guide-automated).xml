@@ -492,7 +492,7 @@
         </If>
 
         <!-- Hraesvelgrs_Tear -->
-        <If Condition="not HasCaughtFish(16751 and IsTimeBetween(1,6))">
+        <If Condition="not HasCaughtFish(16751) and IsTimeBetween(1,6))">
             <LLoadProfile Path="Dravania/The_Dravanian_Forelands/Hraesvelgrs_Tear.xml"/>
         </If>
 
