@@ -85,7 +85,7 @@ The following fish have been verified using this profile collection.
 ### East Shroud
 - [ ] Dark_Ambusher
 - [x] Moldva
-- [ ] The_Assassin
+- [x] The_Assassin
 - [ ] Sylphsbane
 - [ ] Magicked_Mushroom
 
@@ -106,7 +106,7 @@ The following fish have been verified using this profile collection.
 - [x] Cornelia
 
 ### The Lavender Beds
-- [ ] Sweetnewt
+- [x] Sweetnewt
 
 ## Thanalan
 
@@ -142,7 +142,7 @@ The following fish have been verified using this profile collection.
 
 ### Northern Thanalan
 - [x] Hannibal
-- [ ] Wootz_Knifefish_Zenith
+- [x] Wootz_Knifefish_Zenith
 
 ### The Goblet
 - [ ] Spearnose
@@ -156,7 +156,7 @@ The following fish have been verified using this profile collection.
 - [x] Dawn_Maiden
 - [x] The_Matriarch
 - [x] Darkstar
-- [ ] Blue_Corpse
+- [x] Blue_Corpse
 - [x] Anomalocaris
 - [x] Mahar
 - [x] Shonisaurus
@@ -210,7 +210,7 @@ The following fish have been verified using this profile collection.
 - [x] Twin-tongued_Carp
 - [x] The_Dreamweaver
 - [ ] Thunderscale
-- [ ] Meteortoise
+- [x] Meteortoise
 - [x] Hraesvelgrs_Tear
 - [x] Riddle
 - [x] The_Lord_of_Lords
@@ -250,7 +250,7 @@ The following fish have been verified using this profile collection.
 ### The Peaks
 - [ ] Bondsplitter
 - [ ] Drepanaspis
-- [ ] The_Undecided
+- [x] The_Undecided
 - [ ] The_Last_Tear
 - [ ] Moksha
 - [ ] Hemon
@@ -285,7 +285,7 @@ The following fish have been verified using this profile collection.
 - [ ] Hagoromo_Koi
 
 ### The Azim Steppe
-- [ ] Garden_Skipper
+- [x] Garden_Skipper
 - [ ] Banderole
 - [ ] Blade_Skipper
 - [ ] Duskfish
@@ -307,7 +307,7 @@ The following fish have been verified using this profile collection.
 
 ### The Crystarium
 - [ ] Aster_Trivi
-- [ ] The_Sinsteeped
+- [x] The_Sinsteeped
 - [x] Loose_Pendant
 
 ### Eulmore
@@ -369,7 +369,7 @@ The following fish have been verified using this profile collection.
 ## The Northern Empty
 
 ### Labrinthos
-- [ ] Jumbo_Snook
+- [x] Jumbo_Snook
 - [ ] Mossgill_Salmon
 - [ ] Swampsucker_Bowfin
 

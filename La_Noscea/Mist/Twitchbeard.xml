@@ -5,7 +5,7 @@
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY Twitchbeard "5">
+	<!ENTITY Twitchbeard "1">
 ]>
 <Profile>
 	<Name>Twitchbeard</Name>

@@ -1034,7 +1034,7 @@
         </If>
 
         <!-- Sea_Butterfly -->
-        <If Condition="not HasAtLeast(17591,&Sea_Butterfly;) and IsTimeBetween(0,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')">
+        <If Condition="not HasAtLeast(17591,&Sea_Butterfly;) and IsTimeBetween(4,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')">
             <LLoadProfile Path="Abalathias_Spine/The_Sea_of_Clouds/Sea_Butterfly.xml"/>
         </If>
 
@@ -1783,37 +1783,37 @@
         </If>
 
         <!-- Antheian_Dahlia -->
-        <If Condition="not HasAtLeast(38836,&Antheian_Dahlia;) and IsTimeBetween(8,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(961, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(961, TimeSpan.FromHours(-8), 'Clouds')">
+        <If Condition="not HasAtLeast(38836,&Antheian_Dahlia;) and IsTimeBetween(3,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(961, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(961, TimeSpan.FromHours(-8), 'Clouds')">
             <LLoadProfile Path="The_World_Unsundered/Elpis/Antheian_Dahlia.xml"/>
         </If>
 
 
         <!-- BAIT - Generally one used per cast -->
-        <!-- BAITBUGS - White Scrips-->
+        <!-- BAITBUGS -->
         <If Condition="(&Celestial; == 1) and (&Dammroen_Herring; == 1) and (&Deephaunt; == 1) and (&Ealad_Skaan; == 1) and (&Giant_Taimen; == 1) and (&Gold_Hammer; == 1) and (&Listracanthus; == 1) and (&Loose_Pendant; == 1) and (&Moonlight_Guppy; == 1) and (&Recordkiller; == 1) and (&Sweetheart; == 1) and (&The_Jaws_of_Undeath; == 1) and (&The_Sound_of_Fury; == 1) and (&The_Unforgiven; == 1) and (&White_Ronso; == 1) and not HasAtLeast(27589,50)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27589,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
-        <!-- BASS BALL - Shops -->
+        <!-- BASS BALLS -->
         <If Condition="(&Floating_Boulder; == 1) and not HasAtLeast(2595,50)">
-            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2595,'Amount':50,'Enabled':true,'Type':'Culinarian'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2595,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
-        <!-- BLOODWORM - Shops -->
+        <!-- BLOODWORMs -->
         <If Condition="(&Matron_Carp; == 1) and (&Old_Softie; == 1) and (&Olgoi-Khorkhoi; == 1) and not HasAtLeast(2590,50)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2590,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
-        <!-- BLUE BOBBIT - White Scrips -->
+        <!-- BLUE BOBBIT -->
         <If Condition="(&Kuer; == 1) and (&Seven_Stars; == 1) and (&The_Gambler; == 1) and (&The_Ruby_Dragon; == 1) and (&The_Winter_Queen; == 1) and not HasAtLeast(20676,50)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20676,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
-        <!-- BUTTERWORM - Shops -->
+        <!-- BUTTERWORMs -->
         <If Condition="(&Crystal_Perch; == 1) and (&Ghost_Carp; == 1) and (&Glimmerscale; == 1) and (&Mirrorscale; == 1) and (&Mud_Pilgrim; == 1) and (&Old_Hollow_Eyes; == 1) and (&Sylphsbane; == 1) and (&The_Assassin; == 1) and (&Vip_Viper; == 1) and (&Worm_of_Nym; == 1) and not HasAtLeast(2594,50)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
-        <!-- BRUTE LEECH - White Scrips -->
+        <!-- BRUTE LEECH -->
         <If Condition="(&Bishopfish; == 1) and (&Captain_Nemo; == 1) and (&Fat_Purse; == 1) and (&Inkfish; == 1) and (&La_Reale; == 1) and (&Moggle_Mogpom; == 1) and (&Scaleripper; == 1) and (&The_Dreamweaver; == 1) and (&The_Impaler; == 1) and (&Thousand_Fin; == 1) and (&Twin-tongued_Carp; == 1) and (&Vidofnir; == 1) and not HasAtLeast(12711,50)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
-        <!-- CHIMERA WORM - White Scrips -->
+        <!-- CHIMERA WORM -->
         <If Condition="(&Cosmic_Haze; == 1) and (&Foun_Ahlm; == 1) and (&Frozen_Regotoise; == 1) and not HasAtLeast(36595,50)">
         <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36595,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
@@ -2003,7 +2003,7 @@
         <If Condition="(&Bigcuda; == 1) and (&Mossgill_Salmon; == 1) and (&Swampsucker_Bowfin; == 1) and not HasAtLeast(36590,3)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36590,'Amount':3,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
-        <!-- MINNOW FLOATING -->
+        <!-- FLOATING MINNOW -->
         <If Condition="(&Blue_Widow; == 1) and (&Gigantshark; == 1) and (&Pirates_Bane; == 1) and not HasAtLeast(2611,3)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2611,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
         </If>

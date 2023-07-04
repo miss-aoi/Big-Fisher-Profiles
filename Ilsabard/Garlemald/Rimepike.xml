@@ -12,9 +12,9 @@
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Rimepike..." />
-		<If condition="not HasAtLeast(20675,50)">
-			<!--Stonefly Larva-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20675,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+		<If condition="not HasAtLeast(36591,50)">
+			<!--Mayfly-->
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36591,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3902)">
 			<LisbethTravel Area="Garlemald" XYZ="-483.788, 20.31418, 467.972" />
@@ -22,7 +22,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(36683,&Rimepike;) and HasAtLeast(20675,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(958, 'Snow')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Mayfly" condition="not HasAtLeast(36683,&Rimepike;) and HasAtLeast(20675,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(958, 'Snow')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />
 				<PatienceTug moochLevel="1" TugType="Medium" />

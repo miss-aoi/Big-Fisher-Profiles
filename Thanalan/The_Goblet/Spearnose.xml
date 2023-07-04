@@ -5,7 +5,7 @@
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY Spearnose "5">
+	<!ENTITY Spearnose "1">
 ]>
 <Profile>
 	<Name>Spearnose</Name>

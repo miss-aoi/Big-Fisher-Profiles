@@ -5,7 +5,7 @@
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY Sweetnewt "5">
+	<!ENTITY Sweetnewt "1">
 ]>
 <Profile>
 	<Name>Sweetnewt</Name>
