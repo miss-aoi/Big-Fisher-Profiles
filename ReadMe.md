@@ -14,7 +14,7 @@ This profile set is designed to catch all Big Fish until level 90.
 
 AH_H4sIAAAAAAAACu2ZXW+bMBSG/wrydTKl66Rp3KUkbSKlaySYdjHtwoEDWDE28oc0VPW/z24GoZRxVXF1bt/X58MWD6DjZ3JUoMF8pxWQkNyxYnnPdAlqmSiWnptlYgtNFuTAtHnK7ygzmoS/nslW0BOHjIRGWVgQb/xLsT5RTk3JqAjiCrhxwTspzz+BngdBrbwXxjLDpPiPv9kluxEraWrwNgm/3Hz99lbrUvbN2CgpipFMF2OqjcuKiUYuC3y11e1QfdNMax+gAJFR1Ywk7LyplrpFE111a4Zn9L5C29sPDZHVRlad42NImFOu4dVeWyMfpUzLtlpf+9ytfBK8eZV6Ja5JYqtymkLMad2X9xkIw1LKI6pN39hI6zY4bMU9o/V71R/IkRoGIoWh7rsaq30A45/7rU5pfQ16pH8SVsEGOHVHuPq0chITQ8kfWWkrL6t+aCsOwsfk2Mh6nRtQEbVFed35QD+wijnz5mUxSSAYB3CwbQDZQ/aQvVnZE6l775ggLhWrauQP+UP+5uQvknUNKnefcmQP2UP25mTvgVP38VNBJBX+eSJ9SN+89DUqcLMX4QcviZIWBy+IICI4K4I7yAqoJIcg8sNTQAQRQURwVgT3KQT3FBTDP1BkD9mblb2ju/djwlaBv0nB8QuOX3D8Mid+7rKZ1ZAFD/LUIH1IH9L3wfT9fvkLTWrmoC4jAAA=
 
-Open "Start.xml" and change the 0 to 1 for each Big fish you want.
+Copy or rename one of the example Start.xml to just "Start.xml". The "fish-guide-automated" version of Start.xml will checks the fish guide directly, but the others will need to have 1 set for each Big fish you want to fish for.
 
 Some of the fish in locations in game are very, very specific and ExFish doesn't always seem to go to exactly the same position. Because of this, it is advised to keep an eye on the character to see if they need to be moved a little in order to hit the appropriate fishing spot.
 
