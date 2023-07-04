@@ -83,7 +83,7 @@ The following fish have been verified using this profile collection.
 - [x] Bloodbath
 
 ### East Shroud
-- [ ] Dark_Ambusher
+- [x] Dark_Ambusher
 - [x] Moldva
 - [x] The_Assassin
 - [ ] Sylphsbane
@@ -190,7 +190,7 @@ The following fish have been verified using this profile collection.
 - [x] Paikiller
 - [x] Cirrostratus
 - [x] The_Second_One
-- [ ] Basking_Shark
+- [x] Basking_Shark
 - [ ] Sea_Butterfly
 
 ### Azys Lla
@@ -275,20 +275,20 @@ The following fish have been verified using this profile collection.
 ### Yanxia
 - [ ] Pomegranate_Trout
 - [ ] Glarramundi
-- [ ] Hermits_End
+- [x] Hermits_End
 - [ ] Warden_of_the_Seven_Hues
 - [ ] The_Unraveled_Bow
 - [x] Bokuden
 - [ ] Suiten_Ippeki
 - [ ] Axelrod
-- [ ] Hagoromo_Bijin
+- [x] Hagoromo_Bijin
 - [ ] Hagoromo_Koi
 
 ### The Azim Steppe
 - [x] Garden_Skipper
 - [ ] Banderole
-- [ ] Blade_Skipper
-- [ ] Duskfish
+- [x] Blade_Skipper
+- [x] Duskfish
 - [x] The_Word_of_God
 - [ ] Yat_Khan
 - [ ] Nhaamas_Treasure
@@ -316,7 +316,7 @@ The following fish have been verified using this profile collection.
 ### Lakeland
 - [x] Sweetheart
 - [ ] Moonlight_Guppy
-- [ ] The_Unforgiven
+- [x] The_Unforgiven
 - [ ] Python_Discus
 - [x] The_Jaws_of_Undeath
 - [ ] Listracanthus
@@ -334,7 +334,7 @@ The following fish have been verified using this profile collection.
 ### Amh Araeng
 - [ ] The_Horned_King
 - [ ] Cinder_Surprise
-- [ ] Ambling_Caltrop
+- [x] Ambling_Caltrop
 - [ ] Nabaath_Saw
 
 ### Il Mheg
@@ -344,7 +344,7 @@ The following fish have been verified using this profile collection.
 - [ ] Sunken_Tome
 - [ ] Fae_Rainbow
 - [ ] Celestial
-- [ ] Dammroen_Herring
+- [x] Dammroen_Herring
 - [ ] Gold_Hammer
 
 ### The Rak'tika Greatwood
@@ -354,7 +354,7 @@ The following fish have been verified using this profile collection.
 - [ ] Black_Jet
 - [ ] Recordkiller
 - [ ] Deephaunt
-- [ ] Golden_Pipira
+- [x] Golden_Pipira
 
 ### The Tempest
 - [x] Ondo_Sigh
@@ -364,14 +364,14 @@ The following fish have been verified using this profile collection.
 - [ ] Maru_Crab
 - [ ] The_Mother_of_All_Pancakes
 - [ ] Starchaser
-- [ ] Opal_Shrimp
+- [x] Opal_Shrimp
 
 ## The Northern Empty
 
 ### Labrinthos
 - [x] Jumbo_Snook
 - [ ] Mossgill_Salmon
-- [ ] Swampsucker_Bowfin
+- [x] Swampsucker_Bowfin
 
 ### Old Sharlayan
 - [x] Aetherolectric_Guitarfish
@@ -391,8 +391,8 @@ The following fish have been verified using this profile collection.
 - [ ] Browned_Banana_Eel
 
 ### Garlemald
-- [ ] Rimepike
-- [ ] Sovereign_Shadow
+- [x] Rimepike
+- [x] Sovereign_Shadow
 
 ## The Sea Of Stars
 
@@ -401,7 +401,7 @@ The following fish have been verified using this profile collection.
 - [ ] Frozen_Regotoise
 
 ### Ultima Thule
-- [ ] Foun_Ahlm
+- [x] Foun_Ahlm
 - [ ] Starscryer
 - [ ] Forbiddingway
 - [ ] Argonauta_argo
@@ -410,7 +410,7 @@ The following fish have been verified using this profile collection.
 ## The Wworld Unsundered
 
 ### Elpis
-- [ ] Planetes
+- [x] Planetes
 - [ ] Antheian_Dahlia
 
 Warden's Wand is looping

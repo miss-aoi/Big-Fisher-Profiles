@@ -844,7 +844,7 @@
         </If>
 
         <!-- Listracanthus -->
-        <If Condition="not HasCaughtFish(33239) and IsTimeBetween(15,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(813, 'Fog')">
+        <If Condition="not HasCaughtFish(33239) and IsTimeBetween(15,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(813, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(813, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
             <LLoadProfile Path="Norvrandt/Lakeland/Listracanthus.xml"/>
         </If>
 
