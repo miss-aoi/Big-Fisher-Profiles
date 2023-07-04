@@ -187,7 +187,7 @@ The following fish have been verified using this profile collection.
 
 ### The Sea of Clouds
 - [x] Inkfish
-- [ ] Paikiller
+- [x] Paikiller
 - [x] Cirrostratus
 - [x] The_Second_One
 - [ ] Basking_Shark
@@ -254,7 +254,7 @@ The following fish have been verified using this profile collection.
 - [ ] The_Last_Tear
 - [ ] Moksha
 - [ ] Hemon
-- [ ] Lily_of_the_Veil
+- [x] Lily_of_the_Veil
 
 ### The Lochs
 - [ ] Diamond-eye
@@ -265,7 +265,7 @@ The following fish have been verified using this profile collection.
 ### The Ruby Sea
 - [ ] Kuer
 - [ ] The_Ruby_Dragon
-- [ ] The_Vegetarian
+- [x] The_Vegetarian
 - [ ] Seven_Stars
 - [x] The_Winter_Queen
 - [ ] Argonautica
@@ -314,11 +314,11 @@ The following fish have been verified using this profile collection.
 - [ ] Winged_Dame
 
 ### Lakeland
-- [ ] Sweetheart
+- [x] Sweetheart
 - [ ] Moonlight_Guppy
 - [ ] The_Unforgiven
 - [ ] Python_Discus
-- [ ] The_Jaws_of_Undeath
+- [x] The_Jaws_of_Undeath
 - [ ] Listracanthus
 
 ### Kholusia
@@ -338,7 +338,7 @@ The following fish have been verified using this profile collection.
 - [ ] Nabaath_Saw
 
 ### Il Mheg
-- [ ] Leannisg
+- [x] Leannisg
 - [x] The_Sound_of_Fury
 - [ ] Ealad_Skaan
 - [ ] Sunken_Tome
@@ -348,8 +348,8 @@ The following fish have been verified using this profile collection.
 - [ ] Gold_Hammer
 
 ### The Rak'tika Greatwood
-- [ ] Priest_of_YxLokwa
-- [ ] Greater_Serpent_of_Ronka
+- [x] Priest_of_YxLokwa
+- [x] Greater_Serpent_of_Ronka
 - [ ] Pearl_Pipira
 - [ ] Black_Jet
 - [ ] Recordkiller
