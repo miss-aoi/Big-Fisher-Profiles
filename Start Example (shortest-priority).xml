@@ -1492,7 +1492,7 @@
         </If>
 
         <!-- Hippo_Frog -->
-        <If Condition="not HasAtLeast(36682,&Hippo_Frog;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Shower')">
+        <If Condition="not HasAtLeast(36682,&Hippo_Frog;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Showers')">
             <LLoadProfile Path="Ilsabard/Thavnair/Hippo_Frog.xml"/>
         </If>
 

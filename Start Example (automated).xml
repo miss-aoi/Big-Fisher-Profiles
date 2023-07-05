@@ -1167,7 +1167,7 @@
         </If>
 
         <!-- Hippo_Frog -->
-        <If Condition="not HasCaughtFish(36682) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Shower')">
+        <If Condition="not HasCaughtFish(36682) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Showers')">
             <LLoadProfile Path="Ilsabard/Thavnair/Hippo_Frog.xml"/>
         </If>
 
