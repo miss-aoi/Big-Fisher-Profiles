@@ -1227,9 +1227,9 @@
         <!-- 10 HOURS -->
 
         <!-- Aquamaton -->
-        <If Condition="not HasAtLeast(33240,&Aquamaton;) and IsTimeBetween(6,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Gales') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(814, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
+        <!-- <If Condition="not HasAtLeast(33240,&Aquamaton;) and IsTimeBetween(6,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Gales') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(814, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
             <LLoadProfile Path="Norvrandt/Kholusia/Aquamaton.xml"/>
-        </If>
+        </If> -->
 
         <!-- Darkstar -->
         <If Condition="not HasAtLeast(8769,&Darkstar;) and (IsTimeBetween(18,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards', 'Snow')">

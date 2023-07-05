@@ -1516,9 +1516,9 @@
         </If>
 
         <!-- Aquamaton -->
-        <If Condition="not HasAtLeast(33240,&Aquamaton;) and IsTimeBetween(6,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Gales') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(814, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
+        <!-- <If Condition="not HasAtLeast(33240,&Aquamaton;) and IsTimeBetween(6,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Gales') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(814, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
             <LLoadProfile Path="Norvrandt/Kholusia/Aquamaton.xml"/>
-        </If>
+        </If> -->
 
         <!-- Henodus_Grandis -->
         <If Condition="not HasAtLeast(32051,&Henodus_Grandis;) and (IsTimeBetween(21,24) or IsTimeBetween(0,0)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Clouds')">
