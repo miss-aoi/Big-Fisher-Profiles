@@ -28,7 +28,7 @@
 			<Log Message="Waiting for window to open..." />
                         <WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Midge Basket" condition="not HasAtLeast(7923,&Sweetnewt;) and HasAtLeast(2592,1) and (IsTimeBetween(23,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(340, 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Midge Basket" condition="not HasAtLeast(7923,&Sweetnewt;) and HasAtLeast(2592,1) and (IsTimeBetween(23,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(340, 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Medium" />

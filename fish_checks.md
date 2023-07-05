@@ -145,7 +145,7 @@ The following fish have been verified using this profile collection.
 - [x] Wootz_Knifefish_Zenith
 
 ### The Goblet
-- [ ] Spearnose
+- [x] Spearnose
 
 ## Coerthas
 
@@ -237,7 +237,7 @@ The following fish have been verified using this profile collection.
 ### Rhalgr's Reach
 - [x] Hookstealer
 - [ ] Watcher_Catfish
-- [ ] Bloodtail_Zombie
+- [x] Bloodtail_Zombie
 
 ### The Fringes
 - [x] Hardhead_Trout
@@ -282,7 +282,7 @@ The following fish have been verified using this profile collection.
 - [ ] Suiten_Ippeki
 - [ ] Axelrod
 - [x] Hagoromo_Bijin
-- [ ] Hagoromo_Koi
+- [x] Hagoromo_Koi
 
 ### The Azim Steppe
 - [x] Garden_Skipper
@@ -291,7 +291,7 @@ The following fish have been verified using this profile collection.
 - [x] Duskfish
 - [x] The_Word_of_God
 - [ ] Yat_Khan
-- [ ] Nhaamas_Treasure
+- [x] Nhaamas_Treasure
 - [ ] The_Unconditional
 
 ## Hingashi
@@ -358,7 +358,7 @@ The following fish have been verified using this profile collection.
 
 ### The Tempest
 - [x] Ondo_Sigh
-- [ ] The_Ondotaker
+- [x] The_Ondotaker
 - [x] Mora_Tecta
 - [ ] Lancetfish
 - [ ] Maru_Crab

@@ -26,7 +26,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Chimera Worm" condition="not HasAtLeast(38835,&Cosmic_Haze;) and HasAtLeast(36595,1) and (IsTimeBetween(20,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Astromagnetic Storm')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Chimera Worm" condition="not HasAtLeast(38835,&Cosmic_Haze;) and HasAtLeast(36595,1) and (IsTimeBetween(20,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Astromagnetic Storm')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />
 				<PatienceTug moochLevel="1" TugType="Medium" />

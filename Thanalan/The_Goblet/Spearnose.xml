@@ -28,7 +28,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Caddisfly Larva" condition="not HasAtLeast(7919,&Spearnose;) and HasAtLeast(2607,1) and IsTimeBetween(21,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(341, 'Clouds', 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Chum="True">
+		<ExFish Bait="Caddisfly Larva" condition="not HasAtLeast(7919,&Spearnose;) and HasAtLeast(2607,1) and IsTimeBetween(21,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(341, 'Clouds', 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-13.18043, -24.07133, 41.33421" Heading="4.868697" />
 				<FishSpot XYZ="-13.18544, -24.07133, 58.71743" Heading="4.491707" />

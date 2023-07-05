@@ -26,7 +26,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Desert Dessert Frog" condition="not HasAtLeast(28927,&Ambling_Caltrop;) and HasAtLeast(27584,1) and IsTimeBetween(12,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Desert Dessert Frog" condition="not HasAtLeast(28927,&Ambling_Caltrop;) and HasAtLeast(27584,1) and IsTimeBetween(12,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Medium" />

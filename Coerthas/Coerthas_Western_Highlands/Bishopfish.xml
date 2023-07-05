@@ -26,7 +26,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Brute Leech" condition="not HasAtLeast(17577,&Bishopfish;) and HasAtLeast(12711,1) and IsTimeBetween(10,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Chum="True">
+		<ExFish Bait="Brute Leech" condition="not HasAtLeast(17577,&Bishopfish;) and HasAtLeast(12711,1) and IsTimeBetween(10,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-21.4197, 89.14197, -559.7135" Heading="4.573871" />
 				<FishSpot XYZ="-32.44563, 89.25902, -571.203" Heading="6.274516" />

@@ -26,7 +26,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Bladed Steel Jig" condition="not HasAtLeast(17579,&Paikiller;) and HasAtLeast(12707,1) and IsTimeBetween(8,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(401, TimeSpan.FromHours(-8), 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Bladed Steel Jig" condition="not HasAtLeast(17579,&Paikiller;) and HasAtLeast(12707,1) and IsTimeBetween(8,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(401, TimeSpan.FromHours(-8), 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Medium" />

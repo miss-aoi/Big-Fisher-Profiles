@@ -22,7 +22,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Honey Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8752,&Imperial_Goldfish;) and HasAtLeast(2599,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Honey Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8752,&Imperial_Goldfish;) and HasAtLeast(2599,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug MoochLevel="0" TugType="Heavy" />
 				<PatienceTug MoochLevel="1" TugType="Heavy" />
@@ -37,7 +37,7 @@
 				<Keeper name="Jungle Catfish" />
 			</Keepers>
 		</ExFish>
-		<ExFish Bait="Honey Worm" Condition="Core.Player.HasAura(568) and not HasAtLeast(8752,&Imperial_Goldfish;) and HasAtLeast(2599,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Mooch="1" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Honey Worm" Condition="Core.Player.HasAura(568) and not HasAtLeast(8752,&Imperial_Goldfish;) and HasAtLeast(2599,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Mooch="1" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Medium" />

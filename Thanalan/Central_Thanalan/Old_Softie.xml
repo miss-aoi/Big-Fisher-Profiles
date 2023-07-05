@@ -26,7 +26,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Bloodworm" condition="not HasAtLeast(7703,&Old_Softie;) and HasAtLeast(2590,1) and IsTimeBetween(17,21)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Chum="True">
+		<ExFish Bait="Bloodworm" condition="not HasAtLeast(7703,&Old_Softie;) and HasAtLeast(2590,1) and IsTimeBetween(17,21)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="342.5189, -18.55594, 16.56027" Heading="0.1498213" />
 				<FishSpot XYZ="370.7016, -22.94275, 13.6297" Heading="0.926841" />

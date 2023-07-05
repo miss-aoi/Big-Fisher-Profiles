@@ -26,7 +26,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Jerked Ovim" condition="not HasAtLeast(28069,&The_Horned_King;) and HasAtLeast(27586,1) and IsTimeBetween(0,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Dust Storms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Jerked Ovim" condition="not HasAtLeast(28069,&The_Horned_King;) and HasAtLeast(27586,1) and IsTimeBetween(0,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Dust Storms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />
 				<PatienceTug moochLevel="1" TugType="Medium" />

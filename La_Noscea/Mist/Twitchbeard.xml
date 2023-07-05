@@ -28,7 +28,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Spoon Worm" condition="not HasAtLeast(7917,&Twitchbeard;) and HasAtLeast(2596,1) and IsTimeBetween(4,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(339, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Spoon Worm" condition="not HasAtLeast(7917,&Twitchbeard;) and HasAtLeast(2596,1) and IsTimeBetween(4,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(339, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Medium" />

@@ -26,7 +26,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Magma Worm" condition="not HasAtLeast(16751,&Hraesvelgrs_Tear;) and HasAtLeast(12709,1) and IsTimeBetween(2,6)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True">
+		<ExFish Bait="Magma Worm" condition="not HasAtLeast(16751,&Hraesvelgrs_Tear;) and HasAtLeast(12709,1) and IsTimeBetween(2,6)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True">
 			<FishSpots>
 				<!-- <FishSpot XYZ="-471.8031, -10.14293, -475.2836" Heading="1.936656" />
 				<FishSpot XYZ="-478.3157, -11.6859, -448.0603" Heading="3.788103" />
