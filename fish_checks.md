@@ -352,7 +352,7 @@ The following fish have been verified using this profile collection.
 - [x] Greater_Serpent_of_Ronka
 - [ ] Pearl_Pipira
 - [x] Black_Jet
-- [ ] Recordkiller
+- [x] Recordkiller
 - [ ] Deephaunt
 - [x] Golden_Pipira
 
