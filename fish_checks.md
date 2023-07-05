@@ -412,5 +412,3 @@ The following fish have been verified using this profile collection.
 ### Elpis
 - [x] Planetes
 - [ ] Antheian_Dahlia
-
-Warden's Wand is looping
