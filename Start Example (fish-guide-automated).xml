@@ -1473,7 +1473,7 @@
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20676,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- BUTTERWORMs -->
-        <If Condition="not HasAtLeast(2594,50) and (not HasCaughtFish(7682) or not HasCaughtFish(7700) or not HasCaughtFish(7700) or not HasCaughtFish(7714) or not HasCaughtFish(7940) or not HasCaughtFish(7702) or not HasCaughtFish(7911) or not HasCaughtFish(7912) or not HasCaughtFish(7907) or not HasCaughtFish(7908) or not HasCaughtFish(7916)">
+        <If Condition="not HasAtLeast(2594,50) and (not HasCaughtFish(7682) or not HasCaughtFish(7700) or not HasCaughtFish(7700) or not HasCaughtFish(7714) or not HasCaughtFish(7940) or not HasCaughtFish(7702) or not HasCaughtFish(7911) or not HasCaughtFish(7912) or not HasCaughtFish(7907) or not HasCaughtFish(7908) or not HasCaughtFish(7916))">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2594,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
         <!-- BRUTE LEECH -->
@@ -1485,7 +1485,7 @@
         <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36595,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- CRAYFISH BALL -->
-        <If Condition="not HasAtLeast(2588,50) and (not HasCaughtFish(7696) or not HasCaughtFish(7692) or not HasCaughtFish(7688) or not HasCaughtFish(7698))not HasAtLeast(2588,50)">
+        <If Condition="not HasAtLeast(2588,50) and (not HasCaughtFish(7696) or not HasCaughtFish(7692) or not HasCaughtFish(7688) or not HasCaughtFish(7698))not HasAtLeast(2588,50))">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2588,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
         <!-- FIEND WORM -->
