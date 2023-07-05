@@ -1815,7 +1815,7 @@
         </If>
         <!-- CHIMERA WORM -->
         <If Condition="(&Cosmic_Haze; == 1 or &Foun_Ahlm; == 1 or &Frozen_Regotoise; == 1) and not HasAtLeast(36595,50)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36595,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36595,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- CRAYFISH BALL -->
         <If Condition="(&Bloody_Brewer; == 1 or &Dream_Goby; == 1 or &Great_Gudgeon; == 1 or &Slime_King; == 1) and not HasAtLeast(2588,50)">
@@ -1823,11 +1823,11 @@
         </If>
         <!-- FIEND WORM -->
         <If Condition="(&Aetherochemical_Compound_666; == 1 or &Allagan_Bladeshark; == 1 or &Augmented_High_Allagan_Helmet; == 1 or &Ceti; == 1 or &Opabinia; == 1) and not HasAtLeast(12710,50)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12710,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12710,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- FRUIT WORM -->
         <If Condition="(&Python_Discus; == 1 or &The_Sinsteeped; == 1) and not HasAtLeast(27582,50)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27582,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27582,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
         <!-- GIANT CRANE FLY -->
         <If Condition="(&Bloodchaser; == 1 or &Cirrostratus; == 1 or &Crystal_Pigeon; == 1 or &Dimorphodon; == 1 or &Raimdellopterus; == 1 or &Sea_Butterfly; == 1 or &The_Second_One; == 1 or &The_Soul_of_the_Martyr; == 1) and not HasAtLeast(12712,50)">
@@ -1847,7 +1847,7 @@
         </If>
         <!-- HONEY WORM -->
         <If Condition="(&Bat-o-Nine-Tails; == 1 or &Blood_Red_Bonytongue; == 1 or &Bloodbath; == 1 or &Canavan; == 1 or &Imperial_Goldfish; == 1 or &Kuno_the_Killer; == 1 or &Ndendecki; == 1 or &The_Gobfather; == 1 or &The_Green_Jester; == 1 or &The_Matriarch; == 1 or &The_Salter; == 1 or &The_Terpsichorean; == 1 or &The_Wardens_Wand; == 1 or &Wootz_Knifefish_Zenith; == 1) and not HasAtLeast(2599,50)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
         <!-- HOVERWORM -->
         <If Condition="(&Anomalocaris; == 1 or &Mahar; == 1 or &Shonisaurus; == 1) and not HasAtLeast(2605,50)">
@@ -1855,11 +1855,11 @@
         </If>
         <!-- JERKED OVIM -->
         <If Condition="(&Nabaath_Saw; == 1 or &The_Horned_King; == 1) and not HasAtLeast(27586,50)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27586,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27586,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- LIVE SHRIMP -->
         <If Condition="(&Argonautica; == 1 or &Pinhead; == 1 or &The_Vegetarian; == 1) and not HasAtLeast(20617,50)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20617,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20617,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
         <!-- LUGWORM -->
         <If Condition="(&Frilled_Shark; == 1 or &Junkmonger; == 1 or &Little_Perykos; == 1 or &Seahag; == 1) and not HasAtLeast(2585,50)">
@@ -1867,11 +1867,11 @@
         </If>
         <!-- MACKEREL STRIP -->
         <If Condition="(&Aetherolectric_Guitarfish; == 1) and not HasAtLeast(36593,50)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36593,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36593,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- MAGMA WORM -->
         <If Condition="(&Hraesvelgrs_Tear; == 1 or &Meteortoise; == 1 or &Riddle; == 1) and not HasAtLeast(12709,50)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12709,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12709,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
         <!-- MAYFLY -->
         <If Condition="(&Antheian_Dahlia; == 1 or &Browned_Banana_Eel; == 1 or &Catastrophizer; == 1 or &Disappirarucu; == 1 or &Earful; == 1 or &Greatsword_Snook; == 1 or &Hippo_Frog; == 1 or &Jumbo_Snook; == 1 or &Planetes; == 1 or &Sovereign_Shadow; == 1 or &Starscryer; == 1) and not HasAtLeast(36591,50)">
@@ -1883,15 +1883,15 @@
         </If>
         <!-- MIDGE LARVA -->
         <If Condition="(&Garden_Skipper; == 1 or &Hookstealer; == 1 or &The_Undecided; == 1 or &Watcher_Catfish; == 1) and not HasAtLeast(20615,50)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20615,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20615,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
         <!-- MOYEBI SHRIMP -->
         <If Condition="(&Steel_Razor; == 1) and not HasAtLeast(27583,50)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27583,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27583,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
         <!-- MOTH PUPA -->
         <If Condition="(&Beguiler_Chub; == 1 or &Caterwauler; == 1 or &Chirurgeon; == 1 or &Dark_Ambusher; == 1) and not HasAtLeast(2586,50)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2586,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2586,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
         <!-- NIGHTCRAWLER -->
         <If Condition="(&Banderole; == 1 or &Duskfish; == 1 or &Pomegranate_Trout; == 1 or &Princess_Killifish; == 1) and not HasAtLeast(20614,50)">
@@ -1931,7 +1931,7 @@
         </If>
         <!-- SALMON ROE -->
         <If Condition="(&Bloodtail_Zombie; == 1 or &The_Last_Tear; == 1) and not HasAtLeast(20613,50)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20613,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20613,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
         <!-- SAND LEECH -->
         <If Condition="(&Helicoprion; == 1 or &Magic_Carpet; == 1) and not HasAtLeast(2600,50)">
@@ -1943,19 +1943,19 @@
         </If>
         <!-- SILKWORM -->
         <If Condition="(&Diamond-eye; == 1 or &Stethacanthus; == 1) and not HasAtLeast(20616,50)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20616,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20616,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
         <!-- SPOON WORM -->
         <If Condition="(&Coelacanthus; == 1 or &Shark_Tuna; == 1 or &Syldra; == 1 or &Twitchbeard; == 1) and not HasAtLeast(2596,50)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2596,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2596,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
         <!-- SQUID STRIP -->
         <If Condition="(&Lancetfish; == 1 or &Ondo_Sigh; == 1 or &Opal_Shrimp; == 1 or &Shadeshifter; == 1 or &Starchaser; == 1 or &The_Mother_of_All_Pancakes; == 1 or &The_Ondotaker; == 1 or &Winged_Dame; == 1) and not HasAtLeast(27590,50)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27590,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27590,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- STARDUST -->
         <If Condition="(&Argonauta_argo; == 1 or &Forbiddingway; == 1) and not HasAtLeast(36597,50)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36597,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36597,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- STEM BORER -->
         <If Condition="(&Stormdancer; == 1 or &The_Thousand-year_Itch; == 1 or &Thundergut; == 1) and not HasAtLeast(2601,50)">
@@ -1975,7 +1975,7 @@
         </If>
         <!-- YUMIZUNO -->
         <If Condition="(&Navigators_Brand; == 1 or &Silver_Sovereign; == 1) and not HasAtLeast(2628,3)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2628,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2628,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
 
         <!-- LURES - Usually these last longer -->
@@ -2025,11 +2025,11 @@
         </If>
         <!-- SPINNER -->
         <If Condition="(&Iron_Noose; == 1 or &Basking_Shark; == 1 or &Problematicus; == 1 or &Rakshasa; == 1 or &Rising_Dragon; == 1 or &The_Lord_of_Lords; == 1) and not HasAtLeast(2620,3)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2620,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2620,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
         <!-- SPINNERBAIT -->
         <If Condition="(&Faerie_Queen; == 1 or &Hannibal; == 1 or &King_of_the_Spring; == 1 or &Magicked_Mushroom; == 1 or &Toramafish; == 1) and not HasAtLeast(2626,3)">
-        <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2626,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2626,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
         <!-- STEEL JIG -->
         <If Condition="(&Endoceras; == 1 or &The_Captains_Chalice; == 1) and not HasAtLeast(2616,3)">
