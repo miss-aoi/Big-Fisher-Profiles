@@ -35,7 +35,10 @@
 				<Keepers>
 					<Keeper name="Nhaama's Treasure" />
 				</Keepers>
-				<SurfaceSlaps />
+				<SurfaceSlaps>
+					<SurfaceSlep Name="Nhaama's Boon"/>
+					<SurfaceSlep Name="Brassfish"/>
+				</SurfaceSlaps>
 			</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
