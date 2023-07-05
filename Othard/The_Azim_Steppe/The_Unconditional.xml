@@ -35,7 +35,9 @@
 				<Keepers>
 					<Keeper name="The Unconditional" />
 				</Keepers>
-				<SurfaceSlaps />
+				<SurfaceSlaps>
+					<SurfaceSlap Name="Nhaama's Boon"/>
+				</SurfaceSlaps>
 			</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
