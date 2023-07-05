@@ -16,21 +16,27 @@
 			<!--Purse Web Spider-->
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12705,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
-		<If condition="not HasAtLeast(28634,3)">
-			<!--Metal Spinner-->
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':28634,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
-		</If>
 		<If condition="not IsOnSubMap(2011)">
 			<LisbethTravel Area="The Dravanian Hinterlands" XYZ="-59.0484, 152.7173, 733.5823" />
 		</If>
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="IsTimeBetween(0,1)">
+		<ExFish Bait="Purse Web Spider" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17590,&Armor_Fish;) and HasAtLeast(28634,1) and not HasAtLeast(12757,5)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-44.38216, 152.3128, 729.8894" Heading="1.498923" />
+				<FishSpot XYZ="-59.0421, 152.3253, 709.8475" Heading="2.389042" />
+				<FishSpot XYZ="-69.74203, 152.1237, 703.7979" Heading="2.93568" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Hedgemole Cricket" />
+			</Keepers>
+		</ExFish>
+		<While condition="not IsTimeBetween(1,4)">
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Metal Spinner" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17590,&Armor_Fish;) and HasAtLeast(12705,1) and IsTimeBetween(1,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Chum="True">
+		<ExFish Bait="Purse Web Spider" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17590,&Armor_Fish;) and HasAtLeast(28634,1) and not HasAtLeast(12757,6) and IsTimeBetween(1,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="HiCordial" Sit="True" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-44.38216, 152.3128, 729.8894" Heading="1.498923" />
 				<FishSpot XYZ="-59.0421, 152.3253, 709.8475" Heading="2.389042" />

@@ -1339,9 +1339,9 @@
         </If>
 
         <!-- Warden_of_the_Seven_Hues -->
-        <If Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and IsTimeBetween(0,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Fair Skies')">
+        <!-- <If Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and IsTimeBetween(0,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Fair Skies')">
             <LLoadProfile Path="Othard/Yanxia/Warden_of_the_Seven_Hues.xml"/>
-        </If>
+        </If> -->
 
         <!-- The_Unraveled_Bow -->
         <If Condition="not HasAtLeast(24890,&The_Unraveled_Bow;) and IsTimeBetween(11,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Fog')">
@@ -1532,9 +1532,9 @@
         </If>
 
         <!-- Cinder_Surprise -->
-        <If Condition="not HasAtLeast(33241,&Cinder_Surprise;) and (IsTimeBetween(18,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Dust Storms')">
+        <!-- <If Condition="not HasAtLeast(33241,&Cinder_Surprise;) and (IsTimeBetween(18,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Dust Storms')">
             <LLoadProfile Path="Norvrandt/Amh_Araeng/Cinder_Surprise.xml"/>
-        </If>
+        </If> -->
 
         <!-- Ambling_Caltrop -->
         <If Condition="not HasAtLeast(28927,&Ambling_Caltrop;) and IsTimeBetween(11,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Clear Skies')">

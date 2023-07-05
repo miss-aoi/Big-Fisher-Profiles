@@ -341,7 +341,7 @@ The following fish have been verified using this profile collection.
 - [x] Leannisg
 - [x] The_Sound_of_Fury
 - [ ] Ealad_Skaan
-- [ ] Sunken_Tome
+- [x] Sunken_Tome
 - [ ] Fae_Rainbow
 - [ ] Celestial
 - [x] Dammroen_Herring
@@ -362,7 +362,7 @@ The following fish have been verified using this profile collection.
 - [x] Mora_Tecta
 - [ ] Lancetfish
 - [ ] Maru_Crab
-- [ ] The_Mother_of_All_Pancakes
+- [x] The_Mother_of_All_Pancakes
 - [ ] Starchaser
 - [x] Opal_Shrimp
 
@@ -375,7 +375,7 @@ The following fish have been verified using this profile collection.
 
 ### Old Sharlayan
 - [x] Aetherolectric_Guitarfish
-- [ ] Greatsword_Snook
+- [x] Greatsword_Snook
 - [ ] Catastrophizer
 
 ## ILSABARD
@@ -404,7 +404,7 @@ The following fish have been verified using this profile collection.
 - [x] Foun_Ahlm
 - [ ] Starscryer
 - [x] Forbiddingway
-- [ ] Argonauta_argo
+- [x] Argonauta_argo
 - [ ] Cosmic_Haze
 
 ## The Wworld Unsundered

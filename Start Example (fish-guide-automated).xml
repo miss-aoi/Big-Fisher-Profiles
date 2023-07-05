@@ -234,9 +234,9 @@
         <!-- 4 HOURS -->
 
         <!-- Cinder_Surprise -->
-        <If Condition="not HasCaughtFish(33241) and (IsTimeBetween(18,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Dust Storms')">
+        <!-- <If Condition="not HasCaughtFish(33241) and (IsTimeBetween(18,24) or IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Dust Storms')">
             <LLoadProfile Path="Norvrandt/Amh_Araeng/Cinder_Surprise.xml"/>
-        </If>
+        </If> -->
 
         <!-- Wootz_Knifefish_Zenith -->
         <If Condition="not HasCaughtFish(8767) and IsTimeBetween(0,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(147, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(147, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
@@ -387,9 +387,9 @@
         </If>
 
         <!-- Warden_of_the_Seven_Hues -->
-        <If Condition="not HasCaughtFish(24994) and (IsTimeBetween(23,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Fair Skies')">
+        <!-- <If Condition="not HasCaughtFish(24994) and (IsTimeBetween(23,24) or IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Fair Skies')">
             <LLoadProfile Path="Othard/Yanxia/Warden_of_the_Seven_Hues.xml"/>
-        </If>
+        </If> -->
 
         <!-- Nabaath_Saw -->
         <If Condition="not HasCaughtFish(33320) and IsTimeBetween(5,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies', 'Heat Waves')">
