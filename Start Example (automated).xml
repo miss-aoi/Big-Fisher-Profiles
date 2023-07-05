@@ -1485,7 +1485,6 @@
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36595,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- CRAYFISH BALL -->
-        <!-- <If Condition="not HasAtLeast(2588,50) and (not HasCaughtFish(7696) or not HasCaughtFish(7692) or not HasCaughtFish(7688) or not HasCaughtFish(7698))"> -->
         <If Condition="not HasAtLeast(2588,50) and (not HasCaughtFish(38835) or not HasCaughtFish(36684) or not HasCaughtFish(38834))">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2588,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
