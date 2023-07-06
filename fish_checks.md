@@ -165,7 +165,7 @@ The following fish have been verified using this profile collection.
 - [x] Fat_Purse
 - [x] Hailfinder
 - [ ] Flarefish
-- [ ] Bishopfish
+- [x] Bishopfish
 - [ ] Charibenet
 - [x] The_Impaler
 - [x] Captain_Nemo
@@ -209,7 +209,7 @@ The following fish have been verified using this profile collection.
 - [x] Scaleripper
 - [x] Twin-tongued_Carp
 - [x] The_Dreamweaver
-- [ ] Thunderscale
+- [x] Thunderscale
 - [x] Meteortoise
 - [x] Hraesvelgrs_Tear
 - [x] Riddle
@@ -268,7 +268,7 @@ The following fish have been verified using this profile collection.
 - [x] The_Vegetarian
 - [ ] Seven_Stars
 - [x] The_Winter_Queen
-- [ ] Argonautica
+- [x] Argonautica
 - [x] Pinhead
 - [ ] Rakshasa
 
@@ -277,7 +277,7 @@ The following fish have been verified using this profile collection.
 - [x] Glarramundi
 - [x] Hermits_End
 - [ ] Warden_of_the_Seven_Hues
-- [ ] The_Unraveled_Bow
+- [x] The_Unraveled_Bow
 - [x] Bokuden
 - [ ] Suiten_Ippeki
 - [ ] Axelrod
@@ -323,9 +323,9 @@ The following fish have been verified using this profile collection.
 
 ### Kholusia
 - [x] Giant_Taimen
-- [ ] Steel_Fan
+- [x] Steel_Fan
 - [x] White_Ronso
-- [ ] Bronze_Sole
+- [x] Bronze_Sole
 - [x] Steel_Razor
 - [ ] Shadeshifter
 - [ ] Aquamaton
@@ -342,7 +342,7 @@ The following fish have been verified using this profile collection.
 - [x] The_Sound_of_Fury
 - [ ] Ealad_Skaan
 - [x] Sunken_Tome
-- [ ] Fae_Rainbow
+- [x] Fae_Rainbow
 - [ ] Celestial
 - [x] Dammroen_Herring
 - [ ] Gold_Hammer
