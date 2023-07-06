@@ -968,7 +968,7 @@
         </If>
 
         <!-- Charibenet -->
-        <If Condition="not HasCaughtFish(17592) and (IsTimeBetween(22,24) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(397, TimeSpan.FromHours(2), 'Blizzards')) or (IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards'))">
+        <If Condition="not HasAtLeast(17592,&Charibenet;) and (IsTimeBetween(22,24) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(397, TimeSpan.FromHours(2), 'Blizzards')) or (IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards'))">
             <LLoadProfile Path="Coerthas/Coerthas_Western_Highlands/Charibenet.xml"/>
         </If>
 
