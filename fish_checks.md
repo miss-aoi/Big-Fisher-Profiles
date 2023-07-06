@@ -269,7 +269,7 @@ The following fish have been verified using this profile collection.
 - [ ] Seven_Stars
 - [x] The_Winter_Queen
 - [ ] Argonautica
-- [ ] Pinhead
+- [x] Pinhead
 - [ ] Rakshasa
 
 ### Yanxia
@@ -350,7 +350,7 @@ The following fish have been verified using this profile collection.
 ### The Rak'tika Greatwood
 - [x] Priest_of_YxLokwa
 - [x] Greater_Serpent_of_Ronka
-- [ ] Pearl_Pipira
+- [x] Pearl_Pipira
 - [x] Black_Jet
 - [x] Recordkiller
 - [ ] Deephaunt

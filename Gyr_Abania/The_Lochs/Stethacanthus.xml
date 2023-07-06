@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<!-- Catch 1 Sculptor before window -->
-		<ExFish Bait="Silkworm" Condition="not Core.Player.HasAura(568) and HasAtLeast(20040,2) and not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Thunderstorms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Silkworm" Condition="not Core.Player.HasAura(568) and HasAtLeast(20040,2) and not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Thunderstorms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />
 				<PatienceTug moochLevel="1" TugType="Medium" />
@@ -36,6 +36,10 @@
 			<Keepers>
 				<Keeper name="Sculptor" />
 			</Keepers>
+			<Surfaceslap>
+				<SurfaceSlaps Name="Saltshield Snapper" />
+				<SurfaceSlaps Name="Whitehorse" />
+			</Surfaceslap>
 		</ExFish>
 		<While condition="IsTimeBetween(12,16)">
 			<Log Message="Waiting for window to open..." />
@@ -55,6 +59,10 @@
 			<Keepers>
 				<Keeper name="Sculptor" />
 			</Keepers>
+			<Surfaceslap>
+				<SurfaceSlaps Name="Saltshield Snapper" />
+				<SurfaceSlaps Name="Whitehorse" />
+			</Surfaceslap>
 		</ExFish>
 		<!-- Go after Stethacanthus -->
 		<ExFish Bait="Silkworm" Condition="Core.Player.HasAura(568) and not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and IsTimeBetween(16,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Thunderstorms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
@@ -70,7 +78,10 @@
 			<Keepers>
 				<Keeper name="Stethacanthus" />
 			</Keepers>
-			<SurfaceSlaps />
+			<Surfaceslap>
+				<SurfaceSlaps Name="Saltshield Snapper" />
+				<SurfaceSlaps Name="Whitehorse" />
+			</Surfaceslap>
 		</ExFish>
 		<If condition="HasAtLeast(20040,1)">
 			<Desynth ItemIds="20040" DesynthDelay="6000" DesynthTimeout="10" />
