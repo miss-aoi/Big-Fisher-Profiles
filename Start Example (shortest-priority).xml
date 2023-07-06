@@ -817,7 +817,7 @@
         </If>
 
         <!-- Hraesvelgrs_Tear -->
-        <If Condition="not HasAtLeast(16751,&Hraesvelgrs_Tear; and IsTimeBetween(1,6))">
+        <If Condition="not HasAtLeast(16751,&Hraesvelgrs_Tear;) and IsTimeBetween(1,6)">
             <LLoadProfile Path="Dravania/The_Dravanian_Forelands/Hraesvelgrs_Tear.xml"/>
         </If>
 
