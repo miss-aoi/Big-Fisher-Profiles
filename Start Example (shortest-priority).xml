@@ -652,7 +652,7 @@
         <!-- 5 HOURS -->
 
         <!-- Bobgoblin_Bass -->
-        <If Condition="not HasAtLeast(16754,&Bobgoblin_Bass;) and IsTimeBetween(1,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Showers') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(398, TimeSpan.FromHours(-8), 'Rain')">
+        <If Condition="not HasAtLeast(16754,&Bobgoblin_Bass;) and IsTimeBetween(1,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(399, 'Showers') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(399, TimeSpan.FromHours(-8), 'Rain')">
             <LLoadProfile Path="Dravania/The_Dravanian_Hinterlands/Bobgoblin_Bass.xml"/>
         </If>
 
@@ -1417,7 +1417,7 @@
         </If>
 
         <!-- The_Speaker -->
-        <If Condition="not HasAtLeast(17585,&The_Speaker;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Showers') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(398, TimeSpan.FromHours(-8), 'Clouds', 'Fog')">
+        <If Condition="not HasAtLeast(17585,&The_Speaker;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(399, 'Showers') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(399, TimeSpan.FromHours(-8), 'Clouds', 'Fog')">
             <LLoadProfile Path="Dravania/The_Dravanian_Hinterlands/The_Speaker.xml"/>
         </If>
 
