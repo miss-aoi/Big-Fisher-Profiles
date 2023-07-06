@@ -31,7 +31,12 @@
 			<Keepers>
 				<Keeper name="Dammroen Herring" />
 			</Keepers>
-			<SurfaceSlaps />
+			<SurfaceSlaps>
+				<SurfaceSlap Name="Cerulean Loach" />
+			</SurfaceSlaps>
+			<DoubleHooks>
+				<DoubleHook Name="Light" />
+			</DoubleHooks>
 		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>

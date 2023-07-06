@@ -17,6 +17,8 @@
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(383)">
+			<TeleportTo Name="Ishgard (Foundation)" AetheryteId="70"/>
+			<WaitTimer WaitTime="3"/>
 			<LisbethTravel Area="Coerthas Central Highlands" XYZ="-745.3611, 222.6547, 57.38375" />
 		</If>
 		<If condition="not ClassName == ClassJobType.Fisher">
