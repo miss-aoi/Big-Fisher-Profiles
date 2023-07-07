@@ -32,6 +32,9 @@
 				<Keeper name="Dammroen Herring" />
 			</Keepers>
 			<SurfaceSlaps />
+			<TripleHooks>
+				<TripleHook Name="Light" />
+			</TripleHooks>
 		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>

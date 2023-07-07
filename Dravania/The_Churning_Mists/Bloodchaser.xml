@@ -31,7 +31,9 @@
 			<Keepers>
 				<Keeper name="Bloodchaser" />
 			</Keepers>
-			<SurfaceSlaps />
+			<SurfaceSlaps>
+				<SurfaceSlap Name="Storm Chaser"/>
+			</SurfaceSlaps>
 		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
