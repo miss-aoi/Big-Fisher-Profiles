@@ -1940,5 +1940,10 @@
 
     </Order>
     <CodeChunks>
+        <CodeChunk Name="UpdateFish">
+            <![CDATA[
+                await LlamaLibrary.ScriptConditions.Extras.UpdateFishGuide();
+            ]]>
+        </CodeChunk>
     </CodeChunks>
 </Profile>
