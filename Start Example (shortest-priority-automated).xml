@@ -13,15 +13,18 @@
 -->
 <!DOCTYPE Profile [
 <!-- Profile Settings -->
-<!ENTITY HI_CORDIAL "1">                         <!-- Set to 1 to farm -->
-<!ENTITY HI_CORDIAL_STOCK "99">                  <!-- Set to number to farm up to - will start when below 25% of stock -->
-<!ENTITY RETURN_HOME "1">                        <!-- Set to 1 to AFK in location below between fishing windows-->
-<!ENTITY AFK_MY_SPOT "0">                        <!-- Specify your own AFK spot - You need to add the OrderBot code -->
-<!ENTITY AFK_LIMSA "0">                          <!-- Set to 1 to AFK in Limsa Lominsa between fishing windows-->
-<!ENTITY AFK_GRIDANIA "1">                       <!-- Set to 1 to AFK in Gridania between fishing windows-->
-<!ENTITY AFK_ULDAH "0">                          <!-- Set to 1 to AFK in Ul'Dah between fishing windows-->
-<!ENTITY AFK_KUGANE "0">                         <!-- Set to 1 to AFK in Shirogane between fishing windows-->
-<!ENTITY AFK_ISHGARD "0">                        <!-- Set to 1 to AFK in Ishgard between fishing windows-->
+<!ENTITY HI_CORDIAL "1">         <!-- Set to 1 to farm -->
+<!ENTITY HI_CORDIAL_STOCK "99">  <!-- Set to number to farm up to - will start when below 25% of stock -->
+<!ENTITY FARM_PURPLE_SCRIP "1">  <!-- Set to 1 to farm to cap between windows -->
+<!ENTITY FARM_WHITE_SCRIP "1">   <!-- Set to 1 to farm to cap between windows -->
+
+<!ENTITY RETURN_HOME "1">        <!-- Set to 1 to AFK in location below between fishing windows-->
+<!ENTITY AFK_MY_SPOT "0">        <!-- Specify your own AFK spot - You need to add the OrderBot code -->
+<!ENTITY AFK_LIMSA "0">          <!-- Set to 1 to AFK in Limsa Lominsa between fishing windows-->
+<!ENTITY AFK_GRIDANIA "1">       <!-- Set to 1 to AFK in Gridania between fishing windows-->
+<!ENTITY AFK_ULDAH "0">          <!-- Set to 1 to AFK in Ul'Dah between fishing windows-->
+<!ENTITY AFK_KUGANE "0">         <!-- Set to 1 to AFK in Shirogane between fishing windows-->
+<!ENTITY AFK_ISHGARD "0">        <!-- Set to 1 to AFK in Ishgard between fishing windows-->
 ]>
 
 <Profile>
@@ -1709,6 +1712,20 @@
         <!-- WILDFOWL FLY -->
         <If Condition="not HasAtLeast(2623,3) and (not HasCaughtFish(7932) or not HasCaughtFish(7944) or not HasCaughtFish(7695))">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2623,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
+        </If>
+
+
+        <If Condition="&FARM_PURPLE_SCRIP; == 1 or &FARM_WHITE_SCRIP; == 1">
+            <!-- Farm in increment of 100 to not get stuck on it instead of fishing -->
+            <Log Message="Farmming Scrips"/>
+            <If Condition="&FARM_PURPLE_SCRIP; == 1 and not HasAtLeast(33914,3800)">
+                <Lisbeth Json="&#91;&#123;'Group':1,'Item':33914,'Amount':100,'Enabled':true,'Type':'GatherMasterpiece'&#125;&#93;"/>
+                <LLoadProfile Path="Start.xml"/>
+            </If>
+            <If Condition="(&FARM_PURPLE_SCRIP; == 1 and HasAtLeast(33914,3800)) and &FARM_WHITE_SCRIP; and not HasAtLeast(25200,3800)">
+                <Lisbeth Json="&#91;&#123;'Group':1,'Item':25200,'Amount':100,'Enabled':true,'Type':'GatherMasterpiece'&#125;&#93;"/>
+                <LLoadProfile Path="Start.xml"/>
+            </If>
         </If>
 
 
