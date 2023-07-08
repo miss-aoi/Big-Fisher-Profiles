@@ -87,6 +87,7 @@
 			</Keepers>
 			<SurfaceSlaps />
 		</ExFish>
+		<RunCode Name="StopFishing"/>
 		<If condition="HasAtLeast(24203,1)">
 			<Desynth ItemIds="24203" DesynthDelay="6000" DesynthTimeout="10" />
 		</If>
@@ -99,5 +100,17 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="StopFishing">
+			<![CDATA[
+				SpellData data;
+				if(ActionManager.CurrentActions.TryGetValue("Quit", out data))
+				{
+					await Buddy.Coroutines.Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(299, Core.Player);
+					await Buddy.Coroutines.Coroutine.Sleep(2000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>
