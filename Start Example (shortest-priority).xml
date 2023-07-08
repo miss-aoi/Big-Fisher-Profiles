@@ -16,6 +16,8 @@
 <!ENTITY HI_CORDIAL_STOCK "99">                  <!-- Set to number to farm up to - will start when below 25% of stock -->
 <!ENTITY FARM_PURPLE_SCRIP "0">                  <!-- Set to 1 to farm to cap between windows -->
 <!ENTITY FARM_WHITE_SCRIP "0">                   <!-- Set to 1 to farm to cap between windows -->
+<!ENTITY BUY_PURPLE_SCRIP_ITEM "0">              <!-- Item ID to buy when over 3500 Purple Scrips -->
+<!ENTITY BUY_WHITE_SCRIP_ITEM "0">               <!-- Item ID to buy when over 3500 White Scrips -->
 <!ENTITY RETURN_HOME "1">                        <!-- Set to 1 to AFK in location below between fishing windows-->
 <!ENTITY AFK_MY_SPOT "0">                        <!-- Specify your own AFK spot - You need to add the OrderBot code -->
 <!ENTITY AFK_LIMSA "0">                          <!-- Set to 1 to AFK in Limsa Lominsa between fishing windows-->
@@ -2050,6 +2052,16 @@
                 <Lisbeth Json="&#91;&#123;'Group':1,'Item':25200,'Amount':100,'Enabled':true,'Type':'GatherMasterpiece'&#125;&#93;"/>
                 <LLoadProfile Path="Start.xml"/>
             </If>
+        </If>
+        <If Condition="&BUY_PURPLE_SCRIP_ITEM; != 0">
+            <While Condition="HasAtLeast(33914,3500)">
+                <Lisbeth Json="&#91;&#123;'Group':1,'Item':&BUY_PURPLE_SCRIP_ITEM;,'Amount':1,'Enabled':true,'Type':'Exchange'&#125;&#93;" />
+            </While>
+        </If>
+        <If Condition="&BUY_WHITE_SCRIP_ITEM; != 0">
+            <While Condition="HasAtLeast(25200,3500)">
+                <Lisbeth Json="&#91;&#123;'Group':1,'Item':&BUY_WHITE_SCRIP_ITEM;,'Amount':1,'Enabled':true,'Type':'Exchange'&#125;&#93;" />
+            </While>
         </If>
 
 
