@@ -34,7 +34,7 @@
 			<FishSpots>
 				<FishSpot XYZ="-295.3371, -42.22972, 397.9655" Heading="3.462338" />
 				<FishSpot XYZ="-311.2322, -42.27152, 404.365" Heading="3.956619" />
-				<FishSpot XYZ="-328.2489, -42.23472, 413.4482" Heading="4.213615" Sit="True" />
+				<FishSpot XYZ="-328.2489, -42.23472, 413.4482" Heading="4.213615" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Helmsman's Hand" />

@@ -25,9 +25,9 @@
 		<!-- Catch 4 Ice Faerie leading up to window -->
 		<ExFish Bait="Purse Web Spider" Condition="not Core.Player.HasAura(568) and not HasAtLeast(12715,4) and HasAtLeast(12705,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Chum="True">
 			<FishSpots>
-				<FishSpot XYZ="700.9606, 130.4927, -812.5688" Heading="2.43003" Sit="True" />
-				<!-- <FishSpot XYZ="705.4149, 130.772, -807.4819" Heading="2.409086" Sit="True" />
-				<FishSpot XYZ="697.2401, 130.4616, -814.8465" Heading="2.989224" Sit="True" /> -->
+				<FishSpot XYZ="700.9606, 130.4927, -812.5688" Heading="2.43003" />
+				<!-- <FishSpot XYZ="705.4149, 130.772, -807.4819" Heading="2.409086" />
+				<FishSpot XYZ="697.2401, 130.4616, -814.8465" Heading="2.989224" /> -->
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Ice Faerie" />
@@ -40,9 +40,9 @@
 		<!-- Catch 5th Ice Faerie once window starts -->
 		<ExFish Bait="Purse Web Spider" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17592,&Charibenet;) and HasAtLeast(12705,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Chum="True">
 			<FishSpots>
-				<FishSpot XYZ="700.9606, 130.4927, -812.5688" Heading="2.43003" Sit="True" />
-				<!-- <FishSpot XYZ="705.4149, 130.772, -807.4819" Heading="2.409086" Sit="True" />
-				<FishSpot XYZ="697.2401, 130.4616, -814.8465" Heading="2.989224" Sit="True" /> -->
+				<FishSpot XYZ="700.9606, 130.4927, -812.5688" Heading="2.43003" />
+				<!-- <FishSpot XYZ="705.4149, 130.772, -807.4819" Heading="2.409086" />
+				<FishSpot XYZ="697.2401, 130.4616, -814.8465" Heading="2.989224" /> -->
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Ice Faerie" />
@@ -55,9 +55,9 @@
 				<PatienceTug moochLevel="1" TugType="Light" />
 			</PatientTugs>
 			<FishSpots>
-				<FishSpot XYZ="700.9606, 130.4927, -812.5688" Heading="2.43003" Sit="True" />
-				<!-- <FishSpot XYZ="705.4149, 130.772, -807.4819" Heading="2.409086" Sit="True" />
-				<FishSpot XYZ="697.2401, 130.4616, -814.8465" Heading="2.989224" Sit="True" /> -->
+				<FishSpot XYZ="700.9606, 130.4927, -812.5688" Heading="2.43003" />
+				<!-- <FishSpot XYZ="705.4149, 130.772, -807.4819" Heading="2.409086" />
+				<FishSpot XYZ="697.2401, 130.4616, -814.8465" Heading="2.989224" /> -->
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Charibenet" />

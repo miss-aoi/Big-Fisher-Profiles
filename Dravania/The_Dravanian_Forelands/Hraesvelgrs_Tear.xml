@@ -28,11 +28,8 @@
 		</While>
 		<ExFish Bait="Magma Worm" condition="not HasAtLeast(16751,&Hraesvelgrs_Tear;) and HasAtLeast(12709,1) and IsTimeBetween(2,6)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True">
 			<FishSpots>
-				<!-- <FishSpot XYZ="-471.8031, -10.14293, -475.2836" Heading="1.936656" />
-				<FishSpot XYZ="-478.3157, -11.6859, -448.0603" Heading="3.788103" />
-				<FishSpot XYZ="-455.5224, -12.17101, -456.36" Heading="3.277071" /> -->
-				<FishSpot XYZ="-677.582, 4.137827, -759.8658" Heading="5.281163" Sit="True" />
-				<FishSpot XYZ="-648.8766, 4.698694, -778.8278" Heading="2.486038" Sit="True" />
+				<FishSpot XYZ="-677.582, 4.137827, -759.8658" Heading="5.281163" />
+				<FishSpot XYZ="-648.8766, 4.698694, -778.8278" Heading="2.486038" />
 				<FishSpot XYZ="-684.0073, 6.100186, -767.5778" Heading="6.114972" />
 			</FishSpots>
 			<Keepers>

@@ -28,9 +28,9 @@
 		</While>
 		<ExFish Bait="Robber Ball" condition="not HasAtLeast(33324,&Golden_Pipira;) and HasAtLeast(27587,1) and IsTimeBetween(6,7)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Chum="True">
 			<FishSpots>
-				<FishSpot XYZ="201.3549, -29.04337, 737.2993" Heading="0.9375334" Sit="True" />
-				<FishSpot XYZ="221.9521, -25.88206, 725.4747" Heading="0.4827638" Sit="True" />
-				<FishSpot XYZ="208.3455, -28.80793, 734.0103" Heading="0.8276381" Sit="True" />
+				<FishSpot XYZ="201.3549, -29.04337, 737.2993" Heading="0.9375334" />
+				<FishSpot XYZ="221.9521, -25.88206, 725.4747" Heading="0.4827638" />
+				<FishSpot XYZ="208.3455, -28.80793, 734.0103" Heading="0.8276381" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Golden Pipira" />

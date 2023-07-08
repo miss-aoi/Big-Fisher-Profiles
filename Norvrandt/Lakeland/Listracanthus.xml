@@ -34,7 +34,7 @@
 			<FishSpots>
 				<FishSpot XYZ="-566.6547, -0.4500181, 818.3839" Heading="1.575036" />
 				<FishSpot XYZ="-571.9924, -1.495782, 808.0778" Heading="2.500757" />
-				<FishSpot XYZ="-574.3918, -1.236434, 805.2708" Heading="1.876711" Sit="True" />
+				<FishSpot XYZ="-574.3918, -1.236434, 805.2708" Heading="1.876711" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Listracanthus" />
