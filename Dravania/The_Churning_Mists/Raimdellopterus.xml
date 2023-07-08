@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<!-- Catch 4 Rudderfish -->
-		<ExFish Bait="Giant Crane Fly" Condition="not Core.Player.HasAura(568) and not HasAtLeast(12805,4) and not HasAtLeast(17593,&Raimdellopterus;) and HasAtLeast(12712,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" SitRate="1" SitRate="1" Chum="True" IdenticalCast="True">
+		<ExFish Bait="Giant Crane Fly" Condition="not Core.Player.HasAura(568) and not HasAtLeast(12805,4) and not HasAtLeast(17593,&Raimdellopterus;) and HasAtLeast(12712,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True" IdenticalCast="True">
 			<FishSpots>
 				<FishSpot XYZ="-141.6965, 162.6906, -797.8688" Heading="3.291184" />
 			</FishSpots>
@@ -39,7 +39,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<!-- Catch last fish once window starts -->
-		<ExFish Bait="Giant Crane Fly" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17593,&Raimdellopterus;) and HasAtLeast(12712,1) and IsTimeBetween(5,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" SitRate="1" SitRate="1" Chum="True">
+		<ExFish Bait="Giant Crane Fly" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17593,&Raimdellopterus;) and HasAtLeast(12712,1) and IsTimeBetween(5,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-141.6965, 162.6906, -797.8688" Heading="3.291184" />
 			</FishSpots>
@@ -51,7 +51,7 @@
 			</SurfaceSlaps>
 		</ExFish>
 		<!-- Go after Raimdellopterus -->
-		<ExFish Bait="Giant Crane Fly" Condition="Core.Player.HasAura(568) and not HasAtLeast(17593,&Raimdellopterus;) and HasAtLeast(12712,1) and IsTimeBetween(5,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" SitRate="1" SitRate="1" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Giant Crane Fly" Condition="Core.Player.HasAura(568) and not HasAtLeast(17593,&Raimdellopterus;) and HasAtLeast(12712,1) and IsTimeBetween(5,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(400, 'Gales')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />
 				<PatienceTug moochLevel="1" TugType="Medium" />

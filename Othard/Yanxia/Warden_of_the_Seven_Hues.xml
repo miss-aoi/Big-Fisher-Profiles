@@ -23,7 +23,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<!-- Indigo Prismfish -->
-		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(24203,3) and HasAtLeast(20675,1) and not Core.Player.HasAura(568) and IsTimeBetween(0,4)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" SitRate="1" SitRate="1" SitRate="1" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(24203,3) and HasAtLeast(20675,1) and not Core.Player.HasAura(568) and IsTimeBetween(0,4)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Heavy" />
 			</PatientTugs>
@@ -45,7 +45,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<!-- Firelight Goldfish -->
-		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(23056,3) and HasAtLeast(24203,3) and HasAtLeast(20675,1) and not Core.Player.HasAura(568) and IsTimeBetween(4,8)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" SitRate="1" SitRate="1" SitRate="1" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(23056,3) and HasAtLeast(24203,3) and HasAtLeast(20675,1) and not Core.Player.HasAura(568) and IsTimeBetween(4,8)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Heavy" />
 			</PatientTugs>
@@ -63,7 +63,7 @@
 			</SurfaceSlaps>
 		</ExFish>
 		<!-- Green Prismfish -->
-		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(24204,5) and HasAtLeast(23056,3) and HasAtLeast(24203,3) and HasAtLeast(20675,1) and not Core.Player.HasAura(568) and IsTimeBetween(0,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" SitRate="1" SitRate="1" SitRate="1" >
+		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(24204,5) and HasAtLeast(23056,3) and HasAtLeast(24203,3) and HasAtLeast(20675,1) and not Core.Player.HasAura(568) and IsTimeBetween(0,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" >
 			<FishSpots>
 				<FishSpot XYZ="358.0955, -16.22713, -688.6342" Heading="2.647624" />
 			</FishSpots>
@@ -78,7 +78,7 @@
 			</SurfaceSlaps>
 		</ExFish>
 		<!-- Warden of the Seven Hues -->
-		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" SitRate="1" SitRate="1" SitRate="1" Chum="True">
+		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and Core.Player.HasAura(568)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="358.0955, -16.22713, -688.6342" Heading="2.647624" />
 			</FishSpots>
