@@ -26,7 +26,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Pill Bug" condition="not HasAtLeast(7685,&Goldenfin;) and HasAtLeast(2587,1) and IsTimeBetween(9,14)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Chum="True">
+		<ExFish Bait="Pill Bug" condition="not HasAtLeast(7685,&Goldenfin;) and HasAtLeast(2587,1) and IsTimeBetween(9,14)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="39.98388, 39.99995, 75.70851" Heading="0.08564156" />
 				<FishSpot XYZ="53.64757, 39.99995, 75.66903" Heading="5.981073" />

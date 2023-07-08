@@ -22,7 +22,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Spinner" condition="not HasAtLeast(7929,&Iron_Noose;) and HasAtLeast(2620,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Chum="True">
+		<ExFish Bait="Spinner" condition="not HasAtLeast(7929,&Iron_Noose;) and HasAtLeast(2620,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Fog')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-295.7881, 5, 491.6447" Heading="3.627046" />
 				<FishSpot XYZ="-297.7134, 5, 457.9657" Heading="5.541336" />

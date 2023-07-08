@@ -26,7 +26,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-			<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(23069,&The_Word_of_God;) and HasAtLeast(20675,1) and IsTimeBetween(20,24)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Chum="True">
+			<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(23069,&The_Word_of_God;) and HasAtLeast(20675,1) and IsTimeBetween(20,24)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 				<FishSpots>
 					<FishSpot XYZ="-237.7518, 57.28605, -360.9993" Heading="4.365572" />
 					<FishSpot XYZ="-232.408, 59.49247, -389.6874" Heading="2.924627" />

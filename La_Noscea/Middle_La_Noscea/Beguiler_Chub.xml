@@ -26,7 +26,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Moth Pupa" condition="not HasAtLeast(7679,&Beguiler_Chub;) and HasAtLeast(2586,1) and IsTimeBetween(9,14)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" Chum="True">
+		<ExFish Bait="Moth Pupa" condition="not HasAtLeast(7679,&Beguiler_Chub;) and HasAtLeast(2586,1) and IsTimeBetween(9,14)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-6.263493, 42.15689, 54.21851" Heading="5.079866" />
 				<FishSpot XYZ="34.12083, 42.41599, 36.45387" Heading="1.881725" />
