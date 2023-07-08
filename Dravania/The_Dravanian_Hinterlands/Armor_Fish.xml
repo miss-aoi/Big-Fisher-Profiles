@@ -25,6 +25,8 @@
 		<ExFish Bait="Purse Web Spider" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17590,&Armor_Fish;) and HasAtLeast(28634,1) and not HasAtLeast(12757,5)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-44.38216, 152.3128, 729.8894" Heading="1.498923" />
+				<FishSpot XYZ="-56.45955, 152.3088, 712.7725" Heading="1.839472" />
+				<FishSpot XYZ="-33.39463, 152.3573, 746.5474" Heading="1.814337" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Hedgemole Cricket" />
@@ -37,6 +39,8 @@
 		<ExFish Bait="Purse Web Spider" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17590,&Armor_Fish;) and HasAtLeast(28634,1) and not HasAtLeast(12757,6) and IsTimeBetween(1,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-44.38216, 152.3128, 729.8894" Heading="1.498923" />
+				<FishSpot XYZ="-56.45955, 152.3088, 712.7725" Heading="1.839472" />
+				<FishSpot XYZ="-33.39463, 152.3573, 746.5474" Heading="1.814337" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Hedgemole Cricket" />
@@ -49,6 +53,8 @@
 			</PatientTugs>
 			<FishSpots>
 				<FishSpot XYZ="-44.38216, 152.3128, 729.8894" Heading="1.498923" />
+				<FishSpot XYZ="-56.45955, 152.3088, 712.7725" Heading="1.839472" />
+				<FishSpot XYZ="-33.39463, 152.3573, 746.5474" Heading="1.814337" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Armor Fish" />
