@@ -22,7 +22,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not IsTimeBetween(12,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Thunderstorms')">
+		<While condition="not Condition.IsTimeBetween(12,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Thunderstorms')">
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
@@ -45,12 +45,12 @@
 				<SurfaceSlaps Name="Whitehorse" />
 			</Surfaceslap>
 		</ExFish>
-		<While condition="IsTimeBetween(12,16)">
+		<While condition="Condition.IsTimeBetween(12,16)">
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
 		<!-- Catch last fish once window starts -->
-		<ExFish Bait="Silkworm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and IsTimeBetween(16,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Thunderstorms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Silkworm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and Condition.IsTimeBetween(16,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Thunderstorms')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />
 				<PatienceTug moochLevel="1" TugType="Medium" />
@@ -69,7 +69,7 @@
 			</Surfaceslap>
 		</ExFish>
 		<!-- Go after Stethacanthus -->
-		<ExFish Bait="Silkworm" Condition="Core.Player.HasAura(568) and not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and IsTimeBetween(16,18)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Silkworm" Condition="Core.Player.HasAura(568) and not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and Condition.IsTimeBetween(16,18)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Medium" />
 				<PatienceTug moochLevel="1" TugType="Medium" />

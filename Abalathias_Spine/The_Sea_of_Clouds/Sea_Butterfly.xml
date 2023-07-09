@@ -36,12 +36,12 @@
 				<Keeper name="Sky Faerie" />
 			</Keepers>
 		</ExFish>
-		<While condition="IsTimeBetween(0,5)">
+		<While condition="Condition.IsTimeBetween(0,5)">
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
 		<!-- Get Fisher's Intuition -->
-		<ExFish Bait="Metal Spinner" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17591,&Sea_Butterfly;) and HasAtLeast(12712,1) and IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+		<ExFish Bait="Metal Spinner" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17591,&Sea_Butterfly;) and HasAtLeast(12712,1) and Condition.IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-352.8858, 19.60465, -832.8619" Heading="3.788245" />
 			</FishSpots>
@@ -51,7 +51,7 @@
 			</Keepers>
 		</ExFish>
 		<!-- Go after Goal -->
-		<ExFish Bait="Giant Crane Fly" Condition="Core.Player.HasAura(568) and not HasAtLeast(17591,&Sea_Butterfly;) and HasAtLeast(12712,1) and IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+		<ExFish Bait="Giant Crane Fly" Condition="Core.Player.HasAura(568) and not HasAtLeast(17591,&Sea_Butterfly;) and HasAtLeast(12712,1) and Condition.IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-352.8858, 19.60465, -832.8619" Heading="3.788245" />
 			</FishSpots>

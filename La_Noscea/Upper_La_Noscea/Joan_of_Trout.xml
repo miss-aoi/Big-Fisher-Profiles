@@ -22,11 +22,11 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="IsTimeBetween(3,4)">
+		<While condition="Condition.IsTimeBetween(3,4)">
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Crow Fly" condition="not HasAtLeast(7904,&Joan_of_Trout;) and HasAtLeast(2614,1) and IsTimeBetween(4,6)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+		<ExFish Bait="Crow Fly" condition="not HasAtLeast(7904,&Joan_of_Trout;) and HasAtLeast(2614,1) and Condition.IsTimeBetween(4,6)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-583.9859, -3.4, -45.61539" Heading="4.04835" />
 				<FishSpot XYZ="-608.6689, -3.4, -30.51702" Heading="3.187551" />

@@ -22,11 +22,11 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="IsTimeBetween(1,2)">
+		<While condition="Condition.IsTimeBetween(1,2)">
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Baitbugs" condition="not HasAtLeast(33323,&Deephaunt;) and HasAtLeast(27589,1) and IsTimeBetween(2,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(817, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(817, TimeSpan.FromHours(-8), 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+		<ExFish Bait="Baitbugs" condition="not HasAtLeast(33323,&Deephaunt;) and HasAtLeast(27589,1) and Condition.IsTimeBetween(2,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(817, 'Fog') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(817, TimeSpan.FromHours(-8), 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-679.6891, 33.99178, -256.3607" Heading="5.737036" />
 				<FishSpot XYZ="-689.1133, 33.99178, -240.8255" Heading="4.2982" />
