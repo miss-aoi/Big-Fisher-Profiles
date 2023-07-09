@@ -26,7 +26,9 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Honey Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8763,&Kuno_the_Killer;) and HasAtLeast(2599,1) and Condition.IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Honey Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8763,&Kuno_the_Killer;) and HasAtLeast(2599,1) and Condition.IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
+				Mooch="3" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Light" />
@@ -41,7 +43,9 @@
 				<Keeper name="Canavan" />
 			</Keepers>
 		</ExFish>
-		<ExFish Bait="Honey Worm" Condition="Core.Player.HasAura(568) and not HasAtLeast(8763,&Kuno_the_Killer;) and HasAtLeast(2599,1) and Condition.IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Honey Worm" Condition="Core.Player.HasAura(568) and not HasAtLeast(8763,&Kuno_the_Killer;) and HasAtLeast(2599,1) and Condition.IsTimeBetween(8,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
+				Mooch="3" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Medium" />

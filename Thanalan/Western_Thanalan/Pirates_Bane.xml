@@ -22,7 +22,9 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Lugworm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8764,&Pirates_Bane;) and HasAtLeast(2585,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Lugworm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8764,&Pirates_Bane;) and HasAtLeast(2585,1)"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
+				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Medium" />
@@ -36,7 +38,9 @@
 				<Keeper name="Wahoo" />
 			</Keepers>
 		</ExFish>
-			<ExFish Bait="Lugworm" Condition="Core.Player.HasAura(568) and not HasAtLeast(8764,&Pirates_Bane;) and HasAtLeast(2585,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Mooch="3" Patience="Patience2" MinimumGPPatience="650">
+			<ExFish Bait="Lugworm" Condition="Core.Player.HasAura(568) and not HasAtLeast(8764,&Pirates_Bane;) and HasAtLeast(2585,1)"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
+				Mooch="3" Patience="Patience2" MinimumGPPatience="650">
 				<PatientTugs>
 					<PatienceTug moochLevel="0" TugType="Light" />
 					<PatienceTug moochLevel="1" TugType="Medium" />

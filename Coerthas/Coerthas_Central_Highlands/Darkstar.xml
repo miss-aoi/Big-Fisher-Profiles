@@ -30,7 +30,8 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Chocobo Fly" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8769,&Darkstar;) and HasAtLeast(12704,1) and (Condition.IsTimeBetween(19,24) or Condition.IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards', 'Snow')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+		<ExFish Bait="Chocobo Fly" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8769,&Darkstar;) and HasAtLeast(12704,1) and (Condition.IsTimeBetween(19,24) or Condition.IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards', 'Snow')"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="492.7034, 347.5425, -699.8847" Heading="2.811154" />
 				<FishSpot XYZ="499.6933, 347.5016, -730.2562" Heading="6.04072" />
@@ -40,7 +41,9 @@
 				<Keeper name="Lamp Marimo" />
 			</Keepers>
 		</ExFish>
-		<ExFish Bait="Stonefly Nymph" Condition="Core.Player.HasAura(568) and not HasAtLeast(8769,&Darkstar;) and HasAtLeast(12704,1) and (Condition.IsTimeBetween(19,24) or Condition.IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards', 'Snow')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Stonefly Nymph" Condition="Core.Player.HasAura(568) and not HasAtLeast(8769,&Darkstar;) and HasAtLeast(12704,1) and (Condition.IsTimeBetween(19,24) or Condition.IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(155, 'Blizzards', 'Snow')"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
+				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Medium" />

@@ -26,7 +26,8 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Robber Ball" condition="not HasAtLeast(33324,&Golden_Pipira;) and HasAtLeast(27587,1) and Condition.IsTimeBetween(6,7)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+		<ExFish Bait="Robber Ball" condition="not HasAtLeast(33324,&Golden_Pipira;) and HasAtLeast(27587,1) and Condition.IsTimeBetween(6,7)"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="201.3549, -29.04337, 737.2993" Heading="0.9375334" />
 				<FishSpot XYZ="221.9521, -25.88206, 725.4747" Heading="0.4827638" />

@@ -27,7 +27,8 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<!-- Catch Granite Crabs and Fossiltongues leading up to window -->
-		<ExFish Bait="Magma Worm" Condition="not Core.Player.HasAura(568) and (not HasAtLeast(12800,3) and not HasAtLeast(12754,4)) or (not HasAtLeast(12800,2) and not HasAtLeast(12754,5)) and not HasAtLeast(17588,&Problematicus;) and HasAtLeast(28634,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+		<ExFish Bait="Magma Worm" Condition="not Core.Player.HasAura(568) and (not HasAtLeast(12800,3) and not HasAtLeast(12754,4)) or (not HasAtLeast(12800,2) and not HasAtLeast(12754,5)) and not HasAtLeast(17588,&Problematicus;) and HasAtLeast(28634,1)"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-740.1883, 5.498933, -826.3872" Heading="4.0164" />
 				<FishSpot XYZ="-731.7888, 5.523361, -836.9976" Heading="3.765071" />
@@ -43,7 +44,8 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<!-- Catch last ones once window starts -->
-		<ExFish Bait="Magma Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17588,&Problematicus;) and HasAtLeast(28634,1) and Condition.IsTimeBetween(10,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+		<ExFish Bait="Magma Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17588,&Problematicus;) and HasAtLeast(28634,1) and Condition.IsTimeBetween(10,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies', 'Fair Skies')"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-740.1883, 5.498933, -826.3872" Heading="4.0164" />
 				<FishSpot XYZ="-731.7888, 5.523361, -836.9976" Heading="3.765071" />
@@ -55,7 +57,9 @@
 			</Keepers>
 		</ExFish>
 		<!-- Go after Probolematicus -->
-		<ExFish Bait="Metal Spinner" Condition="Core.Player.HasAura(568) and not HasAtLeast(17588,&Problematicus;) and HasAtLeast(28634,1) and Condition.IsTimeBetween(10,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies', 'Fair Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Metal Spinner" Condition="Core.Player.HasAura(568) and not HasAtLeast(17588,&Problematicus;) and HasAtLeast(28634,1) and Condition.IsTimeBetween(10,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies', 'Fair Skies')"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
+				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Medium" />

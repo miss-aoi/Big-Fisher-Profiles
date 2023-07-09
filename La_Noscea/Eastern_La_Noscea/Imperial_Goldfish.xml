@@ -5,7 +5,7 @@
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY Imperial_Goldfish "1">
+	<!ENTITY Imperial_Goldfish "10">
 ]>
 <Profile>
 	<Name>Imperial Goldfish</Name>
@@ -17,37 +17,35 @@
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(214)">
-			<LisbethTravel Area="Eastern La Noscea" XYZ="-253.4813, 35.16173, 289.4978" />
+			<LisbethTravel Area="Eastern La Noscea" XYZ="-277.4629, 33.78064, 298.8298" />
 		</If>
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Honey Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8752,&Imperial_Goldfish;) and HasAtLeast(2599,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug MoochLevel="0" TugType="Heavy" />
-				<PatienceTug MoochLevel="1" TugType="Heavy" />
-				<PatienceTug MoochLevel="2" TugType="Heavy" />
-			</PatientTugs>
+		<ExFish Bait="Honey Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8752,&Imperial_Goldfish;) and HasAtLeast(2599,1)"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
+				Mooch="2" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-272.5454, 33.78063, 299.9305" Heading="4.463154" />
 				<FishSpot XYZ="-278.8307, 33.78064, 296.5956" Heading="4.435918" />
 				<FishSpot XYZ="-280.1851, 33.99385, 304.9468" Heading="2.548871" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="SilverFish" action="Mooch" />
+				<Keeper name="Goldfish" action="Mooch" />
 				<Keeper name="Jungle Catfish" />
 			</Keepers>
 		</ExFish>
-		<ExFish Bait="Honey Worm" Condition="Core.Player.HasAura(568) and not HasAtLeast(8752,&Imperial_Goldfish;) and HasAtLeast(2599,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Mooch="1" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-			</PatientTugs>
+		<ExFish Bait="Honey Worm" Condition="Core.Player.HasAura(568) and not HasAtLeast(8752,&Imperial_Goldfish;) and HasAtLeast(2599,1)"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-272.5454, 33.78063, 299.9305" Heading="4.463154" />
 				<FishSpot XYZ="-278.8307, 33.78064, 296.5956" Heading="4.435918" />
 				<FishSpot XYZ="-280.1851, 33.99385, 304.9468" Heading="2.548871" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="SilverFish" action="Mooch" />
 				<Keeper name="Imperial Goldfish" />
 			</Keepers>
 			<SurfaceSlaps />

@@ -26,7 +26,8 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Glowworm" condition="not HasAtLeast(7951,&Aetherlouse;) and HasAtLeast(2603,1) and Condition.IsTimeBetween(3,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+		<ExFish Bait="Glowworm" condition="not HasAtLeast(7951,&Aetherlouse;) and HasAtLeast(2603,1) and Condition.IsTimeBetween(3,13) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(156, 'Gloom')"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="143.8184, -28.36775, -427.127" Heading="0.1438355" />
 				<FishSpot XYZ="166.1766, -28.29997, -426.6662" Heading="0.5941291" />

@@ -26,7 +26,8 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Moyebi Shrimp" condition="not HasAtLeast(33318,&Steel_Razor;) and HasAtLeast(27583,1) and Condition.IsTimeBetween(6,8)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+		<ExFish Bait="Moyebi Shrimp" condition="not HasAtLeast(33318,&Steel_Razor;) and HasAtLeast(27583,1) and Condition.IsTimeBetween(6,8)"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-698.0373, -0.4757038, 619.525" Heading="1.09748" />
 				<FishSpot XYZ="-728.0673, -0.5991126, 631.8834" Heading="4.389868" />

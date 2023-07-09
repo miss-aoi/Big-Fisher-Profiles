@@ -26,7 +26,9 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Short Bill Minnow" condition="not HasAtLeast(33326,&Maru_Crab;) and HasAtLeast(27588,1) and Condition.IsTimeBetween(16,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Short Bill Minnow" condition="not HasAtLeast(33326,&Maru_Crab;) and HasAtLeast(27588,1) and Condition.IsTimeBetween(16,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds')"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
+				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Light" />

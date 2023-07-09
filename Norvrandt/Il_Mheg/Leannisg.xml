@@ -26,7 +26,8 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Marble Nymph" condition="not HasAtLeast(30435,&Leannisg;) and HasAtLeast(27585,1) and Condition.IsTimeBetween(6,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(816, 'Rain')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+		<ExFish Bait="Marble Nymph" condition="not HasAtLeast(30435,&Leannisg;) and HasAtLeast(27585,1) and Condition.IsTimeBetween(6,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(816, 'Rain')"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-884.8255, 0.4473501, -43.6868" Heading="4.560335" />
 				<FishSpot XYZ="-887.7988, 0.9804235, -12.34238" Heading="4.851459" />

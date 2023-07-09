@@ -26,7 +26,8 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Honey Worm" condition="not HasAtLeast(7934,&The_Green_Jester;) and HasAtLeast(2599,1) and Condition.IsTimeBetween(18,21)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+		<ExFish Bait="Honey Worm" condition="not HasAtLeast(7934,&The_Green_Jester;) and HasAtLeast(2599,1) and Condition.IsTimeBetween(18,21)"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-400.1736, 49, 4.810299" Heading="5.30001" />
 				<FishSpot XYZ="-402.063, 49, 15.16597" Heading="2.556347" />

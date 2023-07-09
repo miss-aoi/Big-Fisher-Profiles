@@ -26,7 +26,8 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Squid Strip" condition="not HasAtLeast(32054,&The_Ondotaker;) and HasAtLeast(27590,1) and Condition.IsTimeBetween(8,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Clear Skies')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+		<ExFish Bait="Squid Strip" condition="not HasAtLeast(32054,&The_Ondotaker;) and HasAtLeast(27590,1) and Condition.IsTimeBetween(8,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Clear Skies')"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="770.9969, 446.4425, -721.9981" Heading="4.427551" />
 				<FishSpot XYZ="777.5337, 448.4783, -732.9607" Heading="3.981445" />

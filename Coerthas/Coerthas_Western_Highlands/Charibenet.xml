@@ -23,7 +23,8 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<!-- Catch 4 Ice Faerie leading up to window -->
-		<ExFish Bait="Purse Web Spider" Condition="not Core.Player.HasAura(568) and not HasAtLeast(12715,4) and HasAtLeast(12705,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+		<ExFish Bait="Purse Web Spider" Condition="not Core.Player.HasAura(568) and not HasAtLeast(12715,4) and HasAtLeast(12705,1)"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="700.9606, 130.4927, -812.5688" Heading="2.43003" />
 				<!-- <FishSpot XYZ="705.4149, 130.772, -807.4819" Heading="2.409086" />
@@ -38,7 +39,8 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<!-- Catch 5th Ice Faerie once window starts -->
-		<ExFish Bait="Purse Web Spider" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17592,&Charibenet;) and HasAtLeast(12705,1)" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+		<ExFish Bait="Purse Web Spider" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17592,&Charibenet;) and HasAtLeast(12705,1)"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="700.9606, 130.4927, -812.5688" Heading="2.43003" />
 				<!-- <FishSpot XYZ="705.4149, 130.772, -807.4819" Heading="2.409086" />
@@ -49,7 +51,9 @@
 			</Keepers>
 		</ExFish>
 		<!-- Go after Charibenet -->
-		<ExFish Bait="Purse Web Spider" Condition="Core.Player.HasAura(568) and not HasAtLeast(17592,&Charibenet;) and HasAtLeast(12705,1) and Condition.IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')" MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Mooch="2" Patience="Patience2" MinimumGPPatience="650">
+		<ExFish Bait="Purse Web Spider" Condition="Core.Player.HasAura(568) and not HasAtLeast(17592,&Charibenet;) and HasAtLeast(12705,1) and Condition.IsTimeBetween(0,3) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
+				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
 			<PatientTugs>
 				<PatienceTug moochLevel="0" TugType="Light" />
 				<PatienceTug moochLevel="1" TugType="Light" />
