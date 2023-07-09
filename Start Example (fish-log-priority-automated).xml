@@ -6,13 +6,17 @@
     Authors: miss-aoi
     Need to eat food? Use Gluttony: https://github.com/domesticwarlord86/Gluttony
     Want to extract materia? Use Extractor: https://github.com/domesticwarlord86/Extractor
+    Use cat's OceanTrip for Ocean Fishes: https://github.com/catrenelle/OceanTrip
+
+    This Start.xml has order of: lowest "window duration > weather > no time/weather" 
+    Each window duration has the order of: weather (most constrained) > weather (least constrained) > alphabitized
 -->
 <!DOCTYPE Profile [
 <!-- Profile Settings -->
 <!ENTITY HI_CORDIAL "1">            <!-- Set to 1 to farm -->
-<!ENTITY HI_CORDIAL_STOCK "0">      <!-- Set to number to farm up to - will start when below 25% of stock -->
-<!ENTITY FARM_PURPLE_SCRIP "0">     <!-- Set to 1 to farm to cap between windows -->
-<!ENTITY FARM_WHITE_SCRIP "0">      <!-- Set to 1 to farm to cap between windows -->
+<!ENTITY HI_CORDIAL_STOCK "99">     <!-- Set to number to farm up to - will start when below 25% of stock -->
+<!ENTITY FARM_PURPLE_SCRIP "1">     <!-- Set to 1 to farm to cap between windows -->
+<!ENTITY FARM_WHITE_SCRIP "1">      <!-- Set to 1 to farm to cap between windows -->
 <!ENTITY BUY_PURPLE_SCRIP_ITEM "0"> <!-- Item ID to buy when over 3500 Purple Scrips -->
 <!ENTITY BUY_WHITE_SCRIP_ITEM "0">  <!-- Item ID to buy when over 3500 White Scrips -->
 
@@ -23,7 +27,6 @@
 <!ENTITY AFK_ULDAH "0">             <!-- Set to 1 to AFK in Ul'Dah between fishing windows-->
 <!ENTITY AFK_KUGANE "0">            <!-- Set to 1 to AFK in Shirogane between fishing windows-->
 <!ENTITY AFK_ISHGARD "0">           <!-- Set to 1 to AFK in Ishgard between fishing windows-->
-<!-- Use cat's OceanTrip for Ocean Fishes: https://github.com/catrenelle/OceanTrip -->
 ]>
 
 <Profile>
