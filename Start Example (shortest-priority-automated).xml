@@ -116,7 +116,7 @@
         </If>
 
         <!-- Henodus_Grandis -->
-        <If Condition="not HasCaughtFish(32051) and Condition.IsTimeBetween(21,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Clouds')">
+        <If Condition="not HasCaughtFish(32051) and ((Condition.IsTimeBetween(21,22) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(814, TimeSpan.FromHours(1), 'Clouds')) or (Condition.IsTimeBetween(22,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Clouds')))">
             <LLoadProfile Path="Norvrandt/Kholusia/Henodus_Grandis.xml"/>
         </If>
 
