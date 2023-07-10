@@ -36,6 +36,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
+		<Dismount/>
 		<ExFish Bait="Glowworm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8775,&Namitaro;) and HasAtLeast(2624,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>

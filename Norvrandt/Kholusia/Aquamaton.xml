@@ -36,6 +36,10 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
+		<Dismount/>
+		<If condition="HasAtLeast(33319,1)">
+			<Desynth ItemIds="33319" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
 		<!-- Catch 4 Shapeshifters before window starts -->
 		<ExFish Bait="Squid Strip" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33240,&Aquamaton;) and not HasAtLeast(27452,5) and HasAtLeast(27590,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">

@@ -36,6 +36,13 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
+		<Dismount/>
+		<If condition="HasAtLeast(12810,1)">
+			<Desynth ItemIds="12810" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
+		<If condition="HasAtLeast(12753,1)">
+			<Desynth ItemIds="12753" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
 		<!-- Prep for Fisher's Intuition -->
 		<ExFish Bait="Metal Spinner" Condition="not HasAtLeast(12810,3) and not HasAtLeast(12753,3) and not HasAtLeast(17591,&Sea_Butterfly;) and HasAtLeast(12712,1)"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">

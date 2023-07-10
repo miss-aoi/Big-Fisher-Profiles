@@ -31,6 +31,10 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
+		<Dismount/>
+		<If condition="HasAtLeast(12715,1)">
+			<Desynth ItemIds="12715" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
 		<!-- Catch 4 Ice Faerie leading up to window -->
 		<ExFish Bait="Purse Web Spider" Condition="not Core.Player.HasAura(568) and not HasAtLeast(12715,4) and HasAtLeast(12705,1)"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">

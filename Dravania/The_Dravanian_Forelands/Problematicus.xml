@@ -36,6 +36,13 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
+		<Dismount/>
+		<If condition="HasAtLeast(12800,1)">
+			<Desynth ItemIds="12800" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
+		<If condition="HasAtLeast(12754,1)">
+			<Desynth ItemIds="12754" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
 		<!-- Catch Granite Crabs and Fossiltongues leading up to window -->
 		<ExFish Bait="Magma Worm" Condition="not Core.Player.HasAura(568) and (not HasAtLeast(12800,3) and not HasAtLeast(12754,4)) or (not HasAtLeast(12800,2) and not HasAtLeast(12754,5)) and not HasAtLeast(17588,&Problematicus;) and HasAtLeast(28634,1)"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">

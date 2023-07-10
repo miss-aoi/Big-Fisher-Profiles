@@ -31,6 +31,10 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
+		<Dismount/>
+		<If condition="HasAtLeast(27462,1)">
+			<Desynth ItemIds="27462" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
 		<!-- Catch 9 Sand Egg before window -->
 		<ExFish Bait="Desert Dessert Frog" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33241,&Cinder_Surprise;) and not HasAtLeast(27462,9) and HasAtLeast(27584,1) and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">

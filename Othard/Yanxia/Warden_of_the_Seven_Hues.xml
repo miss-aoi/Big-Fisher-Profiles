@@ -31,6 +31,16 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
+		<Dismount/>
+		<If condition="HasAtLeast(24203,1)">
+			<Desynth ItemIds="24203" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
+		<If condition="HasAtLeast(23056,1)">
+			<Desynth ItemIds="23056" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
+		<If condition="HasAtLeast(24204,1)">
+			<Desynth ItemIds="24204" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
 		<!-- Indigo Prismfish -->
 		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(24203,3) and HasAtLeast(20675,1) and not Core.Player.HasAura(568) and Condition.IsTimeBetween(0,4)"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
