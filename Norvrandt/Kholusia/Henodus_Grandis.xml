@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Henodus_Grandis "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "(Condition.IsTimeBetween(22,24) or Condition.IsTimeBetween(0,0))">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Clouds')">
 ]>
 <Profile>
 	<Name>Henodus Grandis</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Henodus Grandis..." />
+		<If Condition="not IsOnMap(814)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(27588,3)">
 			<!--Short Bill Minnow-->
+			<Log Message="Need more Short Bill Minnow. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27588,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3074)">
@@ -22,23 +31,21 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="Condition.IsTimeBetween(21,22)">
-			<Log Message="Waiting for window to open..." />
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Short Bill Minnow" condition="not HasAtLeast(32051,&Henodus_Grandis;) and HasAtLeast(27588,1) and (Condition.IsTimeBetween(22,24) or Condition.IsTimeBetween(0,0)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Clouds')"
+		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(21,22) or Core.Player.Auras.GetAuraStacksById(2778) &lt; 10" Sit="True" SitRate="1">
+			<FishSpots>
+				<FishSpot XYZ="582.0699, -0.6680323, 612.188" Heading="0.7455881" />
+			</FishSpots>
+		</ExFish>
+		<ExFish Bait="Short Bill Minnow" condition="not HasAtLeast(32051,&Henodus_Grandis;) and HasAtLeast(27588,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-			</PatientTugs>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="582.0699, -0.6680323, 612.188" Heading="0.7455881" />
 				<FishSpot XYZ="549.6307, -0.5994223, 620.8198" Heading="0.2240846" />
 				<FishSpot XYZ="604.9731, -0.6434861, 595.2731" Heading="1.0032" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Spearhead Squid" action="Mooch" />
 				<Keeper name="Henodus Grandis" />
 			</Keepers>
 			<SurfaceSlaps />
@@ -46,5 +53,16 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

@@ -5,15 +5,24 @@
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY The_Lone_Ripper "5">
+	<!ENTITY The_Lone_Ripper "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Gales')">
 ]>
 <Profile>
 	<Name>The Lone Ripper</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: The Lone Ripper..." />
+		<If Condition="not IsOnMap(138)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(2619,3)">
 			<!--Heavy Steel Jig-->
+			<Log Message="Need more Heavy Steel Jig. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2619,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>
 		<If condition="not IsOnSubMap(945)">
@@ -22,7 +31,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Heavy Steel Jig" condition="not HasAtLeast(7926,&The_Lone_Ripper;) and HasAtLeast(2619,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(138, 'Gales')"
+		<ExFish Bait="Heavy Steel Jig" condition="not HasAtLeast(7926,&The_Lone_Ripper;) and HasAtLeast(2619,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-241.2194, -42.11089, 44.17156" Heading="4.514718" />
@@ -37,5 +46,16 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

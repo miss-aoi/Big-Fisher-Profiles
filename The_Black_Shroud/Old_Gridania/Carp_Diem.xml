@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Carp_Diem "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(9,14)">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(133, 'Clouds', 'Fog')">
 ]>
 <Profile>
 	<Name>Carp Diem</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Carp Diem..." />
+		<If Condition="not IsOnMap(133)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(2614,3)">
 			<!--Crow Fly-->
+			<Log Message="Need more Crow Fly. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2614,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnMap(133) or not IsOnSubMap(0)">
@@ -22,11 +31,12 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="Condition.IsTimeBetween(8,9)">
-			<Log Message="Waiting for window to open..." />
-                        <WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Crow Fly" condition="not HasAtLeast(7701,&Carp_Diem;) and HasAtLeast(2614,1) and Condition.IsTimeBetween(9,14) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(133, 'Clouds', 'Fog')"
+		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(8,9) or Core.Player.Auras.GetAuraStacksById(2778) &lt; 10" Sit="True" SitRate="1">
+			<FishSpots>
+				<FishSpot XYZ="-121.8741, 3.031262, -162.0318" Heading="4.686854" />
+			</FishSpots>
+		</ExFish>
+		<ExFish Bait="Crow Fly" condition="not HasAtLeast(7701,&Carp_Diem;) and HasAtLeast(2614,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-121.8741, 3.031262, -162.0318" Heading="4.686854" />
@@ -41,5 +51,16 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

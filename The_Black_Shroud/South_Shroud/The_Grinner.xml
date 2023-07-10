@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY The_Grinner "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "True">
 ]>
 <Profile>
 	<Name>The Grinner</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: The Grinner..." />
+		<If Condition="not IsOnMap(153)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(2597,50)">
 			<!--Syrphid Basket-->
+			<Log Message="Need more Syrphid Basket. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2597,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(78)">
@@ -22,7 +31,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Syrphid Basket" condition="not HasAtLeast(7914,&The_Grinner;) and HasAtLeast(2597,1)"
+		<ExFish Bait="Syrphid Basket" condition="not HasAtLeast(7914,&The_Grinner;) and HasAtLeast(2597,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="141.6422, 4.133486, 23.83754" Heading="1.421836" />
@@ -37,5 +46,16 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

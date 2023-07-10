@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY High_Perch "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(5,8)">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "True">
 ]>
 <Profile>
 	<Name>High Perch</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: High Perch..." />
+		<If Condition="not IsOnMap(134)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(2617,3)">
 			<!--Sinking Minnow-->
+			<Log Message="Need more Sinking Minnow. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2617,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>
 		<If condition="not IsOnSubMap(163)">
@@ -22,11 +31,12 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="Condition.IsTimeBetween(4,5)">
-			<Log Message="Waiting for window to open..." />
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Sinking Minnow" condition="not HasAtLeast(7709,&High_Perch;) and HasAtLeast(2617,1) and Condition.IsTimeBetween(5,8)"
+		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(4,5) or Core.Player.Auras.GetAuraStacksById(2778) &lt; 10" Sit="True" SitRate="1">
+			<FishSpots>
+				<FishSpot XYZ="-121.0939, 12.21, -366.0357" Heading="3.868313" />
+			</FishSpots>
+		</ExFish>
+		<ExFish Bait="Sinking Minnow" condition="not HasAtLeast(7709,&High_Perch;) and HasAtLeast(2617,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-121.0939, 12.21, -366.0357" Heading="3.868313" />
@@ -41,5 +51,16 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

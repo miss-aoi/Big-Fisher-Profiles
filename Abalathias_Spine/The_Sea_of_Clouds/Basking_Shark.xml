@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Basking_Shark "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST "ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(401, TimeSpan.FromHours(-8), 'Fog')">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')">
 ]>
 <Profile>
 	<Name>Basking Shark</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Basking Shark..." />
+		<If Condition="not IsOnMap(401)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(28634,3)">
 			<!--Metal Spinner-->
+			<Log Message="Need more Metal Spinner. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':28634,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2129)">
@@ -22,19 +31,16 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Metal Spinner" condition="not HasAtLeast(16743,&Basking_Shark;) and HasAtLeast(28634,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(401, TimeSpan.FromHours(-8), 'Fog')"
+		<ExFish Bait="Metal Spinner" condition="not HasAtLeast(16743,&Basking_Shark;) and HasAtLeast(28634,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-			</PatientTugs>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-353.6552, 19.58649, -832.2133" Heading="3.856718" />
 				<FishSpot XYZ="-339.0728, 19.71094, -849.5245" Heading="4.007522" />
 				<FishSpot XYZ="-322.0511, 20.56616, -850.5399" Heading="1.887997" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Sky Faerie" action="Mooch" />
 				<Keeper name="Basking Shark" />
 			</Keepers>
 			<SurfaceSlaps />
@@ -42,5 +48,16 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

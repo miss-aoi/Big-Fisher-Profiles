@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Jacques_the_Snipper "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "(Condition.IsTimeBetween(21,24) or Condition.IsTimeBetween(0,3))">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "True">
 ]>
 <Profile>
 	<Name>Jacques the Snipper</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Jacques the Snipper..." />
+		<If Condition="not IsOnMap(135)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(2589,50)">
 			<!--Goby Ball-->
+			<Log Message="Need more Goby Ball. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2589,'Amount':50,'Enabled':true,'Type':'Culinarian'}]" />
 		</If>
 		<If condition="not IsOnSubMap(337)">
@@ -22,11 +31,12 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="Condition.IsTimeBetween(20,21)">
-			<Log Message="Waiting for window to open..." />
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Goby Ball" condition="not HasAtLeast(7712,&Jacques_the_Snipper;) and HasAtLeast(2589,1) and (Condition.IsTimeBetween(21,24) or Condition.IsTimeBetween(0,3))"
+		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(20,21) or Core.Player.Auras.GetAuraStacksById(2778) &lt; 10" Sit="True" SitRate="1">
+			<FishSpots>
+				<FishSpot XYZ="293.4721, 8.000008, 698.3556" Heading="2.634873" />
+			</FishSpots>
+		</ExFish>
+		<ExFish Bait="Goby Ball" condition="not HasAtLeast(7712,&Jacques_the_Snipper;) and HasAtLeast(2589,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="293.4721, 8.000008, 698.3556" Heading="2.634873" />
@@ -41,5 +51,16 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

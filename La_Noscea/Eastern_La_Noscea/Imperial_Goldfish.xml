@@ -5,15 +5,24 @@
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY Imperial_Goldfish "10">
+	<!ENTITY Imperial_Goldfish "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "True">
 ]>
 <Profile>
 	<Name>Imperial Goldfish</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Imperial Goldfish..." />
+		<If Condition="not IsOnMap(137)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(2599,50)">
 			<!--Honey Worm-->
+			<Log Message="Need more Honey Worm. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(214)">
@@ -22,8 +31,8 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Honey Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8752,&Imperial_Goldfish;) and HasAtLeast(2599,1)"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
+		<ExFish Bait="Honey Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8752,&Imperial_Goldfish;) and HasAtLeast(2599,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" CordialType="Auto" Sit="True" SitRate="1"
 				Mooch="2" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-272.5454, 33.78063, 299.9305" Heading="4.463154" />
@@ -36,8 +45,8 @@
 				<Keeper name="Jungle Catfish" />
 			</Keepers>
 		</ExFish>
-		<ExFish Bait="Honey Worm" Condition="Core.Player.HasAura(568) and not HasAtLeast(8752,&Imperial_Goldfish;) and HasAtLeast(2599,1)"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
+		<ExFish Bait="Honey Worm" Condition="Core.Player.HasAura(568) and not HasAtLeast(8752,&Imperial_Goldfish;) and HasAtLeast(2599,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" CordialType="Auto" Sit="True" SitRate="1"
 				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-272.5454, 33.78063, 299.9305" Heading="4.463154" />
@@ -66,6 +75,16 @@
 					await Buddy.Coroutines.Coroutine.Sleep(500);
 					ff14bot.Managers.ActionManager.DoAction(299, Core.Player);
 					await Buddy.Coroutines.Coroutine.Sleep(2000);
+				}
+			]]>
+		</CodeChunk>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
 				}
 			]]>
 		</CodeChunk>

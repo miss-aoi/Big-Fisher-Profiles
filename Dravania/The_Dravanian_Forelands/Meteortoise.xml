@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Meteortoise "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "True">
 ]>
 <Profile>
 	<Name>Meteortoise</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Meteortoise..." />
+		<If Condition="not IsOnMap(398)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(12709,50)">
 			<!--Magma Worm-->
+			<Log Message="Need more Magma Worm. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12709,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2008)">
@@ -22,19 +31,16 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Magma Worm" condition="not HasAtLeast(15631,&Meteortoise;) and HasAtLeast(12709,1)"
+		<ExFish Bait="Magma Worm" condition="not HasAtLeast(15631,&Meteortoise;) and HasAtLeast(12709,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-			</PatientTugs>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-471.8031, -10.14293, -475.2836" Heading="1.936656" />
 				<FishSpot XYZ="-478.3157, -11.6859, -448.0603" Heading="3.788103" />
 				<FishSpot XYZ="-455.5224, -12.17101, -456.36" Heading="3.277071" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Granite Crab" action="Mooch"/>
 				<Keeper name="Meteortoise" />
 			</Keepers>
 			<SurfaceSlaps />
@@ -42,5 +48,16 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

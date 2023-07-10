@@ -5,15 +5,24 @@
 -->
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
-	<!ENTITY Crystal_Pigeon "1">
+	<!ENTITY Crystal_Pigeon "1"> 
+	
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST "ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(402, TimeSpan.FromHours(-8), 'Fair Skies')">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Thunder')">
 ]>
 <Profile>
 	<Name>Crystal Pigeon</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Crystal Pigeon..." />
+		<If Condition="not IsOnMap(402)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(12712,50)">
 			<!--Giant Crane Fly-->
+			<Log Message="Need more Giant Crane Fly. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12712,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2113)">
@@ -22,19 +31,16 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Giant Crane Fly" condition="not HasAtLeast(17581,&Crystal_Pigeon;) and HasAtLeast(12712,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(402, 'Thunder') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(402, TimeSpan.FromHours(-8), 'Fair Skies')"
+		<ExFish Bait="Giant Crane Fly" condition="not HasAtLeast(17581,&Crystal_Pigeon;) and HasAtLeast(12712,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Medium" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-			</PatientTugs>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="876.0121, 30.3, -183.2697" Heading="1.35798" />
 				<FishSpot XYZ="867.404, 30.3, -164.5814" Heading="1.15273" />
 				<FishSpot XYZ="884.2114, 30.3, -229.1334" Heading="1.552759" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Rudderfish" action="Mooch" />
 				<Keeper name="Crystal Pigeon" />
 			</Keepers>
 			<SurfaceSlaps />
@@ -42,5 +48,16 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

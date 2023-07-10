@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Ambling_Caltrop "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(12,16)">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Clear Skies')">
 ]>
 <Profile>
 	<Name>Ambling Caltrop</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Ambling Caltrop..." />
+		<If Condition="not IsOnMap(815)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(27584,3)">
 			<!--Desert Dessert Frog-->
+			<Log Message="Need more Desert Dessert Frog. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27584,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3117)">
@@ -22,23 +31,21 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="Condition.IsTimeBetween(11,12)">
-			<Log Message="Waiting for window to open..." />
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Desert Dessert Frog" condition="not HasAtLeast(28927,&Ambling_Caltrop;) and HasAtLeast(27584,1) and Condition.IsTimeBetween(12,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Clear Skies')"
+		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(11,12) or Core.Player.Auras.GetAuraStacksById(2778) &lt; 10" Sit="True" SitRate="1">
+			<FishSpots>
+				<FishSpot XYZ="-339.1496, 19.91743, -323.5501" Heading="3.68435" />
+			</FishSpots>
+		</ExFish>
+		<ExFish Bait="Desert Dessert Frog" condition="not HasAtLeast(28927,&Ambling_Caltrop;) and HasAtLeast(27584,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-			</PatientTugs>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-339.1496, 19.91743, -323.5501" Heading="3.68435" />
 				<FishSpot XYZ="-314.253, 19.54304, -329.2903" Heading="2.970156" />
 				<FishSpot XYZ="-348.9078, 19.54023, -304.5909" Heading="4.461364" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Web-Footed Sand Gecko" action="Mooch" />
 				<Keeper name="Ambling Caltrop" />
 			</Keepers>
 			<SurfaceSlaps />
@@ -46,5 +53,16 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

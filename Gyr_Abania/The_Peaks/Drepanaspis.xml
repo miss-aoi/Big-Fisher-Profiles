@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Drepanaspis "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Dust Storms')">
 ]>
 <Profile>
 	<Name>Drepanaspis</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Drepanaspis..." />
+		<If Condition="not IsOnMap(620)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(20619,3)">
 			<!--Suspending Minnow-->
+			<Log Message="Need more Suspending Minnow. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20619,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2604)">
@@ -22,7 +31,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Suspending Minnow" Condition="not Core.Player.HasAura(568) and not HasAtLeast(24991,&Drepanaspis;) and HasAtLeast(20619,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Dust Storms')"
+		<ExFish Bait="Suspending Minnow" Condition="not Core.Player.HasAura(568) and not HasAtLeast(24991,&Drepanaspis;) and HasAtLeast(20619,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-749.2921, 78.40405, -326.2978" Heading="0.6973693" />
@@ -33,7 +42,7 @@
 				<Keeper name="Bondsplitter" />
 			</Keepers>
 		</ExFish>
-		<ExFish Bait="Suspending Minnow" Condition="Core.Player.HasAura(568) and not HasAtLeast(24991,&Drepanaspis;) and HasAtLeast(20619,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Dust Storms')"
+		<ExFish Bait="Suspending Minnow" Condition="Core.Player.HasAura(568) and not HasAtLeast(24991,&Drepanaspis;) and HasAtLeast(20619,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-749.2921, 78.40405, -326.2978" Heading="0.6973693" />
@@ -61,6 +70,16 @@
 					await Buddy.Coroutines.Coroutine.Sleep(500);
 					ff14bot.Managers.ActionManager.DoAction(299, Core.Player);
 					await Buddy.Coroutines.Coroutine.Sleep(2000);
+				}
+			]]>
+		</CodeChunk>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
 				}
 			]]>
 		</CodeChunk>

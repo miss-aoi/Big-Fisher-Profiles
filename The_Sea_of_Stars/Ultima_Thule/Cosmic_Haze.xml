@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Cosmic_Haze "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "(Condition.IsTimeBetween(20,24) or Condition.IsTimeBetween(0,4))">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Astromagnetic Storm')">
 ]>
 <Profile>
 	<Name>Cosmic Haze</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Cosmic Haze..." />
+		<If Condition="not IsOnMap(960)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(36595,50)">
 			<!--Chimera Worm-->
+			<Log Message="Need more Chimera Worm. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36595,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3970)">
@@ -22,23 +31,21 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="Condition.IsTimeBetween(19,20)">
-			<Log Message="Waiting for window to open..." />
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Chimera Worm" condition="not HasAtLeast(38835,&Cosmic_Haze;) and HasAtLeast(36595,1) and (Condition.IsTimeBetween(20,24) or Condition.IsTimeBetween(0,4)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Astromagnetic Storm')"
+		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(19,20) or Core.Player.Auras.GetAuraStacksById(2778) &lt; 10" Sit="True" SitRate="1">
+			<FishSpots>
+				<FishSpot XYZ="-49.45981, 59.963, 770.6264" Heading="1.842928" />
+			</FishSpots>
+		</ExFish>
+		<ExFish Bait="Chimera Worm" condition="not HasAtLeast(38835,&Cosmic_Haze;) and HasAtLeast(36595,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Medium" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-			</PatientTugs>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-49.45981, 59.963, 770.6264" Heading="1.842928" />
 				<FishSpot XYZ="-21.49617, 59.96301, 765.451" Heading="4.207498" />
 				<FishSpot XYZ="-47.78304, 59.96301, 740.5374" Heading="5.72386" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Vacuum Shrimp" action="Mooch" />
 				<Keeper name="Cosmic Haze" />
 			</Keepers>
 			<SurfaceSlaps />
@@ -46,5 +53,16 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

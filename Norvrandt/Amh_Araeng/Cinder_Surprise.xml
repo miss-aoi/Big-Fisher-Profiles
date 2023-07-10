@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Cinder_Surprise "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(0,2)">
+	<!ENTITY WEATHER_PAST "ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Dust Storms')">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves')">
 ]>
 <Profile>
 	<Name>Cinder Surprise</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Cinder Surprise..." />
+		<If Condition="not IsOnMap(815)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(27584,3)">
 			<!--Desert Dessert Frog-->
+			<Log Message="Need more Desert Dessert Frog. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27584,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3120)">
@@ -23,12 +32,10 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<!-- Catch 9 Sand Egg before window -->
-		<ExFish Bait="Desert Dessert Frog" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33241,&Cinder_Surprise;) and not HasAtLeast(27462,9) and HasAtLeast(27584,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Dust Storms')"
+		<ExFish Bait="Desert Dessert Frog" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33241,&Cinder_Surprise;) and not HasAtLeast(27462,9) and HasAtLeast(27584,1) and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="472.8454, -49.40374, -440.5691" Heading="2.276201" />
-				<!-- <FishSpot XYZ="454.2035, -48.19075, -458.9115" Heading="2.483547" />
-				<FishSpot XYZ="431.857, -47.99002, -480.3968" Heading="2.925464" /> -->
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Sand Egg" />
@@ -44,12 +51,10 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Desert Dessert Frog" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33241,&Cinder_Surprise;) and HasAtLeast(27584,1) and Condition.IsTimeBetween(0,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Dust Storms')"
+		<ExFish Bait="Desert Dessert Frog" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33241,&Cinder_Surprise;) and HasAtLeast(27584,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="472.8454, -49.40374, -440.5691" Heading="2.276201" />
-				<!-- <FishSpot XYZ="454.2035, -48.19075, -458.9115" Heading="2.483547" />
-				<FishSpot XYZ="431.857, -47.99002, -480.3968" Heading="2.925464" /> -->
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Sand Egg" />
@@ -61,12 +66,10 @@
 				<SurfaceSlap name="Web-footed Sand Gecko" />
 			</SurfaceSlaps>
 		</ExFish>
-		<ExFish Bait="Desert Dessert Frog" Condition="Core.Player.HasAura(568) and not HasAtLeast(33241,&Cinder_Surprise;) and HasAtLeast(27584,1) and Condition.IsTimeBetween(0,2) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Dust Storms')"
+		<ExFish Bait="Desert Dessert Frog" Condition="Core.Player.HasAura(568) and not HasAtLeast(33241,&Cinder_Surprise;) and HasAtLeast(27584,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="472.8454, -49.40374, -440.5691" Heading="2.276201" />
-				<!-- <FishSpot XYZ="454.2035, -48.19075, -458.9115" Heading="2.483547" />
-				<FishSpot XYZ="431.857, -47.99002, -480.3968" Heading="2.925464" /> -->
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Cinder Surprise" />
@@ -89,6 +92,16 @@
 					await Buddy.Coroutines.Coroutine.Sleep(500);
 					ff14bot.Managers.ActionManager.DoAction(299, Core.Player);
 					await Buddy.Coroutines.Coroutine.Sleep(2000);
+				}
+			]]>
+		</CodeChunk>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
 				}
 			]]>
 		</CodeChunk>

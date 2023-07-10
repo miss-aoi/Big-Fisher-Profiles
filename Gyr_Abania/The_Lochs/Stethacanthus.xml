@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Stethacanthus "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(16,18)">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Thunderstorms')">
 ]>
 <Profile>
 	<Name>Stethacanthus</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Stethacanthus..." />
+		<If Condition="not IsOnMap(621)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(20616,50)">
 			<!--Silkworm-->
+			<Log Message="Need more Silkworm. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20616,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2609)">
@@ -22,25 +31,23 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="not Condition.IsTimeBetween(12,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Thunderstorms')">
-			<Log Message="Waiting for window to open..." />
-			<WaitTimer WaitTime="30" />
-		</While>
+		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(12,18) or Core.Player.Auras.GetAuraStacksById(2778) &lt; 10" Sit="True" SitRate="1">
+			<FishSpots>
+				<FishSpot XYZ="-582.2648, -68.21622, 398.7921" Heading="0.478368" />
+			</FishSpots>
+		</ExFish>
 		<!-- Catch 1 Sculptor before window -->
-		<ExFish Bait="Silkworm" Condition="not Core.Player.HasAura(568) and HasAtLeast(20040,2) and not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Thunderstorms')"
+		<ExFish Bait="Silkworm" Condition="not Core.Player.HasAura(568) and HasAtLeast(20040,2) and not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Medium" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-			</PatientTugs>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-178.4802, -0.3, -88.88718" Heading="2.481858" />
 				<FishSpot XYZ="-157.1131, -0.3, -82.60224" Heading="2.234722" />
 				<FishSpot XYZ="-197.6503, -0.3, -120.0159" Heading="1.893329" />
 			</FishSpots>
 			<Keepers>
-				<Keeper name="Sculptor" />
+				<Keeper name="Rock Saltfish" action="Mooch" />
+				<Keeper name="Stethacanthus" />
 			</Keepers>
 			<Surfaceslap>
 				<SurfaceSlaps Name="Saltshield Snapper" />
@@ -52,19 +59,16 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<!-- Catch last fish once window starts -->
-		<ExFish Bait="Silkworm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and Condition.IsTimeBetween(16,18) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(621, 'Thunderstorms')"
+		<ExFish Bait="Silkworm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Medium" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-			</PatientTugs>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-178.4802, -0.3, -88.88718" Heading="2.481858" />
 				<FishSpot XYZ="-157.1131, -0.3, -82.60224" Heading="2.234722" />
 				<FishSpot XYZ="-197.6503, -0.3, -120.0159" Heading="1.893329" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Rock Saltfish" action="Mooch" />
 				<Keeper name="Sculptor" />
 			</Keepers>
 			<Surfaceslap>
@@ -73,19 +77,16 @@
 			</Surfaceslap>
 		</ExFish>
 		<!-- Go after Stethacanthus -->
-		<ExFish Bait="Silkworm" Condition="Core.Player.HasAura(568) and not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and Condition.IsTimeBetween(16,18)"
+		<ExFish Bait="Silkworm" Condition="Core.Player.HasAura(568) and not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Medium" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-			</PatientTugs>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-178.4802, -0.3, -88.88718" Heading="2.481858" />
 				<FishSpot XYZ="-157.1131, -0.3, -82.60224" Heading="2.234722" />
 				<FishSpot XYZ="-197.6503, -0.3, -120.0159" Heading="1.893329" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Rock Saltfish" action="Mooch" />
 				<Keeper name="Stethacanthus" />
 			</Keepers>
 			<Surfaceslap>
@@ -109,6 +110,16 @@
 					await Buddy.Coroutines.Coroutine.Sleep(500);
 					ff14bot.Managers.ActionManager.DoAction(299, Core.Player);
 					await Buddy.Coroutines.Coroutine.Sleep(2000);
+				}
+			]]>
+		</CodeChunk>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
 				}
 			]]>
 		</CodeChunk>

@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Dammroen_Herring "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "True">
 ]>
 <Profile>
 	<Name>Dammroen Herring</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Dammroen Herring..." />
+		<If Condition="not IsOnMap(816)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(27589,50)">
 			<!--Baitbugs-->
+			<Log Message="Need more Baitbugs. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27589,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3146)">
@@ -22,7 +31,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Baitbugs" condition="not HasAtLeast(33321,&Dammroen_Herring;) and HasAtLeast(27589,1)"
+		<ExFish Bait="Baitbugs" condition="not HasAtLeast(33321,&Dammroen_Herring;) and HasAtLeast(27589,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="363.3964, 50.29507, -512.3802" Heading="4.149429" />
@@ -33,12 +42,20 @@
 				<Keeper name="Dammroen Herring" />
 			</Keepers>
 			<SurfaceSlaps />
-			<TripleHooks>
-				<TripleHook Name="Light" />
-			</TripleHooks>
 		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

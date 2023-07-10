@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Pirates_Bane "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "True">
 ]>
 <Profile>
 	<Name>Pirates Bane</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Pirates Bane..." />
+		<If Condition="not IsOnMap(140)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(2585,50)">
 			<!--Lugworm-->
+			<Log Message="Need more Lugworm. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2585,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(277)">
@@ -22,36 +31,30 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Lugworm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8764,&Pirates_Bane;) and HasAtLeast(2585,1)"
+		<ExFish Bait="Lugworm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8764,&Pirates_Bane;) and HasAtLeast(2585,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-				</PatientTugs>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-535.9346, 55.54464, -729.137" Heading="5.629245" />
 				<FishSpot XYZ="-541.2679, 55.26532, -731.5655" Heading="5.708457" />
 				<FishSpot XYZ="-544.7125, 55.05087, -735.2115" Heading="5.597829" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Merlthor Goby" action="Mooch" />
 				<Keeper name="Wahoo" />
 			</Keepers>
 		</ExFish>
-			<ExFish Bait="Lugworm" Condition="Core.Player.HasAura(568) and not HasAtLeast(8764,&Pirates_Bane;) and HasAtLeast(2585,1)"
+			<ExFish Bait="Lugworm" Condition="Core.Player.HasAura(568) and not HasAtLeast(8764,&Pirates_Bane;) and HasAtLeast(2585,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="3" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-					<PatienceTug moochLevel="2" TugType="Medium" />
-				</PatientTugs>
+				Mooch="2" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-535.9346, 55.54464, -729.137" Heading="5.629245" />
 				<FishSpot XYZ="-541.2679, 55.26532, -731.5655" Heading="5.708457" />
 				<FishSpot XYZ="-544.7125, 55.05087, -735.2115" Heading="5.597829" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Merlthor Goby" action="Mooch" />
+				<Keeper name="Wahoo" action="Mooch" />
 				<Keeper name="Pirate's Bane" />
 			</Keepers>
 			<SurfaceSlaps />
@@ -72,6 +75,16 @@
 					await Buddy.Coroutines.Coroutine.Sleep(500);
 					ff14bot.Managers.ActionManager.DoAction(299, Core.Player);
 					await Buddy.Coroutines.Coroutine.Sleep(2000);
+				}
+			]]>
+		</CodeChunk>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
 				}
 			]]>
 		</CodeChunk>

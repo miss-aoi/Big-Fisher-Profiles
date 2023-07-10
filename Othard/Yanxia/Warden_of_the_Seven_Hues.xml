@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Warden_of_the_Seven_Hues "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "True">
 ]>
 <Profile>
 	<Name>Warden of the Seven Hues</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Warden of the Seven Hues..." />
+		<If Condition="not IsOnMap(614)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(20675,50)">
 			<!--Stonefly Larva-->
+			<Log Message="Need more Stonefly Larva. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20675,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2807)">
@@ -25,14 +34,12 @@
 		<!-- Indigo Prismfish -->
 		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(24203,3) and HasAtLeast(20675,1) and not Core.Player.HasAura(568) and Condition.IsTimeBetween(0,4)"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Heavy" />
-			</PatientTugs>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="358.0955, -16.22713, -688.6342" Heading="2.647624" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Violet Prismfish" action="Mooch" />
 				<Keeper name="Indigo Prismfish" />
 				<Keeper name="Green Prismfish" />
 			</Keepers>
@@ -49,14 +56,12 @@
 		<!-- Firelight Goldfish -->
 		<ExFish Bait="Stonefly Larva" Condition="not HasAtLeast(24994,&Warden_of_the_Seven_Hues;) and not HasAtLeast(23056,3) and HasAtLeast(24203,3) and HasAtLeast(20675,1) and not Core.Player.HasAura(568) and Condition.IsTimeBetween(4,8)"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Heavy" />
-			</PatientTugs>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="358.0955, -16.22713, -688.6342" Heading="2.647624" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Red Prismfish" action="Mooch" />
 				<Keeper name="Firelight Prismfish" />
 				<Keeper name="Green Prismfish" />
 			</Keepers>
@@ -115,6 +120,16 @@
 					await Buddy.Coroutines.Coroutine.Sleep(500);
 					ff14bot.Managers.ActionManager.DoAction(299, Core.Player);
 					await Buddy.Coroutines.Coroutine.Sleep(2000);
+				}
+			]]>
+		</CodeChunk>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
 				}
 			]]>
 		</CodeChunk>

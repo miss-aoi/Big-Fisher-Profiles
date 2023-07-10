@@ -6,18 +6,28 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Problematicus "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(10,15)">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies', 'Fair Skies')">
 ]>
 <Profile>
 	<Name>Problematicus</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Problematicus..." />
+		<If Condition="not IsOnMap(398)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(28634,3)">
 			<!--Metal Spinner-->
+			<Log Message="Need more Metal Spinner. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':28634,'Amount':3,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not HasAtLeast(12709,50)">
 			<!--Magma Worm-->
+			<Log Message="Need more Magma Worm. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12709,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2030)">
@@ -31,8 +41,6 @@
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-740.1883, 5.498933, -826.3872" Heading="4.0164" />
-				<FishSpot XYZ="-731.7888, 5.523361, -836.9976" Heading="3.765071" />
-				<FishSpot XYZ="-726.6816, 5.195183, -840.1033" Heading="3.718992" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Fossiltongue" />
@@ -44,12 +52,10 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<!-- Catch last ones once window starts -->
-		<ExFish Bait="Magma Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17588,&Problematicus;) and HasAtLeast(28634,1) and Condition.IsTimeBetween(10,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies', 'Fair Skies')"
+		<ExFish Bait="Magma Worm" Condition="not Core.Player.HasAura(568) not HasAtLeast(12800,3) and not HasAtLeast(12754,5) and not HasAtLeast(17588,&Problematicus;) and HasAtLeast(28634,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-740.1883, 5.498933, -826.3872" Heading="4.0164" />
-				<FishSpot XYZ="-731.7888, 5.523361, -836.9976" Heading="3.765071" />
-				<FishSpot XYZ="-726.6816, 5.195183, -840.1033" Heading="3.718992" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Fossiltongue" />
@@ -57,19 +63,14 @@
 			</Keepers>
 		</ExFish>
 		<!-- Go after Probolematicus -->
-		<ExFish Bait="Metal Spinner" Condition="Core.Player.HasAura(568) and not HasAtLeast(17588,&Problematicus;) and HasAtLeast(28634,1) and Condition.IsTimeBetween(10,15) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies', 'Fair Skies')"
+		<ExFish Bait="Metal Spinner" Condition="Core.Player.HasAura(568) and not HasAtLeast(17588,&Problematicus;) and HasAtLeast(28634,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-			</PatientTugs>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-740.1883, 5.498933, -826.3872" Heading="4.0164" />
-				<FishSpot XYZ="-731.7888, 5.523361, -836.9976" Heading="3.765071" />
-				<FishSpot XYZ="-726.6816, 5.195183, -840.1033" Heading="3.718992" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Granite Crab" action="Mooch" />
 				<Keeper name="Problematicus" />
 			</Keepers>
 			<SurfaceSlaps />
@@ -93,6 +94,16 @@
 					await Buddy.Coroutines.Coroutine.Sleep(500);
 					ff14bot.Managers.ActionManager.DoAction(299, Core.Player);
 					await Buddy.Coroutines.Coroutine.Sleep(2000);
+				}
+			]]>
+		</CodeChunk>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
 				}
 			]]>
 		</CodeChunk>

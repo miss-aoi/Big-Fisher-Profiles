@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY The_Horned_King "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(0,6)">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Dust Storms')">
 ]>
 <Profile>
 	<Name>The Horned King</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: The Horned King..." />
+		<If Condition="not IsOnMap(815)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(27586,50)">
 			<!--Jerked Ovim-->
+			<Log Message="Need more Jerked Ovim. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27586,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3120)">
@@ -22,23 +31,21 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="Condition.IsTimeBetween(23,24)">
-			<Log Message="Waiting for window to open..." />
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Jerked Ovim" condition="not HasAtLeast(28069,&The_Horned_King;) and HasAtLeast(27586,1) and Condition.IsTimeBetween(0,6) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Dust Storms')"
+		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(23,24) or Core.Player.Auras.GetAuraStacksById(2778) &lt; 10" Sit="True" SitRate="1">
+			<FishSpots>
+				<FishSpot XYZ="472.8454, -49.40374, -440.5691" Heading="2.276201" />
+			</FishSpots>
+		</ExFish>
+		<ExFish Bait="Jerked Ovim" condition="not HasAtLeast(28069,&The_Horned_King;) and HasAtLeast(27586,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Medium" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-			</PatientTugs>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="472.8454, -49.40374, -440.5691" Heading="2.276201" />
 				<FishSpot XYZ="454.2035, -48.19075, -458.9115" Heading="2.483547" />
 				<FishSpot XYZ="431.857, -47.99002, -480.3968" Heading="2.925464" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Hornedhelm" action="Mooch" />
 				<Keeper name="The Horned King" />
 			</Keepers>
 			<SurfaceSlaps />
@@ -46,5 +53,16 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

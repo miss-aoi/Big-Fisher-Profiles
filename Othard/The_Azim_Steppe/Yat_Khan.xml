@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Yat_Khan "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(622, 'Wind')">
 ]>
 <Profile>
 	<Name>Yat Khan</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Yat Khan..." />
+		<If Condition="not IsOnMap(622)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(20675,50)">
 			<!--Stonefly Larva-->
+			<Log Message="Need more Stonefly Larva. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20675,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2759)">
@@ -22,20 +31,31 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-			<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(23070,&Yat_Khan;) and HasAtLeast(20675,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(622, 'Wind')"
+		<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(23070,&Yat_Khan;) and HasAtLeast(20675,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-9.731633, -5.338995, 325.8565" Heading="0.6083343" />
-					<FishSpot XYZ="-35.89866, -4.717465, 345.3363" Heading="4.98562" />
-					<FishSpot XYZ="27.90487, -7.143641, 337.8614" Heading="4.384519" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Yat Khan" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
+			<FishSpots>
+				<FishSpot XYZ="-9.731633, -5.338995, 325.8565" Heading="0.6083343" />
+				<FishSpot XYZ="-35.89866, -4.717465, 345.3363" Heading="4.98562" />
+				<FishSpot XYZ="27.90487, -7.143641, 337.8614" Heading="4.384519" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Yat Khan" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

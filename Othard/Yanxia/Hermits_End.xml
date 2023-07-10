@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Hermits_End "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(20,24)">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies')">
 ]>
 <Profile>
 	<Name>Hermit's End</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Hermit's End..." />
+		<If Condition="not IsOnMap(614)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(20675,50)">
 			<!--Stonefly Larva-->
+			<Log Message="Need more Stonefly Larva. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20675,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2752)">
@@ -22,24 +31,36 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="Condition.IsTimeBetween(19,20)">
-			<Log Message="Waiting for window to open..." />
-			<WaitTimer WaitTime="30" />
-		</While>
-			<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(24887,&Hermits_End;) and HasAtLeast(20675,1) and Condition.IsTimeBetween(20,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies')"
+		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(19,20) or Core.Player.Auras.GetAuraStacksById(2778) &lt; 10" Sit="True" SitRate="1">
+			<FishSpots>
+				<FishSpot XYZ="411.9119, -0.3000069, -275.5999" Heading="3.849829" />
+			</FishSpots>
+		</ExFish>
+		<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(24887,&Hermits_End;) and HasAtLeast(20675,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="411.9119, -0.3000069, -275.5999" Heading="3.849829" />
-					<FishSpot XYZ="393.0524, -0.3000069, -275.2616" Heading="3.026734" />
-					<FishSpot XYZ="419.3833, -0.3000069, -301.45" Heading="5.332651" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Hermit's End" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
+			<FishSpots>
+				<FishSpot XYZ="411.9119, -0.3000069, -275.5999" Heading="3.849829" />
+				<FishSpot XYZ="393.0524, -0.3000069, -275.2616" Heading="3.026734" />
+				<FishSpot XYZ="419.3833, -0.3000069, -301.45" Heading="5.332651" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Hermit's End" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

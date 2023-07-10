@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Pomegranate_Trout "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Rain')">
 ]>
 <Profile>
 	<Name>Pomegranate Trout</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Pomegranate Trout..." />
+		<If Condition="not IsOnMap(614)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(20614,50)">
 			<!--Nightcrawler-->
+			<Log Message="Need more Nightcrawler. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20614,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2752)">
@@ -22,20 +31,31 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-			<ExFish Bait="Nightcrawler" condition="not HasAtLeast(24885,&Pomegranate_Trout;) and HasAtLeast(20614,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Rain')"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="640.8627, 124.1067, -374.8214" Heading="0.7165961" />
-					<FishSpot XYZ="657.3647, 123.7503, -385.4939" Heading="0.3961546" />
-					<FishSpot XYZ="674.1044, 124.0649, -392.046" Heading="0.1992848" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Pomegranate Trout" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
+		<ExFish Bait="Nightcrawler" condition="not HasAtLeast(24885,&Pomegranate_Trout;) and HasAtLeast(20614,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
+			MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="640.8627, 124.1067, -374.8214" Heading="0.7165961" />
+				<FishSpot XYZ="657.3647, 123.7503, -385.4939" Heading="0.3961546" />
+				<FishSpot XYZ="674.1044, 124.0649, -392.046" Heading="0.1992848" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Pomegranate Trout" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

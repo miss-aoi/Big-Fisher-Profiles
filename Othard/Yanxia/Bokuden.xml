@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Bokuden "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(12,14)">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "True">
 ]>
 <Profile>
 	<Name>Bokuden</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Bokuden..." />
+		<If Condition="not IsOnMap(614)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(20675,50)">
 			<!--Stonefly Larva-->
+			<Log Message="Need more Stonefly Larva. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20675,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2808)">
@@ -22,24 +31,36 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="Condition.IsTimeBetween(11,12)">
-			<Log Message="Waiting for window to open..." />
-			<WaitTimer WaitTime="30" />
-		</While>
-			<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(23067,&Bokuden;) and HasAtLeast(20675,1) and Condition.IsTimeBetween(12,14)"
+		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(11,12) or Core.Player.Auras.GetAuraStacksById(2778) &lt; 10" Sit="True" SitRate="1">
+			<FishSpots>
+				<FishSpot XYZ="-269.1512, 51.28176, -642.882" Heading="4.015261" />
+			</FishSpots>
+		</ExFish>
+		<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(23067,&Bokuden;) and HasAtLeast(20675,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-269.1512, 51.28176, -642.882" Heading="4.015261" />
-					<FishSpot XYZ="-250.8843, 49.98304, -664.4328" Heading="3.150276" />
-					<FishSpot XYZ="-250.8843, 49.98304, -664.4328" Heading="3.150276" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Bokuden" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
+			<FishSpots>
+				<FishSpot XYZ="-269.1512, 51.28176, -642.882" Heading="4.015261" />
+				<FishSpot XYZ="-250.8843, 49.98304, -664.4328" Heading="3.150276" />
+				<FishSpot XYZ="-250.8843, 49.98304, -664.4328" Heading="3.150276" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Bokuden" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Watcher_Catfish "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(635, 'Thunder')">
 ]>
 <Profile>
 	<Name>Watcher Catfish</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Watcher Catfish..." />
+		<If Condition="not IsOnMap(635)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(20615,50)">
 			<!--Midge Larva-->
+			<Log Message="Need more Midge Larva. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20615,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(0)">
@@ -22,19 +31,16 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Midge Larva" condition="not HasAtLeast(24205,&Watcher_Catfish;) and HasAtLeast(20615,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(635, 'Thunder')"
+		<ExFish Bait="Midge Larva" condition="not HasAtLeast(24205,&Watcher_Catfish;) and HasAtLeast(20615,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Medium" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-			</PatientTugs>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-14.99483, 2.937019, -22.76287" Heading="4.197911" />
 				<FishSpot XYZ="-3.383132, 2.937027, -29.97495" Heading="1.026996" />
 				<FishSpot XYZ="3.042499, 2.937028, -54.91659" Heading="1.722336" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Gyr Abanian Trout" action="Mooch" />
 				<Keeper name="Watcher Catfish" />
 			</Keepers>
 			<SurfaceSlaps />
@@ -42,5 +48,16 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

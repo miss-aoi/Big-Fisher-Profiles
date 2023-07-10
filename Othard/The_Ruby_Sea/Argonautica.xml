@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Argonautica "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(613, 'Wind')">
 ]>
 <Profile>
 	<Name>Argonautica</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Argonautica..." />
+		<If Condition="not IsOnMap(613)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(20617,50)">
 			<!--Live Shrimp-->
+			<Log Message="Need more Live Shrimp. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20617,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2774)">
@@ -22,25 +31,33 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-			<ExFish Bait="Live Shrimp" condition="not HasAtLeast(24215,&Argonautica;) and HasAtLeast(20617,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(613, 'Wind')"
+		<ExFish Bait="Live Shrimp" condition="not HasAtLeast(24215,&Argonautica;) and HasAtLeast(20617,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-				<PatientTugs>
-					<PatienceTug moochLevel="0" TugType="Light" />
-					<PatienceTug moochLevel="1" TugType="Medium" />
-				</PatientTugs>
-				<FishSpots>
-					<FishSpot XYZ="99.49242, -0.06214857, -540.0563" Heading="0.1026537" />
-					<FishSpot XYZ="112.3106, -0.2245278, -536.1719" Heading="0.3686447" />
-					<FishSpot XYZ="124.9046, 1.190252, -536.6122" Heading="1.336249" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Argonautica" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
+			<FishSpots>
+				<FishSpot XYZ="99.49242, -0.06214857, -540.0563" Heading="0.1026537" />
+				<FishSpot XYZ="112.3106, -0.2245278, -536.1719" Heading="0.3686447" />
+				<FishSpot XYZ="124.9046, 1.190252, -536.6122" Heading="1.336249" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Ruby Shrimp" action="Mooch" />
+				<Keeper name="Argonautica" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

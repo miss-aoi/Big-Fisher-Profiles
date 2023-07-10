@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Priest_of_YxLokwa "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(10,12)">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "True">
 ]>
 <Profile>
 	<Name>Priest of Yx'Lokwa</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Priest of Yx'Lokwa..." />
+		<If Condition="not IsOnMap(817)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(27587,50)">
 			<!--Robber Ball-->
+			<Log Message="Need more Robber Ball. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27587,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3166)">
@@ -22,24 +31,22 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="Condition.IsTimeBetween(9,10)">
-			<Log Message="Waiting for window to open..." />
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Robber Ball" condition="not HasAtLeast(28071,&Priest_of_YxLokwa;) and HasAtLeast(27587,1) and Condition.IsTimeBetween(10,12)"
+		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(9,10) or Core.Player.Auras.GetAuraStacksById(2778) &lt; 10" Sit="True" SitRate="1">
+			<FishSpots>
+				<FishSpot XYZ="-457.0445, -0.3, 401.5692" Heading="5.239766" />
+			</FishSpots>
+		</ExFish>
+		<ExFish Bait="Robber Ball" condition="not HasAtLeast(28071,&Priest_of_YxLokwa;) and HasAtLeast(27587,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="3" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-				<PatienceTug moochLevel="2" TugType="Medium" />
-			</PatientTugs>
+				Mooch="2" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-457.0445, -0.3, 401.5692" Heading="5.239766" />
 				<FishSpot XYZ="-488.3843, -0.3000001, 399.7425" Heading="4.875339" />
 				<FishSpot XYZ="-482.7643, -0.3, 435.7073" Heading="6.037733" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Clown Tetra" action="Mooch" />
+				<Keeper name="Eryops" action="Mooch" />
 				<Keeper name="Priest of Yx'Lokwa" />
 			</Keepers>
 			<SurfaceSlaps />
@@ -47,5 +54,16 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

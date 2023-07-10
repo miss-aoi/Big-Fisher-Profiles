@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Bloodtail_Zombie "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(8,12)">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(635, 'Clouds')">
 ]>
 <Profile>
 	<Name>Bloodtail Zombie</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Bloodtail Zombie..." />
+		<If Condition="not IsOnMap(635)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(20613,50)">
 			<!--Salmon Roe-->
+			<Log Message="Need more Salmon Roe. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20613,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(0)">
@@ -22,23 +31,21 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="Condition.IsTimeBetween(7,8)">
-			<Log Message="Waiting for window to open..." />
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Salmon Roe" condition="not HasAtLeast(24206,&Bloodtail_Zombie;) and HasAtLeast(20613,1) and Condition.IsTimeBetween(8,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(635, 'Clouds')"
+		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(7,8) or Core.Player.Auras.GetAuraStacksById(2778) &lt; 10" Sit="True" SitRate="1">
+			<FishSpots>
+				<FishSpot XYZ="36.58512, 23.22876, -275.3936" Heading="4.625172" />
+			</FishSpots>
+		</ExFish>
+		<ExFish Bait="Salmon Roe" condition="not HasAtLeast(24206,&Bloodtail_Zombie;) and HasAtLeast(20613,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-			</PatientTugs>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="44.76076, 23.22876, -251.3672" Heading="4.212576" />
 				<FishSpot XYZ="36.58512, 23.22876, -275.3936" Heading="4.625172" />
 				<FishSpot XYZ="62.93483, 23.22876, -273.329" Heading="6.007465" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Bullfrog" action="Mooch" />
 				<Keeper name="Bloodtail Zombie" />
 			</Keepers>
 			<SurfaceSlaps />
@@ -46,5 +53,16 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

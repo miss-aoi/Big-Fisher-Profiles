@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Mirrorscale "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(9,16)">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')">
 ]>
 <Profile>
 	<Name>Mirrorscale</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Mirrorscale..." />
+		<If Condition="not IsOnMap(137)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(2592,50)">
 			<!--Midge Basket-->
+			<Log Message="Need more Midge Basket. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2592,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(168)">
@@ -22,23 +31,21 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="Condition.IsTimeBetween(8,9)">
-			<Log Message="Waiting for window to open..." />
-			<WaitTimer WaitTime="30" />
-		</While>
-		<ExFish Bait="Midge Basket" condition="not HasAtLeast(7940,&Mirrorscale;) and HasAtLeast(2592,1) and Condition.IsTimeBetween(9,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies', 'Fair Skies')"
+		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(8,9) or Core.Player.Auras.GetAuraStacksById(2778) &lt; 10" Sit="True" SitRate="1">
+			<FishSpots>
+				<FishSpot XYZ="-222.4824, 44.41689, 566.0011" Heading="3.544835" />
+			</FishSpots>
+		</ExFish>
+		<ExFish Bait="Midge Basket" condition="not HasAtLeast(7940,&Mirrorscale;) and HasAtLeast(2592,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Light" />
-			</PatientTugs>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" HooksetReverse="True">
 			<FishSpots>
 				<FishSpot XYZ="-214.7343, 44.36052, 529.5509" Heading="6.139794" />
 				<FishSpot XYZ="-222.4824, 44.41689, 566.0011" Heading="3.544835" />
 				<FishSpot XYZ="-242.376, 44.33062, 514.6062" Heading="0.2000871" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Copperfish" action="Mooch" />
 				<Keeper name="Mirrorscale" />
 			</Keepers>
 			<SurfaceSlaps />
@@ -46,5 +53,16 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

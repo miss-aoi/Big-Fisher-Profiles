@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Hagoromo_Bijin "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST "ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clouds')">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies', 'Fair Skies')">
 ]>
 <Profile>
 	<Name>Hagoromo Bijin</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Hagoromo Bijin..." />
+		<If Condition="not IsOnMap(614)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(20675,50)">
 			<!--Stonefly Larva-->
+			<Log Message="Need more Stonefly Larva. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20675,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2753)">
@@ -22,20 +31,31 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-			<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(24216,&Hagoromo_Bijin;) and HasAtLeast(20675,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(614, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(614, TimeSpan.FromHours(-8), 'Clouds')"
+		<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(24216,&Hagoromo_Bijin;) and HasAtLeast(20675,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="-463.0705, 0.683099, 557.986" Heading="5.483477" />
-					<FishSpot XYZ="-456.1641, 0.1489093, 569.0743" Heading="5.338966" />
-					<FishSpot XYZ="-474.0967, 0.1987277, 546.0172" Heading="5.219588" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="Hagoromo Bijin" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
+			<FishSpots>
+				<FishSpot XYZ="-463.0705, 0.683099, 557.986" Heading="5.483477" />
+				<FishSpot XYZ="-456.1641, 0.1489093, 569.0743" Heading="5.338966" />
+				<FishSpot XYZ="-474.0967, 0.1987277, 546.0172" Heading="5.219588" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Hagoromo Bijin" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Armor_Fish "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(1,4)">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies')">
 ]>
 <Profile>
 	<Name>Armor Fish</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Armor Fish..." />
+		<If Condition="not IsOnMap(398)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(12705,50)">
 			<!--Purse Web Spider-->
+			<Log Message="Need more Purse Web Spider. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12705,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2011)">
@@ -35,7 +44,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Purse Web Spider" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17590,&Armor_Fish;) and HasAtLeast(28634,1) and not HasAtLeast(12757,6) and Condition.IsTimeBetween(1,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies')"
+		<ExFish Bait="Purse Web Spider" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17590,&Armor_Fish;) and HasAtLeast(28634,1) and not HasAtLeast(12757,6) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-44.38216, 152.3128, 729.8894" Heading="1.498923" />
@@ -44,17 +53,14 @@
 				<Keeper name="Hedgemole Cricket" />
 			</Keepers>
 		</ExFish>
-		<ExFish Bait="Purse Web Spider" Condition="Core.Player.HasAura(568) and not HasAtLeast(17590,&Armor_Fish;) and HasAtLeast(28634,1) and Condition.IsTimeBetween(1,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(398, 'Clear Skies')"
+		<ExFish Bait="Purse Web Spider" Condition="Core.Player.HasAura(568) and not HasAtLeast(17590,&Armor_Fish;) and HasAtLeast(28634,1) and Condition.IsTimeBetween(1,4) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Light" />
-				<PatienceTug moochLevel="1" TugType="Light" />
-			</PatientTugs>
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" HooksetReverse="True">
 			<FishSpots>
 				<FishSpot XYZ="-44.38216, 152.3128, 729.8894" Heading="1.498923" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Hedgemole Cricket" action="Mooch" />
 				<Keeper name="Armor Fish" />
 			</Keepers>
 			<SurfaceSlaps />
@@ -75,6 +81,16 @@
 					await Buddy.Coroutines.Coroutine.Sleep(500);
 					ff14bot.Managers.ActionManager.DoAction(299, Core.Player);
 					await Buddy.Coroutines.Coroutine.Sleep(2000);
+				}
+			]]>
+		</CodeChunk>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
 				}
 			]]>
 		</CodeChunk>

@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY The_Old_Man_in_the_Sea "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST "ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(137, TimeSpan.FromHours(-8), 'Rain', 'Showers')">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies')">
 ]>
 <Profile>
 	<Name>The Old Man in the Sea</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: The Old Man in the Sea..." />
+		<If Condition="not IsOnMap(137)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(2587,50)">
 			<!--Pill Bug-->
+			<Log Message="Need more Pill Bug. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2587,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(216)">
@@ -22,20 +31,17 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Pill Bug" condition="not HasAtLeast(8753,&The_Old_Man_in_the_Sea;) and HasAtLeast(2587,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Clear Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(137, TimeSpan.FromHours(-8), 'Rain', 'Showers')"
+		<ExFish Bait="Pill Bug" condition="not HasAtLeast(8753,&The_Old_Man_in_the_Sea;) and HasAtLeast(2587,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="3" Patience="Patience2" MinimumGPPatience="650">
-			<PatientTugs>
-				<PatienceTug moochLevel="0" TugType="Medium" />
-				<PatienceTug moochLevel="1" TugType="Medium" />
-				<PatienceTug moochLevel="2" TugType="Medium" />
-			</PatientTugs>
+				Mooch="2" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="878.9365, 20.74535, 132.2115" Heading="3.842931" />
 				<FishSpot XYZ="887.8115, 20.74, 144.8793" Heading="0.8144441" />
 				<FishSpot XYZ="895.9836, 19.24, 127.6374" Heading="1.909806" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Harbor Herring" action="Mooch" />
+				<Keeper name="Ogre Barracuda" action="Mooch" />
 				<Keeper name="The Old Man in the Sea" />
 			</Keepers>
 			<SurfaceSlaps />
@@ -43,5 +49,16 @@
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

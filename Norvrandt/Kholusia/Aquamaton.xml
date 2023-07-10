@@ -6,18 +6,28 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Aquamaton "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST " ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(814, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Gales')">
 ]>
 <Profile>
 	<Name>Aquamaton</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Aquamaton..." />
+		<If Condition="not IsOnMap(814)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(27588,3)">
 			<!--Short Bill Minnow-->
+			<Log Message="Need more Short Bill Minnow. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27588,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not HasAtLeast(27590,50)">
 			<!--Squid Strip-->
+			<Log Message="Need more Squid Strip. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27590,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3090)">
@@ -27,7 +37,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<!-- Catch 4 Shapeshifters before window starts -->
-		<ExFish Bait="Squid Strip" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33240,&Aquamaton;) and not HasAtLeast(27452,5) and HasAtLeast(27590,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Gales') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(814, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
+		<ExFish Bait="Squid Strip" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33240,&Aquamaton;) and not HasAtLeast(27452,5) and HasAtLeast(27590,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-218.0921, 8.740814, 760.5208" Heading="3.420164" />
@@ -43,7 +53,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<!-- Catch last fish once window starts -->
-		<ExFish Bait="Squid Strip" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33240,&Aquamaton;) and HasAtLeast(27590,1) and Condition.IsTimeBetween(10,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Gales') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(814, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
+		<ExFish Bait="Squid Strip" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33240,&Aquamaton;) and HasAtLeast(27590,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-218.0921, 8.740814, 760.5208" Heading="3.420164" />
@@ -54,7 +64,7 @@
 				<Keeper name="Shadeshifter" />
 			</Keepers>
 		</ExFish>
-		<ExFish Bait="Short Bill Minnow" Condition="Core.Player.HasAura(568) and not HasAtLeast(33240,&Aquamaton;) and HasAtLeast(27588,1) and Condition.IsTimeBetween(10,16) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(814, 'Gales') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(814, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies')"
+		<ExFish Bait="Short Bill Minnow" Condition="Core.Player.HasAura(568) and not HasAtLeast(33240,&Aquamaton;) and HasAtLeast(27588,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-218.0921, 8.740814, 760.5208" Heading="3.420164" />
@@ -82,6 +92,16 @@
 					await Buddy.Coroutines.Coroutine.Sleep(500);
 					ff14bot.Managers.ActionManager.DoAction(299, Core.Player);
 					await Buddy.Coroutines.Coroutine.Sleep(2000);
+				}
+			]]>
+		</CodeChunk>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
 				}
 			]]>
 		</CodeChunk>

@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY Princess_Killifish "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(4,6)">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "True">
 ]>
 <Profile>
 	<Name>Princess Killifish</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Princess Killifish..." />
+		<If Condition="not IsOnMap(641)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(20614,50)">
 			<!--Nightcrawler-->
+			<Log Message="Need more Nightcrawler. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20614,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(1899)">
@@ -28,7 +37,7 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Nightcrawler" condition="not HasAtLeast(24213,&Princess_Killifish;) and HasAtLeast(20614,1) and Condition.IsTimeBetween(4,6)"
+		<ExFish Bait="Nightcrawler" condition="not HasAtLeast(24213,&Princess_Killifish;) and HasAtLeast(20614,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-38.1795, 20, 12.21121" Heading="5.575874" />
@@ -70,6 +79,16 @@
 					await Coroutine.Sleep(5000);
 					if (CommonBehaviors.IsLoading)
 						await Coroutine.Wait(-1, () => !CommonBehaviors.IsLoading);
+				}
+			]]>
+		</CodeChunk>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
 				}
 			]]>
 		</CodeChunk>

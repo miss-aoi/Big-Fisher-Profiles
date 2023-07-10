@@ -6,14 +6,23 @@
 <!DOCTYPE Profile [
 	<!-- Adjust to desired amount -->
 	<!ENTITY The_Winter_Queen "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST "True">
+	<!ENTITY WEATHER_NOW  "Condition.IsTimeBetween(16,20)">
 ]>
 <Profile>
 	<Name>The Winter Queen</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: The Winter Queen..." />
+		<If Condition="not IsOnMap(613)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
 		<If condition="not HasAtLeast(20676,50)">
 			<!--Blue Bobbit-->
+			<Log Message="Need more Blue Bobbit. Getting more with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20676,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2750)">
@@ -22,24 +31,36 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="Condition.IsTimeBetween(15,16)">
-			<Log Message="Waiting for window to open..." />
-			<WaitTimer WaitTime="30" />
-		</While>
-			<ExFish Bait="Blue Bobbit" condition="not HasAtLeast(23065,&The_Winter_Queen;) and HasAtLeast(20676,1) and Condition.IsTimeBetween(16,20)"
+		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(15,16) or Core.Player.Auras.GetAuraStacksById(2778) &lt; 10" Sit="True" SitRate="1">
+			<FishSpots>
+				<FishSpot XYZ="673.9354, 0.5334198, -672.6906" Heading="2.172888" />
+			</FishSpots>
+		</ExFish>
+		<ExFish Bait="Blue Bobbit" condition="not HasAtLeast(23065,&The_Winter_Queen;) and HasAtLeast(20676,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
-				<FishSpots>
-					<FishSpot XYZ="673.9354, 0.5334198, -672.6906" Heading="2.172888" />
-					<FishSpot XYZ="660.7391, 0.5285521, -686.4183" Heading="2.526836" />
-					<FishSpot XYZ="647.8447, 0.5923566, -704.5498" Heading="2.216867" />
-				</FishSpots>
-				<Keepers>
-					<Keeper name="The Winter Queen" />
-				</Keepers>
-				<SurfaceSlaps />
-			</ExFish>
+			<FishSpots>
+				<FishSpot XYZ="673.9354, 0.5334198, -672.6906" Heading="2.172888" />
+				<FishSpot XYZ="660.7391, 0.5285521, -686.4183" Heading="2.526836" />
+				<FishSpot XYZ="647.8447, 0.5923566, -704.5498" Heading="2.216867" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="The Winter Queen" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
 	<GrindAreas />
-	<CodeChunks />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>
