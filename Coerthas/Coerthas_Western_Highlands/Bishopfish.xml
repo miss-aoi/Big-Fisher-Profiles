@@ -31,10 +31,11 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<While condition="Condition.IsTimeBetween(9,10)">
-			<Log Message="Waiting for window to open..." />
-			<WaitTimer WaitTime="30" />
-		</While>
+		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(9,10)" Sit="True" SitRate="1">
+			<FishSpots>
+				<FishSpot XYZ="700.9606, 130.4927, -812.5688" Heading="2.43003" />
+			</FishSpots>
+		</ExFish>
 		<ExFish Bait="Brute Leech" condition="not HasAtLeast(17577,&Bishopfish;) and HasAtLeast(12711,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>

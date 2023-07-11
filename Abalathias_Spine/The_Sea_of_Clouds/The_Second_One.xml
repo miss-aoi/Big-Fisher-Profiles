@@ -10,7 +10,7 @@
 	<!-- DO NOT CHANGE -->
 	<!ENTITY TIME_WINDOW  "True">
 	<!ENTITY WEATHER_PAST "True">
-	<!ENTITY WEATHER_NOW  "True">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Wind')">
 ]>
 <Profile>
 	<Name>The Second One</Name>
@@ -31,7 +31,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Giant Crane Fly" condition="not HasAtLeast(15636,&The_Second_One;) and HasAtLeast(12712,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Wind')"
+		<ExFish Bait="Giant Crane Fly" condition="not HasAtLeast(15636,&The_Second_One;) and HasAtLeast(12712,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-728.1602, -100.2546, -638.0372" Heading="0.5572436" />

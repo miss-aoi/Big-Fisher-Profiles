@@ -31,7 +31,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(7,8) or Core.Player.Auras.GetAuraStacksById(2778) &lt; 10" Sit="True" SitRate="1">
+		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(7,8)" Sit="True" SitRate="1">
 			<FishSpots>
 				<FishSpot XYZ="770.9969, 446.4425, -721.9981" Heading="4.427551" />
 			</FishSpots>

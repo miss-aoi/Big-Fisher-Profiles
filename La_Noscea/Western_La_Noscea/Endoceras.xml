@@ -31,12 +31,12 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(19,20) or Core.Player.Auras.GetAuraStacksById(2778) &lt; 10" Sit="True" SitRate="1">
+		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(19,20)" Sit="True" SitRate="1">
 			<FishSpots>
 				<FishSpot XYZ="-453.0573, -37.94336, 745.8951" Heading="0.1122043" />
 			</FishSpots>
 		</ExFish>
-		<ExFish Bait="Spoon Worm" condition="not HasAtLeast(8756,&Endoceras;) and HasAtLeast(2596,1) and  and  and "
+		<ExFish Bait="Spoon Worm" condition="not HasAtLeast(8756,&Endoceras;) and HasAtLeast(2596,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
 				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>

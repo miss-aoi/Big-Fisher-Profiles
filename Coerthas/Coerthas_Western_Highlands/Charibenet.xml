@@ -60,7 +60,7 @@
 			</Keepers>
 		</ExFish>
 		<!-- Go after Charibenet -->
-		<ExFish Bait="Purse Web Spider" Condition="Core.Player.HasAura(568) and not HasAtLeast(17592,&Charibenet;) and HasAtLeast(12705,1) and  and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(397, 'Blizzards')"
+		<ExFish Bait="Purse Web Spider" Condition="Core.Player.HasAura(568) and not HasAtLeast(17592,&Charibenet;) and HasAtLeast(12705,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
 				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" HooksetReverse="True">
 			<FishSpots>
