@@ -10,7 +10,7 @@
 	<!-- DO NOT CHANGE -->
 	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(9,16)">
 	<!ENTITY WEATHER_PAST "True">
-	<!ENTITY WEATHER_NOW  "TrExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves')ue">
+	<!ENTITY WEATHER_NOW  "TrExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(146, 'Heat Waves')">
 ]>
 <Profile>
 	<Name>Magic Carpet</Name>

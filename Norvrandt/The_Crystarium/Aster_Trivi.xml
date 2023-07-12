@@ -8,7 +8,7 @@
 	<!ENTITY Aster_Trivi "1">
 
 	<!-- DO NOT CHANGE -->
-	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(22,24">
+	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(22,24)">
 	<!ENTITY WEATHER_PAST "ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(819, TimeSpan.FromHours(-8), 'Clear Skies')">
 	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(819, 'Clear Skies')">
 ]>
