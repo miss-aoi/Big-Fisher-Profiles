@@ -9,7 +9,7 @@
 
 	<!-- DO NOT CHANGE -->
 	<!ENTITY TIME_WINDOW  "True">
-	<!ENTITY WEATHER_PAST "ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(140, TimeSpan.FromHours(-8), 'Rain'">
+	<!ENTITY WEATHER_PAST "ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(140, TimeSpan.FromHours(-8), 'Rain')">
 	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(140, 'Clear Skies', 'Clouds', 'Fog', 'Fair Skies')">
 ]>
 <Profile>
