@@ -2016,7 +2016,7 @@
                 }
                 foreach (var fish in notCaughtFishes)
                 {
-                    ff14bot.Helpers.Logging.Write(DataManager.GetItem(fish) + " (" + fish + ")");
+                    ff14bot.Helpers.Logging.Write("[Big-Fisher] " + DataManager.GetItem(fish) + " (" + fish + ")");
                 }
                 ff14bot.Helpers.Logging.Write("[Big-Fisher] Caught " + (bigFishIDs.Length - notCaughtFishes.Count) + "/" + bigFishIDs.Length + " Big Fish.");
             ]]>
