@@ -2040,12 +2040,13 @@
 
         <If Condition="&FARM_PURPLE_SCRIP; == 1 or &FARM_WHITE_SCRIP; == 1">
             <!-- Farm in increment of 100 to not get stuck on it instead of fishing -->
-            <Log Message="Farmming Scrips"/>
             <If Condition="&FARM_PURPLE_SCRIP; == 1 and not HasAtLeast(33914,3800)">
+                <Log Message="Farmming Purple Scrips"/>
                 <Lisbeth Json="&#91;&#123;'Group':1,'Item':33914,'Amount':100,'Enabled':true,'Type':'GatherMasterpiece'&#125;&#93;"/>
                 <LLoadProfile Path="Start.xml"/>
             </If>
             <If Condition="(&FARM_PURPLE_SCRIP; == 1 and HasAtLeast(33914,3800)) and &FARM_WHITE_SCRIP; and not HasAtLeast(25200,3800)">
+                <Log Message="Farmming White Scrips"/>
                 <Lisbeth Json="&#91;&#123;'Group':1,'Item':25200,'Amount':100,'Enabled':true,'Type':'GatherMasterpiece'&#125;&#93;"/>
                 <LLoadProfile Path="Start.xml"/>
             </If>
