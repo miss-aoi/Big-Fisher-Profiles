@@ -41,7 +41,7 @@
 			</FishSpots>
 		</ExFish>
 		<!-- Catch 1 Sculptor before window -->
-		<ExFish Bait="Silkworm" Condition="not Core.Player.HasAura(568) and HasAtLeast(20040,2) and not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and and &WEATHER_PAST; and &WEATHER_NOW;"
+		<ExFish Bait="Silkworm" Condition="not Core.Player.HasAura(568) and HasAtLeast(20040,2) and not HasAtLeast(24992,&Stethacanthus;) and HasAtLeast(20616,1) and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
 				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
