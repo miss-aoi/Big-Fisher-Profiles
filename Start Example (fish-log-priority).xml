@@ -1038,9 +1038,9 @@
         </If>
 
         <!-- Sea_Butterfly -->
-        <If Condition="not HasAtLeast(17591,&Sea_Butterfly;) and ((Condition.IsTimeBetween(4,5) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(401, TimeSpan.FromHours(1), 'Clear Skies')) or (Condition.IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')))">
+        <!-- <If Condition="not HasAtLeast(17591,&Sea_Butterfly;) and ((Condition.IsTimeBetween(4,5) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(401, TimeSpan.FromHours(1), 'Clear Skies')) or (Condition.IsTimeBetween(5,7) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(401, 'Clear Skies')))">
             <LLoadProfile Path="Abalathias_Spine/The_Sea_of_Clouds/Sea_Butterfly.xml"/>
-        </If>
+        </If> -->
 
         <!-- ABALATHIA'S SPINE - AZYS LLA -->
         <!-- Augmented_High_Allagan_Helmet -->
@@ -1245,9 +1245,9 @@
         </If>
 
         <!-- Drepanaspis -->
-        <If Condition="not HasAtLeast(24991,&Drepanaspis;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Dust Storms')">
+        <!-- <If Condition="not HasAtLeast(24991,&Drepanaspis;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Dust Storms')">
             <LLoadProfile Path="Gyr_Abania/The_Peaks/Drepanaspis.xml"/>
-        </If>
+        </If> -->
 
         <!-- The_Undecided -->
         <If Condition="not HasAtLeast(23061,&The_Undecided;) and Condition.IsTimeBetween(7,12)">
@@ -1645,9 +1645,9 @@
         </If>
 
         <!-- Lancetfish -->
-        <If Condition="not HasAtLeast(33244,&Lancetfish;) and ((Condition.IsTimeBetween(20,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(4), 'Clouds')) or (Condition.IsTimeBetween(0,2) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds')))">
+        <!-- <If Condition="not HasAtLeast(33244,&Lancetfish;) and ((Condition.IsTimeBetween(20,24) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(4), 'Clouds')) or (Condition.IsTimeBetween(0,2) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds')))">
             <LLoadProfile Path="Norvrandt/The_Tempest/Lancetfish.xml"/>
-        </If>
+        </If> -->
 
         <!-- Maru_Crab -->
         <If Condition="not HasAtLeast(33326,&Maru_Crab;) and ((Condition.IsTimeBetween(15,16) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(1), 'Clouds')) or (Condition.IsTimeBetween(16,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds')))">

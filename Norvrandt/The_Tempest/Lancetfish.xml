@@ -9,7 +9,7 @@
 
 	<!-- DO NOT CHANGE -->
 	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(0,2)">
-	<!ENTITY WEATHER_PAST "ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Clouds')">
+	<!ENTITY WEATHER_PAST "ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(-8), 'Fair Skies')">
 	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds')">
 ]>
 <Profile>
@@ -40,17 +40,10 @@
 		<If condition="HasAtLeast(33325,1)">
 			<Desynth ItemIds="33325" DesynthDelay="6000" DesynthTimeout="10" />
 		</If>
-		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(20,22)" Sit="True" SitRate="1">
-			<FishSpots>
-				<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
-			</FishSpots>
-		</ExFish>
-		<ExFish Bait="Short Bill Minnow" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33244,&Lancetfish;) and HasAtLeast(33325,2) and HasAtLeast(27590,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(4), 'Clouds')"
+		<ExFish Bait="Short Bill Minnow" Condition="not Core.Player.HasAura(568) and Condition.IsTimeBetween(20,24) and not HasAtLeast(33244,&Lancetfish;) and not HasAtLeast(33325,1) and HasAtLeast(27588,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds')"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
-				<FishSpot XYZ="-475.9068, 184.7709, -558.5859" Heading="4.016154" />
-				<FishSpot XYZ="-504.5959, 184.9594, -545.1892" Heading="3.138604" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Mora Tecta" />
@@ -60,12 +53,10 @@
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
-		<ExFish Bait="Short Bill Minnow" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33244,&Lancetfish;) and HasAtLeast(27590,1) and Condition.IsTimeBetween(20,22) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(818, TimeSpan.FromHours(4), 'Clouds')"
+		<ExFish Bait="Short Bill Minnow" Condition="not Core.Player.HasAura(568) and Condition.IsTimeBetween(20,24) and not HasAtLeast(33244,&Lancetfish;) and HasAtLeast(27588,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds')"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
-				<FishSpot XYZ="-475.9068, 184.7709, -558.5859" Heading="4.016154" />
-				<FishSpot XYZ="-504.5959, 184.9594, -545.1892" Heading="3.138604" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Mora Tecta" />
@@ -79,8 +70,6 @@
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
-				<FishSpot XYZ="-475.9068, 184.7709, -558.5859" Heading="4.016154" />
-				<FishSpot XYZ="-504.5959, 184.9594, -545.1892" Heading="3.138604" />
 			</FishSpots>
 			<Keepers>
 				<Keeper name="Lancetfish" />
