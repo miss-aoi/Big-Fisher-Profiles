@@ -22,7 +22,7 @@
 		</If>
 		<If condition="not HasAtLeast(27586,50)">
 			<!--Jerked Ovim-->
-			<Log Message="Need more Jerked Ovim. Getting more with Lisbeth." />
+			<Log Message="Farming more Jerked Ovim with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27586,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3120)">

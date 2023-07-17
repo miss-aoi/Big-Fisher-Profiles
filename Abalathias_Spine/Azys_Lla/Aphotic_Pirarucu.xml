@@ -22,7 +22,7 @@
 		</If>
 		<If condition="not HasAtLeast(12705,50)">
 			<!--Purse Web Spider-->
-			<Log Message="Need more Purse Web Spider. Getting more with Lisbeth." />
+			<Log Message="Farming more Purse Web Spider with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12705,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2112)">

@@ -22,7 +22,7 @@
 		</If>
 		<If condition="not HasAtLeast(2599,50)">
 			<!--Honey Worm-->
-			<Log Message="Need more Honey Worm. Getting more with Lisbeth." />
+			<Log Message="Farming more Honey Worm with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2599,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(214)">
@@ -43,7 +43,7 @@
 		</If>
 		<ExFish Bait="Honey Worm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8752,&Imperial_Goldfish;) and HasAtLeast(2599,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="2" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
+				Mooch="2" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" HooksetReverseLevel="1">
 			<FishSpots>
 				<FishSpot XYZ="-272.5454, 33.78063, 299.9305" Heading="4.463154" />
 				<FishSpot XYZ="-278.8307, 33.78064, 296.5956" Heading="4.435918" />

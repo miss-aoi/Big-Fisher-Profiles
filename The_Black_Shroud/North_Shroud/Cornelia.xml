@@ -22,12 +22,12 @@
 		</If>
 		<If condition="not HasAtLeast(2625,3)">
 			<!--Rainbow Spoon Lure-->
-			<Log Message="Need more Rainbow Spoon Lure. Getting more with Lisbeth." />
+			<Log Message="Farming more Rainbow Spoon Lure with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2625,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>
 		<If condition="not HasAtLeast(2603,50)">
 			<!--Glowworm-->
-			<Log Message="Need more Glowworm. Getting more with Lisbeth." />
+			<Log Message="Farming more Glowworm with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2603,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(145)">

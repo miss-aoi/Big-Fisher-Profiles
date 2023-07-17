@@ -22,7 +22,7 @@
 		</If>
 		<If condition="not HasAtLeast(27588,3)">
 			<!--Short Bill Minnow-->
-			<Log Message="Need more Short Bill Minnow. Getting more with Lisbeth." />
+			<Log Message="Farming more Short Bill Minnow with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27588,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3202)">
@@ -38,7 +38,7 @@
 		</ExFish>
 		<ExFish Bait="Short Bill Minnow" condition="not HasAtLeast(33326,&Maru_Crab;) and HasAtLeast(27588,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" HooksetReverse="True">
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" HooksetReverseLevel="1">
 			<FishSpots>
 				<FishSpot XYZ="-771.5961, 83.13901, -415.6524" Heading="4.604672" />
 				<FishSpot XYZ="-792.961, 83.13901, -413.6188" Heading="5.566009" />

@@ -22,7 +22,7 @@
 		</If>
 		<If condition="not HasAtLeast(36590,3)">
 			<!--Sky Spoon Lure-->
-			<Log Message="Need more Sky Spoon Lure. Getting more with Lisbeth." />
+			<Log Message="Farming more Sky Spoon Lure with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36590,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3892)">

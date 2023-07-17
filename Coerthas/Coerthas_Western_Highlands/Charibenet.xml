@@ -22,7 +22,7 @@
 		</If>
 		<If condition="not HasAtLeast(12705,50)">
 			<!--Purse Web Spider-->
-			<Log Message="Need more Purse Web Spider. Getting more with Lisbeth." />
+			<Log Message="Farming more Purse Web Spider with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12705,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2201)">
@@ -62,7 +62,7 @@
 		<!-- Go after Charibenet -->
 		<ExFish Bait="Purse Web Spider" Condition="Core.Player.HasAura(568) and not HasAtLeast(17592,&Charibenet;) and HasAtLeast(12705,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" HooksetReverse="True">
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" HooksetReverseLevel="1">
 			<FishSpots>
 				<FishSpot XYZ="700.9606, 130.4927, -812.5688" Heading="2.43003" />
 			</FishSpots>

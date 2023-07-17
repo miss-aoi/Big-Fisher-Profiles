@@ -22,7 +22,7 @@
 		</If>
 		<If condition="not HasAtLeast(27589,50)">
 			<!--Baitbugs-->
-			<Log Message="Need more Baitbugs. Getting more with Lisbeth." />
+			<Log Message="Farming more Baitbugs with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27589,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3288)">
@@ -31,11 +31,13 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(17,18)" Sit="True" SitRate="1">
-			<FishSpots>
-				<FishSpot XYZ="70.17109, 1.7078, 240.4027" Heading="0.5498483" />
-			</FishSpots>
-		</ExFish>
+		<If condition="Condition.IsTimeBetween(17,18)">
+			<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(17,18)" Sit="True" SitRate="1">
+				<FishSpots>
+					<FishSpot XYZ="70.17109, 1.7078, 240.4027" Heading="0.5498483" />
+				</FishSpots>
+			</ExFish>
+		</If>
 		<ExFish Bait="Baitbugs" condition="not HasAtLeast(28065,&Loose_Pendant;) and HasAtLeast(27589,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>

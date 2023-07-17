@@ -22,7 +22,7 @@
 		</If>
 		<If condition="not HasAtLeast(12710,25)">
 			<!--Fiend Worm-->
-			<Log Message="Need more Fiend Worm. Getting more with Lisbeth." />
+			<Log Message="Farming more Fiend Worm with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12710,'Amount':25,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2110)">
@@ -33,7 +33,7 @@
 		</If>
 		<ExFish Bait="Fiend Worm" condition="not HasAtLeast(16752,&Aetherochemical_Compound_666;) and HasAtLeast(12710,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" HooksetReverse="True">
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" HooksetReverseLevel="1">
 			<FishSpots>
 				<FishSpot XYZ="378.942, -53.41117, -761.7911" Heading="2.49265" />
 				<FishSpot XYZ="384.9145, -53.52942, -793.9514" Heading="0.8422616" />

@@ -22,7 +22,7 @@
 		</If>
 		<If condition="not HasAtLeast(2605,50)">
 			<!--Hoverworm-->
-			<Log Message="Need more Hoverworm. Getting more with Lisbeth." />
+			<Log Message="Farming more Hoverworm with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2605,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(393)">

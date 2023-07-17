@@ -22,7 +22,7 @@
 		</If>
 		<If condition="not HasAtLeast(12707,3)">
 			<!--Bladed Steel Jig-->
-			<Log Message="Need more Bladed Steel Jig. Getting more with Lisbeth." />
+			<Log Message="Farming more Bladed Steel Jig with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12707,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2120)">

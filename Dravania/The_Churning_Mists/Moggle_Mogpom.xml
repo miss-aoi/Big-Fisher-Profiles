@@ -22,7 +22,7 @@
 		</If>
 		<If condition="not HasAtLeast(12711,50)">
 			<!--Brute Leech-->
-			<Log Message="Need more Brute Leech. Getting more with Lisbeth." />
+			<Log Message="Farming more Brute Leech with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2017)">

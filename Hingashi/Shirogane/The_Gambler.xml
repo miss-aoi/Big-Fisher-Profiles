@@ -22,7 +22,7 @@
 		</If>
 		<If condition="not HasAtLeast(20676,50)">
 			<!--Blue Bobbit-->
-			<Log Message="Need more Blue Bobbit. Getting more with Lisbeth." />
+			<Log Message="Farming more Blue Bobbit with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20676,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(1899)">

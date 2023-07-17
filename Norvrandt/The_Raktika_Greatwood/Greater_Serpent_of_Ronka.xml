@@ -22,7 +22,7 @@
 		</If>
 		<If condition="not HasAtLeast(27587,50)">
 			<!--Robber Ball-->
-			<Log Message="Need more Robber Ball. Getting more with Lisbeth." />
+			<Log Message="Farming more Robber Ball with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27587,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(3166)">
@@ -31,11 +31,13 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(9,10)" Sit="True" SitRate="1">
-			<FishSpots>
-				<FishSpot XYZ="-457.0445, -0.3, 401.5692" Heading="5.239766" />
-			</FishSpots>
-		</ExFish>
+		<If condition="Condition.IsTimeBetween(9,10)">
+			<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(9,10)" Sit="True" SitRate="1">
+				<FishSpots>
+					<FishSpot XYZ="-457.0445, -0.3, 401.5692" Heading="5.239766" />
+				</FishSpots>
+			</ExFish>
+		</If>
 		<ExFish Bait="Robber Ball" condition="not HasAtLeast(33243,&Greater_Serpent_of_Ronka;) and HasAtLeast(27587,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
 				Mooch="3" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">

@@ -22,12 +22,12 @@
 		</If>
 		<If condition="not HasAtLeast(12704,50)">
 			<!--Stonefly Nymph-->
-			<Log Message="Need more Stonefly Nymph. Getting more with Lisbeth." />
+			<Log Message="Farming more Stonefly Nymph with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12704,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not HasAtLeast(2610,50)">
 			<!--Chocobo Fly-->
-			<Log Message="Need more Chocobo Fly. Getting more with Lisbeth." />
+			<Log Message="Farming more Chocobo Fly with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2610,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(392)">

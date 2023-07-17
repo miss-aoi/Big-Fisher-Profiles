@@ -22,7 +22,7 @@
 		</If>
 		<If condition="not HasAtLeast(2601,50)">
 			<!--Stem Borer-->
-			<Log Message="Need more Stem Borer. Getting more with Lisbeth." />
+			<Log Message="Farming more Stem Borer with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2601,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(235)">

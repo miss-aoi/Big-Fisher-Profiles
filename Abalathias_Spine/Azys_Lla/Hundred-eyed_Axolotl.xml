@@ -22,7 +22,7 @@
 		</If>
 		<If condition="not HasAtLeast(12705,50)">
 			<!--Purse Web Spider-->
-			<Log Message="Need more Purse Web Spider. Getting more with Lisbeth." />
+			<Log Message="Farming more Purse Web Spider with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12705,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2112)">
@@ -38,7 +38,7 @@
 		</ExFish>
 		<ExFish Bait="Purse Web Spider" condition="not HasAtLeast(16753,&Hundred-eyed_Axolotl;) and HasAtLeast(12705,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" HooksetReverse="True">
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" HooksetReverseLevel="1">
 			<FishSpots>
 				<FishSpot XYZ="-729.2505, -47.36447, 579.8774" Heading="5.467196" />
 				<FishSpot XYZ="-728.1754, -46.50059, 613.9347" Heading="0.1914086" />
