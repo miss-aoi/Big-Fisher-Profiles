@@ -24,6 +24,7 @@
 			<!--Squid Strip-->
 			<Log Message="Farming more Squid Strip with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27590,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not IsOnSubMap(3201)">
 			<LisbethTravel Area="The Tempest" XYZ="574.8669, -241.6, 443.853" />

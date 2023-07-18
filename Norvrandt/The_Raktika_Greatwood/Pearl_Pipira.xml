@@ -24,6 +24,7 @@
 			<!--Robber Ball-->
 			<Log Message="Farming more Robber Ball with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27587,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not IsOnSubMap(3365)">
 			<LisbethTravel Area="The Rak'tika Greatwood" XYZ="-583.3825, -0.6000001, -10.59822" />

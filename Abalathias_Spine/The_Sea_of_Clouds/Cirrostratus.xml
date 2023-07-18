@@ -24,6 +24,7 @@
 			<!--Giant Crane Fly-->
 			<Log Message="Farming more Giant Crane Fly with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12712,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not IsOnSubMap(2117)">
 			<LisbethTravel Area="The Sea of Clouds" XYZ="-374.746, -185.1432, 793.9398" />

@@ -24,6 +24,7 @@
 			<!--Fiend Worm-->
 			<Log Message="Farming more Fiend Worm with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12710,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not IsOnSubMap(2177)">
 			<LisbethTravel Area="Azys Lla" XYZ="-754.7177, 26.048, -292.8931" />

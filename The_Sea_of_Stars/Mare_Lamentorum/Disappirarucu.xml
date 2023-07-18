@@ -24,6 +24,7 @@
 			<!--Mayfly-->
 			<Log Message="Farming more Mayfly with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36591,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not IsOnSubMap(3969)">
 			<LisbethTravel Area="Mare Lamentorum" XYZ="577.8911, -162.0345, -453.155" />

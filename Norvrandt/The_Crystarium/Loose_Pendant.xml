@@ -24,6 +24,7 @@
 			<!--Baitbugs-->
 			<Log Message="Farming more Baitbugs with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27589,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not IsOnSubMap(3288)">
 			<LisbethTravel Area="The Crystarium" XYZ="68.41433, 1.7078, 239.2537" />

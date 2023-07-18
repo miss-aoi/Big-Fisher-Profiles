@@ -24,6 +24,7 @@
 			<!--Blue Bobbit-->
 			<Log Message="Farming more Blue Bobbit with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20676,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not IsOnSubMap(2750)">
 			<LisbethTravel Area="The Ruby Sea" XYZ="596.8623, 1.07736, 193.0941" />

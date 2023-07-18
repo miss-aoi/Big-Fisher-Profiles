@@ -24,6 +24,7 @@
 			<!--Suspending Minnow-->
 			<Log Message="Farming more Suspending Minnow with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20619,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not IsOnSubMap(2624)">
 			<LisbethTravel Area="The Fringes" XYZ="-383.9916, 38.67, 497.0901" />

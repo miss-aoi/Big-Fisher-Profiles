@@ -24,6 +24,7 @@
 			<!--Signature Skyball-->
 			<Log Message="Farming more Signature Skyball with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':30136,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not IsOnSubMap(2174)">
 			<LisbethTravel Area="Azys Lla" XYZ="-16.05849, 293.9713, 24.93498" />

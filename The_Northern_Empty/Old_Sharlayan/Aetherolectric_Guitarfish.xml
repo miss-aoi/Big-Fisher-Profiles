@@ -24,6 +24,7 @@
 			<!--Mackerel Strip-->
 			<Log Message="Farming more Mackerel Strip with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36593,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not IsOnSubMap(3822)">
 			<LisbethTravel Area="Old Sharlayan" XYZ="9.347091, -16.147, 141.4112" />

@@ -24,6 +24,7 @@
 			<!--Short Bill Minnow-->
 			<Log Message="Farming more Short Bill Minnow with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27588,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not IsOnSubMap(3074)">
 			<LisbethTravel Area="Kholusia (South)" XYZ="582.0699, -0.6680323, 612.188" />

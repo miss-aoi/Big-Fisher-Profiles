@@ -24,6 +24,7 @@
 			<!--Chimera Worm-->
 			<Log Message="Farming more Chimera Worm with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36595,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not IsOnSubMap(3957)">
 			<LisbethTravel Area="Mare Lamentorum" XYZ="45.90171, 21.80864, 480.878" />

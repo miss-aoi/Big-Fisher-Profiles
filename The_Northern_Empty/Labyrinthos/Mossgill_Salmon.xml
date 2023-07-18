@@ -24,6 +24,7 @@
 			<!--Sky Spoon Lure-->
 			<Log Message="Farming more Sky Spoon Lure with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36590,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not IsOnSubMap(3841)">
 			<LisbethTravel Area="Labyrinthos (North)" XYZ="-183.2765, 78.46773, -691.5447" />

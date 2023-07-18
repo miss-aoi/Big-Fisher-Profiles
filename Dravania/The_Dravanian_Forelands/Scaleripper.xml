@@ -24,6 +24,7 @@
 			<!--Brute Leech-->
 			<Log Message="Farming more Brute Leech with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not IsOnSubMap(2019)">
 			<LisbethTravel Area="The Dravanian Forelands" XYZ="447.6139, -26.25389, -524.89" />

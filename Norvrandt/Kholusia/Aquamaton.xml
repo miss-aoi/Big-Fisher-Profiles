@@ -24,11 +24,15 @@
 			<!--Short Bill Minnow-->
 			<Log Message="Farming more Short Bill Minnow with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27588,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
+			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not HasAtLeast(27590,50)">
 			<!--Squid Strip-->
 			<Log Message="Farming more Squid Strip with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27590,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
+			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not IsOnSubMap(3090)">
 			<LisbethTravel Area="Kholusia (South)" XYZ="-218.3601, 8.98271, 765.7238" />

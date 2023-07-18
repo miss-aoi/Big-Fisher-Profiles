@@ -24,6 +24,7 @@
 			<!--Jerked Ovim-->
 			<Log Message="Farming more Jerked Ovim with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27586,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not IsOnSubMap(3115)">
 			<LisbethTravel Area="Amh Araeng (East)" XYZ="473.2314, -72.78622, 487.9559" />

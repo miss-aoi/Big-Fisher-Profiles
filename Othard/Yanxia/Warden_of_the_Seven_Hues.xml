@@ -24,6 +24,7 @@
 			<!--Stonefly Larva-->
 			<Log Message="Farming more Stonefly Larva with Lisbeth." />
 			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':20675,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not IsOnSubMap(2807)">
 			<LisbethTravel Area="Yanxia (Fierce)" XYZ="351.4591, -16.22713, -682.4466" />
