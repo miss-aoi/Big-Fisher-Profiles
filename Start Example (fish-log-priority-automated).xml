@@ -1287,7 +1287,7 @@
         </If>
 
         <!-- Greater_Serpent_of_Ronka -->
-        <If Condition="not HasCaughtFish(33243) and Condition.IsTimeBetween(9,12)">
+        <If Condition="not HasCaughtFish(33243) and Condition.IsTimeBetween(6,12)">
             <LLoadProfile Path="Norvrandt/The_Raktika_Greatwood/Greater_Serpent_of_Ronka.xml"/>
         </If>
 

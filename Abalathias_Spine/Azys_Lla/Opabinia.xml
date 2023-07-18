@@ -20,10 +20,10 @@
 		<If Condition="not IsOnMap(402)">
 			<RunCode Name="AnglersArtToGP"/>
 		</If>
-		<If condition="not HasAtLeast(29717,3)">
-			<!--Versatile Lure-->
-			<Log Message="Farming more Versatile Lure with Lisbeth." />
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':29717,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
+		<If condition="not HasAtLeast(30136,50)">
+			<!--Signature Skyball-->
+			<Log Message="Farming more Signature Skyball with Lisbeth." />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':30136,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 		</If>
 		<If condition="not IsOnSubMap(2174)">
 			<LisbethTravel Area="Azys Lla" XYZ="-16.05849, 293.9713, 24.93498" />
@@ -35,7 +35,7 @@
 		<If condition="HasAtLeast(13727,1)">
 			<Desynth ItemIds="13727" DesynthDelay="6000" DesynthTimeout="10" />
 		</If>
-		<ExFish Bait="Versatile Lure" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17589,&Opabinia;) and HasAtLeast(29717,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
+		<ExFish Bait="Signature Skyball" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17589,&Opabinia;) and HasAtLeast(30136,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" >
 			<FishSpots>
 				<FishSpot XYZ="-17.71241, 293.9991, 32.3871" Heading="5.695476" />
@@ -47,7 +47,7 @@
 				<Keeper name="Functional Proto-hropken" />
 			</Keepers>
 		</ExFish>
-		<ExFish Bait="Versatile Lure" Condition="Core.Player.HasAura(568) and not HasAtLeast(17589,&Opabinia;) and HasAtLeast(29717,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
+		<ExFish Bait="Signature Skyball" Condition="Core.Player.HasAura(568) and not HasAtLeast(17589,&Opabinia;) and HasAtLeast(30136,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
 				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>

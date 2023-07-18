@@ -507,7 +507,7 @@
         </If>
 
         <!-- Greater_Serpent_of_Ronka -->
-        <If Condition="not HasAtLeast(33243,&Greater_Serpent_of_Ronka;) and Condition.IsTimeBetween(9,12)">
+        <If Condition="not HasAtLeast(33243,&Greater_Serpent_of_Ronka;) and Condition.IsTimeBetween(6,12)">
             <LLoadProfile Path="Norvrandt/The_Raktika_Greatwood/Greater_Serpent_of_Ronka.xml"/>
         </If>
 

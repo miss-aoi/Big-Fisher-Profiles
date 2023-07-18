@@ -40,7 +40,7 @@
 		</If>
 		<ExFish Bait="Jerked Ovim" condition="not HasAtLeast(33320,&Nabaath_Saw;) and HasAtLeast(27586,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
+				Mooch="100" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="478.9986, -80.80603, 508.751" Heading="6.071146" />
 				<FishSpot XYZ="457.1977, -82.34267, 510.657" Heading="0.3639209" />

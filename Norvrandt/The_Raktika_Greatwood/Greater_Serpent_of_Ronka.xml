@@ -31,8 +31,8 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<If condition="Condition.IsTimeBetween(9,10)">
-			<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(9,10)" Sit="True" SitRate="1">
+		<If condition="Condition.IsTimeBetween(6,10)">
+			<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(6,10)" Sit="True" SitRate="1">
 				<FishSpots>
 					<FishSpot XYZ="-457.0445, -0.3, 401.5692" Heading="5.239766" />
 				</FishSpots>

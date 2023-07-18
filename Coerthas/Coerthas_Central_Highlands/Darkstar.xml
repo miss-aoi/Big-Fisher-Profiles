@@ -40,11 +40,13 @@
 		<If condition="HasAtLeast(5544,1)">
 			<Desynth ItemIds="5544" DesynthDelay="6000" DesynthTimeout="10" />
 		</If>
-		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(18,19)" Sit="True" SitRate="1">
-			<FishSpots>
-				<FishSpot XYZ="499.6933, 347.5016, -730.2562" Heading="6.04072" />
-			</FishSpots>
-		</ExFish>
+		<If condition="Condition.IsTimeBetween(18,19)">
+			<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(18,19)" Sit="True" SitRate="1">
+				<FishSpots>
+					<FishSpot XYZ="499.6933, 347.5016, -730.2562" Heading="6.04072" />
+				</FishSpots>
+			</ExFish>
+		</If>
 		<ExFish Bait="Chocobo Fly" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8769,&Darkstar;) and HasAtLeast(12704,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>

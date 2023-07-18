@@ -31,11 +31,13 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(8,9)" Sit="True" SitRate="1">
-			<FishSpots>
-				<FishSpot XYZ="555.3425, 8.762626, 157.9973" Heading="1.748052" />
-			</FishSpots>
-		</ExFish>
+		<If condition="Condition.IsTimeBetween(8,9)">
+			<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(8,9)" Sit="True" SitRate="1">
+				<FishSpots>
+					<FishSpot XYZ="555.3425, 8.762626, 157.9973" Heading="1.748052" />
+				</FishSpots>
+			</ExFish>
+		</If>
 		<ExFish Bait="Herring Ball" condition="not HasAtLeast(7924,&Bombardfish;) and HasAtLeast(2598,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
