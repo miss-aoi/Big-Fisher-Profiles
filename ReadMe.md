@@ -9,10 +9,6 @@ This profile set is designed to catch all Big Fish until level 90.
     - You will want to replace the git url managed by RepoBuddy, remove the ExBuddy folder in Plugins, then restart RebornBuddy
 - Install __LlamaLibrary from here: https://github.com/nt153133/__LlamaLibrary/
 - Install Lisbeth from here: https://www.siune.io/
-- Install AutoHook from here: https://github.com/InitialDet/AutoHook
-- Copy the below string and import as Custom Preset in AutoHook
-
-AH_H4sIAAAAAAAACu2ZXW+bMBSG/wrydTKl66Rp3KUkbSKlaySYdjHtwoEDWDE28oc0VPW/z24GoZRxVXF1bt/X58MWD6DjZ3JUoMF8pxWQkNyxYnnPdAlqmSiWnptlYgtNFuTAtHnK7ygzmoS/nslW0BOHjIRGWVgQb/xLsT5RTk3JqAjiCrhxwTspzz+BngdBrbwXxjLDpPiPv9kluxEraWrwNgm/3Hz99lbrUvbN2CgpipFMF2OqjcuKiUYuC3y11e1QfdNMax+gAJFR1Ywk7LyplrpFE111a4Zn9L5C29sPDZHVRlad42NImFOu4dVeWyMfpUzLtlpf+9ytfBK8eZV6Ja5JYqtymkLMad2X9xkIw1LKI6pN39hI6zY4bMU9o/V71R/IkRoGIoWh7rsaq30A45/7rU5pfQ16pH8SVsEGOHVHuPq0chITQ8kfWWkrL6t+aCsOwsfk2Mh6nRtQEbVFed35QD+wijnz5mUxSSAYB3CwbQDZQ/aQvVnZE6l775ggLhWrauQP+UP+5uQvknUNKnefcmQP2UP25mTvgVP38VNBJBX+eSJ9SN+89DUqcLMX4QcviZIWBy+IICI4K4I7yAqoJIcg8sNTQAQRQURwVgT3KQT3FBTDP1BkD9mblb2ju/djwlaBv0nB8QuOX3D8Mid+7rKZ1ZAFD/LUIH1IH9L3wfT9fvkLTWrmoC4jAAA=
 
 Copy or rename one of the example Start.xml to just "Start.xml". The "fish-guide-automated" version of Start.xml will checks the fish guide directly, but the others will need to have 1 set for each Big fish you want to fish for.
 
@@ -20,109 +16,429 @@ Some of the fish in locations in game are very, very specific and ExFish doesn't
 
 All fish with timed window have the time check shifted to one hour earlier on the Start.xml profile. This is so you can get bait (if needed) and get to the spot so that time is spent fishing for those with short windows rather than getting there. So if you get to a fishing spot and sit for a few minutes, double check if it's a timed window first.
 
-ExBuddy's implementation of fishing does not always respect the tug type mentioned in a profile. The logic for this works for most big fish, but will only use Powerful Hookset for any !!! tug type, even if Precision Hookset is specific in the OrderBot profile. I'm not really great at CSharp code, so we're using AutoHook instead to handle using the correct hook method for the few cases where it is needed with mooched fish..
+Dalamud's AutoHook can cause issues with fish profiles that use Double Hook or Triple Hook. These profiles will disable autohook, fish as configured, then enable autohook again.
 
 ## Disclaimer
 
 This profile set is still a work in progress, so use at your own risk and I'm not responsible if it does anything not fun.
-
-### La Noscea
-- [x] Eastern La Noscea
-- [x] Lower La Noscea
-- [x] Middle La Noscea
-- [x] Western La Noscea
-- [x] Upper La Noscea
-- [x] Outer La Noscea
-- [x] Lower Decks
-- [x] Upper Decks
-- [x] Mist
-
-### The Black Shroud
-- [x] New Gridania
-- [x] Old Gridania
-- [x] Central Shroud
-- [x] East Shroud
-- [x] South Shroud
-- [x] North Shroud
-- [x] The Lavender Beds
-
-### Thanalan
-- [x] Western Thanalan
-- [x] Central Thanalan
-- [x] Eastern Thanalan
-- [x] Southern Thanalan
-- [x] Northern Thanalan
-- [x] The Goblet
-
-### Coerthas
-- [x] Coerthas Central Highlands
-- [x] Coerthas Western Highlands
-
-### Mor Dhona
-- [x] Mor Dhona
-
-### Abalathia's Spine
-- [x] The Sea of Clouds
-- [x] Azys Lla
-
-### Dravania
-- [x] The Dravanian Forelands
-- [x] The Dravanian Hinterlands
-- [x] The Churning Mists
-
-### Gyr Abania
-- [x] Rhalgr's Reach
-- [x] The Fringes
-- [x] The Peaks
-- [x] The Lochs
-
-### Othard
-- [x] The Ruby Sea
-- [x] Yanxia
-- [x] The Azim Steppe
-- [x] The Doman Enclave
-
-### Hingashi
-- [x] Kugane
-- [x] Shirogane
-
-### Norvrandt
-- [x] The Crystarium
-- [x] Eulmore
-- [x] Lakeland
-- [x] Kholusia
-- [x] Amh Araeng
-- [x] Il Mheg
-- [x] The Rak'tika Greatwood
-- [x] The Tempest
-
-### The North Empty
-- [x] Old Sharlayan
-- [x] Labyinthos
-
-### Ilsabard
-- [x] Radz-at-Han
-- [x] Thavnair
-- [x] Garlemald
-
-### The Sea of Stars
-- [x] Mare Lametorum
-- [x] Ultima Thule
-
-### The World Unsundered
-- [x] Elpis
-
-### The High Seas
-- [x] Galadion Bay
-- [x] The Southern Strait of Merlthor
-- [x] The Northern Strait of Merlthor
-- [x] Rhotano Sea
-- [x] The Cieldalaes
-- [x] The Bloodbrine Sea
-- [x] The Rothlyt Sound
 
 ### TODO:
 - More testing
 
 ## Looking to Donate? ♡
 I love Lattes: [BuyMeCoffee](https://buymeacoffee.com/miss_aoi)
+
+# Fish Checks
+The following fish have been verified using this profile collection.
+
+## La Noscea
+
+### Upper Decks
+- [x] Goldenfin
+
+### Lower Decks
+- [x] Octomammoth
+
+### Middle La Noscea
+- [x] Zalera
+- [x] Beguiler_Chub
+- [x] Great_Gudgeon
+- [x] Gigantshark
+- [x] High_Perch
+- [x] Crystal_Perch
+
+### Lower La Noscea
+- [x] Caterwauler
+- [x] Oschons_Print
+- [x] Syldra
+- [x] Silver_Sovereign
+- [x] Sabertooth_Cod
+- [x] Jacques_the_Snipper
+- [x] Faerie_Queen
+- [x] Meteor_Survivor
+- [x] Cupfish
+
+### Eastern La Noscea
+- [x] The_Greatest_Bream_in_the_World
+- [x] Shark_Tuna
+- [x] Bombardfish
+- [x] The_Old_Man_in_the_Sea
+- [x] Nepto_Dragon
+- [x] The_Salter
+- [x] The_Drowned_Sniper
+- [x] The_Terpsichorean
+- [x] Mirrorscale
+- [x] Imperial_Goldfish
+- [x] Little_Perykos
+
+### Western La Noscea
+- [x] Armorer
+- [x] Junkmonger
+- [x] Navigators_Brand
+- [x] The_Lone_Ripper
+- [x] Helmsmans_Hand
+- [x] Frilled_Shark
+- [x] The_Captains_Chalice
+- [x] Coelacanthus
+- [x] Endoceras
+- [x] Seahag
+
+### Upper La Noscea
+- [x] Toramafish
+- [x] Joan_of_Trout
+- [x] Worm_of_Nym
+- [x] King_of_the_Spring
+
+### Outer La Noscea
+- [x] Thundergut
+
+### Mist
+- [x] Twitchbeard
+
+## The Black Shroud
+
+### New Gridania
+- [x] Stormdancer
+- [x] Bloody_Brewer
+
+### Old Gridania
+- [x] Matron_Carp
+- [x] Carp_Diem
+
+### Central Shroud
+- [x] Chirurgeon
+- [x] Ghost_Carp
+- [x] Levinlight
+- [x] The_Green_Jester
+- [x] Bloodbath
+
+### East Shroud
+- [x] Dark_Ambusher
+- [x] Moldva
+- [x] The_Assassin
+- [ ] Sylphsbane
+- [x] Magicked_Mushroom
+
+### South Shroud
+- [x] Vip_Viper
+- [x] Floating_Boulder
+- [x] The_Grinner
+- [x] The_Sinker
+- [x] The_Gobfather
+- [ ] Son_of_Levin
+- [x] Giant_Takitaro
+- [x] Namitaro
+
+### North Shroud
+- [x] Blue_Widow
+- [x] Judgeray
+- [x] Shadowstreak
+- [x] Cornelia
+
+### The Lavender Beds
+- [x] Sweetnewt
+
+## Thanalan
+
+### Western Thanalan
+- [x] Glimmerscale
+- [x] Mud_Golem
+- [x] Rivet_Oyster
+- [x] Fingers
+- [x] Dirty_Herry
+- [x] Pirates_Bane
+- [x] Ndendecki
+- [x] Bat-o-Nine-Tails
+
+### Central Thanalan
+- [x] Dream_Goby
+- [x] Slime_King
+- [x] Old_Softie
+- [x] Dark_Knight
+
+### Eastern Thanalan
+- [x] Marrow_Sucker
+- [x] Mud_Pilgrim
+- [x] The_Wardens_Wand
+- [x] The_Thousand-year_Itch
+
+### Southern Thanalan
+- [x] Old_Hollow_Eyes
+- [x] Discobolus
+- [x] Iron_Noose
+- [x] Magic_Carpet
+- [ ] Helicoprion
+- [x] Olgoi-Khorkhoi
+
+### Northern Thanalan
+- [x] Hannibal
+- [x] Wootz_Knifefish_Zenith
+
+### The Goblet
+- [x] Spearnose
+
+## Coerthas
+
+### Coerthas Central Highlands
+- [x] Daniffens_Mark
+- [x] Charons_Lantern
+- [x] Starbright
+- [x] Dawn_Maiden
+- [x] The_Matriarch
+- [x] Darkstar
+- [x] Blue_Corpse
+- [x] Anomalocaris
+- [x] Mahar
+- [x] Shonisaurus
+
+### Coerthas Western Highlands
+- [x] Fat_Purse
+- [x] Hailfinder
+- [ ] Flarefish
+- [x] Bishopfish
+- [ ] Charibenet
+- [x] The_Impaler
+- [x] Captain_Nemo
+- [x] La_Reale
+- [x] Merciless
+
+## Mor Dhona
+
+### Mor Dhona
+- [x] Aetherlouse
+- [x] Ignus_Horn
+- [x] Blood_Red_Bonytongue
+- [x] Void_Bass
+- [x] Ninja_Betta
+- [x] Canavan
+- [x] Kuno_the_Killer
+
+## Abalathia's Spine
+
+### The Sea of Clouds
+- [x] Inkfish
+- [x] Paikiller
+- [x] Cirrostratus
+- [x] The_Second_One
+- [x] Basking_Shark
+- [ ] Sea_Butterfly
+
+### Azys Lla
+- [x] Augmented_High_Allagan_Helmet
+- [x] Aetherochemical_Compound_666
+- [x] Ceti
+- [x] Aphotic_Pirarucu
+- [x] Hundred-eyed_Axolotl
+- [x] Crystal_Pigeon
+- [x] Allagan_Bladeshark
+- [x] Opabinia
+
+## Dravania
+
+### The Dravanian Forelands
+- [x] Scaleripper
+- [x] Twin-tongued_Carp
+- [x] The_Dreamweaver
+- [x] Thunderscale
+- [x] Meteortoise
+- [x] Hraesvelgrs_Tear
+- [x] Riddle
+- [x] The_Lord_of_Lords
+- [x] Problematicus
+
+### The Dravanian Hinterlands
+- [x] The_Ewer_King
+- [x] Madam_Butterfly
+- [ ] The_Speaker
+- [x] Armor_Fish
+- [ ] Bobgoblin_Bass
+
+### The Churning Mists
+- [x] Vidofnir
+- [x] Moggle_Mogpom
+- [x] Thousand_Fin
+- [x] The_Soul_of_the_Martyr
+- [x] Dimorphodon
+- [ ] Bloodchaser
+- [ ] Raimdellopterus
+
+## Gyr Abania
+
+### Rhalgr's Reach
+- [x] Hookstealer
+- [ ] Watcher_Catfish
+- [x] Bloodtail_Zombie
+
+### The Fringes
+- [x] Hardhead_Trout
+- [x] Xenacanthus
+- [ ] Sapphire_Fan
+- [x] The_Archbishop
+- [x] Downstream_Loach
+- [x] Corpse_Chub
+
+### The Peaks
+- [ ] Bondsplitter
+- [ ] Drepanaspis
+- [x] The_Undecided
+- [ ] The_Last_Tear
+- [ ] Moksha
+- [ ] Hemon
+- [x] Lily_of_the_Veil
+
+### The Lochs
+- [ ] Diamond-eye
+- [ ] Stethacanthus
+
+## Othard
+
+### The Ruby Sea
+- [ ] Kuer
+- [ ] The_Ruby_Dragon
+- [x] The_Vegetarian
+- [ ] Seven_Stars
+- [x] The_Winter_Queen
+- [x] Argonautica
+- [x] Pinhead
+- [ ] Rakshasa
+
+### Yanxia
+- [ ] Pomegranate_Trout
+- [x] Glarramundi
+- [x] Hermits_End
+- [ ] Warden_of_the_Seven_Hues
+- [x] The_Unraveled_Bow
+- [x] Bokuden
+- [ ] Suiten_Ippeki
+- [ ] Axelrod
+- [x] Hagoromo_Bijin
+- [x] Hagoromo_Koi
+
+### The Azim Steppe
+- [x] Garden_Skipper
+- [ ] Banderole
+- [x] Blade_Skipper
+- [x] Duskfish
+- [x] The_Word_of_God
+- [ ] Yat_Khan
+- [x] Nhaamas_Treasure
+- [ ] The_Unconditional
+
+## Hingashi
+
+### Kugane
+- [x] Rising_Dragon
+
+### Shirogane
+- [x] The_Gambler
+- [x] Princess_Killifish
+
+## Norvrandt
+
+### The Crystarium
+- [ ] Aster_Trivi
+- [x] The_Sinsteeped
+- [x] Loose_Pendant
+
+### Eulmore
+- [ ] Winged_Dame
+
+### Lakeland
+- [x] Sweetheart
+- [ ] Moonlight_Guppy
+- [x] The_Unforgiven
+- [ ] Python_Discus
+- [x] The_Jaws_of_Undeath
+- [ ] Listracanthus
+
+### Kholusia
+- [x] Giant_Taimen
+- [x] Steel_Fan
+- [x] White_Ronso
+- [x] Bronze_Sole
+- [x] Steel_Razor
+- [ ] Shadeshifter
+- [ ] Aquamaton
+- [ ] Henodus_Grandis
+
+### Amh Araeng
+- [ ] The_Horned_King
+- [ ] Cinder_Surprise
+- [x] Ambling_Caltrop
+- [ ] Nabaath_Saw
+
+### Il Mheg
+- [x] Leannisg
+- [x] The_Sound_of_Fury
+- [ ] Ealad_Skaan
+- [x] Sunken_Tome
+- [x] Fae_Rainbow
+- [ ] Celestial
+- [x] Dammroen_Herring
+- [ ] Gold_Hammer
+
+### The Rak'tika Greatwood
+- [x] Priest_of_YxLokwa
+- [x] Greater_Serpent_of_Ronka
+- [x] Pearl_Pipira
+- [x] Black_Jet
+- [x] Recordkiller
+- [ ] Deephaunt
+- [x] Golden_Pipira
+
+### The Tempest
+- [x] Ondo_Sigh
+- [x] The_Ondotaker
+- [x] Mora_Tecta
+- [ ] Lancetfish
+- [ ] Maru_Crab
+- [x] The_Mother_of_All_Pancakes
+- [ ] Starchaser
+- [x] Opal_Shrimp
+
+## The Northern Empty
+
+### Labrinthos
+- [x] Jumbo_Snook
+- [ ] Mossgill_Salmon
+- [x] Swampsucker_Bowfin
+
+### Old Sharlayan
+- [x] Aetherolectric_Guitarfish
+- [x] Greatsword_Snook
+- [ ] Catastrophizer
+
+## ILSABARD
+
+### Radz-at-Han
+- [x] Earful
+
+### Thavnair
+- [ ] Lale_Crab
+- [ ] Vidyutvat_Wrasse
+- [ ] Hippo_Frog
+- [ ] Bigcuda
+- [ ] Browned_Banana_Eel
+
+### Garlemald
+- [x] Rimepike
+- [x] Sovereign_Shadow
+
+## The Sea Of Stars
+
+### Mare Lamentorum
+- [x] Disappirarucu
+- [ ] Frozen_Regotoise
+
+### Ultima Thule
+- [x] Foun_Ahlm
+- [ ] Starscryer
+- [x] Forbiddingway
+- [x] Argonauta_argo
+- [ ] Cosmic_Haze
+
+## The Wworld Unsundered
+
+### Elpis
+- [x] Planetes
+- [ ] Antheian_Dahlia

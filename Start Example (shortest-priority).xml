@@ -1592,6 +1592,11 @@
             <LLoadProfile Path="Othard/The_Azim_Steppe/Yat_Khan.xml"/>
         </If>
 
+        <!-- Namitaro -->
+        <If Condition="not HasAtLeast(8775,&Namitaro;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')">
+            <LLoadProfile Path="The_Black_Shroud/South_Shroud/Namitaro.xml"/>
+        </If>
+
         <!-- Giant_Takitaro -->
         <If Condition="not HasAtLeast(8774,&Giant_Takitaro;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')">
             <LLoadProfile Path="The_Black_Shroud/South_Shroud/Giant_Takitaro.xml"/>
@@ -1610,11 +1615,6 @@
         <!-- Little_Perykos -->
         <If Condition="not HasAtLeast(20143,&Little_Perykos;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(137, 'Rain', 'Showers')">
             <LLoadProfile Path="La_Noscea/Eastern_La_Noscea/Little_Perykos.xml"/>
-        </If>
-
-        <!-- Namitaro -->
-        <If Condition="not HasAtLeast(8775,&Namitaro;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(153, 'Thunder', 'Thunderstorms')">
-            <LLoadProfile Path="The_Black_Shroud/South_Shroud/Namitaro.xml"/>
         </If>
 
         <!-- Nepto_Dragon -->
