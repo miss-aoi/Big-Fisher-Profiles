@@ -33,7 +33,7 @@
 		</If>
 		<ExFish Bait="Midge Larva" condition="not HasAtLeast(23057,&Hookstealer;) and HasAtLeast(20615,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" HooksetReverse="True">
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="7.267575, -2.179601, 80.50803" Heading="6.131044" />
 				<FishSpot XYZ="-2.573665, -1.96711, 109.1576" Heading="0.574614" />
@@ -43,6 +43,9 @@
 				<Keeper name="Hedgemole Cricket" action="Mooch" />
 				<Keeper name="Hookstealer" />
 			</Keepers>
+			<ReverseHooks>
+				<ReverseHook MoochLevel="1" TugType="Heavy" />
+			</ReverseHooks>
 			<SurfaceSlaps />
 		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />

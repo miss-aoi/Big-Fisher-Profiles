@@ -38,7 +38,7 @@
 		</ExFish>
 		<ExFish Bait="Short Bill Minnow" condition="not HasAtLeast(33326,&Maru_Crab;) and HasAtLeast(27588,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" HooksetReverseLevel="1">
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-771.5961, 83.13901, -415.6524" Heading="4.604672" />
 				<FishSpot XYZ="-792.961, 83.13901, -413.6188" Heading="5.566009" />
@@ -48,6 +48,9 @@
 				<Keeper name="Ancient Shrimp" action="Mooch" />
 				<Keeper name="Maru Crab" />
 			</Keepers>
+			<ReverseHooks>
+				<ReverseHook MoochLevel="1" TugType="Heavy" />
+			</ReverseHooks>
 			<SurfaceSlaps />
 		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />

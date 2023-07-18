@@ -33,7 +33,7 @@
 		</If>
 		<ExFish Bait="Fiend Worm" condition="not HasAtLeast(16752,&Aetherochemical_Compound_666;) and HasAtLeast(12710,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" HooksetReverseLevel="1">
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="378.942, -53.41117, -761.7911" Heading="2.49265" />
 				<FishSpot XYZ="384.9145, -53.52942, -793.9514" Heading="0.8422616" />
@@ -43,6 +43,9 @@
 				<Keeper name="Platinum Fish" action="Mooch" />
 				<Keeper name="Aetherochemical Compound #666" />
 			</Keepers>
+			<ReverseHooks>
+				<ReverseHook MoochLevel="1" TugType="Heavy" />
+			</ReverseHooks>
 			<SurfaceSlaps />
 		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />

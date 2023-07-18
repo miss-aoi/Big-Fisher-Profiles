@@ -49,7 +49,7 @@
 		</ExFish>
 		<ExFish Bait="Versatile Lure" Condition="Core.Player.HasAura(568) and not HasAtLeast(17589,&Opabinia;) and HasAtLeast(29717,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" HooksetReverseLevel="1">
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-17.71241, 293.9991, 32.3871" Heading="5.695476" />
 				<FishSpot XYZ="-18.69696, 293.9, 44.98245" Heading="3.563382" />
@@ -59,6 +59,9 @@
 				<Keeper name="Platinum Fish" action="Mooch" />
 				<Keeper name="Opabinia" />
 			</Keepers>
+			<ReverseHooks>
+				<ReverseHook MoochLevel="1" TugType="Heavy" />
+			</ReverseHooks>
 			<SurfaceSlaps>
 				<SurfaceSlap name="Azysfish"/>
 			</SurfaceSlaps>

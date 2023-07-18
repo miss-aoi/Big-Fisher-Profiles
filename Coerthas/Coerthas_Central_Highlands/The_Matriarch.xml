@@ -35,7 +35,7 @@
 		</If>
 		<ExFish Bait="Honey Worm" condition="not HasAtLeast(7946,&The_Matriarch;) and HasAtLeast(2599,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" HooksetReverseLevel="1">
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-735.4037, 222.6547, 63.49319" Heading="3.7" />
 				<FishSpot XYZ="-737.9011, 222.6547, 60.94794" Heading="0.7446342" />
@@ -45,6 +45,9 @@
 				<Keeper name="Abalathian Smelt" action="Mooch" />
 				<Keeper name="The Matriarch" />
 			</Keepers>
+			<ReverseHooks>
+				<ReverseHook MoochLevel="1" TugType="Heavy" />
+			</ReverseHooks>
 			<SurfaceSlaps />
 		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />

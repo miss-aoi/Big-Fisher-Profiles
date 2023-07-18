@@ -38,7 +38,7 @@
 		</ExFish>
 		<ExFish Bait="Midge Basket" condition="not HasAtLeast(7940,&Mirrorscale;) and HasAtLeast(2592,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
 				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
-				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" HooksetReverse="True">
+				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-214.7343, 44.36052, 529.5509" Heading="6.139794" />
 				<FishSpot XYZ="-222.4824, 44.41689, 566.0011" Heading="3.544835" />
@@ -48,6 +48,9 @@
 				<Keeper name="Copperfish" action="Mooch" />
 				<Keeper name="Mirrorscale" />
 			</Keepers>
+			<ReverseHooks>
+				<ReverseHook MoochLevel="1" TugType="Heavy" />
+			</ReverseHooks>
 			<SurfaceSlaps />
 		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
