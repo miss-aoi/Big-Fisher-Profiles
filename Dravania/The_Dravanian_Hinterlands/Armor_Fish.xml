@@ -44,7 +44,7 @@
 				<Keeper name="Hedgemole Cricket" />
 			</Keepers>
 		</ExFish>
-		<While condition="not Condition.IsTimeBetween(1,4)">
+		<While condition="Condition.IsTimeBetween(22,24) or Condition.IsTimeBetween(0,1)">
 			<Log Message="Waiting for window to open..." />
 			<WaitTimer WaitTime="30" />
 		</While>
