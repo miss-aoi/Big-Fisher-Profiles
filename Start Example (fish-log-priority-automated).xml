@@ -1281,14 +1281,14 @@
         </If>
 
         <!-- NORVRANDT - THE RAK'TIKA GREATWOOD -->
+        <!-- Greater_Serpent_of_Ronka -->
+        <If Condition="not HasCaughtFish(33243) and Condition.IsTimeBetween(9,12)">
+            <LLoadProfile Path="Norvrandt/The_Raktika_Greatwood/Greater_Serpent_of_Ronka.xml"/>
+        </If>
+
         <!-- Priest_of_YxLokwa -->
         <If Condition="not HasCaughtFish(28071) and Condition.IsTimeBetween(9,12)">
             <LLoadProfile Path="Norvrandt/The_Raktika_Greatwood/Priest_of_YxLokwa.xml"/>
-        </If>
-
-        <!-- Greater_Serpent_of_Ronka -->
-        <If Condition="not HasCaughtFish(33243) and Condition.IsTimeBetween(6,12)">
-            <LLoadProfile Path="Norvrandt/The_Raktika_Greatwood/Greater_Serpent_of_Ronka.xml"/>
         </If>
 
         <!-- Pearl_Pipira -->

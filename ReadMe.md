@@ -41,53 +41,53 @@ The following fish have been verified using this profile collection.
 
 ### Middle La Noscea
 - [x] Zalera
-- [x] Beguiler_Chub
-- [x] Great_Gudgeon
+- [x] Beguiler Chub
+- [x] Great Gudgeon
 - [x] Gigantshark
-- [x] High_Perch
-- [x] Crystal_Perch
+- [x] High Perch
+- [x] Crystal Perch
 
 ### Lower La Noscea
 - [x] Caterwauler
-- [x] Oschons_Print
+- [x] Oschons Print
 - [x] Syldra
-- [x] Silver_Sovereign
-- [x] Sabertooth_Cod
-- [x] Jacques_the_Snipper
-- [x] Faerie_Queen
-- [x] Meteor_Survivor
+- [x] Silver Sovereign
+- [x] Sabertooth Cod
+- [x] Jacques the Snipper
+- [x] Faerie Queen
+- [x] Meteor Survivor
 - [x] Cupfish
 
 ### Eastern La Noscea
-- [x] The_Greatest_Bream_in_the_World
-- [x] Shark_Tuna
+- [x] The Greatest Bream in the World
+- [x] Shark Tuna
 - [x] Bombardfish
-- [x] The_Old_Man_in_the_Sea
-- [x] Nepto_Dragon
-- [x] The_Salter
-- [x] The_Drowned_Sniper
-- [x] The_Terpsichorean
+- [x] The Old Man in the Sea
+- [x] Nepto Dragon
+- [x] The Salter
+- [x] The Drowned Sniper
+- [x] The Terpsichorean
 - [x] Mirrorscale
-- [x] Imperial_Goldfish
-- [x] Little_Perykos
+- [x] Imperial Goldfish
+- [x] Little Perykos
 
 ### Western La Noscea
 - [x] Armorer
 - [x] Junkmonger
-- [x] Navigators_Brand
-- [x] The_Lone_Ripper
-- [x] Helmsmans_Hand
-- [x] Frilled_Shark
-- [x] The_Captains_Chalice
+- [x] Navigators Brand
+- [x] The Lone Ripper
+- [x] Helmsmans Hand
+- [x] Frilled Shark
+- [x] The Captains Chalice
 - [x] Coelacanthus
 - [x] Endoceras
 - [x] Seahag
 
 ### Upper La Noscea
 - [x] Toramafish
-- [x] Joan_of_Trout
-- [x] Worm_of_Nym
-- [x] King_of_the_Spring
+- [x] Joan of Trout
+- [x] Worm of Nym
+- [x] King of the Spring
 
 ### Outer La Noscea
 - [x] Thundergut
@@ -99,38 +99,38 @@ The following fish have been verified using this profile collection.
 
 ### New Gridania
 - [x] Stormdancer
-- [x] Bloody_Brewer
+- [x] Bloody Brewer
 
 ### Old Gridania
-- [x] Matron_Carp
-- [x] Carp_Diem
+- [x] Matron Carp
+- [x] Carp Diem
 
 ### Central Shroud
 - [x] Chirurgeon
-- [x] Ghost_Carp
+- [x] Ghost Carp
 - [x] Levinlight
-- [x] The_Green_Jester
+- [x] The Green Jester
 - [x] Bloodbath
 
 ### East Shroud
-- [x] Dark_Ambusher
+- [x] Dark Ambusher
 - [x] Moldva
-- [x] The_Assassin
-- [ ] Sylphsbane
-- [x] Magicked_Mushroom
+- [x] The Assassin
+- [x] Sylphsbane
+- [x] Magicked Mushroom
 
 ### South Shroud
-- [x] Vip_Viper
-- [x] Floating_Boulder
-- [x] The_Grinner
-- [x] The_Sinker
-- [x] The_Gobfather
-- [ ] Son_of_Levin
-- [x] Giant_Takitaro
+- [x] Vip Viper
+- [x] Floating Boulder
+- [x] The Grinner
+- [x] The Sinker
+- [x] The Gobfather
+- [x] Son of Levin
+- [x] Giant Takitaro
 - [x] Namitaro
 
 ### North Shroud
-- [x] Blue_Widow
+- [x] Blue Widow
 - [x] Judgeray
 - [x] Shadowstreak
 - [x] Cornelia
@@ -142,37 +142,37 @@ The following fish have been verified using this profile collection.
 
 ### Western Thanalan
 - [x] Glimmerscale
-- [x] Mud_Golem
-- [x] Rivet_Oyster
+- [x] Mud Golem
+- [x] Rivet Oyster
 - [x] Fingers
-- [x] Dirty_Herry
-- [x] Pirates_Bane
+- [x] Dirty Herry
+- [x] Pirates Bane
 - [x] Ndendecki
 - [x] Bat-o-Nine-Tails
 
 ### Central Thanalan
-- [x] Dream_Goby
-- [x] Slime_King
-- [x] Old_Softie
-- [x] Dark_Knight
+- [x] Dream Goby
+- [x] Slime King
+- [x] Old Softie
+- [x] Dark Knight
 
 ### Eastern Thanalan
-- [x] Marrow_Sucker
-- [x] Mud_Pilgrim
-- [x] The_Wardens_Wand
-- [x] The_Thousand-year_Itch
+- [x] Marrow Sucker
+- [x] Mud Pilgrim
+- [x] The Wardens Wand
+- [x] The Thousand-year Itch
 
 ### Southern Thanalan
-- [x] Old_Hollow_Eyes
+- [x] Old Hollow Eyes
 - [x] Discobolus
-- [x] Iron_Noose
-- [x] Magic_Carpet
-- [ ] Helicoprion
+- [x] Iron Noose
+- [x] Magic Carpet
+- [x] Helicoprion
 - [x] Olgoi-Khorkhoi
 
 ### Northern Thanalan
 - [x] Hannibal
-- [x] Wootz_Knifefish_Zenith
+- [x] Wootz Knifefish Zenith
 
 ### The Goblet
 - [x] Spearnose
@@ -180,38 +180,38 @@ The following fish have been verified using this profile collection.
 ## Coerthas
 
 ### Coerthas Central Highlands
-- [x] Daniffens_Mark
-- [x] Charons_Lantern
+- [x] Daniffens Mark
+- [x] Charons Lantern
 - [x] Starbright
-- [x] Dawn_Maiden
-- [x] The_Matriarch
+- [x] Dawn Maiden
+- [x] The Matriarch
 - [x] Darkstar
-- [x] Blue_Corpse
+- [x] Blue Corpse
 - [x] Anomalocaris
 - [x] Mahar
 - [x] Shonisaurus
 
 ### Coerthas Western Highlands
-- [x] Fat_Purse
+- [x] Fat Purse
 - [x] Hailfinder
 - [ ] Flarefish
 - [x] Bishopfish
 - [ ] Charibenet
-- [x] The_Impaler
-- [x] Captain_Nemo
-- [x] La_Reale
+- [x] The Impaler
+- [x] Captain Nemo
+- [x] La Reale
 - [x] Merciless
 
 ## Mor Dhona
 
 ### Mor Dhona
 - [x] Aetherlouse
-- [x] Ignus_Horn
-- [x] Blood_Red_Bonytongue
-- [x] Void_Bass
-- [x] Ninja_Betta
+- [x] Ignus Horn
+- [x] Blood Red Bonytongue
+- [x] Void Bass
+- [x] Ninja Betta
 - [x] Canavan
-- [x] Kuno_the_Killer
+- [x] Kuno the Killer
 
 ## Abalathia's Spine
 
@@ -219,45 +219,45 @@ The following fish have been verified using this profile collection.
 - [x] Inkfish
 - [x] Paikiller
 - [x] Cirrostratus
-- [x] The_Second_One
-- [x] Basking_Shark
-- [ ] Sea_Butterfly
+- [x] The Second One
+- [x] Basking Shark
+- [ ] Sea Butterfly
 
 ### Azys Lla
-- [x] Augmented_High_Allagan_Helmet
-- [x] Aetherochemical_Compound_666
+- [x] Augmented High Allagan Helmet
+- [x] Aetherochemical Compound 666
 - [x] Ceti
-- [x] Aphotic_Pirarucu
-- [x] Hundred-eyed_Axolotl
-- [x] Crystal_Pigeon
-- [x] Allagan_Bladeshark
+- [x] Aphotic Pirarucu
+- [x] Hundred-eyed Axolotl
+- [x] Crystal Pigeon
+- [x] Allagan Bladeshark
 - [x] Opabinia
 
 ## Dravania
 
 ### The Dravanian Forelands
 - [x] Scaleripper
-- [x] Twin-tongued_Carp
-- [x] The_Dreamweaver
+- [x] Twin-tongued Carp
+- [x] The Dreamweaver
 - [x] Thunderscale
 - [x] Meteortoise
-- [x] Hraesvelgrs_Tear
+- [x] Hraesvelgrs Tear
 - [x] Riddle
-- [x] The_Lord_of_Lords
+- [x] The Lord of Lords
 - [x] Problematicus
 
 ### The Dravanian Hinterlands
-- [x] The_Ewer_King
-- [x] Madam_Butterfly
-- [ ] The_Speaker
-- [x] Armor_Fish
-- [ ] Bobgoblin_Bass
+- [x] The Ewer King
+- [x] Madam Butterfly
+- [ ] The Speaker
+- [x] Armor Fish
+- [ ] Bobgoblin Bass
 
 ### The Churning Mists
 - [x] Vidofnir
-- [x] Moggle_Mogpom
-- [x] Thousand_Fin
-- [x] The_Soul_of_the_Martyr
+- [x] Moggle Mogpom
+- [x] Thousand Fin
+- [x] The Soul of the Martyr
 - [x] Dimorphodon
 - [ ] Bloodchaser
 - [ ] Raimdellopterus
@@ -266,25 +266,25 @@ The following fish have been verified using this profile collection.
 
 ### Rhalgr's Reach
 - [x] Hookstealer
-- [ ] Watcher_Catfish
-- [x] Bloodtail_Zombie
+- [ ] Watcher Catfish
+- [x] Bloodtail Zombie
 
 ### The Fringes
-- [x] Hardhead_Trout
+- [x] Hardhead Trout
 - [x] Xenacanthus
-- [ ] Sapphire_Fan
-- [x] The_Archbishop
-- [x] Downstream_Loach
-- [x] Corpse_Chub
+- [ ] Sapphire Fan
+- [x] The Archbishop
+- [x] Downstream Loach
+- [x] Corpse Chub
 
 ### The Peaks
 - [ ] Bondsplitter
 - [ ] Drepanaspis
-- [x] The_Undecided
-- [ ] The_Last_Tear
+- [x] The Undecided
+- [ ] The Last Tear
 - [ ] Moksha
 - [ ] Hemon
-- [x] Lily_of_the_Veil
+- [x] Lily of the Veil
 
 ### The Lochs
 - [ ] Diamond-eye
@@ -293,119 +293,119 @@ The following fish have been verified using this profile collection.
 ## Othard
 
 ### The Ruby Sea
-- [ ] Kuer
-- [ ] The_Ruby_Dragon
-- [x] The_Vegetarian
-- [ ] Seven_Stars
-- [x] The_Winter_Queen
+- [ ] Ku'er
+- [ ] The Ruby Dragon
+- [x] The Vegetarian
+- [ ] Seven Stars
+- [x] The Winter Queen
 - [x] Argonautica
 - [x] Pinhead
 - [ ] Rakshasa
 
 ### Yanxia
-- [ ] Pomegranate_Trout
+- [ ] Pomegranate Trout
 - [x] Glarramundi
-- [x] Hermits_End
-- [ ] Warden_of_the_Seven_Hues
-- [x] The_Unraveled_Bow
+- [x] Hermits End
+- [ ] Warden of the Seven Hues
+- [x] The Unraveled Bow
 - [x] Bokuden
-- [ ] Suiten_Ippeki
+- [ ] Suiten Ippeki
 - [ ] Axelrod
-- [x] Hagoromo_Bijin
-- [x] Hagoromo_Koi
+- [x] Hagoromo Bijin
+- [x] Hagoromo Koi
 
 ### The Azim Steppe
-- [x] Garden_Skipper
+- [x] Garden Skipper
 - [ ] Banderole
-- [x] Blade_Skipper
+- [x] Blade Skipper
 - [x] Duskfish
-- [x] The_Word_of_God
-- [ ] Yat_Khan
-- [x] Nhaamas_Treasure
-- [ ] The_Unconditional
+- [x] The Word of God
+- [ ] Yat Khan
+- [x] Nhaamas Treasure
+- [ ] The Unconditional
 
 ## Hingashi
 
 ### Kugane
-- [x] Rising_Dragon
+- [x] Rising Dragon
 
 ### Shirogane
-- [x] The_Gambler
-- [x] Princess_Killifish
+- [x] The Gambler
+- [x] Princess Killifish
 
 ## Norvrandt
 
 ### The Crystarium
-- [ ] Aster_Trivi
-- [x] The_Sinsteeped
-- [x] Loose_Pendant
+- [ ] Aster Trivi
+- [x] The Sinsteeped
+- [x] Loose Pendant
 
 ### Eulmore
-- [ ] Winged_Dame
+- [ ] Winged Dame
 
 ### Lakeland
 - [x] Sweetheart
-- [ ] Moonlight_Guppy
-- [x] The_Unforgiven
-- [ ] Python_Discus
-- [x] The_Jaws_of_Undeath
+- [ ] Moonlight Guppy
+- [x] The Unforgiven
+- [ ] Python Discus
+- [x] The Jaws of Undeath
 - [ ] Listracanthus
 
 ### Kholusia
-- [x] Giant_Taimen
-- [x] Steel_Fan
-- [x] White_Ronso
-- [x] Bronze_Sole
-- [x] Steel_Razor
+- [x] Giant Taimen
+- [x] Steel Fan
+- [x] White Ronso
+- [x] Bronze Sole
+- [x] Steel Razor
 - [ ] Shadeshifter
 - [ ] Aquamaton
-- [ ] Henodus_Grandis
+- [ ] Henodus Grandis
 
 ### Amh Araeng
-- [ ] The_Horned_King
-- [ ] Cinder_Surprise
-- [x] Ambling_Caltrop
-- [ ] Nabaath_Saw
+- [ ] The Horned King
+- [ ] Cinder Surprise
+- [x] Ambling Caltrop
+- [ ] Nabaath Saw
 
 ### Il Mheg
 - [x] Leannisg
-- [x] The_Sound_of_Fury
-- [ ] Ealad_Skaan
-- [x] Sunken_Tome
-- [x] Fae_Rainbow
+- [x] The Sound of Fury
+- [ ] Ealad Skaan
+- [x] Sunken Tome
+- [x] Fae Rainbow
 - [ ] Celestial
-- [x] Dammroen_Herring
-- [ ] Gold_Hammer
+- [x] Dammroen Herring
+- [ ] Gold Hammer
 
 ### The Rak'tika Greatwood
-- [x] Priest_of_YxLokwa
-- [x] Greater_Serpent_of_Ronka
-- [x] Pearl_Pipira
-- [x] Black_Jet
+- [x] Priest of YxLokwa
+- [x] Greater Serpent of Ronka
+- [x] Pearl Pipira
+- [x] Black Jet
 - [x] Recordkiller
 - [ ] Deephaunt
-- [x] Golden_Pipira
+- [x] Golden Pipira
 
 ### The Tempest
-- [x] Ondo_Sigh
-- [x] The_Ondotaker
-- [x] Mora_Tecta
+- [x] Ondo Sigh
+- [x] The Ondotaker
+- [x] Mora Tecta
 - [ ] Lancetfish
-- [ ] Maru_Crab
-- [x] The_Mother_of_All_Pancakes
+- [ ] Maru Crab
+- [x] The Mother of All Pancakes
 - [ ] Starchaser
-- [x] Opal_Shrimp
+- [x] Opal Shrimp
 
 ## The Northern Empty
 
 ### Labrinthos
-- [x] Jumbo_Snook
-- [ ] Mossgill_Salmon
-- [x] Swampsucker_Bowfin
+- [x] Jumbo Snook
+- [ ] Mossgill Salmon
+- [x] Swampsucker Bowfin
 
 ### Old Sharlayan
-- [x] Aetherolectric_Guitarfish
-- [x] Greatsword_Snook
+- [x] Aetherolectric Guitarfish
+- [x] Greatsword Snook
 - [ ] Catastrophizer
 
 ## ILSABARD
@@ -414,31 +414,31 @@ The following fish have been verified using this profile collection.
 - [x] Earful
 
 ### Thavnair
-- [ ] Lale_Crab
-- [ ] Vidyutvat_Wrasse
-- [ ] Hippo_Frog
+- [ ] Lale Crab
+- [ ] Vidyutvat Wrasse
+- [ ] Hippo Frog
 - [ ] Bigcuda
-- [ ] Browned_Banana_Eel
+- [ ] Browned Banana Eel
 
 ### Garlemald
 - [x] Rimepike
-- [x] Sovereign_Shadow
+- [x] Sovereign Shadow
 
 ## The Sea Of Stars
 
 ### Mare Lamentorum
 - [x] Disappirarucu
-- [ ] Frozen_Regotoise
+- [ ] Frozen Regotoise
 
 ### Ultima Thule
-- [x] Foun_Ahlm
+- [x] Foun Ahlm
 - [ ] Starscryer
 - [x] Forbiddingway
-- [x] Argonauta_argo
-- [ ] Cosmic_Haze
+- [x] Argonauta argo
+- [ ] Cosmic Haze
 
-## The Wworld Unsundered
+## The World Unsundered
 
 ### Elpis
 - [x] Planetes
-- [ ] Antheian_Dahlia
+- [ ] Antheian Dahlia

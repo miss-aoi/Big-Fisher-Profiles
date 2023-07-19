@@ -506,11 +506,6 @@
             <LLoadProfile Path="The_Sea_of_Stars/Mare_Lamentorum/Disappirarucu.xml"/>
         </If>
 
-        <!-- Greater_Serpent_of_Ronka -->
-        <If Condition="not HasAtLeast(33243,&Greater_Serpent_of_Ronka;) and Condition.IsTimeBetween(6,12)">
-            <LLoadProfile Path="Norvrandt/The_Raktika_Greatwood/Greater_Serpent_of_Ronka.xml"/>
-        </If>
-
         <!-- Inkfish -->
         <If Condition="not HasAtLeast(15635,&Inkfish;) and Condition.IsTimeBetween(13,16)">
             <LLoadProfile Path="Abalathias_Spine/The_Sea_of_Clouds/Inkfish.xml"/>
@@ -519,6 +514,11 @@
         <!-- Joan_of_Trout -->
         <If Condition="not HasAtLeast(7904,&Joan_of_Trout;) and Condition.IsTimeBetween(3,6)">
             <LLoadProfile Path="La_Noscea/Upper_La_Noscea/Joan_of_Trout.xml"/>
+        </If>
+
+        <!-- Greater_Serpent_of_Ronka -->
+        <If Condition="not HasAtLeast(33243,&Greater_Serpent_of_Ronka;) and Condition.IsTimeBetween(6,12)">
+            <LLoadProfile Path="Norvrandt/The_Raktika_Greatwood/Greater_Serpent_of_Ronka.xml"/>
         </If>
 
         <!-- Priest_of_YxLokwa -->
