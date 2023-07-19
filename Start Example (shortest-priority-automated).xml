@@ -218,11 +218,6 @@
             <LLoadProfile Path="Hingashi/Shirogane/Princess_Killifish.xml"/>
         </If>
 
-        <!-- Starscryer -->
-        <If Condition="not HasCaughtFish(37851) and ((Condition.IsTimeBetween(1,2) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(960, TimeSpan.FromHours(4), 'Astromagnetic Storm')) or (Condition.IsTimeBetween(2,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Astromagnetic Storm')))">
-            <LLoadProfile Path="The_Sea_of_Stars/Ultima_Thule/Starscryer.xml"/>
-        </If>
-
         <!-- Steel_Razor -->
         <If Condition="not HasCaughtFish(33318) and Condition.IsTimeBetween(5,8)">
             <LLoadProfile Path="Norvrandt/Kholusia/Steel_Razor.xml"/>
@@ -1581,7 +1576,7 @@
         <If Condition="not HasAtLeast(2606,50) and (not HasCaughtFish(7687) or not HasCaughtFish(7910) or not HasCaughtFish(7906) or not HasCaughtFish(8754) or not HasCaughtFish(8770) or not HasCaughtFish(16756) or not HasCaughtFish(7936) or not HasCaughtFish(7919))">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2606,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
-        <!-- NYMPH MARBLE -->
+        <!-- MARBLE NYMPH -->
         <If Condition="not HasAtLeast(27585,50) and (not HasCaughtFish(33316) or not HasCaughtFish(28068) or not HasCaughtFish(28928) or not HasCaughtFish(30435) or not HasCaughtFish(32050) or not HasCaughtFish(32052))">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27585,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
@@ -1679,10 +1674,6 @@
         <If Condition="not HasAtLeast(2619,3) and (not HasCaughtFish(7711) or not HasCaughtFish(7926))">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2619,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
-        <!-- LURE SKY SPOON -->
-        <If Condition="not HasAtLeast(36590,3) and (not HasCaughtFish(37848) or not HasCaughtFish(38831) or not HasCaughtFish(37846))">
-            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36590,'Amount':3,'Enabled':true,'Type':'Exchange'}]"/>
-        </If>
         <!-- FLOATING MINNOW -->
         <If Condition="not HasAtLeast(2611,3) and (not HasCaughtFish(7699) or not HasCaughtFish(7686) or not HasCaughtFish(8764))">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2611,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
@@ -1698,6 +1689,10 @@
         <!-- SINKING MINNOW -->
         <If Condition="not HasAtLeast(2617,3) and (not HasCaughtFish(7709) or not HasCaughtFish(7921))">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2617,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
+        </If>
+        <!-- SKY SPOON LURE -->
+        <If Condition="not HasAtLeast(36590,3) and (not HasCaughtFish(37848) or not HasCaughtFish(38831) or not HasCaughtFish(37846))">
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36590,'Amount':3,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- SNURBLE FLY -->
         <If Condition="not HasAtLeast(2618,3) and (not HasCaughtFish(7938))">

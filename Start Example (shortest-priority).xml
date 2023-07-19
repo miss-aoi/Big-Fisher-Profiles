@@ -1894,7 +1894,7 @@
         <If Condition="(&Armorer; == 1 or &Dirty_Herry; == 1 or &Fingers; == 1 or &Nepto_Dragon; == 1 or &Blue_Corpse; == 1 or &Merciless; == 1 or &Son_of_Levin; == 1 or &Spearnose; == 1) and not HasAtLeast(2606,50)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2606,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
-        <!-- NYMPH MARBLE -->
+        <!-- MARBLE NYMPH -->
         <If Condition="(&Aster_Trivi; == 1 or &Bronze_Sole; == 1 or &Fae_Rainbow; == 1 or &Leannisg; == 1 or &Steel_Fan; == 1 or &Sunken_Tome; == 1) and not HasAtLeast(27585,50)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':27585,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
@@ -1992,10 +1992,6 @@
         <If Condition="(&Rivet_Oyster; == 1 or &The_Lone_Ripper; == 1) and not HasAtLeast(2619,3)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2619,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
-        <!-- LURE SKY SPOON -->
-        <If Condition="(&Bigcuda; == 1 or &Mossgill_Salmon; == 1 or &Swampsucker_Bowfin; == 1) and not HasAtLeast(36590,3)">
-            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36590,'Amount':3,'Enabled':true,'Type':'Exchange'}]"/>
-        </If>
         <!-- FLOATING MINNOW -->
         <If Condition="(&Blue_Widow; == 1 or &Gigantshark; == 1 or &Pirates_Bane; == 1) and not HasAtLeast(2611,3)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2611,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
@@ -2011,6 +2007,10 @@
         <!-- SINKING MINNOW -->
         <If Condition="(&High_Perch; == 1 or &The_Sinker; == 1) and not HasAtLeast(2617,3)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2617,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
+        </If>
+        <!-- SKY SPOON LURE -->
+        <If Condition="(&Bigcuda; == 1 or &Mossgill_Salmon; == 1 or &Swampsucker_Bowfin; == 1) and not HasAtLeast(36590,3)">
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36590,'Amount':3,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- SNURBLE FLY -->
         <If Condition="(&The_Drowned_Sniper; == 1) and not HasAtLeast(2618,3)">

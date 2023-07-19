@@ -32,14 +32,14 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<If condition="Condition.IsTimeBetween(5,6)">
-			<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(5,6)" Sit="True" SitRate="1">
+			<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(5,6)" KeepNone="True" Sit="True" SitRate="1">
 				<FishSpots>
 					<FishSpot XYZ="-729.2505, -47.36447, 579.8774" Heading="5.467196" />
 				</FishSpots>
 			</ExFish>
 		</If>
 		<ExFish Bait="Purse Web Spider" condition="not HasAtLeast(16753,&Hundred-eyed_Axolotl;) and HasAtLeast(12705,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1"
 				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-729.2505, -47.36447, 579.8774" Heading="5.467196" />

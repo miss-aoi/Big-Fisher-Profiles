@@ -32,14 +32,14 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<If condition="Condition.IsTimeBetween(20,21)">
-			<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(20,21)" Sit="True" SitRate="1">
+			<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(20,21)" KeepNone="True" Sit="True" SitRate="1">
 				<FishSpots>
 					<FishSpot XYZ="218.723, -33.06675, 384.3286" Heading="2.596586" />
 				</FishSpots>
 			</ExFish>
 		</If>
 		<ExFish Bait="Butterworm" condition="not HasAtLeast(7700,&Ghost_Carp;) and HasAtLeast(2594,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="218.723, -33.06675, 384.3286" Heading="2.596586" />
 				<FishSpot XYZ="230.0516, -31.35194, 387.275" Heading="2.393428" />
