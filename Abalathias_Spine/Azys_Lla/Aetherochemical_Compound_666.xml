@@ -33,7 +33,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Fiend Worm" condition="not HasAtLeast(16752,&Aetherochemical_Compound_666;) and HasAtLeast(12710,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1"
 				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="378.942, -53.41117, -761.7911" Heading="2.49265" />

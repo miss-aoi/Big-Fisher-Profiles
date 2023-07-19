@@ -32,7 +32,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Midge Larva" condition="not HasAtLeast(24205,&Watcher_Catfish;) and HasAtLeast(20615,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1"
 				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="-14.99483, 2.937019, -22.76287" Heading="4.197911" />

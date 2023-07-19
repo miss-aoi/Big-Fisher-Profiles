@@ -45,7 +45,7 @@
 			<Desynth ItemIds="33325" DesynthDelay="6000" DesynthTimeout="10" />
 		</If>
 		<ExFish Bait="Short Bill Minnow" Condition="not Core.Player.HasAura(568) and Condition.IsTimeBetween(20,24) and not HasAtLeast(33244,&Lancetfish;) and not HasAtLeast(33325,1) and HasAtLeast(27588,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds')"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
 			</FishSpots>
@@ -58,7 +58,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<ExFish Bait="Short Bill Minnow" Condition="not Core.Player.HasAura(568) and Condition.IsTimeBetween(20,24) and not HasAtLeast(33244,&Lancetfish;) and HasAtLeast(27588,1) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(818, 'Clouds')"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
 			</FishSpots>
@@ -71,7 +71,7 @@
 			<WaitTimer WaitTime="30" />
 		</While>
 		<ExFish Bait="Squid Strip" Condition="Core.Player.HasAura(568) and not HasAtLeast(33244,&Lancetfish;) and HasAtLeast(27590,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-487.3695, 184.7268, -552.0118" Heading="3.743883" />
 			</FishSpots>

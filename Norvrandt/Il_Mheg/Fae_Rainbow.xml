@@ -32,7 +32,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Marble Nymph" condition="not HasAtLeast(28928,&Fae_Rainbow;) and HasAtLeast(27585,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="179.9279, 21.22943, -560.8244" Heading="5.860549" />
 				<FishSpot XYZ="168.0139, 13.00776, -531.97" Heading="5.78515" />

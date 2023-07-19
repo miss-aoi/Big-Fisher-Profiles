@@ -32,7 +32,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Goby Ball" condition="not HasAtLeast(7680,&Oschons_Print;) and HasAtLeast(2589,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="231.7537, 28.83405, 174.467" Heading="1.45568" />
 				<FishSpot XYZ="242.9352, 29.53038, 199.734" Heading="2.785623" />

@@ -32,7 +32,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Hoverworm" condition="not HasAtLeast(8771,&Mahar;) and HasAtLeast(2605,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1"
 				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="576.5197, 300.6741, -171.3599" Heading="3.279671" />

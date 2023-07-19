@@ -32,7 +32,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Stem Borer" condition="not HasAtLeast(7942,&The_Thousand-year_Itch;) and HasAtLeast(2601,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="419.1361, -64.63788, 194.8363" Heading="3.501371" />
 				<FishSpot XYZ="424.5287, -64.83167, 219.4854" Heading="5.893176" />

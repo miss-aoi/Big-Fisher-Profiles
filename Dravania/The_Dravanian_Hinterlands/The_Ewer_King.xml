@@ -32,7 +32,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Bladed Steel Jig" condition="not HasAtLeast(15632,&The_Ewer_King;) and HasAtLeast(12707,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1"
 				Mooch="1" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
 			<FishSpots>
 				<FishSpot XYZ="28.95352, 52.31477, 48.62481" Heading="4.73267" />

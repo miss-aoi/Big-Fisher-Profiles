@@ -33,7 +33,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Sky Spoon Lure" condition="not HasAtLeast(38831,&Mossgill_Salmon;) and HasAtLeast(36590,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-183.2765, 78.46773, -691.5447" Heading="0.2429528" />
 				<FishSpot XYZ="-187.1021, 78.46772, -669.6534" Heading="0.5759552" />

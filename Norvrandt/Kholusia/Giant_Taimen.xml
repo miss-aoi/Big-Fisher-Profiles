@@ -33,7 +33,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Baitbugs" condition="not HasAtLeast(30434,&Giant_Taimen;) and HasAtLeast(27589,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="232.0987, 319.7058, -582.9617" Heading="1.704814" />
 				<FishSpot XYZ="247.9626, 317.0774, -566.7717" Heading="0.1444907" />

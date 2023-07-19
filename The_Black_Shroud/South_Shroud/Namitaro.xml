@@ -38,7 +38,7 @@
 		</If>
 		<Dismount/>
 		<ExFish Bait="Glowworm" Condition="not Core.Player.HasAura(568) and not HasAtLeast(8775,&Namitaro;) and HasAtLeast(2624,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="518.7339, 14.04607, 130.9605" Heading="1.535933" />
 				<FishSpot XYZ="524.8389, 14.08908, 124.3318" Heading="5.889893" />
@@ -49,7 +49,7 @@
 			</Keepers>
 		</ExFish>
 			<ExFish Bait="Topwater Frog" Condition="Core.Player.HasAura(568) and not HasAtLeast(8775,&Namitaro;) and HasAtLeast(2624,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="518.7339, 14.04607, 130.9605" Heading="1.535933" />
 				<FishSpot XYZ="524.8389, 14.08908, 124.3318" Heading="5.889893" />

@@ -33,7 +33,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Stonefly Larva" condition="not HasAtLeast(24216,&Hagoromo_Bijin;) and HasAtLeast(20675,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-463.0705, 0.683099, 557.986" Heading="5.483477" />
 				<FishSpot XYZ="-456.1641, 0.1489093, 569.0743" Heading="5.338966" />

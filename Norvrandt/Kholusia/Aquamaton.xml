@@ -46,7 +46,7 @@
 		</If>
 		<!-- Catch 4 Shapeshifters before window starts -->
 		<ExFish Bait="Squid Strip" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33240,&Aquamaton;) and not HasAtLeast(27452,5) and HasAtLeast(27590,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-218.0921, 8.740814, 760.5208" Heading="3.420164" />
 				<FishSpot XYZ="-197.7823, 11.86121, 750.546" Heading="4.203466" />
@@ -62,7 +62,7 @@
 		</While>
 		<!-- Catch last fish once window starts -->
 		<ExFish Bait="Squid Strip" Condition="not Core.Player.HasAura(568) and not HasAtLeast(33240,&Aquamaton;) and HasAtLeast(27590,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-218.0921, 8.740814, 760.5208" Heading="3.420164" />
 				<FishSpot XYZ="-197.7823, 11.86121, 750.546" Heading="4.203466" />
@@ -73,7 +73,7 @@
 			</Keepers>
 		</ExFish>
 		<ExFish Bait="Short Bill Minnow" Condition="Core.Player.HasAura(568) and not HasAtLeast(33240,&Aquamaton;) and HasAtLeast(27588,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-218.0921, 8.740814, 760.5208" Heading="3.420164" />
 				<FishSpot XYZ="-197.7823, 11.86121, 750.546" Heading="4.203466" />

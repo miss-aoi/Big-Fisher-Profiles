@@ -32,7 +32,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Heavy Steel Jig" condition="not HasAtLeast(7926,&The_Lone_Ripper;) and HasAtLeast(2619,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-241.2194, -42.11089, 44.17156" Heading="4.514718" />
 				<FishSpot XYZ="-244.774, -42.1517, 16.95212" Heading="4.160766" />

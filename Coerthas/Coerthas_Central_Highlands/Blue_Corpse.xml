@@ -32,7 +32,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Caddisfly Larva" condition="not HasAtLeast(8770,&Blue_Corpse;) and HasAtLeast(2607,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-835.9018, 223.9743, 16.83364" Heading="2.504576" />
 				<FishSpot XYZ="-849.4735, 223.9743, 11.95268" Heading="3.775867" />

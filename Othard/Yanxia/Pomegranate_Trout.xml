@@ -32,7 +32,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Nightcrawler" condition="not HasAtLeast(24885,&Pomegranate_Trout;) and HasAtLeast(20614,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-			MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+			MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="640.8627, 124.1067, -374.8214" Heading="0.7165961" />
 				<FishSpot XYZ="657.3647, 123.7503, -385.4939" Heading="0.3961546" />

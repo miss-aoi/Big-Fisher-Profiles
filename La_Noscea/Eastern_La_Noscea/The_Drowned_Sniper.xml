@@ -32,7 +32,7 @@
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Snurble Fly" condition="not HasAtLeast(7938,&The_Drowned_Sniper;) and HasAtLeast(2618,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
 			<FishSpots>
 				<FishSpot XYZ="-111.6467, 33.92606, 231.1327" Heading="0.1593609" />
 				<FishSpot XYZ="-55.90533, 33.78047, 223.2611" Heading="4.696387" />
