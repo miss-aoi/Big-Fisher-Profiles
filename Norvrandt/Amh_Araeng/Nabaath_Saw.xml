@@ -32,7 +32,7 @@
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
-		<If condition="Condition.IsTimeBetween(5,6)">
+		<If condition="Condition.IsTimeBetween(2,6)">
 			<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(5,6)" KeepNone="True" Sit="True" SitRate="1">
 				<FishSpots>
 				<FishSpot XYZ="457.1977, -82.34267, 510.657" Heading="0.3639209" />
@@ -40,8 +40,8 @@
 			</ExFish>
 		</If>
 		<ExFish Bait="Jerked Ovim" condition="not HasAtLeast(33320,&Nabaath_Saw;) and HasAtLeast(27586,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1"
-				Mooch="100" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" ThaliaksFavorThreshold="8" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1"
+				Mooch="100" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" MakeshiftBait="True">
 			<FishSpots>
 				<FishSpot XYZ="478.9986, -80.80603, 508.751" Heading="6.071146" />
 				<FishSpot XYZ="457.1977, -82.34267, 510.657" Heading="0.3639209" />

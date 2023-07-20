@@ -1235,7 +1235,7 @@
         </If>
 
         <!-- Nabaath_Saw -->
-        <If Condition="not HasCaughtFish(33320) and ((Condition.IsTimeBetween(5,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Clear Skies', 'Fair Skies', 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(4), 'Heat Waves')) or (Condition.IsTimeBetween(6,10) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies', 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves')))">
+        <If Condition="not HasCaughtFish(33320) and ((Condition.IsTimeBetween(2,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Clear Skies', 'Fair Skies', 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(4), 'Heat Waves')) or (Condition.IsTimeBetween(6,10) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies', 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves')))">
             <LLoadProfile Path="Norvrandt/Amh_Araeng/Nabaath_Saw.xml"/>
         </If>
 
@@ -1507,7 +1507,7 @@
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- CHIMERA WORM -->
-        <If Condition="not HasAtLeast(36595,50) and (not HasCaughtFish(38835) or not HasCaughtFish(36684) or not HasCaughtFish(38834))">
+        <If Condition="not HasAtLeast(36595,50) and (not HasCaughtFish(38835) or not HasCaughtFish(36684) or not HasCaughtFish(38834) or not HasCaughtFish(39882))">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36595,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- CRAYFISH BALL -->
@@ -1559,7 +1559,7 @@
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2585,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
         <!-- MACKEREL STRIP -->
-        <If Condition="not HasAtLeast(36593,50) and (not HasCaughtFish(36679))">
+        <If Condition="not HasAtLeast(36593,50) and (not HasCaughtFish(36679) or not HasCaughtFish(36593))">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36593,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- MAGMA WORM -->
@@ -1567,7 +1567,7 @@
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12709,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
         <!-- MAYFLY -->
-        <If Condition="not HasAtLeast(36591,50) and (not HasCaughtFish(38836) or not HasCaughtFish(38833) or not HasCaughtFish(38830) or not HasCaughtFish(37850) or not HasCaughtFish(36681) or not HasCaughtFish(37845) or not HasCaughtFish(36682) or not HasCaughtFish(36680) or not HasCaughtFish(37853) or not HasCaughtFish(37849) or not HasCaughtFish(37851))">
+        <If Condition="not HasAtLeast(36591,50) and (not HasCaughtFish(38836) or not HasCaughtFish(38833) or not HasCaughtFish(38830) or not HasCaughtFish(37850) or not HasCaughtFish(36681) or not HasCaughtFish(37845) or not HasCaughtFish(36682) or not HasCaughtFish(36680) or not HasCaughtFish(37853) or not HasCaughtFish(37849) or not HasCaughtFish(37851) or not HasCaughtFish(39879) or not HasCaughtFish(38836))">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36591,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- MIDGE BASKET -->
@@ -1666,9 +1666,9 @@
         <If Condition="not HasAtLeast(2597,50) and (not HasCaughtFish(7902) or not HasCaughtFish(7920) or not HasCaughtFish(7704) or not HasCaughtFish(7945) or not HasCaughtFish(7914))">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2597,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
-        <!-- YUMIZUNO -->
-        <If Condition="not HasAtLeast(2628,3) and (not HasCaughtFish(7693) or not HasCaughtFish(7690))">
-            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2628,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
+        <!-- LEECH -->
+        <If Condition="not HasAtLeast(36589,3) and (not HasCaughtFish(39880))">
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36589,'Amount':1,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
 
         <!-- LURES - Usually these last longer -->
@@ -1709,7 +1709,7 @@
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2617,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
         <!-- SKY SPOON LURE -->
-        <If Condition="not HasAtLeast(36590,3) and (not HasCaughtFish(37848) or not HasCaughtFish(38831) or not HasCaughtFish(37846))">
+        <If Condition="not HasAtLeast(36590,3) and (not HasCaughtFish(37848) or not HasCaughtFish(38831) or not HasCaughtFish(37846) or not HasCaughtFish(39883))">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36590,'Amount':3,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- SNURBLE FLY -->
@@ -1735,6 +1735,10 @@
         <!-- WILDFOWL FLY -->
         <If Condition="not HasAtLeast(2623,3) and (not HasCaughtFish(7932) or not HasCaughtFish(7944) or not HasCaughtFish(7695))">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2623,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
+        </If>
+        <!-- YUMIZUNO -->
+        <If Condition="not HasAtLeast(2628,3) and (not HasCaughtFish(7693) or not HasCaughtFish(7690))">
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2628,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
 
 

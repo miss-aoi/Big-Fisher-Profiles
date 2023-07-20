@@ -1547,7 +1547,7 @@
         </If>
 
         <!-- Nabaath_Saw -->
-        <If Condition="not HasAtLeast(33320,&Nabaath_Saw;) and ((Condition.IsTimeBetween(5,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Clear Skies', 'Fair Skies', 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(4), 'Heat Waves')) or (Condition.IsTimeBetween(6,10) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies', 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves')))">
+        <If Condition="not HasAtLeast(33320,&Nabaath_Saw;) and ((Condition.IsTimeBetween(2,10) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Clear Skies', 'Fair Skies', 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(4), 'Heat Waves')) or (Condition.IsTimeBetween(6,10) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(815, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies', 'Heat Waves') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(815, 'Heat Waves')))">
             <LLoadProfile Path="Norvrandt/Amh_Araeng/Nabaath_Saw.xml"/>
         </If>
 
@@ -1802,7 +1802,7 @@
         <If Condition="(&Floating_Boulder; == 1) and not HasAtLeast(2595,50)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2595,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
-        <!-- BLOODWORMs -->
+        <!-- BLOODWORMS -->
         <If Condition="(&Matron_Carp; == 1 or &Old_Softie; == 1 or &Olgoi-Khorkhoi; == 1) and not HasAtLeast(2590,50)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2590,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
