@@ -1734,7 +1734,7 @@
         </If>
 
         <!-- Wakeful_Warden -->
-        <If Condition="not HasAtLeast(39880,&Wakeful_Warden;) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(620, TimeSpan.FromHours(-8), 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Fog')">
+        <If Condition="not HasAtLeast(39880,&Wakeful_Warden;) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(957, TimeSpan.FromHours(-8), 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Fog')">
             <LLoadProfile Path="Ilsabard/Thavnair/Wakeful_Warden.xml"/>
         </If>
 
@@ -1749,7 +1749,7 @@
         </If>
 
         <!-- Basilosaurus_Rex -->
-        <If Condition="not HasAtLeast(39881,&Basilosaurus_Rex;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Fair Skies')">
+        <If Condition="not HasAtLeast(39881,&Basilosaurus_Rex;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Fair Skies')">
             <LLoadProfile Path="Ilsabard/Thavnair/Basilosaurus_Rex.xml"/>
         </If>
 
