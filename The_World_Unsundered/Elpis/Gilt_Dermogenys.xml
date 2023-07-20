@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Gilt Dermogenys (39883)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Gilt_Dermogenys "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(20,22)">
+	<!ENTITY WEATHER_PAST "ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(961, TimeSpan.FromHours(-8), 'Umbral Wind')">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(961, 'Clear Skies', 'Fair Skies')">
+]>
+<Profile>
+	<Name>Gilt Dermogenys</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Gilt Dermogenys..." />
+		<If Condition="not IsOnMap(961)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
+		<If condition="not HasAtLeast(36590,50)">
+			<!--Sky Spoon Lure-->
+			<Log Message="Farming more Sky Spoon Lure with Lisbeth." />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36590,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
+		</If>
+		<If condition="not IsOnSubMap(3945)">
+			<LisbethTravel Area="Elpis (Philomythes Notos)" XYZ="181.9626, 91.083, -513.3088" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<If condition="Condition.IsTimeBetween(3,4)" >
+			<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(3,4)" KeepNone="True" Sit="True" SitRate="1">
+				<FishSpots>
+					<FishSpot XYZ="181.9626, 91.083, -513.3088" Heading="3.332182" />
+				</FishSpots>
+			</ExFish>
+		</If>
+		<ExFish Bait="Sky Spoon Lure" condition="not HasAtLeast(39883,&Gilt_Dermogenys;) and HasAtLeast(36590,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="181.9626, 91.083, -513.3088" Heading="3.332182" />
+				<FishSpot XYZ="190.0802, 91.083, -540.7949" Heading="4.873659" />
+				<FishSpot XYZ="152.567, 91.083, -547.982" Heading="1.227324" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Gilt Dermogenys" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
+</Profile>

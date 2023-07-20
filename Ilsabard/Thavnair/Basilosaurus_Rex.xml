@@ -13,7 +13,7 @@
 	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Fair Skies')">
 ]>
 <Profile>
-	<Name>Bigcuda</Name>
+	<Name>Basilosaurus Rex</Name>
 	<BehaviorDirectory />
 	<Order>
 		<Log Message="Starting Fishing: Basilosaurus Rex..." />
@@ -23,22 +23,26 @@
 		<If condition="not HasAtLeast(36593,3)">
 			<!--Mackerel Strip-->
 			<Log Message="Farming more Mackerel Strip with Lisbeth." />
-			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36593,'Amount':3,'Enabled':true,'Type':'Exchange'}]" />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36593,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
 			<LLoadProfile Path="../../Start.xml" />
 		</If>
 		<If condition="not IsOnSubMap(3892)">
-			<LisbethTravel Area="Thavnair (West)" XYZ="515.6667, 4.408312, 3.336241" />
+			<LisbethTravel Area="Thavnair (West)" XYZ="-680.5983, -0.04779339, -619.6617" />
 		</If>
 		<If condition="not ClassName == ClassJobType.Fisher">
 			<ChangeClass Job="Fisher" />
 		</If>
 		<ExFish Bait="Mackerel Strip" condition="not HasAtLeast(39881,&Basilosaurus_Rex;) and HasAtLeast(36593,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1"
-				Mooch="100" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" ThaliaksFavorThreshold="8" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1"
+				Mooch="100" Patience="Patience2" MinimumGPPatience="650" UseMooch2="True" MakeshiftBait="True">
 			<FishSpots>
-				
+				<FishSpot XYZ="-680.5983, -0.04779339, -619.6617" Heading="4.448519" />
+				<FishSpot XYZ="-674.0807, -0.07715046, -640.1754" Heading="4.079912" />
+				<FishSpot XYZ="-691.5867, -0.05362433, -601.144" Heading="4.471555" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Puff-paya" action="Mooch" />
+				<Keeper name="Basilosaurus" action="Mooch" />
 				<Keeper name="Basilosaurus Rex" />
 			</Keepers>
 			<SurfaceSlaps />

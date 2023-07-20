@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Wakeful Warden (39880)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Wakeful_Warden "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "True">
+	<!ENTITY WEATHER_PAST "ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(957, TimeSpan.FromHours(-8), 'Fog')">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Clouds')">
+]>
+<Profile>
+	<Name>Wakeful Warden</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Wakeful Warden..." />
+		<If Condition="not IsOnMap(957)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
+		<If condition="not HasAtLeast(36589,50)">
+			<!--Leech-->
+			<Log Message="Farming more Leech with Lisbeth." />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36589,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
+			<LLoadProfile Path="../../Start.xml" />
+		</If>
+		<If condition="not IsOnSubMap(3892)">
+			<LisbethTravel Area="Thavnair (West)" XYZ="360.298, 4.5, -637.7933" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<ExFish Bait="Leech" condition="not HasAtLeast(39880,&Wakeful_Warden;) and HasAtLeast(36589,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1">
+			<FishSpots>
+				<FishSpot XYZ="360.298, 4.5, -637.7933" Heading="2.78975" />
+				<FishSpot XYZ="375.7037, 4.5, -640.9822" Heading="2.521666" />
+				<FishSpot XYZ="342.9087, 4.499999, -654.4811" Heading="2.56565" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Wakeful Warden" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
+</Profile>

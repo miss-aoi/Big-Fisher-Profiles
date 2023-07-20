@@ -323,6 +323,7 @@
 <!ENTITY Jumbo_Snook "0">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- MAYFLY -->
 <!ENTITY Mossgill_Salmon "0">                                    <!-- WEATHER -->                      <!-- SKY SPOON LURE -->
 <!ENTITY Swampsucker_Bowfin "0">                 <!-- TIMED -->  <!-- WEATHER -->                      <!-- SKY SPOON LURE -->
+<!ENTITY Onyx_Knifefish "0">                     <!-- TIMED -->  <!-- WEATHER -->                      <!-- MAYFLY -->
 <!-- THE NORTHERN EMPTY - Old Sharlayan -->
 <!ENTITY Aetherolectric_Guitarfish "0">          <!-- TIMED -->                                        <!-- MACKEREL STRIP -->
 <!ENTITY Greatsword_Snook "0">                   <!-- TIMED -->  <!-- WEATHER -->                      <!-- MAYFLY -->
@@ -333,8 +334,10 @@
 <!ENTITY Lale_Crab "0">                                          <!-- WEATHER -->                      <!-- SHRIMP BALL -->
 <!ENTITY Vidyutvat_Wrasse "0">                   <!-- TIMED -->  <!-- WEATHER -->                      <!-- SHRIMP BALL -->
 <!ENTITY Hippo_Frog "0">                                         <!-- WEATHER -->                      <!-- MAYFLY -->
+<!ENTITY Wakeful_Warden "0">                     <!-- TIMED -->  <!-- WEATHER -->                      <!-- LEECH -->
 <!ENTITY Bigcuda "0">                            <!-- TIMED -->  <!-- WEATHER -->                      <!-- SKY SPOON LURE -->
 <!ENTITY Browned_Banana_Eel "0">                 <!-- TIMED -->  <!-- WEATHER -->                      <!-- MAYFLY -->
+<!ENTITY Basilosaurus_Rex "0">                                   <!-- WEATHER -->                      <!-- MACKEREL STRIP -->
 <!-- ILSABARD - Garlemald -->
 <!ENTITY Rimepike "0">                                           <!-- WEATHER -->                      <!-- STONEFLY LARVA -->
 <!ENTITY Sovereign_Shadow "0">                   <!-- TIMED -->  <!-- WEATHER -->                      <!-- MAYFLY -->
@@ -343,12 +346,14 @@
 <!ENTITY Frozen_Regotoise "0">                   <!-- TIMED -->  <!-- WEATHER -->                      <!-- CHIMERA WORM -->
 <!-- THE SEA OF STARS - Ultima Thule -->
 <!ENTITY Foun_Ahlm "0">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- CHIMERA WORM -->
+<!ENTITY Eehs_Fan " 0">                          <!-- TIMED -->  <!-- WEATHER -->                      <!-- CHIMERA WORM -->
 <!ENTITY Starscryer "0">                         <!-- TIMED -->                                        <!-- MAYFLY -->
 <!ENTITY Forbiddingway "0">                      <!-- TIMED -->  <!-- WEATHER -->                      <!-- STARDUST -->
 <!ENTITY Argonauta_argo "0">                     <!-- TIMED -->  <!-- WEATHER -->                      <!-- STARDUST -->
 <!ENTITY Cosmic_Haze "0">                        <!-- TIMED -->  <!-- WEATHER -->                      <!-- CHIMERA WORM -->
 <!-- THE WORLD UNSUNDERED - Elpis -->
 <!ENTITY Planetes "0">                                           <!-- WEATHER -->                      <!-- MAYFLY -->
+<!ENTITY Gilt_Dermogenys "0">                    <!-- TIMED -->  <!-- WEATHER -->                      <!-- SKY SPOON LURE -->
 <!ENTITY Antheian_Dahlia "0">                    <!-- TIMED -->  <!-- WEATHER -->                      <!-- MAYFLY -->
 ]>
 
@@ -1685,6 +1690,11 @@
             <LLoadProfile Path="The_Northern_Empty/Labyrinthos/Swampsucker_Bowfin.xml"/>
         </If>
 
+        <!-- Onyx_Knifefish -->
+        <If Condition="not HasAtLeast(39879,&Onyx_Knifefish;) and ((Condition.IsTimeBetween(21,22) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(956, 'Rain') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(956, TimeSpan.FromHours(4), 'Fair Skies')) or ((Condition.IsTimeBetween(22,24) or Condition.IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(956, TimeSpan.FromHours(-8), 'Rain') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(956, 'Fair Skies')))">
+            <LLoadProfile Path="The_Northern_Empty/Labyrinthos/Onyx_Knifefish.xml"/>
+        </If>
+
         <!-- THE NORTHERN EMPTY - OLD SHARLAYAN -->
         <!-- Aetherolectric_Guitarfish -->
         <If Condition="not HasAtLeast(36679,&Aetherolectric_Guitarfish;) and Condition.IsTimeBetween(19,24)">
@@ -1723,6 +1733,11 @@
             <LLoadProfile Path="Ilsabard/Thavnair/Hippo_Frog.xml"/>
         </If>
 
+        <!-- Wakeful_Warden -->
+        <If Condition="not HasAtLeast(39880,&Wakeful_Warden;) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(620, TimeSpan.FromHours(-8), 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Fog')">
+            <LLoadProfile Path="Ilsabard/Thavnair/Wakeful_Warden.xml"/>
+        </If>
+
         <!-- Bigcuda -->
         <If Condition="not HasAtLeast(37848,&Bigcuda;) and ((Condition.IsTimeBetween(7,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(957, TimeSpan.FromHours(4), 'Rain', 'Showers')) or (Condition.IsTimeBetween(8,16) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(957, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Rain', 'Showers')))">
             <LLoadProfile Path="Ilsabard/Thavnair/Bigcuda.xml"/>
@@ -1731,6 +1746,11 @@
         <!-- Browned_Banana_Eel -->
         <If Condition="not HasAtLeast(38833,&Browned_Banana_Eel;) and ((Condition.IsTimeBetween(21,22) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(957, TimeSpan.FromHours(4), 'Rain')) or ((Condition.IsTimeBetween(22,24) or Condition.IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Rain')))">
             <LLoadProfile Path="Ilsabard/Thavnair/Browned_Banana_Eel.xml"/>
+        </If>
+
+        <!-- Basilosaurus_Rex -->
+        <If Condition="not HasAtLeast(39881,&Basilosaurus_Rex;) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Fair Skies')">
+            <LLoadProfile Path="Ilsabard/Thavnair/Basilosaurus_Rex.xml"/>
         </If>
 
         <!-- ILSABARD - GARLEMALD -->
@@ -1761,6 +1781,11 @@
             <LLoadProfile Path="The_Sea_of_Stars/Ultima_Thule/Foun_Ahlm.xml"/>
         </If>
 
+        <!-- Eehs_Fan -->
+        <If Condition="not HasAtLeast(39882,&Eehs_Fan;) and ((Condition.IsTimeBetween(11,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Astromagnetic Storm') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(960, TimeSpan.FromHours(4), 'Umbral Wind')) or (Condition.IsTimeBetween(12,20) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(960, TimeSpan.FromHours(-8), 'Astromagnetic Stor') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Umbral Wind')))">
+            <LLoadProfile Path="The_Sea_of_Stars/Ultima_Thule/Eehs_Fan.xml"/>
+        </If>
+
         <!-- Starscryer -->
         <If Condition="not HasAtLeast(37851,&Starscryer;) and ((Condition.IsTimeBetween(1,2) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(960, TimeSpan.FromHours(4), 'Astromagnetic Storm')) or (Condition.IsTimeBetween(2,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Astromagnetic Storm')))">
             <LLoadProfile Path="The_Sea_of_Stars/Ultima_Thule/Starscryer.xml"/>
@@ -1787,6 +1812,11 @@
             <LLoadProfile Path="The_World_Unsundered/Elpis/Planetes.xml"/>
         </If>
 
+        <!-- Gilt_Dermogenys -->
+        <If Condition="not HasAtLeast(39883,&Gilt_Dermogenys;) and ((Condition.IsTimeBetween(19,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(961, 'Umbral Wind') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(961, TimeSpan.FromHours(4), 'Clear Skies', 'Fair Skies')) or (Condition.IsTimeBetween(20,22) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(961, TimeSpan.FromHours(-8), 'Umbral Wind') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(961, 'Clear Skies', 'Fair Skies')))">
+            <LLoadProfile Path="The_World_Unsundered/Elpis/Gilt_Dermogenys.xml"/>
+        </If>
+
         <!-- Antheian_Dahlia -->
         <If Condition="not HasAtLeast(38836,&Antheian_Dahlia;) and ((Condition.IsTimeBetween(3,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(961, 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(961, TimeSpan.FromHours(4), 'Clear Skies')) or (Condition.IsTimeBetween(4,10) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(961, TimeSpan.FromHours(-8), 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(961, 'Clear Skies')))">
             <LLoadProfile Path="The_World_Unsundered/Elpis/Antheian_Dahlia.xml"/>
@@ -1802,7 +1832,7 @@
         <If Condition="(&Floating_Boulder; == 1) and not HasAtLeast(2595,50)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2595,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
-        <!-- BLOODWORMS -->
+        <!-- BLOODWORMs -->
         <If Condition="(&Matron_Carp; == 1 or &Old_Softie; == 1 or &Olgoi-Khorkhoi; == 1) and not HasAtLeast(2590,50)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2590,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
@@ -1819,7 +1849,7 @@
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12711,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- CHIMERA WORM -->
-        <If Condition="(&Cosmic_Haze; == 1 or &Foun_Ahlm; == 1 or &Frozen_Regotoise; == 1) and not HasAtLeast(36595,50)">
+        <If Condition="(&Cosmic_Haze; == 1 or &Foun_Ahlm; == 1 or &Frozen_Regotoise; == 1 or &Eehs_Fan; == 1) and not HasAtLeast(36595,50)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36595,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- CRAYFISH BALL -->
@@ -1871,7 +1901,7 @@
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2585,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
         <!-- MACKEREL STRIP -->
-        <If Condition="(&Aetherolectric_Guitarfish; == 1) and not HasAtLeast(36593,50)">
+        <If Condition="(&Aetherolectric_Guitarfish; == 1 or &Basilosaurus_Rex; == 1) and not HasAtLeast(36593,50)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36593,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- MAGMA WORM -->
@@ -1879,7 +1909,7 @@
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':12709,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
         <!-- MAYFLY -->
-        <If Condition="(&Antheian_Dahlia; == 1 or &Browned_Banana_Eel; == 1 or &Catastrophizer; == 1 or &Disappirarucu; == 1 or &Earful; == 1 or &Greatsword_Snook; == 1 or &Hippo_Frog; == 1 or &Jumbo_Snook; == 1 or &Planetes; == 1 or &Sovereign_Shadow; == 1 or &Starscryer; == 1) and not HasAtLeast(36591,50)">
+        <If Condition="(&Antheian_Dahlia; == 1 or &Browned_Banana_Eel; == 1 or &Catastrophizer; == 1 or &Disappirarucu; == 1 or &Earful; == 1 or &Greatsword_Snook; == 1 or &Hippo_Frog; == 1 or &Jumbo_Snook; == 1 or &Planetes; == 1 or &Sovereign_Shadow; == 1 or &Starscryer; == 1 or &Onyx_Knifefish; == 1) and not HasAtLeast(36591,50)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36591,'Amount':50,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- MIDGE BASKET -->
@@ -1978,9 +2008,9 @@
         <If Condition="(&Cupfish; == 1 or &Levinlight; == 1 or &Marrow_Sucker; == 1 or &Starbright; == 1 or &The_Grinner; == 1) and not HasAtLeast(2597,50)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2597,'Amount':50,'Enabled':true,'Type':'Purchase'}]"/>
         </If>
-        <!-- YUMIZUNO -->
-        <If Condition="(&Navigators_Brand; == 1 or &Silver_Sovereign; == 1) and not HasAtLeast(2628,3)">
-            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2628,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
+        <!-- LEECH -->
+        <If Condition="(&Wakeful_Warden;) and not HasAtLeast(36589,50)">
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36589,'Amount':50,'Enabled':true,'Type':'Purchase'}]" />
         </If>
 
         <!-- LURES - Usually these last longer -->
@@ -2021,7 +2051,7 @@
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2617,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
         <!-- SKY SPOON LURE -->
-        <If Condition="(&Bigcuda; == 1 or &Mossgill_Salmon; == 1 or &Swampsucker_Bowfin; == 1) and not HasAtLeast(36590,3)">
+        <If Condition="(&Bigcuda; == 1 or &Mossgill_Salmon; == 1 or &Swampsucker_Bowfin; == 1 or &Gilt_Dermogenys; == 1) and not HasAtLeast(36590,3)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36590,'Amount':3,'Enabled':true,'Type':'Exchange'}]"/>
         </If>
         <!-- SNURBLE FLY -->
@@ -2047,6 +2077,10 @@
         <!-- WILDFOWL FLY -->
         <If Condition="(&Daniffens_Mark; == 1 or &Dawn_Maiden; == 1 or &Judgeray; == 1) and not HasAtLeast(2623,3)">
             <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2623,'Amount':3,'Enabled':true,'Type':'Purchase'}]"/>
+        </If>
+        <!-- YUMIZUNO -->
+        <If Condition="(&Navigators_Brand; == 1 or &Silver_Sovereign; == 1) and not HasAtLeast(2628,3)">
+            <Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':2628,'Amount':3,'Enabled':true,'Type':'Goldsmith'}]"/>
         </If>
 
 

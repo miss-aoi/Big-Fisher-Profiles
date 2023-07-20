@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Onyx Knifefish (39879)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Onyx_Knifefish "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "(Condition.IsTimeBetween(22,24) or Condition.IsTimeBetween(0,2))">
+	<!ENTITY WEATHER_PAST "ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(956, TimeSpan.FromHours(-8), 'Rain')">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(956, 'Fair Skies')">
+]>
+<Profile>
+	<Name>Onyx Knifefish</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Onyx Knifefish..." />
+		<If Condition="not IsOnMap(956)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
+		<If condition="not HasAtLeast(36591,50)">
+			<!--Mayfly-->
+			<Log Message="Farming more Mayfly with Lisbeth." />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36591,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
+		</If>
+		<If condition="not IsOnSubMap(3841)">
+			<LisbethTravel Area="Labyrinthos (North)" XYZ="136.9844, 66.29568, -327.6234" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<If condition="Condition.IsTimeBetween(21,22)">
+			<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(21,22)" KeepNone="True" Sit="True" SitRate="1">
+				<FishSpots>
+					<FishSpot XYZ="137.2286, 66.29568, -330.4004" Heading="2.658387" />
+				</FishSpots>
+			</ExFish>
+		</If>
+		<ExFish Bait="Mayfly" condition="not HasAtLeast(39879,&Onyx_Knifefish;) and HasAtLeast(36591,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="137.2286, 66.29568, -330.4004" Heading="2.658387" />
+				<FishSpot XYZ="126.3051, 66.29569, -326.2361" Heading="5.724582" />
+				<FishSpot XYZ="124.354, 66.29569, -338.5366" Heading="2.555762" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Onyx Knifefish" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
+</Profile>

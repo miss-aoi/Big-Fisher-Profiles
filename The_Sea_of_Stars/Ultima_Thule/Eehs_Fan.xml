@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf8'?>
+<!--
+	Profile: Eehs Fan (39882)
+	Authors: miss-aoi
+-->
+<!DOCTYPE Profile [
+	<!-- Adjust to desired amount -->
+	<!ENTITY Eehs_Fan "1">
+
+	<!-- DO NOT CHANGE -->
+	<!ENTITY TIME_WINDOW  "Condition.IsTimeBetween(12,20)">
+	<!ENTITY WEATHER_PAST "ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(960, TimeSpan.FromHours(-8), 'Astromagnetic Storm')">
+	<!ENTITY WEATHER_NOW  "ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Umbral Wind')">
+]>
+<Profile>
+	<Name>Eehs Fan</Name>
+	<BehaviorDirectory />
+	<Order>
+		<Log Message="Starting Fishing: Eehs Fan..." />
+		<If Condition="not IsOnMap(960)">
+			<RunCode Name="AnglersArtToGP"/>
+		</If>
+		<If condition="not HasAtLeast(36595,50)">
+			<!--Chimera Worm-->
+			<Log Message="Farming more Chimera Worm with Lisbeth." />
+			<Lisbeth IgnoreHome="True" Json="[{'Group':1,'Item':36595,'Amount':50,'Enabled':true,'Type':'Exchange'}]" />
+			<LLoadProfile Path="../../Start.xml" />
+		</If>
+		<If condition="not IsOnSubMap(3970)">
+			<LisbethTravel Area="Ultima Thule (Ostrakon Tria)" XYZ="-709.0527, 58.625, 72.11947" />
+		</If>
+		<If condition="not ClassName == ClassJobType.Fisher">
+			<ChangeClass Job="Fisher" />
+		</If>
+		<If condition="Condition.IsTimeBetween(11,12)">
+			<ExFish Bait="Versatile Lure" condition="Condition.IsTimeBetween(11,12)" KeepNone="True" Sit="True" SitRate="1">
+				<FishSpots>
+					<FishSpot XYZ="-709.0527, 58.625, 72.11947" Heading="4.230673" />
+				</FishSpots>
+			</ExFish>
+		</If>
+		<ExFish Bait="Chimera Worm" condition="not HasAtLeast(39882,&Eehs_Fan;) and HasAtLeast(36595,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
+			<FishSpots>
+				<FishSpot XYZ="-709.0527, 58.625, 72.11947" Heading="4.230673" />
+				<FishSpot XYZ="-714.0045, 58.625, 52.385" Heading="4.936488" />
+				<FishSpot XYZ="-736.8922, 58.625, 65.3904" Heading="2.383425" />
+			</FishSpots>
+			<Keepers>
+				<Keeper name="Eehs Fan" />
+			</Keepers>
+			<SurfaceSlaps />
+		</ExFish>
+		<LLoadProfile Path="../../Start.xml" />
+	</Order>
+	<GrindAreas />
+	<CodeChunks>
+		<CodeChunk Name="AnglersArtToGP">
+			<![CDATA[
+				while (Core.Player.Auras.GetAuraStacksById(2778) >= 3)
+				{
+					await Coroutine.Sleep(500);
+					ff14bot.Managers.ActionManager.DoAction(26804, Core.Player);
+					await Coroutine.Sleep(1000);
+				}
+			]]>
+		</CodeChunk>
+	</CodeChunks>
+</Profile>

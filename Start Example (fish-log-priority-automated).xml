@@ -1373,6 +1373,11 @@
             <LLoadProfile Path="The_Northern_Empty/Labyrinthos/Swampsucker_Bowfin.xml"/>
         </If>
 
+        <!-- Onyx_Knifefish -->
+        <If Condition="not HasCaughtFish(39879) and ((Condition.IsTimeBetween(21,22) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(956, 'Rain') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(956, TimeSpan.FromHours(4), 'Fair Skies')) or ((Condition.IsTimeBetween(22,24) or Condition.IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(956, TimeSpan.FromHours(-8), 'Rain') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(956, 'Fair Skies')))">
+            <LLoadProfile Path="The_Northern_Empty/Labyrinthos/Onyx_Knifefish.xml"/>
+        </If>
+
         <!-- THE NORTHERN EMPTY - OLD SHARLAYAN -->
         <!-- Aetherolectric_Guitarfish -->
         <If Condition="not HasCaughtFish(36679) and Condition.IsTimeBetween(19,24)">
@@ -1411,6 +1416,11 @@
             <LLoadProfile Path="Ilsabard/Thavnair/Hippo_Frog.xml"/>
         </If>
 
+        <!-- Wakeful_Warden -->
+        <If Condition="not HasCaughtFish(39880) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(620, TimeSpan.FromHours(-8), 'Clouds') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Fog')">
+            <LLoadProfile Path="Ilsabard/Thavnair/Wakeful_Warden.xml"/>
+        </If>
+
         <!-- Bigcuda -->
         <If Condition="not HasCaughtFish(37848) and ((Condition.IsTimeBetween(7,8) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(957, TimeSpan.FromHours(4), 'Rain', 'Showers')) or (Condition.IsTimeBetween(8,16) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(957, TimeSpan.FromHours(-8), 'Clear Skies', 'Fair Skies') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Rain', 'Showers')))">
             <LLoadProfile Path="Ilsabard/Thavnair/Bigcuda.xml"/>
@@ -1419,6 +1429,11 @@
         <!-- Browned_Banana_Eel -->
         <If Condition="not HasCaughtFish(38833) and ((Condition.IsTimeBetween(21,22) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(957, TimeSpan.FromHours(4), 'Rain')) or ((Condition.IsTimeBetween(22,24) or Condition.IsTimeBetween(0,2)) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(957, 'Rain')))">
             <LLoadProfile Path="Ilsabard/Thavnair/Browned_Banana_Eel.xml"/>
+        </If>
+
+        <!-- Basilosaurus_Rex -->
+        <If Condition="not HasCaughtFish(39881) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(620, 'Fair Skies')">
+            <LLoadProfile Path="Ilsabard/Thavnair/Basilosaurus_Rex.xml"/>
         </If>
 
         <!-- ILSABARD - GARLEMALD -->
@@ -1449,6 +1464,11 @@
             <LLoadProfile Path="The_Sea_of_Stars/Ultima_Thule/Foun_Ahlm.xml"/>
         </If>
 
+        <!-- Eehs_Fan -->
+        <If Condition="not HasCaughtFish(39882) and ((Condition.IsTimeBetween(11,12) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Astromagnetic Storm') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(960, TimeSpan.FromHours(4), 'Umbral Wind')) or (Condition.IsTimeBetween(12,20) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(960, TimeSpan.FromHours(-8), 'Astromagnetic Stor') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Umbral Wind')))">
+            <LLoadProfile Path="The_Sea_of_Stars/Ultima_Thule/Eehs_Fan.xml"/>
+        </If>
+
         <!-- Starscryer -->
         <If Condition="not HasCaughtFish(37851) and ((Condition.IsTimeBetween(1,2) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(960, TimeSpan.FromHours(4), 'Astromagnetic Storm')) or (Condition.IsTimeBetween(2,4) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(960, 'Astromagnetic Storm')))">
             <LLoadProfile Path="The_Sea_of_Stars/Ultima_Thule/Starscryer.xml"/>
@@ -1473,6 +1493,11 @@
         <!-- Planetes -->
         <If Condition="not HasCaughtFish(37853) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(961, 'Umbral Wind')">
             <LLoadProfile Path="The_World_Unsundered/Elpis/Planetes.xml"/>
+        </If>
+
+        <!-- Gilt_Dermogenys -->
+        <If Condition="not HasCaughtFish(39883) and ((Condition.IsTimeBetween(19,20) and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(961, 'Umbral Wind') and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(961, TimeSpan.FromHours(4), 'Clear Skies', 'Fair Skies')) or (Condition.IsTimeBetween(20,22) and ExBuddy.Helpers.SkywatcherPlugin.PredictWeatherInZone(961, TimeSpan.FromHours(-8), 'Umbral Wind') and ExBuddy.Helpers.SkywatcherPlugin.IsWeatherInZone(961, 'Clear Skies', 'Fair Skies')))">
+            <LLoadProfile Path="The_World_Unsundered/Elpis/Gilt_Dermogenys.xml"/>
         </If>
 
         <!-- Antheian_Dahlia -->

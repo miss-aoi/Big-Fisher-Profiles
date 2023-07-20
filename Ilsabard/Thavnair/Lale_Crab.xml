@@ -41,7 +41,11 @@
 			<Keepers>
 				<Keeper name="Lale Crab" />
 			</Keepers>
-			<SurfaceSlaps />
+			<SurfaceSlaps>
+				<SurfaceSlap name="Thavnairian Goby"/>
+				<SurfaceSlap name="Qeyiq Sole"/>
+				<SurfaceSlap name="Gwl Crab"/>
+			</SurfaceSlaps>
 		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
