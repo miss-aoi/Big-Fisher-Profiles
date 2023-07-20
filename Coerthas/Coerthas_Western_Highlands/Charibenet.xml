@@ -51,7 +51,7 @@
 		</While>
 		<!-- Catch 5th Ice Faerie once window starts -->
 		<ExFish Bait="Purse Web Spider" Condition="not Core.Player.HasAura(568) and not HasAtLeast(17592,&Charibenet;) and HasAtLeast(12705,1)"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1">
 			<FishSpots>
 				<FishSpot XYZ="700.9606, 130.4927, -812.5688" Heading="2.43003" />
 			</FishSpots>
@@ -67,6 +67,7 @@
 				<FishSpot XYZ="700.9606, 130.4927, -812.5688" Heading="2.43003" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Abalathian Smelt" action="DontKeep" />
 				<Keeper name="Ice Faerie" action="Mooch" />
 				<Keeper name="Charibenet" />
 			</Keepers>
@@ -77,7 +78,10 @@
 		</ExFish>
 		<RunCode Name="StopFishing"/>
 		<If condition="HasAtLeast(12715,1)">
-			<Desynth ItemIds="12715" DesynthDelay="6000" DesynthTimeout="10" />
+			<Desynth ItemIds="4937" DesynthDelay="6000" DesynthTimeout="10" />
+		</If>
+		<If condition="HasAtLeast(4937,1)">
+			<Desynth ItemIds="4937" DesynthDelay="6000" DesynthTimeout="10" />
 		</If>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>

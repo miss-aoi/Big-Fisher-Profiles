@@ -48,6 +48,7 @@
 				<FishSpot XYZ="-487.4555, 82.28168, -237.0961" Heading="3.938151" />
 			</FishSpots>
 			<Keepers>
+				<Keeper name="Balloon Frog" action="DontKeep" />
 				<Keeper name="Hardhead Trout" action="Mooch" />
 				<Keeper name="Xenacanthus" />
 			</Keepers>

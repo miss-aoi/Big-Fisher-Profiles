@@ -40,7 +40,7 @@
 			</ExFish>
 		</If>
 		<ExFish Bait="Sky Spoon Lure" condition="not HasAtLeast(37848,&Bigcuda;) and HasAtLeast(36590,1) and &TIME_WINDOW; and &WEATHER_PAST; and &WEATHER_NOW;"
-				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1" Chum="True">
+				MinFish="15" MaxFish="25" ShuffleFishSpots="True" ThaliaksFavor="True" CordialType="Auto" KeepNone="True" Sit="True" SitRate="1">
 			<FishSpots>
 				<FishSpot XYZ="515.6667, 4.408312, 3.336241" Heading="5.35565" />
 				<FishSpot XYZ="506.4695, 4.204235, 28.28826" Heading="5.736829" />
@@ -49,7 +49,10 @@
 			<Keepers>
 				<Keeper name="Bigcuda" />
 			</Keepers>
-			<SurfaceSlaps />
+			<SurfaceSlaps>
+				<SurfaceSlap name="Green Swordtail" />
+				<SurfaceSlap name="Ksirapayin" />
+			</SurfaceSlaps>
 		</ExFish>
 		<LLoadProfile Path="../../Start.xml" />
 	</Order>
